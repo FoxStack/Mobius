@@ -22,7 +22,7 @@ git checkout main
 
 ## Tech
 
-- QT
+- QT - QT Design Studio
 - C++ 20
 - Tabulate C++ Library
 - Cinder
