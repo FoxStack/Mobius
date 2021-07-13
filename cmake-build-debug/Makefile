@@ -142,6 +142,33 @@ Mobius/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/build
 .PHONY : Mobius/fast
 
+Vector/Vector.o: Vector/Vector.cpp.o
+
+.PHONY : Vector/Vector.o
+
+# target to build an object file
+Vector/Vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Vector/Vector.cpp.o
+.PHONY : Vector/Vector.cpp.o
+
+Vector/Vector.i: Vector/Vector.cpp.i
+
+.PHONY : Vector/Vector.i
+
+# target to preprocess a source file
+Vector/Vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Vector/Vector.cpp.i
+.PHONY : Vector/Vector.cpp.i
+
+Vector/Vector.s: Vector/Vector.cpp.s
+
+.PHONY : Vector/Vector.s
+
+# target to generate assembly for a file
+Vector/Vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Vector/Vector.cpp.s
+.PHONY : Vector/Vector.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -178,6 +205,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Mobius"
+	@echo "... Vector/Vector.o"
+	@echo "... Vector/Vector.i"
+	@echo "... Vector/Vector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

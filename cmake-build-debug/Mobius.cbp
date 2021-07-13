@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/raf/Desktop/Mobius/Vector/Vector.cpp">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Vector/Vector.h">
+			<Option target="Mobius"/>
+		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/main.cpp">
 			<Option target="Mobius"/>
 		</Unit>

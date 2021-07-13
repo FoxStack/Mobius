@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Mobius.dir/Vector/Vector.cpp.o"
   "CMakeFiles/Mobius.dir/main.cpp.o"
   "Mobius"
   "Mobius.pdb"
