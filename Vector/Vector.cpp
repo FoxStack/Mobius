@@ -68,3 +68,12 @@ template <typename T>
 Vector<T>::~Vector() {
     delete[] container;
 }
+
+template <typename T>
+void Vector<T>::reserve(size_t size) {
+    if(container == 0){
+        size,capacity = 0;
+    }
+    T *n = new T[capacity];
+    //[WIP]
+}

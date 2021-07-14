@@ -15,10 +15,18 @@ private:
     T *container;
 public:
     Vector();
+
     Vector(size_t zize);
-    Vector(size_t size, const T&values);
+
+    Vector(size_t size, const T &values);
+
     Vector(const Vector<T> &rhs);
+
     ~Vector();
+
+    //C++11
+    //void reserve(size_t size);
+    void reserve(size_t size);
 
     //C++11
     //void push_back (const value_type& val);
@@ -28,7 +36,10 @@ public:
     //C++11
     //void pop_back();
     void pop_back();
-};
 
+    //C++11
+    //void empty();
+    void empty();
+};
 
 #endif //MOBIUS_VECTOR_H
