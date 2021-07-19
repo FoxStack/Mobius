@@ -1,0 +1,4 @@
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug/CMakeFiles/Group_Project.dir
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug/CMakeFiles/Group_Project_autogen.dir
