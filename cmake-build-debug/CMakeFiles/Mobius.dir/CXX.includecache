@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raf/Desktop/Mobius/Vector/Vector.cpp
+Vector.h
+/home/raf/Desktop/Mobius/Vector/Vector.h
+stdexcept
+-
+
+/home/raf/Desktop/Mobius/Vector/Vector.h
+cstddef
+-
+iterator
+-
+
+/home/raf/Desktop/Mobius/main.cpp
+Vector/Vector.cpp
+/home/raf/Desktop/Mobius/Vector/Vector.cpp
+iostream
+-
+
