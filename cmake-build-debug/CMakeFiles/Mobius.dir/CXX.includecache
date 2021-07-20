@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
+iterator
+-
+
 /home/raf/Desktop/Mobius/Vector/Vector.cpp
 Vector.h
 /home/raf/Desktop/Mobius/Vector/Vector.h
@@ -13,6 +17,8 @@ stdexcept
 -
 
 /home/raf/Desktop/Mobius/Vector/Vector.h
+Iterator/iterator.h
+/home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
 cstddef
 -
 iterator

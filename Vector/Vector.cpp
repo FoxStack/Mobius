@@ -138,6 +138,17 @@ inline void Vector<T>::push_back(const T &val) {
 }
 
 /**
+ * @breif Pops last item in the vector
+ * @tparam T
+ */
+template <typename T>
+inline void Vector<T>::pop_back() {
+  if(_size == 0) throw std::invalid_argument("Vector is empty. Nothing to pop.");
+  delete _values[_size-1];
+  --_size;
+}
+
+/**
  * @brief Get Vector<T> value at index
  * @tparam T
  * @param i
