@@ -168,7 +168,7 @@ inline T &Vector<T>::at(int i) {
  */
 template <typename T>
 inline const T &Vector<T>::at(int i) const{
-  if(i<0||_size<=i){throw std::out_of_range ("Range Error");}
+  if(i<0||_size<=i){throw std::out_of_range("Range Error");}
   return _values[i];
 }
 

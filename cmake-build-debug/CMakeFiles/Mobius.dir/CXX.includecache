@@ -10,6 +10,8 @@
 iterator
 -
 
+/home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
+
 /home/raf/Desktop/Mobius/Vector/Vector.cpp
 Vector.h
 /home/raf/Desktop/Mobius/Vector/Vector.h
@@ -23,6 +25,8 @@ cstddef
 -
 iterator
 -
+Iterator/reverse.h
+/home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
 
 /home/raf/Desktop/Mobius/main.cpp
 Vector/Vector.cpp

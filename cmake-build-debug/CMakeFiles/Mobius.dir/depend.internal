@@ -3,10 +3,12 @@
 
 CMakeFiles/Mobius.dir/Vector/Vector.cpp.o
  /home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
+ /home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
  /home/raf/Desktop/Mobius/Vector/Vector.cpp
  /home/raf/Desktop/Mobius/Vector/Vector.h
 CMakeFiles/Mobius.dir/main.cpp.o
  /home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
+ /home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
  /home/raf/Desktop/Mobius/Vector/Vector.cpp
  /home/raf/Desktop/Mobius/Vector/Vector.h
  /home/raf/Desktop/Mobius/main.cpp

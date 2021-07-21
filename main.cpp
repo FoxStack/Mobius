@@ -17,6 +17,7 @@ int main() {
   p = s;
   std::cout << "[P]Vector.at(0) returns: " << s.at(0) << std::endl;
   std::sort(s.begin(), s.end());
+  std::sort(s.rbegin(), s.rend());
   for (int x : s) {
     std::cout << x << std::endl;
   }

@@ -1,9 +1,4 @@
-//
-// Created by raf on 7/20/21.
-//
-
 #include <iterator>
-
 template <typename T> class iterator {
 protected:
   T *m_ptr;
@@ -15,11 +10,11 @@ public:
   using reference = T &;
 
   iterator(T* ptr = nullptr){m_ptr = ptr;}
-  iterator(const iterator<T>& rawIterator) = default;
+  iterator(const iterator<T>& rawit) = default;
   ~iterator(){}
 
-  iterator<T>&                  operator=(const iterator<T>& rawit) = default;
-  iterator<T>&                  operator=(T* ptr){m_ptr = ptr;return (*this);}
+  iterator<T>& operator=(const iterator<T>& rawit) = default;
+  iterator<T>& operator=(T* ptr){m_ptr = ptr;return (*this);}
 
   operator bool() const { if (m_ptr) return true; else return false; }
   bool operator==(const iterator<T> &rawit) const { return (m_ptr == rawit.gcptr()); }

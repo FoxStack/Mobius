@@ -1,11 +1,21 @@
-//
-// Created by raf on 7/19/21.
-//
-
 #pragma once
 #include "Iterator/iterator.h"
+#include "Iterator/reverse.h"
 #include <cstddef>
 #include <iterator>
+
+/*
+ * [Vector Class] By Raf.
+ * This is as close as I can get to the STL Vector.
+ * @todo Add exceptions & safeguards to prevent stupidity
+ * For reference this was a good paper on fast dynamic arrays.
+ * https://drops.dagstuhl.de/opus/volltexte/2017/7830/pdf/LIPIcs-ESA-2017-16.pdf
+ * Extra:
+ * https://medium.com/@vgasparyan1995/how-to-write-an-stl-compatible-container-fc5b994462c6
+ * https://www.reddit.com/r/cpp/comments/9nz3xl/example_of_stl_compatible_custom_containers/
+ * This is funny, EA (Electronic Arts) of all people made a good library called EASTL. It's readable but
+ * like why EA. Of all the companies in the world, the one who litterally hates it's community wrote something nice.
+ */
 
 template <typename T> class Vector {
 private:
@@ -101,13 +111,57 @@ public:
   /**
    * [Iterator]
    */
-  //I love this iterator so much im shaking in my boots.
+  // I love this iterator so much im shaking in my boots.
   typedef iterator<T> it;
   typedef iterator<const T> cit;
+  typedef reverse<T> rit;
+  typedef reverse<const T> crit;
+  // hahah it cit rit crit
 
-  it begin(){ return iterator(&_values[0]); }
-  it end(){ return iterator(&_values[_size]); }
-  cit cbegin(){ return iterator(&_values[0]); }
-  cit cend(){ return iterator(&_values[_size]); }
+  /**
+   * @brief Iterator begin() gets start of vector.
+   * @return
+   */
+  it begin() { return it(&_values[0]); }
+  /**
+   * @brief Iterator end() gets end of vector.
+   * @return
+   */
+  it end() { return it(&_values[_size]); }
 
+  /**
+   * @brief Iterator const cbegin() gets start of vector.
+   * @return
+   */
+  cit cbegin() { return cit(&_values[0]); }
+
+  /**
+   * @brief Iterator const cend() gets end of vector.
+   * @return
+   */
+  cit cend() { return cit(&_values[_size]); }
+
+  /**
+   * @brief Reverse Iterator rbegin() gets start of vector.
+   * @return
+   */
+  rit rbegin() { return rit(&_values[_size - 1]); }
+
+  /**
+   * @brief Reverse Iterator rend() gets ends of vector.
+   * @return
+   */
+  rit rend() { return rit(&_values[-1]); }
+
+  /**
+   * @brief Reverse Iterator const crbegin() gets start of vector.
+   * @return
+   */
+  crit crbegin() { return crit(&_values[_size - 1]); }
+
+  /**
+   * @brief Reverse Iterator const crend() gets end of vector.
+   * @return
+   */
+  crit crend() { return crit(&_values[-1]); }
 };
