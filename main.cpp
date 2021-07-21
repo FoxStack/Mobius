@@ -1,5 +1,11 @@
 #include "Vector/Vector.cpp"
 #include <iostream>
+
+struct Demo {
+  int foo;
+  int fi;
+};
+
 int main() {
   std::cout << "Origin Test" << std::endl;
   Vector<int> s;
@@ -16,10 +22,13 @@ int main() {
   std::cout << "[S]Vector.at(0) returns: " << s.at(0) << std::endl;
   p = s;
   std::cout << "[P]Vector.at(0) returns: " << s.at(0) << std::endl;
+  std::cout << "[P]Vector.at(0) returns: " << s[0] << std::endl;
   std::sort(s.begin(), s.end());
-  std::sort(s.rbegin(), s.rend());
+  std::reverse(s.begin(), s.end());
   for (int x : s) {
     std::cout << x << std::endl;
   }
+  Vector<Demo> d;
+  d.push_back({ 5, 5 });
   return 0;
 }

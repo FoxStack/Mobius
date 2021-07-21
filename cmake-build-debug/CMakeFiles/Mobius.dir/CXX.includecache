@@ -21,12 +21,12 @@ stdexcept
 /home/raf/Desktop/Mobius/Vector/Vector.h
 Iterator/iterator.h
 /home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
+Iterator/reverse.h
+/home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
 cstddef
 -
 iterator
 -
-Iterator/reverse.h
-/home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
 
 /home/raf/Desktop/Mobius/main.cpp
 Vector/Vector.cpp

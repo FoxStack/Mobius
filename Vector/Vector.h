@@ -14,7 +14,7 @@
  * https://medium.com/@vgasparyan1995/how-to-write-an-stl-compatible-container-fc5b994462c6
  * https://www.reddit.com/r/cpp/comments/9nz3xl/example_of_stl_compatible_custom_containers/
  * This is funny, EA (Electronic Arts) of all people made a good library called EASTL. It's readable but
- * like why EA. Of all the companies in the world, the one who litterally hates it's community wrote something nice.
+ * like why EA. Of all the companies in the world, the one who literally hates it's community wrote something nice.
  */
 
 template <typename T> class Vector {
