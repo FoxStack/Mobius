@@ -130,165 +130,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Group_Project
+# Target rules for targets named Test
 
 # Build rule for target.
-Group_Project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Group_Project
-.PHONY : Group_Project
+Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test
+.PHONY : Test
 
 # fast build rule for target.
-Group_Project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/build
-.PHONY : Group_Project/fast
+Test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
 
 #=============================================================================
-# Target rules for targets named Group_Project_autogen
+# Target rules for targets named Test_autogen
 
 # Build rule for target.
-Group_Project_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Group_Project_autogen
-.PHONY : Group_Project_autogen
+Test_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test_autogen
+.PHONY : Test_autogen
 
 # fast build rule for target.
-Group_Project_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project_autogen.dir/build.make CMakeFiles/Group_Project_autogen.dir/build
-.PHONY : Group_Project_autogen/fast
+Test_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_autogen.dir/build.make CMakeFiles/Test_autogen.dir/build
+.PHONY : Test_autogen/fast
 
-Ellipse.o: Ellipse.cpp.o
+Test_autogen/mocs_compilation.o: Test_autogen/mocs_compilation.cpp.o
 
-.PHONY : Ellipse.o
-
-# target to build an object file
-Ellipse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Ellipse.cpp.o
-.PHONY : Ellipse.cpp.o
-
-Ellipse.i: Ellipse.cpp.i
-
-.PHONY : Ellipse.i
-
-# target to preprocess a source file
-Ellipse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Ellipse.cpp.i
-.PHONY : Ellipse.cpp.i
-
-Ellipse.s: Ellipse.cpp.s
-
-.PHONY : Ellipse.s
-
-# target to generate assembly for a file
-Ellipse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Ellipse.cpp.s
-.PHONY : Ellipse.cpp.s
-
-Group_Project_autogen/mocs_compilation.o: Group_Project_autogen/mocs_compilation.cpp.o
-
-.PHONY : Group_Project_autogen/mocs_compilation.o
+.PHONY : Test_autogen/mocs_compilation.o
 
 # target to build an object file
-Group_Project_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Group_Project_autogen/mocs_compilation.cpp.o
-.PHONY : Group_Project_autogen/mocs_compilation.cpp.o
+Test_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.o
+.PHONY : Test_autogen/mocs_compilation.cpp.o
 
-Group_Project_autogen/mocs_compilation.i: Group_Project_autogen/mocs_compilation.cpp.i
+Test_autogen/mocs_compilation.i: Test_autogen/mocs_compilation.cpp.i
 
-.PHONY : Group_Project_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-Group_Project_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Group_Project_autogen/mocs_compilation.cpp.i
-.PHONY : Group_Project_autogen/mocs_compilation.cpp.i
-
-Group_Project_autogen/mocs_compilation.s: Group_Project_autogen/mocs_compilation.cpp.s
-
-.PHONY : Group_Project_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-Group_Project_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Group_Project_autogen/mocs_compilation.cpp.s
-.PHONY : Group_Project_autogen/mocs_compilation.cpp.s
-
-Line.o: Line.cpp.o
-
-.PHONY : Line.o
-
-# target to build an object file
-Line.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Line.cpp.o
-.PHONY : Line.cpp.o
-
-Line.i: Line.cpp.i
-
-.PHONY : Line.i
+.PHONY : Test_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-Line.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Line.cpp.i
-.PHONY : Line.cpp.i
+Test_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.i
+.PHONY : Test_autogen/mocs_compilation.cpp.i
 
-Line.s: Line.cpp.s
+Test_autogen/mocs_compilation.s: Test_autogen/mocs_compilation.cpp.s
 
-.PHONY : Line.s
-
-# target to generate assembly for a file
-Line.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Line.cpp.s
-.PHONY : Line.cpp.s
-
-Rectangle.o: Rectangle.cpp.o
-
-.PHONY : Rectangle.o
-
-# target to build an object file
-Rectangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Rectangle.cpp.o
-.PHONY : Rectangle.cpp.o
-
-Rectangle.i: Rectangle.cpp.i
-
-.PHONY : Rectangle.i
-
-# target to preprocess a source file
-Rectangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Rectangle.cpp.i
-.PHONY : Rectangle.cpp.i
-
-Rectangle.s: Rectangle.cpp.s
-
-.PHONY : Rectangle.s
+.PHONY : Test_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-Rectangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Rectangle.cpp.s
-.PHONY : Rectangle.cpp.s
-
-Shape.o: Shape.cpp.o
-
-.PHONY : Shape.o
-
-# target to build an object file
-Shape.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Shape.cpp.o
-.PHONY : Shape.cpp.o
-
-Shape.i: Shape.cpp.i
-
-.PHONY : Shape.i
-
-# target to preprocess a source file
-Shape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Shape.cpp.i
-.PHONY : Shape.cpp.i
-
-Shape.s: Shape.cpp.s
-
-.PHONY : Shape.s
-
-# target to generate assembly for a file
-Shape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/Shape.cpp.s
-.PHONY : Shape.cpp.s
+Test_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.s
+.PHONY : Test_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 
@@ -296,7 +188,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -305,7 +197,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -314,8 +206,143 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Group_Project.dir/build.make CMakeFiles/Group_Project.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mainwindow.o: mainwindow.cpp.o
+
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
+src/Ellipse.o: src/Ellipse.cpp.o
+
+.PHONY : src/Ellipse.o
+
+# target to build an object file
+src/Ellipse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Ellipse.cpp.o
+.PHONY : src/Ellipse.cpp.o
+
+src/Ellipse.i: src/Ellipse.cpp.i
+
+.PHONY : src/Ellipse.i
+
+# target to preprocess a source file
+src/Ellipse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Ellipse.cpp.i
+.PHONY : src/Ellipse.cpp.i
+
+src/Ellipse.s: src/Ellipse.cpp.s
+
+.PHONY : src/Ellipse.s
+
+# target to generate assembly for a file
+src/Ellipse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Ellipse.cpp.s
+.PHONY : src/Ellipse.cpp.s
+
+src/Line.o: src/Line.cpp.o
+
+.PHONY : src/Line.o
+
+# target to build an object file
+src/Line.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Line.cpp.o
+.PHONY : src/Line.cpp.o
+
+src/Line.i: src/Line.cpp.i
+
+.PHONY : src/Line.i
+
+# target to preprocess a source file
+src/Line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Line.cpp.i
+.PHONY : src/Line.cpp.i
+
+src/Line.s: src/Line.cpp.s
+
+.PHONY : src/Line.s
+
+# target to generate assembly for a file
+src/Line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Line.cpp.s
+.PHONY : src/Line.cpp.s
+
+src/Rectangle.o: src/Rectangle.cpp.o
+
+.PHONY : src/Rectangle.o
+
+# target to build an object file
+src/Rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Rectangle.cpp.o
+.PHONY : src/Rectangle.cpp.o
+
+src/Rectangle.i: src/Rectangle.cpp.i
+
+.PHONY : src/Rectangle.i
+
+# target to preprocess a source file
+src/Rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Rectangle.cpp.i
+.PHONY : src/Rectangle.cpp.i
+
+src/Rectangle.s: src/Rectangle.cpp.s
+
+.PHONY : src/Rectangle.s
+
+# target to generate assembly for a file
+src/Rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Rectangle.cpp.s
+.PHONY : src/Rectangle.cpp.s
+
+src/Shape.o: src/Shape.cpp.o
+
+.PHONY : src/Shape.o
+
+# target to build an object file
+src/Shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Shape.cpp.o
+.PHONY : src/Shape.cpp.o
+
+src/Shape.i: src/Shape.cpp.i
+
+.PHONY : src/Shape.i
+
+# target to preprocess a source file
+src/Shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Shape.cpp.i
+.PHONY : src/Shape.cpp.i
+
+src/Shape.s: src/Shape.cpp.s
+
+.PHONY : src/Shape.s
+
+# target to generate assembly for a file
+src/Shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Shape.cpp.s
+.PHONY : src/Shape.cpp.s
 
 # Help Target
 help:
@@ -325,26 +352,29 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Group_Project_autogen"
-	@echo "... Group_Project"
-	@echo "... Ellipse.o"
-	@echo "... Ellipse.i"
-	@echo "... Ellipse.s"
-	@echo "... Group_Project_autogen/mocs_compilation.o"
-	@echo "... Group_Project_autogen/mocs_compilation.i"
-	@echo "... Group_Project_autogen/mocs_compilation.s"
-	@echo "... Line.o"
-	@echo "... Line.i"
-	@echo "... Line.s"
-	@echo "... Rectangle.o"
-	@echo "... Rectangle.i"
-	@echo "... Rectangle.s"
-	@echo "... Shape.o"
-	@echo "... Shape.i"
-	@echo "... Shape.s"
+	@echo "... Test_autogen"
+	@echo "... Test"
+	@echo "... Test_autogen/mocs_compilation.o"
+	@echo "... Test_autogen/mocs_compilation.i"
+	@echo "... Test_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
+	@echo "... src/Ellipse.o"
+	@echo "... src/Ellipse.i"
+	@echo "... src/Ellipse.s"
+	@echo "... src/Line.o"
+	@echo "... src/Line.i"
+	@echo "... src/Line.s"
+	@echo "... src/Rectangle.o"
+	@echo "... src/Rectangle.i"
+	@echo "... src/Rectangle.s"
+	@echo "... src/Shape.o"
+	@echo "... src/Shape.i"
+	@echo "... src/Shape.s"
 .PHONY : help
 
 
