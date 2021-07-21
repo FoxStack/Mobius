@@ -431,3 +431,51 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d9dcb/fast && /usr/bin/make  -f CMakeFiles/cmTC_d9dcb.dir/build.make CMakeFiles/cmTC_d9dcb.dir/build
+make[1]: Entering directory '/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9dcb.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d9dcb.dir/CheckIncludeFile.c.o -c /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d9dcb
+/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9dcb.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d9dcb.dir/CheckIncludeFile.c.o -o cmTC_d9dcb 
+make[1]: Leaving directory '/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2d654/fast && /usr/bin/make  -f CMakeFiles/cmTC_2d654.dir/build.make CMakeFiles/cmTC_2d654.dir/build
+make[1]: Entering directory '/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2d654.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++2a -o CMakeFiles/cmTC_2d654.dir/src.cxx.o -c /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2d654
+/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d654.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_2d654.dir/src.cxx.o -o cmTC_2d654 
+make[1]: Leaving directory '/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+void test(volatile std::atomic<std::int64_t> &a)
+{
+    std::int64_t v = a.load(std::memory_order_acquire);
+    while (!a.compare_exchange_strong(v, v + 1,
+                                      std::memory_order_acq_rel,
+                                      std::memory_order_acquire)) {
+        v = a.exchange(v - 1);
+    }
+    a.store(v + 1, std::memory_order_release);
+}
+
+int main(int, char **)
+{
+    void *ptr = (void*)0xffffffc0; // any random pointer
+    test(*reinterpret_cast<std::atomic<std::int64_t> *>(ptr));
+    return 0;
+}

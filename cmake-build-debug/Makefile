@@ -142,6 +142,154 @@ Mobius/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/build
 .PHONY : Mobius/fast
 
+#=============================================================================
+# Target rules for targets named Mobius_autogen
+
+# Build rule for target.
+Mobius_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mobius_autogen
+.PHONY : Mobius_autogen
+
+# fast build rule for target.
+Mobius_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius_autogen.dir/build.make CMakeFiles/Mobius_autogen.dir/build
+.PHONY : Mobius_autogen/fast
+
+Mobius_autogen/mocs_compilation.o: Mobius_autogen/mocs_compilation.cpp.o
+
+.PHONY : Mobius_autogen/mocs_compilation.o
+
+# target to build an object file
+Mobius_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.o
+.PHONY : Mobius_autogen/mocs_compilation.cpp.o
+
+Mobius_autogen/mocs_compilation.i: Mobius_autogen/mocs_compilation.cpp.i
+
+.PHONY : Mobius_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Mobius_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.i
+.PHONY : Mobius_autogen/mocs_compilation.cpp.i
+
+Mobius_autogen/mocs_compilation.s: Mobius_autogen/mocs_compilation.cpp.s
+
+.PHONY : Mobius_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Mobius_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.s
+.PHONY : Mobius_autogen/mocs_compilation.cpp.s
+
+Shape/Ellipse/Ellipse.o: Shape/Ellipse/Ellipse.cpp.o
+
+.PHONY : Shape/Ellipse/Ellipse.o
+
+# target to build an object file
+Shape/Ellipse/Ellipse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.o
+.PHONY : Shape/Ellipse/Ellipse.cpp.o
+
+Shape/Ellipse/Ellipse.i: Shape/Ellipse/Ellipse.cpp.i
+
+.PHONY : Shape/Ellipse/Ellipse.i
+
+# target to preprocess a source file
+Shape/Ellipse/Ellipse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.i
+.PHONY : Shape/Ellipse/Ellipse.cpp.i
+
+Shape/Ellipse/Ellipse.s: Shape/Ellipse/Ellipse.cpp.s
+
+.PHONY : Shape/Ellipse/Ellipse.s
+
+# target to generate assembly for a file
+Shape/Ellipse/Ellipse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.s
+.PHONY : Shape/Ellipse/Ellipse.cpp.s
+
+Shape/Line/Line.o: Shape/Line/Line.cpp.o
+
+.PHONY : Shape/Line/Line.o
+
+# target to build an object file
+Shape/Line/Line.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.o
+.PHONY : Shape/Line/Line.cpp.o
+
+Shape/Line/Line.i: Shape/Line/Line.cpp.i
+
+.PHONY : Shape/Line/Line.i
+
+# target to preprocess a source file
+Shape/Line/Line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.i
+.PHONY : Shape/Line/Line.cpp.i
+
+Shape/Line/Line.s: Shape/Line/Line.cpp.s
+
+.PHONY : Shape/Line/Line.s
+
+# target to generate assembly for a file
+Shape/Line/Line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.s
+.PHONY : Shape/Line/Line.cpp.s
+
+Shape/Rectangle/Rectangle.o: Shape/Rectangle/Rectangle.cpp.o
+
+.PHONY : Shape/Rectangle/Rectangle.o
+
+# target to build an object file
+Shape/Rectangle/Rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.o
+.PHONY : Shape/Rectangle/Rectangle.cpp.o
+
+Shape/Rectangle/Rectangle.i: Shape/Rectangle/Rectangle.cpp.i
+
+.PHONY : Shape/Rectangle/Rectangle.i
+
+# target to preprocess a source file
+Shape/Rectangle/Rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.i
+.PHONY : Shape/Rectangle/Rectangle.cpp.i
+
+Shape/Rectangle/Rectangle.s: Shape/Rectangle/Rectangle.cpp.s
+
+.PHONY : Shape/Rectangle/Rectangle.s
+
+# target to generate assembly for a file
+Shape/Rectangle/Rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.s
+.PHONY : Shape/Rectangle/Rectangle.cpp.s
+
+Shape/Shape.o: Shape/Shape.cpp.o
+
+.PHONY : Shape/Shape.o
+
+# target to build an object file
+Shape/Shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.o
+.PHONY : Shape/Shape.cpp.o
+
+Shape/Shape.i: Shape/Shape.cpp.i
+
+.PHONY : Shape/Shape.i
+
+# target to preprocess a source file
+Shape/Shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.i
+.PHONY : Shape/Shape.cpp.i
+
+Shape/Shape.s: Shape/Shape.cpp.s
+
+.PHONY : Shape/Shape.s
+
+# target to generate assembly for a file
+Shape/Shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.s
+.PHONY : Shape/Shape.cpp.s
+
 Vector/Vector.o: Vector/Vector.cpp.o
 
 .PHONY : Vector/Vector.o
@@ -196,6 +344,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mainwindow.o: mainwindow.cpp.o
+
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -204,13 +379,32 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Mobius_autogen"
 	@echo "... Mobius"
+	@echo "... Mobius_autogen/mocs_compilation.o"
+	@echo "... Mobius_autogen/mocs_compilation.i"
+	@echo "... Mobius_autogen/mocs_compilation.s"
+	@echo "... Shape/Ellipse/Ellipse.o"
+	@echo "... Shape/Ellipse/Ellipse.i"
+	@echo "... Shape/Ellipse/Ellipse.s"
+	@echo "... Shape/Line/Line.o"
+	@echo "... Shape/Line/Line.i"
+	@echo "... Shape/Line/Line.s"
+	@echo "... Shape/Rectangle/Rectangle.o"
+	@echo "... Shape/Rectangle/Rectangle.i"
+	@echo "... Shape/Rectangle/Rectangle.s"
+	@echo "... Shape/Shape.o"
+	@echo "... Shape/Shape.i"
+	@echo "... Shape/Shape.s"
 	@echo "... Vector/Vector.o"
 	@echo "... Vector/Vector.i"
 	@echo "... Vector/Vector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
 .PHONY : help
 
 

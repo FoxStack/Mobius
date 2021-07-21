@@ -1,34 +1,11 @@
-#include "Vector/Vector.cpp"
-#include <iostream>
+#include "mainwindow.h"
 
-struct Demo {
-  int foo;
-  int fi;
-};
+#include <QApplication>
 
-int main() {
-  std::cout << "Origin Test" << std::endl;
-  Vector<int> s;
-  Vector<int> p;
-  s.push_back(8);
-  s.push_back(2);
-  s.push_back(3);
-  s.push_back(6);
-  s.push_back(5);
-  s.push_back(7);
-  for (int x : s) {
-    std::cout << x << std::endl;
-  }
-  std::cout << "[S]Vector.at(0) returns: " << s.at(0) << std::endl;
-  p = s;
-  std::cout << "[P]Vector.at(0) returns: " << s.at(0) << std::endl;
-  std::cout << "[P]Vector.at(0) returns: " << s[0] << std::endl;
-  std::sort(s.begin(), s.end());
-  std::reverse(s.begin(), s.end());
-  for (int x : s) {
-    std::cout << x << std::endl;
-  }
-  Vector<Demo> d;
-  d.push_back({ 5, 5 });
-  return 0;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
