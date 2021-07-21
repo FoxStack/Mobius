@@ -20,6 +20,11 @@ cd Mobius
 git checkout main
 ```
 
+QT Won't Compile? Missing OpenGL? Install the following package.
+```
+sudo apt-get install libgl1-mesa-dev
+```
+
 ## Tech
 
 - QT - QT Design Studio
