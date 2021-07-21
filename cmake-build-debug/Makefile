@@ -58,38 +58,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project"
+CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -97,11 +86,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Group Project/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,57 +130,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Test
+# Target rules for targets named Mobius
 
 # Build rule for target.
-Test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test
-.PHONY : Test
+Mobius: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mobius
+.PHONY : Mobius
 
 # fast build rule for target.
-Test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
-.PHONY : Test/fast
+Mobius/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/build
+.PHONY : Mobius/fast
 
 #=============================================================================
-# Target rules for targets named Test_autogen
+# Target rules for targets named Mobius_autogen
 
 # Build rule for target.
-Test_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test_autogen
-.PHONY : Test_autogen
+Mobius_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mobius_autogen
+.PHONY : Mobius_autogen
 
 # fast build rule for target.
-Test_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_autogen.dir/build.make CMakeFiles/Test_autogen.dir/build
-.PHONY : Test_autogen/fast
+Mobius_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius_autogen.dir/build.make CMakeFiles/Mobius_autogen.dir/build
+.PHONY : Mobius_autogen/fast
 
-Test_autogen/mocs_compilation.o: Test_autogen/mocs_compilation.cpp.o
+Mobius_autogen/mocs_compilation.o: Mobius_autogen/mocs_compilation.cpp.o
 
-.PHONY : Test_autogen/mocs_compilation.o
+.PHONY : Mobius_autogen/mocs_compilation.o
 
 # target to build an object file
-Test_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.o
-.PHONY : Test_autogen/mocs_compilation.cpp.o
+Mobius_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.o
+.PHONY : Mobius_autogen/mocs_compilation.cpp.o
 
-Test_autogen/mocs_compilation.i: Test_autogen/mocs_compilation.cpp.i
+Mobius_autogen/mocs_compilation.i: Mobius_autogen/mocs_compilation.cpp.i
 
-.PHONY : Test_autogen/mocs_compilation.i
+.PHONY : Mobius_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-Test_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.i
-.PHONY : Test_autogen/mocs_compilation.cpp.i
+Mobius_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.i
+.PHONY : Mobius_autogen/mocs_compilation.cpp.i
 
-Test_autogen/mocs_compilation.s: Test_autogen/mocs_compilation.cpp.s
+Mobius_autogen/mocs_compilation.s: Mobius_autogen/mocs_compilation.cpp.s
 
-.PHONY : Test_autogen/mocs_compilation.s
+.PHONY : Mobius_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-Test_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.s
-.PHONY : Test_autogen/mocs_compilation.cpp.s
+Mobius_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.s
+.PHONY : Mobius_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 
@@ -188,7 +188,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -197,7 +197,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -206,7 +206,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mainwindow.o: mainwindow.cpp.o
@@ -215,7 +215,7 @@ mainwindow.o: mainwindow.cpp.o
 
 # target to build an object file
 mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/mainwindow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.o
 .PHONY : mainwindow.cpp.o
 
 mainwindow.i: mainwindow.cpp.i
@@ -224,7 +224,7 @@ mainwindow.i: mainwindow.cpp.i
 
 # target to preprocess a source file
 mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/mainwindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.i
 .PHONY : mainwindow.cpp.i
 
 mainwindow.s: mainwindow.cpp.s
@@ -233,116 +233,116 @@ mainwindow.s: mainwindow.cpp.s
 
 # target to generate assembly for a file
 mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/mainwindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
-src/Ellipse.o: src/Ellipse.cpp.o
+src/Shape/Ellipse/Ellipse.o: src/Shape/Ellipse/Ellipse.cpp.o
 
-.PHONY : src/Ellipse.o
-
-# target to build an object file
-src/Ellipse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Ellipse.cpp.o
-.PHONY : src/Ellipse.cpp.o
-
-src/Ellipse.i: src/Ellipse.cpp.i
-
-.PHONY : src/Ellipse.i
-
-# target to preprocess a source file
-src/Ellipse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Ellipse.cpp.i
-.PHONY : src/Ellipse.cpp.i
-
-src/Ellipse.s: src/Ellipse.cpp.s
-
-.PHONY : src/Ellipse.s
-
-# target to generate assembly for a file
-src/Ellipse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Ellipse.cpp.s
-.PHONY : src/Ellipse.cpp.s
-
-src/Line.o: src/Line.cpp.o
-
-.PHONY : src/Line.o
+.PHONY : src/Shape/Ellipse/Ellipse.o
 
 # target to build an object file
-src/Line.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Line.cpp.o
-.PHONY : src/Line.cpp.o
+src/Shape/Ellipse/Ellipse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Ellipse/Ellipse.cpp.o
+.PHONY : src/Shape/Ellipse/Ellipse.cpp.o
 
-src/Line.i: src/Line.cpp.i
+src/Shape/Ellipse/Ellipse.i: src/Shape/Ellipse/Ellipse.cpp.i
 
-.PHONY : src/Line.i
+.PHONY : src/Shape/Ellipse/Ellipse.i
 
 # target to preprocess a source file
-src/Line.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Line.cpp.i
-.PHONY : src/Line.cpp.i
+src/Shape/Ellipse/Ellipse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Ellipse/Ellipse.cpp.i
+.PHONY : src/Shape/Ellipse/Ellipse.cpp.i
 
-src/Line.s: src/Line.cpp.s
+src/Shape/Ellipse/Ellipse.s: src/Shape/Ellipse/Ellipse.cpp.s
 
-.PHONY : src/Line.s
+.PHONY : src/Shape/Ellipse/Ellipse.s
 
 # target to generate assembly for a file
-src/Line.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Line.cpp.s
-.PHONY : src/Line.cpp.s
+src/Shape/Ellipse/Ellipse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Ellipse/Ellipse.cpp.s
+.PHONY : src/Shape/Ellipse/Ellipse.cpp.s
 
-src/Rectangle.o: src/Rectangle.cpp.o
+src/Shape/Line/Line.o: src/Shape/Line/Line.cpp.o
 
-.PHONY : src/Rectangle.o
+.PHONY : src/Shape/Line/Line.o
 
 # target to build an object file
-src/Rectangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Rectangle.cpp.o
-.PHONY : src/Rectangle.cpp.o
+src/Shape/Line/Line.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Line/Line.cpp.o
+.PHONY : src/Shape/Line/Line.cpp.o
 
-src/Rectangle.i: src/Rectangle.cpp.i
+src/Shape/Line/Line.i: src/Shape/Line/Line.cpp.i
 
-.PHONY : src/Rectangle.i
+.PHONY : src/Shape/Line/Line.i
 
 # target to preprocess a source file
-src/Rectangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Rectangle.cpp.i
-.PHONY : src/Rectangle.cpp.i
+src/Shape/Line/Line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Line/Line.cpp.i
+.PHONY : src/Shape/Line/Line.cpp.i
 
-src/Rectangle.s: src/Rectangle.cpp.s
+src/Shape/Line/Line.s: src/Shape/Line/Line.cpp.s
 
-.PHONY : src/Rectangle.s
+.PHONY : src/Shape/Line/Line.s
 
 # target to generate assembly for a file
-src/Rectangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Rectangle.cpp.s
-.PHONY : src/Rectangle.cpp.s
+src/Shape/Line/Line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Line/Line.cpp.s
+.PHONY : src/Shape/Line/Line.cpp.s
 
-src/Shape.o: src/Shape.cpp.o
+src/Shape/Rectangle/Rectangle.o: src/Shape/Rectangle/Rectangle.cpp.o
 
-.PHONY : src/Shape.o
+.PHONY : src/Shape/Rectangle/Rectangle.o
 
 # target to build an object file
-src/Shape.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Shape.cpp.o
-.PHONY : src/Shape.cpp.o
+src/Shape/Rectangle/Rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Rectangle/Rectangle.cpp.o
+.PHONY : src/Shape/Rectangle/Rectangle.cpp.o
 
-src/Shape.i: src/Shape.cpp.i
+src/Shape/Rectangle/Rectangle.i: src/Shape/Rectangle/Rectangle.cpp.i
 
-.PHONY : src/Shape.i
+.PHONY : src/Shape/Rectangle/Rectangle.i
 
 # target to preprocess a source file
-src/Shape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Shape.cpp.i
-.PHONY : src/Shape.cpp.i
+src/Shape/Rectangle/Rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Rectangle/Rectangle.cpp.i
+.PHONY : src/Shape/Rectangle/Rectangle.cpp.i
 
-src/Shape.s: src/Shape.cpp.s
+src/Shape/Rectangle/Rectangle.s: src/Shape/Rectangle/Rectangle.cpp.s
 
-.PHONY : src/Shape.s
+.PHONY : src/Shape/Rectangle/Rectangle.s
 
 # target to generate assembly for a file
-src/Shape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Shape.cpp.s
-.PHONY : src/Shape.cpp.s
+src/Shape/Rectangle/Rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Rectangle/Rectangle.cpp.s
+.PHONY : src/Shape/Rectangle/Rectangle.cpp.s
+
+src/Shape/Shape.o: src/Shape/Shape.cpp.o
+
+.PHONY : src/Shape/Shape.o
+
+# target to build an object file
+src/Shape/Shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Shape.cpp.o
+.PHONY : src/Shape/Shape.cpp.o
+
+src/Shape/Shape.i: src/Shape/Shape.cpp.i
+
+.PHONY : src/Shape/Shape.i
+
+# target to preprocess a source file
+src/Shape/Shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Shape.cpp.i
+.PHONY : src/Shape/Shape.cpp.i
+
+src/Shape/Shape.s: src/Shape/Shape.cpp.s
+
+.PHONY : src/Shape/Shape.s
+
+# target to generate assembly for a file
+src/Shape/Shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/src/Shape/Shape.cpp.s
+.PHONY : src/Shape/Shape.cpp.s
 
 # Help Target
 help:
@@ -352,29 +352,29 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Test_autogen"
-	@echo "... Test"
-	@echo "... Test_autogen/mocs_compilation.o"
-	@echo "... Test_autogen/mocs_compilation.i"
-	@echo "... Test_autogen/mocs_compilation.s"
+	@echo "... Mobius_autogen"
+	@echo "... Mobius"
+	@echo "... Mobius_autogen/mocs_compilation.o"
+	@echo "... Mobius_autogen/mocs_compilation.i"
+	@echo "... Mobius_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
-	@echo "... src/Ellipse.o"
-	@echo "... src/Ellipse.i"
-	@echo "... src/Ellipse.s"
-	@echo "... src/Line.o"
-	@echo "... src/Line.i"
-	@echo "... src/Line.s"
-	@echo "... src/Rectangle.o"
-	@echo "... src/Rectangle.i"
-	@echo "... src/Rectangle.s"
-	@echo "... src/Shape.o"
-	@echo "... src/Shape.i"
-	@echo "... src/Shape.s"
+	@echo "... src/Shape/Ellipse/Ellipse.o"
+	@echo "... src/Shape/Ellipse/Ellipse.i"
+	@echo "... src/Shape/Ellipse/Ellipse.s"
+	@echo "... src/Shape/Line/Line.o"
+	@echo "... src/Shape/Line/Line.i"
+	@echo "... src/Shape/Line/Line.s"
+	@echo "... src/Shape/Rectangle/Rectangle.o"
+	@echo "... src/Shape/Rectangle/Rectangle.i"
+	@echo "... src/Shape/Rectangle/Rectangle.s"
+	@echo "... src/Shape/Shape.o"
+	@echo "... src/Shape/Shape.i"
+	@echo "... src/Shape/Shape.s"
 .PHONY : help
 
 

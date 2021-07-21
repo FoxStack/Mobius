@@ -1,18 +1,18 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
+#include "src/Shape/Ellipse/Ellipse.h"
+#include "src/Shape/Line/Line.h"
+#include "src/Shape/Rectangle/Rectangle.h"
+#include "src/Shape/Shape.h"
+#include <QDialog>
 #include <QFile>
 #include <QFileDialog>
-#include <QTextStream>
+#include <QMainWindow>
 #include <QMessageBox>
-#include <QDialog>
-#include <QtGui>
+#include <QTextStream>
 #include <QtCore>
-#include "src/Shape.h"
-#include "src/Rectangle.h"
-#include "src/Ellipse.h"
-#include "src/Line.h"
+#include <QtGui>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
