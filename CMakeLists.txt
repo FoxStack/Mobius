@@ -16,14 +16,14 @@ add_executable(${PROJECT_NAME}
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        src/Shape/Shape.cpp
-        src/Shape/Shape.h
-        src/Shape/Ellipse/Ellipse.cpp
-        src/Shape/Ellipse/Ellipse.h
-        src/Shape/Rectangle/Rectangle.cpp
-        src/Shape/Rectangle/Rectangle.h
-        src/Shape/Line/Line.cpp
-        src/Shape/Line/Line.h
+        Shape/Shape.cpp
+        Shape/Shape.h
+        Shape/Ellipse/Ellipse.cpp
+        Shape/Ellipse/Ellipse.h
+        Shape/Rectangle/Rectangle.cpp
+        Shape/Rectangle/Rectangle.h
+        Shape/Line/Line.cpp
+        Shape/Line/Line.h
 )
 
 if (NOT CMAKE_PREFIX_PATH)
