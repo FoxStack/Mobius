@@ -19,7 +19,7 @@ Vector<T>::Vector():_size(0),_capacity(0),_values(0) {}
  * @param size
  */
 template <typename T>
-inline Vector<T>::Vector(int size):_size(size),_capacity(size),_values(new T[size]) {
+Vector<T>::Vector(int size):_size(size),_capacity(size),_values(new T[size]) {
   for(std::size_t i=0; i<_size; i++){_values[i] = T();}
 }
 
@@ -29,7 +29,7 @@ inline Vector<T>::Vector(int size):_size(size),_capacity(size),_values(new T[siz
  * @param v
  */
 template <typename T>
-inline Vector<T>::Vector(const Vector &v):_size(v._size),_capacity(v._capacity),_values(new T[v._size]) {
+Vector<T>::Vector(const Vector &v):_size(v._size),_capacity(v._capacity),_values(new T[v._size]) {
   for(std::size_t i=0; i<v._size; i++){_values[i] = v._values[i];}
 }
 
@@ -41,7 +41,7 @@ inline Vector<T>::Vector(const Vector &v):_size(v._size),_capacity(v._capacity),
  * @return
  */
 template <typename T>
-inline Vector<T>& Vector<T>::operator=(const Vector<T> &v){
+Vector<T>& Vector<T>::operator=(const Vector<T> &v){
   if(this == &v) return *this;
   if(v._size <= _capacity){
     for(std::size_t i=0; i<v._size; i++){
@@ -78,7 +78,7 @@ Vector<T>::~Vector() {
  * @param n
  */
 template <typename T>
-inline void Vector<T>::reserve(size_t n) {
+void Vector<T>::reserve(size_t n) {
   if(n<_capacity) return;
   T *p = new T[n];
   for(std::size_t i=0; i<_size; ++i){
@@ -96,7 +96,7 @@ inline void Vector<T>::reserve(size_t n) {
  * @param val
  */
 template <typename T>
-inline void Vector<T>::resize(int size, T val) {
+void Vector<T>::resize(int size, T val) {
   reserve(size);
   for(std::size_t i=_size; i< size; ++i){
     _values[i] = T();
@@ -110,7 +110,7 @@ inline void Vector<T>::resize(int size, T val) {
  * @return
  */
 template <typename T>
-inline bool Vector<T>::empty() const {
+bool Vector<T>::empty() const {
   return (_size == 0);
 }
 
@@ -120,7 +120,7 @@ inline bool Vector<T>::empty() const {
  * @return
  */
 template <typename T>
-inline std::size_t Vector<T>::capacity() const {
+std::size_t Vector<T>::capacity() const {
   return _capacity;
 }
 
@@ -130,7 +130,7 @@ inline std::size_t Vector<T>::capacity() const {
  * @param val
  */
 template <typename T>
-inline void Vector<T>::push_back(const T &val) {
+void Vector<T>::push_back(const T &val) {
   if(_capacity == 0){reserve(8);}
   if(_size == _capacity){reserve(2 * _capacity);}
   _values[_size] = val;
@@ -142,7 +142,7 @@ inline void Vector<T>::push_back(const T &val) {
  * @tparam T
  */
 template <typename T>
-inline void Vector<T>::pop_back() {
+void Vector<T>::pop_back() {
   if(_size == 0) throw std::invalid_argument("Vector is empty. Nothing to pop.");
   delete _values[_size-1];
   --_size;
@@ -155,7 +155,7 @@ inline void Vector<T>::pop_back() {
  * @return
  */
 template <typename T>
-inline T &Vector<T>::at(int i) {
+T &Vector<T>::at(int i) {
   if(i<0||_size<=i){throw std::out_of_range ("Range Error");}
   return _values[i];
 }
@@ -167,7 +167,7 @@ inline T &Vector<T>::at(int i) {
  * @return
  */
 template <typename T>
-inline const T &Vector<T>::at(int i) const{
+const T &Vector<T>::at(int i) const{
   if(i<0||_size<=i){throw std::out_of_range("Range Error");}
   return _values[i];
 }
@@ -179,7 +179,7 @@ inline const T &Vector<T>::at(int i) const{
  * @return
  */
 template <typename T>
-inline T &Vector<T>::operator[](int i) {
+T &Vector<T>::operator[](int i) {
   return _values[i];
 }
 
@@ -190,7 +190,7 @@ inline T &Vector<T>::operator[](int i) {
  * @return
  */
 template <typename T>
-inline const T &Vector<T>::operator[](int i) const{
+const T &Vector<T>::operator[](int i) const{
   return _values[i];
 }
 
@@ -200,6 +200,6 @@ inline const T &Vector<T>::operator[](int i) const{
  * @return
  */
 template <typename T>
-inline const T* Vector<T>::data() {
+const T* Vector<T>::data() {
   return _values;
 }

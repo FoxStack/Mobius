@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 
 #include <QApplication>
+#include "./Vector/Vector.cpp"
 
 int main(int argc, char *argv[])
 {
