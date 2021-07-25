@@ -19,7 +19,9 @@ public:
     void SetFontFamily(QString fontFamily);
     void SetFontSize(int fSize);
     void SetFontStyle(QFont::Style style);
-    //almost finished, few more methods needed
+    void SetFontWeight(QFont::Weight weight);
+    void SetTextAlignment(Qt::AlignmentFlag alignment);
+    void SetTextColor(Qt::GlobalColor textColor);
 
 private:
     int l{};
@@ -27,6 +29,7 @@ private:
     Coord textCoord{};
     QString str{};
     QFont font{};
+    Qt::AlignmentFlag alignmentFlag{};
 };
 
 

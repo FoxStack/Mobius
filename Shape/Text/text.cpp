@@ -9,8 +9,14 @@ Text::~Text() = default;
 
 void Text::Draw()
 {
+    //pass the font object to the qpainter
     qPainter->setFont(font); //gets all font details (bold, font type, size, ...)
-    qPainter->drawText(textCoord.x, textCoord.y, str);
+
+    //construct a rectangle that bounds the text with the text object's attributes
+    QRectF rectForText(textCoord.x, textCoord.y, w, l);
+
+    //draw text with qpainter passing the rectangle and alignment
+    qPainter->drawText(rectForText, alignmentFlag, str);
 }
 
 void Text::Move(Coord coord)
@@ -58,4 +64,20 @@ void Text::SetFontSize(int fSize)
 void Text::SetFontStyle(QFont::Style style)
 {
     font.setStyle(style);
+}
+
+void Text::SetFontWeight(QFont::Weight weight)
+{
+    font.setWeight(weight);
+}
+
+void Text::SetTextAlignment(Qt::AlignmentFlag alignment)
+{
+    alignmentFlag = alignment;
+}
+
+void Text::SetTextColor(Qt::GlobalColor textColor)
+{
+    QColor color(textColor);
+    qPen.setColor(color);
 }
