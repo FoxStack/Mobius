@@ -28,8 +28,7 @@ add_executable(${PROJECT_NAME}
         Shape/Rectangle/Rectangle.h
         Shape/Line/Line.cpp
         Shape/Line/Line.h
-        Vector/Vector.cpp
-        Vector/Vector.h
+        Vector/Vector.hpp
         Vector/Iterator/iterator.h
         Vector/Iterator/reverse.h
         UI/Login/login.cpp

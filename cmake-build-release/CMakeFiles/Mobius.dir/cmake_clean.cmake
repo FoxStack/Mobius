@@ -11,7 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Mobius.dir/UI/Login/login.cpp.o"
   "CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o"
   "CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o"
-  "CMakeFiles/Mobius.dir/Vector/Vector.cpp.o"
   "CMakeFiles/Mobius.dir/main.cpp.o"
   "CMakeFiles/Mobius.dir/mainwindow.cpp.o"
   "Mobius"

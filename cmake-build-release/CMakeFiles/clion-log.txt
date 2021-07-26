@@ -22,14 +22,14 @@ CMake Deprecation Warning at cmake-build-release/Lib/firebase-cpp-sdk/external/s
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external
-[ 22%] Built target GoogleUtilities
+[ 22%] Built target abseil-cpp
 [ 22%] Built target boringssl
-[ 33%] Built target abseil-cpp
-[ 64%] Built target c-ares
-[ 66%] Built target protobuf
-[ 54%] Built target googletest
-[ 80%] Built target leveldb
-[ 88%] Built target grpc
+[ 44%] Built target googletest
+[ 44%] Built target protobuf
+[ 55%] Built target GoogleUtilities
+[ 66%] Built target grpc
+[ 77%] Built target c-ares
+[ 88%] Built target leveldb
 [100%] Built target nanopb
 CMake Deprecation Warning at cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
   Compatibility with CMake < 2.8.12 will be removed from a future version of

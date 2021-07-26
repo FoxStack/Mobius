@@ -223,7 +223,7 @@
 			"GRVPDA76LR/moc_reverse.cpp"
 		],
 		[
-			"/home/raf/Desktop/Mobius/Vector/Vector.h",
+			"/home/raf/Desktop/Mobius/Vector/Vector.hpp",
 			"MU",
 			"4P65D5OEWC/moc_Vector.cpp"
 		],
@@ -301,7 +301,6 @@
 			"/home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.cpp",
 			"MU"
 		],
-		[ "/home/raf/Desktop/Mobius/Vector/Vector.cpp", "MU" ],
 		[ "/home/raf/Desktop/Mobius/main.cpp", "MU" ],
 		[ "/home/raf/Desktop/Mobius/mainwindow.cpp", "MU" ]
 	],

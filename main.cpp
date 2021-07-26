@@ -1,11 +1,16 @@
 #include "mainwindow.h"
 
+#include "./Vector/Vector.hpp"
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
 
 int main(int argc, char *argv[])
 {
+
+    Vector<int> x;
+    x.push_back(1);
+
     QApplication a(argc, argv);
 
     QTranslator translator;

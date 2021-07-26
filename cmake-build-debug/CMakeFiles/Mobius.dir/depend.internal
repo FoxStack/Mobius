@@ -1418,22 +1418,17 @@ CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o
  /home/raf/Qt/6.1.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h
  /home/raf/Qt/6.1.2/gcc_64/include/QtWidgets/qwidget.h
  Mobius_autogen/include/ui_testimoniallistview.h
-CMakeFiles/Mobius.dir/Vector/Vector.cpp.o
- /home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
- /home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
- /home/raf/Desktop/Mobius/Vector/Vector.cpp
- /home/raf/Desktop/Mobius/Vector/Vector.h
 CMakeFiles/Mobius.dir/main.cpp.o
  /home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.h
  /home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
  /home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
- /home/raf/Desktop/Mobius/Vector/Vector.cpp
- /home/raf/Desktop/Mobius/Vector/Vector.h
+ /home/raf/Desktop/Mobius/Vector/Vector.hpp
  /home/raf/Desktop/Mobius/main.cpp
  /home/raf/Desktop/Mobius/mainwindow.h
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QDeadlineTimer
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QEvent
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QList
+ /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QLocale
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QMargins
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QObject
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QRect
@@ -1441,6 +1436,7 @@ CMakeFiles/Mobius.dir/main.cpp.o
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QSize
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QSizeF
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QStringList
+ /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QTranslator
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QtCore
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QtCoreDepends
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/qabstractanimation.h
