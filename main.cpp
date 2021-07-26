@@ -7,10 +7,6 @@
 
 int main(int argc, char *argv[])
 {
-
-    Vector<int> x;
-    x.push_back(1);
-
     QApplication a(argc, argv);
 
     QTranslator translator;
