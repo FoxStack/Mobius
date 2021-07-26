@@ -13,6 +13,8 @@ set(QT_VERSION 6)
 set(REQUIRED_LIBS Core Gui Widgets)
 set(REQUIRED_LIBS_QUALIFIED Qt6::Core Qt6::Gui Qt6::Widgets firebase_auth firebase_database firebase_app)
 
+set(TS_FILES Mobius_en_US.ts)
+
 add_executable(${PROJECT_NAME}
         main.cpp
         mainwindow.cpp
@@ -30,6 +32,20 @@ add_executable(${PROJECT_NAME}
         Vector/Vector.h
         Vector/Iterator/iterator.h
         Vector/Iterator/reverse.h
+        UI/Login/login.cpp
+        UI/Login/login.h
+        UI/Login/login.ui
+        UI/Contact/contactus.cpp
+        UI/Contact/contactus.h
+        UI/Contact/contactus.ui
+        UI/Testimonial/Add/addtestimonialdialog.cpp
+        UI/Testimonial/Add/addtestimonialdialog.h
+        UI/Testimonial/Add/addtestimonialdialog.ui
+        UI/Testimonial/List/testimoniallistview.cpp
+        UI/Testimonial/List/testimoniallistview.h
+        UI/Testimonial/List/testimoniallistview.ui
+        UI/Testimonial/showtestimonials.ui
+        ${TS_FILES}
 )
 
 if (NOT CMAKE_PREFIX_PATH)

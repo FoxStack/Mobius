@@ -40,6 +40,12 @@ Under Clion > Settings > Cmake you can add the following Cmake params, just make
 ```
 Without this Firebase will not build properly. (I would know I spent hours making it work)
 
+Cmake Debug and Prod builds must be removed when repulling. Then clear cache and build.
+It will automatically pull extra firebase libs.
+```
+Clion > File > Reload Cmake Project
+~Run Build
+```
 ## Tech
 
 - QT - QT Design Studio

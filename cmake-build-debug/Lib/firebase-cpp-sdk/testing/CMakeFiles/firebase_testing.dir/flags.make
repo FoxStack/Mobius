@@ -6,5 +6,5 @@ CXX_DEFINES = -D_GLIBCXX_USE_CXX11_ABI=0
 
 CXX_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/generated/testing -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers/include -I/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk -I/home/raf/Desktop/Mobius/cmake-build-debug/generated -isystem /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/include -isystem /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest -isystem /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googlemock/include -isystem /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googlemock
 
-CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -g -std=gnu++11
+CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -g -pthread -std=gnu++11
 

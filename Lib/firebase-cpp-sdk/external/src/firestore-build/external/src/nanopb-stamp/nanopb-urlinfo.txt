@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/nanopb/nanopb/archive/nanopb-0.3.9.8.tar.gz'
-tag='SHA256=2047ff111ca408c9b3c06a6774b723c1b1c9e31dc2320c61ee3abce93359eb30'

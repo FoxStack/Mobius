@@ -6,5 +6,5 @@ CXX_DEFINES = -D_GLIBCXX_USE_CXX11_ABI=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__
 
 CXX_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp
 
-CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0  -g -fPIC -Wall -Wextra -Wcast-qual -Wconversion-null -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -Wno-missing-field-initializers -Wno-sign-compare -std=c++11
+CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0  -g -fPIC -Wall -Wextra -Wcast-qual -Wconversion-null -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -Wno-missing-field-initializers -Wno-sign-compare -pthread -std=c++11
 

@@ -1,6 +1,6 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz" ABSOLUTE)
+get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz" ABSOLUTE)
 get_filename_component(directory "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb" ABSOLUTE)
 
 message(STATUS "extracting...

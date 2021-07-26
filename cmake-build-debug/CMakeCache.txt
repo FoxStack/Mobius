@@ -740,6 +740,9 @@ Qt6GuiTools_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui
 
+//The directory containing a CMake configuration file for Qt6LinguistTools.
+Qt6LinguistTools_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6LinguistTools
+
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools
 
@@ -1196,10 +1199,10 @@ leveldb_BINARY_DIR:STATIC=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebas
 leveldb_SOURCE_DIR:STATIC=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb
 
 //Dependencies for the target
-libprotobuf-lite_LIB_DEPENDS:STATIC=general;-lpthread;
+libprotobuf-lite_LIB_DEPENDS:STATIC=general;-pthread;
 
 //Dependencies for the target
-libprotobuf_LIB_DEPENDS:STATIC=general;-lpthread;
+libprotobuf_LIB_DEPENDS:STATIC=general;-pthread;
 
 //Dependencies for the target
 libprotoc_LIB_DEPENDS:STATIC=general;libprotobuf;

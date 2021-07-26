@@ -3394,33 +3394,6 @@ src/remote/grpc_root_certificate_finder_generated.cc.s:
 	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.s
 .PHONY : src/remote/grpc_root_certificate_finder_generated.cc.s
 
-src/remote/grpc_root_certificates_generated.o: src/remote/grpc_root_certificates_generated.cc.o
-
-.PHONY : src/remote/grpc_root_certificates_generated.o
-
-# target to build an object file
-src/remote/grpc_root_certificates_generated.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificates_generated.cc.o
-.PHONY : src/remote/grpc_root_certificates_generated.cc.o
-
-src/remote/grpc_root_certificates_generated.i: src/remote/grpc_root_certificates_generated.cc.i
-
-.PHONY : src/remote/grpc_root_certificates_generated.i
-
-# target to preprocess a source file
-src/remote/grpc_root_certificates_generated.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificates_generated.cc.i
-.PHONY : src/remote/grpc_root_certificates_generated.cc.i
-
-src/remote/grpc_root_certificates_generated.s: src/remote/grpc_root_certificates_generated.cc.s
-
-.PHONY : src/remote/grpc_root_certificates_generated.s
-
-# target to generate assembly for a file
-src/remote/grpc_root_certificates_generated.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificates_generated.cc.s
-.PHONY : src/remote/grpc_root_certificates_generated.cc.s
-
 src/remote/grpc_stream.o: src/remote/grpc_stream.cc.o
 
 .PHONY : src/remote/grpc_stream.o
@@ -4814,9 +4787,6 @@ help:
 	@echo "... src/remote/grpc_root_certificate_finder_generated.o"
 	@echo "... src/remote/grpc_root_certificate_finder_generated.i"
 	@echo "... src/remote/grpc_root_certificate_finder_generated.s"
-	@echo "... src/remote/grpc_root_certificates_generated.o"
-	@echo "... src/remote/grpc_root_certificates_generated.i"
-	@echo "... src/remote/grpc_root_certificates_generated.s"
 	@echo "... src/remote/grpc_stream.o"
 	@echo "... src/remote/grpc_stream.i"
 	@echo "... src/remote/grpc_stream.s"

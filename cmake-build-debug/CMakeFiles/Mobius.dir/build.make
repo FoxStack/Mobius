@@ -180,6 +180,58 @@ CMakeFiles/Mobius.dir/Vector/Vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mobius.dir/Vector/Vector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Vector/Vector.cpp -o CMakeFiles/Mobius.dir/Vector/Vector.cpp.s
 
+CMakeFiles/Mobius.dir/UI/Login/login.cpp.o: CMakeFiles/Mobius.dir/flags.make
+CMakeFiles/Mobius.dir/UI/Login/login.cpp.o: ../UI/Login/login.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Mobius.dir/UI/Login/login.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Login/login.cpp.o -c /home/raf/Desktop/Mobius/UI/Login/login.cpp
+
+CMakeFiles/Mobius.dir/UI/Login/login.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mobius.dir/UI/Login/login.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/UI/Login/login.cpp > CMakeFiles/Mobius.dir/UI/Login/login.cpp.i
+
+CMakeFiles/Mobius.dir/UI/Login/login.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mobius.dir/UI/Login/login.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/UI/Login/login.cpp -o CMakeFiles/Mobius.dir/UI/Login/login.cpp.s
+
+CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o: CMakeFiles/Mobius.dir/flags.make
+CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o: ../UI/Contact/contactus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o -c /home/raf/Desktop/Mobius/UI/Contact/contactus.cpp
+
+CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/UI/Contact/contactus.cpp > CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.i
+
+CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/UI/Contact/contactus.cpp -o CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.s
+
+CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: CMakeFiles/Mobius.dir/flags.make
+CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: ../UI/Testimonial/Add/addtestimonialdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o -c /home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.cpp
+
+CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.cpp > CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.i
+
+CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.cpp -o CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.s
+
+CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: CMakeFiles/Mobius.dir/flags.make
+CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: ../UI/Testimonial/List/testimoniallistview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o -c /home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.cpp
+
+CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.cpp > CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.i
+
+CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.cpp -o CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.s
+
 # Object files for target Mobius
 Mobius_OBJECTS = \
 "CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.o" \
@@ -189,7 +241,11 @@ Mobius_OBJECTS = \
 "CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.o" \
 "CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.o" \
 "CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.o" \
-"CMakeFiles/Mobius.dir/Vector/Vector.cpp.o"
+"CMakeFiles/Mobius.dir/Vector/Vector.cpp.o" \
+"CMakeFiles/Mobius.dir/UI/Login/login.cpp.o" \
+"CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o" \
+"CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o" \
+"CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o"
 
 # External object files for target Mobius
 Mobius_EXTERNAL_OBJECTS =
@@ -202,6 +258,10 @@ Mobius: CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.o
 Mobius: CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.o
 Mobius: CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.o
 Mobius: CMakeFiles/Mobius.dir/Vector/Vector.cpp.o
+Mobius: CMakeFiles/Mobius.dir/UI/Login/login.cpp.o
+Mobius: CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o
+Mobius: CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o
+Mobius: CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o
 Mobius: CMakeFiles/Mobius.dir/build.make
 Mobius: /home/raf/Qt/6.1.2/gcc_64/lib/libQt6Widgets.so.6.1.2
 Mobius: Lib/firebase-cpp-sdk/auth/libfirebase_auth.a
@@ -223,7 +283,7 @@ Mobius: Lib/firebase-cpp-sdk/external/src/libuv-build/libuv_a.a
 Mobius: /usr/lib/x86_64-linux-gnu/libssl.a
 Mobius: /usr/lib/x86_64-linux-gnu/libcrypto.a
 Mobius: CMakeFiles/Mobius.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Mobius"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Mobius"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mobius.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

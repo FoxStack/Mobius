@@ -56,7 +56,7 @@ add_library(CURL::libcurl STATIC IMPORTED)
 set_target_properties(CURL::libcurl PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "CURL_STATICLIB"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "dl;-lpthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB"
+  INTERFACE_LINK_LIBRARIES "dl;-pthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB"
 )
 
 # Create imported target CURL::curl

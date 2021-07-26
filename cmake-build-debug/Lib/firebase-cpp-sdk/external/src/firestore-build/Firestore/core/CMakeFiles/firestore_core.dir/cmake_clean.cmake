@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "../../../firestore/Firestore/core/src/remote/grpc_root_certificates_generated.cc"
-  "../../../firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h"
   "CMakeFiles/firestore_core.dir/src/api/collection_reference.cc.o"
   "CMakeFiles/firestore_core.dir/src/api/document_change.cc.o"
   "CMakeFiles/firestore_core.dir/src/api/document_reference.cc.o"
@@ -115,7 +113,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/firestore_core.dir/src/remote/grpc_connection.cc.o"
   "CMakeFiles/firestore_core.dir/src/remote/grpc_nanopb.cc.o"
   "CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.o"
-  "CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificates_generated.cc.o"
   "CMakeFiles/firestore_core.dir/src/remote/grpc_stream.cc.o"
   "CMakeFiles/firestore_core.dir/src/remote/grpc_streaming_reader.cc.o"
   "CMakeFiles/firestore_core.dir/src/remote/grpc_unary_call.cc.o"

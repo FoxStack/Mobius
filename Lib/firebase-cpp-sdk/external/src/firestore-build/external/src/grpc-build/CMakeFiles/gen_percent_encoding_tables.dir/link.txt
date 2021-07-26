@@ -1,1 +1,0 @@
-/usr/bin/c++  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0  -std=c++11 -g CMakeFiles/gen_percent_encoding_tables.dir/tools/codegen/core/gen_percent_encoding_tables.cc.o -o gen_percent_encoding_tables  third_party/protobuf/libprotobufd.a -ldl -lrt -lm -lpthread -pthread 

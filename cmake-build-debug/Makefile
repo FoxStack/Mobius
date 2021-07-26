@@ -3599,6 +3599,114 @@ Shape/Shape.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.s
 .PHONY : Shape/Shape.cpp.s
 
+UI/Contact/contactus.o: UI/Contact/contactus.cpp.o
+
+.PHONY : UI/Contact/contactus.o
+
+# target to build an object file
+UI/Contact/contactus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o
+.PHONY : UI/Contact/contactus.cpp.o
+
+UI/Contact/contactus.i: UI/Contact/contactus.cpp.i
+
+.PHONY : UI/Contact/contactus.i
+
+# target to preprocess a source file
+UI/Contact/contactus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.i
+.PHONY : UI/Contact/contactus.cpp.i
+
+UI/Contact/contactus.s: UI/Contact/contactus.cpp.s
+
+.PHONY : UI/Contact/contactus.s
+
+# target to generate assembly for a file
+UI/Contact/contactus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.s
+.PHONY : UI/Contact/contactus.cpp.s
+
+UI/Login/login.o: UI/Login/login.cpp.o
+
+.PHONY : UI/Login/login.o
+
+# target to build an object file
+UI/Login/login.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Login/login.cpp.o
+.PHONY : UI/Login/login.cpp.o
+
+UI/Login/login.i: UI/Login/login.cpp.i
+
+.PHONY : UI/Login/login.i
+
+# target to preprocess a source file
+UI/Login/login.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Login/login.cpp.i
+.PHONY : UI/Login/login.cpp.i
+
+UI/Login/login.s: UI/Login/login.cpp.s
+
+.PHONY : UI/Login/login.s
+
+# target to generate assembly for a file
+UI/Login/login.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Login/login.cpp.s
+.PHONY : UI/Login/login.cpp.s
+
+UI/Testimonial/Add/addtestimonialdialog.o: UI/Testimonial/Add/addtestimonialdialog.cpp.o
+
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.o
+
+# target to build an object file
+UI/Testimonial/Add/addtestimonialdialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.cpp.o
+
+UI/Testimonial/Add/addtestimonialdialog.i: UI/Testimonial/Add/addtestimonialdialog.cpp.i
+
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.i
+
+# target to preprocess a source file
+UI/Testimonial/Add/addtestimonialdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.i
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.cpp.i
+
+UI/Testimonial/Add/addtestimonialdialog.s: UI/Testimonial/Add/addtestimonialdialog.cpp.s
+
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.s
+
+# target to generate assembly for a file
+UI/Testimonial/Add/addtestimonialdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.s
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.cpp.s
+
+UI/Testimonial/List/testimoniallistview.o: UI/Testimonial/List/testimoniallistview.cpp.o
+
+.PHONY : UI/Testimonial/List/testimoniallistview.o
+
+# target to build an object file
+UI/Testimonial/List/testimoniallistview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o
+.PHONY : UI/Testimonial/List/testimoniallistview.cpp.o
+
+UI/Testimonial/List/testimoniallistview.i: UI/Testimonial/List/testimoniallistview.cpp.i
+
+.PHONY : UI/Testimonial/List/testimoniallistview.i
+
+# target to preprocess a source file
+UI/Testimonial/List/testimoniallistview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.i
+.PHONY : UI/Testimonial/List/testimoniallistview.cpp.i
+
+UI/Testimonial/List/testimoniallistview.s: UI/Testimonial/List/testimoniallistview.cpp.s
+
+.PHONY : UI/Testimonial/List/testimoniallistview.s
+
+# target to generate assembly for a file
+UI/Testimonial/List/testimoniallistview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.s
+.PHONY : UI/Testimonial/List/testimoniallistview.cpp.s
+
 Vector/Vector.o: Vector/Vector.cpp.o
 
 .PHONY : Vector/Vector.o
@@ -3960,6 +4068,18 @@ help:
 	@echo "... Shape/Shape.o"
 	@echo "... Shape/Shape.i"
 	@echo "... Shape/Shape.s"
+	@echo "... UI/Contact/contactus.o"
+	@echo "... UI/Contact/contactus.i"
+	@echo "... UI/Contact/contactus.s"
+	@echo "... UI/Login/login.o"
+	@echo "... UI/Login/login.i"
+	@echo "... UI/Login/login.s"
+	@echo "... UI/Testimonial/Add/addtestimonialdialog.o"
+	@echo "... UI/Testimonial/Add/addtestimonialdialog.i"
+	@echo "... UI/Testimonial/Add/addtestimonialdialog.s"
+	@echo "... UI/Testimonial/List/testimoniallistview.o"
+	@echo "... UI/Testimonial/List/testimoniallistview.i"
+	@echo "... UI/Testimonial/List/testimoniallistview.s"
 	@echo "... Vector/Vector.o"
 	@echo "... Vector/Vector.i"
 	@echo "... Vector/Vector.s"

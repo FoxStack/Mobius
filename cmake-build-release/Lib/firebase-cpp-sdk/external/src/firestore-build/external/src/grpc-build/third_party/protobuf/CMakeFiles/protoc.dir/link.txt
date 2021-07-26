@@ -1,1 +1,1 @@
-/usr/bin/c++  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0  -O3 -DNDEBUG -rdynamic CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o -o protoc-3.11.2.0  -Wl,-rpath,:::::::::::::: libprotoc.a libprotobuf.a -lpthread 
+/usr/bin/c++  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0  -O3 -DNDEBUG -rdynamic CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o -o protoc-3.11.2.0  -Wl,-rpath,:::::::::::::: libprotoc.a libprotobuf.a -pthread 

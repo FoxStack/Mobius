@@ -16674,6 +16674,9 @@
 		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/testing/ticker_desktop.h">
 			<Option target="firebase_testing"/>
 		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Mobius_en_US.ts">
+			<Option target="Mobius"/>
+		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/Shape/Ellipse/Ellipse.cpp">
 			<Option target="Mobius"/>
 		</Unit>
@@ -16696,6 +16699,45 @@
 			<Option target="Mobius"/>
 		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/Shape/Shape.h">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Contact/contactus.cpp">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Contact/contactus.h">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Contact/contactus.ui">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Login/login.cpp">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Login/login.h">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Login/login.ui">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.cpp">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.h">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.ui">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.cpp">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.h">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.ui">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/UI/Testimonial/showtestimonials.ui">
 			<Option target="Mobius"/>
 		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/Vector/Iterator/iterator.h">
@@ -24622,15 +24664,6 @@
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificate_finder_generated.cc">
 			<Option target="firestore_core"/>
 		</Unit>
-		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.cc">
-			<Option target="firestore_core"/>
-		</Unit>
-		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h">
-			<Option target="firestore_core"/>
-		</Unit>
-		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h.rule">
-			<Option target="firestore_core"/>
-		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_stream.cc">
 			<Option target="firestore_core"/>
 		</Unit>
@@ -26072,9 +26105,6 @@
 			<Option virtualFolder="CMake Files\cmake-build-debug\Lib\firebase-cpp-sdk\external\src\curl\"/>
 		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/curl/CMake/CurlSymbolHiding.cmake">
-			<Option virtualFolder="CMake Files\cmake-build-debug\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
-		</Unit>
-		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/curl/CMake/CurlTests.c">
 			<Option virtualFolder="CMake Files\cmake-build-debug\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
 		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/curl/CMake/Macros.cmake">

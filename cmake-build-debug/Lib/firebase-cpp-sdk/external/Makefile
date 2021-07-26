@@ -130,108 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named curl
+# Target rules for targets named googletest
 
 # Build rule for target.
-curl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 curl
-.PHONY : curl
+googletest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest
+.PHONY : googletest
 
 # fast build rule for target.
-curl/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/curl.dir/build.make CMakeFiles/curl.dir/build
-.PHONY : curl/fast
-
-#=============================================================================
-# Target rules for targets named firestore
-
-# Build rule for target.
-firestore: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore
-.PHONY : firestore
-
-# fast build rule for target.
-firestore/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/build
-.PHONY : firestore/fast
-
-#=============================================================================
-# Target rules for targets named flatbuffers
-
-# Build rule for target.
-flatbuffers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatbuffers
-.PHONY : flatbuffers
-
-# fast build rule for target.
-flatbuffers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/flatbuffers.dir/build.make CMakeFiles/flatbuffers.dir/build
-.PHONY : flatbuffers/fast
-
-#=============================================================================
-# Target rules for targets named boringssl
-
-# Build rule for target.
-boringssl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boringssl
-.PHONY : boringssl
-
-# fast build rule for target.
-boringssl/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/boringssl.dir/build.make CMakeFiles/boringssl.dir/build
-.PHONY : boringssl/fast
-
-#=============================================================================
-# Target rules for targets named libuv
-
-# Build rule for target.
-libuv: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libuv
-.PHONY : libuv
-
-# fast build rule for target.
-libuv/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libuv.dir/build.make CMakeFiles/libuv.dir/build
-.PHONY : libuv/fast
-
-#=============================================================================
-# Target rules for targets named leveldb
-
-# Build rule for target.
-leveldb: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leveldb
-.PHONY : leveldb
-
-# fast build rule for target.
-leveldb/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leveldb.dir/build.make CMakeFiles/leveldb.dir/build
-.PHONY : leveldb/fast
-
-#=============================================================================
-# Target rules for targets named nanopb
-
-# Build rule for target.
-nanopb: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nanopb
-.PHONY : nanopb
-
-# fast build rule for target.
-nanopb/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nanopb.dir/build.make CMakeFiles/nanopb.dir/build
-.PHONY : nanopb/fast
-
-#=============================================================================
-# Target rules for targets named uWebSockets
-
-# Build rule for target.
-uWebSockets: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uWebSockets
-.PHONY : uWebSockets
-
-# fast build rule for target.
-uWebSockets/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uWebSockets.dir/build.make CMakeFiles/uWebSockets.dir/build
-.PHONY : uWebSockets/fast
+googletest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
+.PHONY : googletest/fast
 
 #=============================================================================
 # Target rules for targets named zlib
@@ -247,17 +156,82 @@ zlib/fast:
 .PHONY : zlib/fast
 
 #=============================================================================
-# Target rules for targets named googletest
+# Target rules for targets named uWebSockets
 
 # Build rule for target.
-googletest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest
-.PHONY : googletest
+uWebSockets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uWebSockets
+.PHONY : uWebSockets
 
 # fast build rule for target.
-googletest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
-.PHONY : googletest/fast
+uWebSockets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uWebSockets.dir/build.make CMakeFiles/uWebSockets.dir/build
+.PHONY : uWebSockets/fast
+
+#=============================================================================
+# Target rules for targets named boringssl
+
+# Build rule for target.
+boringssl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boringssl
+.PHONY : boringssl
+
+# fast build rule for target.
+boringssl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boringssl.dir/build.make CMakeFiles/boringssl.dir/build
+.PHONY : boringssl/fast
+
+#=============================================================================
+# Target rules for targets named leveldb
+
+# Build rule for target.
+leveldb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leveldb
+.PHONY : leveldb
+
+# fast build rule for target.
+leveldb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leveldb.dir/build.make CMakeFiles/leveldb.dir/build
+.PHONY : leveldb/fast
+
+#=============================================================================
+# Target rules for targets named libuv
+
+# Build rule for target.
+libuv: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libuv
+.PHONY : libuv
+
+# fast build rule for target.
+libuv/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libuv.dir/build.make CMakeFiles/libuv.dir/build
+.PHONY : libuv/fast
+
+#=============================================================================
+# Target rules for targets named flatbuffers
+
+# Build rule for target.
+flatbuffers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatbuffers
+.PHONY : flatbuffers
+
+# fast build rule for target.
+flatbuffers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/flatbuffers.dir/build.make CMakeFiles/flatbuffers.dir/build
+.PHONY : flatbuffers/fast
+
+#=============================================================================
+# Target rules for targets named firestore
+
+# Build rule for target.
+firestore: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore
+.PHONY : firestore
+
+# fast build rule for target.
+firestore/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/build
+.PHONY : firestore/fast
 
 # Help Target
 help:
@@ -268,13 +242,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boringssl"
-	@echo "... curl"
 	@echo "... firestore"
 	@echo "... flatbuffers"
 	@echo "... googletest"
 	@echo "... leveldb"
 	@echo "... libuv"
-	@echo "... nanopb"
 	@echo "... uWebSockets"
 	@echo "... zlib"
 .PHONY : help
