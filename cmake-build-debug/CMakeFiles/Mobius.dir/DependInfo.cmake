@@ -25,6 +25,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "Mobius_autogen/include"
+  "../Lib/firebase-cpp-sdk/auth/src/include"
+  "../Lib/firebase-cpp-sdk/app/src/include"
+  "generated"
+  "../Lib/firebase-cpp-sdk/database/src/include"
   "/home/raf/Qt/6.1.2/gcc_64/include/QtCore"
   "/home/raf/Qt/6.1.2/gcc_64/include"
   "/home/raf/Qt/6.1.2/gcc_64/mkspecs/linux-g++"
@@ -34,6 +38,16 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/database/CMakeFiles/firebase_database.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/app/CMakeFiles/firebase_app.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flatbuffers.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/DependInfo.cmake"
+  "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

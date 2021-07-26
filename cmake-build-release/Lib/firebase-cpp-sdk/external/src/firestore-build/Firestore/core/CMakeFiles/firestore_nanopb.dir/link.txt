@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfirestore_nanopb.a CMakeFiles/firestore_nanopb.dir/src/nanopb/byte_string.cc.o CMakeFiles/firestore_nanopb.dir/src/nanopb/nanopb_util.cc.o CMakeFiles/firestore_nanopb.dir/src/nanopb/pretty_printing.cc.o
+/usr/bin/ranlib libfirestore_nanopb.a

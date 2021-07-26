@@ -1,0 +1,14 @@
+# Target labels
+ flatbuffers
+# Source files and their labels
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers-complete.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-install.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-mkdir.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-download.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-update.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-patch.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-configure.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-build.rule
+/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-test.rule

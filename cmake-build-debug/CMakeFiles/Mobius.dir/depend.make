@@ -766,10 +766,13 @@ CMakeFiles/Mobius.dir/main.cpp.o: ../Shape/Ellipse/Ellipse.h
 CMakeFiles/Mobius.dir/main.cpp.o: ../Shape/Line/Line.h
 CMakeFiles/Mobius.dir/main.cpp.o: ../Shape/Rectangle/Rectangle.h
 CMakeFiles/Mobius.dir/main.cpp.o: ../Shape/Shape.h
+<<<<<<< HEAD
 CMakeFiles/Mobius.dir/main.cpp.o: ../Vector/Iterator/iterator.h
 CMakeFiles/Mobius.dir/main.cpp.o: ../Vector/Iterator/reverse.h
 CMakeFiles/Mobius.dir/main.cpp.o: ../Vector/Vector.cpp
 CMakeFiles/Mobius.dir/main.cpp.o: ../Vector/Vector.h
+=======
+>>>>>>> firebase
 CMakeFiles/Mobius.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Mobius.dir/main.cpp.o: ../mainwindow.h
 CMakeFiles/Mobius.dir/main.cpp.o: /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QDeadlineTimer

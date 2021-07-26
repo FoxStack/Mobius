@@ -1,0 +1,14 @@
+# Target labels
+ boringssl
+# Source files and their labels
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/boringssl
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/boringssl.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/boringssl-complete.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-install.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-mkdir.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-download.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-update.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-patch.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-configure.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-build.rule
+/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl-stamp/boringssl-test.rule

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/googletest"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/googletest.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/googletest-complete.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-install.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-mkdir.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-download.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-update.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-patch.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-configure.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-build.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-stamp/googletest-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest"
+		],
+		"name" : "googletest"
+	}
+}

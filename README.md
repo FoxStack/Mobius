@@ -25,6 +25,21 @@ QT Won't Compile? Missing OpenGL? Install the following package.
 sudo apt-get install libgl1-mesa-dev
 ```
 
+CLION Config - Firebase requires python, as a result you need to do the following:
+```
+pip install absl-py
+pip install protobuf
+```
+This will install absl and protobuf. They are required by the Firebase python compiler.
+These packages should be installed in your project under the venv folder that houses Python2.7
+
+In CLION you will also need to remove Firebase tests and set the venv path for the Firebase SDK.
+Under Clion > Settings > Cmake you can add the following Cmake params, just make sure to set the right path to env.
+```
+-DFIREBASE_CPP_BUILD_TESTS=ON -DBUILD_TESTING=off -DFIREBASE_PYTHON_EXECUTABLE="../../Mobius/venv/bin/python"
+```
+Without this Firebase will not build properly. (I would know I spent hours making it work)
+
 ## Tech
 
 - QT - QT Design Studio

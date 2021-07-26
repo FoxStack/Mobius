@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="nanopb"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-release\;CMake Files\cmake-build-release\Lib\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\lib\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\src\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl-build\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl-build\lib\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl-build\src\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\flatbuffers\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\flatbuffers\CMake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\nanopb\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\nanopb\extra\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googlemock\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googlemock\cmake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googletest\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googletest\cmake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\CMake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\copts\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\base\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\algorithm\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\container\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\debugging\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\flags\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\functional\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\hash\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\memory\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\meta\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\numeric\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\random\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\status\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\strings\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\synchronization\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\time\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\types\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\utility\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\cares\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc-build\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc-build\third_party\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc-build\third_party\cares\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc-build\third_party\cares\cares\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\leveldb\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\leveldb\port\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\FirebaseCore\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Protos\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Source\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\src\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\src\util\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\testutil\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\api\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\auth\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\bundle\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\core\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\immutable\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\local\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\model\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\objc\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\nanopb\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\remote\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\util\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\fuzzing\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Benchmarks\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\App\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\API\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\Integration\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\SpecTests\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\Util\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Interop\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Interop\Auth\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Interop\CoreDiagnostics\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\libuv\;CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\zlib\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Qt\;CMake Files\..\..\Qt\6.1.2\;CMake Files\..\..\Qt\6.1.2\gcc_64\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\3rdparty\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\3rdparty\kwin\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\;CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\;CMake Files\Lib\;CMake Files\Lib\firebase-cpp-sdk\;CMake Files\Lib\firebase-cpp-sdk\cmake\;CMake Files\Lib\firebase-cpp-sdk\ios_pod\;CMake Files\Lib\firebase-cpp-sdk\testing\;CMake Files\Lib\firebase-cpp-sdk\app\;CMake Files\Lib\firebase-cpp-sdk\app\rest\;CMake Files\Lib\firebase-cpp-sdk\app\rest\tests\;CMake Files\Lib\firebase-cpp-sdk\app\tests\;CMake Files\Lib\firebase-cpp-sdk\admob\;CMake Files\Lib\firebase-cpp-sdk\analytics\;CMake Files\Lib\firebase-cpp-sdk\analytics\tests\;CMake Files\Lib\firebase-cpp-sdk\auth\;CMake Files\Lib\firebase-cpp-sdk\auth\tests\;CMake Files\Lib\firebase-cpp-sdk\database\;CMake Files\Lib\firebase-cpp-sdk\database\tests\;CMake Files\Lib\firebase-cpp-sdk\dynamic_links\;CMake Files\Lib\firebase-cpp-sdk\firestore\;CMake Files\Lib\firebase-cpp-sdk\functions\;CMake Files\Lib\firebase-cpp-sdk\installations\;CMake Files\Lib\firebase-cpp-sdk\installations\tests\;CMake Files\Lib\firebase-cpp-sdk\messaging\;CMake Files\Lib\firebase-cpp-sdk\messaging\tests\;CMake Files\Lib\firebase-cpp-sdk\remote_config\;CMake Files\Lib\firebase-cpp-sdk\remote_config\tests\;CMake Files\Lib\firebase-cpp-sdk\storage\;CMake Files\Lib\firebase-cpp-sdk\storage\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate_nanopb_pb2.py">
+				<Option working_dir="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 generate_nanopb_pb2.py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate_plugin_pb2.py">
+				<Option working_dir="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 generate_plugin_pb2.py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="protobuf-nanopb-static">
+				<Option output="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/libprotobuf-nanopb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPB_FIELD_32BIT"/>
+					<Add option="-DPB_ENABLE_MALLOC"/>
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=0"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 protobuf-nanopb-static"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="protobuf-nanopb-static/fast">
+				<Option output="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/libprotobuf-nanopb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPB_FIELD_32BIT"/>
+					<Add option="-DPB_ENABLE_MALLOC"/>
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=0"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 protobuf-nanopb-static/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/pb.h">
+			<Option target="protobuf-nanopb-static"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/pb_common.c">
+			<Option target="protobuf-nanopb-static"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/pb_common.h">
+			<Option target="protobuf-nanopb-static"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/pb_decode.c">
+			<Option target="protobuf-nanopb-static"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/pb_decode.h">
+			<Option target="protobuf-nanopb-static"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/pb_encode.c">
+			<Option target="protobuf-nanopb-static"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/pb_encode.h">
+			<Option target="protobuf-nanopb-static"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/curl-config.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/libcurl.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/CurlSymbolHiding.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/Macros.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/OtherTests.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/Utilities.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/curl-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\lib\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/lib/Makefile.inc">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\lib\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/lib/curl_config.h.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\lib\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\src\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/src/Makefile.inc">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\src\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl-build/lib/Makefile.inc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl-build\lib\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl-build/src/Makefile.inc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl-build\src\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\flatbuffers\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers/CMake/BuildFlatBuffers.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\flatbuffers\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers/CMake/Version.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\flatbuffers\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\nanopb\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/extra/FindNanopb.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\nanopb\extra\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/extra/nanopb-config-version.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\nanopb\extra\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/abseil-cpp.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/address_sorting.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/benchmark.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/cares.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/gRPCConfig.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/gflags.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/pkg-config-template.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/protobuf.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/ssl.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/upb.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/cmake/zlib.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/CMake/AbseilDll.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/CMake/AbseilHelpers.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/CMake/AbseilInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\CMake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/copts/AbseilConfigureCopts.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\copts\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/copts/GENERATED_AbseilCopts.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\copts\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\base\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\algorithm\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/container/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\container\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/debugging/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\debugging\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/flags/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\flags\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/functional/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\functional\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/hash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\hash\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/memory/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\memory\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/meta/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\meta\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/numeric/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\numeric\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/random/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\random\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/status/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\status\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/strings/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\strings\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/synchronization/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\synchronization\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/time/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\time\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/types/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\types\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp/absl/utility/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\abseil-cpp\absl\utility\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\cares\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares/ares_build.h.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\cares\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares/ares_config.h.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\cares\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/cares/cares/Makefile.inc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\grpc-build\third_party\cares\cares\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/install.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/libprotobuf-lite.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/libprotobuf.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/libprotoc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/protobuf-config-version.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/protobuf-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/protobuf-lite.pc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/protobuf-module.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/protobuf-options.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/protobuf.pc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake/protoc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\protobuf\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\leveldb\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb/port/port_config.h.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore-build\external\src\leveldb\port\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/FindASANDylib.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/cc_rules.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/compiler_setup.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/external_rules.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/fuzzing_options.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/podspec_rules.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/sanitizer_options.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/FirebaseCore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\FirebaseCore\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Protos\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Source\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/util/config_detected.h.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\src\util\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/testutil/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\testutil\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/api/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\api\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/auth/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\auth\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/bundle/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\bundle\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/immutable/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\immutable\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/local/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\local\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/model/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\model\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/objc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\objc\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/nanopb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\nanopb\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/remote/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\remote\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/test/unit/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\core\test\unit\util\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/fuzzing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\fuzzing\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Example/Benchmarks/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Benchmarks\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Example/App/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\App\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Example/Tests/API/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\API\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Example/Tests/Integration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\Integration\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Example/Tests/SpecTests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\SpecTests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Example/Tests/Util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Firestore\Example\Tests\Util\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Interop/Auth/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Interop\Auth\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/Interop/CoreDiagnostics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\firestore\Interop\CoreDiagnostics\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/libuv/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\libuv\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/libuv/libuv.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\libuv\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/zlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\zlib\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/zlib/zconf.h.cmakein">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\zlib\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/zlib/zlib.pc.cmakein">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\zlib\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/FindWrapAtomic.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/FindWrapOpenGL.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/Qt6Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/Qt6Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/QtFeature.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/QtFeatureCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6/3rdparty/kwin/FindXKB.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6\3rdparty\kwin\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/../../Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\6.1.2\gcc_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/CTestCustom.cmake">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/binary_to_array.cmake">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/cpp_pack.cmake">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/external_rules.cmake">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/firebase_cpp_gradle.cmake">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/test_rules.cmake">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/ios_pod/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\ios_pod\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/testing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\testing\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/app/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\app\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/app/rest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\app\rest\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/app/rest/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\app\rest\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/app/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\app\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/admob/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\admob\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\analytics\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\analytics\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\auth\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\auth\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\database\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\database\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/dynamic_links/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\dynamic_links\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/firestore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\firestore\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/functions/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\functions\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/installations/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\installations\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/installations/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\installations\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\messaging\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\messaging\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\remote_config\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\remote_config\tests\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/storage/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\storage\"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/storage/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Lib\firebase-cpp-sdk\storage\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

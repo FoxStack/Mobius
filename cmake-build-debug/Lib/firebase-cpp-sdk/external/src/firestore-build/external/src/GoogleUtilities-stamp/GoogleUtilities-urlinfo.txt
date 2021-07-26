@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/google/GoogleUtilities/archive/7.4.0.tar.gz'
+tag='SHA256=7770d19727e091ade5e9ff898822b1c3fd654f43ccad4c39809826e918a20fde'

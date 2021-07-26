@@ -1,0 +1,14 @@
+# Target labels
+ uWebSockets
+# Source files and their labels
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/uWebSockets
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/uWebSockets.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/uWebSockets-complete.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-install.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-mkdir.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-download.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-update.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-patch.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-configure.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-build.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets-stamp/uWebSockets-test.rule

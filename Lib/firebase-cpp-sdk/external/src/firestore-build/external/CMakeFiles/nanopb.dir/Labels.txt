@@ -1,0 +1,14 @@
+# Target labels
+ nanopb
+# Source files and their labels
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/nanopb
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/nanopb.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/nanopb-complete.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-install.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-mkdir.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-download.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-update.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-patch.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-configure.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-build.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb-stamp/nanopb-test.rule

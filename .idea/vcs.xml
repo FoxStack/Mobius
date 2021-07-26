@@ -2,5 +2,20 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lib/firebase-cpp-sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lib/firebase-cpp-sdk/external/src/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lib/firebase-cpp-sdk/external/src/uWebSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/ThirdParty/firebase-cpp-sdk/external/src/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/ThirdParty/firebase-cpp-sdk/external/src/uWebSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/bin/external/src/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/bin/external/src/uWebSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/Lib/firebase-cpp-sdk/external/src/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/Lib/firebase-cpp-sdk/external/src/uWebSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/ThirdParty/firebase-cpp-sdk/external/src/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/ThirdParty/firebase-cpp-sdk/external/src/uWebSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/bin/external/src/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/bin/external/src/uWebSockets" vcs="Git" />
   </component>
 </project>

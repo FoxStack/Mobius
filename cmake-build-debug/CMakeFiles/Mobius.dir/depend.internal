@@ -767,10 +767,13 @@ CMakeFiles/Mobius.dir/main.cpp.o
  /home/raf/Desktop/Mobius/Shape/Line/Line.h
  /home/raf/Desktop/Mobius/Shape/Rectangle/Rectangle.h
  /home/raf/Desktop/Mobius/Shape/Shape.h
+<<<<<<< HEAD
  /home/raf/Desktop/Mobius/Vector/Iterator/iterator.h
  /home/raf/Desktop/Mobius/Vector/Iterator/reverse.h
  /home/raf/Desktop/Mobius/Vector/Vector.cpp
  /home/raf/Desktop/Mobius/Vector/Vector.h
+=======
+>>>>>>> firebase
  /home/raf/Desktop/Mobius/main.cpp
  /home/raf/Desktop/Mobius/mainwindow.h
  /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QDeadlineTimer
