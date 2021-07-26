@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfirestore_local_testing.a CMakeFiles/firestore_local_testing.dir/counting_query_engine.cc.o CMakeFiles/firestore_local_testing.dir/persistence_testing.cc.o
-/usr/bin/ranlib libfirestore_local_testing.a

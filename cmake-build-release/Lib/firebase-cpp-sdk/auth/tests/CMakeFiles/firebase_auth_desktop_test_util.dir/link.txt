@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfirebase_auth_desktop_test_util.a CMakeFiles/firebase_auth_desktop_test_util.dir/desktop/fakes.cc.o CMakeFiles/firebase_auth_desktop_test_util.dir/desktop/test_utils.cc.o
-/usr/bin/ranlib libfirebase_auth_desktop_test_util.a

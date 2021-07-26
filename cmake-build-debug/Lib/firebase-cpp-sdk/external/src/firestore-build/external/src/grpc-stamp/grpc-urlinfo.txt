@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/grpc/grpc/archive/v1.28.0.tar.gz'
-tag='SHA256=d6277f77e0bb922d3f6f56c0f93292bb4cfabfc3c92b31ee5ccea0e100303612'

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libupb.a CMakeFiles/upb.dir/third_party/upb/upb/decode.c.o CMakeFiles/upb.dir/third_party/upb/upb/encode.c.o CMakeFiles/upb.dir/third_party/upb/upb/msg.c.o CMakeFiles/upb.dir/third_party/upb/upb/port.c.o CMakeFiles/upb.dir/third_party/upb/upb/table.c.o CMakeFiles/upb.dir/third_party/upb/upb/upb.c.o
-/usr/bin/ranlib libupb.a
