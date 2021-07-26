@@ -1,0 +1,14 @@
+# Target labels
+ curl
+# Source files and their labels
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/curl
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/curl.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/curl-complete.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-install.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-mkdir.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-download.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-update.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-patch.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-configure.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-build.rule
+/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl-stamp/curl-test.rule

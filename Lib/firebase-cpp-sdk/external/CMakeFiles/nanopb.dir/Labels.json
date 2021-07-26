@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/nanopb"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/nanopb.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/CMakeFiles/nanopb-complete.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-install.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-mkdir.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-download.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-update.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-patch.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-configure.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-build.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb-stamp/nanopb-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nanopb"
+		],
+		"name" : "nanopb"
+	}
+}

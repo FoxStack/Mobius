@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/firebase/firebase-ios-sdk/archive/CocoaPods-8.3.0.tar.gz'
+tag=''

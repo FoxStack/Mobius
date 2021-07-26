@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfirestore_testutil.a CMakeFiles/firestore_testutil.dir/async_testing.cc.o CMakeFiles/firestore_testutil.dir/bundle_builder.cc.o CMakeFiles/firestore_testutil.dir/filesystem_testing.cc.o CMakeFiles/firestore_testutil.dir/status_testing.cc.o CMakeFiles/firestore_testutil.dir/testutil.cc.o CMakeFiles/firestore_testutil.dir/time_testing.cc.o CMakeFiles/firestore_testutil.dir/view_testing.cc.o
+/usr/bin/ranlib libfirestore_testutil.a

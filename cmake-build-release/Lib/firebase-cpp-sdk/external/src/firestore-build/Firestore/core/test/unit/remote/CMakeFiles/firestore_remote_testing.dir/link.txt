@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfirestore_remote_testing.a CMakeFiles/firestore_remote_testing.dir/create_noop_connectivity_monitor.cc.o CMakeFiles/firestore_remote_testing.dir/fake_target_metadata_provider.cc.o
+/usr/bin/ranlib libfirestore_remote_testing.a

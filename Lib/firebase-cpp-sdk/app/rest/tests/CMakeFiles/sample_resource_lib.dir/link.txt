@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsample_resource_lib.a CMakeFiles/sample_resource_lib.dir/__/__/__/__/__/generated/app/rest/sample_resource.cc.o
+/usr/bin/ranlib libsample_resource_lib.a

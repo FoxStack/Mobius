@@ -1,0 +1,259 @@
+Scanning dependencies of target firestore
+Scanning dependencies of target flatbuffers
+Scanning dependencies of target boringssl
+Scanning dependencies of target libuv
+Scanning dependencies of target leveldb
+Scanning dependencies of target curl
+Scanning dependencies of target nanopb
+[  1%] Creating directories for 'firestore'
+Scanning dependencies of target uWebSockets
+[  3%] Creating directories for 'flatbuffers'
+[  3%] Creating directories for 'boringssl'
+[  4%] Creating directories for 'libuv'
+[  5%] Creating directories for 'leveldb'
+[  6%] Creating directories for 'curl'
+[  7%] Creating directories for 'uWebSockets'
+Scanning dependencies of target googletest
+Scanning dependencies of target zlib
+[  8%] Creating directories for 'googletest'
+[ 10%] Creating directories for 'zlib'
+[ 11%] Creating directories for 'nanopb'
+[ 13%] Performing download step (download, verify and extract) for 'firestore'
+[ 13%] Performing download step (download, verify and extract) for 'libuv'
+[ 14%] Performing download step (download, verify and extract) for 'flatbuffers'
+[ 15%] Performing download step for 'uWebSockets'
+[ 16%] Performing download step for 'boringssl'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/libuv-v1.33.1.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/libuv/libuv/archive/v1.33.1.tar.gz'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/CocoaPods-8.3.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/firebase/firebase-ios-sdk/archive/CocoaPods-8.3.0.tar.gz'
+[ 17%] Performing download step (download, verify and extract) for 'curl'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/flatbuffers-99aa1ef21dd9dc3f9d4fb0eb82f4b59d0bb5e4c5.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/flatbuffers/archive/99aa1ef21dd9dc3f9d4fb0eb82f4b59d0bb5e4c5.tar.gz'
+Initialized empty Git repository in /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/uWebSockets/.git/
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/curl-7_73_0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/curl/curl/archive/curl-7_73_0.tar.gz'
+Initialized empty Git repository in /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/boringssl/.git/
+[ 18%] Performing download step (download, verify and extract) for 'leveldb'
+[ 20%] Performing download step (download, verify and extract) for 'nanopb'
+[ 21%] Performing download step (download, verify and extract) for 'googletest'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/nanopb-0.3.9.8.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/nanopb/nanopb/archive/nanopb-0.3.9.8.tar.gz'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/leveldb/archive/e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/googletest-1.11.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/googletest/archive/release-1.11.0.tar.gz'
+[ 22%] Performing download step (download, verify and extract) for 'zlib'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/zlib-v1.2.11.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/madler/zlib/archive/v1.2.11.tar.gz'
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 0% complete]
+-- [download 2% complete]
+-- [download 6% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 18% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 25% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 40% complete]
+-- [download 45% complete]
+-- [download 62% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/nanopb-0.3.9.8.tar.gz'
+-- [download 83% complete]
+-- Downloading... done
+-- [download 100% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/zlib-v1.2.11.tar.gz'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/nanopb-0.3.9.8.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/nanopb'
+-- extracting... [tar xfz]
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/zlib-v1.2.11.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/zlib'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 23%] No update step for 'nanopb'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 24%] No patch step for 'nanopb'
+[ 25%] No update step for 'zlib'
+[ 26%] No configure step for 'nanopb'
+[ 27%] No patch step for 'zlib'
+[ 28%] No build step for 'nanopb'
+[ 30%] No configure step for 'zlib'
+[ 31%] No install step for 'nanopb'
+-- Downloading... done
+[ 32%] No test step for 'nanopb'
+[ 33%] No build step for 'zlib'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/leveldb'
+-- extracting... [tar xfz]
+[ 34%] Completed 'nanopb'
+[ 35%] No install step for 'zlib'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 35%] Built target nanopb
+[ 36%] No update step for 'leveldb'
+[ 37%] No test step for 'zlib'
+[ 38%] No patch step for 'leveldb'
+[ 40%] Completed 'zlib'
+[ 40%] Built target zlib
+[ 41%] No configure step for 'leveldb'
+[ 42%] No build step for 'leveldb'
+[ 43%] No install step for 'leveldb'
+-- Downloading... done
+[ 44%] No test step for 'leveldb'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/flatbuffers-99aa1ef21dd9dc3f9d4fb0eb82f4b59d0bb5e4c5.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/flatbuffers'
+-- extracting... [tar xfz]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/googletest-1.11.0.tar.gz'
+[ 45%] Completed 'leveldb'
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/googletest-1.11.0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/googletest'
+-- extracting... [tar xfz]
+HEAD is now at 4d94401 Update tests using uS namespace
+[ 46%] No update step for 'uWebSockets'
+[ 46%] Built target leveldb
+[ 47%] Performing patch step for 'uWebSockets'
+-- extracting... [analysis]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... [clean up]
+-- extracting... done
+-- extracting... done
+[ 48%] No update step for 'googletest'
+[ 50%] No update step for 'flatbuffers'
+[ 51%] No patch step for 'googletest'
+[ 52%] No configure step for 'googletest'
+[ 53%] No patch step for 'flatbuffers'
+[ 54%] No configure step for 'flatbuffers'
+[ 55%] No build step for 'googletest'
+[ 56%] No build step for 'flatbuffers'
+[ 57%] No install step for 'googletest'
+[ 58%] No install step for 'flatbuffers'
+-- Downloading... done
+[ 60%] No test step for 'flatbuffers'
+[ 61%] Completed 'flatbuffers'
+[ 62%] No test step for 'googletest'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/libuv-v1.33.1.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/libuv'
+-- extracting... [tar xfz]
+[ 62%] Built target flatbuffers
+[ 63%] Completed 'googletest'
+[ 63%] Built target googletest
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 64%] No configure step for 'uWebSockets'
+[ 65%] No build step for 'uWebSockets'
+[ 66%] No install step for 'uWebSockets'
+[ 67%] No test step for 'uWebSockets'
+[ 68%] No update step for 'libuv'
+[ 70%] No patch step for 'libuv'
+[ 71%] No configure step for 'libuv'
+[ 72%] Completed 'uWebSockets'
+[ 72%] Built target uWebSockets
+-- Downloading... done
+[ 73%] No build step for 'libuv'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/curl-7_73_0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/curl'
+-- extracting... [tar xfz]
+[ 74%] No install step for 'libuv'
+[ 75%] No test step for 'libuv'
+[ 76%] Completed 'libuv'
+[ 76%] Built target libuv
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 77%] No update step for 'curl'
+[ 78%] No patch step for 'curl'
+[ 80%] No configure step for 'curl'
+[ 81%] No build step for 'curl'
+[ 82%] No install step for 'curl'
+[ 83%] No test step for 'curl'
+[ 84%] Completed 'curl'
+[ 84%] Built target curl
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/downloads/CocoaPods-8.3.0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/external/src/firestore'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 85%] No update step for 'firestore'
+[ 86%] No patch step for 'firestore'
+[ 87%] No configure step for 'firestore'
+[ 88%] No build step for 'firestore'
+[ 90%] No install step for 'firestore'
+[ 91%] No test step for 'firestore'
+[ 92%] Completed 'firestore'
+[ 92%] Built target firestore
+HEAD is now at 83da28a update master-with-bazel from master branch
+[ 93%] No update step for 'boringssl'
+[ 94%] Performing patch step for 'boringssl'
+[ 95%] No configure step for 'boringssl'
+[ 96%] No build step for 'boringssl'
+[ 97%] No install step for 'boringssl'
+[ 98%] No test step for 'boringssl'
+[100%] Completed 'boringssl'
+[100%] Built target boringssl

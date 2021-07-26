@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/abseil-cpp"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/abseil-cpp.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/abseil-cpp-complete.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-install.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-mkdir.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-download.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-update.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-patch.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-configure.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-build.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp-stamp/abseil-cpp-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"abseil-cpp"
+		],
+		"name" : "abseil-cpp"
+	}
+}

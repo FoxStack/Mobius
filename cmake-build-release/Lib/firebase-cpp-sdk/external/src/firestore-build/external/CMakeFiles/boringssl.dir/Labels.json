@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/boringssl"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/boringssl.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/boringssl-complete.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-install.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-mkdir.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-download.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-update.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-patch.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-configure.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-build.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl-stamp/boringssl-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"boringssl"
+		],
+		"name" : "boringssl"
+	}
+}

@@ -1,0 +1,112 @@
+/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DFIREBASE_CPP_BUILD_TESTS=ON -DBUILD_TESTING=off -G "CodeBlocks - Unix Makefiles" /home/raf/Desktop/Mobius
+-- Downloading external project dependencies...
+-- Up-to-date: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/cmake/external/leveldb.cmake
+-- Download complete.
+-- Building external project dependencies...
+-- CMake generator: Unix Makefiles
+-- CMake generator platform: 
+-- CMake toolchain file: 
+-- Sub-configure options: -G;Unix Makefiles;-DCMAKE_BUILD_TYPE="Release";-DCMAKE_C_FLAGS="-D_GLIBCXX_USE_CXX11_ABI=0";-DCMAKE_CXX_FLAGS="-D_GLIBCXX_USE_CXX11_ABI=0"
+-- Sub-build options: 
+-- Build of external project dependencies complete.
+CMake Deprecation Warning at cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore/CMakeLists.txt:40 (cmake_policy):
+  The OLD behavior for policy CMP0058 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external
+[ 11%] Built target boringssl
+[ 22%] Built target protobuf
+[ 33%] Built target googletest
+[ 44%] Built target GoogleUtilities
+[ 55%] Built target abseil-cpp
+[ 66%] Built target c-ares
+[ 77%] Built target grpc
+[ 88%] Built target leveldb
+[100%] Built target nanopb
+CMake Deprecation Warning at cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- 
+-- 3.11.2.0
+-- Found PythonInterp: /usr/bin/python (found suitable version "2.7.18", minimum required is "2.7") 
+-- flatbuffers is added normally
+-- add_ext... FLATBUFFERS_SOURCE_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers
+-- add_ext... FLATBUFFERS_BINARY_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-build
+fatal: No names found, cannot describe anything.
+-- add_ext... CURL_SOURCE_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl
+-- add_ext... CURL_BINARY_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl-build
+-- curl version=[7.73.0-DEV]
+-- Enabled features: SSL IPv6 unix-sockets libz AsynchDNS NTLM HTTPS-proxy
+-- Enabled protocols: HTTP HTTPS
+-- Enabled SSL backends: OpenSSL
+-- add_ext... LIBUV_SOURCE_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/libuv
+-- add_ext... LIBUV_BINARY_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/libuv-build
+CMake Warning (dev) at /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/share/cmake-3.19/Modules/CTest.cmake:50 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'BUILD_TESTING'.
+Call Stack (most recent call first):
+  cmake-build-release/Lib/firebase-cpp-sdk/external/src/libuv/CMakeLists.txt:8 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- add_ext... ZLIB_SOURCE_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/zlib
+-- add_ext... ZLIB_BINARY_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/zlib-build
+CMake Deprecation Warning at cmake-build-release/Lib/firebase-cpp-sdk/external/src/zlib/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- add_ext... UWEBSOCKETS_SOURCE_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/uWebSockets
+-- add_ext... UWEBSOCKETS_BINARY_DIR: /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/uWebSockets-build
+-- Found PythonInterp: /usr/bin/python (found version "2.7.18") 
+CMake Warning (dev) at /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
+  The package name passed to `find_package_handle_standard_args` (NANOPB)
+  does not match the name of the calling package (Nanopb).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/extra/FindNanopb.cmake:339 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  Lib/firebase-cpp-sdk/CMakeLists.txt:442 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find NANOPB (missing: PROTOBUF_PROTOC_EXECUTABLE) 
+-- Could NOT find Vulkan (missing: Vulkan_LIBRARY Vulkan_INCLUDE_DIR) 
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/raf/Desktop/Mobius/cmake-build-release

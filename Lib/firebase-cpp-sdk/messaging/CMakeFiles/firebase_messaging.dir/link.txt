@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfirebase_messaging.a CMakeFiles/firebase_messaging.dir/src/common.cc.o CMakeFiles/firebase_messaging.dir/src/listener.cc.o CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o
+/usr/bin/ranlib libfirebase_messaging.a
