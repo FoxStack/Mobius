@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfirebase_rest_mocks.a CMakeFiles/firebase_rest_mocks.dir/__/rest/transport_mock.cc.o
-/usr/bin/ranlib libfirebase_rest_mocks.a

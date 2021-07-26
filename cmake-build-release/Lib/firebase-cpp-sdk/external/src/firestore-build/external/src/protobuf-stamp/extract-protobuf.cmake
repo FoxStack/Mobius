@@ -1,6 +1,6 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/protobuf-29cd005ce1fe1a8fabf11e325cb13006a6646d59.tar.gz" ABSOLUTE)
+get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/protobuf-29cd005ce1fe1a8fabf11e325cb13006a6646d59.tar.gz" ABSOLUTE)
 get_filename_component(directory "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf" ABSOLUTE)
 
 message(STATUS "extracting...

@@ -1196,10 +1196,10 @@ leveldb_BINARY_DIR:STATIC=/home/raf/Desktop/Mobius/cmake-build-release/Lib/fireb
 leveldb_SOURCE_DIR:STATIC=/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb
 
 //Dependencies for the target
-libprotobuf-lite_LIB_DEPENDS:STATIC=general;-pthread;
+libprotobuf-lite_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Dependencies for the target
-libprotobuf_LIB_DEPENDS:STATIC=general;-pthread;
+libprotobuf_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Dependencies for the target
 libprotoc_LIB_DEPENDS:STATIC=general;libprotobuf;

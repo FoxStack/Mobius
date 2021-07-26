@@ -26076,6 +26076,9 @@
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/CurlSymbolHiding.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
 		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/CurlTests.c">
+			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
+		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl/CMake/Macros.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-release\Lib\firebase-cpp-sdk\external\src\curl\CMake\"/>
 		</Unit>

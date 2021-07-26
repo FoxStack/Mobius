@@ -5921,12 +5921,12 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/C
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/all: Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firestore_api_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=27 "Built target firestore_api_test"
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/rule
@@ -6976,12 +6976,12 @@ Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/all: Lib/firebase-c
 Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/all: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flatc.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/build.make Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/build.make Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=27 "Built target firebase_testing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firebase_testing"
 .PHONY : Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/rule
@@ -7128,7 +7128,7 @@ Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_transport_mock_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_transport_mock_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_transport_mock_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_transport_mock_test.dir/rule
@@ -7185,12 +7185,12 @@ Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_t
 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/all: Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/sample_resource_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firebase_app_rest_response_json_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=14 "Built target firebase_app_rest_response_json_test"
 .PHONY : Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/rule
@@ -7315,12 +7315,12 @@ Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary
 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/all: Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=14 "Built target firebase_app_rest_response_binary_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firebase_app_rest_response_binary_test"
 .PHONY : Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/rule
@@ -7550,7 +7550,7 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_integration_t
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_integration_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_integration_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_integration_test.dir/rule
@@ -7614,7 +7614,7 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_util_tests.dir/al
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_util_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_util_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_util_tests.dir/rule
@@ -7710,7 +7710,7 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_rest_mocks.dir/all: Lib/fireb
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_rest_mocks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_rest_mocks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_rest_mocks.dir/rule
@@ -7736,12 +7736,12 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/all: Lib
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/all: Lib/firebase-cpp-sdk/app/CMakeFiles/firebase_app.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firebase_app_variant_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=15 "Built target firebase_app_variant_test"
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/rule
@@ -7804,7 +7804,7 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_internal_test
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_internal_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_internal_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_internal_test.dir/rule
@@ -8081,7 +8081,7 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher_test.dir/all: Lib/f
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher_test.dir/rule
@@ -8204,7 +8204,7 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher.dir/all: Lib/fireba
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher.dir/rule
@@ -8385,12 +8385,12 @@ Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/all: Lib/fi
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/all: Lib/firebase-cpp-sdk/app/CMakeFiles/firebase_app.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=15 "Built target firebase_app_uuid_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firebase_app_uuid_test"
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/rule
@@ -8507,7 +8507,7 @@ Lib/firebase-cpp-sdk/analytics/tests/CMakeFiles/firebase_analytics_test.dir/all:
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/analytics/tests/CMakeFiles/firebase_analytics_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/analytics/tests/CMakeFiles/firebase_analytics_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/analytics/tests/CMakeFiles/firebase_analytics_test.dir/rule
@@ -8603,7 +8603,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_delete_account_test_tes
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_delete_account_test_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_delete_account_test_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_delete_account_test_test.dir/rule
@@ -8639,7 +8639,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_create_auth_uri_test.di
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_create_auth_uri_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_create_auth_uri_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_create_auth_uri_test.dir/rule
@@ -8676,7 +8676,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_set_account_info_test.d
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_set_account_info_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_set_account_info_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_set_account_info_test.dir/rule
@@ -8714,7 +8714,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_test.dir/all: Lib/
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_test.dir/rule
@@ -8751,7 +8751,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_credential_test.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_credential_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_credential_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_credential_test.dir/rule
@@ -8788,7 +8788,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_secure_token_test.dir/a
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_secure_token_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_secure_token_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_secure_token_test.dir/rule
@@ -8826,7 +8826,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test.dir/all: L
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test.dir/rule
@@ -8861,7 +8861,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test_util.dir/a
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test_util.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test_util.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test_util.dir/rule
@@ -8899,7 +8899,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_test.dir/all: Lib/fireb
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_test.dir/rule
@@ -8938,7 +8938,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_desktop_test.dir/a
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_desktop_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_desktop_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_desktop_test.dir/rule
@@ -8975,7 +8975,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_oob_confirmation_co
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_oob_confirmation_code_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_oob_confirmation_code_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_oob_confirmation_code_test.dir/rule
@@ -9012,7 +9012,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_reset_password_test.dir
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_reset_password_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_reset_password_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_reset_password_test.dir/rule
@@ -9049,7 +9049,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_sign_up_new_user_test.d
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_sign_up_new_user_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_sign_up_new_user_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_sign_up_new_user_test.dir/rule
@@ -9086,7 +9086,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_assertion_test.d
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_assertion_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_assertion_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_assertion_test.dir/rule
@@ -9123,7 +9123,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_custom_token_tes
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_custom_token_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_custom_token_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_custom_token_test.dir/rule
@@ -9160,7 +9160,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_password_test.di
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_password_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_password_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_password_test.dir/rule
@@ -9197,7 +9197,7 @@ Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_account_info_test.d
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_account_info_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_account_info_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_account_info_test.dir/rule
@@ -9330,7 +9330,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_change_test
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_change_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_change_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_change_test.dir/rule
@@ -9369,7 +9369,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_mutable_dat
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_mutable_data_desktop_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_mutable_data_desktop_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_mutable_data_desktop_test.dir/rule
@@ -9408,7 +9408,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_server
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_server_values_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_server_values_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_server_values_test.dir/rule
@@ -9447,7 +9447,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_event_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_event_generator_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_event_generator_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_event_generator_test.dir/rule
@@ -9486,7 +9486,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_t
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_tree_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_tree_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_tree_test.dir/rule
@@ -9525,7 +9525,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_indexe
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_indexed_filter_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_indexed_filter_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_indexed_filter_test.dir/rule
@@ -9564,7 +9564,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_operat
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_operation_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_operation_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_operation_test.dir/rule
@@ -9604,7 +9604,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_p
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_spec_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_spec_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_spec_test.dir/rule
@@ -9643,7 +9643,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_cache_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_cache_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_cache_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_cache_test.dir/rule
@@ -9682,7 +9682,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_limite
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_limited_filter_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_limited_filter_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_limited_filter_test.dir/rule
@@ -9721,7 +9721,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_event_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_event_registration_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_event_registration_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_event_registration_test.dir/rule
@@ -9760,7 +9760,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_child_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_child_change_accumulator_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_child_change_accumulator_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_child_change_accumulator_test.dir/rule
@@ -9799,7 +9799,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tree_t
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tree_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tree_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tree_test.dir/rule
@@ -9838,7 +9838,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_util_desktop_test.d
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_util_desktop_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_util_desktop_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_util_desktop_test.dir/rule
@@ -9877,7 +9877,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_indexe
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_indexed_variant_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_indexed_variant_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_indexed_variant_test.dir/rule
@@ -9916,7 +9916,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_in_memory_p
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_in_memory_persistence_storage_engine_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_in_memory_persistence_storage_engine_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_in_memory_persistence_storage_engine_test.dir/rule
@@ -9955,7 +9955,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_write_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_write_tree_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_write_tree_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_write_tree_test.dir/rule
@@ -9994,7 +9994,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_web_socket_client_impl_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_web_socket_client_impl_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_web_socket_client_impl_test.dir/rule
@@ -10033,7 +10033,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_p
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_test.dir/rule
@@ -10072,7 +10072,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_compou
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_compound_write_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_compound_write_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_compound_write_test.dir/rule
@@ -10111,7 +10111,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_ranged
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_ranged_filter_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_ranged_filter_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_ranged_filter_test.dir/rule
@@ -10150,7 +10150,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_test.d
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_test.dir/rule
@@ -10189,7 +10189,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_matchers_te
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_matchers_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_matchers_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_matchers_test.dir/rule
@@ -10229,7 +10229,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_connection_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_connection_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_connection_test.dir/rule
@@ -10268,7 +10268,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_noop_persis
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_noop_persistence_manager_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_noop_persistence_manager_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_noop_persistence_manager_test.dir/rule
@@ -10307,7 +10307,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_proces
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_processor_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_processor_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_processor_test.dir/rule
@@ -10347,7 +10347,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_common_database_ref
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_common_database_reference_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_common_database_reference_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_common_database_reference_test.dir/rule
@@ -10386,7 +10386,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_persistence
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_persistence_manager_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_persistence_manager_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_persistence_manager_test.dir/rule
@@ -10425,7 +10425,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tracke
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tracked_query_manager_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tracked_query_manager_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tracked_query_manager_test.dir/rule
@@ -10464,7 +10464,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_prune_forest_test.d
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_prune_forest_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_prune_forest_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_prune_forest_test.dir/rule
@@ -10503,7 +10503,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_cache_polic
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_cache_policy_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_cache_policy_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_cache_policy_test.dir/rule
@@ -10542,7 +10542,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sparse
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sparse_snapshot_tree_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sparse_snapshot_tree_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sparse_snapshot_tree_test.dir/rule
@@ -10582,7 +10582,7 @@ Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_flatbuffer_
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_flatbuffer_conversion_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_flatbuffer_conversion_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_flatbuffer_conversion_test.dir/rule
@@ -10790,7 +10790,7 @@ Lib/firebase-cpp-sdk/installations/tests/CMakeFiles/firebase_installations_test.
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/installations/tests/CMakeFiles/firebase_installations_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/installations/tests/CMakeFiles/firebase_installations_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/installations/tests/CMakeFiles/firebase_installations_test.dir/rule
@@ -10899,12 +10899,12 @@ Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/all: Li
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/all: Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=23 "Built target firebase_remote_config"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firebase_remote_config"
 .PHONY : Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/rule
@@ -10936,12 +10936,12 @@ Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_deskt
 Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/all: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/all
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/build.make Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/build.make Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num= "Built target firebase_remote_config_desktop_config_data_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=23 "Built target firebase_remote_config_desktop_config_data_test"
 .PHONY : Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/all
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/rule
@@ -11009,7 +11009,7 @@ Lib/firebase-cpp-sdk/storage/tests/CMakeFiles/firebase_storage_desktop_utils_tes
 
 # Build rule for subdir invocation for target.
 Lib/firebase-cpp-sdk/storage/tests/CMakeFiles/firebase_storage_desktop_utils_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/tests/CMakeFiles/firebase_storage_desktop_utils_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
 .PHONY : Lib/firebase-cpp-sdk/storage/tests/CMakeFiles/firebase_storage_desktop_utils_test.dir/rule

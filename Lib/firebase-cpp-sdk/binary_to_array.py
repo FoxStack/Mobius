@@ -43,7 +43,6 @@ string directly.
 
 from os import path
 from re import sub
-
 from absl import app
 from absl import flags
 from absl import logging

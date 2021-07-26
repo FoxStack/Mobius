@@ -6,5 +6,5 @@ CXX_DEFINES = -DFIRESTORE_HAVE_CONFIG_DETECTED_H -DPB_ENABLE_MALLOC -DPB_FIELD_3
 
 CXX_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build -I/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore -I/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp -I/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb
 
-CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -O3 -DNDEBUG -Wall -Wextra -Werror -Wformat -Wuninitialized -fno-common -Wunused-function -Wunused-value -Wunused-variable -Wreorder -Werror=reorder -pthread -std=c++11
+CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -O3 -DNDEBUG -Wall -Wextra -Werror -Wformat -Wuninitialized -fno-common -Wunused-function -Wunused-value -Wunused-variable -Wreorder -Werror=reorder -std=c++11
 

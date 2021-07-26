@@ -73,14 +73,15 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-s
 
 # The main recursive "all" target.
 all: CMakeFiles/curl.dir/all
+all: CMakeFiles/firestore.dir/all
 all: CMakeFiles/flatbuffers.dir/all
 all: CMakeFiles/boringssl.dir/all
 all: CMakeFiles/libuv.dir/all
 all: CMakeFiles/leveldb.dir/all
+all: CMakeFiles/nanopb.dir/all
 all: CMakeFiles/uWebSockets.dir/all
 all: CMakeFiles/zlib.dir/all
 all: CMakeFiles/googletest.dir/all
-all: CMakeFiles/firestore.dir/all
 
 .PHONY : all
 
@@ -91,14 +92,15 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/curl.dir/clean
+clean: CMakeFiles/firestore.dir/clean
 clean: CMakeFiles/flatbuffers.dir/clean
 clean: CMakeFiles/boringssl.dir/clean
 clean: CMakeFiles/libuv.dir/clean
 clean: CMakeFiles/leveldb.dir/clean
+clean: CMakeFiles/nanopb.dir/clean
 clean: CMakeFiles/uWebSockets.dir/clean
 clean: CMakeFiles/zlib.dir/clean
 clean: CMakeFiles/googletest.dir/clean
-clean: CMakeFiles/firestore.dir/clean
 
 .PHONY : clean
 
@@ -128,6 +130,33 @@ curl: CMakeFiles/curl.dir/rule
 CMakeFiles/curl.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/curl.dir/build.make CMakeFiles/curl.dir/clean
 .PHONY : CMakeFiles/curl.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/firestore.dir
+
+# All Build rule for target.
+CMakeFiles/firestore.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27 "Built target firestore"
+.PHONY : CMakeFiles/firestore.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/firestore.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/firestore.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles 0
+.PHONY : CMakeFiles/firestore.dir/rule
+
+# Convenience name for target.
+firestore: CMakeFiles/firestore.dir/rule
+
+.PHONY : firestore
+
+# clean rule for target.
+CMakeFiles/firestore.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/clean
+.PHONY : CMakeFiles/firestore.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/flatbuffers.dir
@@ -238,13 +267,40 @@ CMakeFiles/leveldb.dir/clean:
 .PHONY : CMakeFiles/leveldb.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/nanopb.dir
+
+# All Build rule for target.
+CMakeFiles/nanopb.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nanopb.dir/build.make CMakeFiles/nanopb.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nanopb.dir/build.make CMakeFiles/nanopb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72 "Built target nanopb"
+.PHONY : CMakeFiles/nanopb.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/nanopb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nanopb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles 0
+.PHONY : CMakeFiles/nanopb.dir/rule
+
+# Convenience name for target.
+nanopb: CMakeFiles/nanopb.dir/rule
+
+.PHONY : nanopb
+
+# clean rule for target.
+CMakeFiles/nanopb.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nanopb.dir/build.make CMakeFiles/nanopb.dir/clean
+.PHONY : CMakeFiles/nanopb.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/uWebSockets.dir
 
 # All Build rule for target.
 CMakeFiles/uWebSockets.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uWebSockets.dir/build.make CMakeFiles/uWebSockets.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uWebSockets.dir/build.make CMakeFiles/uWebSockets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72 "Built target uWebSockets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=73,74,75,76,77,78,79,80,81 "Built target uWebSockets"
 .PHONY : CMakeFiles/uWebSockets.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +327,7 @@ CMakeFiles/uWebSockets.dir/clean:
 CMakeFiles/zlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zlib.dir/build.make CMakeFiles/zlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zlib.dir/build.make CMakeFiles/zlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=73,74,75,76,77,78,79,80,81 "Built target zlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90 "Built target zlib"
 .PHONY : CMakeFiles/zlib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -317,33 +373,6 @@ googletest: CMakeFiles/googletest.dir/rule
 CMakeFiles/googletest.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/clean
 .PHONY : CMakeFiles/googletest.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/firestore.dir
-
-# All Build rule for target.
-CMakeFiles/firestore.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27 "Built target firestore"
-.PHONY : CMakeFiles/firestore.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/firestore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/firestore.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles 0
-.PHONY : CMakeFiles/firestore.dir/rule
-
-# Convenience name for target.
-firestore: CMakeFiles/firestore.dir/rule
-
-.PHONY : firestore
-
-# clean rule for target.
-CMakeFiles/firestore.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/clean
-.PHONY : CMakeFiles/firestore.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

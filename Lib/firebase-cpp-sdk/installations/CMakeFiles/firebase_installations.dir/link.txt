@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfirebase_installations.a CMakeFiles/firebase_installations.dir/src/installations.cc.o CMakeFiles/firebase_installations.dir/src/stub/installations_stub.cc.o
-/usr/bin/ranlib libfirebase_installations.a

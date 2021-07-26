@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/abseil/abseil-cpp/archive/20200225.tar.gz'
-tag='SHA256=728a813291bdec2aa46eab8356ace9f75ac2ed9dfe2df5ab603c4e6c09f1c353'

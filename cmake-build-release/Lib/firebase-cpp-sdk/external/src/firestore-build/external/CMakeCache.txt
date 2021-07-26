@@ -216,7 +216,7 @@ DOWNLOAD_BENCHMARK:UNINITIALIZED=OFF
 DOWNLOAD_GOOGLETEST:UNINITIALIZED=ON
 
 //Where to store downloaded files
-FIREBASE_DOWNLOAD_DIR:PATH=/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads
+FIREBASE_DOWNLOAD_DIR:PATH=/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads
 
 //No help, variable specified on the command line.
 FUZZING:UNINITIALIZED=OFF

@@ -1,6 +1,6 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/abseil-cpp-20200225.tar.gz" ABSOLUTE)
+get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/abseil-cpp-20200225.tar.gz" ABSOLUTE)
 get_filename_component(directory "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp" ABSOLUTE)
 
 message(STATUS "extracting...

@@ -24622,6 +24622,15 @@
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificate_finder_generated.cc">
 			<Option target="firestore_core"/>
 		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.cc">
+			<Option target="firestore_core"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h">
+			<Option target="firestore_core"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h.rule">
+			<Option target="firestore_core"/>
+		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_stream.cc">
 			<Option target="firestore_core"/>
 		</Unit>

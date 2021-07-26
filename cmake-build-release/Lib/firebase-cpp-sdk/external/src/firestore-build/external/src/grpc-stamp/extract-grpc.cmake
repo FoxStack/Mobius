@@ -1,6 +1,6 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/grpc-1.28.0.tar.gz" ABSOLUTE)
+get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/grpc-1.28.0.tar.gz" ABSOLUTE)
 get_filename_component(directory "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc" ABSOLUTE)
 
 message(STATUS "extracting...

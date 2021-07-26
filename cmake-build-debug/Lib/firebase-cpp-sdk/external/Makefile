@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-s
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -96,6 +85,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -141,6 +141,19 @@ curl: cmake_check_build_system
 curl/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/curl.dir/build.make CMakeFiles/curl.dir/build
 .PHONY : curl/fast
+
+#=============================================================================
+# Target rules for targets named firestore
+
+# Build rule for target.
+firestore: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore
+.PHONY : firestore
+
+# fast build rule for target.
+firestore/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/build
+.PHONY : firestore/fast
 
 #=============================================================================
 # Target rules for targets named flatbuffers
@@ -195,6 +208,19 @@ leveldb/fast:
 .PHONY : leveldb/fast
 
 #=============================================================================
+# Target rules for targets named nanopb
+
+# Build rule for target.
+nanopb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nanopb
+.PHONY : nanopb
+
+# fast build rule for target.
+nanopb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nanopb.dir/build.make CMakeFiles/nanopb.dir/build
+.PHONY : nanopb/fast
+
+#=============================================================================
 # Target rules for targets named uWebSockets
 
 # Build rule for target.
@@ -233,19 +259,6 @@ googletest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
 .PHONY : googletest/fast
 
-#=============================================================================
-# Target rules for targets named firestore
-
-# Build rule for target.
-firestore: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore
-.PHONY : firestore
-
-# fast build rule for target.
-firestore/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firestore.dir/build.make CMakeFiles/firestore.dir/build
-.PHONY : firestore/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -261,6 +274,7 @@ help:
 	@echo "... googletest"
 	@echo "... leveldb"
 	@echo "... libuv"
+	@echo "... nanopb"
 	@echo "... uWebSockets"
 	@echo "... zlib"
 .PHONY : help

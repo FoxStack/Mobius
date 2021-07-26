@@ -12,7 +12,18 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Downloading external project dependencies...
--- Up-to-date: /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/cmake/external/leveldb.cmake
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    DOWNLOAD_FIREBASE_IOS_SDK
+    PLATFORM
+
+
+From https://github.com/uNetworking/uWebSockets
+ * branch            4d94401b9c98346f9afd838556fdc7dce30561eb -> FETCH_HEAD
+From https://github.com/google/boringssl
+ * branch            83da28a68f32023fd3b95a8ae94991a07b1f6c62 -> FETCH_HEAD
+-- Installing: /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/cmake/external/leveldb.cmake
 -- Download complete.
 -- Building external project dependencies...
 -- CMake generator: Unix Makefiles
@@ -41,18 +52,299 @@ CMake Deprecation Warning at cmake-build-debug/Lib/firebase-cpp-sdk/external/src
   behavior and not rely on setting a policy to OLD.
 
 
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external
-[ 11%] Built target boringssl
-[ 22%] Built target abseil-cpp
-[ 37%] Built target c-ares
-[ 44%] Built target protobuf
-[ 55%] Built target grpc
-[ 66%] Built target GoogleUtilities
-[ 77%] Built target leveldb
-[ 88%] Built target nanopb
-[100%] Built target googletest
+Scanning dependencies of target abseil-cpp
+Scanning dependencies of target boringssl
+Scanning dependencies of target GoogleUtilities
+Scanning dependencies of target nanopb
+Scanning dependencies of target googletest
+Scanning dependencies of target protobuf
+Scanning dependencies of target grpc
+Scanning dependencies of target c-ares
+Scanning dependencies of target leveldb
+[  1%] Creating directories for 'abseil-cpp'
+[  2%] Creating directories for 'nanopb'
+[  3%] Creating directories for 'boringssl'
+[  4%] Creating directories for 'googletest'
+[  7%] Creating directories for 'grpc'
+[  7%] Creating directories for 'c-ares'
+[  8%] Creating directories for 'protobuf'
+[  9%] Creating directories for 'GoogleUtilities'
+[ 11%] Creating directories for 'leveldb'
+[ 12%] Performing download step (download, verify and extract) for 'googletest'
+[ 13%] Performing download step (download, verify and extract) for 'abseil-cpp'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/googletest-1.10.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/googletest/archive/release-1.10.0.tar.gz'
+[ 14%] Performing download step (download, verify and extract) for 'c-ares'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/abseil-cpp-20200225.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/abseil/abseil-cpp/archive/20200225.tar.gz'
+[ 16%] Performing download step (download, verify and extract) for 'grpc'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/c-ares/c-ares/archive/e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
+[ 17%] Performing download step (download, verify and extract) for 'boringssl'
+[ 18%] Performing download step (download, verify and extract) for 'protobuf'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/grpc-1.28.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/grpc/grpc/archive/v1.28.0.tar.gz'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/boringssl-83da28a68f32023fd3b95a8ae94991a07b1f6c62.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+[ 19%] Performing download step (download, verify and extract) for 'leveldb'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/protobuf-29cd005ce1fe1a8fabf11e325cb13006a6646d59.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/protocolbuffers/protobuf/archive/29cd005ce1fe1a8fabf11e325cb13006a6646d59.tar.gz'
+-- Using src='https://github.com/google/boringssl/archive/83da28a68f32023fd3b95a8ae94991a07b1f6c62.tar.gz'
+[ 20%] Performing download step (download, verify and extract) for 'GoogleUtilities'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/leveldb/archive/e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/GoogleUtilities-7.4.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/GoogleUtilities/archive/7.4.0.tar.gz'
+[ 22%] Performing download step (download, verify and extract) for 'nanopb'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/nanopb-0.3.9.8.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/nanopb/nanopb/archive/nanopb-0.3.9.8.tar.gz'
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 1% complete]
+-- [download 5% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 2% complete]
+-- [download 18% complete]
+-- [download 23% complete]
+-- [download 5% complete]
+-- [download 37% complete]
+-- [download 48% complete]
+-- [download 13% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/nanopb-0.3.9.8.tar.gz'
+-- Downloading... done
+-- Downloading... done
+-- [download 59% complete]
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/nanopb-0.3.9.8.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb'
+-- extracting... [tar xfz]
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb'
+-- extracting... [tar xfz]
+-- [download 74% complete]
+-- [download 90% complete]
+-- [download 97% complete]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 23%] No update step for 'leveldb'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 24%] No patch step for 'leveldb'
+[ 25%] No update step for 'nanopb'
+[ 27%] No configure step for 'leveldb'
+[ 28%] No patch step for 'nanopb'
+[ 29%] No build step for 'leveldb'
+[ 30%] No configure step for 'nanopb'
+[ 32%] No install step for 'leveldb'
+-- [download 28% complete]
+[ 33%] No build step for 'nanopb'
+-- [download 100% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/googletest-1.10.0.tar.gz'
+[ 34%] No test step for 'leveldb'
+[ 35%] No install step for 'nanopb'
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/GoogleUtilities-7.4.0.tar.gz'
+[ 37%] No test step for 'nanopb'
+-- Downloading... done
+-- Downloading... done
+[ 38%] Completed 'leveldb'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/GoogleUtilities-7.4.0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities'
+-- extracting... [tar xfz]
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/googletest-1.10.0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest'
+-- extracting... [tar xfz]
+[ 39%] Completed 'nanopb'
+[ 39%] Built target leveldb
+[ 39%] Built target nanopb
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 40%] No update step for 'GoogleUtilities'
+[ 41%] No patch step for 'GoogleUtilities'
+[ 43%] No configure step for 'GoogleUtilities'
+-- [download 40% complete]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 44%] No build step for 'GoogleUtilities'
+[ 45%] No update step for 'googletest'
+[ 46%] No install step for 'GoogleUtilities'
+[ 48%] No patch step for 'googletest'
+-- [download 58% complete]
+[ 50%] No test step for 'GoogleUtilities'
+[ 50%] No configure step for 'googletest'
+[ 51%] No build step for 'googletest'
+[ 53%] Completed 'GoogleUtilities'
+[ 54%] No install step for 'googletest'
+[ 54%] Built target GoogleUtilities
+[ 55%] No test step for 'googletest'
+[ 56%] Completed 'googletest'
+[ 56%] Built target googletest
+-- [download 75% complete]
+-- [download 80% complete]
+-- [download 82% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 94% complete]
+-- [download 100% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 58%] No update step for 'c-ares'
+[ 59%] No patch step for 'c-ares'
+[ 60%] No configure step for 'c-ares'
+[ 61%] No build step for 'c-ares'
+[ 62%] No install step for 'c-ares'
+[ 64%] No test step for 'c-ares'
+[ 65%] Completed 'c-ares'
+[ 65%] Built target c-ares
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/abseil-cpp-20200225.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/abseil-cpp-20200225.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 66%] No update step for 'abseil-cpp'
+[ 67%] No patch step for 'abseil-cpp'
+[ 69%] No configure step for 'abseil-cpp'
+[ 70%] No build step for 'abseil-cpp'
+[ 71%] No install step for 'abseil-cpp'
+[ 72%] No test step for 'abseil-cpp'
+[ 74%] Completed 'abseil-cpp'
+[ 74%] Built target abseil-cpp
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/protobuf-29cd005ce1fe1a8fabf11e325cb13006a6646d59.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/protobuf-29cd005ce1fe1a8fabf11e325cb13006a6646d59.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf'
+-- extracting... [tar xfz]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/grpc-1.28.0.tar.gz'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 75%] No update step for 'protobuf'
+[ 76%] No patch step for 'protobuf'
+[ 77%] No configure step for 'protobuf'
+[ 79%] No build step for 'protobuf'
+[ 80%] No install step for 'protobuf'
+-- Downloading... done
+[ 81%] No test step for 'protobuf'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/grpc-1.28.0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc'
+-- extracting... [tar xfz]
+[ 82%] Completed 'protobuf'
+[ 82%] Built target protobuf
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 83%] No update step for 'grpc'
+[ 85%] No patch step for 'grpc'
+[ 86%] No configure step for 'grpc'
+[ 87%] No build step for 'grpc'
+[ 88%] No install step for 'grpc'
+[ 90%] No test step for 'grpc'
+[ 91%] Completed 'grpc'
+[ 91%] Built target grpc
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/boringssl-83da28a68f32023fd3b95a8ae94991a07b1f6c62.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/downloads/boringssl-83da28a68f32023fd3b95a8ae94991a07b1f6c62.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/boringssl'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 92%] No update step for 'boringssl'
+[ 93%] No patch step for 'boringssl'
+[ 95%] No configure step for 'boringssl'
+[ 96%] No build step for 'boringssl'
+[ 97%] No install step for 'boringssl'
+[ 98%] No test step for 'boringssl'
+[100%] Completed 'boringssl'
+[100%] Built target boringssl
 CMake Deprecation Warning at cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
   Compatibility with CMake < 2.8.12 will be removed from a future version of
   CMake.
@@ -1307,6 +1599,10 @@ CMake Deprecation Warning at cmake-build-debug/Lib/firebase-cpp-sdk/external/src
 -- Looking for fseeko - found
 -- Looking for unistd.h
 -- Looking for unistd.h - found
+-- Renaming
+--     /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib/zconf.h
+-- to 'zconf.h.included' because this file is included with zlib
+-- but CMake generates it automatically in the build directory.
 -- add_ext... UWEBSOCKETS_SOURCE_DIR: /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets
 -- add_ext... UWEBSOCKETS_BINARY_DIR: /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets-build
 -- Found PythonInterp: /usr/bin/python (found version "2.7.18") 
