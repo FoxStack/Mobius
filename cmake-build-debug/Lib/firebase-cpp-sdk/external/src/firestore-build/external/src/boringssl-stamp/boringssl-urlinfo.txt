@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/google/boringssl/archive/83da28a68f32023fd3b95a8ae94991a07b1f6c62.tar.gz'
+tag='SHA256=781fa39693ec2984c71213cd633e9f6589eaaed75e3a9ac413237edec96fd3b9'

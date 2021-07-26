@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers-complete.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-install.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-mkdir.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-download.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-update.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-patch.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-configure.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-build.rule"
+		},
+		{
+			"file" : "/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"flatbuffers"
+		],
+		"name" : "flatbuffers"
+	}
+}

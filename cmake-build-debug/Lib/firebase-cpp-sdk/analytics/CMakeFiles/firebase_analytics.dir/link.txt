@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfirebase_analytics.a CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.o CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o
+/usr/bin/ranlib libfirebase_analytics.a

@@ -1,0 +1,283 @@
+Scanning dependencies of target firestore
+Scanning dependencies of target boringssl
+Scanning dependencies of target libuv
+Scanning dependencies of target flatbuffers
+Scanning dependencies of target leveldb
+Scanning dependencies of target uWebSockets
+Scanning dependencies of target nanopb
+[  1%] Creating directories for 'firestore'
+[  2%] Creating directories for 'boringssl'
+[  3%] Creating directories for 'flatbuffers'
+Scanning dependencies of target curl
+[  4%] Creating directories for 'libuv'
+[  5%] Creating directories for 'nanopb'
+[  6%] Creating directories for 'leveldb'
+[  7%] Creating directories for 'uWebSockets'
+Scanning dependencies of target zlib
+[  8%] Creating directories for 'curl'
+[ 10%] Performing download step (download, verify and extract) for 'libuv'
+[ 11%] Creating directories for 'zlib'
+[ 12%] Performing download step for 'boringssl'
+Scanning dependencies of target googletest
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/libuv-v1.33.1.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/libuv/libuv/archive/v1.33.1.tar.gz'
+[ 13%] Creating directories for 'googletest'
+[ 14%] Performing download step (download, verify and extract) for 'flatbuffers'
+[ 15%] Performing download step (download, verify and extract) for 'nanopb'
+[ 16%] Performing download step for 'uWebSockets'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/nanopb-0.3.9.8.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/nanopb/nanopb/archive/nanopb-0.3.9.8.tar.gz'
+[ 17%] Performing download step (download, verify and extract) for 'leveldb'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/flatbuffers-99aa1ef21dd9dc3f9d4fb0eb82f4b59d0bb5e4c5.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/flatbuffers/archive/99aa1ef21dd9dc3f9d4fb0eb82f4b59d0bb5e4c5.tar.gz'
+Initialized empty Git repository in /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/uWebSockets/.git/
+Initialized empty Git repository in /home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/boringssl/.git/
+[ 18%] Performing download step (download, verify and extract) for 'curl'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/leveldb/archive/e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+[ 20%] Performing download step (download, verify and extract) for 'googletest'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/curl-7_73_0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/curl/curl/archive/curl-7_73_0.tar.gz'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/googletest-1.11.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/google/googletest/archive/release-1.11.0.tar.gz'
+[ 21%] Performing download step (download, verify and extract) for 'zlib'
+[ 22%] Performing download step (download, verify and extract) for 'firestore'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/CocoaPods-8.3.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/firebase/firebase-ios-sdk/archive/CocoaPods-8.3.0.tar.gz'
+-- Downloading...
+   dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/zlib-v1.2.11.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/madler/zlib/archive/v1.2.11.tar.gz'
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 100% complete]
+-- [download 0% complete]
+-- [download 2% complete]
+-- [download 6% complete]
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 15% complete]
+-- [download 2% complete]
+-- [download 5% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 26% complete]
+-- [download 32% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 10% complete]
+-- [download 35% complete]
+-- [download 40% complete]
+-- [download 42% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 67% complete]
+-- [download 17% complete]
+-- [download 22% complete]
+-- [download 71% complete]
+-- [download 86% complete]
+-- [download 87% complete]
+-- [download 100% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/zlib-v1.2.11.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/zlib-v1.2.11.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/zlib'
+-- extracting... [tar xfz]
+-- [download 38% complete]
+-- [download 46% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/nanopb-0.3.9.8.tar.gz'
+-- Downloading... done
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 23%] No update step for 'zlib'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/nanopb-0.3.9.8.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/nanopb'
+-- extracting... [tar xfz]
+[ 24%] No patch step for 'zlib'
+[ 25%] No configure step for 'zlib'
+-- [download 47% complete]
+-- [download 49% complete]
+-- [download 50% complete]
+-- Downloading... done
+-- [download 53% complete]
+-- [download 70% complete]
+-- [download 86% complete]
+-- [download 94% complete]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/leveldb-e0d5f83a4f80060fe5b5d80025f0ad049bca430e.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/leveldb'
+-- extracting... [tar xfz]
+[ 26%] No update step for 'nanopb'
+[ 27%] No build step for 'zlib'
+[ 28%] No patch step for 'nanopb'
+[ 30%] No configure step for 'nanopb'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 31%] No build step for 'nanopb'
+[ 32%] No update step for 'leveldb'
+[ 33%] No install step for 'nanopb'
+[ 34%] No install step for 'zlib'
+[ 35%] No patch step for 'leveldb'
+[ 36%] No configure step for 'leveldb'
+-- [download 100% complete]
+-- verifying file...
+       file='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/googletest-1.11.0.tar.gz'
+[ 37%] No test step for 'zlib'
+-- Downloading... done
+[ 38%] No test step for 'nanopb'
+[ 40%] Completed 'nanopb'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/googletest-1.11.0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/googletest'
+-- extracting... [tar xfz]
+-- Downloading... done
+[ 40%] Built target nanopb
+HEAD is now at 4d94401 Update tests using uS namespace
+[ 41%] Completed 'zlib'
+[ 42%] No update step for 'uWebSockets'
+[ 43%] Performing patch step for 'uWebSockets'
+[ 44%] No build step for 'leveldb'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 44%] Built target zlib
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/flatbuffers-99aa1ef21dd9dc3f9d4fb0eb82f4b59d0bb5e4c5.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/flatbuffers'
+-- extracting... [tar xfz]
+[ 45%] No update step for 'googletest'
+[ 46%] No patch step for 'googletest'
+-- Downloading... done
+[ 47%] No configure step for 'googletest'
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/libuv-v1.33.1.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/libuv'
+-- extracting... [tar xfz]
+[ 48%] No install step for 'leveldb'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 50%] No update step for 'flatbuffers'
+[ 51%] No test step for 'leveldb'
+[ 52%] No patch step for 'flatbuffers'
+[ 53%] No build step for 'googletest'
+[ 54%] No configure step for 'flatbuffers'
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 55%] No update step for 'libuv'
+[ 56%] No patch step for 'libuv'
+[ 57%] No configure step for 'libuv'
+[ 58%] Completed 'leveldb'
+[ 60%] No build step for 'flatbuffers'
+[ 61%] No build step for 'libuv'
+[ 61%] Built target leveldb
+[ 62%] No install step for 'libuv'
+[ 63%] No install step for 'flatbuffers'
+[ 64%] No install step for 'googletest'
+[ 65%] No test step for 'googletest'
+[ 66%] No test step for 'flatbuffers'
+[ 67%] No test step for 'libuv'
+[ 68%] Completed 'googletest'
+[ 70%] Completed 'flatbuffers'
+[ 71%] Completed 'libuv'
+[ 71%] Built target flatbuffers
+[ 71%] Built target googletest
+[ 71%] Built target libuv
+[ 72%] No configure step for 'uWebSockets'
+[ 73%] No build step for 'uWebSockets'
+[ 74%] No install step for 'uWebSockets'
+[ 75%] No test step for 'uWebSockets'
+[ 76%] Completed 'uWebSockets'
+[ 76%] Built target uWebSockets
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/curl-7_73_0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/curl'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 77%] No update step for 'curl'
+[ 78%] No patch step for 'curl'
+[ 80%] No configure step for 'curl'
+[ 81%] No build step for 'curl'
+[ 82%] No install step for 'curl'
+[ 83%] No test step for 'curl'
+[ 84%] Completed 'curl'
+[ 84%] Built target curl
+-- Downloading... done
+-- extracting...
+     src='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/downloads/CocoaPods-8.3.0.tar.gz'
+     dst='/home/raf/Desktop/Mobius/cmake-build-release/Lib/firebase-cpp-sdk/external/src/firestore'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 85%] No update step for 'firestore'
+[ 86%] No patch step for 'firestore'
+[ 87%] No configure step for 'firestore'
+[ 88%] No build step for 'firestore'
+[ 90%] No install step for 'firestore'
+[ 91%] No test step for 'firestore'
+[ 92%] Completed 'firestore'
+[ 92%] Built target firestore
+HEAD is now at 83da28a update master-with-bazel from master branch
+[ 93%] No update step for 'boringssl'
+[ 94%] Performing patch step for 'boringssl'
+[ 95%] No configure step for 'boringssl'
+[ 96%] No build step for 'boringssl'
+[ 97%] No install step for 'boringssl'
+[ 98%] No test step for 'boringssl'
+[100%] Completed 'boringssl'
+[100%] Built target boringssl
