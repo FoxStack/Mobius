@@ -102,9 +102,9 @@ if(BUILD_TESTING)
     set(absl_gtest_build_dir ${CMAKE_BINARY_DIR}/googletest-build)
   endif()
 
-  check_target(gtest)
-  check_target(gtest_main)
-  check_target(gmock)
+#  check_target(gtest)
+#  check_target(gtest_main)
+#  check_target(gmock)
 
   list(APPEND ABSL_TEST_COMMON_LIBRARIES
     gtest_main

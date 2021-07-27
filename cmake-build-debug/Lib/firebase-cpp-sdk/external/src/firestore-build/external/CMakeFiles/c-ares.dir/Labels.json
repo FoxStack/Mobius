@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/c-ares"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/c-ares"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/c-ares.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/c-ares.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/c-ares-complete.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/c-ares-complete.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-install.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-install.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-mkdir.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-mkdir.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-download.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-download.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-update.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-update.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-patch.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-patch.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-configure.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-configure.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-build.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-build.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-test.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/c-ares-stamp/c-ares-test.rule"
 		}
 	],
 	"target" : 

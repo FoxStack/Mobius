@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,13 +78,13 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -100,31 +100,31 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ generate_messaging_fbs: Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messa
 
 # fast build rule for target.
 generate_messaging_fbs/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/generate_messaging_fbs.dir/build
 .PHONY : generate_messaging_fbs/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ firebase_messaging: Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging
 
 # fast build rule for target.
 firebase_messaging/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build
 .PHONY : firebase_messaging/fast
 
 src/common.o: src/common.cc.o
@@ -211,7 +211,7 @@ src/common.o: src/common.cc.o
 
 # target to build an object file
 src/common.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.o
 .PHONY : src/common.cc.o
 
 src/common.i: src/common.cc.i
@@ -220,7 +220,7 @@ src/common.i: src/common.cc.i
 
 # target to preprocess a source file
 src/common.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.i
 .PHONY : src/common.cc.i
 
 src/common.s: src/common.cc.s
@@ -229,7 +229,7 @@ src/common.s: src/common.cc.s
 
 # target to generate assembly for a file
 src/common.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.s
 .PHONY : src/common.cc.s
 
 src/listener.o: src/listener.cc.o
@@ -238,7 +238,7 @@ src/listener.o: src/listener.cc.o
 
 # target to build an object file
 src/listener.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.o
 .PHONY : src/listener.cc.o
 
 src/listener.i: src/listener.cc.i
@@ -247,7 +247,7 @@ src/listener.i: src/listener.cc.i
 
 # target to preprocess a source file
 src/listener.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.i
 .PHONY : src/listener.cc.i
 
 src/listener.s: src/listener.cc.s
@@ -256,7 +256,7 @@ src/listener.s: src/listener.cc.s
 
 # target to generate assembly for a file
 src/listener.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.s
 .PHONY : src/listener.cc.s
 
 src/stub/messaging.o: src/stub/messaging.cc.o
@@ -265,7 +265,7 @@ src/stub/messaging.o: src/stub/messaging.cc.o
 
 # target to build an object file
 src/stub/messaging.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o
 .PHONY : src/stub/messaging.cc.o
 
 src/stub/messaging.i: src/stub/messaging.cc.i
@@ -274,7 +274,7 @@ src/stub/messaging.i: src/stub/messaging.cc.i
 
 # target to preprocess a source file
 src/stub/messaging.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.i
 .PHONY : src/stub/messaging.cc.i
 
 src/stub/messaging.s: src/stub/messaging.cc.s
@@ -283,7 +283,7 @@ src/stub/messaging.s: src/stub/messaging.cc.s
 
 # target to generate assembly for a file
 src/stub/messaging.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.s
 .PHONY : src/stub/messaging.cc.s
 
 # Help Target
@@ -320,6 +320,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

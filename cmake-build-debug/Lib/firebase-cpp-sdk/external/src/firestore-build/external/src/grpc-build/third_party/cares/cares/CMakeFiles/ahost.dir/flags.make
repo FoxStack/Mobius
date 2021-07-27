@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DCARES_STATICLIB -DHAVE_CONFIG_H=1 -D_GLIBCXX_USE_CXX11_ABI=0 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600
 
-C_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/cares/cares -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares
+C_INCLUDES = -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/cares/cares" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares"
 
 C_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0  -g -fPIE
 

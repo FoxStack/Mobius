@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,42 +78,31 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -121,17 +110,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -143,16 +131,28 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,114 +162,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/rule
-.PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/rule
-
-# Convenience name for target.
-firestore_bundle_test: Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/rule
-
-.PHONY : firestore_bundle_test
-
-# fast build rule for target.
-firestore_bundle_test/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build
-.PHONY : firestore_bundle_test/fast
-
-bundle_loader_test.o: bundle_loader_test.cc.o
-
-.PHONY : bundle_loader_test.o
-
-# target to build an object file
-bundle_loader_test.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_loader_test.cc.o
-.PHONY : bundle_loader_test.cc.o
-
-bundle_loader_test.i: bundle_loader_test.cc.i
-
-.PHONY : bundle_loader_test.i
-
-# target to preprocess a source file
-bundle_loader_test.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_loader_test.cc.i
-.PHONY : bundle_loader_test.cc.i
-
-bundle_loader_test.s: bundle_loader_test.cc.s
-
-.PHONY : bundle_loader_test.s
-
-# target to generate assembly for a file
-bundle_loader_test.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_loader_test.cc.s
-.PHONY : bundle_loader_test.cc.s
-
-bundle_reader_test.o: bundle_reader_test.cc.o
-
-.PHONY : bundle_reader_test.o
-
-# target to build an object file
-bundle_reader_test.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_reader_test.cc.o
-.PHONY : bundle_reader_test.cc.o
-
-bundle_reader_test.i: bundle_reader_test.cc.i
-
-.PHONY : bundle_reader_test.i
-
-# target to preprocess a source file
-bundle_reader_test.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_reader_test.cc.i
-.PHONY : bundle_reader_test.cc.i
-
-bundle_reader_test.s: bundle_reader_test.cc.s
-
-.PHONY : bundle_reader_test.s
-
-# target to generate assembly for a file
-bundle_reader_test.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_reader_test.cc.s
-.PHONY : bundle_reader_test.cc.s
-
-bundle_serializer_test.o: bundle_serializer_test.cc.o
-
-.PHONY : bundle_serializer_test.o
-
-# target to build an object file
-bundle_serializer_test.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_serializer_test.cc.o
-.PHONY : bundle_serializer_test.cc.o
-
-bundle_serializer_test.i: bundle_serializer_test.cc.i
-
-.PHONY : bundle_serializer_test.i
-
-# target to preprocess a source file
-bundle_serializer_test.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_serializer_test.cc.i
-.PHONY : bundle_serializer_test.cc.i
-
-bundle_serializer_test.s: bundle_serializer_test.cc.s
-
-.PHONY : bundle_serializer_test.s
-
-# target to generate assembly for a file
-bundle_serializer_test.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/bundle_serializer_test.cc.s
-.PHONY : bundle_serializer_test.cc.s
 
 # Help Target
 help:
@@ -283,16 +187,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... firestore_bundle_test"
-	@echo "... bundle_loader_test.o"
-	@echo "... bundle_loader_test.i"
-	@echo "... bundle_loader_test.s"
-	@echo "... bundle_reader_test.o"
-	@echo "... bundle_reader_test.i"
-	@echo "... bundle_reader_test.s"
-	@echo "... bundle_serializer_test.o"
-	@echo "... bundle_serializer_test.i"
-	@echo "... bundle_serializer_test.s"
 .PHONY : help
 
 
@@ -304,6 +198,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

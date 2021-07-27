@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,19 +78,19 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -101,13 +101,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
@@ -123,19 +123,19 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ absl_examine_stack: Lib/firebase-cpp-sdk/external/src/firestore-build/external/s
 
 # fast build rule for target.
 absl_examine_stack/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build
 .PHONY : absl_examine_stack/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ absl_leak_check_disable: Lib/firebase-cpp-sdk/external/src/firestore-build/exter
 
 # fast build rule for target.
 absl_leak_check_disable/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build
 .PHONY : absl_leak_check_disable/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/rule
 
 # Convenience name for target.
@@ -217,12 +217,12 @@ absl_stacktrace: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/
 
 # fast build rule for target.
 absl_stacktrace/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build
 .PHONY : absl_stacktrace/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/rule
 
 # Convenience name for target.
@@ -232,12 +232,12 @@ absl_symbolize: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/g
 
 # fast build rule for target.
 absl_symbolize/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build
 .PHONY : absl_symbolize/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/rule
 
 # Convenience name for target.
@@ -247,12 +247,12 @@ absl_debugging_internal: Lib/firebase-cpp-sdk/external/src/firestore-build/exter
 
 # fast build rule for target.
 absl_debugging_internal/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build
 .PHONY : absl_debugging_internal/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/rule
 
 # Convenience name for target.
@@ -262,12 +262,12 @@ absl_demangle_internal: Lib/firebase-cpp-sdk/external/src/firestore-build/extern
 
 # fast build rule for target.
 absl_demangle_internal/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build
 .PHONY : absl_demangle_internal/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/rule
 
 # Convenience name for target.
@@ -277,12 +277,12 @@ absl_failure_signal_handler: Lib/firebase-cpp-sdk/external/src/firestore-build/e
 
 # fast build rule for target.
 absl_failure_signal_handler/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build
 .PHONY : absl_failure_signal_handler/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/rule
 
 # Convenience name for target.
@@ -292,7 +292,7 @@ absl_leak_check: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/
 
 # fast build rule for target.
 absl_leak_check/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build
 .PHONY : absl_leak_check/fast
 
 failure_signal_handler.o: failure_signal_handler.cc.o
@@ -301,7 +301,7 @@ failure_signal_handler.o: failure_signal_handler.cc.o
 
 # target to build an object file
 failure_signal_handler.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/failure_signal_handler.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/failure_signal_handler.cc.o
 .PHONY : failure_signal_handler.cc.o
 
 failure_signal_handler.i: failure_signal_handler.cc.i
@@ -310,7 +310,7 @@ failure_signal_handler.i: failure_signal_handler.cc.i
 
 # target to preprocess a source file
 failure_signal_handler.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/failure_signal_handler.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/failure_signal_handler.cc.i
 .PHONY : failure_signal_handler.cc.i
 
 failure_signal_handler.s: failure_signal_handler.cc.s
@@ -319,7 +319,7 @@ failure_signal_handler.s: failure_signal_handler.cc.s
 
 # target to generate assembly for a file
 failure_signal_handler.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/failure_signal_handler.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_failure_signal_handler.dir/failure_signal_handler.cc.s
 .PHONY : failure_signal_handler.cc.s
 
 internal/address_is_readable.o: internal/address_is_readable.cc.o
@@ -328,7 +328,7 @@ internal/address_is_readable.o: internal/address_is_readable.cc.o
 
 # target to build an object file
 internal/address_is_readable.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.o
 .PHONY : internal/address_is_readable.cc.o
 
 internal/address_is_readable.i: internal/address_is_readable.cc.i
@@ -337,7 +337,7 @@ internal/address_is_readable.i: internal/address_is_readable.cc.i
 
 # target to preprocess a source file
 internal/address_is_readable.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.i
 .PHONY : internal/address_is_readable.cc.i
 
 internal/address_is_readable.s: internal/address_is_readable.cc.s
@@ -346,7 +346,7 @@ internal/address_is_readable.s: internal/address_is_readable.cc.s
 
 # target to generate assembly for a file
 internal/address_is_readable.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/address_is_readable.cc.s
 .PHONY : internal/address_is_readable.cc.s
 
 internal/demangle.o: internal/demangle.cc.o
@@ -355,7 +355,7 @@ internal/demangle.o: internal/demangle.cc.o
 
 # target to build an object file
 internal/demangle.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.o
 .PHONY : internal/demangle.cc.o
 
 internal/demangle.i: internal/demangle.cc.i
@@ -364,7 +364,7 @@ internal/demangle.i: internal/demangle.cc.i
 
 # target to preprocess a source file
 internal/demangle.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.i
 .PHONY : internal/demangle.cc.i
 
 internal/demangle.s: internal/demangle.cc.s
@@ -373,7 +373,7 @@ internal/demangle.s: internal/demangle.cc.s
 
 # target to generate assembly for a file
 internal/demangle.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_demangle_internal.dir/internal/demangle.cc.s
 .PHONY : internal/demangle.cc.s
 
 internal/elf_mem_image.o: internal/elf_mem_image.cc.o
@@ -382,7 +382,7 @@ internal/elf_mem_image.o: internal/elf_mem_image.cc.o
 
 # target to build an object file
 internal/elf_mem_image.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.o
 .PHONY : internal/elf_mem_image.cc.o
 
 internal/elf_mem_image.i: internal/elf_mem_image.cc.i
@@ -391,7 +391,7 @@ internal/elf_mem_image.i: internal/elf_mem_image.cc.i
 
 # target to preprocess a source file
 internal/elf_mem_image.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.i
 .PHONY : internal/elf_mem_image.cc.i
 
 internal/elf_mem_image.s: internal/elf_mem_image.cc.s
@@ -400,7 +400,7 @@ internal/elf_mem_image.s: internal/elf_mem_image.cc.s
 
 # target to generate assembly for a file
 internal/elf_mem_image.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/elf_mem_image.cc.s
 .PHONY : internal/elf_mem_image.cc.s
 
 internal/examine_stack.o: internal/examine_stack.cc.o
@@ -409,7 +409,7 @@ internal/examine_stack.o: internal/examine_stack.cc.o
 
 # target to build an object file
 internal/examine_stack.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/internal/examine_stack.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/internal/examine_stack.cc.o
 .PHONY : internal/examine_stack.cc.o
 
 internal/examine_stack.i: internal/examine_stack.cc.i
@@ -418,7 +418,7 @@ internal/examine_stack.i: internal/examine_stack.cc.i
 
 # target to preprocess a source file
 internal/examine_stack.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/internal/examine_stack.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/internal/examine_stack.cc.i
 .PHONY : internal/examine_stack.cc.i
 
 internal/examine_stack.s: internal/examine_stack.cc.s
@@ -427,7 +427,7 @@ internal/examine_stack.s: internal/examine_stack.cc.s
 
 # target to generate assembly for a file
 internal/examine_stack.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/internal/examine_stack.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_examine_stack.dir/internal/examine_stack.cc.s
 .PHONY : internal/examine_stack.cc.s
 
 internal/vdso_support.o: internal/vdso_support.cc.o
@@ -436,7 +436,7 @@ internal/vdso_support.o: internal/vdso_support.cc.o
 
 # target to build an object file
 internal/vdso_support.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.o
 .PHONY : internal/vdso_support.cc.o
 
 internal/vdso_support.i: internal/vdso_support.cc.i
@@ -445,7 +445,7 @@ internal/vdso_support.i: internal/vdso_support.cc.i
 
 # target to preprocess a source file
 internal/vdso_support.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.i
 .PHONY : internal/vdso_support.cc.i
 
 internal/vdso_support.s: internal/vdso_support.cc.s
@@ -454,7 +454,7 @@ internal/vdso_support.s: internal/vdso_support.cc.s
 
 # target to generate assembly for a file
 internal/vdso_support.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_debugging_internal.dir/internal/vdso_support.cc.s
 .PHONY : internal/vdso_support.cc.s
 
 leak_check.o: leak_check.cc.o
@@ -463,7 +463,7 @@ leak_check.o: leak_check.cc.o
 
 # target to build an object file
 leak_check.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/leak_check.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/leak_check.cc.o
 .PHONY : leak_check.cc.o
 
 leak_check.i: leak_check.cc.i
@@ -472,7 +472,7 @@ leak_check.i: leak_check.cc.i
 
 # target to preprocess a source file
 leak_check.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/leak_check.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/leak_check.cc.i
 .PHONY : leak_check.cc.i
 
 leak_check.s: leak_check.cc.s
@@ -481,7 +481,7 @@ leak_check.s: leak_check.cc.s
 
 # target to generate assembly for a file
 leak_check.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/leak_check.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check.dir/leak_check.cc.s
 .PHONY : leak_check.cc.s
 
 leak_check_disable.o: leak_check_disable.cc.o
@@ -490,7 +490,7 @@ leak_check_disable.o: leak_check_disable.cc.o
 
 # target to build an object file
 leak_check_disable.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/leak_check_disable.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/leak_check_disable.cc.o
 .PHONY : leak_check_disable.cc.o
 
 leak_check_disable.i: leak_check_disable.cc.i
@@ -499,7 +499,7 @@ leak_check_disable.i: leak_check_disable.cc.i
 
 # target to preprocess a source file
 leak_check_disable.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/leak_check_disable.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/leak_check_disable.cc.i
 .PHONY : leak_check_disable.cc.i
 
 leak_check_disable.s: leak_check_disable.cc.s
@@ -508,7 +508,7 @@ leak_check_disable.s: leak_check_disable.cc.s
 
 # target to generate assembly for a file
 leak_check_disable.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/leak_check_disable.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_leak_check_disable.dir/leak_check_disable.cc.s
 .PHONY : leak_check_disable.cc.s
 
 stacktrace.o: stacktrace.cc.o
@@ -517,7 +517,7 @@ stacktrace.o: stacktrace.cc.o
 
 # target to build an object file
 stacktrace.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.o
 .PHONY : stacktrace.cc.o
 
 stacktrace.i: stacktrace.cc.i
@@ -526,7 +526,7 @@ stacktrace.i: stacktrace.cc.i
 
 # target to preprocess a source file
 stacktrace.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.i
 .PHONY : stacktrace.cc.i
 
 stacktrace.s: stacktrace.cc.s
@@ -535,7 +535,7 @@ stacktrace.s: stacktrace.cc.s
 
 # target to generate assembly for a file
 stacktrace.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_stacktrace.dir/stacktrace.cc.s
 .PHONY : stacktrace.cc.s
 
 symbolize.o: symbolize.cc.o
@@ -544,7 +544,7 @@ symbolize.o: symbolize.cc.o
 
 # target to build an object file
 symbolize.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.o
 .PHONY : symbolize.cc.o
 
 symbolize.i: symbolize.cc.i
@@ -553,7 +553,7 @@ symbolize.i: symbolize.cc.i
 
 # target to preprocess a source file
 symbolize.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.i
 .PHONY : symbolize.cc.i
 
 symbolize.s: symbolize.cc.s
@@ -562,7 +562,7 @@ symbolize.s: symbolize.cc.s
 
 # target to generate assembly for a file
 symbolize.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/abseil-cpp/absl/debugging/CMakeFiles/absl_symbolize.dir/symbolize.cc.s
 .PHONY : symbolize.cc.s
 
 # Help Target
@@ -626,6 +626,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

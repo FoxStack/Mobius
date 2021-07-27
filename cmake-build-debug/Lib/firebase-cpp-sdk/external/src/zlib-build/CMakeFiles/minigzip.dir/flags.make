@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLIBCXX_USE_CXX11_ABI=0 -D_LARGEFILE64_SOURCE=1
 
-C_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib-build -I/home/raf/Desktop/Mobius
+C_INCLUDES = -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib-build" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 C_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -g
 

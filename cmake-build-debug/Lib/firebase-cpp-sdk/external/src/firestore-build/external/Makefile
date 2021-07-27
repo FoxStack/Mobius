@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/cmake/external
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/cmake/external"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named zlib
+# Target rules for targets named GoogleUtilities
 
 # Build rule for target.
-zlib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlib
-.PHONY : zlib
+GoogleUtilities: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GoogleUtilities
+.PHONY : GoogleUtilities
 
 # fast build rule for target.
-zlib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zlib.dir/build.make CMakeFiles/zlib.dir/build
-.PHONY : zlib/fast
+GoogleUtilities/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleUtilities.dir/build.make CMakeFiles/GoogleUtilities.dir/build
+.PHONY : GoogleUtilities/fast
 
 #=============================================================================
 # Target rules for targets named boringssl
@@ -167,45 +167,6 @@ abseil-cpp: cmake_check_build_system
 abseil-cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/abseil-cpp.dir/build.make CMakeFiles/abseil-cpp.dir/build
 .PHONY : abseil-cpp/fast
-
-#=============================================================================
-# Target rules for targets named googletest
-
-# Build rule for target.
-googletest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest
-.PHONY : googletest
-
-# fast build rule for target.
-googletest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
-.PHONY : googletest/fast
-
-#=============================================================================
-# Target rules for targets named protobuf
-
-# Build rule for target.
-protobuf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protobuf
-.PHONY : protobuf
-
-# fast build rule for target.
-protobuf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf.dir/build.make CMakeFiles/protobuf.dir/build
-.PHONY : protobuf/fast
-
-#=============================================================================
-# Target rules for targets named GoogleUtilities
-
-# Build rule for target.
-GoogleUtilities: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GoogleUtilities
-.PHONY : GoogleUtilities
-
-# fast build rule for target.
-GoogleUtilities/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleUtilities.dir/build.make CMakeFiles/GoogleUtilities.dir/build
-.PHONY : GoogleUtilities/fast
 
 #=============================================================================
 # Target rules for targets named c-ares
@@ -272,6 +233,32 @@ libfuzzer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfuzzer.dir/build.make CMakeFiles/libfuzzer.dir/build
 .PHONY : libfuzzer/fast
 
+#=============================================================================
+# Target rules for targets named protobuf
+
+# Build rule for target.
+protobuf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protobuf
+.PHONY : protobuf
+
+# fast build rule for target.
+protobuf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf.dir/build.make CMakeFiles/protobuf.dir/build
+.PHONY : protobuf/fast
+
+#=============================================================================
+# Target rules for targets named zlib
+
+# Build rule for target.
+zlib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlib
+.PHONY : zlib
+
+# fast build rule for target.
+zlib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zlib.dir/build.make CMakeFiles/zlib.dir/build
+.PHONY : zlib/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -284,7 +271,6 @@ help:
 	@echo "... abseil-cpp"
 	@echo "... boringssl"
 	@echo "... c-ares"
-	@echo "... googletest"
 	@echo "... grpc"
 	@echo "... leveldb"
 	@echo "... libfuzzer"

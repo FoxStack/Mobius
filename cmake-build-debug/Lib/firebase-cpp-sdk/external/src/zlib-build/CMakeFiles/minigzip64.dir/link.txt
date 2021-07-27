@@ -1,1 +1,1 @@
-/usr/bin/cc  -D_GLIBCXX_USE_CXX11_ABI=0 -g -rdynamic CMakeFiles/minigzip64.dir/test/minigzip.o -o minigzip64  -Wl,-rpath,/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib-build libz.so.1.2.11 
+/usr/bin/cc  -D_GLIBCXX_USE_CXX11_ABI=0 -g -rdynamic CMakeFiles/minigzip64.dir/test/minigzip.o -o minigzip64  -Wl,-rpath,"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib-build" libz.so.1.2.11 

@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'")
+       file='/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'")
 
-  file("SHA256" "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz" actual_value)
+  file("SHA256" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "e8c2751ddc70fed9dc6f999acd92e232d5846f009ee1674f8aee81f19b2b915a")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS "SHA256 hash of
-    /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz
+    /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz
   does not match expected value
     expected: 'e8c2751ddc70fed9dc6f999acd92e232d5846f009ee1674f8aee81f19b2b915a'
       actual: '${actual_value}'")
@@ -71,7 +71,7 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz" STREQUAL "")
+if("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
@@ -79,32 +79,32 @@ if("https://github.com/c-ares/c-ares/archive/e982924acee7f7313b4baa4ee5ec000c5e3
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
+if(EXISTS "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
+  file='/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
   SHA256='e8c2751ddc70fed9dc6f999acd92e232d5846f009ee1674f8aee81f19b2b915a'"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
+      file(REMOVE "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
+  file='/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
+    file(REMOVE "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
+   dst='/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -126,7 +126,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz"
+        "${url}" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -143,7 +143,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
+          file(REMOVE "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz")
         else()
           message(STATUS "Downloading... done")
           return()

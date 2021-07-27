@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,37 +78,37 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -124,7 +124,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ remote_config_generate_request_fbs: Lib/firebase-cpp-sdk/remote_config/CMakeFile
 
 # fast build rule for target.
 remote_config_generate_request_fbs/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/remote_config_generate_request_fbs.dir/build
 .PHONY : remote_config_generate_request_fbs/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ firebase_remote_config: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_r
 
 # fast build rule for target.
 firebase_remote_config/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build
 .PHONY : firebase_remote_config/fast
 
 __/__/__/generated/remote_config/request_resource.o: __/__/__/generated/remote_config/request_resource.cc.o
@@ -211,7 +211,7 @@ __/__/__/generated/remote_config/request_resource.o: __/__/__/generated/remote_c
 
 # target to build an object file
 __/__/__/generated/remote_config/request_resource.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o
 .PHONY : __/__/__/generated/remote_config/request_resource.cc.o
 
 __/__/__/generated/remote_config/request_resource.i: __/__/__/generated/remote_config/request_resource.cc.i
@@ -220,7 +220,7 @@ __/__/__/generated/remote_config/request_resource.i: __/__/__/generated/remote_c
 
 # target to preprocess a source file
 __/__/__/generated/remote_config/request_resource.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.i
 .PHONY : __/__/__/generated/remote_config/request_resource.cc.i
 
 __/__/__/generated/remote_config/request_resource.s: __/__/__/generated/remote_config/request_resource.cc.s
@@ -229,7 +229,7 @@ __/__/__/generated/remote_config/request_resource.s: __/__/__/generated/remote_c
 
 # target to generate assembly for a file
 __/__/__/generated/remote_config/request_resource.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.s
 .PHONY : __/__/__/generated/remote_config/request_resource.cc.s
 
 __/__/__/generated/remote_config/response_resource.o: __/__/__/generated/remote_config/response_resource.cc.o
@@ -238,7 +238,7 @@ __/__/__/generated/remote_config/response_resource.o: __/__/__/generated/remote_
 
 # target to build an object file
 __/__/__/generated/remote_config/response_resource.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o
 .PHONY : __/__/__/generated/remote_config/response_resource.cc.o
 
 __/__/__/generated/remote_config/response_resource.i: __/__/__/generated/remote_config/response_resource.cc.i
@@ -247,7 +247,7 @@ __/__/__/generated/remote_config/response_resource.i: __/__/__/generated/remote_
 
 # target to preprocess a source file
 __/__/__/generated/remote_config/response_resource.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.i
 .PHONY : __/__/__/generated/remote_config/response_resource.cc.i
 
 __/__/__/generated/remote_config/response_resource.s: __/__/__/generated/remote_config/response_resource.cc.s
@@ -256,7 +256,7 @@ __/__/__/generated/remote_config/response_resource.s: __/__/__/generated/remote_
 
 # target to generate assembly for a file
 __/__/__/generated/remote_config/response_resource.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.s
 .PHONY : __/__/__/generated/remote_config/response_resource.cc.s
 
 src/common.o: src/common.cc.o
@@ -265,7 +265,7 @@ src/common.o: src/common.cc.o
 
 # target to build an object file
 src/common.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.o
 .PHONY : src/common.cc.o
 
 src/common.i: src/common.cc.i
@@ -274,7 +274,7 @@ src/common.i: src/common.cc.i
 
 # target to preprocess a source file
 src/common.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.i
 .PHONY : src/common.cc.i
 
 src/common.s: src/common.cc.s
@@ -283,7 +283,7 @@ src/common.s: src/common.cc.s
 
 # target to generate assembly for a file
 src/common.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.s
 .PHONY : src/common.cc.s
 
 src/desktop/config_data.o: src/desktop/config_data.cc.o
@@ -292,7 +292,7 @@ src/desktop/config_data.o: src/desktop/config_data.cc.o
 
 # target to build an object file
 src/desktop/config_data.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o
 .PHONY : src/desktop/config_data.cc.o
 
 src/desktop/config_data.i: src/desktop/config_data.cc.i
@@ -301,7 +301,7 @@ src/desktop/config_data.i: src/desktop/config_data.cc.i
 
 # target to preprocess a source file
 src/desktop/config_data.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.i
 .PHONY : src/desktop/config_data.cc.i
 
 src/desktop/config_data.s: src/desktop/config_data.cc.s
@@ -310,7 +310,7 @@ src/desktop/config_data.s: src/desktop/config_data.cc.s
 
 # target to generate assembly for a file
 src/desktop/config_data.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.s
 .PHONY : src/desktop/config_data.cc.s
 
 src/desktop/file_manager.o: src/desktop/file_manager.cc.o
@@ -319,7 +319,7 @@ src/desktop/file_manager.o: src/desktop/file_manager.cc.o
 
 # target to build an object file
 src/desktop/file_manager.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o
 .PHONY : src/desktop/file_manager.cc.o
 
 src/desktop/file_manager.i: src/desktop/file_manager.cc.i
@@ -328,7 +328,7 @@ src/desktop/file_manager.i: src/desktop/file_manager.cc.i
 
 # target to preprocess a source file
 src/desktop/file_manager.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.i
 .PHONY : src/desktop/file_manager.cc.i
 
 src/desktop/file_manager.s: src/desktop/file_manager.cc.s
@@ -337,7 +337,7 @@ src/desktop/file_manager.s: src/desktop/file_manager.cc.s
 
 # target to generate assembly for a file
 src/desktop/file_manager.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.s
 .PHONY : src/desktop/file_manager.cc.s
 
 src/desktop/metadata.o: src/desktop/metadata.cc.o
@@ -346,7 +346,7 @@ src/desktop/metadata.o: src/desktop/metadata.cc.o
 
 # target to build an object file
 src/desktop/metadata.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o
 .PHONY : src/desktop/metadata.cc.o
 
 src/desktop/metadata.i: src/desktop/metadata.cc.i
@@ -355,7 +355,7 @@ src/desktop/metadata.i: src/desktop/metadata.cc.i
 
 # target to preprocess a source file
 src/desktop/metadata.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.i
 .PHONY : src/desktop/metadata.cc.i
 
 src/desktop/metadata.s: src/desktop/metadata.cc.s
@@ -364,7 +364,7 @@ src/desktop/metadata.s: src/desktop/metadata.cc.s
 
 # target to generate assembly for a file
 src/desktop/metadata.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.s
 .PHONY : src/desktop/metadata.cc.s
 
 src/desktop/notification_channel.o: src/desktop/notification_channel.cc.o
@@ -373,7 +373,7 @@ src/desktop/notification_channel.o: src/desktop/notification_channel.cc.o
 
 # target to build an object file
 src/desktop/notification_channel.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o
 .PHONY : src/desktop/notification_channel.cc.o
 
 src/desktop/notification_channel.i: src/desktop/notification_channel.cc.i
@@ -382,7 +382,7 @@ src/desktop/notification_channel.i: src/desktop/notification_channel.cc.i
 
 # target to preprocess a source file
 src/desktop/notification_channel.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.i
 .PHONY : src/desktop/notification_channel.cc.i
 
 src/desktop/notification_channel.s: src/desktop/notification_channel.cc.s
@@ -391,7 +391,7 @@ src/desktop/notification_channel.s: src/desktop/notification_channel.cc.s
 
 # target to generate assembly for a file
 src/desktop/notification_channel.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.s
 .PHONY : src/desktop/notification_channel.cc.s
 
 src/desktop/remote_config_desktop.o: src/desktop/remote_config_desktop.cc.o
@@ -400,7 +400,7 @@ src/desktop/remote_config_desktop.o: src/desktop/remote_config_desktop.cc.o
 
 # target to build an object file
 src/desktop/remote_config_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o
 .PHONY : src/desktop/remote_config_desktop.cc.o
 
 src/desktop/remote_config_desktop.i: src/desktop/remote_config_desktop.cc.i
@@ -409,7 +409,7 @@ src/desktop/remote_config_desktop.i: src/desktop/remote_config_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/remote_config_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.i
 .PHONY : src/desktop/remote_config_desktop.cc.i
 
 src/desktop/remote_config_desktop.s: src/desktop/remote_config_desktop.cc.s
@@ -418,7 +418,7 @@ src/desktop/remote_config_desktop.s: src/desktop/remote_config_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/remote_config_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.s
 .PHONY : src/desktop/remote_config_desktop.cc.s
 
 src/desktop/remote_config_request.o: src/desktop/remote_config_request.cc.o
@@ -427,7 +427,7 @@ src/desktop/remote_config_request.o: src/desktop/remote_config_request.cc.o
 
 # target to build an object file
 src/desktop/remote_config_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o
 .PHONY : src/desktop/remote_config_request.cc.o
 
 src/desktop/remote_config_request.i: src/desktop/remote_config_request.cc.i
@@ -436,7 +436,7 @@ src/desktop/remote_config_request.i: src/desktop/remote_config_request.cc.i
 
 # target to preprocess a source file
 src/desktop/remote_config_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.i
 .PHONY : src/desktop/remote_config_request.cc.i
 
 src/desktop/remote_config_request.s: src/desktop/remote_config_request.cc.s
@@ -445,7 +445,7 @@ src/desktop/remote_config_request.s: src/desktop/remote_config_request.cc.s
 
 # target to generate assembly for a file
 src/desktop/remote_config_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.s
 .PHONY : src/desktop/remote_config_request.cc.s
 
 src/desktop/remote_config_response.o: src/desktop/remote_config_response.cc.o
@@ -454,7 +454,7 @@ src/desktop/remote_config_response.o: src/desktop/remote_config_response.cc.o
 
 # target to build an object file
 src/desktop/remote_config_response.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o
 .PHONY : src/desktop/remote_config_response.cc.o
 
 src/desktop/remote_config_response.i: src/desktop/remote_config_response.cc.i
@@ -463,7 +463,7 @@ src/desktop/remote_config_response.i: src/desktop/remote_config_response.cc.i
 
 # target to preprocess a source file
 src/desktop/remote_config_response.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.i
 .PHONY : src/desktop/remote_config_response.cc.i
 
 src/desktop/remote_config_response.s: src/desktop/remote_config_response.cc.s
@@ -472,7 +472,7 @@ src/desktop/remote_config_response.s: src/desktop/remote_config_response.cc.s
 
 # target to generate assembly for a file
 src/desktop/remote_config_response.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.s
 .PHONY : src/desktop/remote_config_response.cc.s
 
 src/desktop/rest.o: src/desktop/rest.cc.o
@@ -481,7 +481,7 @@ src/desktop/rest.o: src/desktop/rest.cc.o
 
 # target to build an object file
 src/desktop/rest.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o
 .PHONY : src/desktop/rest.cc.o
 
 src/desktop/rest.i: src/desktop/rest.cc.i
@@ -490,7 +490,7 @@ src/desktop/rest.i: src/desktop/rest.cc.i
 
 # target to preprocess a source file
 src/desktop/rest.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.i
 .PHONY : src/desktop/rest.cc.i
 
 src/desktop/rest.s: src/desktop/rest.cc.s
@@ -499,7 +499,7 @@ src/desktop/rest.s: src/desktop/rest.cc.s
 
 # target to generate assembly for a file
 src/desktop/rest.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.s
 .PHONY : src/desktop/rest.cc.s
 
 src/remote_config.o: src/remote_config.cc.o
@@ -508,7 +508,7 @@ src/remote_config.o: src/remote_config.cc.o
 
 # target to build an object file
 src/remote_config.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o
 .PHONY : src/remote_config.cc.o
 
 src/remote_config.i: src/remote_config.cc.i
@@ -517,7 +517,7 @@ src/remote_config.i: src/remote_config.cc.i
 
 # target to preprocess a source file
 src/remote_config.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.i
 .PHONY : src/remote_config.cc.i
 
 src/remote_config.s: src/remote_config.cc.s
@@ -526,7 +526,7 @@ src/remote_config.s: src/remote_config.cc.s
 
 # target to generate assembly for a file
 src/remote_config.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.s
 .PHONY : src/remote_config.cc.s
 
 # Help Target
@@ -590,6 +590,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

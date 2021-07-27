@@ -36,6 +36,96 @@ app/src/include/firebase/internal/type_traits.h
 app/src/include/firebase/internal/type_traits.h
 ../Lib/firebase-cpp-sdk/app/meta/app/src/include/firebase/internal/type_traits.h
 
+../Lib/firebase-cpp-sdk/app/rest/controller_interface.h
+cstdint
+-
+
+../Lib/firebase-cpp-sdk/app/rest/request.h
+cstddef
+-
+string
+-
+app/rest/request_options.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/request_options.h
+app/rest/transfer_interface.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/transfer_interface.h
+
+../Lib/firebase-cpp-sdk/app/rest/request_options.h
+map
+-
+string
+-
+
+../Lib/firebase-cpp-sdk/app/rest/response.h
+cstddef
+-
+ctime
+-
+map
+-
+string
+-
+utility
+-
+vector
+-
+app/rest/transfer_interface.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/transfer_interface.h
+app/rest/util.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/util.h
+
+../Lib/firebase-cpp-sdk/app/rest/transfer_interface.h
+
+../Lib/firebase-cpp-sdk/app/rest/transport_builder.h
+limits
+-
+memory
+-
+app/rest/transport_interface.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/transport_interface.h
+flatbuffers/stl_emulation.h
+../Lib/firebase-cpp-sdk/app/rest/flatbuffers/stl_emulation.h
+
+../Lib/firebase-cpp-sdk/app/rest/transport_curl.h
+limits
+-
+memory
+-
+vector
+-
+app/rest/transport_interface.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/transport_interface.h
+app/src/mutex.h
+../Lib/firebase-cpp-sdk/app/rest/app/src/mutex.h
+app/src/semaphore.h
+../Lib/firebase-cpp-sdk/app/rest/app/src/semaphore.h
+flatbuffers/stl_emulation.h
+../Lib/firebase-cpp-sdk/app/rest/flatbuffers/stl_emulation.h
+
+../Lib/firebase-cpp-sdk/app/rest/transport_interface.h
+limits
+-
+memory
+-
+app/rest/controller_interface.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/controller_interface.h
+app/rest/request.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/request.h
+app/rest/response.h
+../Lib/firebase-cpp-sdk/app/rest/app/rest/response.h
+flatbuffers/stl_emulation.h
+../Lib/firebase-cpp-sdk/app/rest/flatbuffers/stl_emulation.h
+
+../Lib/firebase-cpp-sdk/app/rest/util.h
+string
+-
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/app/rest/app/src/include/firebase/variant.h
+app/src/mutex.h
+../Lib/firebase-cpp-sdk/app/rest/app/src/mutex.h
+flatbuffers/idl.h
+../Lib/firebase-cpp-sdk/app/rest/flatbuffers/idl.h
+
 ../Lib/firebase-cpp-sdk/app/src/app_common.h
 stddef.h
 -
@@ -77,6 +167,16 @@ stddef.h
 -
 vector
 -
+
+../Lib/firebase-cpp-sdk/app/src/filesystem.h
+string
+-
+
+../Lib/firebase-cpp-sdk/app/src/function_registry.h
+map
+-
+app/src/mutex.h
+../Lib/firebase-cpp-sdk/app/src/app/src/mutex.h
 
 ../Lib/firebase-cpp-sdk/app/src/future_manager.h
 map
@@ -388,6 +488,24 @@ app/src/include/firebase/variant.h
 flatbuffers/flexbuffers.h
 ../Lib/firebase-cpp-sdk/app/src/flatbuffers/flexbuffers.h
 
+../Lib/firebase-cpp-sdk/database/src/android/data_snapshot_android.h
+jni.h
+-
+stddef.h
+-
+string
+-
+app/src/include/firebase/app.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/app.h
+app/src/include/firebase/internal/common.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/internal/common.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/variant.h
+database/src/include/firebase/database/common.h
+../Lib/firebase-cpp-sdk/database/src/android/database/src/include/firebase/database/common.h
+database/src/include/firebase/database/data_snapshot.h
+../Lib/firebase-cpp-sdk/database/src/android/database/src/include/firebase/database/data_snapshot.h
+
 ../Lib/firebase-cpp-sdk/database/src/android/database_android.h
 jni.h
 -
@@ -446,6 +564,36 @@ database/src/include/firebase/database/query.h
 database/src/include/firebase/database/transaction.h
 ../Lib/firebase-cpp-sdk/database/src/android/database/src/include/firebase/database/transaction.h
 
+../Lib/firebase-cpp-sdk/database/src/android/disconnection_android.h
+jni.h
+-
+app/src/include/firebase/app.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/app.h
+app/src/include/firebase/future.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/future.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/variant.h
+app/src/reference_counted_future_impl.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/reference_counted_future_impl.h
+database/src/include/firebase/database/disconnection.h
+../Lib/firebase-cpp-sdk/database/src/android/database/src/include/firebase/database/disconnection.h
+
+../Lib/firebase-cpp-sdk/database/src/android/mutable_data_android.h
+jni.h
+-
+string
+-
+app/src/include/firebase/app.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/app.h
+app/src/include/firebase/internal/common.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/internal/common.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/android/app/src/include/firebase/variant.h
+database/src/include/firebase/database/common.h
+../Lib/firebase-cpp-sdk/database/src/android/database/src/include/firebase/database/common.h
+database/src/include/firebase/database/mutable_data.h
+../Lib/firebase-cpp-sdk/database/src/android/database/src/include/firebase/database/mutable_data.h
+
 ../Lib/firebase-cpp-sdk/database/src/android/query_android.h
 jni.h
 -
@@ -464,6 +612,12 @@ database/src/include/firebase/database.h
 database/src/include/firebase/database/listener.h
 ../Lib/firebase-cpp-sdk/database/src/android/database/src/include/firebase/database/listener.h
 
+../Lib/firebase-cpp-sdk/database/src/common/cleanup.h
+
+../Lib/firebase-cpp-sdk/database/src/common/database_reference.h
+database/src/include/firebase/database/common.h
+../Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/common.h
+
 ../Lib/firebase-cpp-sdk/database/src/common/listener.h
 algorithm
 -
@@ -473,6 +627,8 @@ app/src/mutex.h
 ../Lib/firebase-cpp-sdk/database/src/common/app/src/mutex.h
 database/src/common/query_spec.h
 ../Lib/firebase-cpp-sdk/database/src/common/database/src/common/query_spec.h
+
+../Lib/firebase-cpp-sdk/database/src/common/query.h
 
 ../Lib/firebase-cpp-sdk/database/src/common/query_spec.h
 app/src/include/firebase/variant.h
@@ -550,6 +706,42 @@ database/src/desktop/core/tag.h
 database/src/include/firebase/database/common.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/include/firebase/database/common.h
 
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/util_connection.h
+app/memory/unique_ptr.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/memory/unique_ptr.h
+app/src/logger.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/logger.h
+app/src/scheduler.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/scheduler.h
+database/src/desktop/connection/host_info.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/host_info.h
+database/src/desktop/connection/web_socket_client_interface.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/web_socket_client_interface.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/web_socket_client_impl.h
+queue
+-
+string
+-
+app/memory/atomic.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/memory/atomic.h
+app/memory/unique_ptr.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/memory/unique_ptr.h
+app/src/logger.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/logger.h
+app/src/mutex.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/mutex.h
+app/src/safe_reference.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/safe_reference.h
+app/src/scheduler.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/scheduler.h
+app/src/thread.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/thread.h
+database/src/desktop/connection/web_socket_client_interface.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/web_socket_client_interface.h
+uWebSockets/src/uWS.h
+../Lib/firebase-cpp-sdk/database/src/desktop/connection/uWebSockets/src/uWS.h
+
 ../Lib/firebase-cpp-sdk/database/src/desktop/connection/web_socket_client_interface.h
 string
 -
@@ -557,6 +749,20 @@ string
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/cache_policy.h
 cstdint
 -
+
+../Lib/firebase-cpp-sdk/database/src/desktop/core/child_event_registration.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/core/event_registration.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/event_registration.h
+database/src/desktop/view/event.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/event.h
+database/src/include/firebase/database/common.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
+database/src/include/firebase/database/listener.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/listener.h
 
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/compound_write.h
 map
@@ -569,6 +775,8 @@ app/src/path.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
 database/src/desktop/core/tree.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tree.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/core/constants.h
 
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/event_registration.h
 app/src/path.h
@@ -591,6 +799,32 @@ database/src/common/query_spec.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
 database/src/desktop/query_params_comparator.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/query_params_comparator.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/core/info_listen_provider.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/connection/persistent_connection.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/connection/persistent_connection.h
+database/src/desktop/core/listen_provider.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/listen_provider.h
+database/src/desktop/core/repo.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/repo.h
+database/src/desktop/core/tag.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tag.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/core/keep_synced_event_registration.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/core/event_registration.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/event_registration.h
+database/src/desktop/view/change.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/change.h
+database/src/desktop/view/event.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/event.h
+firebase/database/common.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/firebase/database/common.h
 
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/listen_provider.h
 database/src/common/query_spec.h
@@ -647,6 +881,14 @@ database/src/include/firebase/database/common.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
 database/src/include/firebase/database/transaction.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/transaction.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/core/server_values.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/include/firebase/variant.h
+database/src/desktop/core/compound_write.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/compound_write.h
+database/src/desktop/core/sparse_snapshot_tree.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/sparse_snapshot_tree.h
 
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/sparse_snapshot_tree.h
 app/src/include/firebase/variant.h
@@ -750,6 +992,32 @@ app/src/path.h
 database/src/desktop/util_desktop.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
 
+../Lib/firebase-cpp-sdk/database/src/desktop/core/value_event_registration.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/core/event_registration.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/event_registration.h
+database/src/desktop/view/event.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/event.h
+database/src/include/firebase/database/common.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
+database/src/include/firebase/database/listener.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/listener.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/core/web_socket_listen_provider.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/connection/persistent_connection.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/connection/persistent_connection.h
+database/src/desktop/core/listen_provider.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/listen_provider.h
+database/src/desktop/core/repo.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/repo.h
+database/src/desktop/core/tag.h
+../Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tag.h
+
 ../Lib/firebase-cpp-sdk/database/src/desktop/core/write_tree.h
 string
 -
@@ -830,6 +1098,48 @@ database/src/desktop/util_desktop.h
 database/src/include/firebase/database/database_reference.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/database_reference.h
 
+../Lib/firebase-cpp-sdk/database/src/desktop/database_reference_desktop.h
+map
+-
+string
+-
+app/src/include/firebase/future.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/future.h
+app/src/include/firebase/internal/common.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/internal/common.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/variant.h
+app/src/reference_counted_future_impl.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/reference_counted_future_impl.h
+database/src/desktop/query_desktop.h
+../Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/query_desktop.h
+database/src/include/firebase/database/disconnection.h
+../Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/disconnection.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/disconnection_desktop.h
+app/src/future_manager.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/future_manager.h
+app/src/include/firebase/future.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/future.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/variant.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/path.h
+database/src/include/firebase/database/disconnection.h
+../Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/disconnection.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/mutable_data_desktop.h
+string
+-
+app/memory/shared_ptr.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/memory/shared_ptr.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/variant.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/app/src/path.h
+database/src/include/firebase/database/mutable_data.h
+../Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/mutable_data.h
+
 ../Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffer_conversions.h
 app/src/include/firebase/variant.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/include/firebase/variant.h
@@ -893,6 +1203,36 @@ database/src/desktop/persistence/prune_forest.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/prune_forest.h
 leveldb/db.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/persistence/leveldb/db.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/noop_persistence_manager.h
+functional
+-
+set
+-
+string
+-
+vector
+-
+app/memory/unique_ptr.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/memory/unique_ptr.h
+app/src/mutex.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/mutex.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/path.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/common/query_spec.h
+database/src/desktop/core/cache_policy.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/cache_policy.h
+database/src/desktop/core/tracked_query_manager.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tracked_query_manager.h
+database/src/desktop/persistence/persistence_manager.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_manager.h
+database/src/desktop/persistence/persistence_manager_interface.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_manager_interface.h
+database/src/desktop/persistence/persistence_storage_engine.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_storage_engine.h
+database/src/desktop/view/view_cache.h
+../Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/view/view_cache.h
 
 ../Lib/firebase-cpp-sdk/database/src/desktop/persistence/persistence_manager.h
 functional
@@ -1104,6 +1444,58 @@ database/src/desktop/view/event.h
 
 ../Lib/firebase-cpp-sdk/database/src/desktop/view/event_type.h
 
+../Lib/firebase-cpp-sdk/database/src/desktop/view/indexed_filter.h
+string
+-
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/include/firebase/variant.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/core/indexed_variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/indexed_variant.h
+database/src/desktop/view/child_change_accumulator.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/child_change_accumulator.h
+database/src/desktop/view/variant_filter.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/view/limited_filter.h
+string
+-
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/include/firebase/variant.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/core/indexed_variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/indexed_variant.h
+database/src/desktop/view/child_change_accumulator.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/child_change_accumulator.h
+database/src/desktop/view/ranged_filter.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/ranged_filter.h
+database/src/desktop/view/variant_filter.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+
+../Lib/firebase-cpp-sdk/database/src/desktop/view/ranged_filter.h
+string
+-
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/include/firebase/variant.h
+app/src/path.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+database/src/common/query_spec.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/core/indexed_variant.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/indexed_variant.h
+database/src/desktop/view/child_change_accumulator.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/child_change_accumulator.h
+database/src/desktop/view/indexed_filter.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/indexed_filter.h
+database/src/desktop/view/variant_filter.h
+../Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+
 ../Lib/firebase-cpp-sdk/database/src/desktop/view/variant_filter.h
 app/memory/unique_ptr.h
 ../Lib/firebase-cpp-sdk/database/src/desktop/view/app/memory/unique_ptr.h
@@ -1280,6 +1672,26 @@ firebase/variant.h
 functional
 -
 
+../Lib/firebase-cpp-sdk/database/src/ios/data_snapshot_ios.h
+stddef.h
+-
+string
+-
+app/memory/unique_ptr.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/memory/unique_ptr.h
+app/src/include/firebase/internal/common.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/internal/common.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/variant.h
+app/src/util_ios.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/util_ios.h
+database/src/include/firebase/database/common.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/include/firebase/database/common.h
+database/src/include/firebase/database/data_snapshot.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/include/firebase/database/data_snapshot.h
+FIRDatabase.h
+../Lib/firebase-cpp-sdk/database/src/ios/FIRDatabase.h
+
 ../Lib/firebase-cpp-sdk/database/src/ios/database_ios.h
 map
 -
@@ -1308,6 +1720,58 @@ database/src/ios/query_ios.h
 FIRDatabase.h
 ../Lib/firebase-cpp-sdk/database/src/ios/FIRDatabase.h
 
+../Lib/firebase-cpp-sdk/database/src/ios/database_reference_ios.h
+map
+-
+string
+-
+app/src/include/firebase/future.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/future.h
+app/src/include/firebase/internal/common.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/internal/common.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/variant.h
+app/src/reference_counted_future_impl.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/reference_counted_future_impl.h
+database/src/include/firebase/database/disconnection.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/include/firebase/database/disconnection.h
+database/src/include/firebase/database/query.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/include/firebase/database/query.h
+database/src/include/firebase/database/transaction.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/include/firebase/database/transaction.h
+database/src/ios/query_ios.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/ios/query_ios.h
+FIRDatabase.h
+../Lib/firebase-cpp-sdk/database/src/ios/FIRDatabase.h
+
+../Lib/firebase-cpp-sdk/database/src/ios/disconnection_ios.h
+app/memory/unique_ptr.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/memory/unique_ptr.h
+app/src/include/firebase/future.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/future.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/variant.h
+app/src/reference_counted_future_impl.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/reference_counted_future_impl.h
+database/src/include/firebase/database/disconnection.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/include/firebase/database/disconnection.h
+FIRDatabase.h
+../Lib/firebase-cpp-sdk/database/src/ios/FIRDatabase.h
+
+../Lib/firebase-cpp-sdk/database/src/ios/mutable_data_ios.h
+string
+-
+app/memory/unique_ptr.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/memory/unique_ptr.h
+app/src/include/firebase/variant.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/include/firebase/variant.h
+app/src/util_ios.h
+../Lib/firebase-cpp-sdk/database/src/ios/app/src/util_ios.h
+database/src/include/firebase/database/mutable_data.h
+../Lib/firebase-cpp-sdk/database/src/ios/database/src/include/firebase/database/mutable_data.h
+FIRDatabase.h
+../Lib/firebase-cpp-sdk/database/src/ios/FIRDatabase.h
+
 ../Lib/firebase-cpp-sdk/database/src/ios/query_ios.h
 app/memory/unique_ptr.h
 ../Lib/firebase-cpp-sdk/database/src/ios/app/memory/unique_ptr.h
@@ -1330,9 +1794,45 @@ Foundation/Foundation.h
 FIRDatabase.h
 ../Lib/firebase-cpp-sdk/database/src/ios/FIRDatabase.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/database.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/common.cc
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/common.h
+app/src/include/firebase/internal/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/common.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/data_snapshot.cc
+database/src/include/firebase/database/data_snapshot.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/data_snapshot.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/assert.h
+app/src/include/firebase/internal/platform.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/platform.h
 database/src/include/firebase/database.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database.h
+database/src/include/firebase/database/database_reference.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/database_reference.h
+database/src/android/data_snapshot_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/data_snapshot_android.h
+database/src/android/database_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_android.h
+database/src/ios/data_snapshot_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/data_snapshot_ios.h
+database/src/ios/database_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_ios.h
+database/src/desktop/data_snapshot_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/data_snapshot_desktop.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_desktop.h
+database/src/stub/data_snapshot_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/data_snapshot_stub.h
+database/src/stub/database_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_stub.h
+database/src/common/cleanup.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/cleanup.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database.cc
+database/src/include/firebase/database.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database.h
 assert.h
 -
 map
@@ -1340,57 +1840,683 @@ map
 string
 -
 app/src/app_common.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/app_common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/app_common.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/assert.h
 app/src/cleanup_notifier.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/cleanup_notifier.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/cleanup_notifier.h
 app/src/include/firebase/app.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/app.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/app.h
 app/src/include/firebase/internal/platform.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/platform.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/platform.h
 app/src/include/firebase/version.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/version.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/version.h
 app/src/util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/util.h
 database/src/android/database_android.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_android.h
 database/src/ios/database_ios.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_ios.h
 database/src/desktop/database_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_desktop.h
 database/src/stub/database_stub.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_stub.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffer_conversions.cc
-database/src/desktop/persistence/flatbuffer_conversions.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/flatbuffer_conversions.h
-app/src/include/firebase/variant.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database_reference.cc
+database/src/include/firebase/database/database_reference.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/database_reference.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/assert.h
+app/src/include/firebase/internal/platform.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/platform.h
+database/src/common/database_reference.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/database_reference.h
+database/src/android/database_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_android.h
+database/src/android/database_reference_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_reference_android.h
+database/src/ios/database_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_ios.h
+database/src/ios/database_reference_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_reference_ios.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_desktop.h
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_reference_desktop.h
+database/src/stub/database_reference_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_reference_stub.h
+database/src/stub/database_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_stub.h
+database/src/common/cleanup.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/cleanup.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/disconnection.cc
+database/src/include/firebase/database/disconnection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/disconnection.h
+app/src/include/firebase/internal/platform.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/platform.h
+database/src/android/database_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_android.h
+database/src/android/disconnection_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/disconnection_android.h
+database/src/ios/database_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_ios.h
+database/src/ios/disconnection_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/disconnection_ios.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_desktop.h
+database/src/desktop/disconnection_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/disconnection_desktop.h
+database/src/stub/database_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_stub.h
+database/src/stub/disconnection_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/disconnection_stub.h
+database/src/common/cleanup.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/cleanup.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/listener.cc
+database/src/common/listener.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/listener.h
+database/src/include/firebase/database/listener.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/listener.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/mutable_data.cc
+database/src/include/firebase/database/mutable_data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/mutable_data.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/assert.h
+app/src/include/firebase/internal/platform.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/platform.h
+database/src/android/database_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_android.h
+database/src/android/mutable_data_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/mutable_data_android.h
+database/src/ios/database_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_ios.h
+database/src/ios/mutable_data_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/mutable_data_ios.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_desktop.h
+database/src/desktop/mutable_data_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/mutable_data_desktop.h
+database/src/stub/database_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_stub.h
+database/src/stub/mutable_data_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/mutable_data_stub.h
+database/src/common/cleanup.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/cleanup.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/query.cc
+database/src/common/query.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/query.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/assert.h
+app/src/include/firebase/internal/platform.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/app/src/include/firebase/internal/platform.h
+database/src/include/firebase/database.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database.h
+database/src/include/firebase/database/query.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/include/firebase/database/query.h
+database/src/android/database_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/database_android.h
+database/src/android/query_android.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/android/query_android.h
+database/src/ios/database_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/database_ios.h
+database/src/ios/query_ios.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/ios/query_ios.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/database_desktop.h
+database/src/desktop/query_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/desktop/query_desktop.h
+database/src/stub/database_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/database_stub.h
+database/src/stub/query_stub.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/stub/query_stub.h
+database/src/common/cleanup.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/common/database/src/common/cleanup.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/connection.cc
+database/src/desktop/connection/connection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/connection.h
+cstdlib
+-
+cstring
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/assert.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/log.h
 app/src/variant_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/variant_util.h
-database/src/common/query_spec.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/common/query_spec.h
-database/src/desktop/core/compound_write.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/compound_write.h
-database/src/desktop/core/tracked_query_manager.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tracked_query_manager.h
-database/src/desktop/persistence/persisted_compound_write_generated.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persisted_compound_write_generated.h
-database/src/desktop/persistence/persisted_tracked_query_generated.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persisted_tracked_query_generated.h
-database/src/desktop/persistence/persisted_user_write_record_generated.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persisted_user_write_record_generated.h
-database/src/desktop/persistence/persistence_storage_engine.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_storage_engine.h
-flatbuffers/flatbuffers.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/flatbuffers.h
-flatbuffers/util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/variant_util.h
+database/src/desktop/connection/util_connection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/util_connection.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/level_db_persistence_storage_engine.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/host_info.cc
+database/src/desktop/connection/host_info.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/host_info.h
+assert.h
+-
+algorithm
+-
+sstream
+-
+string
+-
+app/src/app_common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/app_common.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/persistent_connection.cc
+database/src/desktop/connection/persistent_connection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/persistent_connection.h
+algorithm
+-
+sstream
+-
+app/src/app_common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/app_common.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/assert.h
+app/src/function_registry.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/function_registry.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/log.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/path.h
+app/src/time.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/time.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/variant_util.h
+database/src/desktop/core/constants.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/core/constants.h
+database/src/desktop/core/tag.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/core/tag.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/util_desktop.h
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/include/firebase/database/common.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/util_connection.cc
+database/src/desktop/connection/util_connection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/util_connection.h
+database/src/desktop/connection/web_socket_client_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/web_socket_client_impl.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/web_socket_client_impl.cc
+database/src/desktop/connection/web_socket_client_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/database/src/desktop/connection/web_socket_client_impl.h
+cassert
+-
+app/src/app_common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/app_common.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/assert.h
+app/src/include/firebase/app.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/include/firebase/app.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/log.h
+app/src/mutex.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/mutex.h
+app/src/thread.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/connection/app/src/thread.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/cache_policy.cc
+database/src/desktop/core/cache_policy.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/cache_policy.h
+cstdint
+-
+limits
+-
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/child_event_registration.cc
+database/src/desktop/core/child_event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/child_event_registration.h
+database/src/desktop/data_snapshot_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/data_snapshot_desktop.h
+database/src/desktop/view/event.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/event.h
+database/src/desktop/view/event_type.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/event_type.h
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
+firebase/database/data_snapshot.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/firebase/database/data_snapshot.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/compound_write.cc
+database/src/desktop/core/compound_write.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/compound_write.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/assert.h
+database/src/desktop/core/tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tree.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/constants.cc
+database/src/desktop/core/constants.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/constants.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/event_registration.cc
+database/src/desktop/core/event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/event_registration.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/indexed_variant.cc
+database/src/desktop/core/indexed_variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/indexed_variant.h
+algorithm
+-
+cassert
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/assert.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/include/firebase/variant.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/query_params_comparator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/query_params_comparator.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/info_listen_provider.cc
+database/src/desktop/core/info_listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/info_listen_provider.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/connection/persistent_connection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/connection/persistent_connection.h
+database/src/desktop/core/listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/listen_provider.h
+database/src/desktop/core/tag.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tag.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+database/src/desktop/view/view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/view.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/keep_synced_event_registration.cc
+database/src/desktop/core/keep_synced_event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/keep_synced_event_registration.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/assert.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/listen_provider.cc
+database/src/desktop/core/listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/listen_provider.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/operation.cc
+database/src/desktop/core/operation.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/operation.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/assert.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/repo.cc
+database/src/desktop/core/repo.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/repo.h
+app/src/callback.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/callback.h
+app/src/filesystem.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/filesystem.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/log.h
+app/src/mutex.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/mutex.h
+app/src/scheduler.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/scheduler.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/variant_util.h
+database/src/desktop/connection/persistent_connection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/connection/persistent_connection.h
+database/src/desktop/core/constants.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/constants.h
+database/src/desktop/core/info_listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/info_listen_provider.h
+database/src/desktop/core/server_values.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/server_values.h
+database/src/desktop/core/tag.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tag.h
+database/src/desktop/core/value_event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/value_event_registration.h
+database/src/desktop/core/web_socket_listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/web_socket_listen_provider.h
+database/src/desktop/core/write_tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/write_tree.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/database_desktop.h
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/database_reference_desktop.h
+database/src/desktop/mutable_data_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/mutable_data_desktop.h
 database/src/desktop/persistence/level_db_persistence_storage_engine.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/level_db_persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/persistence/level_db_persistence_storage_engine.h
+database/src/desktop/persistence/noop_persistence_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/persistence/noop_persistence_manager.h
+database/src/desktop/persistence/persistence_manager_interface.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/persistence/persistence_manager_interface.h
+database/src/desktop/query_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/query_desktop.h
+database/src/desktop/transaction_data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/transaction_data.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
+database/src/include/firebase/database/transaction.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/transaction.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/server_values.cc
+database/src/desktop/core/server_values.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/server_values.h
+ctime
+-
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/include/firebase/variant.h
+database/src/desktop/core/compound_write.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/compound_write.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/sparse_snapshot_tree.cc
+database/src/desktop/core/sparse_snapshot_tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/sparse_snapshot_tree.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/include/firebase/variant.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
+database/src/desktop/core/tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tree.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/sync_point.cc
+database/src/desktop/core/sync_point.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/sync_point.h
+set
+-
+vector
+-
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/log.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/core/event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/event_registration.h
+database/src/desktop/core/operation.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/operation.h
+database/src/desktop/persistence/persistence_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/persistence/persistence_manager.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+database/src/desktop/view/event.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/event.h
+database/src/desktop/view/view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/view.h
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/sync_tree.cc
+database/src/desktop/core/sync_tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/sync_tree.h
+vector
+-
+app/memory/unique_ptr.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/memory/unique_ptr.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/assert.h
+app/src/callback.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/callback.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/include/firebase/variant.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/log.h
+app/src/optional.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/optional.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/variant_util.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/core/event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/event_registration.h
+database/src/desktop/core/keep_synced_event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/keep_synced_event_registration.h
+database/src/desktop/core/listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/listen_provider.h
+database/src/desktop/core/server_values.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/server_values.h
+database/src/desktop/core/sync_point.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/sync_point.h
+database/src/desktop/core/tag.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tag.h
+database/src/desktop/core/tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tree.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+database/src/desktop/view/event.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/event.h
+firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/firebase/database/common.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/tracked_query_manager.cc
+database/src/desktop/core/tracked_query_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tracked_query_manager.h
+algorithm
+-
+cstdint
+-
+ctime
+-
+map
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/assert.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/path.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/persistence/persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/persistence/persistence_storage_engine.h
+database/src/desktop/persistence/prune_forest.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/persistence/prune_forest.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/value_event_registration.cc
+database/src/desktop/core/value_event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/value_event_registration.h
+database/src/desktop/data_snapshot_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/data_snapshot_desktop.h
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/include/firebase/database/common.h
+firebase/database/data_snapshot.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/firebase/database/data_snapshot.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/web_socket_listen_provider.cc
+database/src/desktop/core/web_socket_listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/web_socket_listen_provider.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/common/query_spec.h
+database/src/desktop/connection/persistent_connection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/connection/persistent_connection.h
+database/src/desktop/core/listen_provider.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/listen_provider.h
+database/src/desktop/core/tag.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/tag.h
+database/src/desktop/view/view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/view.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/write_tree.cc
+database/src/desktop/core/write_tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/write_tree.h
+algorithm
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/app/src/assert.h
+database/src/desktop/core/compound_write.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/core/compound_write.h
+database/src/desktop/query_params_comparator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/query_params_comparator.h
+database/src/desktop/view/view_cache.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/core/database/src/desktop/view/view_cache.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/data_snapshot_desktop.cc
+database/src/desktop/data_snapshot_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/data_snapshot_desktop.h
+stddef.h
+-
+string
+-
+app/src/include/firebase/internal/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/internal/common.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/variant.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/common/query_spec.h
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_reference_desktop.h
+database/src/desktop/query_params_comparator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/query_params_comparator.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database_desktop.cc
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_desktop.h
+memory
+-
+queue
+-
+stack
+-
+app/memory/shared_ptr.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/memory/shared_ptr.h
+app/src/app_common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/app_common.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/assert.h
+app/src/function_registry.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/function_registry.h
+app/src/include/firebase/app.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/app.h
+app/src/include/firebase/future.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/future.h
+app/src/reference_counted_future_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/reference_counted_future_impl.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/variant_util.h
+database/src/desktop/core/indexed_variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/core/indexed_variant.h
+database/src/desktop/data_snapshot_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/data_snapshot_desktop.h
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_reference_desktop.h
+database/src/desktop/mutable_data_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/mutable_data_desktop.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/util_desktop.h
+database/src/include/firebase/database/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/common.h
+database/src/include/firebase/database/database_reference.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/database_reference.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database_reference_desktop.cc
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_reference_desktop.h
+stdio.h
+-
+sstream
+-
+app/rest/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/rest/util.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/variant_util.h
+database/src/common/database_reference.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/common/database_reference.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_desktop.h
+database/src/desktop/disconnection_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/disconnection_desktop.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/util_desktop.h
+flatbuffers/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/flatbuffers/util.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/disconnection_desktop.cc
+database/src/desktop/disconnection_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/disconnection_desktop.h
+app/src/future_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/future_manager.h
+database/src/common/database_reference.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/common/database_reference.h
+database/src/desktop/core/repo.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/core/repo.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_desktop.h
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_reference_desktop.h
+database/src/include/firebase/database/disconnection.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/disconnection.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/mutable_data_desktop.cc
+database/src/desktop/mutable_data_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/mutable_data_desktop.h
+stdlib.h
+-
+cassert
+-
+sstream
+-
+app/memory/shared_ptr.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/memory/shared_ptr.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/log.h
+database/src/common/database_reference.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/common/database_reference.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_desktop.h
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_reference_desktop.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/util_desktop.h
+database/src/include/firebase/database/mutable_data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/include/firebase/database/mutable_data.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffer_conversions.cc
+database/src/desktop/persistence/flatbuffer_conversions.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/flatbuffer_conversions.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/include/firebase/variant.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/variant_util.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/common/query_spec.h
+database/src/desktop/core/compound_write.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/compound_write.h
+database/src/desktop/core/tracked_query_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tracked_query_manager.h
+database/src/desktop/persistence/persisted_compound_write_generated.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persisted_compound_write_generated.h
+database/src/desktop/persistence/persisted_tracked_query_generated.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persisted_tracked_query_generated.h
+database/src/desktop/persistence/persisted_user_write_record_generated.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persisted_user_write_record_generated.h
+database/src/desktop/persistence/persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_storage_engine.h
+flatbuffers/flatbuffers.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/flatbuffers.h
+flatbuffers/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/util.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/in_memory_persistence_storage_engine.cc
+database/src/desktop/persistence/in_memory_persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/in_memory_persistence_storage_engine.h
 functional
 -
 set
@@ -1400,43 +2526,405 @@ string
 vector
 -
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/assert.h
 app/src/include/firebase/variant.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/include/firebase/variant.h
 app/src/log.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/log.h
+app/src/logger.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/logger.h
 app/src/path.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/path.h
 app/src/variant_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/variant_util.h
 database/src/common/query_spec.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/common/query_spec.h
 database/src/desktop/core/compound_write.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/compound_write.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/compound_write.h
 database/src/desktop/core/tracked_query_manager.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tracked_query_manager.h
-database/src/desktop/core/tree.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tree.h
-database/src/desktop/persistence/flatbuffer_conversions.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/flatbuffer_conversions.h
-database/src/desktop/persistence/in_memory_persistence_storage_engine.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/in_memory_persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tracked_query_manager.h
 database/src/desktop/persistence/persistence_storage_engine.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_storage_engine.h
-database/src/desktop/persistence/prune_forest.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/prune_forest.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_storage_engine.h
 database/src/desktop/util_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/util_desktop.h
 database/src/desktop/view/view_cache.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/view/view_cache.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/view/view_cache.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/level_db_persistence_storage_engine.cc
+database/src/desktop/persistence/level_db_persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/level_db_persistence_storage_engine.h
+functional
+-
+set
+-
+string
+-
+vector
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/assert.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/include/firebase/variant.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/log.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/path.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/variant_util.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/common/query_spec.h
+database/src/desktop/core/compound_write.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/compound_write.h
+database/src/desktop/core/tracked_query_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tracked_query_manager.h
+database/src/desktop/core/tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tree.h
+database/src/desktop/persistence/flatbuffer_conversions.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/flatbuffer_conversions.h
+database/src/desktop/persistence/in_memory_persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/in_memory_persistence_storage_engine.h
+database/src/desktop/persistence/persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_storage_engine.h
+database/src/desktop/persistence/prune_forest.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/prune_forest.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/util_desktop.h
+database/src/desktop/view/view_cache.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/view/view_cache.h
 flatbuffers/flatbuffers.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/flatbuffers.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/flatbuffers.h
 flatbuffers/flexbuffers.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/flexbuffers.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/flatbuffers/flexbuffers.h
 leveldb/db.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/leveldb/db.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/leveldb/db.h
 leveldb/write_batch.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/leveldb/write_batch.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/leveldb/write_batch.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/noop_persistence_manager.cc
+database/src/desktop/persistence/noop_persistence_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/noop_persistence_manager.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/persistence_manager.cc
+database/src/desktop/persistence/persistence_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_manager.h
+iostream
+-
+set
+-
+string
+-
+vector
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/assert.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/log.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/path.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/variant_util.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/common/query_spec.h
+database/src/desktop/core/tracked_query_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tracked_query_manager.h
+database/src/desktop/persistence/persistence_storage_engine.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/persistence_storage_engine.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/util_desktop.h
+database/src/desktop/view/view_cache.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/view/view_cache.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/prune_forest.cc
+database/src/desktop/persistence/prune_forest.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/persistence/prune_forest.h
+set
+-
+string
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/assert.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/app/src/path.h
+database/src/desktop/core/tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/persistence/database/src/desktop/core/tree.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/push_child_name_generator.cc
+database/src/desktop/push_child_name_generator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/push_child_name_generator.h
+assert.h
+-
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/query_desktop.cc
+database/src/desktop/query_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/query_desktop.h
+sstream
+-
+app/memory/unique_ptr.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/memory/unique_ptr.h
+app/rest/transport_builder.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/rest/transport_builder.h
+app/rest/transport_curl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/rest/transport_curl.h
+app/rest/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/rest/util.h
+app/src/callback.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/callback.h
+app/src/function_registry.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/function_registry.h
+app/src/semaphore.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/semaphore.h
+app/src/thread.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/thread.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/variant_util.h
+database/src/common/query.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/common/query.h
+database/src/desktop/connection/host_info.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/connection/host_info.h
+database/src/desktop/core/child_event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/core/child_event_registration.h
+database/src/desktop/core/event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/core/event_registration.h
+database/src/desktop/core/value_event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/core/value_event_registration.h
+database/src/desktop/data_snapshot_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/data_snapshot_desktop.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_desktop.h
+database/src/desktop/database_reference_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_reference_desktop.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/query_params_comparator.cc
+database/src/desktop/query_params_comparator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/query_params_comparator.h
+cassert
+-
+cstdint
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/assert.h
+app/src/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/util.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/util_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/transaction_data.cc
+database/src/desktop/transaction_data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/transaction_data.h
+database/src/desktop/database_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/database_desktop.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/util_desktop.cc
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/util_desktop.h
+algorithm
+-
+cassert
+-
+cstdlib
+-
+iostream
+-
+sstream
+-
+string
+-
+utility
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/assert.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/app/src/include/firebase/variant.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/common/query_spec.h
+database/src/desktop/view/indexed_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/view/indexed_filter.h
+database/src/desktop/view/limited_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/view/limited_filter.h
+database/src/desktop/view/ranged_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/view/ranged_filter.h
+database/src/desktop/view/variant_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/database/src/desktop/view/variant_filter.h
+openssl/sha.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/openssl/sha.h
+openssl/base64.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/openssl/base64.h
+openssl/evp.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/openssl/evp.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/change.cc
+database/src/desktop/view/change.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/change.h
+string
+-
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/include/firebase/variant.h
+database/src/desktop/core/indexed_variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/indexed_variant.h
+database/src/desktop/view/event_type.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/event_type.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/child_change_accumulator.cc
+database/src/desktop/view/child_change_accumulator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/child_change_accumulator.h
+cassert
+-
+map
+-
+string
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/assert.h
+database/src/desktop/view/change.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/change.h
+database/src/desktop/view/event.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/event.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/event_generator.cc
+database/src/desktop/view/event_generator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/event_generator.h
+algorithm
+-
+cassert
+-
+cstring
+-
+vector
+-
+app/memory/unique_ptr.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/memory/unique_ptr.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/assert.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/variant_util.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/core/event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/event_registration.h
+database/src/desktop/query_params_comparator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/query_params_comparator.h
+database/src/desktop/view/change.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/change.h
+database/src/desktop/view/event.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/event.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/indexed_filter.cc
+database/src/desktop/view/indexed_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/indexed_filter.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/assert.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/util_desktop.h
+database/src/desktop/view/variant_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/limited_filter.cc
+database/src/desktop/view/limited_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/limited_filter.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/assert.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/core/write_tree.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/write_tree.h
+database/src/desktop/query_params_comparator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/query_params_comparator.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/util_desktop.h
+database/src/desktop/view/variant_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/ranged_filter.cc
+database/src/desktop/view/ranged_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/ranged_filter.h
+utility
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/assert.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/query_params_comparator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/query_params_comparator.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/util_desktop.h
+database/src/desktop/view/variant_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/view.cc
+database/src/desktop/view/view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/view.h
+vector
+-
+app/memory/unique_ptr.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/memory/unique_ptr.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/assert.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/include/firebase/variant.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+database/src/common/query_spec.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/common/query_spec.h
+database/src/desktop/core/event_registration.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/event_registration.h
+database/src/desktop/core/indexed_variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/indexed_variant.h
+database/src/desktop/core/operation.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/operation.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/util_desktop.h
+database/src/desktop/view/event.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/event.h
+database/src/desktop/view/event_generator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/event_generator.h
+database/src/desktop/view/indexed_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/indexed_filter.h
+database/src/desktop/view/variant_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/view_processor.cc
+database/src/desktop/view/view_processor.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/view_processor.h
+algorithm
+-
+vector
+-
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/assert.h
+app/src/include/firebase/variant.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/include/firebase/variant.h
+app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/log.h
+app/src/optional.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/optional.h
+app/src/path.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/path.h
+app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/app/src/variant_util.h
+database/src/desktop/core/operation.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/core/operation.h
+database/src/desktop/util_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/util_desktop.h
+database/src/desktop/view/change.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/change.h
+database/src/desktop/view/child_change_accumulator.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/child_change_accumulator.h
+database/src/desktop/view/indexed_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/indexed_filter.h
+database/src/desktop/view/variant_filter.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/variant_filter.h
+database/src/desktop/view/view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/database/src/desktop/view/database/src/desktop/view/view.h
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb/include/leveldb/db.h
 stdint.h
@@ -1558,6 +3046,42 @@ Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/ut
 intrin.h
 -
 
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/hash.h
+cstdint
+-
+cstring
+-
+flatbuffers/flatbuffers.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/flatbuffers.h
+
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/idl.h
+map
+-
+memory
+-
+stack
+-
+flatbuffers/base.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/base.h
+flatbuffers/flatbuffers.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/flatbuffers.h
+flatbuffers/flexbuffers.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/flexbuffers.h
+flatbuffers/hash.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/hash.h
+flatbuffers/reflection.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/reflection.h
+functional
+-
+
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/reflection.h
+flatbuffers/reflection_generated.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/reflection_generated.h
+
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/reflection_generated.h
+flatbuffers/flatbuffers.h
+Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/flatbuffers/flatbuffers.h
+
 Lib/firebase-cpp-sdk/external/src/flatbuffers/include/flatbuffers/stl_emulation.h
 string
 -
@@ -1587,6 +3111,308 @@ iomanip
 -
 string
 -
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv.h
+uv/errno.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/errno.h
+uv/version.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/version.h
+stddef.h
+-
+stdio.h
+-
+uv/stdint-msvc2008.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/stdint-msvc2008.h
+stdint.h
+-
+uv/win.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/win.h
+uv/unix.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/unix.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/aix.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/bsd.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/darwin.h
+mach/mach.h
+-
+mach/task.h
+-
+mach/semaphore.h
+-
+TargetConditionals.h
+-
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/errno.h
+errno.h
+-
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/linux.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/os390.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/posix.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/stdint-msvc2008.h
+limits.h
+-
+wchar.h
+-
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/sunos.h
+sys/port.h
+-
+port.h
+-
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/threadpool.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/tree.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/unix.h
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+dirent.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+netinet/tcp.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+termios.h
+-
+pwd.h
+-
+semaphore.h
+-
+sys/param.h
+-
+pthread.h
+-
+signal.h
+-
+uv/threadpool.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/threadpool.h
+uv/linux.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/linux.h
+uv/os390.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/os390.h
+uv/posix.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/posix.h
+uv/aix.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/aix.h
+uv/sunos.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/sunos.h
+uv/darwin.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/darwin.h
+uv/bsd.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/bsd.h
+uv/posix.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/posix.h
+uv/posix.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/posix.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/version.h
+
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/win.h
+winsock2.h
+-
+mswsock.h
+-
+ws2tcpip.h
+-
+windows.h
+-
+process.h
+-
+signal.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+uv/stdint-msvc2008.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/stdint-msvc2008.h
+stdint.h
+-
+uv/tree.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/tree.h
+uv/threadpool.h
+Lib/firebase-cpp-sdk/external/src/libuv/include/uv/uv/threadpool.h
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Asio.h
+boost/asio.hpp
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Backend.h
+Asio.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Asio.h
+Libuv.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Libuv.h
+Epoll.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.h
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.h
+sys/epoll.h
+-
+sys/eventfd.h
+-
+unistd.h
+-
+fcntl.h
+-
+chrono
+-
+algorithm
+-
+vector
+-
+mutex
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.h
+string
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.h
+WebSocket.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.h
+HTTPSocket.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.h
+Extensions.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.h
+functional
+-
+stack
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.h
+Socket.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.h
+string
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.h
+Group.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.h
+Node.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.h
+string
+-
+zlib.h
+-
+mutex
+-
+map
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Libuv.h
+uv.h
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.h
+openssl/opensslv.h
+-
+endian.h
+-
+libkern/OSByteOrder.h
+-
+WinSock2.h
+-
+Ws2tcpip.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+netinet/tcp.h
+-
+netdb.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+cstring
+-
+Backend.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Backend.h
+openssl/ssl.h
+-
+csignal
+-
+vector
+-
+string
+-
+mutex
+-
+algorithm
+-
+memory
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.h
+Socket.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.h
+vector
+-
+mutex
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.h
+Networking.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.h
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.h
+WebSocketProtocol.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocketProtocol.h
+Socket.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.h
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocketProtocol.h
+Networking.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.h
+cstring
+-
+cstdlib
+-
+
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/uWS.h
+Hub.h
+Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.h
+
+Lib/firebase-cpp-sdk/external/src/zlib-build/zconf.h
+stddef.h
+-
+windows.h
+-
+limits.h
+-
+sys/types.h
+-
+stdarg.h
+-
+stddef.h
+-
+unistd.h
+-
+unixio.h
+-
+
+Lib/firebase-cpp-sdk/external/src/zlib/zlib.h
+zconf.h
+Lib/firebase-cpp-sdk/external/src/zlib/zconf.h
 
 generated/app/src/include/firebase/version.h
 

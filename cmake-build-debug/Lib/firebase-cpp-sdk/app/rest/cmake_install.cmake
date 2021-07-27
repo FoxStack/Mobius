@@ -1,4 +1,4 @@
-# Install script for directory: /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/app/rest
+# Install script for directory: /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/app/rest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,11 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/app/rest/tests/cmake_install.cmake")
-
 endif()
 

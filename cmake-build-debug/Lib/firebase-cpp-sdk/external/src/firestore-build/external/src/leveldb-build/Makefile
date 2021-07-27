@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,37 +78,37 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -124,7 +124,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ leveldb: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-
 
 # fast build rule for target.
 leveldb/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build
 .PHONY : leveldb/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ leveldbutil: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leve
 
 # fast build rule for target.
 leveldbutil/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build
 .PHONY : leveldbutil/fast
 
 db/builder.o: db/builder.cc.o
@@ -211,7 +211,7 @@ db/builder.o: db/builder.cc.o
 
 # target to build an object file
 db/builder.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/builder.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/builder.cc.o
 .PHONY : db/builder.cc.o
 
 db/builder.i: db/builder.cc.i
@@ -220,7 +220,7 @@ db/builder.i: db/builder.cc.i
 
 # target to preprocess a source file
 db/builder.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/builder.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/builder.cc.i
 .PHONY : db/builder.cc.i
 
 db/builder.s: db/builder.cc.s
@@ -229,7 +229,7 @@ db/builder.s: db/builder.cc.s
 
 # target to generate assembly for a file
 db/builder.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/builder.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/builder.cc.s
 .PHONY : db/builder.cc.s
 
 db/c.o: db/c.cc.o
@@ -238,7 +238,7 @@ db/c.o: db/c.cc.o
 
 # target to build an object file
 db/c.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/c.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/c.cc.o
 .PHONY : db/c.cc.o
 
 db/c.i: db/c.cc.i
@@ -247,7 +247,7 @@ db/c.i: db/c.cc.i
 
 # target to preprocess a source file
 db/c.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/c.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/c.cc.i
 .PHONY : db/c.cc.i
 
 db/c.s: db/c.cc.s
@@ -256,7 +256,7 @@ db/c.s: db/c.cc.s
 
 # target to generate assembly for a file
 db/c.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/c.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/c.cc.s
 .PHONY : db/c.cc.s
 
 db/db_impl.o: db/db_impl.cc.o
@@ -265,7 +265,7 @@ db/db_impl.o: db/db_impl.cc.o
 
 # target to build an object file
 db/db_impl.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_impl.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_impl.cc.o
 .PHONY : db/db_impl.cc.o
 
 db/db_impl.i: db/db_impl.cc.i
@@ -274,7 +274,7 @@ db/db_impl.i: db/db_impl.cc.i
 
 # target to preprocess a source file
 db/db_impl.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_impl.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_impl.cc.i
 .PHONY : db/db_impl.cc.i
 
 db/db_impl.s: db/db_impl.cc.s
@@ -283,7 +283,7 @@ db/db_impl.s: db/db_impl.cc.s
 
 # target to generate assembly for a file
 db/db_impl.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_impl.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_impl.cc.s
 .PHONY : db/db_impl.cc.s
 
 db/db_iter.o: db/db_iter.cc.o
@@ -292,7 +292,7 @@ db/db_iter.o: db/db_iter.cc.o
 
 # target to build an object file
 db/db_iter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_iter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_iter.cc.o
 .PHONY : db/db_iter.cc.o
 
 db/db_iter.i: db/db_iter.cc.i
@@ -301,7 +301,7 @@ db/db_iter.i: db/db_iter.cc.i
 
 # target to preprocess a source file
 db/db_iter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_iter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_iter.cc.i
 .PHONY : db/db_iter.cc.i
 
 db/db_iter.s: db/db_iter.cc.s
@@ -310,7 +310,7 @@ db/db_iter.s: db/db_iter.cc.s
 
 # target to generate assembly for a file
 db/db_iter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_iter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/db_iter.cc.s
 .PHONY : db/db_iter.cc.s
 
 db/dbformat.o: db/dbformat.cc.o
@@ -319,7 +319,7 @@ db/dbformat.o: db/dbformat.cc.o
 
 # target to build an object file
 db/dbformat.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dbformat.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dbformat.cc.o
 .PHONY : db/dbformat.cc.o
 
 db/dbformat.i: db/dbformat.cc.i
@@ -328,7 +328,7 @@ db/dbformat.i: db/dbformat.cc.i
 
 # target to preprocess a source file
 db/dbformat.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dbformat.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dbformat.cc.i
 .PHONY : db/dbformat.cc.i
 
 db/dbformat.s: db/dbformat.cc.s
@@ -337,7 +337,7 @@ db/dbformat.s: db/dbformat.cc.s
 
 # target to generate assembly for a file
 db/dbformat.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dbformat.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dbformat.cc.s
 .PHONY : db/dbformat.cc.s
 
 db/dumpfile.o: db/dumpfile.cc.o
@@ -346,7 +346,7 @@ db/dumpfile.o: db/dumpfile.cc.o
 
 # target to build an object file
 db/dumpfile.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dumpfile.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dumpfile.cc.o
 .PHONY : db/dumpfile.cc.o
 
 db/dumpfile.i: db/dumpfile.cc.i
@@ -355,7 +355,7 @@ db/dumpfile.i: db/dumpfile.cc.i
 
 # target to preprocess a source file
 db/dumpfile.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dumpfile.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dumpfile.cc.i
 .PHONY : db/dumpfile.cc.i
 
 db/dumpfile.s: db/dumpfile.cc.s
@@ -364,7 +364,7 @@ db/dumpfile.s: db/dumpfile.cc.s
 
 # target to generate assembly for a file
 db/dumpfile.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dumpfile.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/dumpfile.cc.s
 .PHONY : db/dumpfile.cc.s
 
 db/filename.o: db/filename.cc.o
@@ -373,7 +373,7 @@ db/filename.o: db/filename.cc.o
 
 # target to build an object file
 db/filename.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/filename.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/filename.cc.o
 .PHONY : db/filename.cc.o
 
 db/filename.i: db/filename.cc.i
@@ -382,7 +382,7 @@ db/filename.i: db/filename.cc.i
 
 # target to preprocess a source file
 db/filename.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/filename.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/filename.cc.i
 .PHONY : db/filename.cc.i
 
 db/filename.s: db/filename.cc.s
@@ -391,7 +391,7 @@ db/filename.s: db/filename.cc.s
 
 # target to generate assembly for a file
 db/filename.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/filename.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/filename.cc.s
 .PHONY : db/filename.cc.s
 
 db/leveldbutil.o: db/leveldbutil.cc.o
@@ -400,7 +400,7 @@ db/leveldbutil.o: db/leveldbutil.cc.o
 
 # target to build an object file
 db/leveldbutil.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/db/leveldbutil.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/db/leveldbutil.cc.o
 .PHONY : db/leveldbutil.cc.o
 
 db/leveldbutil.i: db/leveldbutil.cc.i
@@ -409,7 +409,7 @@ db/leveldbutil.i: db/leveldbutil.cc.i
 
 # target to preprocess a source file
 db/leveldbutil.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/db/leveldbutil.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/db/leveldbutil.cc.i
 .PHONY : db/leveldbutil.cc.i
 
 db/leveldbutil.s: db/leveldbutil.cc.s
@@ -418,7 +418,7 @@ db/leveldbutil.s: db/leveldbutil.cc.s
 
 # target to generate assembly for a file
 db/leveldbutil.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/db/leveldbutil.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldbutil.dir/db/leveldbutil.cc.s
 .PHONY : db/leveldbutil.cc.s
 
 db/log_reader.o: db/log_reader.cc.o
@@ -427,7 +427,7 @@ db/log_reader.o: db/log_reader.cc.o
 
 # target to build an object file
 db/log_reader.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_reader.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_reader.cc.o
 .PHONY : db/log_reader.cc.o
 
 db/log_reader.i: db/log_reader.cc.i
@@ -436,7 +436,7 @@ db/log_reader.i: db/log_reader.cc.i
 
 # target to preprocess a source file
 db/log_reader.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_reader.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_reader.cc.i
 .PHONY : db/log_reader.cc.i
 
 db/log_reader.s: db/log_reader.cc.s
@@ -445,7 +445,7 @@ db/log_reader.s: db/log_reader.cc.s
 
 # target to generate assembly for a file
 db/log_reader.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_reader.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_reader.cc.s
 .PHONY : db/log_reader.cc.s
 
 db/log_writer.o: db/log_writer.cc.o
@@ -454,7 +454,7 @@ db/log_writer.o: db/log_writer.cc.o
 
 # target to build an object file
 db/log_writer.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_writer.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_writer.cc.o
 .PHONY : db/log_writer.cc.o
 
 db/log_writer.i: db/log_writer.cc.i
@@ -463,7 +463,7 @@ db/log_writer.i: db/log_writer.cc.i
 
 # target to preprocess a source file
 db/log_writer.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_writer.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_writer.cc.i
 .PHONY : db/log_writer.cc.i
 
 db/log_writer.s: db/log_writer.cc.s
@@ -472,7 +472,7 @@ db/log_writer.s: db/log_writer.cc.s
 
 # target to generate assembly for a file
 db/log_writer.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_writer.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/log_writer.cc.s
 .PHONY : db/log_writer.cc.s
 
 db/memtable.o: db/memtable.cc.o
@@ -481,7 +481,7 @@ db/memtable.o: db/memtable.cc.o
 
 # target to build an object file
 db/memtable.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/memtable.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/memtable.cc.o
 .PHONY : db/memtable.cc.o
 
 db/memtable.i: db/memtable.cc.i
@@ -490,7 +490,7 @@ db/memtable.i: db/memtable.cc.i
 
 # target to preprocess a source file
 db/memtable.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/memtable.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/memtable.cc.i
 .PHONY : db/memtable.cc.i
 
 db/memtable.s: db/memtable.cc.s
@@ -499,7 +499,7 @@ db/memtable.s: db/memtable.cc.s
 
 # target to generate assembly for a file
 db/memtable.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/memtable.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/memtable.cc.s
 .PHONY : db/memtable.cc.s
 
 db/repair.o: db/repair.cc.o
@@ -508,7 +508,7 @@ db/repair.o: db/repair.cc.o
 
 # target to build an object file
 db/repair.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/repair.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/repair.cc.o
 .PHONY : db/repair.cc.o
 
 db/repair.i: db/repair.cc.i
@@ -517,7 +517,7 @@ db/repair.i: db/repair.cc.i
 
 # target to preprocess a source file
 db/repair.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/repair.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/repair.cc.i
 .PHONY : db/repair.cc.i
 
 db/repair.s: db/repair.cc.s
@@ -526,7 +526,7 @@ db/repair.s: db/repair.cc.s
 
 # target to generate assembly for a file
 db/repair.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/repair.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/repair.cc.s
 .PHONY : db/repair.cc.s
 
 db/table_cache.o: db/table_cache.cc.o
@@ -535,7 +535,7 @@ db/table_cache.o: db/table_cache.cc.o
 
 # target to build an object file
 db/table_cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/table_cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/table_cache.cc.o
 .PHONY : db/table_cache.cc.o
 
 db/table_cache.i: db/table_cache.cc.i
@@ -544,7 +544,7 @@ db/table_cache.i: db/table_cache.cc.i
 
 # target to preprocess a source file
 db/table_cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/table_cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/table_cache.cc.i
 .PHONY : db/table_cache.cc.i
 
 db/table_cache.s: db/table_cache.cc.s
@@ -553,7 +553,7 @@ db/table_cache.s: db/table_cache.cc.s
 
 # target to generate assembly for a file
 db/table_cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/table_cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/table_cache.cc.s
 .PHONY : db/table_cache.cc.s
 
 db/version_edit.o: db/version_edit.cc.o
@@ -562,7 +562,7 @@ db/version_edit.o: db/version_edit.cc.o
 
 # target to build an object file
 db/version_edit.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_edit.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_edit.cc.o
 .PHONY : db/version_edit.cc.o
 
 db/version_edit.i: db/version_edit.cc.i
@@ -571,7 +571,7 @@ db/version_edit.i: db/version_edit.cc.i
 
 # target to preprocess a source file
 db/version_edit.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_edit.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_edit.cc.i
 .PHONY : db/version_edit.cc.i
 
 db/version_edit.s: db/version_edit.cc.s
@@ -580,7 +580,7 @@ db/version_edit.s: db/version_edit.cc.s
 
 # target to generate assembly for a file
 db/version_edit.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_edit.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_edit.cc.s
 .PHONY : db/version_edit.cc.s
 
 db/version_set.o: db/version_set.cc.o
@@ -589,7 +589,7 @@ db/version_set.o: db/version_set.cc.o
 
 # target to build an object file
 db/version_set.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_set.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_set.cc.o
 .PHONY : db/version_set.cc.o
 
 db/version_set.i: db/version_set.cc.i
@@ -598,7 +598,7 @@ db/version_set.i: db/version_set.cc.i
 
 # target to preprocess a source file
 db/version_set.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_set.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_set.cc.i
 .PHONY : db/version_set.cc.i
 
 db/version_set.s: db/version_set.cc.s
@@ -607,7 +607,7 @@ db/version_set.s: db/version_set.cc.s
 
 # target to generate assembly for a file
 db/version_set.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_set.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/version_set.cc.s
 .PHONY : db/version_set.cc.s
 
 db/write_batch.o: db/write_batch.cc.o
@@ -616,7 +616,7 @@ db/write_batch.o: db/write_batch.cc.o
 
 # target to build an object file
 db/write_batch.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/write_batch.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/write_batch.cc.o
 .PHONY : db/write_batch.cc.o
 
 db/write_batch.i: db/write_batch.cc.i
@@ -625,7 +625,7 @@ db/write_batch.i: db/write_batch.cc.i
 
 # target to preprocess a source file
 db/write_batch.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/write_batch.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/write_batch.cc.i
 .PHONY : db/write_batch.cc.i
 
 db/write_batch.s: db/write_batch.cc.s
@@ -634,7 +634,7 @@ db/write_batch.s: db/write_batch.cc.s
 
 # target to generate assembly for a file
 db/write_batch.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/write_batch.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/db/write_batch.cc.s
 .PHONY : db/write_batch.cc.s
 
 helpers/memenv/memenv.o: helpers/memenv/memenv.cc.o
@@ -643,7 +643,7 @@ helpers/memenv/memenv.o: helpers/memenv/memenv.cc.o
 
 # target to build an object file
 helpers/memenv/memenv.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/helpers/memenv/memenv.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/helpers/memenv/memenv.cc.o
 .PHONY : helpers/memenv/memenv.cc.o
 
 helpers/memenv/memenv.i: helpers/memenv/memenv.cc.i
@@ -652,7 +652,7 @@ helpers/memenv/memenv.i: helpers/memenv/memenv.cc.i
 
 # target to preprocess a source file
 helpers/memenv/memenv.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/helpers/memenv/memenv.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/helpers/memenv/memenv.cc.i
 .PHONY : helpers/memenv/memenv.cc.i
 
 helpers/memenv/memenv.s: helpers/memenv/memenv.cc.s
@@ -661,7 +661,7 @@ helpers/memenv/memenv.s: helpers/memenv/memenv.cc.s
 
 # target to generate assembly for a file
 helpers/memenv/memenv.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/helpers/memenv/memenv.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/helpers/memenv/memenv.cc.s
 .PHONY : helpers/memenv/memenv.cc.s
 
 table/block.o: table/block.cc.o
@@ -670,7 +670,7 @@ table/block.o: table/block.cc.o
 
 # target to build an object file
 table/block.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block.cc.o
 .PHONY : table/block.cc.o
 
 table/block.i: table/block.cc.i
@@ -679,7 +679,7 @@ table/block.i: table/block.cc.i
 
 # target to preprocess a source file
 table/block.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block.cc.i
 .PHONY : table/block.cc.i
 
 table/block.s: table/block.cc.s
@@ -688,7 +688,7 @@ table/block.s: table/block.cc.s
 
 # target to generate assembly for a file
 table/block.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block.cc.s
 .PHONY : table/block.cc.s
 
 table/block_builder.o: table/block_builder.cc.o
@@ -697,7 +697,7 @@ table/block_builder.o: table/block_builder.cc.o
 
 # target to build an object file
 table/block_builder.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block_builder.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block_builder.cc.o
 .PHONY : table/block_builder.cc.o
 
 table/block_builder.i: table/block_builder.cc.i
@@ -706,7 +706,7 @@ table/block_builder.i: table/block_builder.cc.i
 
 # target to preprocess a source file
 table/block_builder.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block_builder.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block_builder.cc.i
 .PHONY : table/block_builder.cc.i
 
 table/block_builder.s: table/block_builder.cc.s
@@ -715,7 +715,7 @@ table/block_builder.s: table/block_builder.cc.s
 
 # target to generate assembly for a file
 table/block_builder.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block_builder.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/block_builder.cc.s
 .PHONY : table/block_builder.cc.s
 
 table/filter_block.o: table/filter_block.cc.o
@@ -724,7 +724,7 @@ table/filter_block.o: table/filter_block.cc.o
 
 # target to build an object file
 table/filter_block.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/filter_block.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/filter_block.cc.o
 .PHONY : table/filter_block.cc.o
 
 table/filter_block.i: table/filter_block.cc.i
@@ -733,7 +733,7 @@ table/filter_block.i: table/filter_block.cc.i
 
 # target to preprocess a source file
 table/filter_block.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/filter_block.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/filter_block.cc.i
 .PHONY : table/filter_block.cc.i
 
 table/filter_block.s: table/filter_block.cc.s
@@ -742,7 +742,7 @@ table/filter_block.s: table/filter_block.cc.s
 
 # target to generate assembly for a file
 table/filter_block.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/filter_block.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/filter_block.cc.s
 .PHONY : table/filter_block.cc.s
 
 table/format.o: table/format.cc.o
@@ -751,7 +751,7 @@ table/format.o: table/format.cc.o
 
 # target to build an object file
 table/format.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/format.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/format.cc.o
 .PHONY : table/format.cc.o
 
 table/format.i: table/format.cc.i
@@ -760,7 +760,7 @@ table/format.i: table/format.cc.i
 
 # target to preprocess a source file
 table/format.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/format.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/format.cc.i
 .PHONY : table/format.cc.i
 
 table/format.s: table/format.cc.s
@@ -769,7 +769,7 @@ table/format.s: table/format.cc.s
 
 # target to generate assembly for a file
 table/format.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/format.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/format.cc.s
 .PHONY : table/format.cc.s
 
 table/iterator.o: table/iterator.cc.o
@@ -778,7 +778,7 @@ table/iterator.o: table/iterator.cc.o
 
 # target to build an object file
 table/iterator.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/iterator.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/iterator.cc.o
 .PHONY : table/iterator.cc.o
 
 table/iterator.i: table/iterator.cc.i
@@ -787,7 +787,7 @@ table/iterator.i: table/iterator.cc.i
 
 # target to preprocess a source file
 table/iterator.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/iterator.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/iterator.cc.i
 .PHONY : table/iterator.cc.i
 
 table/iterator.s: table/iterator.cc.s
@@ -796,7 +796,7 @@ table/iterator.s: table/iterator.cc.s
 
 # target to generate assembly for a file
 table/iterator.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/iterator.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/iterator.cc.s
 .PHONY : table/iterator.cc.s
 
 table/merger.o: table/merger.cc.o
@@ -805,7 +805,7 @@ table/merger.o: table/merger.cc.o
 
 # target to build an object file
 table/merger.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/merger.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/merger.cc.o
 .PHONY : table/merger.cc.o
 
 table/merger.i: table/merger.cc.i
@@ -814,7 +814,7 @@ table/merger.i: table/merger.cc.i
 
 # target to preprocess a source file
 table/merger.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/merger.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/merger.cc.i
 .PHONY : table/merger.cc.i
 
 table/merger.s: table/merger.cc.s
@@ -823,7 +823,7 @@ table/merger.s: table/merger.cc.s
 
 # target to generate assembly for a file
 table/merger.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/merger.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/merger.cc.s
 .PHONY : table/merger.cc.s
 
 table/table.o: table/table.cc.o
@@ -832,7 +832,7 @@ table/table.o: table/table.cc.o
 
 # target to build an object file
 table/table.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table.cc.o
 .PHONY : table/table.cc.o
 
 table/table.i: table/table.cc.i
@@ -841,7 +841,7 @@ table/table.i: table/table.cc.i
 
 # target to preprocess a source file
 table/table.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table.cc.i
 .PHONY : table/table.cc.i
 
 table/table.s: table/table.cc.s
@@ -850,7 +850,7 @@ table/table.s: table/table.cc.s
 
 # target to generate assembly for a file
 table/table.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table.cc.s
 .PHONY : table/table.cc.s
 
 table/table_builder.o: table/table_builder.cc.o
@@ -859,7 +859,7 @@ table/table_builder.o: table/table_builder.cc.o
 
 # target to build an object file
 table/table_builder.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table_builder.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table_builder.cc.o
 .PHONY : table/table_builder.cc.o
 
 table/table_builder.i: table/table_builder.cc.i
@@ -868,7 +868,7 @@ table/table_builder.i: table/table_builder.cc.i
 
 # target to preprocess a source file
 table/table_builder.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table_builder.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table_builder.cc.i
 .PHONY : table/table_builder.cc.i
 
 table/table_builder.s: table/table_builder.cc.s
@@ -877,7 +877,7 @@ table/table_builder.s: table/table_builder.cc.s
 
 # target to generate assembly for a file
 table/table_builder.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table_builder.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/table_builder.cc.s
 .PHONY : table/table_builder.cc.s
 
 table/two_level_iterator.o: table/two_level_iterator.cc.o
@@ -886,7 +886,7 @@ table/two_level_iterator.o: table/two_level_iterator.cc.o
 
 # target to build an object file
 table/two_level_iterator.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/two_level_iterator.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/two_level_iterator.cc.o
 .PHONY : table/two_level_iterator.cc.o
 
 table/two_level_iterator.i: table/two_level_iterator.cc.i
@@ -895,7 +895,7 @@ table/two_level_iterator.i: table/two_level_iterator.cc.i
 
 # target to preprocess a source file
 table/two_level_iterator.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/two_level_iterator.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/two_level_iterator.cc.i
 .PHONY : table/two_level_iterator.cc.i
 
 table/two_level_iterator.s: table/two_level_iterator.cc.s
@@ -904,7 +904,7 @@ table/two_level_iterator.s: table/two_level_iterator.cc.s
 
 # target to generate assembly for a file
 table/two_level_iterator.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/two_level_iterator.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/table/two_level_iterator.cc.s
 .PHONY : table/two_level_iterator.cc.s
 
 util/arena.o: util/arena.cc.o
@@ -913,7 +913,7 @@ util/arena.o: util/arena.cc.o
 
 # target to build an object file
 util/arena.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/arena.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/arena.cc.o
 .PHONY : util/arena.cc.o
 
 util/arena.i: util/arena.cc.i
@@ -922,7 +922,7 @@ util/arena.i: util/arena.cc.i
 
 # target to preprocess a source file
 util/arena.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/arena.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/arena.cc.i
 .PHONY : util/arena.cc.i
 
 util/arena.s: util/arena.cc.s
@@ -931,7 +931,7 @@ util/arena.s: util/arena.cc.s
 
 # target to generate assembly for a file
 util/arena.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/arena.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/arena.cc.s
 .PHONY : util/arena.cc.s
 
 util/bloom.o: util/bloom.cc.o
@@ -940,7 +940,7 @@ util/bloom.o: util/bloom.cc.o
 
 # target to build an object file
 util/bloom.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/bloom.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/bloom.cc.o
 .PHONY : util/bloom.cc.o
 
 util/bloom.i: util/bloom.cc.i
@@ -949,7 +949,7 @@ util/bloom.i: util/bloom.cc.i
 
 # target to preprocess a source file
 util/bloom.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/bloom.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/bloom.cc.i
 .PHONY : util/bloom.cc.i
 
 util/bloom.s: util/bloom.cc.s
@@ -958,7 +958,7 @@ util/bloom.s: util/bloom.cc.s
 
 # target to generate assembly for a file
 util/bloom.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/bloom.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/bloom.cc.s
 .PHONY : util/bloom.cc.s
 
 util/cache.o: util/cache.cc.o
@@ -967,7 +967,7 @@ util/cache.o: util/cache.cc.o
 
 # target to build an object file
 util/cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/cache.cc.o
 .PHONY : util/cache.cc.o
 
 util/cache.i: util/cache.cc.i
@@ -976,7 +976,7 @@ util/cache.i: util/cache.cc.i
 
 # target to preprocess a source file
 util/cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/cache.cc.i
 .PHONY : util/cache.cc.i
 
 util/cache.s: util/cache.cc.s
@@ -985,7 +985,7 @@ util/cache.s: util/cache.cc.s
 
 # target to generate assembly for a file
 util/cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/cache.cc.s
 .PHONY : util/cache.cc.s
 
 util/coding.o: util/coding.cc.o
@@ -994,7 +994,7 @@ util/coding.o: util/coding.cc.o
 
 # target to build an object file
 util/coding.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/coding.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/coding.cc.o
 .PHONY : util/coding.cc.o
 
 util/coding.i: util/coding.cc.i
@@ -1003,7 +1003,7 @@ util/coding.i: util/coding.cc.i
 
 # target to preprocess a source file
 util/coding.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/coding.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/coding.cc.i
 .PHONY : util/coding.cc.i
 
 util/coding.s: util/coding.cc.s
@@ -1012,7 +1012,7 @@ util/coding.s: util/coding.cc.s
 
 # target to generate assembly for a file
 util/coding.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/coding.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/coding.cc.s
 .PHONY : util/coding.cc.s
 
 util/comparator.o: util/comparator.cc.o
@@ -1021,7 +1021,7 @@ util/comparator.o: util/comparator.cc.o
 
 # target to build an object file
 util/comparator.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/comparator.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/comparator.cc.o
 .PHONY : util/comparator.cc.o
 
 util/comparator.i: util/comparator.cc.i
@@ -1030,7 +1030,7 @@ util/comparator.i: util/comparator.cc.i
 
 # target to preprocess a source file
 util/comparator.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/comparator.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/comparator.cc.i
 .PHONY : util/comparator.cc.i
 
 util/comparator.s: util/comparator.cc.s
@@ -1039,7 +1039,7 @@ util/comparator.s: util/comparator.cc.s
 
 # target to generate assembly for a file
 util/comparator.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/comparator.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/comparator.cc.s
 .PHONY : util/comparator.cc.s
 
 util/crc32c.o: util/crc32c.cc.o
@@ -1048,7 +1048,7 @@ util/crc32c.o: util/crc32c.cc.o
 
 # target to build an object file
 util/crc32c.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/crc32c.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/crc32c.cc.o
 .PHONY : util/crc32c.cc.o
 
 util/crc32c.i: util/crc32c.cc.i
@@ -1057,7 +1057,7 @@ util/crc32c.i: util/crc32c.cc.i
 
 # target to preprocess a source file
 util/crc32c.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/crc32c.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/crc32c.cc.i
 .PHONY : util/crc32c.cc.i
 
 util/crc32c.s: util/crc32c.cc.s
@@ -1066,7 +1066,7 @@ util/crc32c.s: util/crc32c.cc.s
 
 # target to generate assembly for a file
 util/crc32c.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/crc32c.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/crc32c.cc.s
 .PHONY : util/crc32c.cc.s
 
 util/env.o: util/env.cc.o
@@ -1075,7 +1075,7 @@ util/env.o: util/env.cc.o
 
 # target to build an object file
 util/env.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env.cc.o
 .PHONY : util/env.cc.o
 
 util/env.i: util/env.cc.i
@@ -1084,7 +1084,7 @@ util/env.i: util/env.cc.i
 
 # target to preprocess a source file
 util/env.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env.cc.i
 .PHONY : util/env.cc.i
 
 util/env.s: util/env.cc.s
@@ -1093,7 +1093,7 @@ util/env.s: util/env.cc.s
 
 # target to generate assembly for a file
 util/env.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env.cc.s
 .PHONY : util/env.cc.s
 
 util/env_posix.o: util/env_posix.cc.o
@@ -1102,7 +1102,7 @@ util/env_posix.o: util/env_posix.cc.o
 
 # target to build an object file
 util/env_posix.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env_posix.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env_posix.cc.o
 .PHONY : util/env_posix.cc.o
 
 util/env_posix.i: util/env_posix.cc.i
@@ -1111,7 +1111,7 @@ util/env_posix.i: util/env_posix.cc.i
 
 # target to preprocess a source file
 util/env_posix.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env_posix.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env_posix.cc.i
 .PHONY : util/env_posix.cc.i
 
 util/env_posix.s: util/env_posix.cc.s
@@ -1120,7 +1120,7 @@ util/env_posix.s: util/env_posix.cc.s
 
 # target to generate assembly for a file
 util/env_posix.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env_posix.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/env_posix.cc.s
 .PHONY : util/env_posix.cc.s
 
 util/filter_policy.o: util/filter_policy.cc.o
@@ -1129,7 +1129,7 @@ util/filter_policy.o: util/filter_policy.cc.o
 
 # target to build an object file
 util/filter_policy.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/filter_policy.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/filter_policy.cc.o
 .PHONY : util/filter_policy.cc.o
 
 util/filter_policy.i: util/filter_policy.cc.i
@@ -1138,7 +1138,7 @@ util/filter_policy.i: util/filter_policy.cc.i
 
 # target to preprocess a source file
 util/filter_policy.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/filter_policy.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/filter_policy.cc.i
 .PHONY : util/filter_policy.cc.i
 
 util/filter_policy.s: util/filter_policy.cc.s
@@ -1147,7 +1147,7 @@ util/filter_policy.s: util/filter_policy.cc.s
 
 # target to generate assembly for a file
 util/filter_policy.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/filter_policy.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/filter_policy.cc.s
 .PHONY : util/filter_policy.cc.s
 
 util/hash.o: util/hash.cc.o
@@ -1156,7 +1156,7 @@ util/hash.o: util/hash.cc.o
 
 # target to build an object file
 util/hash.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/hash.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/hash.cc.o
 .PHONY : util/hash.cc.o
 
 util/hash.i: util/hash.cc.i
@@ -1165,7 +1165,7 @@ util/hash.i: util/hash.cc.i
 
 # target to preprocess a source file
 util/hash.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/hash.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/hash.cc.i
 .PHONY : util/hash.cc.i
 
 util/hash.s: util/hash.cc.s
@@ -1174,7 +1174,7 @@ util/hash.s: util/hash.cc.s
 
 # target to generate assembly for a file
 util/hash.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/hash.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/hash.cc.s
 .PHONY : util/hash.cc.s
 
 util/logging.o: util/logging.cc.o
@@ -1183,7 +1183,7 @@ util/logging.o: util/logging.cc.o
 
 # target to build an object file
 util/logging.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/logging.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/logging.cc.o
 .PHONY : util/logging.cc.o
 
 util/logging.i: util/logging.cc.i
@@ -1192,7 +1192,7 @@ util/logging.i: util/logging.cc.i
 
 # target to preprocess a source file
 util/logging.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/logging.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/logging.cc.i
 .PHONY : util/logging.cc.i
 
 util/logging.s: util/logging.cc.s
@@ -1201,7 +1201,7 @@ util/logging.s: util/logging.cc.s
 
 # target to generate assembly for a file
 util/logging.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/logging.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/logging.cc.s
 .PHONY : util/logging.cc.s
 
 util/options.o: util/options.cc.o
@@ -1210,7 +1210,7 @@ util/options.o: util/options.cc.o
 
 # target to build an object file
 util/options.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/options.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/options.cc.o
 .PHONY : util/options.cc.o
 
 util/options.i: util/options.cc.i
@@ -1219,7 +1219,7 @@ util/options.i: util/options.cc.i
 
 # target to preprocess a source file
 util/options.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/options.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/options.cc.i
 .PHONY : util/options.cc.i
 
 util/options.s: util/options.cc.s
@@ -1228,7 +1228,7 @@ util/options.s: util/options.cc.s
 
 # target to generate assembly for a file
 util/options.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/options.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/options.cc.s
 .PHONY : util/options.cc.s
 
 util/status.o: util/status.cc.o
@@ -1237,7 +1237,7 @@ util/status.o: util/status.cc.o
 
 # target to build an object file
 util/status.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/status.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/status.cc.o
 .PHONY : util/status.cc.o
 
 util/status.i: util/status.cc.i
@@ -1246,7 +1246,7 @@ util/status.i: util/status.cc.i
 
 # target to preprocess a source file
 util/status.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/status.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/status.cc.i
 .PHONY : util/status.cc.i
 
 util/status.s: util/status.cc.s
@@ -1255,7 +1255,7 @@ util/status.s: util/status.cc.s
 
 # target to generate assembly for a file
 util/status.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/status.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/CMakeFiles/leveldb.dir/util/status.cc.s
 .PHONY : util/status.cc.s
 
 # Help Target
@@ -1400,6 +1400,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

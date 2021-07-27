@@ -20,6 +20,8 @@ add_executable(${PROJECT_NAME}
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        RenderArea/RenderArea.cpp
+        RenderArea/RenderArea.h
         Shape/Shape.cpp
         Shape/Shape.h
         Shape/Ellipse/Ellipse.cpp
@@ -28,6 +30,10 @@ add_executable(${PROJECT_NAME}
         Shape/Rectangle/Rectangle.h
         Shape/Line/Line.cpp
         Shape/Line/Line.h
+        Shape/Polyline/Polyline.cpp
+        Shape/Polyline/Polyline.h
+        Shape/Polygon/Polygon.cpp
+        Shape/Polygon/Polygon.h
         Vector/Vector.hpp
         Vector/Iterator/iterator.h
         Vector/Iterator/reverse.h

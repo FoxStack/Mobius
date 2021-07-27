@@ -1078,9 +1078,9 @@ firebase/auth/credential.h
 firebase/auth/types.h
 ../Lib/firebase-cpp-sdk/auth/src/include/firebase/auth/firebase/auth/types.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/auth.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/auth.cc
 auth/src/include/firebase/auth.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/include/firebase/auth.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/include/firebase/auth.h
 assert.h
 -
 stdio.h
@@ -1094,33 +1094,47 @@ map
 string
 -
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/assert.h
 app/src/cleanup_notifier.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/cleanup_notifier.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/cleanup_notifier.h
 app/src/include/firebase/app.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/app.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/app.h
 app/src/include/firebase/future.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/future.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/future.h
 app/src/include/firebase/internal/common.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/internal/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/internal/common.h
 app/src/include/firebase/internal/platform.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/internal/platform.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/internal/platform.h
 app/src/include/firebase/version.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/version.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/include/firebase/version.h
 app/src/mutex.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/mutex.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/mutex.h
 app/src/semaphore.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/semaphore.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/semaphore.h
 app/src/util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/util.h
 auth/src/common.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/common.h
 auth/src/data.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/data.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_desktop.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/common.cc
+auth/src/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/common.h
+app/src/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/app/src/util.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_constants.cc
+auth/src/desktop/auth_constants.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_constants.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_credential.cc
+auth/src/desktop/auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_credential.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_desktop.cc
 auth/src/desktop/auth_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_desktop.h
 memory
 -
 string
@@ -1128,397 +1142,463 @@ string
 utility
 -
 app/rest/transport_curl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/transport_curl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/transport_curl.h
 app/src/app_common.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/app_common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/app_common.h
 app/src/app_identifier.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/app_identifier.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/app_identifier.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/assert.h
 app/src/function_registry.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/function_registry.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/function_registry.h
 app/src/include/firebase/app.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/include/firebase/app.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/include/firebase/app.h
 auth/src/common.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/common.h
 auth/src/data.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/data.h
 auth/src/desktop/auth_data_handle.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_data_handle.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_data_handle.h
 auth/src/desktop/auth_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
 auth/src/desktop/authentication_result.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/authentication_result.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/authentication_result.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
 auth/src/desktop/promise.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/promise.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/promise.h
 auth/src/desktop/rpcs/create_auth_uri_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/create_auth_uri_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/create_auth_uri_request.h
 auth/src/desktop/rpcs/create_auth_uri_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/create_auth_uri_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/create_auth_uri_response.h
 auth/src/desktop/rpcs/get_account_info_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_request.h
 auth/src/desktop/rpcs/get_account_info_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_response.h
 auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
 auth/src/desktop/rpcs/get_oob_confirmation_code_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_response.h
 auth/src/desktop/rpcs/sign_up_new_user_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/sign_up_new_user_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/sign_up_new_user_request.h
 auth/src/desktop/rpcs/sign_up_new_user_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/sign_up_new_user_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/sign_up_new_user_response.h
 auth/src/desktop/rpcs/verify_assertion_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_request.h
 auth/src/desktop/rpcs/verify_assertion_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_response.h
 auth/src/desktop/rpcs/verify_custom_token_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_custom_token_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_custom_token_request.h
 auth/src/desktop/rpcs/verify_custom_token_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_custom_token_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_custom_token_response.h
 auth/src/desktop/rpcs/verify_password_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_request.h
 auth/src/desktop/rpcs/verify_password_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_response.h
 auth/src/desktop/sign_in_flow.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/sign_in_flow.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/sign_in_flow.h
 auth/src/desktop/user_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_desktop.h
 auth/src/desktop/user_view.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_view.h
 auth/src/desktop/validate_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/validate_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/validate_credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/facebook_auth_provider.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/email_auth_provider.cc
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+auth/src/desktop/auth_providers/email_auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/email_auth_credential.h
+auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/facebook_auth_provider.cc
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
 auth/src/desktop/auth_providers/facebook_auth_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/facebook_auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/facebook_auth_credential.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
 auth/src/include/firebase/auth/credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/federated_auth_provider.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/federated_auth_provider.cc
 app/src/include/firebase/future.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/include/firebase/future.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/include/firebase/future.h
 app/src/mutex.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/mutex.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/mutex.h
 auth/src/desktop/auth_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_desktop.h
 auth/src/desktop/sign_in_flow.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/sign_in_flow.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/sign_in_flow.h
 auth/src/include/firebase/auth.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth.h
 auth/src/include/firebase/auth/types.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/types.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/types.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/github_auth_provider.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/gamecenter_auth_provider.cc
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+app/src/include/firebase/future.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/include/firebase/future.h
+auth/src/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/common.h
+auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/github_auth_provider.cc
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
 auth/src/desktop/auth_providers/github_auth_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/github_auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/github_auth_credential.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
 auth/src/include/firebase/auth/credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/google_auth_provider.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/google_auth_provider.cc
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
 auth/src/desktop/auth_providers/google_auth_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/google_auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/google_auth_credential.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
 auth/src/include/firebase/auth/credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/oauth_auth_provider.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/oauth_auth_provider.cc
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
 auth/src/desktop/auth_providers/oauth_auth_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/oauth_auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/oauth_auth_credential.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
 auth/src/include/firebase/auth/credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/playgames_auth_provider.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/phone_auth_provider.cc
+stdint.h
+-
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+auth/src/data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/data.h
+auth/src/include/firebase/auth.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth.h
+auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/playgames_auth_provider.cc
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
 auth/src/desktop/auth_providers/playgames_auth_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/playgames_auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/playgames_auth_credential.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
 auth/src/include/firebase/auth/credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/twitter_auth_provider.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/twitter_auth_provider.cc
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/app/src/assert.h
 auth/src/desktop/auth_providers/twitter_auth_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/twitter_auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/auth_providers/twitter_auth_credential.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/desktop/credential_impl.h
 auth/src/include/firebase/auth/credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_providers/auth/src/include/firebase/auth/credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_util.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth_util.cc
 auth/src/desktop/auth_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
 app/rest/transport_builder.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/transport_builder.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/transport_builder.h
 app/src/variant_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/variant_util.h
 auth/src/desktop/auth_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_desktop.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
 auth/src/desktop/identity_provider_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/identity_provider_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/identity_provider_credential.h
 auth/src/desktop/rpcs/get_account_info_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_response.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/authentication_result.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/authentication_result.cc
 auth/src/desktop/authentication_result.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/authentication_result.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/authentication_result.h
 vector
 -
 auth/src/desktop/auth_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
 auth/src/desktop/user_view.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_view.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/credential_util.cc
-auth/src/desktop/credential_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/credential_desktop.cc
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/assert.h
-auth/src/desktop/auth_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/assert.h
+auth/src/desktop/auth_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_credential.h
 auth/src/desktop/credential_impl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
-auth/src/desktop/identity_provider_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/identity_provider_credential.h
-auth/src/desktop/rpcs/verify_assertion_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_request.h
-auth/src/desktop/rpcs/verify_password_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
+auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/include/firebase/auth/credential.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/get_account_info_result.cc
-auth/src/desktop/get_account_info_result.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/get_account_info_result.h
-app/rest/util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/credential_impl.cc
+auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
+auth/src/include/firebase/auth/credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/include/firebase/auth/credential.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/credential_util.cc
+auth/src/desktop/credential_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_util.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/assert.h
 auth/src/desktop/auth_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+auth/src/desktop/credential_impl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/credential_impl.h
+auth/src/desktop/identity_provider_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/identity_provider_credential.h
+auth/src/desktop/rpcs/verify_assertion_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_request.h
+auth/src/desktop/rpcs/verify_password_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_request.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/get_additional_user_info.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/get_account_info_result.cc
+auth/src/desktop/get_account_info_result.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/get_account_info_result.h
+app/rest/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/util.h
+app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/assert.h
+auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/get_additional_user_info.cc
 auth/src/desktop/get_additional_user_info.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/get_additional_user_info.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/get_additional_user_info.h
 app/src/log.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/log.h
 app/src/variant_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/variant_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/variant_util.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth_request.cc
 auth/src/desktop/rpcs/auth_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/auth_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/auth_request.h
 assert.h
 -
 app/src/app_common.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/app_common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/app_common.h
 app/src/include/firebase/app.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/include/firebase/app.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/include/firebase/app.h
 app/src/mutex.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/mutex.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/mutex.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth_response.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth_response.cc
 auth/src/desktop/rpcs/auth_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/auth_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/auth_response.h
 app/rest/util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/rest/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/rest/util.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/create_auth_uri_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/create_auth_uri_request.cc
 auth/src/desktop/rpcs/create_auth_uri_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/create_auth_uri_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/create_auth_uri_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 app/src/log.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/delete_account_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/delete_account_request.cc
 auth/src/desktop/rpcs/delete_account_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/delete_account_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/delete_account_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/get_account_info_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/error_codes.cc
+auth/src/desktop/rpcs/error_codes.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/error_codes.h
+algorithm
+-
+iterator
+-
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/get_account_info_request.cc
 auth/src/desktop/rpcs/get_account_info_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/get_account_info_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/get_account_info_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/get_oob_confirmation_code_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/get_oob_confirmation_code_request.cc
 auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/reset_password_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/reset_password_request.cc
 auth/src/desktop/rpcs/reset_password_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/reset_password_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/reset_password_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 app/src/log.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/secure_token_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/secure_token_request.cc
 auth/src/desktop/rpcs/secure_token_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/secure_token_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/secure_token_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 app/src/log.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/set_account_info_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/set_account_info_request.cc
 auth/src/desktop/rpcs/set_account_info_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/set_account_info_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/set_account_info_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/sign_up_new_user_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/sign_up_new_user_request.cc
 auth/src/desktop/rpcs/sign_up_new_user_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/sign_up_new_user_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/sign_up_new_user_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/verify_assertion_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/verify_assertion_request.cc
 auth/src/desktop/rpcs/verify_assertion_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/verify_assertion_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/verify_assertion_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/verify_custom_token_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/verify_custom_token_request.cc
 auth/src/desktop/rpcs/verify_custom_token_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/verify_custom_token_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/verify_custom_token_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 app/src/log.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/verify_password_request.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/verify_password_request.cc
 auth/src/desktop/rpcs/verify_password_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/verify_password_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/auth/src/desktop/rpcs/verify_password_request.h
 app/src/assert.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/assert.h
 app/src/log.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/rpcs/app/src/log.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/set_account_info_result.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/set_account_info_result.cc
 auth/src/desktop/set_account_info_result.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/set_account_info_result.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/set_account_info_result.h
 app/rest/util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/util.h
 auth/src/desktop/auth_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
 auth/src/desktop/provider_user_info.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/provider_user_info.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/provider_user_info.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/sign_in_flow.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/sign_in_flow.cc
 auth/src/desktop/sign_in_flow.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/sign_in_flow.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/sign_in_flow.h
 auth/src/desktop/rpcs/get_account_info_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_request.h
 auth/src/desktop/rpcs/get_account_info_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_account_info_response.h
 
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/user_desktop.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/user_desktop.cc
 auth/src/desktop/user_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_desktop.h
 fstream
 -
 memory
 -
 app/rest/transport_builder.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/transport_builder.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/transport_builder.h
 app/rest/util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/rest/util.h
 app/src/callback.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/callback.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/callback.h
 app/src/include/firebase/future.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/include/firebase/future.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/include/firebase/future.h
 app/src/scheduler.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/scheduler.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/scheduler.h
 app/src/secure/user_secure_manager.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/secure/user_secure_manager.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/app/src/secure/user_secure_manager.h
 auth/src/common.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/common.h
 auth/src/data.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/data.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/data.h
 auth/src/desktop/auth_data_handle.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_data_handle.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_data_handle.h
 auth/src/desktop/auth_desktop.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_desktop.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_desktop.h
 auth/src/desktop/auth_util.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/auth_util.h
 auth/src/desktop/get_account_info_result.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/get_account_info_result.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/get_account_info_result.h
 auth/src/desktop/promise.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/promise.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/promise.h
 auth/src/desktop/rpcs/delete_account_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/delete_account_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/delete_account_request.h
 auth/src/desktop/rpcs/delete_account_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/delete_account_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/delete_account_response.h
 auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_request.h
 auth/src/desktop/rpcs/get_oob_confirmation_code_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/get_oob_confirmation_code_response.h
 auth/src/desktop/rpcs/secure_token_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/secure_token_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/secure_token_request.h
 auth/src/desktop/rpcs/secure_token_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/secure_token_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/secure_token_response.h
 auth/src/desktop/rpcs/set_account_info_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/set_account_info_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/set_account_info_request.h
 auth/src/desktop/rpcs/set_account_info_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/set_account_info_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/set_account_info_response.h
 auth/src/desktop/rpcs/verify_assertion_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_request.h
 auth/src/desktop/rpcs/verify_assertion_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_assertion_response.h
 auth/src/desktop/rpcs/verify_password_request.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_request.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_request.h
 auth/src/desktop/rpcs/verify_password_response.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_response.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/rpcs/verify_password_response.h
 auth/src/desktop/set_account_info_result.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/set_account_info_result.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/set_account_info_result.h
 auth/src/desktop/sign_in_flow.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/sign_in_flow.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/sign_in_flow.h
 auth/src/desktop/user_view.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_view.h
 auth/src/desktop/validate_credential.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/validate_credential.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/validate_credential.h
 auth/src/include/firebase/auth/types.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/include/firebase/auth/types.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/include/firebase/auth/types.h
 auth/user_data_generated.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/user_data_generated.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/user_data_generated.h
 auth/user_data_resource.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/user_data_resource.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/user_data_resource.h
 flatbuffers/idl.h
-/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/flatbuffers/idl.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/flatbuffers/idl.h
 
-/home/raf/Desktop/Mobius/cmake-build-debug/generated/auth/request_resource.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/user_view.cc
+auth/src/desktop/user_view.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/desktop/auth/src/desktop/user_view.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/user.cc
+auth/src/common.h
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/auth/src/auth/src/common.h
+
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/auth/request_resource.cc
 stdlib.h
 -
 
-/home/raf/Desktop/Mobius/cmake-build-debug/generated/auth/response_resource.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/auth/response_resource.cc
 stdlib.h
 -
 
-/home/raf/Desktop/Mobius/cmake-build-debug/generated/auth/user_data_resource.cc
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/auth/user_data_resource.cc
 stdlib.h
 -
 

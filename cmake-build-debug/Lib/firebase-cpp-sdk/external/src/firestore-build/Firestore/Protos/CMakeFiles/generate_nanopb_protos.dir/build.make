@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Utility rule file for generate_nanopb_protos.
 
@@ -139,8 +139,8 @@ Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/firestore/lo
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/firestore/local/maybe_document.nanopb.cc: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos/google/protobuf/struct.proto
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/firestore/local/maybe_document.nanopb.cc: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos/google/protobuf/timestamp.proto
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/firestore/local/maybe_document.nanopb.cc: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos/google/protobuf/wrappers.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nanopb sources"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos && python /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/build_protos.py --nanopb --protoc=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0 --pythonpath=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/python:/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator --output_dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating nanopb sources"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" && python "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/build_protos.py" --nanopb "--protoc=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0" "--pythonpath=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/python:/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator" "--output_dir=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos" "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos" "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator" "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src"
 
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/firestore/local/maybe_document.nanopb.h: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/firestore/local/maybe_document.nanopb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/firestore/local/maybe_document.nanopb.h
@@ -250,16 +250,16 @@ Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb/google/proto
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb_pb2.py: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb_pb2.py: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb.proto
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb_pb2.py: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/plugin.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating nanopb python plugins"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos && ../../external/src/grpc-build/third_party/protobuf/protoc -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src --python_out=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb.proto /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/plugin.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating nanopb python plugins"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" && ../../external/src/grpc-build/third_party/protobuf/protoc "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator" "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src" "--python_out=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb.proto" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/plugin.proto"
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/plugin_pb2.py: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb_pb2.py
 	@$(CMAKE_COMMAND) -E touch_nocreate Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/plugin_pb2.py
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/python/google/protobuf/descriptor_pb2.py: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/python/google/protobuf/descriptor_pb2.py: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/descriptor.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating protoc python plugins"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos && ../../external/src/grpc-build/third_party/protobuf/protoc -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src --python_out=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/python /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/descriptor.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating protoc python plugins"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" && ../../external/src/grpc-build/third_party/protobuf/protoc "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src" "--python_out=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/python" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/descriptor.proto"
 
 generate_nanopb_protos: Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos
 generate_nanopb_protos: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator/proto/nanopb_pb2.py
@@ -311,10 +311,10 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/ge
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos.dir/build
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos && $(CMAKE_COMMAND) -P CMakeFiles/generate_nanopb_protos.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" && $(CMAKE_COMMAND) -P CMakeFiles/generate_nanopb_protos.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos.dir/clean
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_nanopb_protos.dir/depend
 

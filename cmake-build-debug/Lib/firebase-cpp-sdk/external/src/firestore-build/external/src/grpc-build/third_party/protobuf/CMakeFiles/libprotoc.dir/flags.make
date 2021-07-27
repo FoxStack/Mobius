@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGOOGLE_PROTOBUF_CMAKE_BUILD -DHAVE_PTHREAD -DLIBPROTOC_EXPORTS -D_GLIBCXX_USE_CXX11_ABI=0
 
-CXX_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src
+CXX_INCLUDES = -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src"
 
 CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0  -g -fPIC -std=c++11
 

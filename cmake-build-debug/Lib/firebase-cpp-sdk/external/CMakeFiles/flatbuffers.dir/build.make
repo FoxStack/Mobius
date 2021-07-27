@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/external
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/cmake/external"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external"
 
 # Utility rule file for flatbuffers.
 
@@ -84,60 +84,60 @@ CMakeFiles/flatbuffers-complete: src/flatbuffers-stamp/flatbuffers-configure
 CMakeFiles/flatbuffers-complete: src/flatbuffers-stamp/flatbuffers-build
 CMakeFiles/flatbuffers-complete: src/flatbuffers-stamp/flatbuffers-install
 CMakeFiles/flatbuffers-complete: src/flatbuffers-stamp/flatbuffers-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'flatbuffers'"
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers-complete
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Completed 'flatbuffers'"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers-complete"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-done"
 
 src/flatbuffers-stamp/flatbuffers-install: src/flatbuffers-stamp/flatbuffers-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'flatbuffers'"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo_append
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'flatbuffers'"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E echo_append
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-install"
 
 src/flatbuffers-stamp/flatbuffers-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'flatbuffers'"
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/tmp
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'flatbuffers'"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/tmp"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-mkdir"
 
 src/flatbuffers-stamp/flatbuffers-download: src/flatbuffers-stamp/flatbuffers-urlinfo.txt
 src/flatbuffers-stamp/flatbuffers-download: src/flatbuffers-stamp/flatbuffers-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'flatbuffers'"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/download-flatbuffers.cmake
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/verify-flatbuffers.cmake
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/extract-flatbuffers.cmake
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'flatbuffers'"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src" && /snap/clion/158/bin/cmake/linux/bin/cmake -P "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/download-flatbuffers.cmake"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src" && /snap/clion/158/bin/cmake/linux/bin/cmake -P "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/verify-flatbuffers.cmake"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src" && /snap/clion/158/bin/cmake/linux/bin/cmake -P "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/extract-flatbuffers.cmake"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src" && /snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-download"
 
 src/flatbuffers-stamp/flatbuffers-update: src/flatbuffers-stamp/flatbuffers-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'flatbuffers'"
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo_append
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-update
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'flatbuffers'"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo_append
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-update"
 
 src/flatbuffers-stamp/flatbuffers-patch: src/flatbuffers-stamp/flatbuffers-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'flatbuffers'"
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo_append
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'flatbuffers'"
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo_append
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-patch"
 
 src/flatbuffers-stamp/flatbuffers-configure: tmp/flatbuffers-cfgcmd.txt
 src/flatbuffers-stamp/flatbuffers-configure: src/flatbuffers-stamp/flatbuffers-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No configure step for 'flatbuffers'"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo_append
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "No configure step for 'flatbuffers'"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E echo_append
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-configure"
 
 src/flatbuffers-stamp/flatbuffers-build: src/flatbuffers-stamp/flatbuffers-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No build step for 'flatbuffers'"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo_append
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "No build step for 'flatbuffers'"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E echo_append
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-build"
 
 src/flatbuffers-stamp/flatbuffers-test: src/flatbuffers-stamp/flatbuffers-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No test step for 'flatbuffers'"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo_append
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E touch /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "No test step for 'flatbuffers'"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E echo_append
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /snap/clion/158/bin/cmake/linux/bin/cmake -E touch "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-stamp/flatbuffers-test"
 
 flatbuffers: CMakeFiles/flatbuffers
 flatbuffers: CMakeFiles/flatbuffers-complete
@@ -163,6 +163,6 @@ CMakeFiles/flatbuffers.dir/clean:
 .PHONY : CMakeFiles/flatbuffers.dir/clean
 
 CMakeFiles/flatbuffers.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/external /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/cmake/external /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/cmake/external" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/cmake/external" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/flatbuffers.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/flatbuffers.dir/depend
 

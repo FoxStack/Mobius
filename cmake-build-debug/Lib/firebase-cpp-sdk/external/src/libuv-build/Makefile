@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,37 +78,37 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -124,7 +124,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-build//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-build//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ uv: Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/rule
 
 # fast build rule for target.
 uv/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build
 .PHONY : uv/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ uv_a: Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/rule
 
 # fast build rule for target.
 uv_a/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build
 .PHONY : uv_a/fast
 
 src/fs-poll.o: src/fs-poll.c.o
@@ -211,8 +211,8 @@ src/fs-poll.o: src/fs-poll.c.o
 
 # target to build an object file
 src/fs-poll.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/fs-poll.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/fs-poll.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/fs-poll.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/fs-poll.c.o
 .PHONY : src/fs-poll.c.o
 
 src/fs-poll.i: src/fs-poll.c.i
@@ -221,8 +221,8 @@ src/fs-poll.i: src/fs-poll.c.i
 
 # target to preprocess a source file
 src/fs-poll.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/fs-poll.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/fs-poll.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/fs-poll.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/fs-poll.c.i
 .PHONY : src/fs-poll.c.i
 
 src/fs-poll.s: src/fs-poll.c.s
@@ -231,8 +231,8 @@ src/fs-poll.s: src/fs-poll.c.s
 
 # target to generate assembly for a file
 src/fs-poll.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/fs-poll.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/fs-poll.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/fs-poll.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/fs-poll.c.s
 .PHONY : src/fs-poll.c.s
 
 src/idna.o: src/idna.c.o
@@ -241,8 +241,8 @@ src/idna.o: src/idna.c.o
 
 # target to build an object file
 src/idna.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/idna.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/idna.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/idna.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/idna.c.o
 .PHONY : src/idna.c.o
 
 src/idna.i: src/idna.c.i
@@ -251,8 +251,8 @@ src/idna.i: src/idna.c.i
 
 # target to preprocess a source file
 src/idna.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/idna.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/idna.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/idna.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/idna.c.i
 .PHONY : src/idna.c.i
 
 src/idna.s: src/idna.c.s
@@ -261,8 +261,8 @@ src/idna.s: src/idna.c.s
 
 # target to generate assembly for a file
 src/idna.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/idna.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/idna.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/idna.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/idna.c.s
 .PHONY : src/idna.c.s
 
 src/inet.o: src/inet.c.o
@@ -271,8 +271,8 @@ src/inet.o: src/inet.c.o
 
 # target to build an object file
 src/inet.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/inet.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/inet.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/inet.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/inet.c.o
 .PHONY : src/inet.c.o
 
 src/inet.i: src/inet.c.i
@@ -281,8 +281,8 @@ src/inet.i: src/inet.c.i
 
 # target to preprocess a source file
 src/inet.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/inet.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/inet.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/inet.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/inet.c.i
 .PHONY : src/inet.c.i
 
 src/inet.s: src/inet.c.s
@@ -291,8 +291,8 @@ src/inet.s: src/inet.c.s
 
 # target to generate assembly for a file
 src/inet.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/inet.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/inet.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/inet.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/inet.c.s
 .PHONY : src/inet.c.s
 
 src/random.o: src/random.c.o
@@ -301,8 +301,8 @@ src/random.o: src/random.c.o
 
 # target to build an object file
 src/random.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/random.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/random.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/random.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/random.c.o
 .PHONY : src/random.c.o
 
 src/random.i: src/random.c.i
@@ -311,8 +311,8 @@ src/random.i: src/random.c.i
 
 # target to preprocess a source file
 src/random.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/random.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/random.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/random.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/random.c.i
 .PHONY : src/random.c.i
 
 src/random.s: src/random.c.s
@@ -321,8 +321,8 @@ src/random.s: src/random.c.s
 
 # target to generate assembly for a file
 src/random.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/random.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/random.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/random.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/random.c.s
 .PHONY : src/random.c.s
 
 src/strscpy.o: src/strscpy.c.o
@@ -331,8 +331,8 @@ src/strscpy.o: src/strscpy.c.o
 
 # target to build an object file
 src/strscpy.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/strscpy.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/strscpy.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/strscpy.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/strscpy.c.o
 .PHONY : src/strscpy.c.o
 
 src/strscpy.i: src/strscpy.c.i
@@ -341,8 +341,8 @@ src/strscpy.i: src/strscpy.c.i
 
 # target to preprocess a source file
 src/strscpy.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/strscpy.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/strscpy.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/strscpy.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/strscpy.c.i
 .PHONY : src/strscpy.c.i
 
 src/strscpy.s: src/strscpy.c.s
@@ -351,8 +351,8 @@ src/strscpy.s: src/strscpy.c.s
 
 # target to generate assembly for a file
 src/strscpy.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/strscpy.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/strscpy.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/strscpy.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/strscpy.c.s
 .PHONY : src/strscpy.c.s
 
 src/threadpool.o: src/threadpool.c.o
@@ -361,8 +361,8 @@ src/threadpool.o: src/threadpool.c.o
 
 # target to build an object file
 src/threadpool.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/threadpool.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/threadpool.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/threadpool.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/threadpool.c.o
 .PHONY : src/threadpool.c.o
 
 src/threadpool.i: src/threadpool.c.i
@@ -371,8 +371,8 @@ src/threadpool.i: src/threadpool.c.i
 
 # target to preprocess a source file
 src/threadpool.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/threadpool.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/threadpool.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/threadpool.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/threadpool.c.i
 .PHONY : src/threadpool.c.i
 
 src/threadpool.s: src/threadpool.c.s
@@ -381,8 +381,8 @@ src/threadpool.s: src/threadpool.c.s
 
 # target to generate assembly for a file
 src/threadpool.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/threadpool.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/threadpool.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/threadpool.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/threadpool.c.s
 .PHONY : src/threadpool.c.s
 
 src/timer.o: src/timer.c.o
@@ -391,8 +391,8 @@ src/timer.o: src/timer.c.o
 
 # target to build an object file
 src/timer.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/timer.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/timer.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/timer.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/timer.c.o
 .PHONY : src/timer.c.o
 
 src/timer.i: src/timer.c.i
@@ -401,8 +401,8 @@ src/timer.i: src/timer.c.i
 
 # target to preprocess a source file
 src/timer.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/timer.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/timer.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/timer.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/timer.c.i
 .PHONY : src/timer.c.i
 
 src/timer.s: src/timer.c.s
@@ -411,8 +411,8 @@ src/timer.s: src/timer.c.s
 
 # target to generate assembly for a file
 src/timer.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/timer.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/timer.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/timer.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/timer.c.s
 .PHONY : src/timer.c.s
 
 src/unix/async.o: src/unix/async.c.o
@@ -421,8 +421,8 @@ src/unix/async.o: src/unix/async.c.o
 
 # target to build an object file
 src/unix/async.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/async.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/async.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/async.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/async.c.o
 .PHONY : src/unix/async.c.o
 
 src/unix/async.i: src/unix/async.c.i
@@ -431,8 +431,8 @@ src/unix/async.i: src/unix/async.c.i
 
 # target to preprocess a source file
 src/unix/async.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/async.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/async.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/async.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/async.c.i
 .PHONY : src/unix/async.c.i
 
 src/unix/async.s: src/unix/async.c.s
@@ -441,8 +441,8 @@ src/unix/async.s: src/unix/async.c.s
 
 # target to generate assembly for a file
 src/unix/async.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/async.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/async.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/async.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/async.c.s
 .PHONY : src/unix/async.c.s
 
 src/unix/core.o: src/unix/core.c.o
@@ -451,8 +451,8 @@ src/unix/core.o: src/unix/core.c.o
 
 # target to build an object file
 src/unix/core.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/core.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/core.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/core.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/core.c.o
 .PHONY : src/unix/core.c.o
 
 src/unix/core.i: src/unix/core.c.i
@@ -461,8 +461,8 @@ src/unix/core.i: src/unix/core.c.i
 
 # target to preprocess a source file
 src/unix/core.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/core.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/core.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/core.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/core.c.i
 .PHONY : src/unix/core.c.i
 
 src/unix/core.s: src/unix/core.c.s
@@ -471,8 +471,8 @@ src/unix/core.s: src/unix/core.c.s
 
 # target to generate assembly for a file
 src/unix/core.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/core.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/core.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/core.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/core.c.s
 .PHONY : src/unix/core.c.s
 
 src/unix/dl.o: src/unix/dl.c.o
@@ -481,8 +481,8 @@ src/unix/dl.o: src/unix/dl.c.o
 
 # target to build an object file
 src/unix/dl.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/dl.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/dl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/dl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/dl.c.o
 .PHONY : src/unix/dl.c.o
 
 src/unix/dl.i: src/unix/dl.c.i
@@ -491,8 +491,8 @@ src/unix/dl.i: src/unix/dl.c.i
 
 # target to preprocess a source file
 src/unix/dl.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/dl.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/dl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/dl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/dl.c.i
 .PHONY : src/unix/dl.c.i
 
 src/unix/dl.s: src/unix/dl.c.s
@@ -501,8 +501,8 @@ src/unix/dl.s: src/unix/dl.c.s
 
 # target to generate assembly for a file
 src/unix/dl.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/dl.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/dl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/dl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/dl.c.s
 .PHONY : src/unix/dl.c.s
 
 src/unix/fs.o: src/unix/fs.c.o
@@ -511,8 +511,8 @@ src/unix/fs.o: src/unix/fs.c.o
 
 # target to build an object file
 src/unix/fs.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/fs.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/fs.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/fs.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/fs.c.o
 .PHONY : src/unix/fs.c.o
 
 src/unix/fs.i: src/unix/fs.c.i
@@ -521,8 +521,8 @@ src/unix/fs.i: src/unix/fs.c.i
 
 # target to preprocess a source file
 src/unix/fs.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/fs.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/fs.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/fs.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/fs.c.i
 .PHONY : src/unix/fs.c.i
 
 src/unix/fs.s: src/unix/fs.c.s
@@ -531,8 +531,8 @@ src/unix/fs.s: src/unix/fs.c.s
 
 # target to generate assembly for a file
 src/unix/fs.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/fs.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/fs.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/fs.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/fs.c.s
 .PHONY : src/unix/fs.c.s
 
 src/unix/getaddrinfo.o: src/unix/getaddrinfo.c.o
@@ -541,8 +541,8 @@ src/unix/getaddrinfo.o: src/unix/getaddrinfo.c.o
 
 # target to build an object file
 src/unix/getaddrinfo.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getaddrinfo.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getaddrinfo.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.o
 .PHONY : src/unix/getaddrinfo.c.o
 
 src/unix/getaddrinfo.i: src/unix/getaddrinfo.c.i
@@ -551,8 +551,8 @@ src/unix/getaddrinfo.i: src/unix/getaddrinfo.c.i
 
 # target to preprocess a source file
 src/unix/getaddrinfo.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getaddrinfo.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getaddrinfo.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.i
 .PHONY : src/unix/getaddrinfo.c.i
 
 src/unix/getaddrinfo.s: src/unix/getaddrinfo.c.s
@@ -561,8 +561,8 @@ src/unix/getaddrinfo.s: src/unix/getaddrinfo.c.s
 
 # target to generate assembly for a file
 src/unix/getaddrinfo.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getaddrinfo.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getaddrinfo.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.s
 .PHONY : src/unix/getaddrinfo.c.s
 
 src/unix/getnameinfo.o: src/unix/getnameinfo.c.o
@@ -571,8 +571,8 @@ src/unix/getnameinfo.o: src/unix/getnameinfo.c.o
 
 # target to build an object file
 src/unix/getnameinfo.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getnameinfo.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getnameinfo.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.o
 .PHONY : src/unix/getnameinfo.c.o
 
 src/unix/getnameinfo.i: src/unix/getnameinfo.c.i
@@ -581,8 +581,8 @@ src/unix/getnameinfo.i: src/unix/getnameinfo.c.i
 
 # target to preprocess a source file
 src/unix/getnameinfo.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getnameinfo.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getnameinfo.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.i
 .PHONY : src/unix/getnameinfo.c.i
 
 src/unix/getnameinfo.s: src/unix/getnameinfo.c.s
@@ -591,8 +591,8 @@ src/unix/getnameinfo.s: src/unix/getnameinfo.c.s
 
 # target to generate assembly for a file
 src/unix/getnameinfo.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getnameinfo.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/getnameinfo.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.s
 .PHONY : src/unix/getnameinfo.c.s
 
 src/unix/linux-core.o: src/unix/linux-core.c.o
@@ -601,8 +601,8 @@ src/unix/linux-core.o: src/unix/linux-core.c.o
 
 # target to build an object file
 src/unix/linux-core.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-core.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-core.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-core.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-core.c.o
 .PHONY : src/unix/linux-core.c.o
 
 src/unix/linux-core.i: src/unix/linux-core.c.i
@@ -611,8 +611,8 @@ src/unix/linux-core.i: src/unix/linux-core.c.i
 
 # target to preprocess a source file
 src/unix/linux-core.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-core.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-core.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-core.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-core.c.i
 .PHONY : src/unix/linux-core.c.i
 
 src/unix/linux-core.s: src/unix/linux-core.c.s
@@ -621,8 +621,8 @@ src/unix/linux-core.s: src/unix/linux-core.c.s
 
 # target to generate assembly for a file
 src/unix/linux-core.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-core.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-core.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-core.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-core.c.s
 .PHONY : src/unix/linux-core.c.s
 
 src/unix/linux-inotify.o: src/unix/linux-inotify.c.o
@@ -631,8 +631,8 @@ src/unix/linux-inotify.o: src/unix/linux-inotify.c.o
 
 # target to build an object file
 src/unix/linux-inotify.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-inotify.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-inotify.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-inotify.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-inotify.c.o
 .PHONY : src/unix/linux-inotify.c.o
 
 src/unix/linux-inotify.i: src/unix/linux-inotify.c.i
@@ -641,8 +641,8 @@ src/unix/linux-inotify.i: src/unix/linux-inotify.c.i
 
 # target to preprocess a source file
 src/unix/linux-inotify.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-inotify.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-inotify.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-inotify.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-inotify.c.i
 .PHONY : src/unix/linux-inotify.c.i
 
 src/unix/linux-inotify.s: src/unix/linux-inotify.c.s
@@ -651,8 +651,8 @@ src/unix/linux-inotify.s: src/unix/linux-inotify.c.s
 
 # target to generate assembly for a file
 src/unix/linux-inotify.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-inotify.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-inotify.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-inotify.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-inotify.c.s
 .PHONY : src/unix/linux-inotify.c.s
 
 src/unix/linux-syscalls.o: src/unix/linux-syscalls.c.o
@@ -661,8 +661,8 @@ src/unix/linux-syscalls.o: src/unix/linux-syscalls.c.o
 
 # target to build an object file
 src/unix/linux-syscalls.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-syscalls.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-syscalls.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-syscalls.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-syscalls.c.o
 .PHONY : src/unix/linux-syscalls.c.o
 
 src/unix/linux-syscalls.i: src/unix/linux-syscalls.c.i
@@ -671,8 +671,8 @@ src/unix/linux-syscalls.i: src/unix/linux-syscalls.c.i
 
 # target to preprocess a source file
 src/unix/linux-syscalls.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-syscalls.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-syscalls.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-syscalls.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-syscalls.c.i
 .PHONY : src/unix/linux-syscalls.c.i
 
 src/unix/linux-syscalls.s: src/unix/linux-syscalls.c.s
@@ -681,8 +681,8 @@ src/unix/linux-syscalls.s: src/unix/linux-syscalls.c.s
 
 # target to generate assembly for a file
 src/unix/linux-syscalls.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-syscalls.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-syscalls.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/linux-syscalls.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/linux-syscalls.c.s
 .PHONY : src/unix/linux-syscalls.c.s
 
 src/unix/loop-watcher.o: src/unix/loop-watcher.c.o
@@ -691,8 +691,8 @@ src/unix/loop-watcher.o: src/unix/loop-watcher.c.o
 
 # target to build an object file
 src/unix/loop-watcher.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop-watcher.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop-watcher.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.o
 .PHONY : src/unix/loop-watcher.c.o
 
 src/unix/loop-watcher.i: src/unix/loop-watcher.c.i
@@ -701,8 +701,8 @@ src/unix/loop-watcher.i: src/unix/loop-watcher.c.i
 
 # target to preprocess a source file
 src/unix/loop-watcher.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop-watcher.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop-watcher.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.i
 .PHONY : src/unix/loop-watcher.c.i
 
 src/unix/loop-watcher.s: src/unix/loop-watcher.c.s
@@ -711,8 +711,8 @@ src/unix/loop-watcher.s: src/unix/loop-watcher.c.s
 
 # target to generate assembly for a file
 src/unix/loop-watcher.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop-watcher.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop-watcher.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.s
 .PHONY : src/unix/loop-watcher.c.s
 
 src/unix/loop.o: src/unix/loop.c.o
@@ -721,8 +721,8 @@ src/unix/loop.o: src/unix/loop.c.o
 
 # target to build an object file
 src/unix/loop.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop.c.o
 .PHONY : src/unix/loop.c.o
 
 src/unix/loop.i: src/unix/loop.c.i
@@ -731,8 +731,8 @@ src/unix/loop.i: src/unix/loop.c.i
 
 # target to preprocess a source file
 src/unix/loop.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop.c.i
 .PHONY : src/unix/loop.c.i
 
 src/unix/loop.s: src/unix/loop.c.s
@@ -741,8 +741,8 @@ src/unix/loop.s: src/unix/loop.c.s
 
 # target to generate assembly for a file
 src/unix/loop.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/loop.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/loop.c.s
 .PHONY : src/unix/loop.c.s
 
 src/unix/pipe.o: src/unix/pipe.c.o
@@ -751,8 +751,8 @@ src/unix/pipe.o: src/unix/pipe.c.o
 
 # target to build an object file
 src/unix/pipe.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/pipe.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/pipe.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/pipe.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/pipe.c.o
 .PHONY : src/unix/pipe.c.o
 
 src/unix/pipe.i: src/unix/pipe.c.i
@@ -761,8 +761,8 @@ src/unix/pipe.i: src/unix/pipe.c.i
 
 # target to preprocess a source file
 src/unix/pipe.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/pipe.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/pipe.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/pipe.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/pipe.c.i
 .PHONY : src/unix/pipe.c.i
 
 src/unix/pipe.s: src/unix/pipe.c.s
@@ -771,8 +771,8 @@ src/unix/pipe.s: src/unix/pipe.c.s
 
 # target to generate assembly for a file
 src/unix/pipe.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/pipe.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/pipe.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/pipe.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/pipe.c.s
 .PHONY : src/unix/pipe.c.s
 
 src/unix/poll.o: src/unix/poll.c.o
@@ -781,8 +781,8 @@ src/unix/poll.o: src/unix/poll.c.o
 
 # target to build an object file
 src/unix/poll.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/poll.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/poll.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/poll.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/poll.c.o
 .PHONY : src/unix/poll.c.o
 
 src/unix/poll.i: src/unix/poll.c.i
@@ -791,8 +791,8 @@ src/unix/poll.i: src/unix/poll.c.i
 
 # target to preprocess a source file
 src/unix/poll.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/poll.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/poll.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/poll.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/poll.c.i
 .PHONY : src/unix/poll.c.i
 
 src/unix/poll.s: src/unix/poll.c.s
@@ -801,8 +801,8 @@ src/unix/poll.s: src/unix/poll.c.s
 
 # target to generate assembly for a file
 src/unix/poll.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/poll.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/poll.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/poll.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/poll.c.s
 .PHONY : src/unix/poll.c.s
 
 src/unix/process.o: src/unix/process.c.o
@@ -811,8 +811,8 @@ src/unix/process.o: src/unix/process.c.o
 
 # target to build an object file
 src/unix/process.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/process.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/process.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/process.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/process.c.o
 .PHONY : src/unix/process.c.o
 
 src/unix/process.i: src/unix/process.c.i
@@ -821,8 +821,8 @@ src/unix/process.i: src/unix/process.c.i
 
 # target to preprocess a source file
 src/unix/process.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/process.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/process.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/process.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/process.c.i
 .PHONY : src/unix/process.c.i
 
 src/unix/process.s: src/unix/process.c.s
@@ -831,8 +831,8 @@ src/unix/process.s: src/unix/process.c.s
 
 # target to generate assembly for a file
 src/unix/process.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/process.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/process.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/process.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/process.c.s
 .PHONY : src/unix/process.c.s
 
 src/unix/procfs-exepath.o: src/unix/procfs-exepath.c.o
@@ -841,8 +841,8 @@ src/unix/procfs-exepath.o: src/unix/procfs-exepath.c.o
 
 # target to build an object file
 src/unix/procfs-exepath.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/procfs-exepath.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/procfs-exepath.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.o
 .PHONY : src/unix/procfs-exepath.c.o
 
 src/unix/procfs-exepath.i: src/unix/procfs-exepath.c.i
@@ -851,8 +851,8 @@ src/unix/procfs-exepath.i: src/unix/procfs-exepath.c.i
 
 # target to preprocess a source file
 src/unix/procfs-exepath.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/procfs-exepath.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/procfs-exepath.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.i
 .PHONY : src/unix/procfs-exepath.c.i
 
 src/unix/procfs-exepath.s: src/unix/procfs-exepath.c.s
@@ -861,8 +861,8 @@ src/unix/procfs-exepath.s: src/unix/procfs-exepath.c.s
 
 # target to generate assembly for a file
 src/unix/procfs-exepath.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/procfs-exepath.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/procfs-exepath.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.s
 .PHONY : src/unix/procfs-exepath.c.s
 
 src/unix/proctitle.o: src/unix/proctitle.c.o
@@ -871,8 +871,8 @@ src/unix/proctitle.o: src/unix/proctitle.c.o
 
 # target to build an object file
 src/unix/proctitle.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/proctitle.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/proctitle.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/proctitle.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/proctitle.c.o
 .PHONY : src/unix/proctitle.c.o
 
 src/unix/proctitle.i: src/unix/proctitle.c.i
@@ -881,8 +881,8 @@ src/unix/proctitle.i: src/unix/proctitle.c.i
 
 # target to preprocess a source file
 src/unix/proctitle.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/proctitle.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/proctitle.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/proctitle.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/proctitle.c.i
 .PHONY : src/unix/proctitle.c.i
 
 src/unix/proctitle.s: src/unix/proctitle.c.s
@@ -891,8 +891,8 @@ src/unix/proctitle.s: src/unix/proctitle.c.s
 
 # target to generate assembly for a file
 src/unix/proctitle.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/proctitle.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/proctitle.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/proctitle.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/proctitle.c.s
 .PHONY : src/unix/proctitle.c.s
 
 src/unix/random-devurandom.o: src/unix/random-devurandom.c.o
@@ -901,8 +901,8 @@ src/unix/random-devurandom.o: src/unix/random-devurandom.c.o
 
 # target to build an object file
 src/unix/random-devurandom.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-devurandom.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-devurandom.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.o
 .PHONY : src/unix/random-devurandom.c.o
 
 src/unix/random-devurandom.i: src/unix/random-devurandom.c.i
@@ -911,8 +911,8 @@ src/unix/random-devurandom.i: src/unix/random-devurandom.c.i
 
 # target to preprocess a source file
 src/unix/random-devurandom.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-devurandom.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-devurandom.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.i
 .PHONY : src/unix/random-devurandom.c.i
 
 src/unix/random-devurandom.s: src/unix/random-devurandom.c.s
@@ -921,8 +921,8 @@ src/unix/random-devurandom.s: src/unix/random-devurandom.c.s
 
 # target to generate assembly for a file
 src/unix/random-devurandom.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-devurandom.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-devurandom.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.s
 .PHONY : src/unix/random-devurandom.c.s
 
 src/unix/random-getrandom.o: src/unix/random-getrandom.c.o
@@ -931,8 +931,8 @@ src/unix/random-getrandom.o: src/unix/random-getrandom.c.o
 
 # target to build an object file
 src/unix/random-getrandom.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-getrandom.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-getrandom.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.o
 .PHONY : src/unix/random-getrandom.c.o
 
 src/unix/random-getrandom.i: src/unix/random-getrandom.c.i
@@ -941,8 +941,8 @@ src/unix/random-getrandom.i: src/unix/random-getrandom.c.i
 
 # target to preprocess a source file
 src/unix/random-getrandom.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-getrandom.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-getrandom.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.i
 .PHONY : src/unix/random-getrandom.c.i
 
 src/unix/random-getrandom.s: src/unix/random-getrandom.c.s
@@ -951,8 +951,8 @@ src/unix/random-getrandom.s: src/unix/random-getrandom.c.s
 
 # target to generate assembly for a file
 src/unix/random-getrandom.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-getrandom.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-getrandom.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.s
 .PHONY : src/unix/random-getrandom.c.s
 
 src/unix/random-sysctl.o: src/unix/random-sysctl.c.o
@@ -961,8 +961,8 @@ src/unix/random-sysctl.o: src/unix/random-sysctl.c.o
 
 # target to build an object file
 src/unix/random-sysctl.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-sysctl.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-sysctl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-sysctl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-sysctl.c.o
 .PHONY : src/unix/random-sysctl.c.o
 
 src/unix/random-sysctl.i: src/unix/random-sysctl.c.i
@@ -971,8 +971,8 @@ src/unix/random-sysctl.i: src/unix/random-sysctl.c.i
 
 # target to preprocess a source file
 src/unix/random-sysctl.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-sysctl.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-sysctl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-sysctl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-sysctl.c.i
 .PHONY : src/unix/random-sysctl.c.i
 
 src/unix/random-sysctl.s: src/unix/random-sysctl.c.s
@@ -981,8 +981,8 @@ src/unix/random-sysctl.s: src/unix/random-sysctl.c.s
 
 # target to generate assembly for a file
 src/unix/random-sysctl.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-sysctl.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-sysctl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/random-sysctl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/random-sysctl.c.s
 .PHONY : src/unix/random-sysctl.c.s
 
 src/unix/signal.o: src/unix/signal.c.o
@@ -991,8 +991,8 @@ src/unix/signal.o: src/unix/signal.c.o
 
 # target to build an object file
 src/unix/signal.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/signal.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/signal.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/signal.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/signal.c.o
 .PHONY : src/unix/signal.c.o
 
 src/unix/signal.i: src/unix/signal.c.i
@@ -1001,8 +1001,8 @@ src/unix/signal.i: src/unix/signal.c.i
 
 # target to preprocess a source file
 src/unix/signal.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/signal.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/signal.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/signal.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/signal.c.i
 .PHONY : src/unix/signal.c.i
 
 src/unix/signal.s: src/unix/signal.c.s
@@ -1011,8 +1011,8 @@ src/unix/signal.s: src/unix/signal.c.s
 
 # target to generate assembly for a file
 src/unix/signal.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/signal.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/signal.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/signal.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/signal.c.s
 .PHONY : src/unix/signal.c.s
 
 src/unix/stream.o: src/unix/stream.c.o
@@ -1021,8 +1021,8 @@ src/unix/stream.o: src/unix/stream.c.o
 
 # target to build an object file
 src/unix/stream.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/stream.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/stream.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/stream.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/stream.c.o
 .PHONY : src/unix/stream.c.o
 
 src/unix/stream.i: src/unix/stream.c.i
@@ -1031,8 +1031,8 @@ src/unix/stream.i: src/unix/stream.c.i
 
 # target to preprocess a source file
 src/unix/stream.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/stream.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/stream.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/stream.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/stream.c.i
 .PHONY : src/unix/stream.c.i
 
 src/unix/stream.s: src/unix/stream.c.s
@@ -1041,8 +1041,8 @@ src/unix/stream.s: src/unix/stream.c.s
 
 # target to generate assembly for a file
 src/unix/stream.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/stream.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/stream.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/stream.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/stream.c.s
 .PHONY : src/unix/stream.c.s
 
 src/unix/sysinfo-loadavg.o: src/unix/sysinfo-loadavg.c.o
@@ -1051,8 +1051,8 @@ src/unix/sysinfo-loadavg.o: src/unix/sysinfo-loadavg.c.o
 
 # target to build an object file
 src/unix/sysinfo-loadavg.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/sysinfo-loadavg.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/sysinfo-loadavg.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/sysinfo-loadavg.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/sysinfo-loadavg.c.o
 .PHONY : src/unix/sysinfo-loadavg.c.o
 
 src/unix/sysinfo-loadavg.i: src/unix/sysinfo-loadavg.c.i
@@ -1061,8 +1061,8 @@ src/unix/sysinfo-loadavg.i: src/unix/sysinfo-loadavg.c.i
 
 # target to preprocess a source file
 src/unix/sysinfo-loadavg.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/sysinfo-loadavg.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/sysinfo-loadavg.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/sysinfo-loadavg.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/sysinfo-loadavg.c.i
 .PHONY : src/unix/sysinfo-loadavg.c.i
 
 src/unix/sysinfo-loadavg.s: src/unix/sysinfo-loadavg.c.s
@@ -1071,8 +1071,8 @@ src/unix/sysinfo-loadavg.s: src/unix/sysinfo-loadavg.c.s
 
 # target to generate assembly for a file
 src/unix/sysinfo-loadavg.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/sysinfo-loadavg.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/sysinfo-loadavg.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/sysinfo-loadavg.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/sysinfo-loadavg.c.s
 .PHONY : src/unix/sysinfo-loadavg.c.s
 
 src/unix/tcp.o: src/unix/tcp.c.o
@@ -1081,8 +1081,8 @@ src/unix/tcp.o: src/unix/tcp.c.o
 
 # target to build an object file
 src/unix/tcp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tcp.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tcp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tcp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tcp.c.o
 .PHONY : src/unix/tcp.c.o
 
 src/unix/tcp.i: src/unix/tcp.c.i
@@ -1091,8 +1091,8 @@ src/unix/tcp.i: src/unix/tcp.c.i
 
 # target to preprocess a source file
 src/unix/tcp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tcp.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tcp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tcp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tcp.c.i
 .PHONY : src/unix/tcp.c.i
 
 src/unix/tcp.s: src/unix/tcp.c.s
@@ -1101,8 +1101,8 @@ src/unix/tcp.s: src/unix/tcp.c.s
 
 # target to generate assembly for a file
 src/unix/tcp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tcp.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tcp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tcp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tcp.c.s
 .PHONY : src/unix/tcp.c.s
 
 src/unix/thread.o: src/unix/thread.c.o
@@ -1111,8 +1111,8 @@ src/unix/thread.o: src/unix/thread.c.o
 
 # target to build an object file
 src/unix/thread.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/thread.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/thread.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/thread.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/thread.c.o
 .PHONY : src/unix/thread.c.o
 
 src/unix/thread.i: src/unix/thread.c.i
@@ -1121,8 +1121,8 @@ src/unix/thread.i: src/unix/thread.c.i
 
 # target to preprocess a source file
 src/unix/thread.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/thread.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/thread.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/thread.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/thread.c.i
 .PHONY : src/unix/thread.c.i
 
 src/unix/thread.s: src/unix/thread.c.s
@@ -1131,8 +1131,8 @@ src/unix/thread.s: src/unix/thread.c.s
 
 # target to generate assembly for a file
 src/unix/thread.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/thread.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/thread.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/thread.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/thread.c.s
 .PHONY : src/unix/thread.c.s
 
 src/unix/tty.o: src/unix/tty.c.o
@@ -1141,8 +1141,8 @@ src/unix/tty.o: src/unix/tty.c.o
 
 # target to build an object file
 src/unix/tty.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tty.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tty.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tty.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tty.c.o
 .PHONY : src/unix/tty.c.o
 
 src/unix/tty.i: src/unix/tty.c.i
@@ -1151,8 +1151,8 @@ src/unix/tty.i: src/unix/tty.c.i
 
 # target to preprocess a source file
 src/unix/tty.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tty.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tty.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tty.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tty.c.i
 .PHONY : src/unix/tty.c.i
 
 src/unix/tty.s: src/unix/tty.c.s
@@ -1161,8 +1161,8 @@ src/unix/tty.s: src/unix/tty.c.s
 
 # target to generate assembly for a file
 src/unix/tty.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tty.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tty.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/tty.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/tty.c.s
 .PHONY : src/unix/tty.c.s
 
 src/unix/udp.o: src/unix/udp.c.o
@@ -1171,8 +1171,8 @@ src/unix/udp.o: src/unix/udp.c.o
 
 # target to build an object file
 src/unix/udp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/udp.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/udp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/udp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/udp.c.o
 .PHONY : src/unix/udp.c.o
 
 src/unix/udp.i: src/unix/udp.c.i
@@ -1181,8 +1181,8 @@ src/unix/udp.i: src/unix/udp.c.i
 
 # target to preprocess a source file
 src/unix/udp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/udp.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/udp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/udp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/udp.c.i
 .PHONY : src/unix/udp.c.i
 
 src/unix/udp.s: src/unix/udp.c.s
@@ -1191,8 +1191,8 @@ src/unix/udp.s: src/unix/udp.c.s
 
 # target to generate assembly for a file
 src/unix/udp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/udp.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/udp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/unix/udp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/unix/udp.c.s
 .PHONY : src/unix/udp.c.s
 
 src/uv-common.o: src/uv-common.c.o
@@ -1201,8 +1201,8 @@ src/uv-common.o: src/uv-common.c.o
 
 # target to build an object file
 src/uv-common.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-common.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-common.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-common.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-common.c.o
 .PHONY : src/uv-common.c.o
 
 src/uv-common.i: src/uv-common.c.i
@@ -1211,8 +1211,8 @@ src/uv-common.i: src/uv-common.c.i
 
 # target to preprocess a source file
 src/uv-common.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-common.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-common.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-common.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-common.c.i
 .PHONY : src/uv-common.c.i
 
 src/uv-common.s: src/uv-common.c.s
@@ -1221,8 +1221,8 @@ src/uv-common.s: src/uv-common.c.s
 
 # target to generate assembly for a file
 src/uv-common.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-common.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-common.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-common.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-common.c.s
 .PHONY : src/uv-common.c.s
 
 src/uv-data-getter-setters.o: src/uv-data-getter-setters.c.o
@@ -1231,8 +1231,8 @@ src/uv-data-getter-setters.o: src/uv-data-getter-setters.c.o
 
 # target to build an object file
 src/uv-data-getter-setters.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-data-getter-setters.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-data-getter-setters.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.o
 .PHONY : src/uv-data-getter-setters.c.o
 
 src/uv-data-getter-setters.i: src/uv-data-getter-setters.c.i
@@ -1241,8 +1241,8 @@ src/uv-data-getter-setters.i: src/uv-data-getter-setters.c.i
 
 # target to preprocess a source file
 src/uv-data-getter-setters.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-data-getter-setters.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-data-getter-setters.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.i
 .PHONY : src/uv-data-getter-setters.c.i
 
 src/uv-data-getter-setters.s: src/uv-data-getter-setters.c.s
@@ -1251,8 +1251,8 @@ src/uv-data-getter-setters.s: src/uv-data-getter-setters.c.s
 
 # target to generate assembly for a file
 src/uv-data-getter-setters.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-data-getter-setters.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/uv-data-getter-setters.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.s
 .PHONY : src/uv-data-getter-setters.c.s
 
 src/version.o: src/version.c.o
@@ -1261,8 +1261,8 @@ src/version.o: src/version.c.o
 
 # target to build an object file
 src/version.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/version.c.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/version.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/version.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/version.c.o
 .PHONY : src/version.c.o
 
 src/version.i: src/version.c.i
@@ -1271,8 +1271,8 @@ src/version.i: src/version.c.i
 
 # target to preprocess a source file
 src/version.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/version.c.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/version.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/version.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/version.c.i
 .PHONY : src/version.c.i
 
 src/version.s: src/version.c.s
@@ -1281,8 +1281,8 @@ src/version.s: src/version.c.s
 
 # target to generate assembly for a file
 src/version.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/version.c.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/version.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv.dir/src/version.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/build.make Lib/firebase-cpp-sdk/external/src/libuv-build/CMakeFiles/uv_a.dir/src/version.c.s
 .PHONY : src/version.c.s
 
 # Help Target
@@ -1418,6 +1418,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

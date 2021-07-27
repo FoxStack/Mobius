@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/depend.make
@@ -78,16 +78,16 @@ include Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-buil
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/flags.make
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/compiler/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/compiler/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/compiler/main.cc"
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/compiler/main.cc > CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/compiler/main.cc" > CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.i
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/compiler/main.cc -o CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src/google/protobuf/compiler/main.cc" -o CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.s
 
 # Object files for target protoc
 protoc_OBJECTS = \
@@ -101,9 +101,9 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/libprotocd.a
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/libprotobufd.a
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable protoc"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/protoc.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf && $(CMAKE_COMMAND) -E cmake_symlink_executable protoc-3.11.2.0 protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable protoc"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/protoc.dir/link.txt --verbose=$(VERBOSE)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" && $(CMAKE_COMMAND) -E cmake_symlink_executable protoc-3.11.2.0 protoc
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0
 
@@ -114,10 +114,10 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/build
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf && $(CMAKE_COMMAND) -P CMakeFiles/protoc.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" && $(CMAKE_COMMAND) -P CMakeFiles/protoc.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/clean
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/cmake" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/CMakeFiles/protoc.dir/depend
 

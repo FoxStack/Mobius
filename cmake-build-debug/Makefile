@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,31 +78,31 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -113,7 +113,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -124,13 +124,13 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -145,9 +145,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -226,58 +226,6 @@ FIREBASE_GENERATED_HEADERS: cmake_check_build_system
 FIREBASE_GENERATED_HEADERS/fast:
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/build
 .PHONY : FIREBASE_GENERATED_HEADERS/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googletest/CMakeFiles/gtest.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
 
 #=============================================================================
 # Target rules for targets named gen_percent_encoding_tables
@@ -1554,188 +1502,6 @@ firestore_gen_grpc_certs/fast:
 .PHONY : firestore_gen_grpc_certs/fast
 
 #=============================================================================
-# Target rules for targets named firestore_testutil
-
-# Build rule for target.
-firestore_testutil: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_testutil
-.PHONY : firestore_testutil
-
-# fast build rule for target.
-firestore_testutil/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/testutil/CMakeFiles/firestore_testutil.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/testutil/CMakeFiles/firestore_testutil.dir/build
-.PHONY : firestore_testutil/fast
-
-#=============================================================================
-# Target rules for targets named firestore_types_test
-
-# Build rule for target.
-firestore_types_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_types_test
-.PHONY : firestore_types_test
-
-# fast build rule for target.
-firestore_types_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/CMakeFiles/firestore_types_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/CMakeFiles/firestore_types_test.dir/build
-.PHONY : firestore_types_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_api_test
-
-# Build rule for target.
-firestore_api_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_api_test
-.PHONY : firestore_api_test
-
-# fast build rule for target.
-firestore_api_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/api/CMakeFiles/firestore_api_test.dir/build
-.PHONY : firestore_api_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_auth_test
-
-# Build rule for target.
-firestore_auth_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_auth_test
-.PHONY : firestore_auth_test
-
-# fast build rule for target.
-firestore_auth_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/auth/CMakeFiles/firestore_auth_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/auth/CMakeFiles/firestore_auth_test.dir/build
-.PHONY : firestore_auth_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_bundle_test
-
-# Build rule for target.
-firestore_bundle_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_bundle_test
-.PHONY : firestore_bundle_test
-
-# fast build rule for target.
-firestore_bundle_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/bundle/CMakeFiles/firestore_bundle_test.dir/build
-.PHONY : firestore_bundle_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_core_test
-
-# Build rule for target.
-firestore_core_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_core_test
-.PHONY : firestore_core_test
-
-# fast build rule for target.
-firestore_core_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/core/CMakeFiles/firestore_core_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/core/CMakeFiles/firestore_core_test.dir/build
-.PHONY : firestore_core_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_immutable_test
-
-# Build rule for target.
-firestore_immutable_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_immutable_test
-.PHONY : firestore_immutable_test
-
-# fast build rule for target.
-firestore_immutable_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/immutable/CMakeFiles/firestore_immutable_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/immutable/CMakeFiles/firestore_immutable_test.dir/build
-.PHONY : firestore_immutable_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_local_testing
-
-# Build rule for target.
-firestore_local_testing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_local_testing
-.PHONY : firestore_local_testing
-
-# fast build rule for target.
-firestore_local_testing/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/local/CMakeFiles/firestore_local_testing.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/local/CMakeFiles/firestore_local_testing.dir/build
-.PHONY : firestore_local_testing/fast
-
-#=============================================================================
-# Target rules for targets named firestore_local_test
-
-# Build rule for target.
-firestore_local_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_local_test
-.PHONY : firestore_local_test
-
-# fast build rule for target.
-firestore_local_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/local/CMakeFiles/firestore_local_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/local/CMakeFiles/firestore_local_test.dir/build
-.PHONY : firestore_local_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_model_test
-
-# Build rule for target.
-firestore_model_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_model_test
-.PHONY : firestore_model_test
-
-# fast build rule for target.
-firestore_model_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/model/CMakeFiles/firestore_model_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/model/CMakeFiles/firestore_model_test.dir/build
-.PHONY : firestore_model_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_nanopb_test
-
-# Build rule for target.
-firestore_nanopb_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_nanopb_test
-.PHONY : firestore_nanopb_test
-
-# fast build rule for target.
-firestore_nanopb_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/nanopb/CMakeFiles/firestore_nanopb_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/nanopb/CMakeFiles/firestore_nanopb_test.dir/build
-.PHONY : firestore_nanopb_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_remote_testing
-
-# Build rule for target.
-firestore_remote_testing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_remote_testing
-.PHONY : firestore_remote_testing
-
-# fast build rule for target.
-firestore_remote_testing/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/remote/CMakeFiles/firestore_remote_testing.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/remote/CMakeFiles/firestore_remote_testing.dir/build
-.PHONY : firestore_remote_testing/fast
-
-#=============================================================================
-# Target rules for targets named firestore_remote_test
-
-# Build rule for target.
-firestore_remote_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_remote_test
-.PHONY : firestore_remote_test
-
-# fast build rule for target.
-firestore_remote_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/remote/CMakeFiles/firestore_remote_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/remote/CMakeFiles/firestore_remote_test.dir/build
-.PHONY : firestore_remote_test/fast
-
-#=============================================================================
-# Target rules for targets named firestore_util_test
-
-# Build rule for target.
-firestore_util_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firestore_util_test
-.PHONY : firestore_util_test
-
-# fast build rule for target.
-firestore_util_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/util/CMakeFiles/firestore_util_test.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/test/unit/util/CMakeFiles/firestore_util_test.dir/build
-.PHONY : firestore_util_test/fast
-
-#=============================================================================
 # Target rules for targets named flatbuffers
 
 # Build rule for target.
@@ -1918,32 +1684,6 @@ minigzip64/fast:
 .PHONY : minigzip64/fast
 
 #=============================================================================
-# Target rules for targets named generate_testing_fps
-
-# Build rule for target.
-generate_testing_fps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generate_testing_fps
-.PHONY : generate_testing_fps
-
-# fast build rule for target.
-generate_testing_fps/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/testing/CMakeFiles/generate_testing_fps.dir/build.make Lib/firebase-cpp-sdk/testing/CMakeFiles/generate_testing_fps.dir/build
-.PHONY : generate_testing_fps/fast
-
-#=============================================================================
-# Target rules for targets named firebase_testing
-
-# Build rule for target.
-firebase_testing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_testing
-.PHONY : firebase_testing
-
-# fast build rule for target.
-firebase_testing/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/build.make Lib/firebase-cpp-sdk/testing/CMakeFiles/firebase_testing.dir/build
-.PHONY : firebase_testing/fast
-
-#=============================================================================
 # Target rules for targets named FIREBASE_APP_GENERATED_HEADERS
 
 # Build rule for target.
@@ -1996,539 +1736,6 @@ firebase_rest_lib/fast:
 .PHONY : firebase_rest_lib/fast
 
 #=============================================================================
-# Target rules for targets named firebase_app_rest_transport_mock_test
-
-# Build rule for target.
-firebase_app_rest_transport_mock_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_transport_mock_test
-.PHONY : firebase_app_rest_transport_mock_test
-
-# fast build rule for target.
-firebase_app_rest_transport_mock_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_transport_mock_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_transport_mock_test.dir/build
-.PHONY : firebase_app_rest_transport_mock_test/fast
-
-#=============================================================================
-# Target rules for targets named sample_resource_lib
-
-# Build rule for target.
-sample_resource_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample_resource_lib
-.PHONY : sample_resource_lib
-
-# fast build rule for target.
-sample_resource_lib/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/sample_resource_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/sample_resource_lib.dir/build
-.PHONY : sample_resource_lib/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_response_json_test
-
-# Build rule for target.
-firebase_app_rest_response_json_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_response_json_test
-.PHONY : firebase_app_rest_response_json_test
-
-# fast build rule for target.
-firebase_app_rest_response_json_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_json_test.dir/build
-.PHONY : firebase_app_rest_response_json_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_request_test
-
-# Build rule for target.
-firebase_app_rest_request_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_request_test
-.PHONY : firebase_app_rest_request_test
-
-# fast build rule for target.
-firebase_app_rest_request_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_request_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_request_test.dir/build
-.PHONY : firebase_app_rest_request_test/fast
-
-#=============================================================================
-# Target rules for targets named app_rest_generated_includes
-
-# Build rule for target.
-app_rest_generated_includes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_rest_generated_includes
-.PHONY : app_rest_generated_includes
-
-# fast build rule for target.
-app_rest_generated_includes/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/app_rest_generated_includes.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/app_rest_generated_includes.dir/build
-.PHONY : app_rest_generated_includes/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_request_json_test
-
-# Build rule for target.
-firebase_app_rest_request_json_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_request_json_test
-.PHONY : firebase_app_rest_request_json_test
-
-# fast build rule for target.
-firebase_app_rest_request_json_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_request_json_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_request_json_test.dir/build
-.PHONY : firebase_app_rest_request_json_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_response_binary_test
-
-# Build rule for target.
-firebase_app_rest_response_binary_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_response_binary_test
-.PHONY : firebase_app_rest_response_binary_test
-
-# fast build rule for target.
-firebase_app_rest_response_binary_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_binary_test.dir/build
-.PHONY : firebase_app_rest_response_binary_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_request_binary_test
-
-# Build rule for target.
-firebase_app_rest_request_binary_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_request_binary_test
-.PHONY : firebase_app_rest_request_binary_test
-
-# fast build rule for target.
-firebase_app_rest_request_binary_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_request_binary_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_request_binary_test.dir/build
-.PHONY : firebase_app_rest_request_binary_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_response_test
-
-# Build rule for target.
-firebase_app_rest_response_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_response_test
-.PHONY : firebase_app_rest_response_test
-
-# fast build rule for target.
-firebase_app_rest_response_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_response_test.dir/build
-.PHONY : firebase_app_rest_response_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_util_test
-
-# Build rule for target.
-firebase_app_rest_util_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_util_test
-.PHONY : firebase_app_rest_util_test
-
-# fast build rule for target.
-firebase_app_rest_util_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_util_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_util_test.dir/build
-.PHONY : firebase_app_rest_util_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_rest_www_form_url_encoded_test
-
-# Build rule for target.
-firebase_app_rest_www_form_url_encoded_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_rest_www_form_url_encoded_test
-.PHONY : firebase_app_rest_www_form_url_encoded_test
-
-# fast build rule for target.
-firebase_app_rest_www_form_url_encoded_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_www_form_url_encoded_test.dir/build.make Lib/firebase-cpp-sdk/app/rest/tests/CMakeFiles/firebase_app_rest_www_form_url_encoded_test.dir/build
-.PHONY : firebase_app_rest_www_form_url_encoded_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_memory_unique_ptr_test
-
-# Build rule for target.
-firebase_app_memory_unique_ptr_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_memory_unique_ptr_test
-.PHONY : firebase_app_memory_unique_ptr_test
-
-# fast build rule for target.
-firebase_app_memory_unique_ptr_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_memory_unique_ptr_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_memory_unique_ptr_test.dir/build
-.PHONY : firebase_app_memory_unique_ptr_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_memory_shared_ptr_test
-
-# Build rule for target.
-firebase_app_memory_shared_ptr_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_memory_shared_ptr_test
-.PHONY : firebase_app_memory_shared_ptr_test
-
-# fast build rule for target.
-firebase_app_memory_shared_ptr_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_memory_shared_ptr_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_memory_shared_ptr_test.dir/build
-.PHONY : firebase_app_memory_shared_ptr_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_user_secure_integration_test
-
-# Build rule for target.
-firebase_app_user_secure_integration_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_user_secure_integration_test
-.PHONY : firebase_app_user_secure_integration_test
-
-# fast build rule for target.
-firebase_app_user_secure_integration_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_integration_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_integration_test.dir/build
-.PHONY : firebase_app_user_secure_integration_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_user_secure_manager_test
-
-# Build rule for target.
-firebase_app_user_secure_manager_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_user_secure_manager_test
-.PHONY : firebase_app_user_secure_manager_test
-
-# fast build rule for target.
-firebase_app_user_secure_manager_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_manager_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_manager_test.dir/build
-.PHONY : firebase_app_user_secure_manager_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_variant_util_tests
-
-# Build rule for target.
-firebase_app_variant_util_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_variant_util_tests
-.PHONY : firebase_app_variant_util_tests
-
-# fast build rule for target.
-firebase_app_variant_util_tests/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_util_tests.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_util_tests.dir/build
-.PHONY : firebase_app_variant_util_tests/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_cpp11_thread_test
-
-# Build rule for target.
-firebase_app_cpp11_thread_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_cpp11_thread_test
-.PHONY : firebase_app_cpp11_thread_test
-
-# fast build rule for target.
-firebase_app_cpp11_thread_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_cpp11_thread_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_cpp11_thread_test.dir/build
-.PHONY : firebase_app_cpp11_thread_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_optional_test
-
-# Build rule for target.
-firebase_app_optional_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_optional_test
-.PHONY : firebase_app_optional_test
-
-# fast build rule for target.
-firebase_app_optional_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_optional_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_optional_test.dir/build
-.PHONY : firebase_app_optional_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rest_mocks
-
-# Build rule for target.
-firebase_rest_mocks: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rest_mocks
-.PHONY : firebase_rest_mocks
-
-# fast build rule for target.
-firebase_rest_mocks/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_rest_mocks.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_rest_mocks.dir/build
-.PHONY : firebase_rest_mocks/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_variant_test
-
-# Build rule for target.
-firebase_app_variant_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_variant_test
-.PHONY : firebase_app_variant_test
-
-# fast build rule for target.
-firebase_app_variant_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_variant_test.dir/build
-.PHONY : firebase_app_variant_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_assert_test
-
-# Build rule for target.
-firebase_app_assert_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_assert_test
-.PHONY : firebase_app_assert_test
-
-# fast build rule for target.
-firebase_app_assert_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_assert_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_assert_test.dir/build
-.PHONY : firebase_app_assert_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_user_secure_internal_test
-
-# Build rule for target.
-firebase_app_user_secure_internal_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_user_secure_internal_test
-.PHONY : firebase_app_user_secure_internal_test
-
-# fast build rule for target.
-firebase_app_user_secure_internal_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_internal_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_user_secure_internal_test.dir/build
-.PHONY : firebase_app_user_secure_internal_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_semaphore_test
-
-# Build rule for target.
-firebase_app_semaphore_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_semaphore_test
-.PHONY : firebase_app_semaphore_test
-
-# fast build rule for target.
-firebase_app_semaphore_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_semaphore_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_semaphore_test.dir/build
-.PHONY : firebase_app_semaphore_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_for_testing
-
-# Build rule for target.
-firebase_app_for_testing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_for_testing
-.PHONY : firebase_app_for_testing
-
-# fast build rule for target.
-firebase_app_for_testing/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_for_testing.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_for_testing.dir/build
-.PHONY : firebase_app_for_testing/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_cleanup_notifier_test
-
-# Build rule for target.
-firebase_app_cleanup_notifier_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_cleanup_notifier_test
-.PHONY : firebase_app_cleanup_notifier_test
-
-# fast build rule for target.
-firebase_app_cleanup_notifier_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_cleanup_notifier_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_cleanup_notifier_test.dir/build
-.PHONY : firebase_app_cleanup_notifier_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_assert_release_test
-
-# Build rule for target.
-firebase_app_assert_release_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_assert_release_test
-.PHONY : firebase_app_assert_release_test
-
-# fast build rule for target.
-firebase_app_assert_release_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_assert_release_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_assert_release_test.dir/build
-.PHONY : firebase_app_assert_release_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_log_test
-
-# Build rule for target.
-firebase_app_log_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_log_test
-.PHONY : firebase_app_log_test
-
-# fast build rule for target.
-firebase_app_log_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_log_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_log_test.dir/build
-.PHONY : firebase_app_log_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_memory_atomic_test
-
-# Build rule for target.
-firebase_app_memory_atomic_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_memory_atomic_test
-.PHONY : firebase_app_memory_atomic_test
-
-# fast build rule for target.
-firebase_app_memory_atomic_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_memory_atomic_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_memory_atomic_test.dir/build
-.PHONY : firebase_app_memory_atomic_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_time_tests
-
-# Build rule for target.
-firebase_app_time_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_time_tests
-.PHONY : firebase_app_time_tests
-
-# fast build rule for target.
-firebase_app_time_tests/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_time_tests.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_time_tests.dir/build
-.PHONY : firebase_app_time_tests/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_logger_test
-
-# Build rule for target.
-firebase_app_logger_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_logger_test
-.PHONY : firebase_app_logger_test
-
-# fast build rule for target.
-firebase_app_logger_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_logger_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_logger_test.dir/build
-.PHONY : firebase_app_logger_test/fast
-
-#=============================================================================
-# Target rules for targets named flexbuffer_matcher_test
-
-# Build rule for target.
-flexbuffer_matcher_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flexbuffer_matcher_test
-.PHONY : flexbuffer_matcher_test
-
-# fast build rule for target.
-flexbuffer_matcher_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher_test.dir/build
-.PHONY : flexbuffer_matcher_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_heartbeat_info_desktop_test
-
-# Build rule for target.
-firebase_app_heartbeat_info_desktop_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_heartbeat_info_desktop_test
-.PHONY : firebase_app_heartbeat_info_desktop_test
-
-# fast build rule for target.
-firebase_app_heartbeat_info_desktop_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_heartbeat_info_desktop_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_heartbeat_info_desktop_test.dir/build
-.PHONY : firebase_app_heartbeat_info_desktop_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_path_test
-
-# Build rule for target.
-firebase_app_path_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_path_test
-.PHONY : firebase_app_path_test
-
-# fast build rule for target.
-firebase_app_path_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_path_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_path_test.dir/build
-.PHONY : firebase_app_path_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_pthread_thread_test
-
-# Build rule for target.
-firebase_app_pthread_thread_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_pthread_thread_test
-.PHONY : firebase_app_pthread_thread_test
-
-# fast build rule for target.
-firebase_app_pthread_thread_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_pthread_thread_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_pthread_thread_test.dir/build
-.PHONY : firebase_app_pthread_thread_test/fast
-
-#=============================================================================
-# Target rules for targets named flexbuffer_matcher
-
-# Build rule for target.
-flexbuffer_matcher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flexbuffer_matcher
-.PHONY : flexbuffer_matcher
-
-# fast build rule for target.
-flexbuffer_matcher/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/flexbuffer_matcher.dir/build
-.PHONY : flexbuffer_matcher/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_scheduler_test
-
-# Build rule for target.
-firebase_app_scheduler_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_scheduler_test
-.PHONY : firebase_app_scheduler_test
-
-# fast build rule for target.
-firebase_app_scheduler_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_scheduler_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_scheduler_test.dir/build
-.PHONY : firebase_app_scheduler_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_util_test
-
-# Build rule for target.
-firebase_app_util_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_util_test
-.PHONY : firebase_app_util_test
-
-# fast build rule for target.
-firebase_app_util_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_util_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_util_test.dir/build
-.PHONY : firebase_app_util_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_callback_test
-
-# Build rule for target.
-firebase_app_callback_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_callback_test
-.PHONY : firebase_app_callback_test
-
-# fast build rule for target.
-firebase_app_callback_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_callback_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_callback_test.dir/build
-.PHONY : firebase_app_callback_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_locale_test
-
-# Build rule for target.
-firebase_app_locale_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_locale_test
-.PHONY : firebase_app_locale_test
-
-# fast build rule for target.
-firebase_app_locale_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_locale_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_locale_test.dir/build
-.PHONY : firebase_app_locale_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_reference_count_test
-
-# Build rule for target.
-firebase_app_reference_count_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_reference_count_test
-.PHONY : firebase_app_reference_count_test
-
-# fast build rule for target.
-firebase_app_reference_count_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_reference_count_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_reference_count_test.dir/build
-.PHONY : firebase_app_reference_count_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_app_uuid_test
-
-# Build rule for target.
-firebase_app_uuid_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_app_uuid_test
-.PHONY : firebase_app_uuid_test
-
-# fast build rule for target.
-firebase_app_uuid_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/build.make Lib/firebase-cpp-sdk/app/tests/CMakeFiles/firebase_app_uuid_test.dir/build
-.PHONY : firebase_app_uuid_test/fast
-
-#=============================================================================
 # Target rules for targets named firebase_admob
 
 # Build rule for target.
@@ -2568,19 +1775,6 @@ firebase_analytics/fast:
 .PHONY : firebase_analytics/fast
 
 #=============================================================================
-# Target rules for targets named firebase_analytics_test
-
-# Build rule for target.
-firebase_analytics_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_analytics_test
-.PHONY : firebase_analytics_test
-
-# fast build rule for target.
-firebase_analytics_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/analytics/tests/CMakeFiles/firebase_analytics_test.dir/build.make Lib/firebase-cpp-sdk/analytics/tests/CMakeFiles/firebase_analytics_test.dir/build
-.PHONY : firebase_analytics_test/fast
-
-#=============================================================================
 # Target rules for targets named generate_request_fbs
 
 # Build rule for target.
@@ -2607,240 +1801,6 @@ firebase_auth/fast:
 .PHONY : firebase_auth/fast
 
 #=============================================================================
-# Target rules for targets named firebase_auth_delete_account_test_test
-
-# Build rule for target.
-firebase_auth_delete_account_test_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_delete_account_test_test
-.PHONY : firebase_auth_delete_account_test_test
-
-# fast build rule for target.
-firebase_auth_delete_account_test_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_delete_account_test_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_delete_account_test_test.dir/build
-.PHONY : firebase_auth_delete_account_test_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_create_auth_uri_test
-
-# Build rule for target.
-firebase_auth_create_auth_uri_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_create_auth_uri_test
-.PHONY : firebase_auth_create_auth_uri_test
-
-# fast build rule for target.
-firebase_auth_create_auth_uri_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_create_auth_uri_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_create_auth_uri_test.dir/build
-.PHONY : firebase_auth_create_auth_uri_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_set_account_info_test
-
-# Build rule for target.
-firebase_auth_set_account_info_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_set_account_info_test
-.PHONY : firebase_auth_set_account_info_test
-
-# fast build rule for target.
-firebase_auth_set_account_info_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_set_account_info_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_set_account_info_test.dir/build
-.PHONY : firebase_auth_set_account_info_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_user_test
-
-# Build rule for target.
-firebase_auth_user_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_user_test
-.PHONY : firebase_auth_user_test
-
-# fast build rule for target.
-firebase_auth_user_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_test.dir/build
-.PHONY : firebase_auth_user_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_credential_test
-
-# Build rule for target.
-firebase_auth_credential_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_credential_test
-.PHONY : firebase_auth_credential_test
-
-# fast build rule for target.
-firebase_auth_credential_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_credential_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_credential_test.dir/build
-.PHONY : firebase_auth_credential_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_secure_token_test
-
-# Build rule for target.
-firebase_auth_secure_token_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_secure_token_test
-.PHONY : firebase_auth_secure_token_test
-
-# fast build rule for target.
-firebase_auth_secure_token_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_secure_token_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_secure_token_test.dir/build
-.PHONY : firebase_auth_secure_token_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_desktop_test
-
-# Build rule for target.
-firebase_auth_desktop_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_desktop_test
-.PHONY : firebase_auth_desktop_test
-
-# fast build rule for target.
-firebase_auth_desktop_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test.dir/build
-.PHONY : firebase_auth_desktop_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_desktop_test_util
-
-# Build rule for target.
-firebase_auth_desktop_test_util: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_desktop_test_util
-.PHONY : firebase_auth_desktop_test_util
-
-# fast build rule for target.
-firebase_auth_desktop_test_util/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test_util.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_test_util.dir/build
-.PHONY : firebase_auth_desktop_test_util/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_test
-
-# Build rule for target.
-firebase_auth_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_test
-.PHONY : firebase_auth_test
-
-# fast build rule for target.
-firebase_auth_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_test.dir/build
-.PHONY : firebase_auth_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_user_desktop_test
-
-# Build rule for target.
-firebase_auth_user_desktop_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_user_desktop_test
-.PHONY : firebase_auth_user_desktop_test
-
-# fast build rule for target.
-firebase_auth_user_desktop_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_desktop_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_user_desktop_test.dir/build
-.PHONY : firebase_auth_user_desktop_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_get_oob_confirmation_code_test
-
-# Build rule for target.
-firebase_auth_get_oob_confirmation_code_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_get_oob_confirmation_code_test
-.PHONY : firebase_auth_get_oob_confirmation_code_test
-
-# fast build rule for target.
-firebase_auth_get_oob_confirmation_code_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_oob_confirmation_code_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_oob_confirmation_code_test.dir/build
-.PHONY : firebase_auth_get_oob_confirmation_code_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_reset_password_test
-
-# Build rule for target.
-firebase_auth_reset_password_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_reset_password_test
-.PHONY : firebase_auth_reset_password_test
-
-# fast build rule for target.
-firebase_auth_reset_password_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_reset_password_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_reset_password_test.dir/build
-.PHONY : firebase_auth_reset_password_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_sign_up_new_user_test
-
-# Build rule for target.
-firebase_auth_sign_up_new_user_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_sign_up_new_user_test
-.PHONY : firebase_auth_sign_up_new_user_test
-
-# fast build rule for target.
-firebase_auth_sign_up_new_user_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_sign_up_new_user_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_sign_up_new_user_test.dir/build
-.PHONY : firebase_auth_sign_up_new_user_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_verify_assertion_test
-
-# Build rule for target.
-firebase_auth_verify_assertion_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_verify_assertion_test
-.PHONY : firebase_auth_verify_assertion_test
-
-# fast build rule for target.
-firebase_auth_verify_assertion_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_assertion_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_assertion_test.dir/build
-.PHONY : firebase_auth_verify_assertion_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_verify_custom_token_test
-
-# Build rule for target.
-firebase_auth_verify_custom_token_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_verify_custom_token_test
-.PHONY : firebase_auth_verify_custom_token_test
-
-# fast build rule for target.
-firebase_auth_verify_custom_token_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_custom_token_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_custom_token_test.dir/build
-.PHONY : firebase_auth_verify_custom_token_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_verify_password_test
-
-# Build rule for target.
-firebase_auth_verify_password_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_verify_password_test
-.PHONY : firebase_auth_verify_password_test
-
-# fast build rule for target.
-firebase_auth_verify_password_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_password_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_verify_password_test.dir/build
-.PHONY : firebase_auth_verify_password_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_get_account_info_test
-
-# Build rule for target.
-firebase_auth_get_account_info_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_get_account_info_test
-.PHONY : firebase_auth_get_account_info_test
-
-# fast build rule for target.
-firebase_auth_get_account_info_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_account_info_test.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_get_account_info_test.dir/build
-.PHONY : firebase_auth_get_account_info_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_auth_desktop_rpc_test_util
-
-# Build rule for target.
-firebase_auth_desktop_rpc_test_util: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_auth_desktop_rpc_test_util
-.PHONY : firebase_auth_desktop_rpc_test_util
-
-# fast build rule for target.
-firebase_auth_desktop_rpc_test_util/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_rpc_test_util.dir/build.make Lib/firebase-cpp-sdk/auth/tests/CMakeFiles/firebase_auth_desktop_rpc_test_util.dir/build
-.PHONY : firebase_auth_desktop_rpc_test_util/fast
-
-#=============================================================================
 # Target rules for targets named database_persistence_generated_includes
 
 # Build rule for target.
@@ -2865,435 +1825,6 @@ firebase_database: cmake_check_build_system
 firebase_database/fast:
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/CMakeFiles/firebase_database.dir/build.make Lib/firebase-cpp-sdk/database/CMakeFiles/firebase_database.dir/build
 .PHONY : firebase_database/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_change_test
-
-# Build rule for target.
-firebase_rtdb_desktop_change_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_change_test
-.PHONY : firebase_rtdb_desktop_change_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_change_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_change_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_change_test.dir/build
-.PHONY : firebase_rtdb_desktop_change_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_mutable_data_desktop_test
-
-# Build rule for target.
-firebase_rtdb_desktop_mutable_data_desktop_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_mutable_data_desktop_test
-.PHONY : firebase_rtdb_desktop_mutable_data_desktop_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_mutable_data_desktop_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_mutable_data_desktop_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_mutable_data_desktop_test.dir/build
-.PHONY : firebase_rtdb_desktop_mutable_data_desktop_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_server_values_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_server_values_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_server_values_test
-.PHONY : firebase_rtdb_desktop_core_server_values_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_server_values_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_server_values_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_server_values_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_server_values_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_event_generator_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_event_generator_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_event_generator_test
-.PHONY : firebase_rtdb_desktop_view_event_generator_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_event_generator_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_event_generator_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_event_generator_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_event_generator_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_sync_tree_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_sync_tree_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_sync_tree_test
-.PHONY : firebase_rtdb_desktop_core_sync_tree_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_sync_tree_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_tree_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_tree_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_sync_tree_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_indexed_filter_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_indexed_filter_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_indexed_filter_test
-.PHONY : firebase_rtdb_desktop_view_indexed_filter_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_indexed_filter_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_indexed_filter_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_indexed_filter_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_indexed_filter_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_operation_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_operation_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_operation_test
-.PHONY : firebase_rtdb_desktop_core_operation_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_operation_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_operation_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_operation_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_operation_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_sync_point_spec_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_sync_point_spec_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_sync_point_spec_test
-.PHONY : firebase_rtdb_desktop_core_sync_point_spec_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_sync_point_spec_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_spec_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_spec_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_sync_point_spec_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_cache_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_cache_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_cache_test
-.PHONY : firebase_rtdb_desktop_view_cache_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_cache_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_cache_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_cache_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_cache_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_limited_filter_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_limited_filter_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_limited_filter_test
-.PHONY : firebase_rtdb_desktop_view_limited_filter_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_limited_filter_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_limited_filter_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_limited_filter_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_limited_filter_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_event_registration_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_event_registration_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_event_registration_test
-.PHONY : firebase_rtdb_desktop_core_event_registration_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_event_registration_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_event_registration_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_event_registration_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_event_registration_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_child_change_accumulator_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_child_change_accumulator_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_child_change_accumulator_test
-.PHONY : firebase_rtdb_desktop_view_child_change_accumulator_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_child_change_accumulator_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_child_change_accumulator_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_child_change_accumulator_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_child_change_accumulator_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_tree_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_tree_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_tree_test
-.PHONY : firebase_rtdb_desktop_core_tree_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_tree_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tree_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tree_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_tree_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_util_desktop_test
-
-# Build rule for target.
-firebase_rtdb_util_desktop_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_util_desktop_test
-.PHONY : firebase_rtdb_util_desktop_test
-
-# fast build rule for target.
-firebase_rtdb_util_desktop_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_util_desktop_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_util_desktop_test.dir/build
-.PHONY : firebase_rtdb_util_desktop_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_indexed_variant_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_indexed_variant_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_indexed_variant_test
-.PHONY : firebase_rtdb_desktop_core_indexed_variant_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_indexed_variant_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_indexed_variant_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_indexed_variant_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_indexed_variant_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_in_memory_persistence_storage_engine_test
-
-# Build rule for target.
-firebase_rtdb_desktop_in_memory_persistence_storage_engine_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_in_memory_persistence_storage_engine_test
-.PHONY : firebase_rtdb_desktop_in_memory_persistence_storage_engine_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_in_memory_persistence_storage_engine_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_in_memory_persistence_storage_engine_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_in_memory_persistence_storage_engine_test.dir/build
-.PHONY : firebase_rtdb_desktop_in_memory_persistence_storage_engine_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_write_tree_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_write_tree_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_write_tree_test
-.PHONY : firebase_rtdb_desktop_core_write_tree_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_write_tree_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_write_tree_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_write_tree_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_write_tree_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_connection_web_socket_client_impl_test
-
-# Build rule for target.
-firebase_rtdb_desktop_connection_web_socket_client_impl_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_connection_web_socket_client_impl_test
-.PHONY : firebase_rtdb_desktop_connection_web_socket_client_impl_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_connection_web_socket_client_impl_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_web_socket_client_impl_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_web_socket_client_impl_test.dir/build
-.PHONY : firebase_rtdb_desktop_connection_web_socket_client_impl_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_sync_point_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_sync_point_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_sync_point_test
-.PHONY : firebase_rtdb_desktop_core_sync_point_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_sync_point_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sync_point_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_sync_point_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_compound_write_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_compound_write_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_compound_write_test
-.PHONY : firebase_rtdb_desktop_core_compound_write_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_compound_write_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_compound_write_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_compound_write_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_compound_write_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_ranged_filter_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_ranged_filter_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_ranged_filter_test
-.PHONY : firebase_rtdb_desktop_view_ranged_filter_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_ranged_filter_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_ranged_filter_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_ranged_filter_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_ranged_filter_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_test
-.PHONY : firebase_rtdb_desktop_view_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_matchers_test
-
-# Build rule for target.
-firebase_rtdb_desktop_matchers_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_matchers_test
-.PHONY : firebase_rtdb_desktop_matchers_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_matchers_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_matchers_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_matchers_test.dir/build
-.PHONY : firebase_rtdb_desktop_matchers_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_connection_connection_test
-
-# Build rule for target.
-firebase_rtdb_desktop_connection_connection_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_connection_connection_test
-.PHONY : firebase_rtdb_desktop_connection_connection_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_connection_connection_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_connection_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_connection_connection_test.dir/build
-.PHONY : firebase_rtdb_desktop_connection_connection_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_noop_persistence_manager_test
-
-# Build rule for target.
-firebase_rtdb_desktop_noop_persistence_manager_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_noop_persistence_manager_test
-.PHONY : firebase_rtdb_desktop_noop_persistence_manager_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_noop_persistence_manager_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_noop_persistence_manager_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_noop_persistence_manager_test.dir/build
-.PHONY : firebase_rtdb_desktop_noop_persistence_manager_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_view_processor_test
-
-# Build rule for target.
-firebase_rtdb_desktop_view_processor_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_view_processor_test
-.PHONY : firebase_rtdb_desktop_view_processor_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_view_processor_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_processor_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_view_processor_test.dir/build
-.PHONY : firebase_rtdb_desktop_view_processor_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_common_database_reference_test
-
-# Build rule for target.
-firebase_rtdb_common_database_reference_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_common_database_reference_test
-.PHONY : firebase_rtdb_common_database_reference_test
-
-# fast build rule for target.
-firebase_rtdb_common_database_reference_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_common_database_reference_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_common_database_reference_test.dir/build
-.PHONY : firebase_rtdb_common_database_reference_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_persistence_manager_test
-
-# Build rule for target.
-firebase_rtdb_desktop_persistence_manager_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_persistence_manager_test
-.PHONY : firebase_rtdb_desktop_persistence_manager_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_persistence_manager_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_persistence_manager_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_persistence_manager_test.dir/build
-.PHONY : firebase_rtdb_desktop_persistence_manager_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_tracked_query_manager_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_tracked_query_manager_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_tracked_query_manager_test
-.PHONY : firebase_rtdb_desktop_core_tracked_query_manager_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_tracked_query_manager_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tracked_query_manager_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_tracked_query_manager_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_tracked_query_manager_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_prune_forest_test
-
-# Build rule for target.
-firebase_rtdb_prune_forest_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_prune_forest_test
-.PHONY : firebase_rtdb_prune_forest_test
-
-# fast build rule for target.
-firebase_rtdb_prune_forest_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_prune_forest_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_prune_forest_test.dir/build
-.PHONY : firebase_rtdb_prune_forest_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_cache_policy_test
-
-# Build rule for target.
-firebase_rtdb_desktop_cache_policy_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_cache_policy_test
-.PHONY : firebase_rtdb_desktop_cache_policy_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_cache_policy_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_cache_policy_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_cache_policy_test.dir/build
-.PHONY : firebase_rtdb_desktop_cache_policy_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_core_sparse_snapshot_tree_test
-
-# Build rule for target.
-firebase_rtdb_desktop_core_sparse_snapshot_tree_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_core_sparse_snapshot_tree_test
-.PHONY : firebase_rtdb_desktop_core_sparse_snapshot_tree_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_core_sparse_snapshot_tree_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sparse_snapshot_tree_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_core_sparse_snapshot_tree_test.dir/build
-.PHONY : firebase_rtdb_desktop_core_sparse_snapshot_tree_test/fast
-
-#=============================================================================
-# Target rules for targets named firebase_rtdb_desktop_flatbuffer_conversion_test
-
-# Build rule for target.
-firebase_rtdb_desktop_flatbuffer_conversion_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_rtdb_desktop_flatbuffer_conversion_test
-.PHONY : firebase_rtdb_desktop_flatbuffer_conversion_test
-
-# fast build rule for target.
-firebase_rtdb_desktop_flatbuffer_conversion_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_flatbuffer_conversion_test.dir/build.make Lib/firebase-cpp-sdk/database/tests/CMakeFiles/firebase_rtdb_desktop_flatbuffer_conversion_test.dir/build
-.PHONY : firebase_rtdb_desktop_flatbuffer_conversion_test/fast
 
 #=============================================================================
 # Target rules for targets named firebase_dynamic_links
@@ -3361,19 +1892,6 @@ firebase_installations/fast:
 .PHONY : firebase_installations/fast
 
 #=============================================================================
-# Target rules for targets named firebase_installations_test
-
-# Build rule for target.
-firebase_installations_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_installations_test
-.PHONY : firebase_installations_test
-
-# fast build rule for target.
-firebase_installations_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/installations/tests/CMakeFiles/firebase_installations_test.dir/build.make Lib/firebase-cpp-sdk/installations/tests/CMakeFiles/firebase_installations_test.dir/build
-.PHONY : firebase_installations_test/fast
-
-#=============================================================================
 # Target rules for targets named generate_messaging_fbs
 
 # Build rule for target.
@@ -3426,19 +1944,6 @@ firebase_remote_config/fast:
 .PHONY : firebase_remote_config/fast
 
 #=============================================================================
-# Target rules for targets named firebase_remote_config_desktop_config_data_test
-
-# Build rule for target.
-firebase_remote_config_desktop_config_data_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_remote_config_desktop_config_data_test
-.PHONY : firebase_remote_config_desktop_config_data_test
-
-# fast build rule for target.
-firebase_remote_config_desktop_config_data_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/build.make Lib/firebase-cpp-sdk/remote_config/tests/CMakeFiles/firebase_remote_config_desktop_config_data_test.dir/build
-.PHONY : firebase_remote_config_desktop_config_data_test/fast
-
-#=============================================================================
 # Target rules for targets named firebase_storage
 
 # Build rule for target.
@@ -3450,19 +1955,6 @@ firebase_storage: cmake_check_build_system
 firebase_storage/fast:
 	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build
 .PHONY : firebase_storage/fast
-
-#=============================================================================
-# Target rules for targets named firebase_storage_desktop_utils_test
-
-# Build rule for target.
-firebase_storage_desktop_utils_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 firebase_storage_desktop_utils_test
-.PHONY : firebase_storage_desktop_utils_test
-
-# fast build rule for target.
-firebase_storage_desktop_utils_test/fast:
-	$(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/tests/CMakeFiles/firebase_storage_desktop_utils_test.dir/build.make Lib/firebase-cpp-sdk/storage/tests/CMakeFiles/firebase_storage_desktop_utils_test.dir/build
-.PHONY : firebase_storage_desktop_utils_test/fast
 
 Mobius_autogen/mocs_compilation.o: Mobius_autogen/mocs_compilation.cpp.o
 
@@ -3490,6 +1982,33 @@ Mobius_autogen/mocs_compilation.s: Mobius_autogen/mocs_compilation.cpp.s
 Mobius_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.s
 .PHONY : Mobius_autogen/mocs_compilation.cpp.s
+
+RenderArea/RenderArea.o: RenderArea/RenderArea.cpp.o
+
+.PHONY : RenderArea/RenderArea.o
+
+# target to build an object file
+RenderArea/RenderArea.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o
+.PHONY : RenderArea/RenderArea.cpp.o
+
+RenderArea/RenderArea.i: RenderArea/RenderArea.cpp.i
+
+.PHONY : RenderArea/RenderArea.i
+
+# target to preprocess a source file
+RenderArea/RenderArea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.i
+.PHONY : RenderArea/RenderArea.cpp.i
+
+RenderArea/RenderArea.s: RenderArea/RenderArea.cpp.s
+
+.PHONY : RenderArea/RenderArea.s
+
+# target to generate assembly for a file
+RenderArea/RenderArea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.s
+.PHONY : RenderArea/RenderArea.cpp.s
 
 Shape/Ellipse/Ellipse.o: Shape/Ellipse/Ellipse.cpp.o
 
@@ -3544,6 +2063,60 @@ Shape/Line/Line.s: Shape/Line/Line.cpp.s
 Shape/Line/Line.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.s
 .PHONY : Shape/Line/Line.cpp.s
+
+Shape/Polygon/Polygon.o: Shape/Polygon/Polygon.cpp.o
+
+.PHONY : Shape/Polygon/Polygon.o
+
+# target to build an object file
+Shape/Polygon/Polygon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.o
+.PHONY : Shape/Polygon/Polygon.cpp.o
+
+Shape/Polygon/Polygon.i: Shape/Polygon/Polygon.cpp.i
+
+.PHONY : Shape/Polygon/Polygon.i
+
+# target to preprocess a source file
+Shape/Polygon/Polygon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.i
+.PHONY : Shape/Polygon/Polygon.cpp.i
+
+Shape/Polygon/Polygon.s: Shape/Polygon/Polygon.cpp.s
+
+.PHONY : Shape/Polygon/Polygon.s
+
+# target to generate assembly for a file
+Shape/Polygon/Polygon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.s
+.PHONY : Shape/Polygon/Polygon.cpp.s
+
+Shape/Polyline/Polyline.o: Shape/Polyline/Polyline.cpp.o
+
+.PHONY : Shape/Polyline/Polyline.o
+
+# target to build an object file
+Shape/Polyline/Polyline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.o
+.PHONY : Shape/Polyline/Polyline.cpp.o
+
+Shape/Polyline/Polyline.i: Shape/Polyline/Polyline.cpp.i
+
+.PHONY : Shape/Polyline/Polyline.i
+
+# target to preprocess a source file
+Shape/Polyline/Polyline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.i
+.PHONY : Shape/Polyline/Polyline.cpp.i
+
+Shape/Polyline/Polyline.s: Shape/Polyline/Polyline.cpp.s
+
+.PHONY : Shape/Polyline/Polyline.s
+
+# target to generate assembly for a file
+Shape/Polyline/Polyline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.s
+.PHONY : Shape/Polyline/Polyline.cpp.s
 
 Shape/Rectangle/Rectangle.o: Shape/Rectangle/Rectangle.cpp.o
 
@@ -3779,7 +2352,6 @@ help:
 	@echo "... FIREBASE_GENERATED_HEADERS"
 	@echo "... Mobius_autogen"
 	@echo "... app_generated_includes"
-	@echo "... app_rest_generated_includes"
 	@echo "... database_persistence_generated_includes"
 	@echo "... firestore_gen_grpc_certs"
 	@echo "... generate_cpp_protos"
@@ -3789,7 +2361,6 @@ help:
 	@echo "... generate_plugin_pb2.py"
 	@echo "... generate_protos"
 	@echo "... generate_request_fbs"
-	@echo "... generate_testing_fps"
 	@echo "... plugins"
 	@echo "... remote_config_generate_request_fbs"
 	@echo "... tools"
@@ -3863,139 +2434,28 @@ help:
 	@echo "... example64"
 	@echo "... firebase_admob"
 	@echo "... firebase_analytics"
-	@echo "... firebase_analytics_test"
 	@echo "... firebase_app"
-	@echo "... firebase_app_assert_release_test"
-	@echo "... firebase_app_assert_test"
-	@echo "... firebase_app_callback_test"
-	@echo "... firebase_app_cleanup_notifier_test"
-	@echo "... firebase_app_cpp11_thread_test"
-	@echo "... firebase_app_for_testing"
-	@echo "... firebase_app_heartbeat_info_desktop_test"
-	@echo "... firebase_app_locale_test"
-	@echo "... firebase_app_log_test"
-	@echo "... firebase_app_logger_test"
-	@echo "... firebase_app_memory_atomic_test"
-	@echo "... firebase_app_memory_shared_ptr_test"
-	@echo "... firebase_app_memory_unique_ptr_test"
-	@echo "... firebase_app_optional_test"
-	@echo "... firebase_app_path_test"
-	@echo "... firebase_app_pthread_thread_test"
-	@echo "... firebase_app_reference_count_test"
-	@echo "... firebase_app_rest_request_binary_test"
-	@echo "... firebase_app_rest_request_json_test"
-	@echo "... firebase_app_rest_request_test"
-	@echo "... firebase_app_rest_response_binary_test"
-	@echo "... firebase_app_rest_response_json_test"
-	@echo "... firebase_app_rest_response_test"
-	@echo "... firebase_app_rest_transport_mock_test"
-	@echo "... firebase_app_rest_util_test"
-	@echo "... firebase_app_rest_www_form_url_encoded_test"
-	@echo "... firebase_app_scheduler_test"
-	@echo "... firebase_app_semaphore_test"
-	@echo "... firebase_app_time_tests"
-	@echo "... firebase_app_user_secure_integration_test"
-	@echo "... firebase_app_user_secure_internal_test"
-	@echo "... firebase_app_user_secure_manager_test"
-	@echo "... firebase_app_util_test"
-	@echo "... firebase_app_uuid_test"
-	@echo "... firebase_app_variant_test"
-	@echo "... firebase_app_variant_util_tests"
 	@echo "... firebase_auth"
-	@echo "... firebase_auth_create_auth_uri_test"
-	@echo "... firebase_auth_credential_test"
-	@echo "... firebase_auth_delete_account_test_test"
-	@echo "... firebase_auth_desktop_rpc_test_util"
-	@echo "... firebase_auth_desktop_test"
-	@echo "... firebase_auth_desktop_test_util"
-	@echo "... firebase_auth_get_account_info_test"
-	@echo "... firebase_auth_get_oob_confirmation_code_test"
-	@echo "... firebase_auth_reset_password_test"
-	@echo "... firebase_auth_secure_token_test"
-	@echo "... firebase_auth_set_account_info_test"
-	@echo "... firebase_auth_sign_up_new_user_test"
-	@echo "... firebase_auth_test"
-	@echo "... firebase_auth_user_desktop_test"
-	@echo "... firebase_auth_user_test"
-	@echo "... firebase_auth_verify_assertion_test"
-	@echo "... firebase_auth_verify_custom_token_test"
-	@echo "... firebase_auth_verify_password_test"
 	@echo "... firebase_database"
 	@echo "... firebase_dynamic_links"
 	@echo "... firebase_firestore"
 	@echo "... firebase_functions"
 	@echo "... firebase_installations"
-	@echo "... firebase_installations_test"
 	@echo "... firebase_messaging"
 	@echo "... firebase_remote_config"
-	@echo "... firebase_remote_config_desktop_config_data_test"
 	@echo "... firebase_rest_lib"
-	@echo "... firebase_rest_mocks"
-	@echo "... firebase_rtdb_common_database_reference_test"
-	@echo "... firebase_rtdb_desktop_cache_policy_test"
-	@echo "... firebase_rtdb_desktop_change_test"
-	@echo "... firebase_rtdb_desktop_connection_connection_test"
-	@echo "... firebase_rtdb_desktop_connection_web_socket_client_impl_test"
-	@echo "... firebase_rtdb_desktop_core_compound_write_test"
-	@echo "... firebase_rtdb_desktop_core_event_registration_test"
-	@echo "... firebase_rtdb_desktop_core_indexed_variant_test"
-	@echo "... firebase_rtdb_desktop_core_operation_test"
-	@echo "... firebase_rtdb_desktop_core_server_values_test"
-	@echo "... firebase_rtdb_desktop_core_sparse_snapshot_tree_test"
-	@echo "... firebase_rtdb_desktop_core_sync_point_spec_test"
-	@echo "... firebase_rtdb_desktop_core_sync_point_test"
-	@echo "... firebase_rtdb_desktop_core_sync_tree_test"
-	@echo "... firebase_rtdb_desktop_core_tracked_query_manager_test"
-	@echo "... firebase_rtdb_desktop_core_tree_test"
-	@echo "... firebase_rtdb_desktop_core_write_tree_test"
-	@echo "... firebase_rtdb_desktop_flatbuffer_conversion_test"
-	@echo "... firebase_rtdb_desktop_in_memory_persistence_storage_engine_test"
-	@echo "... firebase_rtdb_desktop_matchers_test"
-	@echo "... firebase_rtdb_desktop_mutable_data_desktop_test"
-	@echo "... firebase_rtdb_desktop_noop_persistence_manager_test"
-	@echo "... firebase_rtdb_desktop_persistence_manager_test"
-	@echo "... firebase_rtdb_desktop_view_cache_test"
-	@echo "... firebase_rtdb_desktop_view_child_change_accumulator_test"
-	@echo "... firebase_rtdb_desktop_view_event_generator_test"
-	@echo "... firebase_rtdb_desktop_view_indexed_filter_test"
-	@echo "... firebase_rtdb_desktop_view_limited_filter_test"
-	@echo "... firebase_rtdb_desktop_view_processor_test"
-	@echo "... firebase_rtdb_desktop_view_ranged_filter_test"
-	@echo "... firebase_rtdb_desktop_view_test"
-	@echo "... firebase_rtdb_prune_forest_test"
-	@echo "... firebase_rtdb_util_desktop_test"
 	@echo "... firebase_storage"
-	@echo "... firebase_storage_desktop_utils_test"
-	@echo "... firebase_testing"
-	@echo "... firestore_api_test"
-	@echo "... firestore_auth_test"
-	@echo "... firestore_bundle_test"
 	@echo "... firestore_core"
-	@echo "... firestore_core_test"
-	@echo "... firestore_immutable_test"
-	@echo "... firestore_local_test"
-	@echo "... firestore_local_testing"
-	@echo "... firestore_model_test"
 	@echo "... firestore_nanopb"
-	@echo "... firestore_nanopb_test"
 	@echo "... firestore_protos_nanopb"
 	@echo "... firestore_protos_protobuf"
-	@echo "... firestore_remote_test"
-	@echo "... firestore_remote_testing"
-	@echo "... firestore_testutil"
-	@echo "... firestore_types_test"
 	@echo "... firestore_util"
-	@echo "... firestore_util_test"
 	@echo "... flatbuffers"
 	@echo "... flatc"
 	@echo "... flathash"
-	@echo "... flexbuffer_matcher"
-	@echo "... flexbuffer_matcher_test"
 	@echo "... gen_hpack_tables"
 	@echo "... gen_legal_metadata_characters"
 	@echo "... gen_percent_encoding_tables"
-	@echo "... gmock"
-	@echo "... gmock_main"
 	@echo "... gpr"
 	@echo "... grpc"
 	@echo "... grpc++"
@@ -4007,8 +2467,6 @@ help:
 	@echo "... grpc_print_google_default_creds_token"
 	@echo "... grpc_unsecure"
 	@echo "... grpc_verify_jwt"
-	@echo "... gtest"
-	@echo "... gtest_main"
 	@echo "... leveldb"
 	@echo "... leveldbutil"
 	@echo "... libcurl"
@@ -4020,7 +2478,6 @@ help:
 	@echo "... minigzip64"
 	@echo "... protobuf-nanopb-static"
 	@echo "... protoc"
-	@echo "... sample_resource_lib"
 	@echo "... upb"
 	@echo "... uv"
 	@echo "... uv_a"
@@ -4029,12 +2486,21 @@ help:
 	@echo "... Mobius_autogen/mocs_compilation.o"
 	@echo "... Mobius_autogen/mocs_compilation.i"
 	@echo "... Mobius_autogen/mocs_compilation.s"
+	@echo "... RenderArea/RenderArea.o"
+	@echo "... RenderArea/RenderArea.i"
+	@echo "... RenderArea/RenderArea.s"
 	@echo "... Shape/Ellipse/Ellipse.o"
 	@echo "... Shape/Ellipse/Ellipse.i"
 	@echo "... Shape/Ellipse/Ellipse.s"
 	@echo "... Shape/Line/Line.o"
 	@echo "... Shape/Line/Line.i"
 	@echo "... Shape/Line/Line.s"
+	@echo "... Shape/Polygon/Polygon.o"
+	@echo "... Shape/Polygon/Polygon.i"
+	@echo "... Shape/Polygon/Polygon.s"
+	@echo "... Shape/Polyline/Polyline.o"
+	@echo "... Shape/Polyline/Polyline.i"
+	@echo "... Shape/Polyline/Polyline.s"
 	@echo "... Shape/Rectangle/Rectangle.o"
 	@echo "... Shape/Rectangle/Rectangle.i"
 	@echo "... Shape/Rectangle/Rectangle.s"

@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/GoogleUtilities"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/GoogleUtilities"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/GoogleUtilities.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/GoogleUtilities.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/GoogleUtilities-complete.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/CMakeFiles/GoogleUtilities-complete.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-install.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-install.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-mkdir.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-mkdir.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-download.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-download.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-update.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-update.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-patch.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-patch.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-configure.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-configure.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-build.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-build.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-test.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/GoogleUtilities-stamp/GoogleUtilities-test.rule"
 		}
 	],
 	"target" : 

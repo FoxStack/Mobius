@@ -1,4 +1,4 @@
-# Install script for directory: /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk
+# Install script for directory: /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,21 +44,20 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/ios_pod/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/testing/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/app/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/admob/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/auth/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/database/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/dynamic_links/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/functions/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/installations/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config/cmake_install.cmake")
-  include("/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/storage/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/ios_pod/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/app/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/admob/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/auth/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/database/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/dynamic_links/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/functions/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/installations/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config/cmake_install.cmake")
+  include("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/storage/cmake_install.cmake")
 
 endif()
 

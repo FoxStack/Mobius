@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,31 +78,31 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -113,7 +113,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -124,13 +124,13 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -145,14 +145,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/app/rest//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/app/rest//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ firebase_rest_lib: Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.di
 
 # fast build rule for target.
 firebase_rest_lib/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build
 .PHONY : firebase_rest_lib/fast
 
 controller_curl.o: controller_curl.cc.o
@@ -196,7 +196,7 @@ controller_curl.o: controller_curl.cc.o
 
 # target to build an object file
 controller_curl.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_curl.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_curl.cc.o
 .PHONY : controller_curl.cc.o
 
 controller_curl.i: controller_curl.cc.i
@@ -205,7 +205,7 @@ controller_curl.i: controller_curl.cc.i
 
 # target to preprocess a source file
 controller_curl.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_curl.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_curl.cc.i
 .PHONY : controller_curl.cc.i
 
 controller_curl.s: controller_curl.cc.s
@@ -214,7 +214,7 @@ controller_curl.s: controller_curl.cc.s
 
 # target to generate assembly for a file
 controller_curl.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_curl.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_curl.cc.s
 .PHONY : controller_curl.cc.s
 
 controller_interface.o: controller_interface.cc.o
@@ -223,7 +223,7 @@ controller_interface.o: controller_interface.cc.o
 
 # target to build an object file
 controller_interface.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_interface.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_interface.cc.o
 .PHONY : controller_interface.cc.o
 
 controller_interface.i: controller_interface.cc.i
@@ -232,7 +232,7 @@ controller_interface.i: controller_interface.cc.i
 
 # target to preprocess a source file
 controller_interface.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_interface.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_interface.cc.i
 .PHONY : controller_interface.cc.i
 
 controller_interface.s: controller_interface.cc.s
@@ -241,7 +241,7 @@ controller_interface.s: controller_interface.cc.s
 
 # target to generate assembly for a file
 controller_interface.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_interface.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/controller_interface.cc.s
 .PHONY : controller_interface.cc.s
 
 gzipheader.o: gzipheader.cc.o
@@ -250,7 +250,7 @@ gzipheader.o: gzipheader.cc.o
 
 # target to build an object file
 gzipheader.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/gzipheader.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/gzipheader.cc.o
 .PHONY : gzipheader.cc.o
 
 gzipheader.i: gzipheader.cc.i
@@ -259,7 +259,7 @@ gzipheader.i: gzipheader.cc.i
 
 # target to preprocess a source file
 gzipheader.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/gzipheader.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/gzipheader.cc.i
 .PHONY : gzipheader.cc.i
 
 gzipheader.s: gzipheader.cc.s
@@ -268,7 +268,7 @@ gzipheader.s: gzipheader.cc.s
 
 # target to generate assembly for a file
 gzipheader.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/gzipheader.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/gzipheader.cc.s
 .PHONY : gzipheader.cc.s
 
 request.o: request.cc.o
@@ -277,7 +277,7 @@ request.o: request.cc.o
 
 # target to build an object file
 request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request.cc.o
 .PHONY : request.cc.o
 
 request.i: request.cc.i
@@ -286,7 +286,7 @@ request.i: request.cc.i
 
 # target to preprocess a source file
 request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request.cc.i
 .PHONY : request.cc.i
 
 request.s: request.cc.s
@@ -295,7 +295,7 @@ request.s: request.cc.s
 
 # target to generate assembly for a file
 request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request.cc.s
 .PHONY : request.cc.s
 
 request_binary_gzip.o: request_binary_gzip.cc.o
@@ -304,7 +304,7 @@ request_binary_gzip.o: request_binary_gzip.cc.o
 
 # target to build an object file
 request_binary_gzip.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_binary_gzip.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_binary_gzip.cc.o
 .PHONY : request_binary_gzip.cc.o
 
 request_binary_gzip.i: request_binary_gzip.cc.i
@@ -313,7 +313,7 @@ request_binary_gzip.i: request_binary_gzip.cc.i
 
 # target to preprocess a source file
 request_binary_gzip.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_binary_gzip.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_binary_gzip.cc.i
 .PHONY : request_binary_gzip.cc.i
 
 request_binary_gzip.s: request_binary_gzip.cc.s
@@ -322,7 +322,7 @@ request_binary_gzip.s: request_binary_gzip.cc.s
 
 # target to generate assembly for a file
 request_binary_gzip.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_binary_gzip.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_binary_gzip.cc.s
 .PHONY : request_binary_gzip.cc.s
 
 request_file.o: request_file.cc.o
@@ -331,7 +331,7 @@ request_file.o: request_file.cc.o
 
 # target to build an object file
 request_file.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_file.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_file.cc.o
 .PHONY : request_file.cc.o
 
 request_file.i: request_file.cc.i
@@ -340,7 +340,7 @@ request_file.i: request_file.cc.i
 
 # target to preprocess a source file
 request_file.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_file.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_file.cc.i
 .PHONY : request_file.cc.i
 
 request_file.s: request_file.cc.s
@@ -349,7 +349,7 @@ request_file.s: request_file.cc.s
 
 # target to generate assembly for a file
 request_file.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_file.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/request_file.cc.s
 .PHONY : request_file.cc.s
 
 response.o: response.cc.o
@@ -358,7 +358,7 @@ response.o: response.cc.o
 
 # target to build an object file
 response.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response.cc.o
 .PHONY : response.cc.o
 
 response.i: response.cc.i
@@ -367,7 +367,7 @@ response.i: response.cc.i
 
 # target to preprocess a source file
 response.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response.cc.i
 .PHONY : response.cc.i
 
 response.s: response.cc.s
@@ -376,7 +376,7 @@ response.s: response.cc.s
 
 # target to generate assembly for a file
 response.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response.cc.s
 .PHONY : response.cc.s
 
 response_binary.o: response_binary.cc.o
@@ -385,7 +385,7 @@ response_binary.o: response_binary.cc.o
 
 # target to build an object file
 response_binary.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response_binary.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response_binary.cc.o
 .PHONY : response_binary.cc.o
 
 response_binary.i: response_binary.cc.i
@@ -394,7 +394,7 @@ response_binary.i: response_binary.cc.i
 
 # target to preprocess a source file
 response_binary.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response_binary.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response_binary.cc.i
 .PHONY : response_binary.cc.i
 
 response_binary.s: response_binary.cc.s
@@ -403,7 +403,7 @@ response_binary.s: response_binary.cc.s
 
 # target to generate assembly for a file
 response_binary.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response_binary.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/response_binary.cc.s
 .PHONY : response_binary.cc.s
 
 transport_builder.o: transport_builder.cc.o
@@ -412,7 +412,7 @@ transport_builder.o: transport_builder.cc.o
 
 # target to build an object file
 transport_builder.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_builder.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_builder.cc.o
 .PHONY : transport_builder.cc.o
 
 transport_builder.i: transport_builder.cc.i
@@ -421,7 +421,7 @@ transport_builder.i: transport_builder.cc.i
 
 # target to preprocess a source file
 transport_builder.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_builder.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_builder.cc.i
 .PHONY : transport_builder.cc.i
 
 transport_builder.s: transport_builder.cc.s
@@ -430,7 +430,7 @@ transport_builder.s: transport_builder.cc.s
 
 # target to generate assembly for a file
 transport_builder.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_builder.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_builder.cc.s
 .PHONY : transport_builder.cc.s
 
 transport_curl.o: transport_curl.cc.o
@@ -439,7 +439,7 @@ transport_curl.o: transport_curl.cc.o
 
 # target to build an object file
 transport_curl.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_curl.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_curl.cc.o
 .PHONY : transport_curl.cc.o
 
 transport_curl.i: transport_curl.cc.i
@@ -448,7 +448,7 @@ transport_curl.i: transport_curl.cc.i
 
 # target to preprocess a source file
 transport_curl.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_curl.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_curl.cc.i
 .PHONY : transport_curl.cc.i
 
 transport_curl.s: transport_curl.cc.s
@@ -457,7 +457,7 @@ transport_curl.s: transport_curl.cc.s
 
 # target to generate assembly for a file
 transport_curl.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_curl.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_curl.cc.s
 .PHONY : transport_curl.cc.s
 
 transport_interface.o: transport_interface.cc.o
@@ -466,7 +466,7 @@ transport_interface.o: transport_interface.cc.o
 
 # target to build an object file
 transport_interface.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_interface.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_interface.cc.o
 .PHONY : transport_interface.cc.o
 
 transport_interface.i: transport_interface.cc.i
@@ -475,7 +475,7 @@ transport_interface.i: transport_interface.cc.i
 
 # target to preprocess a source file
 transport_interface.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_interface.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_interface.cc.i
 .PHONY : transport_interface.cc.i
 
 transport_interface.s: transport_interface.cc.s
@@ -484,7 +484,7 @@ transport_interface.s: transport_interface.cc.s
 
 # target to generate assembly for a file
 transport_interface.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_interface.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/transport_interface.cc.s
 .PHONY : transport_interface.cc.s
 
 util.o: util.cc.o
@@ -493,7 +493,7 @@ util.o: util.cc.o
 
 # target to build an object file
 util.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/util.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/util.cc.o
 .PHONY : util.cc.o
 
 util.i: util.cc.i
@@ -502,7 +502,7 @@ util.i: util.cc.i
 
 # target to preprocess a source file
 util.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/util.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/util.cc.i
 .PHONY : util.cc.i
 
 util.s: util.cc.s
@@ -511,7 +511,7 @@ util.s: util.cc.s
 
 # target to generate assembly for a file
 util.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/util.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/util.cc.s
 .PHONY : util.cc.s
 
 www_form_url_encoded.o: www_form_url_encoded.cc.o
@@ -520,7 +520,7 @@ www_form_url_encoded.o: www_form_url_encoded.cc.o
 
 # target to build an object file
 www_form_url_encoded.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/www_form_url_encoded.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/www_form_url_encoded.cc.o
 .PHONY : www_form_url_encoded.cc.o
 
 www_form_url_encoded.i: www_form_url_encoded.cc.i
@@ -529,7 +529,7 @@ www_form_url_encoded.i: www_form_url_encoded.cc.i
 
 # target to preprocess a source file
 www_form_url_encoded.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/www_form_url_encoded.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/www_form_url_encoded.cc.i
 .PHONY : www_form_url_encoded.cc.i
 
 www_form_url_encoded.s: www_form_url_encoded.cc.s
@@ -538,7 +538,7 @@ www_form_url_encoded.s: www_form_url_encoded.cc.s
 
 # target to generate assembly for a file
 www_form_url_encoded.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/www_form_url_encoded.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/www_form_url_encoded.cc.s
 .PHONY : www_form_url_encoded.cc.s
 
 zlibwrapper.o: zlibwrapper.cc.o
@@ -547,7 +547,7 @@ zlibwrapper.o: zlibwrapper.cc.o
 
 # target to build an object file
 zlibwrapper.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/zlibwrapper.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/zlibwrapper.cc.o
 .PHONY : zlibwrapper.cc.o
 
 zlibwrapper.i: zlibwrapper.cc.i
@@ -556,7 +556,7 @@ zlibwrapper.i: zlibwrapper.cc.i
 
 # target to preprocess a source file
 zlibwrapper.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/zlibwrapper.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/zlibwrapper.cc.i
 .PHONY : zlibwrapper.cc.i
 
 zlibwrapper.s: zlibwrapper.cc.s
@@ -565,7 +565,7 @@ zlibwrapper.s: zlibwrapper.cc.s
 
 # target to generate assembly for a file
 zlibwrapper.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/zlibwrapper.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/build.make Lib/firebase-cpp-sdk/app/rest/CMakeFiles/firebase_rest_lib.dir/zlibwrapper.cc.s
 .PHONY : zlibwrapper.cc.s
 
 # Help Target
@@ -634,6 +634,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

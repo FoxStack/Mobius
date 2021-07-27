@@ -1,4 +1,4 @@
-# Install script for directory: /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/firestore
+# Install script for directory: /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/firestore
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

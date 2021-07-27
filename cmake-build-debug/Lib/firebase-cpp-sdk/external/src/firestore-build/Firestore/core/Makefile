@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,31 +78,31 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -113,7 +113,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -124,13 +124,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -145,14 +145,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ firestore_util: Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core
 
 # fast build rule for target.
 firestore_util/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build
 .PHONY : firestore_util/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ firestore_nanopb: Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/co
 
 # fast build rule for target.
 firestore_nanopb/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build
 .PHONY : firestore_nanopb/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/rule
 
 # Convenience name for target.
@@ -217,12 +217,12 @@ firestore_core: Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core
 
 # fast build rule for target.
 firestore_core/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build
 .PHONY : firestore_core/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/rule
 
 # Convenience name for target.
@@ -232,7 +232,7 @@ firestore_gen_grpc_certs: Lib/firebase-cpp-sdk/external/src/firestore-build/Fire
 
 # fast build rule for target.
 firestore_gen_grpc_certs/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/build
 .PHONY : firestore_gen_grpc_certs/fast
 
 src/api/collection_reference.o: src/api/collection_reference.cc.o
@@ -241,7 +241,7 @@ src/api/collection_reference.o: src/api/collection_reference.cc.o
 
 # target to build an object file
 src/api/collection_reference.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/collection_reference.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/collection_reference.cc.o
 .PHONY : src/api/collection_reference.cc.o
 
 src/api/collection_reference.i: src/api/collection_reference.cc.i
@@ -250,7 +250,7 @@ src/api/collection_reference.i: src/api/collection_reference.cc.i
 
 # target to preprocess a source file
 src/api/collection_reference.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/collection_reference.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/collection_reference.cc.i
 .PHONY : src/api/collection_reference.cc.i
 
 src/api/collection_reference.s: src/api/collection_reference.cc.s
@@ -259,7 +259,7 @@ src/api/collection_reference.s: src/api/collection_reference.cc.s
 
 # target to generate assembly for a file
 src/api/collection_reference.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/collection_reference.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/collection_reference.cc.s
 .PHONY : src/api/collection_reference.cc.s
 
 src/api/document_change.o: src/api/document_change.cc.o
@@ -268,7 +268,7 @@ src/api/document_change.o: src/api/document_change.cc.o
 
 # target to build an object file
 src/api/document_change.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_change.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_change.cc.o
 .PHONY : src/api/document_change.cc.o
 
 src/api/document_change.i: src/api/document_change.cc.i
@@ -277,7 +277,7 @@ src/api/document_change.i: src/api/document_change.cc.i
 
 # target to preprocess a source file
 src/api/document_change.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_change.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_change.cc.i
 .PHONY : src/api/document_change.cc.i
 
 src/api/document_change.s: src/api/document_change.cc.s
@@ -286,7 +286,7 @@ src/api/document_change.s: src/api/document_change.cc.s
 
 # target to generate assembly for a file
 src/api/document_change.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_change.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_change.cc.s
 .PHONY : src/api/document_change.cc.s
 
 src/api/document_reference.o: src/api/document_reference.cc.o
@@ -295,7 +295,7 @@ src/api/document_reference.o: src/api/document_reference.cc.o
 
 # target to build an object file
 src/api/document_reference.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_reference.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_reference.cc.o
 .PHONY : src/api/document_reference.cc.o
 
 src/api/document_reference.i: src/api/document_reference.cc.i
@@ -304,7 +304,7 @@ src/api/document_reference.i: src/api/document_reference.cc.i
 
 # target to preprocess a source file
 src/api/document_reference.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_reference.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_reference.cc.i
 .PHONY : src/api/document_reference.cc.i
 
 src/api/document_reference.s: src/api/document_reference.cc.s
@@ -313,7 +313,7 @@ src/api/document_reference.s: src/api/document_reference.cc.s
 
 # target to generate assembly for a file
 src/api/document_reference.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_reference.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_reference.cc.s
 .PHONY : src/api/document_reference.cc.s
 
 src/api/document_snapshot.o: src/api/document_snapshot.cc.o
@@ -322,7 +322,7 @@ src/api/document_snapshot.o: src/api/document_snapshot.cc.o
 
 # target to build an object file
 src/api/document_snapshot.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_snapshot.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_snapshot.cc.o
 .PHONY : src/api/document_snapshot.cc.o
 
 src/api/document_snapshot.i: src/api/document_snapshot.cc.i
@@ -331,7 +331,7 @@ src/api/document_snapshot.i: src/api/document_snapshot.cc.i
 
 # target to preprocess a source file
 src/api/document_snapshot.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_snapshot.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_snapshot.cc.i
 .PHONY : src/api/document_snapshot.cc.i
 
 src/api/document_snapshot.s: src/api/document_snapshot.cc.s
@@ -340,7 +340,7 @@ src/api/document_snapshot.s: src/api/document_snapshot.cc.s
 
 # target to generate assembly for a file
 src/api/document_snapshot.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_snapshot.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/document_snapshot.cc.s
 .PHONY : src/api/document_snapshot.cc.s
 
 src/api/firestore.o: src/api/firestore.cc.o
@@ -349,7 +349,7 @@ src/api/firestore.o: src/api/firestore.cc.o
 
 # target to build an object file
 src/api/firestore.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/firestore.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/firestore.cc.o
 .PHONY : src/api/firestore.cc.o
 
 src/api/firestore.i: src/api/firestore.cc.i
@@ -358,7 +358,7 @@ src/api/firestore.i: src/api/firestore.cc.i
 
 # target to preprocess a source file
 src/api/firestore.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/firestore.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/firestore.cc.i
 .PHONY : src/api/firestore.cc.i
 
 src/api/firestore.s: src/api/firestore.cc.s
@@ -367,7 +367,7 @@ src/api/firestore.s: src/api/firestore.cc.s
 
 # target to generate assembly for a file
 src/api/firestore.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/firestore.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/firestore.cc.s
 .PHONY : src/api/firestore.cc.s
 
 src/api/load_bundle_task.o: src/api/load_bundle_task.cc.o
@@ -376,7 +376,7 @@ src/api/load_bundle_task.o: src/api/load_bundle_task.cc.o
 
 # target to build an object file
 src/api/load_bundle_task.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/load_bundle_task.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/load_bundle_task.cc.o
 .PHONY : src/api/load_bundle_task.cc.o
 
 src/api/load_bundle_task.i: src/api/load_bundle_task.cc.i
@@ -385,7 +385,7 @@ src/api/load_bundle_task.i: src/api/load_bundle_task.cc.i
 
 # target to preprocess a source file
 src/api/load_bundle_task.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/load_bundle_task.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/load_bundle_task.cc.i
 .PHONY : src/api/load_bundle_task.cc.i
 
 src/api/load_bundle_task.s: src/api/load_bundle_task.cc.s
@@ -394,7 +394,7 @@ src/api/load_bundle_task.s: src/api/load_bundle_task.cc.s
 
 # target to generate assembly for a file
 src/api/load_bundle_task.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/load_bundle_task.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/load_bundle_task.cc.s
 .PHONY : src/api/load_bundle_task.cc.s
 
 src/api/query_core.o: src/api/query_core.cc.o
@@ -403,7 +403,7 @@ src/api/query_core.o: src/api/query_core.cc.o
 
 # target to build an object file
 src/api/query_core.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_core.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_core.cc.o
 .PHONY : src/api/query_core.cc.o
 
 src/api/query_core.i: src/api/query_core.cc.i
@@ -412,7 +412,7 @@ src/api/query_core.i: src/api/query_core.cc.i
 
 # target to preprocess a source file
 src/api/query_core.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_core.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_core.cc.i
 .PHONY : src/api/query_core.cc.i
 
 src/api/query_core.s: src/api/query_core.cc.s
@@ -421,7 +421,7 @@ src/api/query_core.s: src/api/query_core.cc.s
 
 # target to generate assembly for a file
 src/api/query_core.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_core.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_core.cc.s
 .PHONY : src/api/query_core.cc.s
 
 src/api/query_listener_registration.o: src/api/query_listener_registration.cc.o
@@ -430,7 +430,7 @@ src/api/query_listener_registration.o: src/api/query_listener_registration.cc.o
 
 # target to build an object file
 src/api/query_listener_registration.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_listener_registration.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_listener_registration.cc.o
 .PHONY : src/api/query_listener_registration.cc.o
 
 src/api/query_listener_registration.i: src/api/query_listener_registration.cc.i
@@ -439,7 +439,7 @@ src/api/query_listener_registration.i: src/api/query_listener_registration.cc.i
 
 # target to preprocess a source file
 src/api/query_listener_registration.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_listener_registration.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_listener_registration.cc.i
 .PHONY : src/api/query_listener_registration.cc.i
 
 src/api/query_listener_registration.s: src/api/query_listener_registration.cc.s
@@ -448,7 +448,7 @@ src/api/query_listener_registration.s: src/api/query_listener_registration.cc.s
 
 # target to generate assembly for a file
 src/api/query_listener_registration.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_listener_registration.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_listener_registration.cc.s
 .PHONY : src/api/query_listener_registration.cc.s
 
 src/api/query_snapshot.o: src/api/query_snapshot.cc.o
@@ -457,7 +457,7 @@ src/api/query_snapshot.o: src/api/query_snapshot.cc.o
 
 # target to build an object file
 src/api/query_snapshot.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_snapshot.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_snapshot.cc.o
 .PHONY : src/api/query_snapshot.cc.o
 
 src/api/query_snapshot.i: src/api/query_snapshot.cc.i
@@ -466,7 +466,7 @@ src/api/query_snapshot.i: src/api/query_snapshot.cc.i
 
 # target to preprocess a source file
 src/api/query_snapshot.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_snapshot.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_snapshot.cc.i
 .PHONY : src/api/query_snapshot.cc.i
 
 src/api/query_snapshot.s: src/api/query_snapshot.cc.s
@@ -475,7 +475,7 @@ src/api/query_snapshot.s: src/api/query_snapshot.cc.s
 
 # target to generate assembly for a file
 src/api/query_snapshot.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_snapshot.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/query_snapshot.cc.s
 .PHONY : src/api/query_snapshot.cc.s
 
 src/api/settings.o: src/api/settings.cc.o
@@ -484,7 +484,7 @@ src/api/settings.o: src/api/settings.cc.o
 
 # target to build an object file
 src/api/settings.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/settings.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/settings.cc.o
 .PHONY : src/api/settings.cc.o
 
 src/api/settings.i: src/api/settings.cc.i
@@ -493,7 +493,7 @@ src/api/settings.i: src/api/settings.cc.i
 
 # target to preprocess a source file
 src/api/settings.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/settings.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/settings.cc.i
 .PHONY : src/api/settings.cc.i
 
 src/api/settings.s: src/api/settings.cc.s
@@ -502,7 +502,7 @@ src/api/settings.s: src/api/settings.cc.s
 
 # target to generate assembly for a file
 src/api/settings.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/settings.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/settings.cc.s
 .PHONY : src/api/settings.cc.s
 
 src/api/snapshot_metadata.o: src/api/snapshot_metadata.cc.o
@@ -511,7 +511,7 @@ src/api/snapshot_metadata.o: src/api/snapshot_metadata.cc.o
 
 # target to build an object file
 src/api/snapshot_metadata.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshot_metadata.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshot_metadata.cc.o
 .PHONY : src/api/snapshot_metadata.cc.o
 
 src/api/snapshot_metadata.i: src/api/snapshot_metadata.cc.i
@@ -520,7 +520,7 @@ src/api/snapshot_metadata.i: src/api/snapshot_metadata.cc.i
 
 # target to preprocess a source file
 src/api/snapshot_metadata.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshot_metadata.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshot_metadata.cc.i
 .PHONY : src/api/snapshot_metadata.cc.i
 
 src/api/snapshot_metadata.s: src/api/snapshot_metadata.cc.s
@@ -529,7 +529,7 @@ src/api/snapshot_metadata.s: src/api/snapshot_metadata.cc.s
 
 # target to generate assembly for a file
 src/api/snapshot_metadata.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshot_metadata.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshot_metadata.cc.s
 .PHONY : src/api/snapshot_metadata.cc.s
 
 src/api/snapshots_in_sync_listener_registration.o: src/api/snapshots_in_sync_listener_registration.cc.o
@@ -538,7 +538,7 @@ src/api/snapshots_in_sync_listener_registration.o: src/api/snapshots_in_sync_lis
 
 # target to build an object file
 src/api/snapshots_in_sync_listener_registration.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshots_in_sync_listener_registration.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshots_in_sync_listener_registration.cc.o
 .PHONY : src/api/snapshots_in_sync_listener_registration.cc.o
 
 src/api/snapshots_in_sync_listener_registration.i: src/api/snapshots_in_sync_listener_registration.cc.i
@@ -547,7 +547,7 @@ src/api/snapshots_in_sync_listener_registration.i: src/api/snapshots_in_sync_lis
 
 # target to preprocess a source file
 src/api/snapshots_in_sync_listener_registration.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshots_in_sync_listener_registration.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshots_in_sync_listener_registration.cc.i
 .PHONY : src/api/snapshots_in_sync_listener_registration.cc.i
 
 src/api/snapshots_in_sync_listener_registration.s: src/api/snapshots_in_sync_listener_registration.cc.s
@@ -556,7 +556,7 @@ src/api/snapshots_in_sync_listener_registration.s: src/api/snapshots_in_sync_lis
 
 # target to generate assembly for a file
 src/api/snapshots_in_sync_listener_registration.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshots_in_sync_listener_registration.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/snapshots_in_sync_listener_registration.cc.s
 .PHONY : src/api/snapshots_in_sync_listener_registration.cc.s
 
 src/api/write_batch.o: src/api/write_batch.cc.o
@@ -565,7 +565,7 @@ src/api/write_batch.o: src/api/write_batch.cc.o
 
 # target to build an object file
 src/api/write_batch.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/write_batch.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/write_batch.cc.o
 .PHONY : src/api/write_batch.cc.o
 
 src/api/write_batch.i: src/api/write_batch.cc.i
@@ -574,7 +574,7 @@ src/api/write_batch.i: src/api/write_batch.cc.i
 
 # target to preprocess a source file
 src/api/write_batch.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/write_batch.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/write_batch.cc.i
 .PHONY : src/api/write_batch.cc.i
 
 src/api/write_batch.s: src/api/write_batch.cc.s
@@ -583,7 +583,7 @@ src/api/write_batch.s: src/api/write_batch.cc.s
 
 # target to generate assembly for a file
 src/api/write_batch.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/write_batch.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/api/write_batch.cc.s
 .PHONY : src/api/write_batch.cc.s
 
 src/auth/credentials_provider.o: src/auth/credentials_provider.cc.o
@@ -592,7 +592,7 @@ src/auth/credentials_provider.o: src/auth/credentials_provider.cc.o
 
 # target to build an object file
 src/auth/credentials_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/credentials_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/credentials_provider.cc.o
 .PHONY : src/auth/credentials_provider.cc.o
 
 src/auth/credentials_provider.i: src/auth/credentials_provider.cc.i
@@ -601,7 +601,7 @@ src/auth/credentials_provider.i: src/auth/credentials_provider.cc.i
 
 # target to preprocess a source file
 src/auth/credentials_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/credentials_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/credentials_provider.cc.i
 .PHONY : src/auth/credentials_provider.cc.i
 
 src/auth/credentials_provider.s: src/auth/credentials_provider.cc.s
@@ -610,7 +610,7 @@ src/auth/credentials_provider.s: src/auth/credentials_provider.cc.s
 
 # target to generate assembly for a file
 src/auth/credentials_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/credentials_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/credentials_provider.cc.s
 .PHONY : src/auth/credentials_provider.cc.s
 
 src/auth/empty_credentials_provider.o: src/auth/empty_credentials_provider.cc.o
@@ -619,7 +619,7 @@ src/auth/empty_credentials_provider.o: src/auth/empty_credentials_provider.cc.o
 
 # target to build an object file
 src/auth/empty_credentials_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/empty_credentials_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/empty_credentials_provider.cc.o
 .PHONY : src/auth/empty_credentials_provider.cc.o
 
 src/auth/empty_credentials_provider.i: src/auth/empty_credentials_provider.cc.i
@@ -628,7 +628,7 @@ src/auth/empty_credentials_provider.i: src/auth/empty_credentials_provider.cc.i
 
 # target to preprocess a source file
 src/auth/empty_credentials_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/empty_credentials_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/empty_credentials_provider.cc.i
 .PHONY : src/auth/empty_credentials_provider.cc.i
 
 src/auth/empty_credentials_provider.s: src/auth/empty_credentials_provider.cc.s
@@ -637,7 +637,7 @@ src/auth/empty_credentials_provider.s: src/auth/empty_credentials_provider.cc.s
 
 # target to generate assembly for a file
 src/auth/empty_credentials_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/empty_credentials_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/empty_credentials_provider.cc.s
 .PHONY : src/auth/empty_credentials_provider.cc.s
 
 src/auth/token.o: src/auth/token.cc.o
@@ -646,7 +646,7 @@ src/auth/token.o: src/auth/token.cc.o
 
 # target to build an object file
 src/auth/token.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/token.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/token.cc.o
 .PHONY : src/auth/token.cc.o
 
 src/auth/token.i: src/auth/token.cc.i
@@ -655,7 +655,7 @@ src/auth/token.i: src/auth/token.cc.i
 
 # target to preprocess a source file
 src/auth/token.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/token.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/token.cc.i
 .PHONY : src/auth/token.cc.i
 
 src/auth/token.s: src/auth/token.cc.s
@@ -664,7 +664,7 @@ src/auth/token.s: src/auth/token.cc.s
 
 # target to generate assembly for a file
 src/auth/token.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/token.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/token.cc.s
 .PHONY : src/auth/token.cc.s
 
 src/auth/user.o: src/auth/user.cc.o
@@ -673,7 +673,7 @@ src/auth/user.o: src/auth/user.cc.o
 
 # target to build an object file
 src/auth/user.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/user.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/user.cc.o
 .PHONY : src/auth/user.cc.o
 
 src/auth/user.i: src/auth/user.cc.i
@@ -682,7 +682,7 @@ src/auth/user.i: src/auth/user.cc.i
 
 # target to preprocess a source file
 src/auth/user.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/user.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/user.cc.i
 .PHONY : src/auth/user.cc.i
 
 src/auth/user.s: src/auth/user.cc.s
@@ -691,7 +691,7 @@ src/auth/user.s: src/auth/user.cc.s
 
 # target to generate assembly for a file
 src/auth/user.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/user.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/auth/user.cc.s
 .PHONY : src/auth/user.cc.s
 
 src/bundle/bundle_loader.o: src/bundle/bundle_loader.cc.o
@@ -700,7 +700,7 @@ src/bundle/bundle_loader.o: src/bundle/bundle_loader.cc.o
 
 # target to build an object file
 src/bundle/bundle_loader.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_loader.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_loader.cc.o
 .PHONY : src/bundle/bundle_loader.cc.o
 
 src/bundle/bundle_loader.i: src/bundle/bundle_loader.cc.i
@@ -709,7 +709,7 @@ src/bundle/bundle_loader.i: src/bundle/bundle_loader.cc.i
 
 # target to preprocess a source file
 src/bundle/bundle_loader.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_loader.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_loader.cc.i
 .PHONY : src/bundle/bundle_loader.cc.i
 
 src/bundle/bundle_loader.s: src/bundle/bundle_loader.cc.s
@@ -718,7 +718,7 @@ src/bundle/bundle_loader.s: src/bundle/bundle_loader.cc.s
 
 # target to generate assembly for a file
 src/bundle/bundle_loader.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_loader.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_loader.cc.s
 .PHONY : src/bundle/bundle_loader.cc.s
 
 src/bundle/bundle_reader.o: src/bundle/bundle_reader.cc.o
@@ -727,7 +727,7 @@ src/bundle/bundle_reader.o: src/bundle/bundle_reader.cc.o
 
 # target to build an object file
 src/bundle/bundle_reader.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_reader.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_reader.cc.o
 .PHONY : src/bundle/bundle_reader.cc.o
 
 src/bundle/bundle_reader.i: src/bundle/bundle_reader.cc.i
@@ -736,7 +736,7 @@ src/bundle/bundle_reader.i: src/bundle/bundle_reader.cc.i
 
 # target to preprocess a source file
 src/bundle/bundle_reader.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_reader.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_reader.cc.i
 .PHONY : src/bundle/bundle_reader.cc.i
 
 src/bundle/bundle_reader.s: src/bundle/bundle_reader.cc.s
@@ -745,7 +745,7 @@ src/bundle/bundle_reader.s: src/bundle/bundle_reader.cc.s
 
 # target to generate assembly for a file
 src/bundle/bundle_reader.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_reader.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_reader.cc.s
 .PHONY : src/bundle/bundle_reader.cc.s
 
 src/bundle/bundle_serializer.o: src/bundle/bundle_serializer.cc.o
@@ -754,7 +754,7 @@ src/bundle/bundle_serializer.o: src/bundle/bundle_serializer.cc.o
 
 # target to build an object file
 src/bundle/bundle_serializer.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_serializer.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_serializer.cc.o
 .PHONY : src/bundle/bundle_serializer.cc.o
 
 src/bundle/bundle_serializer.i: src/bundle/bundle_serializer.cc.i
@@ -763,7 +763,7 @@ src/bundle/bundle_serializer.i: src/bundle/bundle_serializer.cc.i
 
 # target to preprocess a source file
 src/bundle/bundle_serializer.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_serializer.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_serializer.cc.i
 .PHONY : src/bundle/bundle_serializer.cc.i
 
 src/bundle/bundle_serializer.s: src/bundle/bundle_serializer.cc.s
@@ -772,7 +772,7 @@ src/bundle/bundle_serializer.s: src/bundle/bundle_serializer.cc.s
 
 # target to generate assembly for a file
 src/bundle/bundle_serializer.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_serializer.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/bundle/bundle_serializer.cc.s
 .PHONY : src/bundle/bundle_serializer.cc.s
 
 src/core/array_contains_any_filter.o: src/core/array_contains_any_filter.cc.o
@@ -781,7 +781,7 @@ src/core/array_contains_any_filter.o: src/core/array_contains_any_filter.cc.o
 
 # target to build an object file
 src/core/array_contains_any_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_any_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_any_filter.cc.o
 .PHONY : src/core/array_contains_any_filter.cc.o
 
 src/core/array_contains_any_filter.i: src/core/array_contains_any_filter.cc.i
@@ -790,7 +790,7 @@ src/core/array_contains_any_filter.i: src/core/array_contains_any_filter.cc.i
 
 # target to preprocess a source file
 src/core/array_contains_any_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_any_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_any_filter.cc.i
 .PHONY : src/core/array_contains_any_filter.cc.i
 
 src/core/array_contains_any_filter.s: src/core/array_contains_any_filter.cc.s
@@ -799,7 +799,7 @@ src/core/array_contains_any_filter.s: src/core/array_contains_any_filter.cc.s
 
 # target to generate assembly for a file
 src/core/array_contains_any_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_any_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_any_filter.cc.s
 .PHONY : src/core/array_contains_any_filter.cc.s
 
 src/core/array_contains_filter.o: src/core/array_contains_filter.cc.o
@@ -808,7 +808,7 @@ src/core/array_contains_filter.o: src/core/array_contains_filter.cc.o
 
 # target to build an object file
 src/core/array_contains_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_filter.cc.o
 .PHONY : src/core/array_contains_filter.cc.o
 
 src/core/array_contains_filter.i: src/core/array_contains_filter.cc.i
@@ -817,7 +817,7 @@ src/core/array_contains_filter.i: src/core/array_contains_filter.cc.i
 
 # target to preprocess a source file
 src/core/array_contains_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_filter.cc.i
 .PHONY : src/core/array_contains_filter.cc.i
 
 src/core/array_contains_filter.s: src/core/array_contains_filter.cc.s
@@ -826,7 +826,7 @@ src/core/array_contains_filter.s: src/core/array_contains_filter.cc.s
 
 # target to generate assembly for a file
 src/core/array_contains_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/array_contains_filter.cc.s
 .PHONY : src/core/array_contains_filter.cc.s
 
 src/core/bound.o: src/core/bound.cc.o
@@ -835,7 +835,7 @@ src/core/bound.o: src/core/bound.cc.o
 
 # target to build an object file
 src/core/bound.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/bound.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/bound.cc.o
 .PHONY : src/core/bound.cc.o
 
 src/core/bound.i: src/core/bound.cc.i
@@ -844,7 +844,7 @@ src/core/bound.i: src/core/bound.cc.i
 
 # target to preprocess a source file
 src/core/bound.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/bound.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/bound.cc.i
 .PHONY : src/core/bound.cc.i
 
 src/core/bound.s: src/core/bound.cc.s
@@ -853,7 +853,7 @@ src/core/bound.s: src/core/bound.cc.s
 
 # target to generate assembly for a file
 src/core/bound.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/bound.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/bound.cc.s
 .PHONY : src/core/bound.cc.s
 
 src/core/database_info.o: src/core/database_info.cc.o
@@ -862,7 +862,7 @@ src/core/database_info.o: src/core/database_info.cc.o
 
 # target to build an object file
 src/core/database_info.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/database_info.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/database_info.cc.o
 .PHONY : src/core/database_info.cc.o
 
 src/core/database_info.i: src/core/database_info.cc.i
@@ -871,7 +871,7 @@ src/core/database_info.i: src/core/database_info.cc.i
 
 # target to preprocess a source file
 src/core/database_info.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/database_info.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/database_info.cc.i
 .PHONY : src/core/database_info.cc.i
 
 src/core/database_info.s: src/core/database_info.cc.s
@@ -880,7 +880,7 @@ src/core/database_info.s: src/core/database_info.cc.s
 
 # target to generate assembly for a file
 src/core/database_info.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/database_info.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/database_info.cc.s
 .PHONY : src/core/database_info.cc.s
 
 src/core/direction.o: src/core/direction.cc.o
@@ -889,7 +889,7 @@ src/core/direction.o: src/core/direction.cc.o
 
 # target to build an object file
 src/core/direction.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/direction.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/direction.cc.o
 .PHONY : src/core/direction.cc.o
 
 src/core/direction.i: src/core/direction.cc.i
@@ -898,7 +898,7 @@ src/core/direction.i: src/core/direction.cc.i
 
 # target to preprocess a source file
 src/core/direction.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/direction.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/direction.cc.i
 .PHONY : src/core/direction.cc.i
 
 src/core/direction.s: src/core/direction.cc.s
@@ -907,7 +907,7 @@ src/core/direction.s: src/core/direction.cc.s
 
 # target to generate assembly for a file
 src/core/direction.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/direction.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/direction.cc.s
 .PHONY : src/core/direction.cc.s
 
 src/core/event_manager.o: src/core/event_manager.cc.o
@@ -916,7 +916,7 @@ src/core/event_manager.o: src/core/event_manager.cc.o
 
 # target to build an object file
 src/core/event_manager.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/event_manager.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/event_manager.cc.o
 .PHONY : src/core/event_manager.cc.o
 
 src/core/event_manager.i: src/core/event_manager.cc.i
@@ -925,7 +925,7 @@ src/core/event_manager.i: src/core/event_manager.cc.i
 
 # target to preprocess a source file
 src/core/event_manager.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/event_manager.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/event_manager.cc.i
 .PHONY : src/core/event_manager.cc.i
 
 src/core/event_manager.s: src/core/event_manager.cc.s
@@ -934,7 +934,7 @@ src/core/event_manager.s: src/core/event_manager.cc.s
 
 # target to generate assembly for a file
 src/core/event_manager.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/event_manager.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/event_manager.cc.s
 .PHONY : src/core/event_manager.cc.s
 
 src/core/field_filter.o: src/core/field_filter.cc.o
@@ -943,7 +943,7 @@ src/core/field_filter.o: src/core/field_filter.cc.o
 
 # target to build an object file
 src/core/field_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/field_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/field_filter.cc.o
 .PHONY : src/core/field_filter.cc.o
 
 src/core/field_filter.i: src/core/field_filter.cc.i
@@ -952,7 +952,7 @@ src/core/field_filter.i: src/core/field_filter.cc.i
 
 # target to preprocess a source file
 src/core/field_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/field_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/field_filter.cc.i
 .PHONY : src/core/field_filter.cc.i
 
 src/core/field_filter.s: src/core/field_filter.cc.s
@@ -961,7 +961,7 @@ src/core/field_filter.s: src/core/field_filter.cc.s
 
 # target to generate assembly for a file
 src/core/field_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/field_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/field_filter.cc.s
 .PHONY : src/core/field_filter.cc.s
 
 src/core/filter.o: src/core/filter.cc.o
@@ -970,7 +970,7 @@ src/core/filter.o: src/core/filter.cc.o
 
 # target to build an object file
 src/core/filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/filter.cc.o
 .PHONY : src/core/filter.cc.o
 
 src/core/filter.i: src/core/filter.cc.i
@@ -979,7 +979,7 @@ src/core/filter.i: src/core/filter.cc.i
 
 # target to preprocess a source file
 src/core/filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/filter.cc.i
 .PHONY : src/core/filter.cc.i
 
 src/core/filter.s: src/core/filter.cc.s
@@ -988,7 +988,7 @@ src/core/filter.s: src/core/filter.cc.s
 
 # target to generate assembly for a file
 src/core/filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/filter.cc.s
 .PHONY : src/core/filter.cc.s
 
 src/core/firestore_client.o: src/core/firestore_client.cc.o
@@ -997,7 +997,7 @@ src/core/firestore_client.o: src/core/firestore_client.cc.o
 
 # target to build an object file
 src/core/firestore_client.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/firestore_client.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/firestore_client.cc.o
 .PHONY : src/core/firestore_client.cc.o
 
 src/core/firestore_client.i: src/core/firestore_client.cc.i
@@ -1006,7 +1006,7 @@ src/core/firestore_client.i: src/core/firestore_client.cc.i
 
 # target to preprocess a source file
 src/core/firestore_client.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/firestore_client.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/firestore_client.cc.i
 .PHONY : src/core/firestore_client.cc.i
 
 src/core/firestore_client.s: src/core/firestore_client.cc.s
@@ -1015,7 +1015,7 @@ src/core/firestore_client.s: src/core/firestore_client.cc.s
 
 # target to generate assembly for a file
 src/core/firestore_client.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/firestore_client.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/firestore_client.cc.s
 .PHONY : src/core/firestore_client.cc.s
 
 src/core/in_filter.o: src/core/in_filter.cc.o
@@ -1024,7 +1024,7 @@ src/core/in_filter.o: src/core/in_filter.cc.o
 
 # target to build an object file
 src/core/in_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/in_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/in_filter.cc.o
 .PHONY : src/core/in_filter.cc.o
 
 src/core/in_filter.i: src/core/in_filter.cc.i
@@ -1033,7 +1033,7 @@ src/core/in_filter.i: src/core/in_filter.cc.i
 
 # target to preprocess a source file
 src/core/in_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/in_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/in_filter.cc.i
 .PHONY : src/core/in_filter.cc.i
 
 src/core/in_filter.s: src/core/in_filter.cc.s
@@ -1042,7 +1042,7 @@ src/core/in_filter.s: src/core/in_filter.cc.s
 
 # target to generate assembly for a file
 src/core/in_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/in_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/in_filter.cc.s
 .PHONY : src/core/in_filter.cc.s
 
 src/core/key_field_filter.o: src/core/key_field_filter.cc.o
@@ -1051,7 +1051,7 @@ src/core/key_field_filter.o: src/core/key_field_filter.cc.o
 
 # target to build an object file
 src/core/key_field_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_filter.cc.o
 .PHONY : src/core/key_field_filter.cc.o
 
 src/core/key_field_filter.i: src/core/key_field_filter.cc.i
@@ -1060,7 +1060,7 @@ src/core/key_field_filter.i: src/core/key_field_filter.cc.i
 
 # target to preprocess a source file
 src/core/key_field_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_filter.cc.i
 .PHONY : src/core/key_field_filter.cc.i
 
 src/core/key_field_filter.s: src/core/key_field_filter.cc.s
@@ -1069,7 +1069,7 @@ src/core/key_field_filter.s: src/core/key_field_filter.cc.s
 
 # target to generate assembly for a file
 src/core/key_field_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_filter.cc.s
 .PHONY : src/core/key_field_filter.cc.s
 
 src/core/key_field_in_filter.o: src/core/key_field_in_filter.cc.o
@@ -1078,7 +1078,7 @@ src/core/key_field_in_filter.o: src/core/key_field_in_filter.cc.o
 
 # target to build an object file
 src/core/key_field_in_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_in_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_in_filter.cc.o
 .PHONY : src/core/key_field_in_filter.cc.o
 
 src/core/key_field_in_filter.i: src/core/key_field_in_filter.cc.i
@@ -1087,7 +1087,7 @@ src/core/key_field_in_filter.i: src/core/key_field_in_filter.cc.i
 
 # target to preprocess a source file
 src/core/key_field_in_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_in_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_in_filter.cc.i
 .PHONY : src/core/key_field_in_filter.cc.i
 
 src/core/key_field_in_filter.s: src/core/key_field_in_filter.cc.s
@@ -1096,7 +1096,7 @@ src/core/key_field_in_filter.s: src/core/key_field_in_filter.cc.s
 
 # target to generate assembly for a file
 src/core/key_field_in_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_in_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_in_filter.cc.s
 .PHONY : src/core/key_field_in_filter.cc.s
 
 src/core/key_field_not_in_filter.o: src/core/key_field_not_in_filter.cc.o
@@ -1105,7 +1105,7 @@ src/core/key_field_not_in_filter.o: src/core/key_field_not_in_filter.cc.o
 
 # target to build an object file
 src/core/key_field_not_in_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_not_in_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_not_in_filter.cc.o
 .PHONY : src/core/key_field_not_in_filter.cc.o
 
 src/core/key_field_not_in_filter.i: src/core/key_field_not_in_filter.cc.i
@@ -1114,7 +1114,7 @@ src/core/key_field_not_in_filter.i: src/core/key_field_not_in_filter.cc.i
 
 # target to preprocess a source file
 src/core/key_field_not_in_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_not_in_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_not_in_filter.cc.i
 .PHONY : src/core/key_field_not_in_filter.cc.i
 
 src/core/key_field_not_in_filter.s: src/core/key_field_not_in_filter.cc.s
@@ -1123,7 +1123,7 @@ src/core/key_field_not_in_filter.s: src/core/key_field_not_in_filter.cc.s
 
 # target to generate assembly for a file
 src/core/key_field_not_in_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_not_in_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/key_field_not_in_filter.cc.s
 .PHONY : src/core/key_field_not_in_filter.cc.s
 
 src/core/not_in_filter.o: src/core/not_in_filter.cc.o
@@ -1132,7 +1132,7 @@ src/core/not_in_filter.o: src/core/not_in_filter.cc.o
 
 # target to build an object file
 src/core/not_in_filter.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/not_in_filter.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/not_in_filter.cc.o
 .PHONY : src/core/not_in_filter.cc.o
 
 src/core/not_in_filter.i: src/core/not_in_filter.cc.i
@@ -1141,7 +1141,7 @@ src/core/not_in_filter.i: src/core/not_in_filter.cc.i
 
 # target to preprocess a source file
 src/core/not_in_filter.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/not_in_filter.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/not_in_filter.cc.i
 .PHONY : src/core/not_in_filter.cc.i
 
 src/core/not_in_filter.s: src/core/not_in_filter.cc.s
@@ -1150,7 +1150,7 @@ src/core/not_in_filter.s: src/core/not_in_filter.cc.s
 
 # target to generate assembly for a file
 src/core/not_in_filter.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/not_in_filter.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/not_in_filter.cc.s
 .PHONY : src/core/not_in_filter.cc.s
 
 src/core/order_by.o: src/core/order_by.cc.o
@@ -1159,7 +1159,7 @@ src/core/order_by.o: src/core/order_by.cc.o
 
 # target to build an object file
 src/core/order_by.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/order_by.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/order_by.cc.o
 .PHONY : src/core/order_by.cc.o
 
 src/core/order_by.i: src/core/order_by.cc.i
@@ -1168,7 +1168,7 @@ src/core/order_by.i: src/core/order_by.cc.i
 
 # target to preprocess a source file
 src/core/order_by.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/order_by.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/order_by.cc.i
 .PHONY : src/core/order_by.cc.i
 
 src/core/order_by.s: src/core/order_by.cc.s
@@ -1177,7 +1177,7 @@ src/core/order_by.s: src/core/order_by.cc.s
 
 # target to generate assembly for a file
 src/core/order_by.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/order_by.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/order_by.cc.s
 .PHONY : src/core/order_by.cc.s
 
 src/core/query.o: src/core/query.cc.o
@@ -1186,7 +1186,7 @@ src/core/query.o: src/core/query.cc.o
 
 # target to build an object file
 src/core/query.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query.cc.o
 .PHONY : src/core/query.cc.o
 
 src/core/query.i: src/core/query.cc.i
@@ -1195,7 +1195,7 @@ src/core/query.i: src/core/query.cc.i
 
 # target to preprocess a source file
 src/core/query.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query.cc.i
 .PHONY : src/core/query.cc.i
 
 src/core/query.s: src/core/query.cc.s
@@ -1204,7 +1204,7 @@ src/core/query.s: src/core/query.cc.s
 
 # target to generate assembly for a file
 src/core/query.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query.cc.s
 .PHONY : src/core/query.cc.s
 
 src/core/query_listener.o: src/core/query_listener.cc.o
@@ -1213,7 +1213,7 @@ src/core/query_listener.o: src/core/query_listener.cc.o
 
 # target to build an object file
 src/core/query_listener.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query_listener.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query_listener.cc.o
 .PHONY : src/core/query_listener.cc.o
 
 src/core/query_listener.i: src/core/query_listener.cc.i
@@ -1222,7 +1222,7 @@ src/core/query_listener.i: src/core/query_listener.cc.i
 
 # target to preprocess a source file
 src/core/query_listener.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query_listener.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query_listener.cc.i
 .PHONY : src/core/query_listener.cc.i
 
 src/core/query_listener.s: src/core/query_listener.cc.s
@@ -1231,7 +1231,7 @@ src/core/query_listener.s: src/core/query_listener.cc.s
 
 # target to generate assembly for a file
 src/core/query_listener.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query_listener.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/query_listener.cc.s
 .PHONY : src/core/query_listener.cc.s
 
 src/core/sync_engine.o: src/core/sync_engine.cc.o
@@ -1240,7 +1240,7 @@ src/core/sync_engine.o: src/core/sync_engine.cc.o
 
 # target to build an object file
 src/core/sync_engine.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/sync_engine.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/sync_engine.cc.o
 .PHONY : src/core/sync_engine.cc.o
 
 src/core/sync_engine.i: src/core/sync_engine.cc.i
@@ -1249,7 +1249,7 @@ src/core/sync_engine.i: src/core/sync_engine.cc.i
 
 # target to preprocess a source file
 src/core/sync_engine.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/sync_engine.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/sync_engine.cc.i
 .PHONY : src/core/sync_engine.cc.i
 
 src/core/sync_engine.s: src/core/sync_engine.cc.s
@@ -1258,7 +1258,7 @@ src/core/sync_engine.s: src/core/sync_engine.cc.s
 
 # target to generate assembly for a file
 src/core/sync_engine.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/sync_engine.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/sync_engine.cc.s
 .PHONY : src/core/sync_engine.cc.s
 
 src/core/target.o: src/core/target.cc.o
@@ -1267,7 +1267,7 @@ src/core/target.o: src/core/target.cc.o
 
 # target to build an object file
 src/core/target.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target.cc.o
 .PHONY : src/core/target.cc.o
 
 src/core/target.i: src/core/target.cc.i
@@ -1276,7 +1276,7 @@ src/core/target.i: src/core/target.cc.i
 
 # target to preprocess a source file
 src/core/target.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target.cc.i
 .PHONY : src/core/target.cc.i
 
 src/core/target.s: src/core/target.cc.s
@@ -1285,7 +1285,7 @@ src/core/target.s: src/core/target.cc.s
 
 # target to generate assembly for a file
 src/core/target.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target.cc.s
 .PHONY : src/core/target.cc.s
 
 src/core/target_id_generator.o: src/core/target_id_generator.cc.o
@@ -1294,7 +1294,7 @@ src/core/target_id_generator.o: src/core/target_id_generator.cc.o
 
 # target to build an object file
 src/core/target_id_generator.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target_id_generator.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target_id_generator.cc.o
 .PHONY : src/core/target_id_generator.cc.o
 
 src/core/target_id_generator.i: src/core/target_id_generator.cc.i
@@ -1303,7 +1303,7 @@ src/core/target_id_generator.i: src/core/target_id_generator.cc.i
 
 # target to preprocess a source file
 src/core/target_id_generator.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target_id_generator.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target_id_generator.cc.i
 .PHONY : src/core/target_id_generator.cc.i
 
 src/core/target_id_generator.s: src/core/target_id_generator.cc.s
@@ -1312,7 +1312,7 @@ src/core/target_id_generator.s: src/core/target_id_generator.cc.s
 
 # target to generate assembly for a file
 src/core/target_id_generator.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target_id_generator.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/target_id_generator.cc.s
 .PHONY : src/core/target_id_generator.cc.s
 
 src/core/transaction.o: src/core/transaction.cc.o
@@ -1321,7 +1321,7 @@ src/core/transaction.o: src/core/transaction.cc.o
 
 # target to build an object file
 src/core/transaction.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction.cc.o
 .PHONY : src/core/transaction.cc.o
 
 src/core/transaction.i: src/core/transaction.cc.i
@@ -1330,7 +1330,7 @@ src/core/transaction.i: src/core/transaction.cc.i
 
 # target to preprocess a source file
 src/core/transaction.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction.cc.i
 .PHONY : src/core/transaction.cc.i
 
 src/core/transaction.s: src/core/transaction.cc.s
@@ -1339,7 +1339,7 @@ src/core/transaction.s: src/core/transaction.cc.s
 
 # target to generate assembly for a file
 src/core/transaction.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction.cc.s
 .PHONY : src/core/transaction.cc.s
 
 src/core/transaction_runner.o: src/core/transaction_runner.cc.o
@@ -1348,7 +1348,7 @@ src/core/transaction_runner.o: src/core/transaction_runner.cc.o
 
 # target to build an object file
 src/core/transaction_runner.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction_runner.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction_runner.cc.o
 .PHONY : src/core/transaction_runner.cc.o
 
 src/core/transaction_runner.i: src/core/transaction_runner.cc.i
@@ -1357,7 +1357,7 @@ src/core/transaction_runner.i: src/core/transaction_runner.cc.i
 
 # target to preprocess a source file
 src/core/transaction_runner.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction_runner.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction_runner.cc.i
 .PHONY : src/core/transaction_runner.cc.i
 
 src/core/transaction_runner.s: src/core/transaction_runner.cc.s
@@ -1366,7 +1366,7 @@ src/core/transaction_runner.s: src/core/transaction_runner.cc.s
 
 # target to generate assembly for a file
 src/core/transaction_runner.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction_runner.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/transaction_runner.cc.s
 .PHONY : src/core/transaction_runner.cc.s
 
 src/core/user_data.o: src/core/user_data.cc.o
@@ -1375,7 +1375,7 @@ src/core/user_data.o: src/core/user_data.cc.o
 
 # target to build an object file
 src/core/user_data.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/user_data.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/user_data.cc.o
 .PHONY : src/core/user_data.cc.o
 
 src/core/user_data.i: src/core/user_data.cc.i
@@ -1384,7 +1384,7 @@ src/core/user_data.i: src/core/user_data.cc.i
 
 # target to preprocess a source file
 src/core/user_data.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/user_data.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/user_data.cc.i
 .PHONY : src/core/user_data.cc.i
 
 src/core/user_data.s: src/core/user_data.cc.s
@@ -1393,7 +1393,7 @@ src/core/user_data.s: src/core/user_data.cc.s
 
 # target to generate assembly for a file
 src/core/user_data.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/user_data.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/user_data.cc.s
 .PHONY : src/core/user_data.cc.s
 
 src/core/view.o: src/core/view.cc.o
@@ -1402,7 +1402,7 @@ src/core/view.o: src/core/view.cc.o
 
 # target to build an object file
 src/core/view.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view.cc.o
 .PHONY : src/core/view.cc.o
 
 src/core/view.i: src/core/view.cc.i
@@ -1411,7 +1411,7 @@ src/core/view.i: src/core/view.cc.i
 
 # target to preprocess a source file
 src/core/view.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view.cc.i
 .PHONY : src/core/view.cc.i
 
 src/core/view.s: src/core/view.cc.s
@@ -1420,7 +1420,7 @@ src/core/view.s: src/core/view.cc.s
 
 # target to generate assembly for a file
 src/core/view.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view.cc.s
 .PHONY : src/core/view.cc.s
 
 src/core/view_snapshot.o: src/core/view_snapshot.cc.o
@@ -1429,7 +1429,7 @@ src/core/view_snapshot.o: src/core/view_snapshot.cc.o
 
 # target to build an object file
 src/core/view_snapshot.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view_snapshot.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view_snapshot.cc.o
 .PHONY : src/core/view_snapshot.cc.o
 
 src/core/view_snapshot.i: src/core/view_snapshot.cc.i
@@ -1438,7 +1438,7 @@ src/core/view_snapshot.i: src/core/view_snapshot.cc.i
 
 # target to preprocess a source file
 src/core/view_snapshot.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view_snapshot.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view_snapshot.cc.i
 .PHONY : src/core/view_snapshot.cc.i
 
 src/core/view_snapshot.s: src/core/view_snapshot.cc.s
@@ -1447,7 +1447,7 @@ src/core/view_snapshot.s: src/core/view_snapshot.cc.s
 
 # target to generate assembly for a file
 src/core/view_snapshot.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view_snapshot.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/core/view_snapshot.cc.s
 .PHONY : src/core/view_snapshot.cc.s
 
 src/firestore_version.o: src/firestore_version.cc.o
@@ -1456,7 +1456,7 @@ src/firestore_version.o: src/firestore_version.cc.o
 
 # target to build an object file
 src/firestore_version.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/firestore_version.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/firestore_version.cc.o
 .PHONY : src/firestore_version.cc.o
 
 src/firestore_version.i: src/firestore_version.cc.i
@@ -1465,7 +1465,7 @@ src/firestore_version.i: src/firestore_version.cc.i
 
 # target to preprocess a source file
 src/firestore_version.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/firestore_version.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/firestore_version.cc.i
 .PHONY : src/firestore_version.cc.i
 
 src/firestore_version.s: src/firestore_version.cc.s
@@ -1474,7 +1474,7 @@ src/firestore_version.s: src/firestore_version.cc.s
 
 # target to generate assembly for a file
 src/firestore_version.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/firestore_version.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/firestore_version.cc.s
 .PHONY : src/firestore_version.cc.s
 
 src/geo_point.o: src/geo_point.cc.o
@@ -1483,7 +1483,7 @@ src/geo_point.o: src/geo_point.cc.o
 
 # target to build an object file
 src/geo_point.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/geo_point.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/geo_point.cc.o
 .PHONY : src/geo_point.cc.o
 
 src/geo_point.i: src/geo_point.cc.i
@@ -1492,7 +1492,7 @@ src/geo_point.i: src/geo_point.cc.i
 
 # target to preprocess a source file
 src/geo_point.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/geo_point.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/geo_point.cc.i
 .PHONY : src/geo_point.cc.i
 
 src/geo_point.s: src/geo_point.cc.s
@@ -1501,7 +1501,7 @@ src/geo_point.s: src/geo_point.cc.s
 
 # target to generate assembly for a file
 src/geo_point.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/geo_point.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/geo_point.cc.s
 .PHONY : src/geo_point.cc.s
 
 src/immutable/sorted_container.o: src/immutable/sorted_container.cc.o
@@ -1510,7 +1510,7 @@ src/immutable/sorted_container.o: src/immutable/sorted_container.cc.o
 
 # target to build an object file
 src/immutable/sorted_container.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/immutable/sorted_container.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/immutable/sorted_container.cc.o
 .PHONY : src/immutable/sorted_container.cc.o
 
 src/immutable/sorted_container.i: src/immutable/sorted_container.cc.i
@@ -1519,7 +1519,7 @@ src/immutable/sorted_container.i: src/immutable/sorted_container.cc.i
 
 # target to preprocess a source file
 src/immutable/sorted_container.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/immutable/sorted_container.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/immutable/sorted_container.cc.i
 .PHONY : src/immutable/sorted_container.cc.i
 
 src/immutable/sorted_container.s: src/immutable/sorted_container.cc.s
@@ -1528,7 +1528,7 @@ src/immutable/sorted_container.s: src/immutable/sorted_container.cc.s
 
 # target to generate assembly for a file
 src/immutable/sorted_container.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/immutable/sorted_container.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/immutable/sorted_container.cc.s
 .PHONY : src/immutable/sorted_container.cc.s
 
 src/local/document_key_reference.o: src/local/document_key_reference.cc.o
@@ -1537,7 +1537,7 @@ src/local/document_key_reference.o: src/local/document_key_reference.cc.o
 
 # target to build an object file
 src/local/document_key_reference.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/document_key_reference.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/document_key_reference.cc.o
 .PHONY : src/local/document_key_reference.cc.o
 
 src/local/document_key_reference.i: src/local/document_key_reference.cc.i
@@ -1546,7 +1546,7 @@ src/local/document_key_reference.i: src/local/document_key_reference.cc.i
 
 # target to preprocess a source file
 src/local/document_key_reference.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/document_key_reference.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/document_key_reference.cc.i
 .PHONY : src/local/document_key_reference.cc.i
 
 src/local/document_key_reference.s: src/local/document_key_reference.cc.s
@@ -1555,7 +1555,7 @@ src/local/document_key_reference.s: src/local/document_key_reference.cc.s
 
 # target to generate assembly for a file
 src/local/document_key_reference.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/document_key_reference.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/document_key_reference.cc.s
 .PHONY : src/local/document_key_reference.cc.s
 
 src/local/leveldb_bundle_cache.o: src/local/leveldb_bundle_cache.cc.o
@@ -1564,7 +1564,7 @@ src/local/leveldb_bundle_cache.o: src/local/leveldb_bundle_cache.cc.o
 
 # target to build an object file
 src/local/leveldb_bundle_cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_bundle_cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_bundle_cache.cc.o
 .PHONY : src/local/leveldb_bundle_cache.cc.o
 
 src/local/leveldb_bundle_cache.i: src/local/leveldb_bundle_cache.cc.i
@@ -1573,7 +1573,7 @@ src/local/leveldb_bundle_cache.i: src/local/leveldb_bundle_cache.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_bundle_cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_bundle_cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_bundle_cache.cc.i
 .PHONY : src/local/leveldb_bundle_cache.cc.i
 
 src/local/leveldb_bundle_cache.s: src/local/leveldb_bundle_cache.cc.s
@@ -1582,7 +1582,7 @@ src/local/leveldb_bundle_cache.s: src/local/leveldb_bundle_cache.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_bundle_cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_bundle_cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_bundle_cache.cc.s
 .PHONY : src/local/leveldb_bundle_cache.cc.s
 
 src/local/leveldb_index_manager.o: src/local/leveldb_index_manager.cc.o
@@ -1591,7 +1591,7 @@ src/local/leveldb_index_manager.o: src/local/leveldb_index_manager.cc.o
 
 # target to build an object file
 src/local/leveldb_index_manager.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_index_manager.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_index_manager.cc.o
 .PHONY : src/local/leveldb_index_manager.cc.o
 
 src/local/leveldb_index_manager.i: src/local/leveldb_index_manager.cc.i
@@ -1600,7 +1600,7 @@ src/local/leveldb_index_manager.i: src/local/leveldb_index_manager.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_index_manager.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_index_manager.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_index_manager.cc.i
 .PHONY : src/local/leveldb_index_manager.cc.i
 
 src/local/leveldb_index_manager.s: src/local/leveldb_index_manager.cc.s
@@ -1609,7 +1609,7 @@ src/local/leveldb_index_manager.s: src/local/leveldb_index_manager.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_index_manager.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_index_manager.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_index_manager.cc.s
 .PHONY : src/local/leveldb_index_manager.cc.s
 
 src/local/leveldb_key.o: src/local/leveldb_key.cc.o
@@ -1618,7 +1618,7 @@ src/local/leveldb_key.o: src/local/leveldb_key.cc.o
 
 # target to build an object file
 src/local/leveldb_key.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_key.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_key.cc.o
 .PHONY : src/local/leveldb_key.cc.o
 
 src/local/leveldb_key.i: src/local/leveldb_key.cc.i
@@ -1627,7 +1627,7 @@ src/local/leveldb_key.i: src/local/leveldb_key.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_key.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_key.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_key.cc.i
 .PHONY : src/local/leveldb_key.cc.i
 
 src/local/leveldb_key.s: src/local/leveldb_key.cc.s
@@ -1636,7 +1636,7 @@ src/local/leveldb_key.s: src/local/leveldb_key.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_key.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_key.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_key.cc.s
 .PHONY : src/local/leveldb_key.cc.s
 
 src/local/leveldb_lru_reference_delegate.o: src/local/leveldb_lru_reference_delegate.cc.o
@@ -1645,7 +1645,7 @@ src/local/leveldb_lru_reference_delegate.o: src/local/leveldb_lru_reference_dele
 
 # target to build an object file
 src/local/leveldb_lru_reference_delegate.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_lru_reference_delegate.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_lru_reference_delegate.cc.o
 .PHONY : src/local/leveldb_lru_reference_delegate.cc.o
 
 src/local/leveldb_lru_reference_delegate.i: src/local/leveldb_lru_reference_delegate.cc.i
@@ -1654,7 +1654,7 @@ src/local/leveldb_lru_reference_delegate.i: src/local/leveldb_lru_reference_dele
 
 # target to preprocess a source file
 src/local/leveldb_lru_reference_delegate.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_lru_reference_delegate.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_lru_reference_delegate.cc.i
 .PHONY : src/local/leveldb_lru_reference_delegate.cc.i
 
 src/local/leveldb_lru_reference_delegate.s: src/local/leveldb_lru_reference_delegate.cc.s
@@ -1663,7 +1663,7 @@ src/local/leveldb_lru_reference_delegate.s: src/local/leveldb_lru_reference_dele
 
 # target to generate assembly for a file
 src/local/leveldb_lru_reference_delegate.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_lru_reference_delegate.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_lru_reference_delegate.cc.s
 .PHONY : src/local/leveldb_lru_reference_delegate.cc.s
 
 src/local/leveldb_migrations.o: src/local/leveldb_migrations.cc.o
@@ -1672,7 +1672,7 @@ src/local/leveldb_migrations.o: src/local/leveldb_migrations.cc.o
 
 # target to build an object file
 src/local/leveldb_migrations.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_migrations.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_migrations.cc.o
 .PHONY : src/local/leveldb_migrations.cc.o
 
 src/local/leveldb_migrations.i: src/local/leveldb_migrations.cc.i
@@ -1681,7 +1681,7 @@ src/local/leveldb_migrations.i: src/local/leveldb_migrations.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_migrations.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_migrations.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_migrations.cc.i
 .PHONY : src/local/leveldb_migrations.cc.i
 
 src/local/leveldb_migrations.s: src/local/leveldb_migrations.cc.s
@@ -1690,7 +1690,7 @@ src/local/leveldb_migrations.s: src/local/leveldb_migrations.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_migrations.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_migrations.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_migrations.cc.s
 .PHONY : src/local/leveldb_migrations.cc.s
 
 src/local/leveldb_mutation_queue.o: src/local/leveldb_mutation_queue.cc.o
@@ -1699,7 +1699,7 @@ src/local/leveldb_mutation_queue.o: src/local/leveldb_mutation_queue.cc.o
 
 # target to build an object file
 src/local/leveldb_mutation_queue.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_mutation_queue.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_mutation_queue.cc.o
 .PHONY : src/local/leveldb_mutation_queue.cc.o
 
 src/local/leveldb_mutation_queue.i: src/local/leveldb_mutation_queue.cc.i
@@ -1708,7 +1708,7 @@ src/local/leveldb_mutation_queue.i: src/local/leveldb_mutation_queue.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_mutation_queue.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_mutation_queue.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_mutation_queue.cc.i
 .PHONY : src/local/leveldb_mutation_queue.cc.i
 
 src/local/leveldb_mutation_queue.s: src/local/leveldb_mutation_queue.cc.s
@@ -1717,7 +1717,7 @@ src/local/leveldb_mutation_queue.s: src/local/leveldb_mutation_queue.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_mutation_queue.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_mutation_queue.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_mutation_queue.cc.s
 .PHONY : src/local/leveldb_mutation_queue.cc.s
 
 src/local/leveldb_opener.o: src/local/leveldb_opener.cc.o
@@ -1726,7 +1726,7 @@ src/local/leveldb_opener.o: src/local/leveldb_opener.cc.o
 
 # target to build an object file
 src/local/leveldb_opener.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_opener.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_opener.cc.o
 .PHONY : src/local/leveldb_opener.cc.o
 
 src/local/leveldb_opener.i: src/local/leveldb_opener.cc.i
@@ -1735,7 +1735,7 @@ src/local/leveldb_opener.i: src/local/leveldb_opener.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_opener.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_opener.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_opener.cc.i
 .PHONY : src/local/leveldb_opener.cc.i
 
 src/local/leveldb_opener.s: src/local/leveldb_opener.cc.s
@@ -1744,7 +1744,7 @@ src/local/leveldb_opener.s: src/local/leveldb_opener.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_opener.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_opener.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_opener.cc.s
 .PHONY : src/local/leveldb_opener.cc.s
 
 src/local/leveldb_persistence.o: src/local/leveldb_persistence.cc.o
@@ -1753,7 +1753,7 @@ src/local/leveldb_persistence.o: src/local/leveldb_persistence.cc.o
 
 # target to build an object file
 src/local/leveldb_persistence.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_persistence.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_persistence.cc.o
 .PHONY : src/local/leveldb_persistence.cc.o
 
 src/local/leveldb_persistence.i: src/local/leveldb_persistence.cc.i
@@ -1762,7 +1762,7 @@ src/local/leveldb_persistence.i: src/local/leveldb_persistence.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_persistence.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_persistence.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_persistence.cc.i
 .PHONY : src/local/leveldb_persistence.cc.i
 
 src/local/leveldb_persistence.s: src/local/leveldb_persistence.cc.s
@@ -1771,7 +1771,7 @@ src/local/leveldb_persistence.s: src/local/leveldb_persistence.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_persistence.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_persistence.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_persistence.cc.s
 .PHONY : src/local/leveldb_persistence.cc.s
 
 src/local/leveldb_remote_document_cache.o: src/local/leveldb_remote_document_cache.cc.o
@@ -1780,7 +1780,7 @@ src/local/leveldb_remote_document_cache.o: src/local/leveldb_remote_document_cac
 
 # target to build an object file
 src/local/leveldb_remote_document_cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_remote_document_cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_remote_document_cache.cc.o
 .PHONY : src/local/leveldb_remote_document_cache.cc.o
 
 src/local/leveldb_remote_document_cache.i: src/local/leveldb_remote_document_cache.cc.i
@@ -1789,7 +1789,7 @@ src/local/leveldb_remote_document_cache.i: src/local/leveldb_remote_document_cac
 
 # target to preprocess a source file
 src/local/leveldb_remote_document_cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_remote_document_cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_remote_document_cache.cc.i
 .PHONY : src/local/leveldb_remote_document_cache.cc.i
 
 src/local/leveldb_remote_document_cache.s: src/local/leveldb_remote_document_cache.cc.s
@@ -1798,7 +1798,7 @@ src/local/leveldb_remote_document_cache.s: src/local/leveldb_remote_document_cac
 
 # target to generate assembly for a file
 src/local/leveldb_remote_document_cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_remote_document_cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_remote_document_cache.cc.s
 .PHONY : src/local/leveldb_remote_document_cache.cc.s
 
 src/local/leveldb_target_cache.o: src/local/leveldb_target_cache.cc.o
@@ -1807,7 +1807,7 @@ src/local/leveldb_target_cache.o: src/local/leveldb_target_cache.cc.o
 
 # target to build an object file
 src/local/leveldb_target_cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_target_cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_target_cache.cc.o
 .PHONY : src/local/leveldb_target_cache.cc.o
 
 src/local/leveldb_target_cache.i: src/local/leveldb_target_cache.cc.i
@@ -1816,7 +1816,7 @@ src/local/leveldb_target_cache.i: src/local/leveldb_target_cache.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_target_cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_target_cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_target_cache.cc.i
 .PHONY : src/local/leveldb_target_cache.cc.i
 
 src/local/leveldb_target_cache.s: src/local/leveldb_target_cache.cc.s
@@ -1825,7 +1825,7 @@ src/local/leveldb_target_cache.s: src/local/leveldb_target_cache.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_target_cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_target_cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_target_cache.cc.s
 .PHONY : src/local/leveldb_target_cache.cc.s
 
 src/local/leveldb_transaction.o: src/local/leveldb_transaction.cc.o
@@ -1834,7 +1834,7 @@ src/local/leveldb_transaction.o: src/local/leveldb_transaction.cc.o
 
 # target to build an object file
 src/local/leveldb_transaction.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_transaction.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_transaction.cc.o
 .PHONY : src/local/leveldb_transaction.cc.o
 
 src/local/leveldb_transaction.i: src/local/leveldb_transaction.cc.i
@@ -1843,7 +1843,7 @@ src/local/leveldb_transaction.i: src/local/leveldb_transaction.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_transaction.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_transaction.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_transaction.cc.i
 .PHONY : src/local/leveldb_transaction.cc.i
 
 src/local/leveldb_transaction.s: src/local/leveldb_transaction.cc.s
@@ -1852,7 +1852,7 @@ src/local/leveldb_transaction.s: src/local/leveldb_transaction.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_transaction.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_transaction.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_transaction.cc.s
 .PHONY : src/local/leveldb_transaction.cc.s
 
 src/local/leveldb_util.o: src/local/leveldb_util.cc.o
@@ -1861,7 +1861,7 @@ src/local/leveldb_util.o: src/local/leveldb_util.cc.o
 
 # target to build an object file
 src/local/leveldb_util.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_util.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_util.cc.o
 .PHONY : src/local/leveldb_util.cc.o
 
 src/local/leveldb_util.i: src/local/leveldb_util.cc.i
@@ -1870,7 +1870,7 @@ src/local/leveldb_util.i: src/local/leveldb_util.cc.i
 
 # target to preprocess a source file
 src/local/leveldb_util.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_util.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_util.cc.i
 .PHONY : src/local/leveldb_util.cc.i
 
 src/local/leveldb_util.s: src/local/leveldb_util.cc.s
@@ -1879,7 +1879,7 @@ src/local/leveldb_util.s: src/local/leveldb_util.cc.s
 
 # target to generate assembly for a file
 src/local/leveldb_util.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_util.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/leveldb_util.cc.s
 .PHONY : src/local/leveldb_util.cc.s
 
 src/local/local_documents_view.o: src/local/local_documents_view.cc.o
@@ -1888,7 +1888,7 @@ src/local/local_documents_view.o: src/local/local_documents_view.cc.o
 
 # target to build an object file
 src/local/local_documents_view.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_documents_view.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_documents_view.cc.o
 .PHONY : src/local/local_documents_view.cc.o
 
 src/local/local_documents_view.i: src/local/local_documents_view.cc.i
@@ -1897,7 +1897,7 @@ src/local/local_documents_view.i: src/local/local_documents_view.cc.i
 
 # target to preprocess a source file
 src/local/local_documents_view.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_documents_view.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_documents_view.cc.i
 .PHONY : src/local/local_documents_view.cc.i
 
 src/local/local_documents_view.s: src/local/local_documents_view.cc.s
@@ -1906,7 +1906,7 @@ src/local/local_documents_view.s: src/local/local_documents_view.cc.s
 
 # target to generate assembly for a file
 src/local/local_documents_view.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_documents_view.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_documents_view.cc.s
 .PHONY : src/local/local_documents_view.cc.s
 
 src/local/local_serializer.o: src/local/local_serializer.cc.o
@@ -1915,7 +1915,7 @@ src/local/local_serializer.o: src/local/local_serializer.cc.o
 
 # target to build an object file
 src/local/local_serializer.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_serializer.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_serializer.cc.o
 .PHONY : src/local/local_serializer.cc.o
 
 src/local/local_serializer.i: src/local/local_serializer.cc.i
@@ -1924,7 +1924,7 @@ src/local/local_serializer.i: src/local/local_serializer.cc.i
 
 # target to preprocess a source file
 src/local/local_serializer.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_serializer.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_serializer.cc.i
 .PHONY : src/local/local_serializer.cc.i
 
 src/local/local_serializer.s: src/local/local_serializer.cc.s
@@ -1933,7 +1933,7 @@ src/local/local_serializer.s: src/local/local_serializer.cc.s
 
 # target to generate assembly for a file
 src/local/local_serializer.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_serializer.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_serializer.cc.s
 .PHONY : src/local/local_serializer.cc.s
 
 src/local/local_store.o: src/local/local_store.cc.o
@@ -1942,7 +1942,7 @@ src/local/local_store.o: src/local/local_store.cc.o
 
 # target to build an object file
 src/local/local_store.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_store.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_store.cc.o
 .PHONY : src/local/local_store.cc.o
 
 src/local/local_store.i: src/local/local_store.cc.i
@@ -1951,7 +1951,7 @@ src/local/local_store.i: src/local/local_store.cc.i
 
 # target to preprocess a source file
 src/local/local_store.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_store.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_store.cc.i
 .PHONY : src/local/local_store.cc.i
 
 src/local/local_store.s: src/local/local_store.cc.s
@@ -1960,7 +1960,7 @@ src/local/local_store.s: src/local/local_store.cc.s
 
 # target to generate assembly for a file
 src/local/local_store.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_store.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_store.cc.s
 .PHONY : src/local/local_store.cc.s
 
 src/local/local_view_changes.o: src/local/local_view_changes.cc.o
@@ -1969,7 +1969,7 @@ src/local/local_view_changes.o: src/local/local_view_changes.cc.o
 
 # target to build an object file
 src/local/local_view_changes.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_view_changes.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_view_changes.cc.o
 .PHONY : src/local/local_view_changes.cc.o
 
 src/local/local_view_changes.i: src/local/local_view_changes.cc.i
@@ -1978,7 +1978,7 @@ src/local/local_view_changes.i: src/local/local_view_changes.cc.i
 
 # target to preprocess a source file
 src/local/local_view_changes.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_view_changes.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_view_changes.cc.i
 .PHONY : src/local/local_view_changes.cc.i
 
 src/local/local_view_changes.s: src/local/local_view_changes.cc.s
@@ -1987,7 +1987,7 @@ src/local/local_view_changes.s: src/local/local_view_changes.cc.s
 
 # target to generate assembly for a file
 src/local/local_view_changes.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_view_changes.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/local_view_changes.cc.s
 .PHONY : src/local/local_view_changes.cc.s
 
 src/local/lru_garbage_collector.o: src/local/lru_garbage_collector.cc.o
@@ -1996,7 +1996,7 @@ src/local/lru_garbage_collector.o: src/local/lru_garbage_collector.cc.o
 
 # target to build an object file
 src/local/lru_garbage_collector.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/lru_garbage_collector.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/lru_garbage_collector.cc.o
 .PHONY : src/local/lru_garbage_collector.cc.o
 
 src/local/lru_garbage_collector.i: src/local/lru_garbage_collector.cc.i
@@ -2005,7 +2005,7 @@ src/local/lru_garbage_collector.i: src/local/lru_garbage_collector.cc.i
 
 # target to preprocess a source file
 src/local/lru_garbage_collector.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/lru_garbage_collector.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/lru_garbage_collector.cc.i
 .PHONY : src/local/lru_garbage_collector.cc.i
 
 src/local/lru_garbage_collector.s: src/local/lru_garbage_collector.cc.s
@@ -2014,7 +2014,7 @@ src/local/lru_garbage_collector.s: src/local/lru_garbage_collector.cc.s
 
 # target to generate assembly for a file
 src/local/lru_garbage_collector.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/lru_garbage_collector.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/lru_garbage_collector.cc.s
 .PHONY : src/local/lru_garbage_collector.cc.s
 
 src/local/memory_bundle_cache.o: src/local/memory_bundle_cache.cc.o
@@ -2023,7 +2023,7 @@ src/local/memory_bundle_cache.o: src/local/memory_bundle_cache.cc.o
 
 # target to build an object file
 src/local/memory_bundle_cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_bundle_cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_bundle_cache.cc.o
 .PHONY : src/local/memory_bundle_cache.cc.o
 
 src/local/memory_bundle_cache.i: src/local/memory_bundle_cache.cc.i
@@ -2032,7 +2032,7 @@ src/local/memory_bundle_cache.i: src/local/memory_bundle_cache.cc.i
 
 # target to preprocess a source file
 src/local/memory_bundle_cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_bundle_cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_bundle_cache.cc.i
 .PHONY : src/local/memory_bundle_cache.cc.i
 
 src/local/memory_bundle_cache.s: src/local/memory_bundle_cache.cc.s
@@ -2041,7 +2041,7 @@ src/local/memory_bundle_cache.s: src/local/memory_bundle_cache.cc.s
 
 # target to generate assembly for a file
 src/local/memory_bundle_cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_bundle_cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_bundle_cache.cc.s
 .PHONY : src/local/memory_bundle_cache.cc.s
 
 src/local/memory_eager_reference_delegate.o: src/local/memory_eager_reference_delegate.cc.o
@@ -2050,7 +2050,7 @@ src/local/memory_eager_reference_delegate.o: src/local/memory_eager_reference_de
 
 # target to build an object file
 src/local/memory_eager_reference_delegate.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_eager_reference_delegate.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_eager_reference_delegate.cc.o
 .PHONY : src/local/memory_eager_reference_delegate.cc.o
 
 src/local/memory_eager_reference_delegate.i: src/local/memory_eager_reference_delegate.cc.i
@@ -2059,7 +2059,7 @@ src/local/memory_eager_reference_delegate.i: src/local/memory_eager_reference_de
 
 # target to preprocess a source file
 src/local/memory_eager_reference_delegate.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_eager_reference_delegate.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_eager_reference_delegate.cc.i
 .PHONY : src/local/memory_eager_reference_delegate.cc.i
 
 src/local/memory_eager_reference_delegate.s: src/local/memory_eager_reference_delegate.cc.s
@@ -2068,7 +2068,7 @@ src/local/memory_eager_reference_delegate.s: src/local/memory_eager_reference_de
 
 # target to generate assembly for a file
 src/local/memory_eager_reference_delegate.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_eager_reference_delegate.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_eager_reference_delegate.cc.s
 .PHONY : src/local/memory_eager_reference_delegate.cc.s
 
 src/local/memory_index_manager.o: src/local/memory_index_manager.cc.o
@@ -2077,7 +2077,7 @@ src/local/memory_index_manager.o: src/local/memory_index_manager.cc.o
 
 # target to build an object file
 src/local/memory_index_manager.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_index_manager.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_index_manager.cc.o
 .PHONY : src/local/memory_index_manager.cc.o
 
 src/local/memory_index_manager.i: src/local/memory_index_manager.cc.i
@@ -2086,7 +2086,7 @@ src/local/memory_index_manager.i: src/local/memory_index_manager.cc.i
 
 # target to preprocess a source file
 src/local/memory_index_manager.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_index_manager.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_index_manager.cc.i
 .PHONY : src/local/memory_index_manager.cc.i
 
 src/local/memory_index_manager.s: src/local/memory_index_manager.cc.s
@@ -2095,7 +2095,7 @@ src/local/memory_index_manager.s: src/local/memory_index_manager.cc.s
 
 # target to generate assembly for a file
 src/local/memory_index_manager.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_index_manager.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_index_manager.cc.s
 .PHONY : src/local/memory_index_manager.cc.s
 
 src/local/memory_lru_reference_delegate.o: src/local/memory_lru_reference_delegate.cc.o
@@ -2104,7 +2104,7 @@ src/local/memory_lru_reference_delegate.o: src/local/memory_lru_reference_delega
 
 # target to build an object file
 src/local/memory_lru_reference_delegate.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_lru_reference_delegate.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_lru_reference_delegate.cc.o
 .PHONY : src/local/memory_lru_reference_delegate.cc.o
 
 src/local/memory_lru_reference_delegate.i: src/local/memory_lru_reference_delegate.cc.i
@@ -2113,7 +2113,7 @@ src/local/memory_lru_reference_delegate.i: src/local/memory_lru_reference_delega
 
 # target to preprocess a source file
 src/local/memory_lru_reference_delegate.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_lru_reference_delegate.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_lru_reference_delegate.cc.i
 .PHONY : src/local/memory_lru_reference_delegate.cc.i
 
 src/local/memory_lru_reference_delegate.s: src/local/memory_lru_reference_delegate.cc.s
@@ -2122,7 +2122,7 @@ src/local/memory_lru_reference_delegate.s: src/local/memory_lru_reference_delega
 
 # target to generate assembly for a file
 src/local/memory_lru_reference_delegate.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_lru_reference_delegate.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_lru_reference_delegate.cc.s
 .PHONY : src/local/memory_lru_reference_delegate.cc.s
 
 src/local/memory_mutation_queue.o: src/local/memory_mutation_queue.cc.o
@@ -2131,7 +2131,7 @@ src/local/memory_mutation_queue.o: src/local/memory_mutation_queue.cc.o
 
 # target to build an object file
 src/local/memory_mutation_queue.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_mutation_queue.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_mutation_queue.cc.o
 .PHONY : src/local/memory_mutation_queue.cc.o
 
 src/local/memory_mutation_queue.i: src/local/memory_mutation_queue.cc.i
@@ -2140,7 +2140,7 @@ src/local/memory_mutation_queue.i: src/local/memory_mutation_queue.cc.i
 
 # target to preprocess a source file
 src/local/memory_mutation_queue.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_mutation_queue.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_mutation_queue.cc.i
 .PHONY : src/local/memory_mutation_queue.cc.i
 
 src/local/memory_mutation_queue.s: src/local/memory_mutation_queue.cc.s
@@ -2149,7 +2149,7 @@ src/local/memory_mutation_queue.s: src/local/memory_mutation_queue.cc.s
 
 # target to generate assembly for a file
 src/local/memory_mutation_queue.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_mutation_queue.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_mutation_queue.cc.s
 .PHONY : src/local/memory_mutation_queue.cc.s
 
 src/local/memory_persistence.o: src/local/memory_persistence.cc.o
@@ -2158,7 +2158,7 @@ src/local/memory_persistence.o: src/local/memory_persistence.cc.o
 
 # target to build an object file
 src/local/memory_persistence.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_persistence.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_persistence.cc.o
 .PHONY : src/local/memory_persistence.cc.o
 
 src/local/memory_persistence.i: src/local/memory_persistence.cc.i
@@ -2167,7 +2167,7 @@ src/local/memory_persistence.i: src/local/memory_persistence.cc.i
 
 # target to preprocess a source file
 src/local/memory_persistence.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_persistence.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_persistence.cc.i
 .PHONY : src/local/memory_persistence.cc.i
 
 src/local/memory_persistence.s: src/local/memory_persistence.cc.s
@@ -2176,7 +2176,7 @@ src/local/memory_persistence.s: src/local/memory_persistence.cc.s
 
 # target to generate assembly for a file
 src/local/memory_persistence.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_persistence.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_persistence.cc.s
 .PHONY : src/local/memory_persistence.cc.s
 
 src/local/memory_remote_document_cache.o: src/local/memory_remote_document_cache.cc.o
@@ -2185,7 +2185,7 @@ src/local/memory_remote_document_cache.o: src/local/memory_remote_document_cache
 
 # target to build an object file
 src/local/memory_remote_document_cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_remote_document_cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_remote_document_cache.cc.o
 .PHONY : src/local/memory_remote_document_cache.cc.o
 
 src/local/memory_remote_document_cache.i: src/local/memory_remote_document_cache.cc.i
@@ -2194,7 +2194,7 @@ src/local/memory_remote_document_cache.i: src/local/memory_remote_document_cache
 
 # target to preprocess a source file
 src/local/memory_remote_document_cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_remote_document_cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_remote_document_cache.cc.i
 .PHONY : src/local/memory_remote_document_cache.cc.i
 
 src/local/memory_remote_document_cache.s: src/local/memory_remote_document_cache.cc.s
@@ -2203,7 +2203,7 @@ src/local/memory_remote_document_cache.s: src/local/memory_remote_document_cache
 
 # target to generate assembly for a file
 src/local/memory_remote_document_cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_remote_document_cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_remote_document_cache.cc.s
 .PHONY : src/local/memory_remote_document_cache.cc.s
 
 src/local/memory_target_cache.o: src/local/memory_target_cache.cc.o
@@ -2212,7 +2212,7 @@ src/local/memory_target_cache.o: src/local/memory_target_cache.cc.o
 
 # target to build an object file
 src/local/memory_target_cache.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_target_cache.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_target_cache.cc.o
 .PHONY : src/local/memory_target_cache.cc.o
 
 src/local/memory_target_cache.i: src/local/memory_target_cache.cc.i
@@ -2221,7 +2221,7 @@ src/local/memory_target_cache.i: src/local/memory_target_cache.cc.i
 
 # target to preprocess a source file
 src/local/memory_target_cache.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_target_cache.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_target_cache.cc.i
 .PHONY : src/local/memory_target_cache.cc.i
 
 src/local/memory_target_cache.s: src/local/memory_target_cache.cc.s
@@ -2230,7 +2230,7 @@ src/local/memory_target_cache.s: src/local/memory_target_cache.cc.s
 
 # target to generate assembly for a file
 src/local/memory_target_cache.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_target_cache.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/memory_target_cache.cc.s
 .PHONY : src/local/memory_target_cache.cc.s
 
 src/local/proto_sizer.o: src/local/proto_sizer.cc.o
@@ -2239,7 +2239,7 @@ src/local/proto_sizer.o: src/local/proto_sizer.cc.o
 
 # target to build an object file
 src/local/proto_sizer.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/proto_sizer.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/proto_sizer.cc.o
 .PHONY : src/local/proto_sizer.cc.o
 
 src/local/proto_sizer.i: src/local/proto_sizer.cc.i
@@ -2248,7 +2248,7 @@ src/local/proto_sizer.i: src/local/proto_sizer.cc.i
 
 # target to preprocess a source file
 src/local/proto_sizer.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/proto_sizer.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/proto_sizer.cc.i
 .PHONY : src/local/proto_sizer.cc.i
 
 src/local/proto_sizer.s: src/local/proto_sizer.cc.s
@@ -2257,7 +2257,7 @@ src/local/proto_sizer.s: src/local/proto_sizer.cc.s
 
 # target to generate assembly for a file
 src/local/proto_sizer.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/proto_sizer.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/proto_sizer.cc.s
 .PHONY : src/local/proto_sizer.cc.s
 
 src/local/query_engine.o: src/local/query_engine.cc.o
@@ -2266,7 +2266,7 @@ src/local/query_engine.o: src/local/query_engine.cc.o
 
 # target to build an object file
 src/local/query_engine.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/query_engine.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/query_engine.cc.o
 .PHONY : src/local/query_engine.cc.o
 
 src/local/query_engine.i: src/local/query_engine.cc.i
@@ -2275,7 +2275,7 @@ src/local/query_engine.i: src/local/query_engine.cc.i
 
 # target to preprocess a source file
 src/local/query_engine.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/query_engine.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/query_engine.cc.i
 .PHONY : src/local/query_engine.cc.i
 
 src/local/query_engine.s: src/local/query_engine.cc.s
@@ -2284,7 +2284,7 @@ src/local/query_engine.s: src/local/query_engine.cc.s
 
 # target to generate assembly for a file
 src/local/query_engine.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/query_engine.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/query_engine.cc.s
 .PHONY : src/local/query_engine.cc.s
 
 src/local/reference_set.o: src/local/reference_set.cc.o
@@ -2293,7 +2293,7 @@ src/local/reference_set.o: src/local/reference_set.cc.o
 
 # target to build an object file
 src/local/reference_set.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/reference_set.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/reference_set.cc.o
 .PHONY : src/local/reference_set.cc.o
 
 src/local/reference_set.i: src/local/reference_set.cc.i
@@ -2302,7 +2302,7 @@ src/local/reference_set.i: src/local/reference_set.cc.i
 
 # target to preprocess a source file
 src/local/reference_set.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/reference_set.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/reference_set.cc.i
 .PHONY : src/local/reference_set.cc.i
 
 src/local/reference_set.s: src/local/reference_set.cc.s
@@ -2311,7 +2311,7 @@ src/local/reference_set.s: src/local/reference_set.cc.s
 
 # target to generate assembly for a file
 src/local/reference_set.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/reference_set.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/reference_set.cc.s
 .PHONY : src/local/reference_set.cc.s
 
 src/local/target_data.o: src/local/target_data.cc.o
@@ -2320,7 +2320,7 @@ src/local/target_data.o: src/local/target_data.cc.o
 
 # target to build an object file
 src/local/target_data.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/target_data.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/target_data.cc.o
 .PHONY : src/local/target_data.cc.o
 
 src/local/target_data.i: src/local/target_data.cc.i
@@ -2329,7 +2329,7 @@ src/local/target_data.i: src/local/target_data.cc.i
 
 # target to preprocess a source file
 src/local/target_data.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/target_data.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/target_data.cc.i
 .PHONY : src/local/target_data.cc.i
 
 src/local/target_data.s: src/local/target_data.cc.s
@@ -2338,7 +2338,7 @@ src/local/target_data.s: src/local/target_data.cc.s
 
 # target to generate assembly for a file
 src/local/target_data.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/target_data.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/local/target_data.cc.s
 .PHONY : src/local/target_data.cc.s
 
 src/model/database_id.o: src/model/database_id.cc.o
@@ -2347,7 +2347,7 @@ src/model/database_id.o: src/model/database_id.cc.o
 
 # target to build an object file
 src/model/database_id.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/database_id.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/database_id.cc.o
 .PHONY : src/model/database_id.cc.o
 
 src/model/database_id.i: src/model/database_id.cc.i
@@ -2356,7 +2356,7 @@ src/model/database_id.i: src/model/database_id.cc.i
 
 # target to preprocess a source file
 src/model/database_id.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/database_id.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/database_id.cc.i
 .PHONY : src/model/database_id.cc.i
 
 src/model/database_id.s: src/model/database_id.cc.s
@@ -2365,7 +2365,7 @@ src/model/database_id.s: src/model/database_id.cc.s
 
 # target to generate assembly for a file
 src/model/database_id.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/database_id.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/database_id.cc.s
 .PHONY : src/model/database_id.cc.s
 
 src/model/delete_mutation.o: src/model/delete_mutation.cc.o
@@ -2374,7 +2374,7 @@ src/model/delete_mutation.o: src/model/delete_mutation.cc.o
 
 # target to build an object file
 src/model/delete_mutation.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/delete_mutation.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/delete_mutation.cc.o
 .PHONY : src/model/delete_mutation.cc.o
 
 src/model/delete_mutation.i: src/model/delete_mutation.cc.i
@@ -2383,7 +2383,7 @@ src/model/delete_mutation.i: src/model/delete_mutation.cc.i
 
 # target to preprocess a source file
 src/model/delete_mutation.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/delete_mutation.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/delete_mutation.cc.i
 .PHONY : src/model/delete_mutation.cc.i
 
 src/model/delete_mutation.s: src/model/delete_mutation.cc.s
@@ -2392,7 +2392,7 @@ src/model/delete_mutation.s: src/model/delete_mutation.cc.s
 
 # target to generate assembly for a file
 src/model/delete_mutation.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/delete_mutation.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/delete_mutation.cc.s
 .PHONY : src/model/delete_mutation.cc.s
 
 src/model/document.o: src/model/document.cc.o
@@ -2401,7 +2401,7 @@ src/model/document.o: src/model/document.cc.o
 
 # target to build an object file
 src/model/document.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document.cc.o
 .PHONY : src/model/document.cc.o
 
 src/model/document.i: src/model/document.cc.i
@@ -2410,7 +2410,7 @@ src/model/document.i: src/model/document.cc.i
 
 # target to preprocess a source file
 src/model/document.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document.cc.i
 .PHONY : src/model/document.cc.i
 
 src/model/document.s: src/model/document.cc.s
@@ -2419,7 +2419,7 @@ src/model/document.s: src/model/document.cc.s
 
 # target to generate assembly for a file
 src/model/document.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document.cc.s
 .PHONY : src/model/document.cc.s
 
 src/model/document_key.o: src/model/document_key.cc.o
@@ -2428,7 +2428,7 @@ src/model/document_key.o: src/model/document_key.cc.o
 
 # target to build an object file
 src/model/document_key.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_key.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_key.cc.o
 .PHONY : src/model/document_key.cc.o
 
 src/model/document_key.i: src/model/document_key.cc.i
@@ -2437,7 +2437,7 @@ src/model/document_key.i: src/model/document_key.cc.i
 
 # target to preprocess a source file
 src/model/document_key.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_key.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_key.cc.i
 .PHONY : src/model/document_key.cc.i
 
 src/model/document_key.s: src/model/document_key.cc.s
@@ -2446,7 +2446,7 @@ src/model/document_key.s: src/model/document_key.cc.s
 
 # target to generate assembly for a file
 src/model/document_key.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_key.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_key.cc.s
 .PHONY : src/model/document_key.cc.s
 
 src/model/document_map.o: src/model/document_map.cc.o
@@ -2455,7 +2455,7 @@ src/model/document_map.o: src/model/document_map.cc.o
 
 # target to build an object file
 src/model/document_map.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_map.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_map.cc.o
 .PHONY : src/model/document_map.cc.o
 
 src/model/document_map.i: src/model/document_map.cc.i
@@ -2464,7 +2464,7 @@ src/model/document_map.i: src/model/document_map.cc.i
 
 # target to preprocess a source file
 src/model/document_map.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_map.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_map.cc.i
 .PHONY : src/model/document_map.cc.i
 
 src/model/document_map.s: src/model/document_map.cc.s
@@ -2473,7 +2473,7 @@ src/model/document_map.s: src/model/document_map.cc.s
 
 # target to generate assembly for a file
 src/model/document_map.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_map.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_map.cc.s
 .PHONY : src/model/document_map.cc.s
 
 src/model/document_set.o: src/model/document_set.cc.o
@@ -2482,7 +2482,7 @@ src/model/document_set.o: src/model/document_set.cc.o
 
 # target to build an object file
 src/model/document_set.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_set.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_set.cc.o
 .PHONY : src/model/document_set.cc.o
 
 src/model/document_set.i: src/model/document_set.cc.i
@@ -2491,7 +2491,7 @@ src/model/document_set.i: src/model/document_set.cc.i
 
 # target to preprocess a source file
 src/model/document_set.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_set.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_set.cc.i
 .PHONY : src/model/document_set.cc.i
 
 src/model/document_set.s: src/model/document_set.cc.s
@@ -2500,7 +2500,7 @@ src/model/document_set.s: src/model/document_set.cc.s
 
 # target to generate assembly for a file
 src/model/document_set.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_set.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/document_set.cc.s
 .PHONY : src/model/document_set.cc.s
 
 src/model/field_mask.o: src/model/field_mask.cc.o
@@ -2509,7 +2509,7 @@ src/model/field_mask.o: src/model/field_mask.cc.o
 
 # target to build an object file
 src/model/field_mask.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_mask.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_mask.cc.o
 .PHONY : src/model/field_mask.cc.o
 
 src/model/field_mask.i: src/model/field_mask.cc.i
@@ -2518,7 +2518,7 @@ src/model/field_mask.i: src/model/field_mask.cc.i
 
 # target to preprocess a source file
 src/model/field_mask.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_mask.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_mask.cc.i
 .PHONY : src/model/field_mask.cc.i
 
 src/model/field_mask.s: src/model/field_mask.cc.s
@@ -2527,7 +2527,7 @@ src/model/field_mask.s: src/model/field_mask.cc.s
 
 # target to generate assembly for a file
 src/model/field_mask.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_mask.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_mask.cc.s
 .PHONY : src/model/field_mask.cc.s
 
 src/model/field_path.o: src/model/field_path.cc.o
@@ -2536,7 +2536,7 @@ src/model/field_path.o: src/model/field_path.cc.o
 
 # target to build an object file
 src/model/field_path.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_path.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_path.cc.o
 .PHONY : src/model/field_path.cc.o
 
 src/model/field_path.i: src/model/field_path.cc.i
@@ -2545,7 +2545,7 @@ src/model/field_path.i: src/model/field_path.cc.i
 
 # target to preprocess a source file
 src/model/field_path.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_path.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_path.cc.i
 .PHONY : src/model/field_path.cc.i
 
 src/model/field_path.s: src/model/field_path.cc.s
@@ -2554,7 +2554,7 @@ src/model/field_path.s: src/model/field_path.cc.s
 
 # target to generate assembly for a file
 src/model/field_path.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_path.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_path.cc.s
 .PHONY : src/model/field_path.cc.s
 
 src/model/field_transform.o: src/model/field_transform.cc.o
@@ -2563,7 +2563,7 @@ src/model/field_transform.o: src/model/field_transform.cc.o
 
 # target to build an object file
 src/model/field_transform.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_transform.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_transform.cc.o
 .PHONY : src/model/field_transform.cc.o
 
 src/model/field_transform.i: src/model/field_transform.cc.i
@@ -2572,7 +2572,7 @@ src/model/field_transform.i: src/model/field_transform.cc.i
 
 # target to preprocess a source file
 src/model/field_transform.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_transform.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_transform.cc.i
 .PHONY : src/model/field_transform.cc.i
 
 src/model/field_transform.s: src/model/field_transform.cc.s
@@ -2581,7 +2581,7 @@ src/model/field_transform.s: src/model/field_transform.cc.s
 
 # target to generate assembly for a file
 src/model/field_transform.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_transform.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_transform.cc.s
 .PHONY : src/model/field_transform.cc.s
 
 src/model/field_value.o: src/model/field_value.cc.o
@@ -2590,7 +2590,7 @@ src/model/field_value.o: src/model/field_value.cc.o
 
 # target to build an object file
 src/model/field_value.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_value.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_value.cc.o
 .PHONY : src/model/field_value.cc.o
 
 src/model/field_value.i: src/model/field_value.cc.i
@@ -2599,7 +2599,7 @@ src/model/field_value.i: src/model/field_value.cc.i
 
 # target to preprocess a source file
 src/model/field_value.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_value.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_value.cc.i
 .PHONY : src/model/field_value.cc.i
 
 src/model/field_value.s: src/model/field_value.cc.s
@@ -2608,7 +2608,7 @@ src/model/field_value.s: src/model/field_value.cc.s
 
 # target to generate assembly for a file
 src/model/field_value.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_value.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/field_value.cc.s
 .PHONY : src/model/field_value.cc.s
 
 src/model/maybe_document.o: src/model/maybe_document.cc.o
@@ -2617,7 +2617,7 @@ src/model/maybe_document.o: src/model/maybe_document.cc.o
 
 # target to build an object file
 src/model/maybe_document.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/maybe_document.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/maybe_document.cc.o
 .PHONY : src/model/maybe_document.cc.o
 
 src/model/maybe_document.i: src/model/maybe_document.cc.i
@@ -2626,7 +2626,7 @@ src/model/maybe_document.i: src/model/maybe_document.cc.i
 
 # target to preprocess a source file
 src/model/maybe_document.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/maybe_document.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/maybe_document.cc.i
 .PHONY : src/model/maybe_document.cc.i
 
 src/model/maybe_document.s: src/model/maybe_document.cc.s
@@ -2635,7 +2635,7 @@ src/model/maybe_document.s: src/model/maybe_document.cc.s
 
 # target to generate assembly for a file
 src/model/maybe_document.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/maybe_document.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/maybe_document.cc.s
 .PHONY : src/model/maybe_document.cc.s
 
 src/model/mutation.o: src/model/mutation.cc.o
@@ -2644,7 +2644,7 @@ src/model/mutation.o: src/model/mutation.cc.o
 
 # target to build an object file
 src/model/mutation.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation.cc.o
 .PHONY : src/model/mutation.cc.o
 
 src/model/mutation.i: src/model/mutation.cc.i
@@ -2653,7 +2653,7 @@ src/model/mutation.i: src/model/mutation.cc.i
 
 # target to preprocess a source file
 src/model/mutation.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation.cc.i
 .PHONY : src/model/mutation.cc.i
 
 src/model/mutation.s: src/model/mutation.cc.s
@@ -2662,7 +2662,7 @@ src/model/mutation.s: src/model/mutation.cc.s
 
 # target to generate assembly for a file
 src/model/mutation.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation.cc.s
 .PHONY : src/model/mutation.cc.s
 
 src/model/mutation_batch.o: src/model/mutation_batch.cc.o
@@ -2671,7 +2671,7 @@ src/model/mutation_batch.o: src/model/mutation_batch.cc.o
 
 # target to build an object file
 src/model/mutation_batch.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch.cc.o
 .PHONY : src/model/mutation_batch.cc.o
 
 src/model/mutation_batch.i: src/model/mutation_batch.cc.i
@@ -2680,7 +2680,7 @@ src/model/mutation_batch.i: src/model/mutation_batch.cc.i
 
 # target to preprocess a source file
 src/model/mutation_batch.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch.cc.i
 .PHONY : src/model/mutation_batch.cc.i
 
 src/model/mutation_batch.s: src/model/mutation_batch.cc.s
@@ -2689,7 +2689,7 @@ src/model/mutation_batch.s: src/model/mutation_batch.cc.s
 
 # target to generate assembly for a file
 src/model/mutation_batch.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch.cc.s
 .PHONY : src/model/mutation_batch.cc.s
 
 src/model/mutation_batch_result.o: src/model/mutation_batch_result.cc.o
@@ -2698,7 +2698,7 @@ src/model/mutation_batch_result.o: src/model/mutation_batch_result.cc.o
 
 # target to build an object file
 src/model/mutation_batch_result.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch_result.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch_result.cc.o
 .PHONY : src/model/mutation_batch_result.cc.o
 
 src/model/mutation_batch_result.i: src/model/mutation_batch_result.cc.i
@@ -2707,7 +2707,7 @@ src/model/mutation_batch_result.i: src/model/mutation_batch_result.cc.i
 
 # target to preprocess a source file
 src/model/mutation_batch_result.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch_result.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch_result.cc.i
 .PHONY : src/model/mutation_batch_result.cc.i
 
 src/model/mutation_batch_result.s: src/model/mutation_batch_result.cc.s
@@ -2716,7 +2716,7 @@ src/model/mutation_batch_result.s: src/model/mutation_batch_result.cc.s
 
 # target to generate assembly for a file
 src/model/mutation_batch_result.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch_result.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/mutation_batch_result.cc.s
 .PHONY : src/model/mutation_batch_result.cc.s
 
 src/model/no_document.o: src/model/no_document.cc.o
@@ -2725,7 +2725,7 @@ src/model/no_document.o: src/model/no_document.cc.o
 
 # target to build an object file
 src/model/no_document.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/no_document.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/no_document.cc.o
 .PHONY : src/model/no_document.cc.o
 
 src/model/no_document.i: src/model/no_document.cc.i
@@ -2734,7 +2734,7 @@ src/model/no_document.i: src/model/no_document.cc.i
 
 # target to preprocess a source file
 src/model/no_document.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/no_document.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/no_document.cc.i
 .PHONY : src/model/no_document.cc.i
 
 src/model/no_document.s: src/model/no_document.cc.s
@@ -2743,7 +2743,7 @@ src/model/no_document.s: src/model/no_document.cc.s
 
 # target to generate assembly for a file
 src/model/no_document.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/no_document.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/no_document.cc.s
 .PHONY : src/model/no_document.cc.s
 
 src/model/patch_mutation.o: src/model/patch_mutation.cc.o
@@ -2752,7 +2752,7 @@ src/model/patch_mutation.o: src/model/patch_mutation.cc.o
 
 # target to build an object file
 src/model/patch_mutation.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/patch_mutation.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/patch_mutation.cc.o
 .PHONY : src/model/patch_mutation.cc.o
 
 src/model/patch_mutation.i: src/model/patch_mutation.cc.i
@@ -2761,7 +2761,7 @@ src/model/patch_mutation.i: src/model/patch_mutation.cc.i
 
 # target to preprocess a source file
 src/model/patch_mutation.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/patch_mutation.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/patch_mutation.cc.i
 .PHONY : src/model/patch_mutation.cc.i
 
 src/model/patch_mutation.s: src/model/patch_mutation.cc.s
@@ -2770,7 +2770,7 @@ src/model/patch_mutation.s: src/model/patch_mutation.cc.s
 
 # target to generate assembly for a file
 src/model/patch_mutation.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/patch_mutation.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/patch_mutation.cc.s
 .PHONY : src/model/patch_mutation.cc.s
 
 src/model/precondition.o: src/model/precondition.cc.o
@@ -2779,7 +2779,7 @@ src/model/precondition.o: src/model/precondition.cc.o
 
 # target to build an object file
 src/model/precondition.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/precondition.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/precondition.cc.o
 .PHONY : src/model/precondition.cc.o
 
 src/model/precondition.i: src/model/precondition.cc.i
@@ -2788,7 +2788,7 @@ src/model/precondition.i: src/model/precondition.cc.i
 
 # target to preprocess a source file
 src/model/precondition.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/precondition.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/precondition.cc.i
 .PHONY : src/model/precondition.cc.i
 
 src/model/precondition.s: src/model/precondition.cc.s
@@ -2797,7 +2797,7 @@ src/model/precondition.s: src/model/precondition.cc.s
 
 # target to generate assembly for a file
 src/model/precondition.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/precondition.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/precondition.cc.s
 .PHONY : src/model/precondition.cc.s
 
 src/model/resource_path.o: src/model/resource_path.cc.o
@@ -2806,7 +2806,7 @@ src/model/resource_path.o: src/model/resource_path.cc.o
 
 # target to build an object file
 src/model/resource_path.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/resource_path.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/resource_path.cc.o
 .PHONY : src/model/resource_path.cc.o
 
 src/model/resource_path.i: src/model/resource_path.cc.i
@@ -2815,7 +2815,7 @@ src/model/resource_path.i: src/model/resource_path.cc.i
 
 # target to preprocess a source file
 src/model/resource_path.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/resource_path.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/resource_path.cc.i
 .PHONY : src/model/resource_path.cc.i
 
 src/model/resource_path.s: src/model/resource_path.cc.s
@@ -2824,7 +2824,7 @@ src/model/resource_path.s: src/model/resource_path.cc.s
 
 # target to generate assembly for a file
 src/model/resource_path.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/resource_path.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/resource_path.cc.s
 .PHONY : src/model/resource_path.cc.s
 
 src/model/set_mutation.o: src/model/set_mutation.cc.o
@@ -2833,7 +2833,7 @@ src/model/set_mutation.o: src/model/set_mutation.cc.o
 
 # target to build an object file
 src/model/set_mutation.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/set_mutation.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/set_mutation.cc.o
 .PHONY : src/model/set_mutation.cc.o
 
 src/model/set_mutation.i: src/model/set_mutation.cc.i
@@ -2842,7 +2842,7 @@ src/model/set_mutation.i: src/model/set_mutation.cc.i
 
 # target to preprocess a source file
 src/model/set_mutation.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/set_mutation.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/set_mutation.cc.i
 .PHONY : src/model/set_mutation.cc.i
 
 src/model/set_mutation.s: src/model/set_mutation.cc.s
@@ -2851,7 +2851,7 @@ src/model/set_mutation.s: src/model/set_mutation.cc.s
 
 # target to generate assembly for a file
 src/model/set_mutation.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/set_mutation.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/set_mutation.cc.s
 .PHONY : src/model/set_mutation.cc.s
 
 src/model/snapshot_version.o: src/model/snapshot_version.cc.o
@@ -2860,7 +2860,7 @@ src/model/snapshot_version.o: src/model/snapshot_version.cc.o
 
 # target to build an object file
 src/model/snapshot_version.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/snapshot_version.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/snapshot_version.cc.o
 .PHONY : src/model/snapshot_version.cc.o
 
 src/model/snapshot_version.i: src/model/snapshot_version.cc.i
@@ -2869,7 +2869,7 @@ src/model/snapshot_version.i: src/model/snapshot_version.cc.i
 
 # target to preprocess a source file
 src/model/snapshot_version.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/snapshot_version.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/snapshot_version.cc.i
 .PHONY : src/model/snapshot_version.cc.i
 
 src/model/snapshot_version.s: src/model/snapshot_version.cc.s
@@ -2878,7 +2878,7 @@ src/model/snapshot_version.s: src/model/snapshot_version.cc.s
 
 # target to generate assembly for a file
 src/model/snapshot_version.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/snapshot_version.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/snapshot_version.cc.s
 .PHONY : src/model/snapshot_version.cc.s
 
 src/model/transform_operation.o: src/model/transform_operation.cc.o
@@ -2887,7 +2887,7 @@ src/model/transform_operation.o: src/model/transform_operation.cc.o
 
 # target to build an object file
 src/model/transform_operation.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/transform_operation.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/transform_operation.cc.o
 .PHONY : src/model/transform_operation.cc.o
 
 src/model/transform_operation.i: src/model/transform_operation.cc.i
@@ -2896,7 +2896,7 @@ src/model/transform_operation.i: src/model/transform_operation.cc.i
 
 # target to preprocess a source file
 src/model/transform_operation.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/transform_operation.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/transform_operation.cc.i
 .PHONY : src/model/transform_operation.cc.i
 
 src/model/transform_operation.s: src/model/transform_operation.cc.s
@@ -2905,7 +2905,7 @@ src/model/transform_operation.s: src/model/transform_operation.cc.s
 
 # target to generate assembly for a file
 src/model/transform_operation.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/transform_operation.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/transform_operation.cc.s
 .PHONY : src/model/transform_operation.cc.s
 
 src/model/unknown_document.o: src/model/unknown_document.cc.o
@@ -2914,7 +2914,7 @@ src/model/unknown_document.o: src/model/unknown_document.cc.o
 
 # target to build an object file
 src/model/unknown_document.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/unknown_document.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/unknown_document.cc.o
 .PHONY : src/model/unknown_document.cc.o
 
 src/model/unknown_document.i: src/model/unknown_document.cc.i
@@ -2923,7 +2923,7 @@ src/model/unknown_document.i: src/model/unknown_document.cc.i
 
 # target to preprocess a source file
 src/model/unknown_document.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/unknown_document.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/unknown_document.cc.i
 .PHONY : src/model/unknown_document.cc.i
 
 src/model/unknown_document.s: src/model/unknown_document.cc.s
@@ -2932,7 +2932,7 @@ src/model/unknown_document.s: src/model/unknown_document.cc.s
 
 # target to generate assembly for a file
 src/model/unknown_document.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/unknown_document.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/unknown_document.cc.s
 .PHONY : src/model/unknown_document.cc.s
 
 src/model/verify_mutation.o: src/model/verify_mutation.cc.o
@@ -2941,7 +2941,7 @@ src/model/verify_mutation.o: src/model/verify_mutation.cc.o
 
 # target to build an object file
 src/model/verify_mutation.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/verify_mutation.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/verify_mutation.cc.o
 .PHONY : src/model/verify_mutation.cc.o
 
 src/model/verify_mutation.i: src/model/verify_mutation.cc.i
@@ -2950,7 +2950,7 @@ src/model/verify_mutation.i: src/model/verify_mutation.cc.i
 
 # target to preprocess a source file
 src/model/verify_mutation.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/verify_mutation.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/verify_mutation.cc.i
 .PHONY : src/model/verify_mutation.cc.i
 
 src/model/verify_mutation.s: src/model/verify_mutation.cc.s
@@ -2959,7 +2959,7 @@ src/model/verify_mutation.s: src/model/verify_mutation.cc.s
 
 # target to generate assembly for a file
 src/model/verify_mutation.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/verify_mutation.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/model/verify_mutation.cc.s
 .PHONY : src/model/verify_mutation.cc.s
 
 src/nanopb/byte_string.o: src/nanopb/byte_string.cc.o
@@ -2968,7 +2968,7 @@ src/nanopb/byte_string.o: src/nanopb/byte_string.cc.o
 
 # target to build an object file
 src/nanopb/byte_string.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/byte_string.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/byte_string.cc.o
 .PHONY : src/nanopb/byte_string.cc.o
 
 src/nanopb/byte_string.i: src/nanopb/byte_string.cc.i
@@ -2977,7 +2977,7 @@ src/nanopb/byte_string.i: src/nanopb/byte_string.cc.i
 
 # target to preprocess a source file
 src/nanopb/byte_string.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/byte_string.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/byte_string.cc.i
 .PHONY : src/nanopb/byte_string.cc.i
 
 src/nanopb/byte_string.s: src/nanopb/byte_string.cc.s
@@ -2986,7 +2986,7 @@ src/nanopb/byte_string.s: src/nanopb/byte_string.cc.s
 
 # target to generate assembly for a file
 src/nanopb/byte_string.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/byte_string.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/byte_string.cc.s
 .PHONY : src/nanopb/byte_string.cc.s
 
 src/nanopb/message.o: src/nanopb/message.cc.o
@@ -2995,7 +2995,7 @@ src/nanopb/message.o: src/nanopb/message.cc.o
 
 # target to build an object file
 src/nanopb/message.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/message.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/message.cc.o
 .PHONY : src/nanopb/message.cc.o
 
 src/nanopb/message.i: src/nanopb/message.cc.i
@@ -3004,7 +3004,7 @@ src/nanopb/message.i: src/nanopb/message.cc.i
 
 # target to preprocess a source file
 src/nanopb/message.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/message.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/message.cc.i
 .PHONY : src/nanopb/message.cc.i
 
 src/nanopb/message.s: src/nanopb/message.cc.s
@@ -3013,7 +3013,7 @@ src/nanopb/message.s: src/nanopb/message.cc.s
 
 # target to generate assembly for a file
 src/nanopb/message.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/message.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/message.cc.s
 .PHONY : src/nanopb/message.cc.s
 
 src/nanopb/nanopb_util.o: src/nanopb/nanopb_util.cc.o
@@ -3022,7 +3022,7 @@ src/nanopb/nanopb_util.o: src/nanopb/nanopb_util.cc.o
 
 # target to build an object file
 src/nanopb/nanopb_util.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/nanopb_util.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/nanopb_util.cc.o
 .PHONY : src/nanopb/nanopb_util.cc.o
 
 src/nanopb/nanopb_util.i: src/nanopb/nanopb_util.cc.i
@@ -3031,7 +3031,7 @@ src/nanopb/nanopb_util.i: src/nanopb/nanopb_util.cc.i
 
 # target to preprocess a source file
 src/nanopb/nanopb_util.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/nanopb_util.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/nanopb_util.cc.i
 .PHONY : src/nanopb/nanopb_util.cc.i
 
 src/nanopb/nanopb_util.s: src/nanopb/nanopb_util.cc.s
@@ -3040,7 +3040,7 @@ src/nanopb/nanopb_util.s: src/nanopb/nanopb_util.cc.s
 
 # target to generate assembly for a file
 src/nanopb/nanopb_util.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/nanopb_util.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/nanopb_util.cc.s
 .PHONY : src/nanopb/nanopb_util.cc.s
 
 src/nanopb/pretty_printing.o: src/nanopb/pretty_printing.cc.o
@@ -3049,7 +3049,7 @@ src/nanopb/pretty_printing.o: src/nanopb/pretty_printing.cc.o
 
 # target to build an object file
 src/nanopb/pretty_printing.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/pretty_printing.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/pretty_printing.cc.o
 .PHONY : src/nanopb/pretty_printing.cc.o
 
 src/nanopb/pretty_printing.i: src/nanopb/pretty_printing.cc.i
@@ -3058,7 +3058,7 @@ src/nanopb/pretty_printing.i: src/nanopb/pretty_printing.cc.i
 
 # target to preprocess a source file
 src/nanopb/pretty_printing.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/pretty_printing.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/pretty_printing.cc.i
 .PHONY : src/nanopb/pretty_printing.cc.i
 
 src/nanopb/pretty_printing.s: src/nanopb/pretty_printing.cc.s
@@ -3067,7 +3067,7 @@ src/nanopb/pretty_printing.s: src/nanopb/pretty_printing.cc.s
 
 # target to generate assembly for a file
 src/nanopb/pretty_printing.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/pretty_printing.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_nanopb.dir/src/nanopb/pretty_printing.cc.s
 .PHONY : src/nanopb/pretty_printing.cc.s
 
 src/nanopb/reader.o: src/nanopb/reader.cc.o
@@ -3076,7 +3076,7 @@ src/nanopb/reader.o: src/nanopb/reader.cc.o
 
 # target to build an object file
 src/nanopb/reader.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/reader.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/reader.cc.o
 .PHONY : src/nanopb/reader.cc.o
 
 src/nanopb/reader.i: src/nanopb/reader.cc.i
@@ -3085,7 +3085,7 @@ src/nanopb/reader.i: src/nanopb/reader.cc.i
 
 # target to preprocess a source file
 src/nanopb/reader.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/reader.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/reader.cc.i
 .PHONY : src/nanopb/reader.cc.i
 
 src/nanopb/reader.s: src/nanopb/reader.cc.s
@@ -3094,7 +3094,7 @@ src/nanopb/reader.s: src/nanopb/reader.cc.s
 
 # target to generate assembly for a file
 src/nanopb/reader.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/reader.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/reader.cc.s
 .PHONY : src/nanopb/reader.cc.s
 
 src/nanopb/writer.o: src/nanopb/writer.cc.o
@@ -3103,7 +3103,7 @@ src/nanopb/writer.o: src/nanopb/writer.cc.o
 
 # target to build an object file
 src/nanopb/writer.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/writer.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/writer.cc.o
 .PHONY : src/nanopb/writer.cc.o
 
 src/nanopb/writer.i: src/nanopb/writer.cc.i
@@ -3112,7 +3112,7 @@ src/nanopb/writer.i: src/nanopb/writer.cc.i
 
 # target to preprocess a source file
 src/nanopb/writer.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/writer.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/writer.cc.i
 .PHONY : src/nanopb/writer.cc.i
 
 src/nanopb/writer.s: src/nanopb/writer.cc.s
@@ -3121,7 +3121,7 @@ src/nanopb/writer.s: src/nanopb/writer.cc.s
 
 # target to generate assembly for a file
 src/nanopb/writer.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/writer.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/nanopb/writer.cc.s
 .PHONY : src/nanopb/writer.cc.s
 
 src/remote/connectivity_monitor.o: src/remote/connectivity_monitor.cc.o
@@ -3130,7 +3130,7 @@ src/remote/connectivity_monitor.o: src/remote/connectivity_monitor.cc.o
 
 # target to build an object file
 src/remote/connectivity_monitor.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor.cc.o
 .PHONY : src/remote/connectivity_monitor.cc.o
 
 src/remote/connectivity_monitor.i: src/remote/connectivity_monitor.cc.i
@@ -3139,7 +3139,7 @@ src/remote/connectivity_monitor.i: src/remote/connectivity_monitor.cc.i
 
 # target to preprocess a source file
 src/remote/connectivity_monitor.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor.cc.i
 .PHONY : src/remote/connectivity_monitor.cc.i
 
 src/remote/connectivity_monitor.s: src/remote/connectivity_monitor.cc.s
@@ -3148,7 +3148,7 @@ src/remote/connectivity_monitor.s: src/remote/connectivity_monitor.cc.s
 
 # target to generate assembly for a file
 src/remote/connectivity_monitor.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor.cc.s
 .PHONY : src/remote/connectivity_monitor.cc.s
 
 src/remote/connectivity_monitor_noop.o: src/remote/connectivity_monitor_noop.cc.o
@@ -3157,7 +3157,7 @@ src/remote/connectivity_monitor_noop.o: src/remote/connectivity_monitor_noop.cc.
 
 # target to build an object file
 src/remote/connectivity_monitor_noop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor_noop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor_noop.cc.o
 .PHONY : src/remote/connectivity_monitor_noop.cc.o
 
 src/remote/connectivity_monitor_noop.i: src/remote/connectivity_monitor_noop.cc.i
@@ -3166,7 +3166,7 @@ src/remote/connectivity_monitor_noop.i: src/remote/connectivity_monitor_noop.cc.
 
 # target to preprocess a source file
 src/remote/connectivity_monitor_noop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor_noop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor_noop.cc.i
 .PHONY : src/remote/connectivity_monitor_noop.cc.i
 
 src/remote/connectivity_monitor_noop.s: src/remote/connectivity_monitor_noop.cc.s
@@ -3175,7 +3175,7 @@ src/remote/connectivity_monitor_noop.s: src/remote/connectivity_monitor_noop.cc.
 
 # target to generate assembly for a file
 src/remote/connectivity_monitor_noop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor_noop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/connectivity_monitor_noop.cc.s
 .PHONY : src/remote/connectivity_monitor_noop.cc.s
 
 src/remote/datastore.o: src/remote/datastore.cc.o
@@ -3184,7 +3184,7 @@ src/remote/datastore.o: src/remote/datastore.cc.o
 
 # target to build an object file
 src/remote/datastore.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/datastore.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/datastore.cc.o
 .PHONY : src/remote/datastore.cc.o
 
 src/remote/datastore.i: src/remote/datastore.cc.i
@@ -3193,7 +3193,7 @@ src/remote/datastore.i: src/remote/datastore.cc.i
 
 # target to preprocess a source file
 src/remote/datastore.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/datastore.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/datastore.cc.i
 .PHONY : src/remote/datastore.cc.i
 
 src/remote/datastore.s: src/remote/datastore.cc.s
@@ -3202,7 +3202,7 @@ src/remote/datastore.s: src/remote/datastore.cc.s
 
 # target to generate assembly for a file
 src/remote/datastore.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/datastore.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/datastore.cc.s
 .PHONY : src/remote/datastore.cc.s
 
 src/remote/exponential_backoff.o: src/remote/exponential_backoff.cc.o
@@ -3211,7 +3211,7 @@ src/remote/exponential_backoff.o: src/remote/exponential_backoff.cc.o
 
 # target to build an object file
 src/remote/exponential_backoff.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/exponential_backoff.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/exponential_backoff.cc.o
 .PHONY : src/remote/exponential_backoff.cc.o
 
 src/remote/exponential_backoff.i: src/remote/exponential_backoff.cc.i
@@ -3220,7 +3220,7 @@ src/remote/exponential_backoff.i: src/remote/exponential_backoff.cc.i
 
 # target to preprocess a source file
 src/remote/exponential_backoff.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/exponential_backoff.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/exponential_backoff.cc.i
 .PHONY : src/remote/exponential_backoff.cc.i
 
 src/remote/exponential_backoff.s: src/remote/exponential_backoff.cc.s
@@ -3229,7 +3229,7 @@ src/remote/exponential_backoff.s: src/remote/exponential_backoff.cc.s
 
 # target to generate assembly for a file
 src/remote/exponential_backoff.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/exponential_backoff.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/exponential_backoff.cc.s
 .PHONY : src/remote/exponential_backoff.cc.s
 
 src/remote/firebase_metadata_provider.o: src/remote/firebase_metadata_provider.cc.o
@@ -3238,7 +3238,7 @@ src/remote/firebase_metadata_provider.o: src/remote/firebase_metadata_provider.c
 
 # target to build an object file
 src/remote/firebase_metadata_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider.cc.o
 .PHONY : src/remote/firebase_metadata_provider.cc.o
 
 src/remote/firebase_metadata_provider.i: src/remote/firebase_metadata_provider.cc.i
@@ -3247,7 +3247,7 @@ src/remote/firebase_metadata_provider.i: src/remote/firebase_metadata_provider.c
 
 # target to preprocess a source file
 src/remote/firebase_metadata_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider.cc.i
 .PHONY : src/remote/firebase_metadata_provider.cc.i
 
 src/remote/firebase_metadata_provider.s: src/remote/firebase_metadata_provider.cc.s
@@ -3256,7 +3256,7 @@ src/remote/firebase_metadata_provider.s: src/remote/firebase_metadata_provider.c
 
 # target to generate assembly for a file
 src/remote/firebase_metadata_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider.cc.s
 .PHONY : src/remote/firebase_metadata_provider.cc.s
 
 src/remote/firebase_metadata_provider_noop.o: src/remote/firebase_metadata_provider_noop.cc.o
@@ -3265,7 +3265,7 @@ src/remote/firebase_metadata_provider_noop.o: src/remote/firebase_metadata_provi
 
 # target to build an object file
 src/remote/firebase_metadata_provider_noop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider_noop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider_noop.cc.o
 .PHONY : src/remote/firebase_metadata_provider_noop.cc.o
 
 src/remote/firebase_metadata_provider_noop.i: src/remote/firebase_metadata_provider_noop.cc.i
@@ -3274,7 +3274,7 @@ src/remote/firebase_metadata_provider_noop.i: src/remote/firebase_metadata_provi
 
 # target to preprocess a source file
 src/remote/firebase_metadata_provider_noop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider_noop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider_noop.cc.i
 .PHONY : src/remote/firebase_metadata_provider_noop.cc.i
 
 src/remote/firebase_metadata_provider_noop.s: src/remote/firebase_metadata_provider_noop.cc.s
@@ -3283,7 +3283,7 @@ src/remote/firebase_metadata_provider_noop.s: src/remote/firebase_metadata_provi
 
 # target to generate assembly for a file
 src/remote/firebase_metadata_provider_noop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider_noop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/firebase_metadata_provider_noop.cc.s
 .PHONY : src/remote/firebase_metadata_provider_noop.cc.s
 
 src/remote/grpc_completion.o: src/remote/grpc_completion.cc.o
@@ -3292,7 +3292,7 @@ src/remote/grpc_completion.o: src/remote/grpc_completion.cc.o
 
 # target to build an object file
 src/remote/grpc_completion.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_completion.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_completion.cc.o
 .PHONY : src/remote/grpc_completion.cc.o
 
 src/remote/grpc_completion.i: src/remote/grpc_completion.cc.i
@@ -3301,7 +3301,7 @@ src/remote/grpc_completion.i: src/remote/grpc_completion.cc.i
 
 # target to preprocess a source file
 src/remote/grpc_completion.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_completion.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_completion.cc.i
 .PHONY : src/remote/grpc_completion.cc.i
 
 src/remote/grpc_completion.s: src/remote/grpc_completion.cc.s
@@ -3310,7 +3310,7 @@ src/remote/grpc_completion.s: src/remote/grpc_completion.cc.s
 
 # target to generate assembly for a file
 src/remote/grpc_completion.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_completion.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_completion.cc.s
 .PHONY : src/remote/grpc_completion.cc.s
 
 src/remote/grpc_connection.o: src/remote/grpc_connection.cc.o
@@ -3319,7 +3319,7 @@ src/remote/grpc_connection.o: src/remote/grpc_connection.cc.o
 
 # target to build an object file
 src/remote/grpc_connection.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_connection.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_connection.cc.o
 .PHONY : src/remote/grpc_connection.cc.o
 
 src/remote/grpc_connection.i: src/remote/grpc_connection.cc.i
@@ -3328,7 +3328,7 @@ src/remote/grpc_connection.i: src/remote/grpc_connection.cc.i
 
 # target to preprocess a source file
 src/remote/grpc_connection.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_connection.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_connection.cc.i
 .PHONY : src/remote/grpc_connection.cc.i
 
 src/remote/grpc_connection.s: src/remote/grpc_connection.cc.s
@@ -3337,7 +3337,7 @@ src/remote/grpc_connection.s: src/remote/grpc_connection.cc.s
 
 # target to generate assembly for a file
 src/remote/grpc_connection.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_connection.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_connection.cc.s
 .PHONY : src/remote/grpc_connection.cc.s
 
 src/remote/grpc_nanopb.o: src/remote/grpc_nanopb.cc.o
@@ -3346,7 +3346,7 @@ src/remote/grpc_nanopb.o: src/remote/grpc_nanopb.cc.o
 
 # target to build an object file
 src/remote/grpc_nanopb.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_nanopb.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_nanopb.cc.o
 .PHONY : src/remote/grpc_nanopb.cc.o
 
 src/remote/grpc_nanopb.i: src/remote/grpc_nanopb.cc.i
@@ -3355,7 +3355,7 @@ src/remote/grpc_nanopb.i: src/remote/grpc_nanopb.cc.i
 
 # target to preprocess a source file
 src/remote/grpc_nanopb.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_nanopb.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_nanopb.cc.i
 .PHONY : src/remote/grpc_nanopb.cc.i
 
 src/remote/grpc_nanopb.s: src/remote/grpc_nanopb.cc.s
@@ -3364,7 +3364,7 @@ src/remote/grpc_nanopb.s: src/remote/grpc_nanopb.cc.s
 
 # target to generate assembly for a file
 src/remote/grpc_nanopb.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_nanopb.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_nanopb.cc.s
 .PHONY : src/remote/grpc_nanopb.cc.s
 
 src/remote/grpc_root_certificate_finder_generated.o: src/remote/grpc_root_certificate_finder_generated.cc.o
@@ -3373,7 +3373,7 @@ src/remote/grpc_root_certificate_finder_generated.o: src/remote/grpc_root_certif
 
 # target to build an object file
 src/remote/grpc_root_certificate_finder_generated.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.o
 .PHONY : src/remote/grpc_root_certificate_finder_generated.cc.o
 
 src/remote/grpc_root_certificate_finder_generated.i: src/remote/grpc_root_certificate_finder_generated.cc.i
@@ -3382,7 +3382,7 @@ src/remote/grpc_root_certificate_finder_generated.i: src/remote/grpc_root_certif
 
 # target to preprocess a source file
 src/remote/grpc_root_certificate_finder_generated.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.i
 .PHONY : src/remote/grpc_root_certificate_finder_generated.cc.i
 
 src/remote/grpc_root_certificate_finder_generated.s: src/remote/grpc_root_certificate_finder_generated.cc.s
@@ -3391,8 +3391,35 @@ src/remote/grpc_root_certificate_finder_generated.s: src/remote/grpc_root_certif
 
 # target to generate assembly for a file
 src/remote/grpc_root_certificate_finder_generated.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificate_finder_generated.cc.s
 .PHONY : src/remote/grpc_root_certificate_finder_generated.cc.s
+
+src/remote/grpc_root_certificates_generated.o: src/remote/grpc_root_certificates_generated.cc.o
+
+.PHONY : src/remote/grpc_root_certificates_generated.o
+
+# target to build an object file
+src/remote/grpc_root_certificates_generated.cc.o:
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificates_generated.cc.o
+.PHONY : src/remote/grpc_root_certificates_generated.cc.o
+
+src/remote/grpc_root_certificates_generated.i: src/remote/grpc_root_certificates_generated.cc.i
+
+.PHONY : src/remote/grpc_root_certificates_generated.i
+
+# target to preprocess a source file
+src/remote/grpc_root_certificates_generated.cc.i:
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificates_generated.cc.i
+.PHONY : src/remote/grpc_root_certificates_generated.cc.i
+
+src/remote/grpc_root_certificates_generated.s: src/remote/grpc_root_certificates_generated.cc.s
+
+.PHONY : src/remote/grpc_root_certificates_generated.s
+
+# target to generate assembly for a file
+src/remote/grpc_root_certificates_generated.cc.s:
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_root_certificates_generated.cc.s
+.PHONY : src/remote/grpc_root_certificates_generated.cc.s
 
 src/remote/grpc_stream.o: src/remote/grpc_stream.cc.o
 
@@ -3400,7 +3427,7 @@ src/remote/grpc_stream.o: src/remote/grpc_stream.cc.o
 
 # target to build an object file
 src/remote/grpc_stream.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_stream.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_stream.cc.o
 .PHONY : src/remote/grpc_stream.cc.o
 
 src/remote/grpc_stream.i: src/remote/grpc_stream.cc.i
@@ -3409,7 +3436,7 @@ src/remote/grpc_stream.i: src/remote/grpc_stream.cc.i
 
 # target to preprocess a source file
 src/remote/grpc_stream.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_stream.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_stream.cc.i
 .PHONY : src/remote/grpc_stream.cc.i
 
 src/remote/grpc_stream.s: src/remote/grpc_stream.cc.s
@@ -3418,7 +3445,7 @@ src/remote/grpc_stream.s: src/remote/grpc_stream.cc.s
 
 # target to generate assembly for a file
 src/remote/grpc_stream.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_stream.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_stream.cc.s
 .PHONY : src/remote/grpc_stream.cc.s
 
 src/remote/grpc_streaming_reader.o: src/remote/grpc_streaming_reader.cc.o
@@ -3427,7 +3454,7 @@ src/remote/grpc_streaming_reader.o: src/remote/grpc_streaming_reader.cc.o
 
 # target to build an object file
 src/remote/grpc_streaming_reader.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_streaming_reader.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_streaming_reader.cc.o
 .PHONY : src/remote/grpc_streaming_reader.cc.o
 
 src/remote/grpc_streaming_reader.i: src/remote/grpc_streaming_reader.cc.i
@@ -3436,7 +3463,7 @@ src/remote/grpc_streaming_reader.i: src/remote/grpc_streaming_reader.cc.i
 
 # target to preprocess a source file
 src/remote/grpc_streaming_reader.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_streaming_reader.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_streaming_reader.cc.i
 .PHONY : src/remote/grpc_streaming_reader.cc.i
 
 src/remote/grpc_streaming_reader.s: src/remote/grpc_streaming_reader.cc.s
@@ -3445,7 +3472,7 @@ src/remote/grpc_streaming_reader.s: src/remote/grpc_streaming_reader.cc.s
 
 # target to generate assembly for a file
 src/remote/grpc_streaming_reader.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_streaming_reader.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_streaming_reader.cc.s
 .PHONY : src/remote/grpc_streaming_reader.cc.s
 
 src/remote/grpc_unary_call.o: src/remote/grpc_unary_call.cc.o
@@ -3454,7 +3481,7 @@ src/remote/grpc_unary_call.o: src/remote/grpc_unary_call.cc.o
 
 # target to build an object file
 src/remote/grpc_unary_call.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_unary_call.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_unary_call.cc.o
 .PHONY : src/remote/grpc_unary_call.cc.o
 
 src/remote/grpc_unary_call.i: src/remote/grpc_unary_call.cc.i
@@ -3463,7 +3490,7 @@ src/remote/grpc_unary_call.i: src/remote/grpc_unary_call.cc.i
 
 # target to preprocess a source file
 src/remote/grpc_unary_call.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_unary_call.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_unary_call.cc.i
 .PHONY : src/remote/grpc_unary_call.cc.i
 
 src/remote/grpc_unary_call.s: src/remote/grpc_unary_call.cc.s
@@ -3472,7 +3499,7 @@ src/remote/grpc_unary_call.s: src/remote/grpc_unary_call.cc.s
 
 # target to generate assembly for a file
 src/remote/grpc_unary_call.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_unary_call.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_unary_call.cc.s
 .PHONY : src/remote/grpc_unary_call.cc.s
 
 src/remote/grpc_util.o: src/remote/grpc_util.cc.o
@@ -3481,7 +3508,7 @@ src/remote/grpc_util.o: src/remote/grpc_util.cc.o
 
 # target to build an object file
 src/remote/grpc_util.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_util.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_util.cc.o
 .PHONY : src/remote/grpc_util.cc.o
 
 src/remote/grpc_util.i: src/remote/grpc_util.cc.i
@@ -3490,7 +3517,7 @@ src/remote/grpc_util.i: src/remote/grpc_util.cc.i
 
 # target to preprocess a source file
 src/remote/grpc_util.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_util.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_util.cc.i
 .PHONY : src/remote/grpc_util.cc.i
 
 src/remote/grpc_util.s: src/remote/grpc_util.cc.s
@@ -3499,7 +3526,7 @@ src/remote/grpc_util.s: src/remote/grpc_util.cc.s
 
 # target to generate assembly for a file
 src/remote/grpc_util.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_util.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/grpc_util.cc.s
 .PHONY : src/remote/grpc_util.cc.s
 
 src/remote/online_state_tracker.o: src/remote/online_state_tracker.cc.o
@@ -3508,7 +3535,7 @@ src/remote/online_state_tracker.o: src/remote/online_state_tracker.cc.o
 
 # target to build an object file
 src/remote/online_state_tracker.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/online_state_tracker.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/online_state_tracker.cc.o
 .PHONY : src/remote/online_state_tracker.cc.o
 
 src/remote/online_state_tracker.i: src/remote/online_state_tracker.cc.i
@@ -3517,7 +3544,7 @@ src/remote/online_state_tracker.i: src/remote/online_state_tracker.cc.i
 
 # target to preprocess a source file
 src/remote/online_state_tracker.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/online_state_tracker.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/online_state_tracker.cc.i
 .PHONY : src/remote/online_state_tracker.cc.i
 
 src/remote/online_state_tracker.s: src/remote/online_state_tracker.cc.s
@@ -3526,7 +3553,7 @@ src/remote/online_state_tracker.s: src/remote/online_state_tracker.cc.s
 
 # target to generate assembly for a file
 src/remote/online_state_tracker.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/online_state_tracker.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/online_state_tracker.cc.s
 .PHONY : src/remote/online_state_tracker.cc.s
 
 src/remote/remote_event.o: src/remote/remote_event.cc.o
@@ -3535,7 +3562,7 @@ src/remote/remote_event.o: src/remote/remote_event.cc.o
 
 # target to build an object file
 src/remote/remote_event.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_event.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_event.cc.o
 .PHONY : src/remote/remote_event.cc.o
 
 src/remote/remote_event.i: src/remote/remote_event.cc.i
@@ -3544,7 +3571,7 @@ src/remote/remote_event.i: src/remote/remote_event.cc.i
 
 # target to preprocess a source file
 src/remote/remote_event.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_event.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_event.cc.i
 .PHONY : src/remote/remote_event.cc.i
 
 src/remote/remote_event.s: src/remote/remote_event.cc.s
@@ -3553,7 +3580,7 @@ src/remote/remote_event.s: src/remote/remote_event.cc.s
 
 # target to generate assembly for a file
 src/remote/remote_event.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_event.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_event.cc.s
 .PHONY : src/remote/remote_event.cc.s
 
 src/remote/remote_objc_bridge.o: src/remote/remote_objc_bridge.cc.o
@@ -3562,7 +3589,7 @@ src/remote/remote_objc_bridge.o: src/remote/remote_objc_bridge.cc.o
 
 # target to build an object file
 src/remote/remote_objc_bridge.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_objc_bridge.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_objc_bridge.cc.o
 .PHONY : src/remote/remote_objc_bridge.cc.o
 
 src/remote/remote_objc_bridge.i: src/remote/remote_objc_bridge.cc.i
@@ -3571,7 +3598,7 @@ src/remote/remote_objc_bridge.i: src/remote/remote_objc_bridge.cc.i
 
 # target to preprocess a source file
 src/remote/remote_objc_bridge.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_objc_bridge.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_objc_bridge.cc.i
 .PHONY : src/remote/remote_objc_bridge.cc.i
 
 src/remote/remote_objc_bridge.s: src/remote/remote_objc_bridge.cc.s
@@ -3580,7 +3607,7 @@ src/remote/remote_objc_bridge.s: src/remote/remote_objc_bridge.cc.s
 
 # target to generate assembly for a file
 src/remote/remote_objc_bridge.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_objc_bridge.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_objc_bridge.cc.s
 .PHONY : src/remote/remote_objc_bridge.cc.s
 
 src/remote/remote_store.o: src/remote/remote_store.cc.o
@@ -3589,7 +3616,7 @@ src/remote/remote_store.o: src/remote/remote_store.cc.o
 
 # target to build an object file
 src/remote/remote_store.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_store.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_store.cc.o
 .PHONY : src/remote/remote_store.cc.o
 
 src/remote/remote_store.i: src/remote/remote_store.cc.i
@@ -3598,7 +3625,7 @@ src/remote/remote_store.i: src/remote/remote_store.cc.i
 
 # target to preprocess a source file
 src/remote/remote_store.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_store.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_store.cc.i
 .PHONY : src/remote/remote_store.cc.i
 
 src/remote/remote_store.s: src/remote/remote_store.cc.s
@@ -3607,7 +3634,7 @@ src/remote/remote_store.s: src/remote/remote_store.cc.s
 
 # target to generate assembly for a file
 src/remote/remote_store.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_store.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/remote_store.cc.s
 .PHONY : src/remote/remote_store.cc.s
 
 src/remote/serializer.o: src/remote/serializer.cc.o
@@ -3616,7 +3643,7 @@ src/remote/serializer.o: src/remote/serializer.cc.o
 
 # target to build an object file
 src/remote/serializer.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/serializer.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/serializer.cc.o
 .PHONY : src/remote/serializer.cc.o
 
 src/remote/serializer.i: src/remote/serializer.cc.i
@@ -3625,7 +3652,7 @@ src/remote/serializer.i: src/remote/serializer.cc.i
 
 # target to preprocess a source file
 src/remote/serializer.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/serializer.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/serializer.cc.i
 .PHONY : src/remote/serializer.cc.i
 
 src/remote/serializer.s: src/remote/serializer.cc.s
@@ -3634,7 +3661,7 @@ src/remote/serializer.s: src/remote/serializer.cc.s
 
 # target to generate assembly for a file
 src/remote/serializer.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/serializer.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/serializer.cc.s
 .PHONY : src/remote/serializer.cc.s
 
 src/remote/stream.o: src/remote/stream.cc.o
@@ -3643,7 +3670,7 @@ src/remote/stream.o: src/remote/stream.cc.o
 
 # target to build an object file
 src/remote/stream.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/stream.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/stream.cc.o
 .PHONY : src/remote/stream.cc.o
 
 src/remote/stream.i: src/remote/stream.cc.i
@@ -3652,7 +3679,7 @@ src/remote/stream.i: src/remote/stream.cc.i
 
 # target to preprocess a source file
 src/remote/stream.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/stream.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/stream.cc.i
 .PHONY : src/remote/stream.cc.i
 
 src/remote/stream.s: src/remote/stream.cc.s
@@ -3661,7 +3688,7 @@ src/remote/stream.s: src/remote/stream.cc.s
 
 # target to generate assembly for a file
 src/remote/stream.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/stream.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/stream.cc.s
 .PHONY : src/remote/stream.cc.s
 
 src/remote/watch_change.o: src/remote/watch_change.cc.o
@@ -3670,7 +3697,7 @@ src/remote/watch_change.o: src/remote/watch_change.cc.o
 
 # target to build an object file
 src/remote/watch_change.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_change.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_change.cc.o
 .PHONY : src/remote/watch_change.cc.o
 
 src/remote/watch_change.i: src/remote/watch_change.cc.i
@@ -3679,7 +3706,7 @@ src/remote/watch_change.i: src/remote/watch_change.cc.i
 
 # target to preprocess a source file
 src/remote/watch_change.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_change.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_change.cc.i
 .PHONY : src/remote/watch_change.cc.i
 
 src/remote/watch_change.s: src/remote/watch_change.cc.s
@@ -3688,7 +3715,7 @@ src/remote/watch_change.s: src/remote/watch_change.cc.s
 
 # target to generate assembly for a file
 src/remote/watch_change.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_change.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_change.cc.s
 .PHONY : src/remote/watch_change.cc.s
 
 src/remote/watch_stream.o: src/remote/watch_stream.cc.o
@@ -3697,7 +3724,7 @@ src/remote/watch_stream.o: src/remote/watch_stream.cc.o
 
 # target to build an object file
 src/remote/watch_stream.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_stream.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_stream.cc.o
 .PHONY : src/remote/watch_stream.cc.o
 
 src/remote/watch_stream.i: src/remote/watch_stream.cc.i
@@ -3706,7 +3733,7 @@ src/remote/watch_stream.i: src/remote/watch_stream.cc.i
 
 # target to preprocess a source file
 src/remote/watch_stream.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_stream.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_stream.cc.i
 .PHONY : src/remote/watch_stream.cc.i
 
 src/remote/watch_stream.s: src/remote/watch_stream.cc.s
@@ -3715,7 +3742,7 @@ src/remote/watch_stream.s: src/remote/watch_stream.cc.s
 
 # target to generate assembly for a file
 src/remote/watch_stream.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_stream.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/watch_stream.cc.s
 .PHONY : src/remote/watch_stream.cc.s
 
 src/remote/write_stream.o: src/remote/write_stream.cc.o
@@ -3724,7 +3751,7 @@ src/remote/write_stream.o: src/remote/write_stream.cc.o
 
 # target to build an object file
 src/remote/write_stream.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/write_stream.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/write_stream.cc.o
 .PHONY : src/remote/write_stream.cc.o
 
 src/remote/write_stream.i: src/remote/write_stream.cc.i
@@ -3733,7 +3760,7 @@ src/remote/write_stream.i: src/remote/write_stream.cc.i
 
 # target to preprocess a source file
 src/remote/write_stream.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/write_stream.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/write_stream.cc.i
 .PHONY : src/remote/write_stream.cc.i
 
 src/remote/write_stream.s: src/remote/write_stream.cc.s
@@ -3742,7 +3769,7 @@ src/remote/write_stream.s: src/remote/write_stream.cc.s
 
 # target to generate assembly for a file
 src/remote/write_stream.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/write_stream.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/remote/write_stream.cc.s
 .PHONY : src/remote/write_stream.cc.s
 
 src/timestamp.o: src/timestamp.cc.o
@@ -3751,7 +3778,7 @@ src/timestamp.o: src/timestamp.cc.o
 
 # target to build an object file
 src/timestamp.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp.cc.o
 .PHONY : src/timestamp.cc.o
 
 src/timestamp.i: src/timestamp.cc.i
@@ -3760,7 +3787,7 @@ src/timestamp.i: src/timestamp.cc.i
 
 # target to preprocess a source file
 src/timestamp.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp.cc.i
 .PHONY : src/timestamp.cc.i
 
 src/timestamp.s: src/timestamp.cc.s
@@ -3769,7 +3796,7 @@ src/timestamp.s: src/timestamp.cc.s
 
 # target to generate assembly for a file
 src/timestamp.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp.cc.s
 .PHONY : src/timestamp.cc.s
 
 src/timestamp_internal.o: src/timestamp_internal.cc.o
@@ -3778,7 +3805,7 @@ src/timestamp_internal.o: src/timestamp_internal.cc.o
 
 # target to build an object file
 src/timestamp_internal.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp_internal.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp_internal.cc.o
 .PHONY : src/timestamp_internal.cc.o
 
 src/timestamp_internal.i: src/timestamp_internal.cc.i
@@ -3787,7 +3814,7 @@ src/timestamp_internal.i: src/timestamp_internal.cc.i
 
 # target to preprocess a source file
 src/timestamp_internal.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp_internal.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp_internal.cc.i
 .PHONY : src/timestamp_internal.cc.i
 
 src/timestamp_internal.s: src/timestamp_internal.cc.s
@@ -3796,7 +3823,7 @@ src/timestamp_internal.s: src/timestamp_internal.cc.s
 
 # target to generate assembly for a file
 src/timestamp_internal.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp_internal.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_core.dir/src/timestamp_internal.cc.s
 .PHONY : src/timestamp_internal.cc.s
 
 src/util/async_queue.o: src/util/async_queue.cc.o
@@ -3805,7 +3832,7 @@ src/util/async_queue.o: src/util/async_queue.cc.o
 
 # target to build an object file
 src/util/async_queue.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/async_queue.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/async_queue.cc.o
 .PHONY : src/util/async_queue.cc.o
 
 src/util/async_queue.i: src/util/async_queue.cc.i
@@ -3814,7 +3841,7 @@ src/util/async_queue.i: src/util/async_queue.cc.i
 
 # target to preprocess a source file
 src/util/async_queue.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/async_queue.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/async_queue.cc.i
 .PHONY : src/util/async_queue.cc.i
 
 src/util/async_queue.s: src/util/async_queue.cc.s
@@ -3823,7 +3850,7 @@ src/util/async_queue.s: src/util/async_queue.cc.s
 
 # target to generate assembly for a file
 src/util/async_queue.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/async_queue.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/async_queue.cc.s
 .PHONY : src/util/async_queue.cc.s
 
 src/util/autoid.o: src/util/autoid.cc.o
@@ -3832,7 +3859,7 @@ src/util/autoid.o: src/util/autoid.cc.o
 
 # target to build an object file
 src/util/autoid.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/autoid.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/autoid.cc.o
 .PHONY : src/util/autoid.cc.o
 
 src/util/autoid.i: src/util/autoid.cc.i
@@ -3841,7 +3868,7 @@ src/util/autoid.i: src/util/autoid.cc.i
 
 # target to preprocess a source file
 src/util/autoid.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/autoid.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/autoid.cc.i
 .PHONY : src/util/autoid.cc.i
 
 src/util/autoid.s: src/util/autoid.cc.s
@@ -3850,7 +3877,7 @@ src/util/autoid.s: src/util/autoid.cc.s
 
 # target to generate assembly for a file
 src/util/autoid.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/autoid.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/autoid.cc.s
 .PHONY : src/util/autoid.cc.s
 
 src/util/background_queue.o: src/util/background_queue.cc.o
@@ -3859,7 +3886,7 @@ src/util/background_queue.o: src/util/background_queue.cc.o
 
 # target to build an object file
 src/util/background_queue.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/background_queue.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/background_queue.cc.o
 .PHONY : src/util/background_queue.cc.o
 
 src/util/background_queue.i: src/util/background_queue.cc.i
@@ -3868,7 +3895,7 @@ src/util/background_queue.i: src/util/background_queue.cc.i
 
 # target to preprocess a source file
 src/util/background_queue.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/background_queue.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/background_queue.cc.i
 .PHONY : src/util/background_queue.cc.i
 
 src/util/background_queue.s: src/util/background_queue.cc.s
@@ -3877,7 +3904,7 @@ src/util/background_queue.s: src/util/background_queue.cc.s
 
 # target to generate assembly for a file
 src/util/background_queue.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/background_queue.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/background_queue.cc.s
 .PHONY : src/util/background_queue.cc.s
 
 src/util/bits.o: src/util/bits.cc.o
@@ -3886,7 +3913,7 @@ src/util/bits.o: src/util/bits.cc.o
 
 # target to build an object file
 src/util/bits.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/bits.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/bits.cc.o
 .PHONY : src/util/bits.cc.o
 
 src/util/bits.i: src/util/bits.cc.i
@@ -3895,7 +3922,7 @@ src/util/bits.i: src/util/bits.cc.i
 
 # target to preprocess a source file
 src/util/bits.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/bits.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/bits.cc.i
 .PHONY : src/util/bits.cc.i
 
 src/util/bits.s: src/util/bits.cc.s
@@ -3904,7 +3931,7 @@ src/util/bits.s: src/util/bits.cc.s
 
 # target to generate assembly for a file
 src/util/bits.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/bits.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/bits.cc.s
 .PHONY : src/util/bits.cc.s
 
 src/util/byte_stream_cpp.o: src/util/byte_stream_cpp.cc.o
@@ -3913,7 +3940,7 @@ src/util/byte_stream_cpp.o: src/util/byte_stream_cpp.cc.o
 
 # target to build an object file
 src/util/byte_stream_cpp.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/byte_stream_cpp.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/byte_stream_cpp.cc.o
 .PHONY : src/util/byte_stream_cpp.cc.o
 
 src/util/byte_stream_cpp.i: src/util/byte_stream_cpp.cc.i
@@ -3922,7 +3949,7 @@ src/util/byte_stream_cpp.i: src/util/byte_stream_cpp.cc.i
 
 # target to preprocess a source file
 src/util/byte_stream_cpp.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/byte_stream_cpp.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/byte_stream_cpp.cc.i
 .PHONY : src/util/byte_stream_cpp.cc.i
 
 src/util/byte_stream_cpp.s: src/util/byte_stream_cpp.cc.s
@@ -3931,7 +3958,7 @@ src/util/byte_stream_cpp.s: src/util/byte_stream_cpp.cc.s
 
 # target to generate assembly for a file
 src/util/byte_stream_cpp.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/byte_stream_cpp.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/byte_stream_cpp.cc.s
 .PHONY : src/util/byte_stream_cpp.cc.s
 
 src/util/comparison.o: src/util/comparison.cc.o
@@ -3940,7 +3967,7 @@ src/util/comparison.o: src/util/comparison.cc.o
 
 # target to build an object file
 src/util/comparison.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/comparison.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/comparison.cc.o
 .PHONY : src/util/comparison.cc.o
 
 src/util/comparison.i: src/util/comparison.cc.i
@@ -3949,7 +3976,7 @@ src/util/comparison.i: src/util/comparison.cc.i
 
 # target to preprocess a source file
 src/util/comparison.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/comparison.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/comparison.cc.i
 .PHONY : src/util/comparison.cc.i
 
 src/util/comparison.s: src/util/comparison.cc.s
@@ -3958,7 +3985,7 @@ src/util/comparison.s: src/util/comparison.cc.s
 
 # target to generate assembly for a file
 src/util/comparison.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/comparison.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/comparison.cc.s
 .PHONY : src/util/comparison.cc.s
 
 src/util/exception.o: src/util/exception.cc.o
@@ -3967,7 +3994,7 @@ src/util/exception.o: src/util/exception.cc.o
 
 # target to build an object file
 src/util/exception.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/exception.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/exception.cc.o
 .PHONY : src/util/exception.cc.o
 
 src/util/exception.i: src/util/exception.cc.i
@@ -3976,7 +4003,7 @@ src/util/exception.i: src/util/exception.cc.i
 
 # target to preprocess a source file
 src/util/exception.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/exception.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/exception.cc.i
 .PHONY : src/util/exception.cc.i
 
 src/util/exception.s: src/util/exception.cc.s
@@ -3985,7 +4012,7 @@ src/util/exception.s: src/util/exception.cc.s
 
 # target to generate assembly for a file
 src/util/exception.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/exception.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/exception.cc.s
 .PHONY : src/util/exception.cc.s
 
 src/util/executor_std.o: src/util/executor_std.cc.o
@@ -3994,7 +4021,7 @@ src/util/executor_std.o: src/util/executor_std.cc.o
 
 # target to build an object file
 src/util/executor_std.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/executor_std.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/executor_std.cc.o
 .PHONY : src/util/executor_std.cc.o
 
 src/util/executor_std.i: src/util/executor_std.cc.i
@@ -4003,7 +4030,7 @@ src/util/executor_std.i: src/util/executor_std.cc.i
 
 # target to preprocess a source file
 src/util/executor_std.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/executor_std.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/executor_std.cc.i
 .PHONY : src/util/executor_std.cc.i
 
 src/util/executor_std.s: src/util/executor_std.cc.s
@@ -4012,7 +4039,7 @@ src/util/executor_std.s: src/util/executor_std.cc.s
 
 # target to generate assembly for a file
 src/util/executor_std.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/executor_std.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/executor_std.cc.s
 .PHONY : src/util/executor_std.cc.s
 
 src/util/filesystem_common.o: src/util/filesystem_common.cc.o
@@ -4021,7 +4048,7 @@ src/util/filesystem_common.o: src/util/filesystem_common.cc.o
 
 # target to build an object file
 src/util/filesystem_common.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_common.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_common.cc.o
 .PHONY : src/util/filesystem_common.cc.o
 
 src/util/filesystem_common.i: src/util/filesystem_common.cc.i
@@ -4030,7 +4057,7 @@ src/util/filesystem_common.i: src/util/filesystem_common.cc.i
 
 # target to preprocess a source file
 src/util/filesystem_common.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_common.cc.i
 .PHONY : src/util/filesystem_common.cc.i
 
 src/util/filesystem_common.s: src/util/filesystem_common.cc.s
@@ -4039,7 +4066,7 @@ src/util/filesystem_common.s: src/util/filesystem_common.cc.s
 
 # target to generate assembly for a file
 src/util/filesystem_common.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_common.cc.s
 .PHONY : src/util/filesystem_common.cc.s
 
 src/util/filesystem_posix.o: src/util/filesystem_posix.cc.o
@@ -4048,7 +4075,7 @@ src/util/filesystem_posix.o: src/util/filesystem_posix.cc.o
 
 # target to build an object file
 src/util/filesystem_posix.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_posix.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_posix.cc.o
 .PHONY : src/util/filesystem_posix.cc.o
 
 src/util/filesystem_posix.i: src/util/filesystem_posix.cc.i
@@ -4057,7 +4084,7 @@ src/util/filesystem_posix.i: src/util/filesystem_posix.cc.i
 
 # target to preprocess a source file
 src/util/filesystem_posix.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_posix.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_posix.cc.i
 .PHONY : src/util/filesystem_posix.cc.i
 
 src/util/filesystem_posix.s: src/util/filesystem_posix.cc.s
@@ -4066,7 +4093,7 @@ src/util/filesystem_posix.s: src/util/filesystem_posix.cc.s
 
 # target to generate assembly for a file
 src/util/filesystem_posix.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_posix.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/filesystem_posix.cc.s
 .PHONY : src/util/filesystem_posix.cc.s
 
 src/util/hard_assert.o: src/util/hard_assert.cc.o
@@ -4075,7 +4102,7 @@ src/util/hard_assert.o: src/util/hard_assert.cc.o
 
 # target to build an object file
 src/util/hard_assert.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/hard_assert.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/hard_assert.cc.o
 .PHONY : src/util/hard_assert.cc.o
 
 src/util/hard_assert.i: src/util/hard_assert.cc.i
@@ -4084,7 +4111,7 @@ src/util/hard_assert.i: src/util/hard_assert.cc.i
 
 # target to preprocess a source file
 src/util/hard_assert.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/hard_assert.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/hard_assert.cc.i
 .PHONY : src/util/hard_assert.cc.i
 
 src/util/hard_assert.s: src/util/hard_assert.cc.s
@@ -4093,7 +4120,7 @@ src/util/hard_assert.s: src/util/hard_assert.cc.s
 
 # target to generate assembly for a file
 src/util/hard_assert.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/hard_assert.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/hard_assert.cc.s
 .PHONY : src/util/hard_assert.cc.s
 
 src/util/log_stdio.o: src/util/log_stdio.cc.o
@@ -4102,7 +4129,7 @@ src/util/log_stdio.o: src/util/log_stdio.cc.o
 
 # target to build an object file
 src/util/log_stdio.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/log_stdio.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/log_stdio.cc.o
 .PHONY : src/util/log_stdio.cc.o
 
 src/util/log_stdio.i: src/util/log_stdio.cc.i
@@ -4111,7 +4138,7 @@ src/util/log_stdio.i: src/util/log_stdio.cc.i
 
 # target to preprocess a source file
 src/util/log_stdio.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/log_stdio.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/log_stdio.cc.i
 .PHONY : src/util/log_stdio.cc.i
 
 src/util/log_stdio.s: src/util/log_stdio.cc.s
@@ -4120,7 +4147,7 @@ src/util/log_stdio.s: src/util/log_stdio.cc.s
 
 # target to generate assembly for a file
 src/util/log_stdio.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/log_stdio.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/log_stdio.cc.s
 .PHONY : src/util/log_stdio.cc.s
 
 src/util/ordered_code.o: src/util/ordered_code.cc.o
@@ -4129,7 +4156,7 @@ src/util/ordered_code.o: src/util/ordered_code.cc.o
 
 # target to build an object file
 src/util/ordered_code.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/ordered_code.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/ordered_code.cc.o
 .PHONY : src/util/ordered_code.cc.o
 
 src/util/ordered_code.i: src/util/ordered_code.cc.i
@@ -4138,7 +4165,7 @@ src/util/ordered_code.i: src/util/ordered_code.cc.i
 
 # target to preprocess a source file
 src/util/ordered_code.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/ordered_code.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/ordered_code.cc.i
 .PHONY : src/util/ordered_code.cc.i
 
 src/util/ordered_code.s: src/util/ordered_code.cc.s
@@ -4147,7 +4174,7 @@ src/util/ordered_code.s: src/util/ordered_code.cc.s
 
 # target to generate assembly for a file
 src/util/ordered_code.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/ordered_code.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/ordered_code.cc.s
 .PHONY : src/util/ordered_code.cc.s
 
 src/util/path.o: src/util/path.cc.o
@@ -4156,7 +4183,7 @@ src/util/path.o: src/util/path.cc.o
 
 # target to build an object file
 src/util/path.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/path.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/path.cc.o
 .PHONY : src/util/path.cc.o
 
 src/util/path.i: src/util/path.cc.i
@@ -4165,7 +4192,7 @@ src/util/path.i: src/util/path.cc.i
 
 # target to preprocess a source file
 src/util/path.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/path.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/path.cc.i
 .PHONY : src/util/path.cc.i
 
 src/util/path.s: src/util/path.cc.s
@@ -4174,7 +4201,7 @@ src/util/path.s: src/util/path.cc.s
 
 # target to generate assembly for a file
 src/util/path.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/path.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/path.cc.s
 .PHONY : src/util/path.cc.s
 
 src/util/schedule.o: src/util/schedule.cc.o
@@ -4183,7 +4210,7 @@ src/util/schedule.o: src/util/schedule.cc.o
 
 # target to build an object file
 src/util/schedule.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/schedule.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/schedule.cc.o
 .PHONY : src/util/schedule.cc.o
 
 src/util/schedule.i: src/util/schedule.cc.i
@@ -4192,7 +4219,7 @@ src/util/schedule.i: src/util/schedule.cc.i
 
 # target to preprocess a source file
 src/util/schedule.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/schedule.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/schedule.cc.i
 .PHONY : src/util/schedule.cc.i
 
 src/util/schedule.s: src/util/schedule.cc.s
@@ -4201,7 +4228,7 @@ src/util/schedule.s: src/util/schedule.cc.s
 
 # target to generate assembly for a file
 src/util/schedule.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/schedule.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/schedule.cc.s
 .PHONY : src/util/schedule.cc.s
 
 src/util/secure_random_openssl.o: src/util/secure_random_openssl.cc.o
@@ -4210,7 +4237,7 @@ src/util/secure_random_openssl.o: src/util/secure_random_openssl.cc.o
 
 # target to build an object file
 src/util/secure_random_openssl.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/secure_random_openssl.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/secure_random_openssl.cc.o
 .PHONY : src/util/secure_random_openssl.cc.o
 
 src/util/secure_random_openssl.i: src/util/secure_random_openssl.cc.i
@@ -4219,7 +4246,7 @@ src/util/secure_random_openssl.i: src/util/secure_random_openssl.cc.i
 
 # target to preprocess a source file
 src/util/secure_random_openssl.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/secure_random_openssl.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/secure_random_openssl.cc.i
 .PHONY : src/util/secure_random_openssl.cc.i
 
 src/util/secure_random_openssl.s: src/util/secure_random_openssl.cc.s
@@ -4228,7 +4255,7 @@ src/util/secure_random_openssl.s: src/util/secure_random_openssl.cc.s
 
 # target to generate assembly for a file
 src/util/secure_random_openssl.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/secure_random_openssl.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/secure_random_openssl.cc.s
 .PHONY : src/util/secure_random_openssl.cc.s
 
 src/util/status.o: src/util/status.cc.o
@@ -4237,7 +4264,7 @@ src/util/status.o: src/util/status.cc.o
 
 # target to build an object file
 src/util/status.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status.cc.o
 .PHONY : src/util/status.cc.o
 
 src/util/status.i: src/util/status.cc.i
@@ -4246,7 +4273,7 @@ src/util/status.i: src/util/status.cc.i
 
 # target to preprocess a source file
 src/util/status.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status.cc.i
 .PHONY : src/util/status.cc.i
 
 src/util/status.s: src/util/status.cc.s
@@ -4255,7 +4282,7 @@ src/util/status.s: src/util/status.cc.s
 
 # target to generate assembly for a file
 src/util/status.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status.cc.s
 .PHONY : src/util/status.cc.s
 
 src/util/status_errno.o: src/util/status_errno.cc.o
@@ -4264,7 +4291,7 @@ src/util/status_errno.o: src/util/status_errno.cc.o
 
 # target to build an object file
 src/util/status_errno.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status_errno.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status_errno.cc.o
 .PHONY : src/util/status_errno.cc.o
 
 src/util/status_errno.i: src/util/status_errno.cc.i
@@ -4273,7 +4300,7 @@ src/util/status_errno.i: src/util/status_errno.cc.i
 
 # target to preprocess a source file
 src/util/status_errno.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status_errno.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status_errno.cc.i
 .PHONY : src/util/status_errno.cc.i
 
 src/util/status_errno.s: src/util/status_errno.cc.s
@@ -4282,7 +4309,7 @@ src/util/status_errno.s: src/util/status_errno.cc.s
 
 # target to generate assembly for a file
 src/util/status_errno.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status_errno.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/status_errno.cc.s
 .PHONY : src/util/status_errno.cc.s
 
 src/util/statusor.o: src/util/statusor.cc.o
@@ -4291,7 +4318,7 @@ src/util/statusor.o: src/util/statusor.cc.o
 
 # target to build an object file
 src/util/statusor.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/statusor.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/statusor.cc.o
 .PHONY : src/util/statusor.cc.o
 
 src/util/statusor.i: src/util/statusor.cc.i
@@ -4300,7 +4327,7 @@ src/util/statusor.i: src/util/statusor.cc.i
 
 # target to preprocess a source file
 src/util/statusor.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/statusor.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/statusor.cc.i
 .PHONY : src/util/statusor.cc.i
 
 src/util/statusor.s: src/util/statusor.cc.s
@@ -4309,7 +4336,7 @@ src/util/statusor.s: src/util/statusor.cc.s
 
 # target to generate assembly for a file
 src/util/statusor.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/statusor.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/statusor.cc.s
 .PHONY : src/util/statusor.cc.s
 
 src/util/strerror.o: src/util/strerror.cc.o
@@ -4318,7 +4345,7 @@ src/util/strerror.o: src/util/strerror.cc.o
 
 # target to build an object file
 src/util/strerror.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/strerror.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/strerror.cc.o
 .PHONY : src/util/strerror.cc.o
 
 src/util/strerror.i: src/util/strerror.cc.i
@@ -4327,7 +4354,7 @@ src/util/strerror.i: src/util/strerror.cc.i
 
 # target to preprocess a source file
 src/util/strerror.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/strerror.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/strerror.cc.i
 .PHONY : src/util/strerror.cc.i
 
 src/util/strerror.s: src/util/strerror.cc.s
@@ -4336,7 +4363,7 @@ src/util/strerror.s: src/util/strerror.cc.s
 
 # target to generate assembly for a file
 src/util/strerror.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/strerror.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/strerror.cc.s
 .PHONY : src/util/strerror.cc.s
 
 src/util/string_format.o: src/util/string_format.cc.o
@@ -4345,7 +4372,7 @@ src/util/string_format.o: src/util/string_format.cc.o
 
 # target to build an object file
 src/util/string_format.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_format.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_format.cc.o
 .PHONY : src/util/string_format.cc.o
 
 src/util/string_format.i: src/util/string_format.cc.i
@@ -4354,7 +4381,7 @@ src/util/string_format.i: src/util/string_format.cc.i
 
 # target to preprocess a source file
 src/util/string_format.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_format.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_format.cc.i
 .PHONY : src/util/string_format.cc.i
 
 src/util/string_format.s: src/util/string_format.cc.s
@@ -4363,7 +4390,7 @@ src/util/string_format.s: src/util/string_format.cc.s
 
 # target to generate assembly for a file
 src/util/string_format.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_format.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_format.cc.s
 .PHONY : src/util/string_format.cc.s
 
 src/util/string_util.o: src/util/string_util.cc.o
@@ -4372,7 +4399,7 @@ src/util/string_util.o: src/util/string_util.cc.o
 
 # target to build an object file
 src/util/string_util.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_util.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_util.cc.o
 .PHONY : src/util/string_util.cc.o
 
 src/util/string_util.i: src/util/string_util.cc.i
@@ -4381,7 +4408,7 @@ src/util/string_util.i: src/util/string_util.cc.i
 
 # target to preprocess a source file
 src/util/string_util.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_util.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_util.cc.i
 .PHONY : src/util/string_util.cc.i
 
 src/util/string_util.s: src/util/string_util.cc.s
@@ -4390,7 +4417,7 @@ src/util/string_util.s: src/util/string_util.cc.s
 
 # target to generate assembly for a file
 src/util/string_util.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_util.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/string_util.cc.s
 .PHONY : src/util/string_util.cc.s
 
 src/util/task.o: src/util/task.cc.o
@@ -4399,7 +4426,7 @@ src/util/task.o: src/util/task.cc.o
 
 # target to build an object file
 src/util/task.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/task.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/task.cc.o
 .PHONY : src/util/task.cc.o
 
 src/util/task.i: src/util/task.cc.i
@@ -4408,7 +4435,7 @@ src/util/task.i: src/util/task.cc.i
 
 # target to preprocess a source file
 src/util/task.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/task.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/task.cc.i
 .PHONY : src/util/task.cc.i
 
 src/util/task.s: src/util/task.cc.s
@@ -4417,7 +4444,7 @@ src/util/task.s: src/util/task.cc.s
 
 # target to generate assembly for a file
 src/util/task.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/task.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/build.make Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_util.dir/src/util/task.cc.s
 .PHONY : src/util/task.cc.s
 
 # Help Target
@@ -4787,6 +4814,9 @@ help:
 	@echo "... src/remote/grpc_root_certificate_finder_generated.o"
 	@echo "... src/remote/grpc_root_certificate_finder_generated.i"
 	@echo "... src/remote/grpc_root_certificate_finder_generated.s"
+	@echo "... src/remote/grpc_root_certificates_generated.o"
+	@echo "... src/remote/grpc_root_certificates_generated.i"
+	@echo "... src/remote/grpc_root_certificates_generated.s"
 	@echo "... src/remote/grpc_stream.o"
 	@echo "... src/remote/grpc_stream.i"
 	@echo "... src/remote/grpc_stream.s"
@@ -4912,6 +4942,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

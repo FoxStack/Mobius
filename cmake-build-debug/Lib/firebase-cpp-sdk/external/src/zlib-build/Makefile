@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,25 +78,25 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
@@ -112,19 +112,19 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib-build//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/zlib-build//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ minigzip: Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/r
 
 # fast build rule for target.
 minigzip/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build
 .PHONY : minigzip/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ example: Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/rul
 
 # fast build rule for target.
 example/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build
 .PHONY : example/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/rule
 
 # Convenience name for target.
@@ -217,12 +217,12 @@ zlibstatic: Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.d
 
 # fast build rule for target.
 zlibstatic/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build
 .PHONY : zlibstatic/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/rule
 
 # Convenience name for target.
@@ -232,12 +232,12 @@ zlib: Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/rule
 
 # fast build rule for target.
 zlib/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build
 .PHONY : zlib/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/rule
 
 # Convenience name for target.
@@ -247,12 +247,12 @@ example64: Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir
 
 # fast build rule for target.
 example64/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build
 .PHONY : example64/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/rule
 
 # Convenience name for target.
@@ -262,313 +262,313 @@ minigzip64: Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.d
 
 # fast build rule for target.
 minigzip64/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build
 .PHONY : minigzip64/fast
 
 # target to build an object file
 adler32.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/adler32.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/adler32.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/adler32.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/adler32.o
 .PHONY : adler32.o
 
 # target to preprocess a source file
 adler32.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/adler32.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/adler32.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/adler32.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/adler32.i
 .PHONY : adler32.i
 
 # target to generate assembly for a file
 adler32.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/adler32.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/adler32.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/adler32.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/adler32.s
 .PHONY : adler32.s
 
 # target to build an object file
 compress.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/compress.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/compress.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/compress.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/compress.o
 .PHONY : compress.o
 
 # target to preprocess a source file
 compress.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/compress.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/compress.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/compress.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/compress.i
 .PHONY : compress.i
 
 # target to generate assembly for a file
 compress.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/compress.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/compress.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/compress.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/compress.s
 .PHONY : compress.s
 
 # target to build an object file
 crc32.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/crc32.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/crc32.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/crc32.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/crc32.o
 .PHONY : crc32.o
 
 # target to preprocess a source file
 crc32.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/crc32.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/crc32.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/crc32.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/crc32.i
 .PHONY : crc32.i
 
 # target to generate assembly for a file
 crc32.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/crc32.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/crc32.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/crc32.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/crc32.s
 .PHONY : crc32.s
 
 # target to build an object file
 deflate.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/deflate.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/deflate.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/deflate.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/deflate.o
 .PHONY : deflate.o
 
 # target to preprocess a source file
 deflate.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/deflate.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/deflate.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/deflate.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/deflate.i
 .PHONY : deflate.i
 
 # target to generate assembly for a file
 deflate.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/deflate.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/deflate.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/deflate.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/deflate.s
 .PHONY : deflate.s
 
 # target to build an object file
 gzclose.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzclose.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzclose.o
 .PHONY : gzclose.o
 
 # target to preprocess a source file
 gzclose.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzclose.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzclose.i
 .PHONY : gzclose.i
 
 # target to generate assembly for a file
 gzclose.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzclose.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzclose.s
 .PHONY : gzclose.s
 
 # target to build an object file
 gzlib.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzlib.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzlib.o
 .PHONY : gzlib.o
 
 # target to preprocess a source file
 gzlib.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzlib.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzlib.i
 .PHONY : gzlib.i
 
 # target to generate assembly for a file
 gzlib.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzlib.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzlib.s
 .PHONY : gzlib.s
 
 # target to build an object file
 gzread.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzread.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzread.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzread.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzread.o
 .PHONY : gzread.o
 
 # target to preprocess a source file
 gzread.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzread.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzread.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzread.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzread.i
 .PHONY : gzread.i
 
 # target to generate assembly for a file
 gzread.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzread.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzread.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzread.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzread.s
 .PHONY : gzread.s
 
 # target to build an object file
 gzwrite.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzwrite.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzwrite.o
 .PHONY : gzwrite.o
 
 # target to preprocess a source file
 gzwrite.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzwrite.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzwrite.i
 .PHONY : gzwrite.i
 
 # target to generate assembly for a file
 gzwrite.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzwrite.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/gzwrite.s
 .PHONY : gzwrite.s
 
 # target to build an object file
 infback.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/infback.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/infback.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/infback.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/infback.o
 .PHONY : infback.o
 
 # target to preprocess a source file
 infback.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/infback.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/infback.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/infback.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/infback.i
 .PHONY : infback.i
 
 # target to generate assembly for a file
 infback.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/infback.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/infback.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/infback.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/infback.s
 .PHONY : infback.s
 
 # target to build an object file
 inffast.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inffast.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inffast.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inffast.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inffast.o
 .PHONY : inffast.o
 
 # target to preprocess a source file
 inffast.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inffast.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inffast.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inffast.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inffast.i
 .PHONY : inffast.i
 
 # target to generate assembly for a file
 inffast.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inffast.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inffast.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inffast.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inffast.s
 .PHONY : inffast.s
 
 # target to build an object file
 inflate.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inflate.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inflate.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inflate.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inflate.o
 .PHONY : inflate.o
 
 # target to preprocess a source file
 inflate.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inflate.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inflate.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inflate.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inflate.i
 .PHONY : inflate.i
 
 # target to generate assembly for a file
 inflate.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inflate.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inflate.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inflate.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inflate.s
 .PHONY : inflate.s
 
 # target to build an object file
 inftrees.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inftrees.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inftrees.o
 .PHONY : inftrees.o
 
 # target to preprocess a source file
 inftrees.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inftrees.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inftrees.i
 .PHONY : inftrees.i
 
 # target to generate assembly for a file
 inftrees.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inftrees.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/inftrees.s
 .PHONY : inftrees.s
 
 # target to build an object file
 test/example.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/test/example.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/test/example.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/test/example.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/test/example.o
 .PHONY : test/example.o
 
 # target to preprocess a source file
 test/example.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/test/example.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/test/example.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/test/example.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/test/example.i
 .PHONY : test/example.i
 
 # target to generate assembly for a file
 test/example.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/test/example.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/test/example.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example.dir/test/example.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/example64.dir/test/example.s
 .PHONY : test/example.s
 
 # target to build an object file
 test/minigzip.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/test/minigzip.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/test/minigzip.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/test/minigzip.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/test/minigzip.o
 .PHONY : test/minigzip.o
 
 # target to preprocess a source file
 test/minigzip.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/test/minigzip.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/test/minigzip.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/test/minigzip.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/test/minigzip.i
 .PHONY : test/minigzip.i
 
 # target to generate assembly for a file
 test/minigzip.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/test/minigzip.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/test/minigzip.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip.dir/test/minigzip.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/minigzip64.dir/test/minigzip.s
 .PHONY : test/minigzip.s
 
 # target to build an object file
 trees.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/trees.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/trees.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/trees.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/trees.o
 .PHONY : trees.o
 
 # target to preprocess a source file
 trees.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/trees.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/trees.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/trees.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/trees.i
 .PHONY : trees.i
 
 # target to generate assembly for a file
 trees.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/trees.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/trees.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/trees.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/trees.s
 .PHONY : trees.s
 
 # target to build an object file
 uncompr.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/uncompr.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/uncompr.o
 .PHONY : uncompr.o
 
 # target to preprocess a source file
 uncompr.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/uncompr.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/uncompr.i
 .PHONY : uncompr.i
 
 # target to generate assembly for a file
 uncompr.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/uncompr.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/uncompr.s
 .PHONY : uncompr.s
 
 # target to build an object file
 zutil.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/zutil.o
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/zutil.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/zutil.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/zutil.o
 .PHONY : zutil.o
 
 # target to preprocess a source file
 zutil.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/zutil.i
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/zutil.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/zutil.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/zutil.i
 .PHONY : zutil.i
 
 # target to generate assembly for a file
 zutil.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/zutil.s
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/zutil.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlibstatic.dir/zutil.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/build.make Lib/firebase-cpp-sdk/external/src/zlib-build/CMakeFiles/zlib.dir/zutil.s
 .PHONY : zutil.s
 
 # Help Target
@@ -651,6 +651,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

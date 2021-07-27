@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/libuv"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/libuv"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/libuv.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/libuv.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/libuv-complete.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/CMakeFiles/libuv-complete.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-install.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-install.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-mkdir.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-mkdir.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-download.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-download.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-update.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-update.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-patch.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-patch.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-configure.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-configure.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-build.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-build.rule"
 		},
 		{
-			"file" : "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-test.rule"
+			"file" : "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv-stamp/libuv-test.rule"
 		}
 	],
 	"target" : 

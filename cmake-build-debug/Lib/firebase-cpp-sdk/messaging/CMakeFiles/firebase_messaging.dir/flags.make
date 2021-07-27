@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DINTERNAL_EXPERIMENTAL=1 -D_GLIBCXX_USE_CXX11_ABI=0
 
-CXX_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/generated/messaging -I/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/include -I/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk -I/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/app/src/include -I/home/raf/Desktop/Mobius/cmake-build-debug/generated
+CXX_INCLUDES = -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/messaging" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/include" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/app/src/include" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated"
 
 CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -g   -include assert.h -include string.h -fno-exceptions -std=gnu++11
 

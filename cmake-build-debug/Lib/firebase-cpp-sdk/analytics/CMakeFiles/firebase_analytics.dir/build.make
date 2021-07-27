@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/depend.make
@@ -77,42 +77,42 @@ include Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/progres
 include Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/flags.make
 
 generated/analytics/src/include/firebase/analytics/event_names.h: ../Lib/firebase-cpp-sdk/analytics/ios_headers/FIREventNames.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/raf/Desktop/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/event_names.h"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && ../../../../venv/bin/python /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/generate_constants.py --objc_header=/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/ios_headers/FIREventNames.h --cpp_header=/home/raf/Desktop/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/event_names.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/event_names.h"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && python /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/analytics/generate_constants.py --objc_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/analytics/ios_headers/FIREventNames.h --cpp_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/event_names.h
 
 generated/analytics/src/include/firebase/analytics/parameter_names.h: ../Lib/firebase-cpp-sdk/analytics/ios_headers/FIRParameterNames.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/raf/Desktop/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/parameter_names.h"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && ../../../../venv/bin/python /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/generate_constants.py --objc_header=/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/ios_headers/FIRParameterNames.h --cpp_header=/home/raf/Desktop/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/parameter_names.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/parameter_names.h"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && python /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/analytics/generate_constants.py --objc_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/analytics/ios_headers/FIRParameterNames.h --cpp_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/parameter_names.h
 
 generated/analytics/src/include/firebase/analytics/user_property_names.h: ../Lib/firebase-cpp-sdk/analytics/ios_headers/FIRUserPropertyNames.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/raf/Desktop/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/user_property_names.h"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && ../../../../venv/bin/python /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/generate_constants.py --objc_header=/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/ios_headers/FIRUserPropertyNames.h --cpp_header=/home/raf/Desktop/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/user_property_names.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/user_property_names.h"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && python /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/analytics/generate_constants.py --objc_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/analytics/ios_headers/FIRUserPropertyNames.h --cpp_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/analytics/src/include/firebase/analytics/user_property_names.h
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.o: Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/flags.make
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.o: ../Lib/firebase-cpp-sdk/analytics/src/analytics_common.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_common.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_common.cc"
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_common.cc > CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_common.cc" > CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.i
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_common.cc -o CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_common.cc" -o CMakeFiles/firebase_analytics.dir/src/analytics_common.cc.s
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o: Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/flags.make
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o: ../Lib/firebase-cpp-sdk/analytics/src/analytics_stub.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_stub.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_stub.cc"
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_stub.cc > CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_stub.cc" > CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.i
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_stub.cc -o CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/analytics/src/analytics_stub.cc" -o CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.s
 
 # Object files for target firebase_analytics
 firebase_analytics_OBJECTS = \
@@ -126,9 +126,9 @@ Lib/firebase-cpp-sdk/analytics/libfirebase_analytics.a: Lib/firebase-cpp-sdk/ana
 Lib/firebase-cpp-sdk/analytics/libfirebase_analytics.a: Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/src/analytics_stub.cc.o
 Lib/firebase-cpp-sdk/analytics/libfirebase_analytics.a: Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/build.make
 Lib/firebase-cpp-sdk/analytics/libfirebase_analytics.a: Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libfirebase_analytics.a"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && $(CMAKE_COMMAND) -P CMakeFiles/firebase_analytics.dir/cmake_clean_target.cmake
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firebase_analytics.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libfirebase_analytics.a"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && $(CMAKE_COMMAND) -P CMakeFiles/firebase_analytics.dir/cmake_clean_target.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firebase_analytics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/build: Lib/firebase-cpp-sdk/analytics/libfirebase_analytics.a
@@ -136,12 +136,12 @@ Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/build: Lib/fire
 .PHONY : Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/build
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics && $(CMAKE_COMMAND) -P CMakeFiles/firebase_analytics.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" && $(CMAKE_COMMAND) -P CMakeFiles/firebase_analytics.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/clean
 
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/depend: generated/analytics/src/include/firebase/analytics/event_names.h
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/depend: generated/analytics/src/include/firebase/analytics/parameter_names.h
 Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/depend: generated/analytics/src/include/firebase/analytics/user_property_names.h
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/analytics /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/analytics" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/analytics/CMakeFiles/firebase_analytics.dir/depend
 

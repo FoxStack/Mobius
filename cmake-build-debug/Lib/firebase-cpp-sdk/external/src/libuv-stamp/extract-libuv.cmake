@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/libuv-v1.33.1.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv" ABSOLUTE)
+get_filename_component(filename "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/libuv-v1.33.1.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

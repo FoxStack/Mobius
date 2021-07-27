@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Utility rule file for firestore_gen_grpc_certs.
 
@@ -79,8 +79,8 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/fire
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/libgrpc.a
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h: Lib/firebase-cpp-sdk/external/src/firestore/scripts/binary_to_array.py
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/etc/roots.pem
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating root certificates for embedding"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core && python /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/scripts/binary_to_array.py --output_header=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h --output_source=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.cc --cpp_namespace=firebase::firestore::remote --array=grpc_root_certificates_generated_data --array_size=grpc_root_certificates_generated_size /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/etc/roots.pem
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating root certificates for embedding"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core" && python "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/scripts/binary_to_array.py" "--output_header=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h" "--output_source=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.cc" --cpp_namespace=firebase::firestore::remote --array=grpc_root_certificates_generated_data --array_size=grpc_root_certificates_generated_size "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/etc/roots.pem"
 
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.cc: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/src/remote/grpc_root_certificates_generated.cc
@@ -98,10 +98,10 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/fire
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/build
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core && $(CMAKE_COMMAND) -P CMakeFiles/firestore_gen_grpc_certs.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core" && $(CMAKE_COMMAND) -P CMakeFiles/firestore_gen_grpc_certs.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/clean
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/core/CMakeFiles/firestore_gen_grpc_certs.dir/depend
 

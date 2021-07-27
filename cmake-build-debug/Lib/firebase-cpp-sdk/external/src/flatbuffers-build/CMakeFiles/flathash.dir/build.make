@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/depend.make
@@ -78,16 +78,16 @@ include Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.
 
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/src/flathash.cpp.o: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/flags.make
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/src/flathash.cpp.o: Lib/firebase-cpp-sdk/external/src/flatbuffers/src/flathash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/src/flathash.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/flathash.dir/src/flathash.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers/src/flathash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/src/flathash.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/flathash.dir/src/flathash.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers/src/flathash.cpp"
 
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/src/flathash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/flathash.dir/src/flathash.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers/src/flathash.cpp > CMakeFiles/flathash.dir/src/flathash.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers/src/flathash.cpp" > CMakeFiles/flathash.dir/src/flathash.cpp.i
 
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/src/flathash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/flathash.dir/src/flathash.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers/src/flathash.cpp -o CMakeFiles/flathash.dir/src/flathash.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers/src/flathash.cpp" -o CMakeFiles/flathash.dir/src/flathash.cpp.s
 
 # Object files for target flathash
 flathash_OBJECTS = \
@@ -99,8 +99,8 @@ flathash_EXTERNAL_OBJECTS =
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flathash: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/src/flathash.cpp.o
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flathash: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/build.make
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flathash: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable flathash"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/flathash.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable flathash"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/flathash.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/build: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flathash
@@ -108,10 +108,10 @@ Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/buil
 .PHONY : Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/build
 
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build && $(CMAKE_COMMAND) -P CMakeFiles/flathash.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" && $(CMAKE_COMMAND) -P CMakeFiles/flathash.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/clean
 
 Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/external/src/flatbuffers-build/CMakeFiles/flathash.dir/depend
 

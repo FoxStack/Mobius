@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend.make
@@ -77,184 +77,184 @@ include Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir
 include Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 
 generated/remote_config/request_resource.cc: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/request.fbs
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating request_resource"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && ../../../../venv/bin/python /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/binary_to_array.py --input=/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/request.fbs --output_header=/home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/request_resource.h --output_source=/home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc --cpp_namespace=firebase::remote_config --array=request_resource_data --array_size=request_resource_size --filename_identifier=request_resource_filename
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating request_resource"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && python /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/binary_to_array.py --input=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/request.fbs --output_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/remote_config/request_resource.h --output_source=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc --cpp_namespace=firebase::remote_config --array=request_resource_data --array_size=request_resource_size --filename_identifier=request_resource_filename
 
 generated/remote_config/request_resource.h: generated/remote_config/request_resource.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate generated/remote_config/request_resource.h
 
 generated/remote_config/response_resource.cc: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/response.fbs
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating response_resource"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && ../../../../venv/bin/python /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/binary_to_array.py --input=/home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/response.fbs --output_header=/home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/response_resource.h --output_source=/home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc --cpp_namespace=firebase::remote_config --array=response_resource_data --array_size=response_resource_size --filename_identifier=response_resource_filename
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating response_resource"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && python /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/binary_to_array.py --input=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/response.fbs --output_header=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/remote_config/response_resource.h --output_source=/home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc --cpp_namespace=firebase::remote_config --array=response_resource_data --array_size=response_resource_size --filename_identifier=response_resource_filename
 
 generated/remote_config/response_resource.h: generated/remote_config/response_resource.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate generated/remote_config/response_resource.h
 
 generated/remote_config/request_generated.h: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flatc
 generated/remote_config/request_generated.h: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/request.fbs
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating ../../../generated/remote_config/request_generated.h"
-	cd /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config && /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flatc --no-union-value-namespacing --gen-object-api --cpp-ptr-type flatbuffers::unique_ptr -o /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/request.fbs
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating ../../../generated/remote_config/request_generated.h"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config" && "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flatc" --no-union-value-namespacing --gen-object-api --cpp-ptr-type flatbuffers::unique_ptr -o /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/remote_config -c /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/request.fbs
 
 generated/remote_config/response_generated.h: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flatc
 generated/remote_config/response_generated.h: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/response.fbs
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating ../../../generated/remote_config/response_generated.h"
-	cd /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config && /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flatc --no-union-value-namespacing --gen-object-api --cpp-ptr-type flatbuffers::unique_ptr -o /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/response.fbs
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Generating ../../../generated/remote_config/response_generated.h"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config" && "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/flatbuffers-build/flatc" --no-union-value-namespacing --gen-object-api --cpp-ptr-type flatbuffers::unique_ptr -o /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/remote_config -c /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/response.fbs
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/common.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/common.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/common.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/common.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/common.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/common.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/common.cc > CMakeFiles/firebase_remote_config.dir/src/common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/common.cc" > CMakeFiles/firebase_remote_config.dir/src/common.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/common.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/common.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/common.cc -o CMakeFiles/firebase_remote_config.dir/src/common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/common.cc" -o CMakeFiles/firebase_remote_config.dir/src/common.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/remote_config.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/remote_config.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/remote_config.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/remote_config.cc > CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/remote_config.cc" > CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/remote_config.cc -o CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/remote_config.cc" -o CMakeFiles/firebase_remote_config.dir/src/remote_config.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o: generated/remote_config/request_resource.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o -c /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc > CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc" > CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/remote_config/request_resource.cc" -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/request_resource.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o: generated/remote_config/response_resource.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o -c /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc > CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc" > CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/generated/remote_config/response_resource.cc" -o CMakeFiles/firebase_remote_config.dir/__/__/__/generated/remote_config/response_resource.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/rest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/rest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/rest.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/rest.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/rest.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/rest.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/rest.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/rest.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/config_data.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/config_data.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/config_data.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/config_data.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/config_data.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/config_data.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/config_data.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/config_data.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/file_manager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/file_manager.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/file_manager.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/file_manager.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/file_manager.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/file_manager.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/file_manager.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/file_manager.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/metadata.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/metadata.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/metadata.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/metadata.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/metadata.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/metadata.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/metadata.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/metadata.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/notification_channel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/notification_channel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/notification_channel.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/notification_channel.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/notification_channel.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/notification_channel.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/notification_channel.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/notification_channel.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_desktop.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_desktop.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_desktop.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_desktop.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_desktop.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_desktop.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_desktop.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_desktop.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_request.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_request.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_request.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_request.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_request.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_request.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_request.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_request.cc.s
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/flags.make
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o: ../Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_response.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_response.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_response.cc"
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_response.cc > CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_response.cc" > CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.i
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_response.cc -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config/src/desktop/remote_config_response.cc" -o CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.s
 
 # Object files for target firebase_remote_config
 firebase_remote_config_OBJECTS = \
@@ -288,9 +288,9 @@ Lib/firebase-cpp-sdk/remote_config/libfirebase_remote_config.a: Lib/firebase-cpp
 Lib/firebase-cpp-sdk/remote_config/libfirebase_remote_config.a: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/src/desktop/remote_config_response.cc.o
 Lib/firebase-cpp-sdk/remote_config/libfirebase_remote_config.a: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build.make
 Lib/firebase-cpp-sdk/remote_config/libfirebase_remote_config.a: Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libfirebase_remote_config.a"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && $(CMAKE_COMMAND) -P CMakeFiles/firebase_remote_config.dir/cmake_clean_target.cmake
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firebase_remote_config.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libfirebase_remote_config.a"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && $(CMAKE_COMMAND) -P CMakeFiles/firebase_remote_config.dir/cmake_clean_target.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firebase_remote_config.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build: Lib/firebase-cpp-sdk/remote_config/libfirebase_remote_config.a
@@ -298,7 +298,7 @@ Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build: 
 .PHONY : Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/build
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config && $(CMAKE_COMMAND) -P CMakeFiles/firebase_remote_config.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" && $(CMAKE_COMMAND) -P CMakeFiles/firebase_remote_config.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/clean
 
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend: generated/remote_config/request_generated.h
@@ -307,6 +307,6 @@ Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend:
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend: generated/remote_config/response_generated.h
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend: generated/remote_config/response_resource.cc
 Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend: generated/remote_config/response_resource.h
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/remote_config /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/remote_config" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/remote_config/CMakeFiles/firebase_remote_config.dir/depend
 

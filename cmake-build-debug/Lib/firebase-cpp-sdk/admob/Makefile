@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,37 +78,37 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -124,7 +124,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/admob//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/admob//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ firebase_admob: Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/rule
 
 # fast build rule for target.
 firebase_admob/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build
 .PHONY : firebase_admob/fast
 
 src/common/admob_common.o: src/common/admob_common.cc.o
@@ -196,7 +196,7 @@ src/common/admob_common.o: src/common/admob_common.cc.o
 
 # target to build an object file
 src/common/admob_common.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/admob_common.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/admob_common.cc.o
 .PHONY : src/common/admob_common.cc.o
 
 src/common/admob_common.i: src/common/admob_common.cc.i
@@ -205,7 +205,7 @@ src/common/admob_common.i: src/common/admob_common.cc.i
 
 # target to preprocess a source file
 src/common/admob_common.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/admob_common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/admob_common.cc.i
 .PHONY : src/common/admob_common.cc.i
 
 src/common/admob_common.s: src/common/admob_common.cc.s
@@ -214,7 +214,7 @@ src/common/admob_common.s: src/common/admob_common.cc.s
 
 # target to generate assembly for a file
 src/common/admob_common.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/admob_common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/admob_common.cc.s
 .PHONY : src/common/admob_common.cc.s
 
 src/common/banner_view.o: src/common/banner_view.cc.o
@@ -223,7 +223,7 @@ src/common/banner_view.o: src/common/banner_view.cc.o
 
 # target to build an object file
 src/common/banner_view.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view.cc.o
 .PHONY : src/common/banner_view.cc.o
 
 src/common/banner_view.i: src/common/banner_view.cc.i
@@ -232,7 +232,7 @@ src/common/banner_view.i: src/common/banner_view.cc.i
 
 # target to preprocess a source file
 src/common/banner_view.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view.cc.i
 .PHONY : src/common/banner_view.cc.i
 
 src/common/banner_view.s: src/common/banner_view.cc.s
@@ -241,7 +241,7 @@ src/common/banner_view.s: src/common/banner_view.cc.s
 
 # target to generate assembly for a file
 src/common/banner_view.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view.cc.s
 .PHONY : src/common/banner_view.cc.s
 
 src/common/banner_view_internal.o: src/common/banner_view_internal.cc.o
@@ -250,7 +250,7 @@ src/common/banner_view_internal.o: src/common/banner_view_internal.cc.o
 
 # target to build an object file
 src/common/banner_view_internal.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view_internal.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view_internal.cc.o
 .PHONY : src/common/banner_view_internal.cc.o
 
 src/common/banner_view_internal.i: src/common/banner_view_internal.cc.i
@@ -259,7 +259,7 @@ src/common/banner_view_internal.i: src/common/banner_view_internal.cc.i
 
 # target to preprocess a source file
 src/common/banner_view_internal.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view_internal.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view_internal.cc.i
 .PHONY : src/common/banner_view_internal.cc.i
 
 src/common/banner_view_internal.s: src/common/banner_view_internal.cc.s
@@ -268,7 +268,7 @@ src/common/banner_view_internal.s: src/common/banner_view_internal.cc.s
 
 # target to generate assembly for a file
 src/common/banner_view_internal.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view_internal.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/banner_view_internal.cc.s
 .PHONY : src/common/banner_view_internal.cc.s
 
 src/common/interstitial_ad.o: src/common/interstitial_ad.cc.o
@@ -277,7 +277,7 @@ src/common/interstitial_ad.o: src/common/interstitial_ad.cc.o
 
 # target to build an object file
 src/common/interstitial_ad.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad.cc.o
 .PHONY : src/common/interstitial_ad.cc.o
 
 src/common/interstitial_ad.i: src/common/interstitial_ad.cc.i
@@ -286,7 +286,7 @@ src/common/interstitial_ad.i: src/common/interstitial_ad.cc.i
 
 # target to preprocess a source file
 src/common/interstitial_ad.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad.cc.i
 .PHONY : src/common/interstitial_ad.cc.i
 
 src/common/interstitial_ad.s: src/common/interstitial_ad.cc.s
@@ -295,7 +295,7 @@ src/common/interstitial_ad.s: src/common/interstitial_ad.cc.s
 
 # target to generate assembly for a file
 src/common/interstitial_ad.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad.cc.s
 .PHONY : src/common/interstitial_ad.cc.s
 
 src/common/interstitial_ad_internal.o: src/common/interstitial_ad_internal.cc.o
@@ -304,7 +304,7 @@ src/common/interstitial_ad_internal.o: src/common/interstitial_ad_internal.cc.o
 
 # target to build an object file
 src/common/interstitial_ad_internal.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad_internal.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad_internal.cc.o
 .PHONY : src/common/interstitial_ad_internal.cc.o
 
 src/common/interstitial_ad_internal.i: src/common/interstitial_ad_internal.cc.i
@@ -313,7 +313,7 @@ src/common/interstitial_ad_internal.i: src/common/interstitial_ad_internal.cc.i
 
 # target to preprocess a source file
 src/common/interstitial_ad_internal.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad_internal.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad_internal.cc.i
 .PHONY : src/common/interstitial_ad_internal.cc.i
 
 src/common/interstitial_ad_internal.s: src/common/interstitial_ad_internal.cc.s
@@ -322,7 +322,7 @@ src/common/interstitial_ad_internal.s: src/common/interstitial_ad_internal.cc.s
 
 # target to generate assembly for a file
 src/common/interstitial_ad_internal.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad_internal.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/interstitial_ad_internal.cc.s
 .PHONY : src/common/interstitial_ad_internal.cc.s
 
 src/common/native_express_ad_view.o: src/common/native_express_ad_view.cc.o
@@ -331,7 +331,7 @@ src/common/native_express_ad_view.o: src/common/native_express_ad_view.cc.o
 
 # target to build an object file
 src/common/native_express_ad_view.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view.cc.o
 .PHONY : src/common/native_express_ad_view.cc.o
 
 src/common/native_express_ad_view.i: src/common/native_express_ad_view.cc.i
@@ -340,7 +340,7 @@ src/common/native_express_ad_view.i: src/common/native_express_ad_view.cc.i
 
 # target to preprocess a source file
 src/common/native_express_ad_view.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view.cc.i
 .PHONY : src/common/native_express_ad_view.cc.i
 
 src/common/native_express_ad_view.s: src/common/native_express_ad_view.cc.s
@@ -349,7 +349,7 @@ src/common/native_express_ad_view.s: src/common/native_express_ad_view.cc.s
 
 # target to generate assembly for a file
 src/common/native_express_ad_view.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view.cc.s
 .PHONY : src/common/native_express_ad_view.cc.s
 
 src/common/native_express_ad_view_internal.o: src/common/native_express_ad_view_internal.cc.o
@@ -358,7 +358,7 @@ src/common/native_express_ad_view_internal.o: src/common/native_express_ad_view_
 
 # target to build an object file
 src/common/native_express_ad_view_internal.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view_internal.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view_internal.cc.o
 .PHONY : src/common/native_express_ad_view_internal.cc.o
 
 src/common/native_express_ad_view_internal.i: src/common/native_express_ad_view_internal.cc.i
@@ -367,7 +367,7 @@ src/common/native_express_ad_view_internal.i: src/common/native_express_ad_view_
 
 # target to preprocess a source file
 src/common/native_express_ad_view_internal.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view_internal.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view_internal.cc.i
 .PHONY : src/common/native_express_ad_view_internal.cc.i
 
 src/common/native_express_ad_view_internal.s: src/common/native_express_ad_view_internal.cc.s
@@ -376,7 +376,7 @@ src/common/native_express_ad_view_internal.s: src/common/native_express_ad_view_
 
 # target to generate assembly for a file
 src/common/native_express_ad_view_internal.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view_internal.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/native_express_ad_view_internal.cc.s
 .PHONY : src/common/native_express_ad_view_internal.cc.s
 
 src/common/rewarded_video.o: src/common/rewarded_video.cc.o
@@ -385,7 +385,7 @@ src/common/rewarded_video.o: src/common/rewarded_video.cc.o
 
 # target to build an object file
 src/common/rewarded_video.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video.cc.o
 .PHONY : src/common/rewarded_video.cc.o
 
 src/common/rewarded_video.i: src/common/rewarded_video.cc.i
@@ -394,7 +394,7 @@ src/common/rewarded_video.i: src/common/rewarded_video.cc.i
 
 # target to preprocess a source file
 src/common/rewarded_video.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video.cc.i
 .PHONY : src/common/rewarded_video.cc.i
 
 src/common/rewarded_video.s: src/common/rewarded_video.cc.s
@@ -403,7 +403,7 @@ src/common/rewarded_video.s: src/common/rewarded_video.cc.s
 
 # target to generate assembly for a file
 src/common/rewarded_video.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video.cc.s
 .PHONY : src/common/rewarded_video.cc.s
 
 src/common/rewarded_video_internal.o: src/common/rewarded_video_internal.cc.o
@@ -412,7 +412,7 @@ src/common/rewarded_video_internal.o: src/common/rewarded_video_internal.cc.o
 
 # target to build an object file
 src/common/rewarded_video_internal.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video_internal.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video_internal.cc.o
 .PHONY : src/common/rewarded_video_internal.cc.o
 
 src/common/rewarded_video_internal.i: src/common/rewarded_video_internal.cc.i
@@ -421,7 +421,7 @@ src/common/rewarded_video_internal.i: src/common/rewarded_video_internal.cc.i
 
 # target to preprocess a source file
 src/common/rewarded_video_internal.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video_internal.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video_internal.cc.i
 .PHONY : src/common/rewarded_video_internal.cc.i
 
 src/common/rewarded_video_internal.s: src/common/rewarded_video_internal.cc.s
@@ -430,7 +430,7 @@ src/common/rewarded_video_internal.s: src/common/rewarded_video_internal.cc.s
 
 # target to generate assembly for a file
 src/common/rewarded_video_internal.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video_internal.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/common/rewarded_video_internal.cc.s
 .PHONY : src/common/rewarded_video_internal.cc.s
 
 src/stub/admob_stub.o: src/stub/admob_stub.cc.o
@@ -439,7 +439,7 @@ src/stub/admob_stub.o: src/stub/admob_stub.cc.o
 
 # target to build an object file
 src/stub/admob_stub.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/stub/admob_stub.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/stub/admob_stub.cc.o
 .PHONY : src/stub/admob_stub.cc.o
 
 src/stub/admob_stub.i: src/stub/admob_stub.cc.i
@@ -448,7 +448,7 @@ src/stub/admob_stub.i: src/stub/admob_stub.cc.i
 
 # target to preprocess a source file
 src/stub/admob_stub.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/stub/admob_stub.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/stub/admob_stub.cc.i
 .PHONY : src/stub/admob_stub.cc.i
 
 src/stub/admob_stub.s: src/stub/admob_stub.cc.s
@@ -457,7 +457,7 @@ src/stub/admob_stub.s: src/stub/admob_stub.cc.s
 
 # target to generate assembly for a file
 src/stub/admob_stub.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/stub/admob_stub.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/build.make Lib/firebase-cpp-sdk/admob/CMakeFiles/firebase_admob.dir/src/stub/admob_stub.cc.s
 .PHONY : src/stub/admob_stub.cc.s
 
 # Help Target
@@ -514,6 +514,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

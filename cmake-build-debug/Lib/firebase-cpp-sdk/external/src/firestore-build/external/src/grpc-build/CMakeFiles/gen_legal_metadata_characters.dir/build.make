@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/depend.make
@@ -78,16 +78,16 @@ include Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-buil
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.o: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/flags.make
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.o: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/tools/codegen/core/gen_legal_metadata_characters.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/tools/codegen/core/gen_legal_metadata_characters.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/tools/codegen/core/gen_legal_metadata_characters.cc"
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/tools/codegen/core/gen_legal_metadata_characters.cc > CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/tools/codegen/core/gen_legal_metadata_characters.cc" > CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.i
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/tools/codegen/core/gen_legal_metadata_characters.cc -o CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc/tools/codegen/core/gen_legal_metadata_characters.cc" -o CMakeFiles/gen_legal_metadata_characters.dir/tools/codegen/core/gen_legal_metadata_characters.cc.s
 
 # Object files for target gen_legal_metadata_characters
 gen_legal_metadata_characters_OBJECTS = \
@@ -100,8 +100,8 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/gen_le
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/gen_legal_metadata_characters: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/build.make
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/gen_legal_metadata_characters: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/libprotobufd.a
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/gen_legal_metadata_characters: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gen_legal_metadata_characters"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gen_legal_metadata_characters.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gen_legal_metadata_characters"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gen_legal_metadata_characters.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/build: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/gen_legal_metadata_characters
@@ -109,10 +109,10 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeF
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/build
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build && $(CMAKE_COMMAND) -P CMakeFiles/gen_legal_metadata_characters.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build" && $(CMAKE_COMMAND) -P CMakeFiles/gen_legal_metadata_characters.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/clean
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/CMakeFiles/gen_legal_metadata_characters.dir/depend
 

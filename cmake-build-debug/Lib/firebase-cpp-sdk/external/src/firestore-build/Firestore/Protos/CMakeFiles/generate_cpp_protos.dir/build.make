@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Utility rule file for generate_cpp_protos.
 
@@ -115,8 +115,8 @@ Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/cpp/firestore/local
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/cpp/firestore/local/maybe_document.pb.cc: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos/google/firestore/v1/write.proto
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/cpp/firestore/local/maybe_document.pb.cc: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos/google/rpc/status.proto
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/cpp/firestore/local/maybe_document.pb.cc: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos/google/type/latlng.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ protobuf sources"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos && python /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/build_protos.py --cpp --protoc=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0 --output_dir=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ protobuf sources"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" && python "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/build_protos.py" --cpp "--protoc=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/grpc-build/third_party/protobuf/protoc-3.11.2.0" "--output_dir=/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos" "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/protos" "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb/generator" "-I/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/protobuf/src"
 
 Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/cpp/firestore/local/maybe_document.pb.h: Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/cpp/firestore/local/maybe_document.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/cpp/firestore/local/maybe_document.pb.h
@@ -230,10 +230,10 @@ Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/ge
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_cpp_protos.dir/build
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_cpp_protos.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos && $(CMAKE_COMMAND) -P CMakeFiles/generate_cpp_protos.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" && $(CMAKE_COMMAND) -P CMakeFiles/generate_cpp_protos.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_cpp_protos.dir/clean
 
 Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_cpp_protos.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_cpp_protos.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_cpp_protos.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/external/src/firestore-build/Firestore/Protos/CMakeFiles/generate_cpp_protos.dir/depend
 

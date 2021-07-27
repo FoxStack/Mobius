@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Utility rule file for FIREBASE_FIRESTORE_GENERATED_HEADERS.
 
@@ -73,9 +73,9 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 include Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/progress.make
 
 Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying internal Firestore headers"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E make_directory /home/raf/Desktop/Mobius/cmake-build-debug/generated/firestore/src/include/firebase/firestore
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore && /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E copy_directory /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/include /home/raf/Desktop/Mobius/cmake-build-debug/generated/firestore/src/include/firebase/firestore
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Copying internal Firestore headers"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore" && /snap/clion/158/bin/cmake/linux/bin/cmake -E make_directory /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/firestore/src/include/firebase/firestore
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore" && /snap/clion/158/bin/cmake/linux/bin/cmake -E copy_directory /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/core/include /home/parham/Personal/School/Saddleback/Summer\ 2021/CS\ 1C/Mobius/cmake-build-debug/generated/firestore/src/include/firebase/firestore
 
 FIREBASE_FIRESTORE_GENERATED_HEADERS: Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS
 FIREBASE_FIRESTORE_GENERATED_HEADERS: Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/build.make
@@ -88,10 +88,10 @@ Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.d
 .PHONY : Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/build
 
 Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore && $(CMAKE_COMMAND) -P CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore" && $(CMAKE_COMMAND) -P CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/clean
 
 Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/firestore /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/firestore" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/firestore/CMakeFiles/FIREBASE_FIRESTORE_GENERATED_HEADERS.dir/depend
 

@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,37 +78,37 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -124,7 +124,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/auth//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/auth//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ generate_request_fbs: Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.
 
 # fast build rule for target.
 generate_request_fbs/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/generate_request_fbs.dir/build
 .PHONY : generate_request_fbs/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ firebase_auth: Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/rule
 
 # fast build rule for target.
 firebase_auth/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build
 .PHONY : firebase_auth/fast
 
 __/__/__/generated/auth/request_resource.o: __/__/__/generated/auth/request_resource.cc.o
@@ -211,7 +211,7 @@ __/__/__/generated/auth/request_resource.o: __/__/__/generated/auth/request_reso
 
 # target to build an object file
 __/__/__/generated/auth/request_resource.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/request_resource.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/request_resource.cc.o
 .PHONY : __/__/__/generated/auth/request_resource.cc.o
 
 __/__/__/generated/auth/request_resource.i: __/__/__/generated/auth/request_resource.cc.i
@@ -220,7 +220,7 @@ __/__/__/generated/auth/request_resource.i: __/__/__/generated/auth/request_reso
 
 # target to preprocess a source file
 __/__/__/generated/auth/request_resource.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/request_resource.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/request_resource.cc.i
 .PHONY : __/__/__/generated/auth/request_resource.cc.i
 
 __/__/__/generated/auth/request_resource.s: __/__/__/generated/auth/request_resource.cc.s
@@ -229,7 +229,7 @@ __/__/__/generated/auth/request_resource.s: __/__/__/generated/auth/request_reso
 
 # target to generate assembly for a file
 __/__/__/generated/auth/request_resource.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/request_resource.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/request_resource.cc.s
 .PHONY : __/__/__/generated/auth/request_resource.cc.s
 
 __/__/__/generated/auth/response_resource.o: __/__/__/generated/auth/response_resource.cc.o
@@ -238,7 +238,7 @@ __/__/__/generated/auth/response_resource.o: __/__/__/generated/auth/response_re
 
 # target to build an object file
 __/__/__/generated/auth/response_resource.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/response_resource.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/response_resource.cc.o
 .PHONY : __/__/__/generated/auth/response_resource.cc.o
 
 __/__/__/generated/auth/response_resource.i: __/__/__/generated/auth/response_resource.cc.i
@@ -247,7 +247,7 @@ __/__/__/generated/auth/response_resource.i: __/__/__/generated/auth/response_re
 
 # target to preprocess a source file
 __/__/__/generated/auth/response_resource.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/response_resource.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/response_resource.cc.i
 .PHONY : __/__/__/generated/auth/response_resource.cc.i
 
 __/__/__/generated/auth/response_resource.s: __/__/__/generated/auth/response_resource.cc.s
@@ -256,7 +256,7 @@ __/__/__/generated/auth/response_resource.s: __/__/__/generated/auth/response_re
 
 # target to generate assembly for a file
 __/__/__/generated/auth/response_resource.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/response_resource.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/response_resource.cc.s
 .PHONY : __/__/__/generated/auth/response_resource.cc.s
 
 __/__/__/generated/auth/user_data_resource.o: __/__/__/generated/auth/user_data_resource.cc.o
@@ -265,7 +265,7 @@ __/__/__/generated/auth/user_data_resource.o: __/__/__/generated/auth/user_data_
 
 # target to build an object file
 __/__/__/generated/auth/user_data_resource.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/user_data_resource.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/user_data_resource.cc.o
 .PHONY : __/__/__/generated/auth/user_data_resource.cc.o
 
 __/__/__/generated/auth/user_data_resource.i: __/__/__/generated/auth/user_data_resource.cc.i
@@ -274,7 +274,7 @@ __/__/__/generated/auth/user_data_resource.i: __/__/__/generated/auth/user_data_
 
 # target to preprocess a source file
 __/__/__/generated/auth/user_data_resource.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/user_data_resource.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/user_data_resource.cc.i
 .PHONY : __/__/__/generated/auth/user_data_resource.cc.i
 
 __/__/__/generated/auth/user_data_resource.s: __/__/__/generated/auth/user_data_resource.cc.s
@@ -283,7 +283,7 @@ __/__/__/generated/auth/user_data_resource.s: __/__/__/generated/auth/user_data_
 
 # target to generate assembly for a file
 __/__/__/generated/auth/user_data_resource.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/user_data_resource.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/__/__/__/generated/auth/user_data_resource.cc.s
 .PHONY : __/__/__/generated/auth/user_data_resource.cc.s
 
 src/auth.o: src/auth.cc.o
@@ -292,7 +292,7 @@ src/auth.o: src/auth.cc.o
 
 # target to build an object file
 src/auth.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/auth.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/auth.cc.o
 .PHONY : src/auth.cc.o
 
 src/auth.i: src/auth.cc.i
@@ -301,7 +301,7 @@ src/auth.i: src/auth.cc.i
 
 # target to preprocess a source file
 src/auth.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/auth.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/auth.cc.i
 .PHONY : src/auth.cc.i
 
 src/auth.s: src/auth.cc.s
@@ -310,7 +310,7 @@ src/auth.s: src/auth.cc.s
 
 # target to generate assembly for a file
 src/auth.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/auth.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/auth.cc.s
 .PHONY : src/auth.cc.s
 
 src/common.o: src/common.cc.o
@@ -319,7 +319,7 @@ src/common.o: src/common.cc.o
 
 # target to build an object file
 src/common.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/common.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/common.cc.o
 .PHONY : src/common.cc.o
 
 src/common.i: src/common.cc.i
@@ -328,7 +328,7 @@ src/common.i: src/common.cc.i
 
 # target to preprocess a source file
 src/common.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/common.cc.i
 .PHONY : src/common.cc.i
 
 src/common.s: src/common.cc.s
@@ -337,7 +337,7 @@ src/common.s: src/common.cc.s
 
 # target to generate assembly for a file
 src/common.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/common.cc.s
 .PHONY : src/common.cc.s
 
 src/desktop/auth_constants.o: src/desktop/auth_constants.cc.o
@@ -346,7 +346,7 @@ src/desktop/auth_constants.o: src/desktop/auth_constants.cc.o
 
 # target to build an object file
 src/desktop/auth_constants.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_constants.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_constants.cc.o
 .PHONY : src/desktop/auth_constants.cc.o
 
 src/desktop/auth_constants.i: src/desktop/auth_constants.cc.i
@@ -355,7 +355,7 @@ src/desktop/auth_constants.i: src/desktop/auth_constants.cc.i
 
 # target to preprocess a source file
 src/desktop/auth_constants.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_constants.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_constants.cc.i
 .PHONY : src/desktop/auth_constants.cc.i
 
 src/desktop/auth_constants.s: src/desktop/auth_constants.cc.s
@@ -364,7 +364,7 @@ src/desktop/auth_constants.s: src/desktop/auth_constants.cc.s
 
 # target to generate assembly for a file
 src/desktop/auth_constants.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_constants.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_constants.cc.s
 .PHONY : src/desktop/auth_constants.cc.s
 
 src/desktop/auth_credential.o: src/desktop/auth_credential.cc.o
@@ -373,7 +373,7 @@ src/desktop/auth_credential.o: src/desktop/auth_credential.cc.o
 
 # target to build an object file
 src/desktop/auth_credential.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_credential.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_credential.cc.o
 .PHONY : src/desktop/auth_credential.cc.o
 
 src/desktop/auth_credential.i: src/desktop/auth_credential.cc.i
@@ -382,7 +382,7 @@ src/desktop/auth_credential.i: src/desktop/auth_credential.cc.i
 
 # target to preprocess a source file
 src/desktop/auth_credential.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_credential.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_credential.cc.i
 .PHONY : src/desktop/auth_credential.cc.i
 
 src/desktop/auth_credential.s: src/desktop/auth_credential.cc.s
@@ -391,7 +391,7 @@ src/desktop/auth_credential.s: src/desktop/auth_credential.cc.s
 
 # target to generate assembly for a file
 src/desktop/auth_credential.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_credential.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_credential.cc.s
 .PHONY : src/desktop/auth_credential.cc.s
 
 src/desktop/auth_desktop.o: src/desktop/auth_desktop.cc.o
@@ -400,7 +400,7 @@ src/desktop/auth_desktop.o: src/desktop/auth_desktop.cc.o
 
 # target to build an object file
 src/desktop/auth_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_desktop.cc.o
 .PHONY : src/desktop/auth_desktop.cc.o
 
 src/desktop/auth_desktop.i: src/desktop/auth_desktop.cc.i
@@ -409,7 +409,7 @@ src/desktop/auth_desktop.i: src/desktop/auth_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/auth_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_desktop.cc.i
 .PHONY : src/desktop/auth_desktop.cc.i
 
 src/desktop/auth_desktop.s: src/desktop/auth_desktop.cc.s
@@ -418,7 +418,7 @@ src/desktop/auth_desktop.s: src/desktop/auth_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/auth_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_desktop.cc.s
 .PHONY : src/desktop/auth_desktop.cc.s
 
 src/desktop/auth_providers/email_auth_provider.o: src/desktop/auth_providers/email_auth_provider.cc.o
@@ -427,7 +427,7 @@ src/desktop/auth_providers/email_auth_provider.o: src/desktop/auth_providers/ema
 
 # target to build an object file
 src/desktop/auth_providers/email_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/email_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/email_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/email_auth_provider.cc.o
 
 src/desktop/auth_providers/email_auth_provider.i: src/desktop/auth_providers/email_auth_provider.cc.i
@@ -436,7 +436,7 @@ src/desktop/auth_providers/email_auth_provider.i: src/desktop/auth_providers/ema
 
 # target to preprocess a source file
 src/desktop/auth_providers/email_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/email_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/email_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/email_auth_provider.cc.i
 
 src/desktop/auth_providers/email_auth_provider.s: src/desktop/auth_providers/email_auth_provider.cc.s
@@ -445,7 +445,7 @@ src/desktop/auth_providers/email_auth_provider.s: src/desktop/auth_providers/ema
 
 # target to generate assembly for a file
 src/desktop/auth_providers/email_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/email_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/email_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/email_auth_provider.cc.s
 
 src/desktop/auth_providers/facebook_auth_provider.o: src/desktop/auth_providers/facebook_auth_provider.cc.o
@@ -454,7 +454,7 @@ src/desktop/auth_providers/facebook_auth_provider.o: src/desktop/auth_providers/
 
 # target to build an object file
 src/desktop/auth_providers/facebook_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/facebook_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/facebook_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/facebook_auth_provider.cc.o
 
 src/desktop/auth_providers/facebook_auth_provider.i: src/desktop/auth_providers/facebook_auth_provider.cc.i
@@ -463,7 +463,7 @@ src/desktop/auth_providers/facebook_auth_provider.i: src/desktop/auth_providers/
 
 # target to preprocess a source file
 src/desktop/auth_providers/facebook_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/facebook_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/facebook_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/facebook_auth_provider.cc.i
 
 src/desktop/auth_providers/facebook_auth_provider.s: src/desktop/auth_providers/facebook_auth_provider.cc.s
@@ -472,7 +472,7 @@ src/desktop/auth_providers/facebook_auth_provider.s: src/desktop/auth_providers/
 
 # target to generate assembly for a file
 src/desktop/auth_providers/facebook_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/facebook_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/facebook_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/facebook_auth_provider.cc.s
 
 src/desktop/auth_providers/federated_auth_provider.o: src/desktop/auth_providers/federated_auth_provider.cc.o
@@ -481,7 +481,7 @@ src/desktop/auth_providers/federated_auth_provider.o: src/desktop/auth_providers
 
 # target to build an object file
 src/desktop/auth_providers/federated_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/federated_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/federated_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/federated_auth_provider.cc.o
 
 src/desktop/auth_providers/federated_auth_provider.i: src/desktop/auth_providers/federated_auth_provider.cc.i
@@ -490,7 +490,7 @@ src/desktop/auth_providers/federated_auth_provider.i: src/desktop/auth_providers
 
 # target to preprocess a source file
 src/desktop/auth_providers/federated_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/federated_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/federated_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/federated_auth_provider.cc.i
 
 src/desktop/auth_providers/federated_auth_provider.s: src/desktop/auth_providers/federated_auth_provider.cc.s
@@ -499,7 +499,7 @@ src/desktop/auth_providers/federated_auth_provider.s: src/desktop/auth_providers
 
 # target to generate assembly for a file
 src/desktop/auth_providers/federated_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/federated_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/federated_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/federated_auth_provider.cc.s
 
 src/desktop/auth_providers/gamecenter_auth_provider.o: src/desktop/auth_providers/gamecenter_auth_provider.cc.o
@@ -508,7 +508,7 @@ src/desktop/auth_providers/gamecenter_auth_provider.o: src/desktop/auth_provider
 
 # target to build an object file
 src/desktop/auth_providers/gamecenter_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/gamecenter_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/gamecenter_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/gamecenter_auth_provider.cc.o
 
 src/desktop/auth_providers/gamecenter_auth_provider.i: src/desktop/auth_providers/gamecenter_auth_provider.cc.i
@@ -517,7 +517,7 @@ src/desktop/auth_providers/gamecenter_auth_provider.i: src/desktop/auth_provider
 
 # target to preprocess a source file
 src/desktop/auth_providers/gamecenter_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/gamecenter_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/gamecenter_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/gamecenter_auth_provider.cc.i
 
 src/desktop/auth_providers/gamecenter_auth_provider.s: src/desktop/auth_providers/gamecenter_auth_provider.cc.s
@@ -526,7 +526,7 @@ src/desktop/auth_providers/gamecenter_auth_provider.s: src/desktop/auth_provider
 
 # target to generate assembly for a file
 src/desktop/auth_providers/gamecenter_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/gamecenter_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/gamecenter_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/gamecenter_auth_provider.cc.s
 
 src/desktop/auth_providers/github_auth_provider.o: src/desktop/auth_providers/github_auth_provider.cc.o
@@ -535,7 +535,7 @@ src/desktop/auth_providers/github_auth_provider.o: src/desktop/auth_providers/gi
 
 # target to build an object file
 src/desktop/auth_providers/github_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/github_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/github_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/github_auth_provider.cc.o
 
 src/desktop/auth_providers/github_auth_provider.i: src/desktop/auth_providers/github_auth_provider.cc.i
@@ -544,7 +544,7 @@ src/desktop/auth_providers/github_auth_provider.i: src/desktop/auth_providers/gi
 
 # target to preprocess a source file
 src/desktop/auth_providers/github_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/github_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/github_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/github_auth_provider.cc.i
 
 src/desktop/auth_providers/github_auth_provider.s: src/desktop/auth_providers/github_auth_provider.cc.s
@@ -553,7 +553,7 @@ src/desktop/auth_providers/github_auth_provider.s: src/desktop/auth_providers/gi
 
 # target to generate assembly for a file
 src/desktop/auth_providers/github_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/github_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/github_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/github_auth_provider.cc.s
 
 src/desktop/auth_providers/google_auth_provider.o: src/desktop/auth_providers/google_auth_provider.cc.o
@@ -562,7 +562,7 @@ src/desktop/auth_providers/google_auth_provider.o: src/desktop/auth_providers/go
 
 # target to build an object file
 src/desktop/auth_providers/google_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/google_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/google_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/google_auth_provider.cc.o
 
 src/desktop/auth_providers/google_auth_provider.i: src/desktop/auth_providers/google_auth_provider.cc.i
@@ -571,7 +571,7 @@ src/desktop/auth_providers/google_auth_provider.i: src/desktop/auth_providers/go
 
 # target to preprocess a source file
 src/desktop/auth_providers/google_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/google_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/google_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/google_auth_provider.cc.i
 
 src/desktop/auth_providers/google_auth_provider.s: src/desktop/auth_providers/google_auth_provider.cc.s
@@ -580,7 +580,7 @@ src/desktop/auth_providers/google_auth_provider.s: src/desktop/auth_providers/go
 
 # target to generate assembly for a file
 src/desktop/auth_providers/google_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/google_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/google_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/google_auth_provider.cc.s
 
 src/desktop/auth_providers/oauth_auth_provider.o: src/desktop/auth_providers/oauth_auth_provider.cc.o
@@ -589,7 +589,7 @@ src/desktop/auth_providers/oauth_auth_provider.o: src/desktop/auth_providers/oau
 
 # target to build an object file
 src/desktop/auth_providers/oauth_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/oauth_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/oauth_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/oauth_auth_provider.cc.o
 
 src/desktop/auth_providers/oauth_auth_provider.i: src/desktop/auth_providers/oauth_auth_provider.cc.i
@@ -598,7 +598,7 @@ src/desktop/auth_providers/oauth_auth_provider.i: src/desktop/auth_providers/oau
 
 # target to preprocess a source file
 src/desktop/auth_providers/oauth_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/oauth_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/oauth_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/oauth_auth_provider.cc.i
 
 src/desktop/auth_providers/oauth_auth_provider.s: src/desktop/auth_providers/oauth_auth_provider.cc.s
@@ -607,7 +607,7 @@ src/desktop/auth_providers/oauth_auth_provider.s: src/desktop/auth_providers/oau
 
 # target to generate assembly for a file
 src/desktop/auth_providers/oauth_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/oauth_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/oauth_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/oauth_auth_provider.cc.s
 
 src/desktop/auth_providers/phone_auth_provider.o: src/desktop/auth_providers/phone_auth_provider.cc.o
@@ -616,7 +616,7 @@ src/desktop/auth_providers/phone_auth_provider.o: src/desktop/auth_providers/pho
 
 # target to build an object file
 src/desktop/auth_providers/phone_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/phone_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/phone_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/phone_auth_provider.cc.o
 
 src/desktop/auth_providers/phone_auth_provider.i: src/desktop/auth_providers/phone_auth_provider.cc.i
@@ -625,7 +625,7 @@ src/desktop/auth_providers/phone_auth_provider.i: src/desktop/auth_providers/pho
 
 # target to preprocess a source file
 src/desktop/auth_providers/phone_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/phone_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/phone_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/phone_auth_provider.cc.i
 
 src/desktop/auth_providers/phone_auth_provider.s: src/desktop/auth_providers/phone_auth_provider.cc.s
@@ -634,7 +634,7 @@ src/desktop/auth_providers/phone_auth_provider.s: src/desktop/auth_providers/pho
 
 # target to generate assembly for a file
 src/desktop/auth_providers/phone_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/phone_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/phone_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/phone_auth_provider.cc.s
 
 src/desktop/auth_providers/playgames_auth_provider.o: src/desktop/auth_providers/playgames_auth_provider.cc.o
@@ -643,7 +643,7 @@ src/desktop/auth_providers/playgames_auth_provider.o: src/desktop/auth_providers
 
 # target to build an object file
 src/desktop/auth_providers/playgames_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/playgames_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/playgames_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/playgames_auth_provider.cc.o
 
 src/desktop/auth_providers/playgames_auth_provider.i: src/desktop/auth_providers/playgames_auth_provider.cc.i
@@ -652,7 +652,7 @@ src/desktop/auth_providers/playgames_auth_provider.i: src/desktop/auth_providers
 
 # target to preprocess a source file
 src/desktop/auth_providers/playgames_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/playgames_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/playgames_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/playgames_auth_provider.cc.i
 
 src/desktop/auth_providers/playgames_auth_provider.s: src/desktop/auth_providers/playgames_auth_provider.cc.s
@@ -661,7 +661,7 @@ src/desktop/auth_providers/playgames_auth_provider.s: src/desktop/auth_providers
 
 # target to generate assembly for a file
 src/desktop/auth_providers/playgames_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/playgames_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/playgames_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/playgames_auth_provider.cc.s
 
 src/desktop/auth_providers/twitter_auth_provider.o: src/desktop/auth_providers/twitter_auth_provider.cc.o
@@ -670,7 +670,7 @@ src/desktop/auth_providers/twitter_auth_provider.o: src/desktop/auth_providers/t
 
 # target to build an object file
 src/desktop/auth_providers/twitter_auth_provider.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/twitter_auth_provider.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/twitter_auth_provider.cc.o
 .PHONY : src/desktop/auth_providers/twitter_auth_provider.cc.o
 
 src/desktop/auth_providers/twitter_auth_provider.i: src/desktop/auth_providers/twitter_auth_provider.cc.i
@@ -679,7 +679,7 @@ src/desktop/auth_providers/twitter_auth_provider.i: src/desktop/auth_providers/t
 
 # target to preprocess a source file
 src/desktop/auth_providers/twitter_auth_provider.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/twitter_auth_provider.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/twitter_auth_provider.cc.i
 .PHONY : src/desktop/auth_providers/twitter_auth_provider.cc.i
 
 src/desktop/auth_providers/twitter_auth_provider.s: src/desktop/auth_providers/twitter_auth_provider.cc.s
@@ -688,7 +688,7 @@ src/desktop/auth_providers/twitter_auth_provider.s: src/desktop/auth_providers/t
 
 # target to generate assembly for a file
 src/desktop/auth_providers/twitter_auth_provider.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/twitter_auth_provider.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_providers/twitter_auth_provider.cc.s
 .PHONY : src/desktop/auth_providers/twitter_auth_provider.cc.s
 
 src/desktop/auth_util.o: src/desktop/auth_util.cc.o
@@ -697,7 +697,7 @@ src/desktop/auth_util.o: src/desktop/auth_util.cc.o
 
 # target to build an object file
 src/desktop/auth_util.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_util.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_util.cc.o
 .PHONY : src/desktop/auth_util.cc.o
 
 src/desktop/auth_util.i: src/desktop/auth_util.cc.i
@@ -706,7 +706,7 @@ src/desktop/auth_util.i: src/desktop/auth_util.cc.i
 
 # target to preprocess a source file
 src/desktop/auth_util.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_util.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_util.cc.i
 .PHONY : src/desktop/auth_util.cc.i
 
 src/desktop/auth_util.s: src/desktop/auth_util.cc.s
@@ -715,7 +715,7 @@ src/desktop/auth_util.s: src/desktop/auth_util.cc.s
 
 # target to generate assembly for a file
 src/desktop/auth_util.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_util.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/auth_util.cc.s
 .PHONY : src/desktop/auth_util.cc.s
 
 src/desktop/authentication_result.o: src/desktop/authentication_result.cc.o
@@ -724,7 +724,7 @@ src/desktop/authentication_result.o: src/desktop/authentication_result.cc.o
 
 # target to build an object file
 src/desktop/authentication_result.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/authentication_result.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/authentication_result.cc.o
 .PHONY : src/desktop/authentication_result.cc.o
 
 src/desktop/authentication_result.i: src/desktop/authentication_result.cc.i
@@ -733,7 +733,7 @@ src/desktop/authentication_result.i: src/desktop/authentication_result.cc.i
 
 # target to preprocess a source file
 src/desktop/authentication_result.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/authentication_result.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/authentication_result.cc.i
 .PHONY : src/desktop/authentication_result.cc.i
 
 src/desktop/authentication_result.s: src/desktop/authentication_result.cc.s
@@ -742,7 +742,7 @@ src/desktop/authentication_result.s: src/desktop/authentication_result.cc.s
 
 # target to generate assembly for a file
 src/desktop/authentication_result.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/authentication_result.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/authentication_result.cc.s
 .PHONY : src/desktop/authentication_result.cc.s
 
 src/desktop/credential_desktop.o: src/desktop/credential_desktop.cc.o
@@ -751,7 +751,7 @@ src/desktop/credential_desktop.o: src/desktop/credential_desktop.cc.o
 
 # target to build an object file
 src/desktop/credential_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_desktop.cc.o
 .PHONY : src/desktop/credential_desktop.cc.o
 
 src/desktop/credential_desktop.i: src/desktop/credential_desktop.cc.i
@@ -760,7 +760,7 @@ src/desktop/credential_desktop.i: src/desktop/credential_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/credential_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_desktop.cc.i
 .PHONY : src/desktop/credential_desktop.cc.i
 
 src/desktop/credential_desktop.s: src/desktop/credential_desktop.cc.s
@@ -769,7 +769,7 @@ src/desktop/credential_desktop.s: src/desktop/credential_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/credential_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_desktop.cc.s
 .PHONY : src/desktop/credential_desktop.cc.s
 
 src/desktop/credential_impl.o: src/desktop/credential_impl.cc.o
@@ -778,7 +778,7 @@ src/desktop/credential_impl.o: src/desktop/credential_impl.cc.o
 
 # target to build an object file
 src/desktop/credential_impl.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_impl.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_impl.cc.o
 .PHONY : src/desktop/credential_impl.cc.o
 
 src/desktop/credential_impl.i: src/desktop/credential_impl.cc.i
@@ -787,7 +787,7 @@ src/desktop/credential_impl.i: src/desktop/credential_impl.cc.i
 
 # target to preprocess a source file
 src/desktop/credential_impl.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_impl.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_impl.cc.i
 .PHONY : src/desktop/credential_impl.cc.i
 
 src/desktop/credential_impl.s: src/desktop/credential_impl.cc.s
@@ -796,7 +796,7 @@ src/desktop/credential_impl.s: src/desktop/credential_impl.cc.s
 
 # target to generate assembly for a file
 src/desktop/credential_impl.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_impl.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_impl.cc.s
 .PHONY : src/desktop/credential_impl.cc.s
 
 src/desktop/credential_util.o: src/desktop/credential_util.cc.o
@@ -805,7 +805,7 @@ src/desktop/credential_util.o: src/desktop/credential_util.cc.o
 
 # target to build an object file
 src/desktop/credential_util.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_util.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_util.cc.o
 .PHONY : src/desktop/credential_util.cc.o
 
 src/desktop/credential_util.i: src/desktop/credential_util.cc.i
@@ -814,7 +814,7 @@ src/desktop/credential_util.i: src/desktop/credential_util.cc.i
 
 # target to preprocess a source file
 src/desktop/credential_util.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_util.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_util.cc.i
 .PHONY : src/desktop/credential_util.cc.i
 
 src/desktop/credential_util.s: src/desktop/credential_util.cc.s
@@ -823,7 +823,7 @@ src/desktop/credential_util.s: src/desktop/credential_util.cc.s
 
 # target to generate assembly for a file
 src/desktop/credential_util.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_util.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/credential_util.cc.s
 .PHONY : src/desktop/credential_util.cc.s
 
 src/desktop/get_account_info_result.o: src/desktop/get_account_info_result.cc.o
@@ -832,7 +832,7 @@ src/desktop/get_account_info_result.o: src/desktop/get_account_info_result.cc.o
 
 # target to build an object file
 src/desktop/get_account_info_result.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_account_info_result.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_account_info_result.cc.o
 .PHONY : src/desktop/get_account_info_result.cc.o
 
 src/desktop/get_account_info_result.i: src/desktop/get_account_info_result.cc.i
@@ -841,7 +841,7 @@ src/desktop/get_account_info_result.i: src/desktop/get_account_info_result.cc.i
 
 # target to preprocess a source file
 src/desktop/get_account_info_result.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_account_info_result.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_account_info_result.cc.i
 .PHONY : src/desktop/get_account_info_result.cc.i
 
 src/desktop/get_account_info_result.s: src/desktop/get_account_info_result.cc.s
@@ -850,7 +850,7 @@ src/desktop/get_account_info_result.s: src/desktop/get_account_info_result.cc.s
 
 # target to generate assembly for a file
 src/desktop/get_account_info_result.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_account_info_result.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_account_info_result.cc.s
 .PHONY : src/desktop/get_account_info_result.cc.s
 
 src/desktop/get_additional_user_info.o: src/desktop/get_additional_user_info.cc.o
@@ -859,7 +859,7 @@ src/desktop/get_additional_user_info.o: src/desktop/get_additional_user_info.cc.
 
 # target to build an object file
 src/desktop/get_additional_user_info.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_additional_user_info.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_additional_user_info.cc.o
 .PHONY : src/desktop/get_additional_user_info.cc.o
 
 src/desktop/get_additional_user_info.i: src/desktop/get_additional_user_info.cc.i
@@ -868,7 +868,7 @@ src/desktop/get_additional_user_info.i: src/desktop/get_additional_user_info.cc.
 
 # target to preprocess a source file
 src/desktop/get_additional_user_info.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_additional_user_info.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_additional_user_info.cc.i
 .PHONY : src/desktop/get_additional_user_info.cc.i
 
 src/desktop/get_additional_user_info.s: src/desktop/get_additional_user_info.cc.s
@@ -877,7 +877,7 @@ src/desktop/get_additional_user_info.s: src/desktop/get_additional_user_info.cc.
 
 # target to generate assembly for a file
 src/desktop/get_additional_user_info.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_additional_user_info.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/get_additional_user_info.cc.s
 .PHONY : src/desktop/get_additional_user_info.cc.s
 
 src/desktop/rpcs/auth_request.o: src/desktop/rpcs/auth_request.cc.o
@@ -886,7 +886,7 @@ src/desktop/rpcs/auth_request.o: src/desktop/rpcs/auth_request.cc.o
 
 # target to build an object file
 src/desktop/rpcs/auth_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_request.cc.o
 .PHONY : src/desktop/rpcs/auth_request.cc.o
 
 src/desktop/rpcs/auth_request.i: src/desktop/rpcs/auth_request.cc.i
@@ -895,7 +895,7 @@ src/desktop/rpcs/auth_request.i: src/desktop/rpcs/auth_request.cc.i
 
 # target to preprocess a source file
 src/desktop/rpcs/auth_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_request.cc.i
 .PHONY : src/desktop/rpcs/auth_request.cc.i
 
 src/desktop/rpcs/auth_request.s: src/desktop/rpcs/auth_request.cc.s
@@ -904,7 +904,7 @@ src/desktop/rpcs/auth_request.s: src/desktop/rpcs/auth_request.cc.s
 
 # target to generate assembly for a file
 src/desktop/rpcs/auth_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_request.cc.s
 .PHONY : src/desktop/rpcs/auth_request.cc.s
 
 src/desktop/rpcs/auth_response.o: src/desktop/rpcs/auth_response.cc.o
@@ -913,7 +913,7 @@ src/desktop/rpcs/auth_response.o: src/desktop/rpcs/auth_response.cc.o
 
 # target to build an object file
 src/desktop/rpcs/auth_response.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_response.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_response.cc.o
 .PHONY : src/desktop/rpcs/auth_response.cc.o
 
 src/desktop/rpcs/auth_response.i: src/desktop/rpcs/auth_response.cc.i
@@ -922,7 +922,7 @@ src/desktop/rpcs/auth_response.i: src/desktop/rpcs/auth_response.cc.i
 
 # target to preprocess a source file
 src/desktop/rpcs/auth_response.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_response.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_response.cc.i
 .PHONY : src/desktop/rpcs/auth_response.cc.i
 
 src/desktop/rpcs/auth_response.s: src/desktop/rpcs/auth_response.cc.s
@@ -931,7 +931,7 @@ src/desktop/rpcs/auth_response.s: src/desktop/rpcs/auth_response.cc.s
 
 # target to generate assembly for a file
 src/desktop/rpcs/auth_response.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_response.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/auth_response.cc.s
 .PHONY : src/desktop/rpcs/auth_response.cc.s
 
 src/desktop/rpcs/create_auth_uri_request.o: src/desktop/rpcs/create_auth_uri_request.cc.o
@@ -940,7 +940,7 @@ src/desktop/rpcs/create_auth_uri_request.o: src/desktop/rpcs/create_auth_uri_req
 
 # target to build an object file
 src/desktop/rpcs/create_auth_uri_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/create_auth_uri_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/create_auth_uri_request.cc.o
 .PHONY : src/desktop/rpcs/create_auth_uri_request.cc.o
 
 src/desktop/rpcs/create_auth_uri_request.i: src/desktop/rpcs/create_auth_uri_request.cc.i
@@ -949,7 +949,7 @@ src/desktop/rpcs/create_auth_uri_request.i: src/desktop/rpcs/create_auth_uri_req
 
 # target to preprocess a source file
 src/desktop/rpcs/create_auth_uri_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/create_auth_uri_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/create_auth_uri_request.cc.i
 .PHONY : src/desktop/rpcs/create_auth_uri_request.cc.i
 
 src/desktop/rpcs/create_auth_uri_request.s: src/desktop/rpcs/create_auth_uri_request.cc.s
@@ -958,7 +958,7 @@ src/desktop/rpcs/create_auth_uri_request.s: src/desktop/rpcs/create_auth_uri_req
 
 # target to generate assembly for a file
 src/desktop/rpcs/create_auth_uri_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/create_auth_uri_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/create_auth_uri_request.cc.s
 .PHONY : src/desktop/rpcs/create_auth_uri_request.cc.s
 
 src/desktop/rpcs/delete_account_request.o: src/desktop/rpcs/delete_account_request.cc.o
@@ -967,7 +967,7 @@ src/desktop/rpcs/delete_account_request.o: src/desktop/rpcs/delete_account_reque
 
 # target to build an object file
 src/desktop/rpcs/delete_account_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/delete_account_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/delete_account_request.cc.o
 .PHONY : src/desktop/rpcs/delete_account_request.cc.o
 
 src/desktop/rpcs/delete_account_request.i: src/desktop/rpcs/delete_account_request.cc.i
@@ -976,7 +976,7 @@ src/desktop/rpcs/delete_account_request.i: src/desktop/rpcs/delete_account_reque
 
 # target to preprocess a source file
 src/desktop/rpcs/delete_account_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/delete_account_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/delete_account_request.cc.i
 .PHONY : src/desktop/rpcs/delete_account_request.cc.i
 
 src/desktop/rpcs/delete_account_request.s: src/desktop/rpcs/delete_account_request.cc.s
@@ -985,7 +985,7 @@ src/desktop/rpcs/delete_account_request.s: src/desktop/rpcs/delete_account_reque
 
 # target to generate assembly for a file
 src/desktop/rpcs/delete_account_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/delete_account_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/delete_account_request.cc.s
 .PHONY : src/desktop/rpcs/delete_account_request.cc.s
 
 src/desktop/rpcs/error_codes.o: src/desktop/rpcs/error_codes.cc.o
@@ -994,7 +994,7 @@ src/desktop/rpcs/error_codes.o: src/desktop/rpcs/error_codes.cc.o
 
 # target to build an object file
 src/desktop/rpcs/error_codes.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/error_codes.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/error_codes.cc.o
 .PHONY : src/desktop/rpcs/error_codes.cc.o
 
 src/desktop/rpcs/error_codes.i: src/desktop/rpcs/error_codes.cc.i
@@ -1003,7 +1003,7 @@ src/desktop/rpcs/error_codes.i: src/desktop/rpcs/error_codes.cc.i
 
 # target to preprocess a source file
 src/desktop/rpcs/error_codes.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/error_codes.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/error_codes.cc.i
 .PHONY : src/desktop/rpcs/error_codes.cc.i
 
 src/desktop/rpcs/error_codes.s: src/desktop/rpcs/error_codes.cc.s
@@ -1012,7 +1012,7 @@ src/desktop/rpcs/error_codes.s: src/desktop/rpcs/error_codes.cc.s
 
 # target to generate assembly for a file
 src/desktop/rpcs/error_codes.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/error_codes.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/error_codes.cc.s
 .PHONY : src/desktop/rpcs/error_codes.cc.s
 
 src/desktop/rpcs/get_account_info_request.o: src/desktop/rpcs/get_account_info_request.cc.o
@@ -1021,7 +1021,7 @@ src/desktop/rpcs/get_account_info_request.o: src/desktop/rpcs/get_account_info_r
 
 # target to build an object file
 src/desktop/rpcs/get_account_info_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_account_info_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_account_info_request.cc.o
 .PHONY : src/desktop/rpcs/get_account_info_request.cc.o
 
 src/desktop/rpcs/get_account_info_request.i: src/desktop/rpcs/get_account_info_request.cc.i
@@ -1030,7 +1030,7 @@ src/desktop/rpcs/get_account_info_request.i: src/desktop/rpcs/get_account_info_r
 
 # target to preprocess a source file
 src/desktop/rpcs/get_account_info_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_account_info_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_account_info_request.cc.i
 .PHONY : src/desktop/rpcs/get_account_info_request.cc.i
 
 src/desktop/rpcs/get_account_info_request.s: src/desktop/rpcs/get_account_info_request.cc.s
@@ -1039,7 +1039,7 @@ src/desktop/rpcs/get_account_info_request.s: src/desktop/rpcs/get_account_info_r
 
 # target to generate assembly for a file
 src/desktop/rpcs/get_account_info_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_account_info_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_account_info_request.cc.s
 .PHONY : src/desktop/rpcs/get_account_info_request.cc.s
 
 src/desktop/rpcs/get_oob_confirmation_code_request.o: src/desktop/rpcs/get_oob_confirmation_code_request.cc.o
@@ -1048,7 +1048,7 @@ src/desktop/rpcs/get_oob_confirmation_code_request.o: src/desktop/rpcs/get_oob_c
 
 # target to build an object file
 src/desktop/rpcs/get_oob_confirmation_code_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_oob_confirmation_code_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_oob_confirmation_code_request.cc.o
 .PHONY : src/desktop/rpcs/get_oob_confirmation_code_request.cc.o
 
 src/desktop/rpcs/get_oob_confirmation_code_request.i: src/desktop/rpcs/get_oob_confirmation_code_request.cc.i
@@ -1057,7 +1057,7 @@ src/desktop/rpcs/get_oob_confirmation_code_request.i: src/desktop/rpcs/get_oob_c
 
 # target to preprocess a source file
 src/desktop/rpcs/get_oob_confirmation_code_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_oob_confirmation_code_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_oob_confirmation_code_request.cc.i
 .PHONY : src/desktop/rpcs/get_oob_confirmation_code_request.cc.i
 
 src/desktop/rpcs/get_oob_confirmation_code_request.s: src/desktop/rpcs/get_oob_confirmation_code_request.cc.s
@@ -1066,7 +1066,7 @@ src/desktop/rpcs/get_oob_confirmation_code_request.s: src/desktop/rpcs/get_oob_c
 
 # target to generate assembly for a file
 src/desktop/rpcs/get_oob_confirmation_code_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_oob_confirmation_code_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/get_oob_confirmation_code_request.cc.s
 .PHONY : src/desktop/rpcs/get_oob_confirmation_code_request.cc.s
 
 src/desktop/rpcs/reset_password_request.o: src/desktop/rpcs/reset_password_request.cc.o
@@ -1075,7 +1075,7 @@ src/desktop/rpcs/reset_password_request.o: src/desktop/rpcs/reset_password_reque
 
 # target to build an object file
 src/desktop/rpcs/reset_password_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/reset_password_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/reset_password_request.cc.o
 .PHONY : src/desktop/rpcs/reset_password_request.cc.o
 
 src/desktop/rpcs/reset_password_request.i: src/desktop/rpcs/reset_password_request.cc.i
@@ -1084,7 +1084,7 @@ src/desktop/rpcs/reset_password_request.i: src/desktop/rpcs/reset_password_reque
 
 # target to preprocess a source file
 src/desktop/rpcs/reset_password_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/reset_password_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/reset_password_request.cc.i
 .PHONY : src/desktop/rpcs/reset_password_request.cc.i
 
 src/desktop/rpcs/reset_password_request.s: src/desktop/rpcs/reset_password_request.cc.s
@@ -1093,7 +1093,7 @@ src/desktop/rpcs/reset_password_request.s: src/desktop/rpcs/reset_password_reque
 
 # target to generate assembly for a file
 src/desktop/rpcs/reset_password_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/reset_password_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/reset_password_request.cc.s
 .PHONY : src/desktop/rpcs/reset_password_request.cc.s
 
 src/desktop/rpcs/secure_token_request.o: src/desktop/rpcs/secure_token_request.cc.o
@@ -1102,7 +1102,7 @@ src/desktop/rpcs/secure_token_request.o: src/desktop/rpcs/secure_token_request.c
 
 # target to build an object file
 src/desktop/rpcs/secure_token_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/secure_token_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/secure_token_request.cc.o
 .PHONY : src/desktop/rpcs/secure_token_request.cc.o
 
 src/desktop/rpcs/secure_token_request.i: src/desktop/rpcs/secure_token_request.cc.i
@@ -1111,7 +1111,7 @@ src/desktop/rpcs/secure_token_request.i: src/desktop/rpcs/secure_token_request.c
 
 # target to preprocess a source file
 src/desktop/rpcs/secure_token_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/secure_token_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/secure_token_request.cc.i
 .PHONY : src/desktop/rpcs/secure_token_request.cc.i
 
 src/desktop/rpcs/secure_token_request.s: src/desktop/rpcs/secure_token_request.cc.s
@@ -1120,7 +1120,7 @@ src/desktop/rpcs/secure_token_request.s: src/desktop/rpcs/secure_token_request.c
 
 # target to generate assembly for a file
 src/desktop/rpcs/secure_token_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/secure_token_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/secure_token_request.cc.s
 .PHONY : src/desktop/rpcs/secure_token_request.cc.s
 
 src/desktop/rpcs/set_account_info_request.o: src/desktop/rpcs/set_account_info_request.cc.o
@@ -1129,7 +1129,7 @@ src/desktop/rpcs/set_account_info_request.o: src/desktop/rpcs/set_account_info_r
 
 # target to build an object file
 src/desktop/rpcs/set_account_info_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/set_account_info_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/set_account_info_request.cc.o
 .PHONY : src/desktop/rpcs/set_account_info_request.cc.o
 
 src/desktop/rpcs/set_account_info_request.i: src/desktop/rpcs/set_account_info_request.cc.i
@@ -1138,7 +1138,7 @@ src/desktop/rpcs/set_account_info_request.i: src/desktop/rpcs/set_account_info_r
 
 # target to preprocess a source file
 src/desktop/rpcs/set_account_info_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/set_account_info_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/set_account_info_request.cc.i
 .PHONY : src/desktop/rpcs/set_account_info_request.cc.i
 
 src/desktop/rpcs/set_account_info_request.s: src/desktop/rpcs/set_account_info_request.cc.s
@@ -1147,7 +1147,7 @@ src/desktop/rpcs/set_account_info_request.s: src/desktop/rpcs/set_account_info_r
 
 # target to generate assembly for a file
 src/desktop/rpcs/set_account_info_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/set_account_info_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/set_account_info_request.cc.s
 .PHONY : src/desktop/rpcs/set_account_info_request.cc.s
 
 src/desktop/rpcs/sign_up_new_user_request.o: src/desktop/rpcs/sign_up_new_user_request.cc.o
@@ -1156,7 +1156,7 @@ src/desktop/rpcs/sign_up_new_user_request.o: src/desktop/rpcs/sign_up_new_user_r
 
 # target to build an object file
 src/desktop/rpcs/sign_up_new_user_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/sign_up_new_user_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/sign_up_new_user_request.cc.o
 .PHONY : src/desktop/rpcs/sign_up_new_user_request.cc.o
 
 src/desktop/rpcs/sign_up_new_user_request.i: src/desktop/rpcs/sign_up_new_user_request.cc.i
@@ -1165,7 +1165,7 @@ src/desktop/rpcs/sign_up_new_user_request.i: src/desktop/rpcs/sign_up_new_user_r
 
 # target to preprocess a source file
 src/desktop/rpcs/sign_up_new_user_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/sign_up_new_user_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/sign_up_new_user_request.cc.i
 .PHONY : src/desktop/rpcs/sign_up_new_user_request.cc.i
 
 src/desktop/rpcs/sign_up_new_user_request.s: src/desktop/rpcs/sign_up_new_user_request.cc.s
@@ -1174,7 +1174,7 @@ src/desktop/rpcs/sign_up_new_user_request.s: src/desktop/rpcs/sign_up_new_user_r
 
 # target to generate assembly for a file
 src/desktop/rpcs/sign_up_new_user_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/sign_up_new_user_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/sign_up_new_user_request.cc.s
 .PHONY : src/desktop/rpcs/sign_up_new_user_request.cc.s
 
 src/desktop/rpcs/verify_assertion_request.o: src/desktop/rpcs/verify_assertion_request.cc.o
@@ -1183,7 +1183,7 @@ src/desktop/rpcs/verify_assertion_request.o: src/desktop/rpcs/verify_assertion_r
 
 # target to build an object file
 src/desktop/rpcs/verify_assertion_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_assertion_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_assertion_request.cc.o
 .PHONY : src/desktop/rpcs/verify_assertion_request.cc.o
 
 src/desktop/rpcs/verify_assertion_request.i: src/desktop/rpcs/verify_assertion_request.cc.i
@@ -1192,7 +1192,7 @@ src/desktop/rpcs/verify_assertion_request.i: src/desktop/rpcs/verify_assertion_r
 
 # target to preprocess a source file
 src/desktop/rpcs/verify_assertion_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_assertion_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_assertion_request.cc.i
 .PHONY : src/desktop/rpcs/verify_assertion_request.cc.i
 
 src/desktop/rpcs/verify_assertion_request.s: src/desktop/rpcs/verify_assertion_request.cc.s
@@ -1201,7 +1201,7 @@ src/desktop/rpcs/verify_assertion_request.s: src/desktop/rpcs/verify_assertion_r
 
 # target to generate assembly for a file
 src/desktop/rpcs/verify_assertion_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_assertion_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_assertion_request.cc.s
 .PHONY : src/desktop/rpcs/verify_assertion_request.cc.s
 
 src/desktop/rpcs/verify_custom_token_request.o: src/desktop/rpcs/verify_custom_token_request.cc.o
@@ -1210,7 +1210,7 @@ src/desktop/rpcs/verify_custom_token_request.o: src/desktop/rpcs/verify_custom_t
 
 # target to build an object file
 src/desktop/rpcs/verify_custom_token_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_custom_token_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_custom_token_request.cc.o
 .PHONY : src/desktop/rpcs/verify_custom_token_request.cc.o
 
 src/desktop/rpcs/verify_custom_token_request.i: src/desktop/rpcs/verify_custom_token_request.cc.i
@@ -1219,7 +1219,7 @@ src/desktop/rpcs/verify_custom_token_request.i: src/desktop/rpcs/verify_custom_t
 
 # target to preprocess a source file
 src/desktop/rpcs/verify_custom_token_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_custom_token_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_custom_token_request.cc.i
 .PHONY : src/desktop/rpcs/verify_custom_token_request.cc.i
 
 src/desktop/rpcs/verify_custom_token_request.s: src/desktop/rpcs/verify_custom_token_request.cc.s
@@ -1228,7 +1228,7 @@ src/desktop/rpcs/verify_custom_token_request.s: src/desktop/rpcs/verify_custom_t
 
 # target to generate assembly for a file
 src/desktop/rpcs/verify_custom_token_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_custom_token_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_custom_token_request.cc.s
 .PHONY : src/desktop/rpcs/verify_custom_token_request.cc.s
 
 src/desktop/rpcs/verify_password_request.o: src/desktop/rpcs/verify_password_request.cc.o
@@ -1237,7 +1237,7 @@ src/desktop/rpcs/verify_password_request.o: src/desktop/rpcs/verify_password_req
 
 # target to build an object file
 src/desktop/rpcs/verify_password_request.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_password_request.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_password_request.cc.o
 .PHONY : src/desktop/rpcs/verify_password_request.cc.o
 
 src/desktop/rpcs/verify_password_request.i: src/desktop/rpcs/verify_password_request.cc.i
@@ -1246,7 +1246,7 @@ src/desktop/rpcs/verify_password_request.i: src/desktop/rpcs/verify_password_req
 
 # target to preprocess a source file
 src/desktop/rpcs/verify_password_request.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_password_request.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_password_request.cc.i
 .PHONY : src/desktop/rpcs/verify_password_request.cc.i
 
 src/desktop/rpcs/verify_password_request.s: src/desktop/rpcs/verify_password_request.cc.s
@@ -1255,7 +1255,7 @@ src/desktop/rpcs/verify_password_request.s: src/desktop/rpcs/verify_password_req
 
 # target to generate assembly for a file
 src/desktop/rpcs/verify_password_request.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_password_request.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/rpcs/verify_password_request.cc.s
 .PHONY : src/desktop/rpcs/verify_password_request.cc.s
 
 src/desktop/set_account_info_result.o: src/desktop/set_account_info_result.cc.o
@@ -1264,7 +1264,7 @@ src/desktop/set_account_info_result.o: src/desktop/set_account_info_result.cc.o
 
 # target to build an object file
 src/desktop/set_account_info_result.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/set_account_info_result.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/set_account_info_result.cc.o
 .PHONY : src/desktop/set_account_info_result.cc.o
 
 src/desktop/set_account_info_result.i: src/desktop/set_account_info_result.cc.i
@@ -1273,7 +1273,7 @@ src/desktop/set_account_info_result.i: src/desktop/set_account_info_result.cc.i
 
 # target to preprocess a source file
 src/desktop/set_account_info_result.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/set_account_info_result.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/set_account_info_result.cc.i
 .PHONY : src/desktop/set_account_info_result.cc.i
 
 src/desktop/set_account_info_result.s: src/desktop/set_account_info_result.cc.s
@@ -1282,7 +1282,7 @@ src/desktop/set_account_info_result.s: src/desktop/set_account_info_result.cc.s
 
 # target to generate assembly for a file
 src/desktop/set_account_info_result.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/set_account_info_result.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/set_account_info_result.cc.s
 .PHONY : src/desktop/set_account_info_result.cc.s
 
 src/desktop/sign_in_flow.o: src/desktop/sign_in_flow.cc.o
@@ -1291,7 +1291,7 @@ src/desktop/sign_in_flow.o: src/desktop/sign_in_flow.cc.o
 
 # target to build an object file
 src/desktop/sign_in_flow.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/sign_in_flow.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/sign_in_flow.cc.o
 .PHONY : src/desktop/sign_in_flow.cc.o
 
 src/desktop/sign_in_flow.i: src/desktop/sign_in_flow.cc.i
@@ -1300,7 +1300,7 @@ src/desktop/sign_in_flow.i: src/desktop/sign_in_flow.cc.i
 
 # target to preprocess a source file
 src/desktop/sign_in_flow.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/sign_in_flow.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/sign_in_flow.cc.i
 .PHONY : src/desktop/sign_in_flow.cc.i
 
 src/desktop/sign_in_flow.s: src/desktop/sign_in_flow.cc.s
@@ -1309,7 +1309,7 @@ src/desktop/sign_in_flow.s: src/desktop/sign_in_flow.cc.s
 
 # target to generate assembly for a file
 src/desktop/sign_in_flow.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/sign_in_flow.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/sign_in_flow.cc.s
 .PHONY : src/desktop/sign_in_flow.cc.s
 
 src/desktop/user_desktop.o: src/desktop/user_desktop.cc.o
@@ -1318,7 +1318,7 @@ src/desktop/user_desktop.o: src/desktop/user_desktop.cc.o
 
 # target to build an object file
 src/desktop/user_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_desktop.cc.o
 .PHONY : src/desktop/user_desktop.cc.o
 
 src/desktop/user_desktop.i: src/desktop/user_desktop.cc.i
@@ -1327,7 +1327,7 @@ src/desktop/user_desktop.i: src/desktop/user_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/user_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_desktop.cc.i
 .PHONY : src/desktop/user_desktop.cc.i
 
 src/desktop/user_desktop.s: src/desktop/user_desktop.cc.s
@@ -1336,7 +1336,7 @@ src/desktop/user_desktop.s: src/desktop/user_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/user_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_desktop.cc.s
 .PHONY : src/desktop/user_desktop.cc.s
 
 src/desktop/user_view.o: src/desktop/user_view.cc.o
@@ -1345,7 +1345,7 @@ src/desktop/user_view.o: src/desktop/user_view.cc.o
 
 # target to build an object file
 src/desktop/user_view.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_view.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_view.cc.o
 .PHONY : src/desktop/user_view.cc.o
 
 src/desktop/user_view.i: src/desktop/user_view.cc.i
@@ -1354,7 +1354,7 @@ src/desktop/user_view.i: src/desktop/user_view.cc.i
 
 # target to preprocess a source file
 src/desktop/user_view.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_view.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_view.cc.i
 .PHONY : src/desktop/user_view.cc.i
 
 src/desktop/user_view.s: src/desktop/user_view.cc.s
@@ -1363,7 +1363,7 @@ src/desktop/user_view.s: src/desktop/user_view.cc.s
 
 # target to generate assembly for a file
 src/desktop/user_view.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_view.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/desktop/user_view.cc.s
 .PHONY : src/desktop/user_view.cc.s
 
 src/user.o: src/user.cc.o
@@ -1372,7 +1372,7 @@ src/user.o: src/user.cc.o
 
 # target to build an object file
 src/user.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/user.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/user.cc.o
 .PHONY : src/user.cc.o
 
 src/user.i: src/user.cc.i
@@ -1381,7 +1381,7 @@ src/user.i: src/user.cc.i
 
 # target to preprocess a source file
 src/user.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/user.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/user.cc.i
 .PHONY : src/user.cc.i
 
 src/user.s: src/user.cc.s
@@ -1390,7 +1390,7 @@ src/user.s: src/user.cc.s
 
 # target to generate assembly for a file
 src/user.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/user.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/build.make Lib/firebase-cpp-sdk/auth/CMakeFiles/firebase_auth.dir/src/user.cc.s
 .PHONY : src/user.cc.s
 
 # Help Target
@@ -1550,6 +1550,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,31 +78,31 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -113,7 +113,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -124,13 +124,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -145,14 +145,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/curl-build/lib//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/curl-build/lib//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ libcurl: Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir
 
 # fast build rule for target.
 libcurl/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build
 .PHONY : libcurl/fast
 
 altsvc.o: altsvc.c.o
@@ -196,7 +196,7 @@ altsvc.o: altsvc.c.o
 
 # target to build an object file
 altsvc.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.o
 .PHONY : altsvc.c.o
 
 altsvc.i: altsvc.c.i
@@ -205,7 +205,7 @@ altsvc.i: altsvc.c.i
 
 # target to preprocess a source file
 altsvc.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.i
 .PHONY : altsvc.c.i
 
 altsvc.s: altsvc.c.s
@@ -214,7 +214,7 @@ altsvc.s: altsvc.c.s
 
 # target to generate assembly for a file
 altsvc.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.s
 .PHONY : altsvc.c.s
 
 amigaos.o: amigaos.c.o
@@ -223,7 +223,7 @@ amigaos.o: amigaos.c.o
 
 # target to build an object file
 amigaos.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.o
 .PHONY : amigaos.c.o
 
 amigaos.i: amigaos.c.i
@@ -232,7 +232,7 @@ amigaos.i: amigaos.c.i
 
 # target to preprocess a source file
 amigaos.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.i
 .PHONY : amigaos.c.i
 
 amigaos.s: amigaos.c.s
@@ -241,7 +241,7 @@ amigaos.s: amigaos.c.s
 
 # target to generate assembly for a file
 amigaos.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.s
 .PHONY : amigaos.c.s
 
 asyn-ares.o: asyn-ares.c.o
@@ -250,7 +250,7 @@ asyn-ares.o: asyn-ares.c.o
 
 # target to build an object file
 asyn-ares.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.o
 .PHONY : asyn-ares.c.o
 
 asyn-ares.i: asyn-ares.c.i
@@ -259,7 +259,7 @@ asyn-ares.i: asyn-ares.c.i
 
 # target to preprocess a source file
 asyn-ares.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.i
 .PHONY : asyn-ares.c.i
 
 asyn-ares.s: asyn-ares.c.s
@@ -268,7 +268,7 @@ asyn-ares.s: asyn-ares.c.s
 
 # target to generate assembly for a file
 asyn-ares.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.s
 .PHONY : asyn-ares.c.s
 
 asyn-thread.o: asyn-thread.c.o
@@ -277,7 +277,7 @@ asyn-thread.o: asyn-thread.c.o
 
 # target to build an object file
 asyn-thread.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.o
 .PHONY : asyn-thread.c.o
 
 asyn-thread.i: asyn-thread.c.i
@@ -286,7 +286,7 @@ asyn-thread.i: asyn-thread.c.i
 
 # target to preprocess a source file
 asyn-thread.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.i
 .PHONY : asyn-thread.c.i
 
 asyn-thread.s: asyn-thread.c.s
@@ -295,7 +295,7 @@ asyn-thread.s: asyn-thread.c.s
 
 # target to generate assembly for a file
 asyn-thread.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.s
 .PHONY : asyn-thread.c.s
 
 base64.o: base64.c.o
@@ -304,7 +304,7 @@ base64.o: base64.c.o
 
 # target to build an object file
 base64.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.o
 .PHONY : base64.c.o
 
 base64.i: base64.c.i
@@ -313,7 +313,7 @@ base64.i: base64.c.i
 
 # target to preprocess a source file
 base64.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.i
 .PHONY : base64.c.i
 
 base64.s: base64.c.s
@@ -322,7 +322,7 @@ base64.s: base64.c.s
 
 # target to generate assembly for a file
 base64.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.s
 .PHONY : base64.c.s
 
 conncache.o: conncache.c.o
@@ -331,7 +331,7 @@ conncache.o: conncache.c.o
 
 # target to build an object file
 conncache.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.o
 .PHONY : conncache.c.o
 
 conncache.i: conncache.c.i
@@ -340,7 +340,7 @@ conncache.i: conncache.c.i
 
 # target to preprocess a source file
 conncache.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.i
 .PHONY : conncache.c.i
 
 conncache.s: conncache.c.s
@@ -349,7 +349,7 @@ conncache.s: conncache.c.s
 
 # target to generate assembly for a file
 conncache.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.s
 .PHONY : conncache.c.s
 
 connect.o: connect.c.o
@@ -358,7 +358,7 @@ connect.o: connect.c.o
 
 # target to build an object file
 connect.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.o
 .PHONY : connect.c.o
 
 connect.i: connect.c.i
@@ -367,7 +367,7 @@ connect.i: connect.c.i
 
 # target to preprocess a source file
 connect.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.i
 .PHONY : connect.c.i
 
 connect.s: connect.c.s
@@ -376,7 +376,7 @@ connect.s: connect.c.s
 
 # target to generate assembly for a file
 connect.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.s
 .PHONY : connect.c.s
 
 content_encoding.o: content_encoding.c.o
@@ -385,7 +385,7 @@ content_encoding.o: content_encoding.c.o
 
 # target to build an object file
 content_encoding.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.o
 .PHONY : content_encoding.c.o
 
 content_encoding.i: content_encoding.c.i
@@ -394,7 +394,7 @@ content_encoding.i: content_encoding.c.i
 
 # target to preprocess a source file
 content_encoding.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.i
 .PHONY : content_encoding.c.i
 
 content_encoding.s: content_encoding.c.s
@@ -403,7 +403,7 @@ content_encoding.s: content_encoding.c.s
 
 # target to generate assembly for a file
 content_encoding.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.s
 .PHONY : content_encoding.c.s
 
 cookie.o: cookie.c.o
@@ -412,7 +412,7 @@ cookie.o: cookie.c.o
 
 # target to build an object file
 cookie.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.o
 .PHONY : cookie.c.o
 
 cookie.i: cookie.c.i
@@ -421,7 +421,7 @@ cookie.i: cookie.c.i
 
 # target to preprocess a source file
 cookie.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.i
 .PHONY : cookie.c.i
 
 cookie.s: cookie.c.s
@@ -430,7 +430,7 @@ cookie.s: cookie.c.s
 
 # target to generate assembly for a file
 cookie.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.s
 .PHONY : cookie.c.s
 
 curl_addrinfo.o: curl_addrinfo.c.o
@@ -439,7 +439,7 @@ curl_addrinfo.o: curl_addrinfo.c.o
 
 # target to build an object file
 curl_addrinfo.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.o
 .PHONY : curl_addrinfo.c.o
 
 curl_addrinfo.i: curl_addrinfo.c.i
@@ -448,7 +448,7 @@ curl_addrinfo.i: curl_addrinfo.c.i
 
 # target to preprocess a source file
 curl_addrinfo.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.i
 .PHONY : curl_addrinfo.c.i
 
 curl_addrinfo.s: curl_addrinfo.c.s
@@ -457,7 +457,7 @@ curl_addrinfo.s: curl_addrinfo.c.s
 
 # target to generate assembly for a file
 curl_addrinfo.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.s
 .PHONY : curl_addrinfo.c.s
 
 curl_ctype.o: curl_ctype.c.o
@@ -466,7 +466,7 @@ curl_ctype.o: curl_ctype.c.o
 
 # target to build an object file
 curl_ctype.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.o
 .PHONY : curl_ctype.c.o
 
 curl_ctype.i: curl_ctype.c.i
@@ -475,7 +475,7 @@ curl_ctype.i: curl_ctype.c.i
 
 # target to preprocess a source file
 curl_ctype.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.i
 .PHONY : curl_ctype.c.i
 
 curl_ctype.s: curl_ctype.c.s
@@ -484,7 +484,7 @@ curl_ctype.s: curl_ctype.c.s
 
 # target to generate assembly for a file
 curl_ctype.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.s
 .PHONY : curl_ctype.c.s
 
 curl_des.o: curl_des.c.o
@@ -493,7 +493,7 @@ curl_des.o: curl_des.c.o
 
 # target to build an object file
 curl_des.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.o
 .PHONY : curl_des.c.o
 
 curl_des.i: curl_des.c.i
@@ -502,7 +502,7 @@ curl_des.i: curl_des.c.i
 
 # target to preprocess a source file
 curl_des.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.i
 .PHONY : curl_des.c.i
 
 curl_des.s: curl_des.c.s
@@ -511,7 +511,7 @@ curl_des.s: curl_des.c.s
 
 # target to generate assembly for a file
 curl_des.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.s
 .PHONY : curl_des.c.s
 
 curl_endian.o: curl_endian.c.o
@@ -520,7 +520,7 @@ curl_endian.o: curl_endian.c.o
 
 # target to build an object file
 curl_endian.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.o
 .PHONY : curl_endian.c.o
 
 curl_endian.i: curl_endian.c.i
@@ -529,7 +529,7 @@ curl_endian.i: curl_endian.c.i
 
 # target to preprocess a source file
 curl_endian.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.i
 .PHONY : curl_endian.c.i
 
 curl_endian.s: curl_endian.c.s
@@ -538,7 +538,7 @@ curl_endian.s: curl_endian.c.s
 
 # target to generate assembly for a file
 curl_endian.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.s
 .PHONY : curl_endian.c.s
 
 curl_fnmatch.o: curl_fnmatch.c.o
@@ -547,7 +547,7 @@ curl_fnmatch.o: curl_fnmatch.c.o
 
 # target to build an object file
 curl_fnmatch.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.o
 .PHONY : curl_fnmatch.c.o
 
 curl_fnmatch.i: curl_fnmatch.c.i
@@ -556,7 +556,7 @@ curl_fnmatch.i: curl_fnmatch.c.i
 
 # target to preprocess a source file
 curl_fnmatch.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.i
 .PHONY : curl_fnmatch.c.i
 
 curl_fnmatch.s: curl_fnmatch.c.s
@@ -565,7 +565,7 @@ curl_fnmatch.s: curl_fnmatch.c.s
 
 # target to generate assembly for a file
 curl_fnmatch.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.s
 .PHONY : curl_fnmatch.c.s
 
 curl_get_line.o: curl_get_line.c.o
@@ -574,7 +574,7 @@ curl_get_line.o: curl_get_line.c.o
 
 # target to build an object file
 curl_get_line.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.o
 .PHONY : curl_get_line.c.o
 
 curl_get_line.i: curl_get_line.c.i
@@ -583,7 +583,7 @@ curl_get_line.i: curl_get_line.c.i
 
 # target to preprocess a source file
 curl_get_line.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.i
 .PHONY : curl_get_line.c.i
 
 curl_get_line.s: curl_get_line.c.s
@@ -592,7 +592,7 @@ curl_get_line.s: curl_get_line.c.s
 
 # target to generate assembly for a file
 curl_get_line.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.s
 .PHONY : curl_get_line.c.s
 
 curl_gethostname.o: curl_gethostname.c.o
@@ -601,7 +601,7 @@ curl_gethostname.o: curl_gethostname.c.o
 
 # target to build an object file
 curl_gethostname.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.o
 .PHONY : curl_gethostname.c.o
 
 curl_gethostname.i: curl_gethostname.c.i
@@ -610,7 +610,7 @@ curl_gethostname.i: curl_gethostname.c.i
 
 # target to preprocess a source file
 curl_gethostname.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.i
 .PHONY : curl_gethostname.c.i
 
 curl_gethostname.s: curl_gethostname.c.s
@@ -619,7 +619,7 @@ curl_gethostname.s: curl_gethostname.c.s
 
 # target to generate assembly for a file
 curl_gethostname.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.s
 .PHONY : curl_gethostname.c.s
 
 curl_gssapi.o: curl_gssapi.c.o
@@ -628,7 +628,7 @@ curl_gssapi.o: curl_gssapi.c.o
 
 # target to build an object file
 curl_gssapi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.o
 .PHONY : curl_gssapi.c.o
 
 curl_gssapi.i: curl_gssapi.c.i
@@ -637,7 +637,7 @@ curl_gssapi.i: curl_gssapi.c.i
 
 # target to preprocess a source file
 curl_gssapi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.i
 .PHONY : curl_gssapi.c.i
 
 curl_gssapi.s: curl_gssapi.c.s
@@ -646,7 +646,7 @@ curl_gssapi.s: curl_gssapi.c.s
 
 # target to generate assembly for a file
 curl_gssapi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.s
 .PHONY : curl_gssapi.c.s
 
 curl_memrchr.o: curl_memrchr.c.o
@@ -655,7 +655,7 @@ curl_memrchr.o: curl_memrchr.c.o
 
 # target to build an object file
 curl_memrchr.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.o
 .PHONY : curl_memrchr.c.o
 
 curl_memrchr.i: curl_memrchr.c.i
@@ -664,7 +664,7 @@ curl_memrchr.i: curl_memrchr.c.i
 
 # target to preprocess a source file
 curl_memrchr.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.i
 .PHONY : curl_memrchr.c.i
 
 curl_memrchr.s: curl_memrchr.c.s
@@ -673,7 +673,7 @@ curl_memrchr.s: curl_memrchr.c.s
 
 # target to generate assembly for a file
 curl_memrchr.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.s
 .PHONY : curl_memrchr.c.s
 
 curl_multibyte.o: curl_multibyte.c.o
@@ -682,7 +682,7 @@ curl_multibyte.o: curl_multibyte.c.o
 
 # target to build an object file
 curl_multibyte.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.o
 .PHONY : curl_multibyte.c.o
 
 curl_multibyte.i: curl_multibyte.c.i
@@ -691,7 +691,7 @@ curl_multibyte.i: curl_multibyte.c.i
 
 # target to preprocess a source file
 curl_multibyte.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.i
 .PHONY : curl_multibyte.c.i
 
 curl_multibyte.s: curl_multibyte.c.s
@@ -700,7 +700,7 @@ curl_multibyte.s: curl_multibyte.c.s
 
 # target to generate assembly for a file
 curl_multibyte.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.s
 .PHONY : curl_multibyte.c.s
 
 curl_ntlm_core.o: curl_ntlm_core.c.o
@@ -709,7 +709,7 @@ curl_ntlm_core.o: curl_ntlm_core.c.o
 
 # target to build an object file
 curl_ntlm_core.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.o
 .PHONY : curl_ntlm_core.c.o
 
 curl_ntlm_core.i: curl_ntlm_core.c.i
@@ -718,7 +718,7 @@ curl_ntlm_core.i: curl_ntlm_core.c.i
 
 # target to preprocess a source file
 curl_ntlm_core.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.i
 .PHONY : curl_ntlm_core.c.i
 
 curl_ntlm_core.s: curl_ntlm_core.c.s
@@ -727,7 +727,7 @@ curl_ntlm_core.s: curl_ntlm_core.c.s
 
 # target to generate assembly for a file
 curl_ntlm_core.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.s
 .PHONY : curl_ntlm_core.c.s
 
 curl_ntlm_wb.o: curl_ntlm_wb.c.o
@@ -736,7 +736,7 @@ curl_ntlm_wb.o: curl_ntlm_wb.c.o
 
 # target to build an object file
 curl_ntlm_wb.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.o
 .PHONY : curl_ntlm_wb.c.o
 
 curl_ntlm_wb.i: curl_ntlm_wb.c.i
@@ -745,7 +745,7 @@ curl_ntlm_wb.i: curl_ntlm_wb.c.i
 
 # target to preprocess a source file
 curl_ntlm_wb.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.i
 .PHONY : curl_ntlm_wb.c.i
 
 curl_ntlm_wb.s: curl_ntlm_wb.c.s
@@ -754,7 +754,7 @@ curl_ntlm_wb.s: curl_ntlm_wb.c.s
 
 # target to generate assembly for a file
 curl_ntlm_wb.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.s
 .PHONY : curl_ntlm_wb.c.s
 
 curl_path.o: curl_path.c.o
@@ -763,7 +763,7 @@ curl_path.o: curl_path.c.o
 
 # target to build an object file
 curl_path.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.o
 .PHONY : curl_path.c.o
 
 curl_path.i: curl_path.c.i
@@ -772,7 +772,7 @@ curl_path.i: curl_path.c.i
 
 # target to preprocess a source file
 curl_path.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.i
 .PHONY : curl_path.c.i
 
 curl_path.s: curl_path.c.s
@@ -781,7 +781,7 @@ curl_path.s: curl_path.c.s
 
 # target to generate assembly for a file
 curl_path.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.s
 .PHONY : curl_path.c.s
 
 curl_range.o: curl_range.c.o
@@ -790,7 +790,7 @@ curl_range.o: curl_range.c.o
 
 # target to build an object file
 curl_range.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.o
 .PHONY : curl_range.c.o
 
 curl_range.i: curl_range.c.i
@@ -799,7 +799,7 @@ curl_range.i: curl_range.c.i
 
 # target to preprocess a source file
 curl_range.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.i
 .PHONY : curl_range.c.i
 
 curl_range.s: curl_range.c.s
@@ -808,7 +808,7 @@ curl_range.s: curl_range.c.s
 
 # target to generate assembly for a file
 curl_range.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.s
 .PHONY : curl_range.c.s
 
 curl_rtmp.o: curl_rtmp.c.o
@@ -817,7 +817,7 @@ curl_rtmp.o: curl_rtmp.c.o
 
 # target to build an object file
 curl_rtmp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.o
 .PHONY : curl_rtmp.c.o
 
 curl_rtmp.i: curl_rtmp.c.i
@@ -826,7 +826,7 @@ curl_rtmp.i: curl_rtmp.c.i
 
 # target to preprocess a source file
 curl_rtmp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.i
 .PHONY : curl_rtmp.c.i
 
 curl_rtmp.s: curl_rtmp.c.s
@@ -835,7 +835,7 @@ curl_rtmp.s: curl_rtmp.c.s
 
 # target to generate assembly for a file
 curl_rtmp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.s
 .PHONY : curl_rtmp.c.s
 
 curl_sasl.o: curl_sasl.c.o
@@ -844,7 +844,7 @@ curl_sasl.o: curl_sasl.c.o
 
 # target to build an object file
 curl_sasl.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.o
 .PHONY : curl_sasl.c.o
 
 curl_sasl.i: curl_sasl.c.i
@@ -853,7 +853,7 @@ curl_sasl.i: curl_sasl.c.i
 
 # target to preprocess a source file
 curl_sasl.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.i
 .PHONY : curl_sasl.c.i
 
 curl_sasl.s: curl_sasl.c.s
@@ -862,7 +862,7 @@ curl_sasl.s: curl_sasl.c.s
 
 # target to generate assembly for a file
 curl_sasl.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.s
 .PHONY : curl_sasl.c.s
 
 curl_sspi.o: curl_sspi.c.o
@@ -871,7 +871,7 @@ curl_sspi.o: curl_sspi.c.o
 
 # target to build an object file
 curl_sspi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.o
 .PHONY : curl_sspi.c.o
 
 curl_sspi.i: curl_sspi.c.i
@@ -880,7 +880,7 @@ curl_sspi.i: curl_sspi.c.i
 
 # target to preprocess a source file
 curl_sspi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.i
 .PHONY : curl_sspi.c.i
 
 curl_sspi.s: curl_sspi.c.s
@@ -889,7 +889,7 @@ curl_sspi.s: curl_sspi.c.s
 
 # target to generate assembly for a file
 curl_sspi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.s
 .PHONY : curl_sspi.c.s
 
 curl_threads.o: curl_threads.c.o
@@ -898,7 +898,7 @@ curl_threads.o: curl_threads.c.o
 
 # target to build an object file
 curl_threads.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.o
 .PHONY : curl_threads.c.o
 
 curl_threads.i: curl_threads.c.i
@@ -907,7 +907,7 @@ curl_threads.i: curl_threads.c.i
 
 # target to preprocess a source file
 curl_threads.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.i
 .PHONY : curl_threads.c.i
 
 curl_threads.s: curl_threads.c.s
@@ -916,7 +916,7 @@ curl_threads.s: curl_threads.c.s
 
 # target to generate assembly for a file
 curl_threads.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.s
 .PHONY : curl_threads.c.s
 
 dict.o: dict.c.o
@@ -925,7 +925,7 @@ dict.o: dict.c.o
 
 # target to build an object file
 dict.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.o
 .PHONY : dict.c.o
 
 dict.i: dict.c.i
@@ -934,7 +934,7 @@ dict.i: dict.c.i
 
 # target to preprocess a source file
 dict.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.i
 .PHONY : dict.c.i
 
 dict.s: dict.c.s
@@ -943,7 +943,7 @@ dict.s: dict.c.s
 
 # target to generate assembly for a file
 dict.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.s
 .PHONY : dict.c.s
 
 doh.o: doh.c.o
@@ -952,7 +952,7 @@ doh.o: doh.c.o
 
 # target to build an object file
 doh.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.o
 .PHONY : doh.c.o
 
 doh.i: doh.c.i
@@ -961,7 +961,7 @@ doh.i: doh.c.i
 
 # target to preprocess a source file
 doh.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.i
 .PHONY : doh.c.i
 
 doh.s: doh.c.s
@@ -970,7 +970,7 @@ doh.s: doh.c.s
 
 # target to generate assembly for a file
 doh.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.s
 .PHONY : doh.c.s
 
 dotdot.o: dotdot.c.o
@@ -979,7 +979,7 @@ dotdot.o: dotdot.c.o
 
 # target to build an object file
 dotdot.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.o
 .PHONY : dotdot.c.o
 
 dotdot.i: dotdot.c.i
@@ -988,7 +988,7 @@ dotdot.i: dotdot.c.i
 
 # target to preprocess a source file
 dotdot.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.i
 .PHONY : dotdot.c.i
 
 dotdot.s: dotdot.c.s
@@ -997,7 +997,7 @@ dotdot.s: dotdot.c.s
 
 # target to generate assembly for a file
 dotdot.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.s
 .PHONY : dotdot.c.s
 
 dynbuf.o: dynbuf.c.o
@@ -1006,7 +1006,7 @@ dynbuf.o: dynbuf.c.o
 
 # target to build an object file
 dynbuf.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dynbuf.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dynbuf.c.o
 .PHONY : dynbuf.c.o
 
 dynbuf.i: dynbuf.c.i
@@ -1015,7 +1015,7 @@ dynbuf.i: dynbuf.c.i
 
 # target to preprocess a source file
 dynbuf.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dynbuf.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dynbuf.c.i
 .PHONY : dynbuf.c.i
 
 dynbuf.s: dynbuf.c.s
@@ -1024,7 +1024,7 @@ dynbuf.s: dynbuf.c.s
 
 # target to generate assembly for a file
 dynbuf.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dynbuf.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/dynbuf.c.s
 .PHONY : dynbuf.c.s
 
 easy.o: easy.c.o
@@ -1033,7 +1033,7 @@ easy.o: easy.c.o
 
 # target to build an object file
 easy.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.o
 .PHONY : easy.c.o
 
 easy.i: easy.c.i
@@ -1042,7 +1042,7 @@ easy.i: easy.c.i
 
 # target to preprocess a source file
 easy.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.i
 .PHONY : easy.c.i
 
 easy.s: easy.c.s
@@ -1051,7 +1051,7 @@ easy.s: easy.c.s
 
 # target to generate assembly for a file
 easy.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.s
 .PHONY : easy.c.s
 
 easygetopt.o: easygetopt.c.o
@@ -1060,7 +1060,7 @@ easygetopt.o: easygetopt.c.o
 
 # target to build an object file
 easygetopt.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easygetopt.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easygetopt.c.o
 .PHONY : easygetopt.c.o
 
 easygetopt.i: easygetopt.c.i
@@ -1069,7 +1069,7 @@ easygetopt.i: easygetopt.c.i
 
 # target to preprocess a source file
 easygetopt.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easygetopt.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easygetopt.c.i
 .PHONY : easygetopt.c.i
 
 easygetopt.s: easygetopt.c.s
@@ -1078,7 +1078,7 @@ easygetopt.s: easygetopt.c.s
 
 # target to generate assembly for a file
 easygetopt.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easygetopt.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easygetopt.c.s
 .PHONY : easygetopt.c.s
 
 easyoptions.o: easyoptions.c.o
@@ -1087,7 +1087,7 @@ easyoptions.o: easyoptions.c.o
 
 # target to build an object file
 easyoptions.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easyoptions.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easyoptions.c.o
 .PHONY : easyoptions.c.o
 
 easyoptions.i: easyoptions.c.i
@@ -1096,7 +1096,7 @@ easyoptions.i: easyoptions.c.i
 
 # target to preprocess a source file
 easyoptions.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easyoptions.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easyoptions.c.i
 .PHONY : easyoptions.c.i
 
 easyoptions.s: easyoptions.c.s
@@ -1105,7 +1105,7 @@ easyoptions.s: easyoptions.c.s
 
 # target to generate assembly for a file
 easyoptions.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easyoptions.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/easyoptions.c.s
 .PHONY : easyoptions.c.s
 
 escape.o: escape.c.o
@@ -1114,7 +1114,7 @@ escape.o: escape.c.o
 
 # target to build an object file
 escape.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.o
 .PHONY : escape.c.o
 
 escape.i: escape.c.i
@@ -1123,7 +1123,7 @@ escape.i: escape.c.i
 
 # target to preprocess a source file
 escape.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.i
 .PHONY : escape.c.i
 
 escape.s: escape.c.s
@@ -1132,7 +1132,7 @@ escape.s: escape.c.s
 
 # target to generate assembly for a file
 escape.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.s
 .PHONY : escape.c.s
 
 file.o: file.c.o
@@ -1141,7 +1141,7 @@ file.o: file.c.o
 
 # target to build an object file
 file.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/file.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/file.c.o
 .PHONY : file.c.o
 
 file.i: file.c.i
@@ -1150,7 +1150,7 @@ file.i: file.c.i
 
 # target to preprocess a source file
 file.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/file.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/file.c.i
 .PHONY : file.c.i
 
 file.s: file.c.s
@@ -1159,7 +1159,7 @@ file.s: file.c.s
 
 # target to generate assembly for a file
 file.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/file.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/file.c.s
 .PHONY : file.c.s
 
 fileinfo.o: fileinfo.c.o
@@ -1168,7 +1168,7 @@ fileinfo.o: fileinfo.c.o
 
 # target to build an object file
 fileinfo.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.o
 .PHONY : fileinfo.c.o
 
 fileinfo.i: fileinfo.c.i
@@ -1177,7 +1177,7 @@ fileinfo.i: fileinfo.c.i
 
 # target to preprocess a source file
 fileinfo.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.i
 .PHONY : fileinfo.c.i
 
 fileinfo.s: fileinfo.c.s
@@ -1186,7 +1186,7 @@ fileinfo.s: fileinfo.c.s
 
 # target to generate assembly for a file
 fileinfo.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.s
 .PHONY : fileinfo.c.s
 
 formdata.o: formdata.c.o
@@ -1195,7 +1195,7 @@ formdata.o: formdata.c.o
 
 # target to build an object file
 formdata.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.o
 .PHONY : formdata.c.o
 
 formdata.i: formdata.c.i
@@ -1204,7 +1204,7 @@ formdata.i: formdata.c.i
 
 # target to preprocess a source file
 formdata.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.i
 .PHONY : formdata.c.i
 
 formdata.s: formdata.c.s
@@ -1213,7 +1213,7 @@ formdata.s: formdata.c.s
 
 # target to generate assembly for a file
 formdata.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.s
 .PHONY : formdata.c.s
 
 ftp.o: ftp.c.o
@@ -1222,7 +1222,7 @@ ftp.o: ftp.c.o
 
 # target to build an object file
 ftp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.o
 .PHONY : ftp.c.o
 
 ftp.i: ftp.c.i
@@ -1231,7 +1231,7 @@ ftp.i: ftp.c.i
 
 # target to preprocess a source file
 ftp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.i
 .PHONY : ftp.c.i
 
 ftp.s: ftp.c.s
@@ -1240,7 +1240,7 @@ ftp.s: ftp.c.s
 
 # target to generate assembly for a file
 ftp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.s
 .PHONY : ftp.c.s
 
 ftplistparser.o: ftplistparser.c.o
@@ -1249,7 +1249,7 @@ ftplistparser.o: ftplistparser.c.o
 
 # target to build an object file
 ftplistparser.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.o
 .PHONY : ftplistparser.c.o
 
 ftplistparser.i: ftplistparser.c.i
@@ -1258,7 +1258,7 @@ ftplistparser.i: ftplistparser.c.i
 
 # target to preprocess a source file
 ftplistparser.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.i
 .PHONY : ftplistparser.c.i
 
 ftplistparser.s: ftplistparser.c.s
@@ -1267,7 +1267,7 @@ ftplistparser.s: ftplistparser.c.s
 
 # target to generate assembly for a file
 ftplistparser.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.s
 .PHONY : ftplistparser.c.s
 
 getenv.o: getenv.c.o
@@ -1276,7 +1276,7 @@ getenv.o: getenv.c.o
 
 # target to build an object file
 getenv.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.o
 .PHONY : getenv.c.o
 
 getenv.i: getenv.c.i
@@ -1285,7 +1285,7 @@ getenv.i: getenv.c.i
 
 # target to preprocess a source file
 getenv.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.i
 .PHONY : getenv.c.i
 
 getenv.s: getenv.c.s
@@ -1294,7 +1294,7 @@ getenv.s: getenv.c.s
 
 # target to generate assembly for a file
 getenv.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.s
 .PHONY : getenv.c.s
 
 getinfo.o: getinfo.c.o
@@ -1303,7 +1303,7 @@ getinfo.o: getinfo.c.o
 
 # target to build an object file
 getinfo.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.o
 .PHONY : getinfo.c.o
 
 getinfo.i: getinfo.c.i
@@ -1312,7 +1312,7 @@ getinfo.i: getinfo.c.i
 
 # target to preprocess a source file
 getinfo.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.i
 .PHONY : getinfo.c.i
 
 getinfo.s: getinfo.c.s
@@ -1321,7 +1321,7 @@ getinfo.s: getinfo.c.s
 
 # target to generate assembly for a file
 getinfo.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.s
 .PHONY : getinfo.c.s
 
 gopher.o: gopher.c.o
@@ -1330,7 +1330,7 @@ gopher.o: gopher.c.o
 
 # target to build an object file
 gopher.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.o
 .PHONY : gopher.c.o
 
 gopher.i: gopher.c.i
@@ -1339,7 +1339,7 @@ gopher.i: gopher.c.i
 
 # target to preprocess a source file
 gopher.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.i
 .PHONY : gopher.c.i
 
 gopher.s: gopher.c.s
@@ -1348,7 +1348,7 @@ gopher.s: gopher.c.s
 
 # target to generate assembly for a file
 gopher.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.s
 .PHONY : gopher.c.s
 
 hash.o: hash.c.o
@@ -1357,7 +1357,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -1366,7 +1366,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -1375,7 +1375,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.s
 .PHONY : hash.c.s
 
 hmac.o: hmac.c.o
@@ -1384,7 +1384,7 @@ hmac.o: hmac.c.o
 
 # target to build an object file
 hmac.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.o
 .PHONY : hmac.c.o
 
 hmac.i: hmac.c.i
@@ -1393,7 +1393,7 @@ hmac.i: hmac.c.i
 
 # target to preprocess a source file
 hmac.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.i
 .PHONY : hmac.c.i
 
 hmac.s: hmac.c.s
@@ -1402,7 +1402,7 @@ hmac.s: hmac.c.s
 
 # target to generate assembly for a file
 hmac.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.s
 .PHONY : hmac.c.s
 
 hostasyn.o: hostasyn.c.o
@@ -1411,7 +1411,7 @@ hostasyn.o: hostasyn.c.o
 
 # target to build an object file
 hostasyn.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.o
 .PHONY : hostasyn.c.o
 
 hostasyn.i: hostasyn.c.i
@@ -1420,7 +1420,7 @@ hostasyn.i: hostasyn.c.i
 
 # target to preprocess a source file
 hostasyn.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.i
 .PHONY : hostasyn.c.i
 
 hostasyn.s: hostasyn.c.s
@@ -1429,7 +1429,7 @@ hostasyn.s: hostasyn.c.s
 
 # target to generate assembly for a file
 hostasyn.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.s
 .PHONY : hostasyn.c.s
 
 hostcheck.o: hostcheck.c.o
@@ -1438,7 +1438,7 @@ hostcheck.o: hostcheck.c.o
 
 # target to build an object file
 hostcheck.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.o
 .PHONY : hostcheck.c.o
 
 hostcheck.i: hostcheck.c.i
@@ -1447,7 +1447,7 @@ hostcheck.i: hostcheck.c.i
 
 # target to preprocess a source file
 hostcheck.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.i
 .PHONY : hostcheck.c.i
 
 hostcheck.s: hostcheck.c.s
@@ -1456,7 +1456,7 @@ hostcheck.s: hostcheck.c.s
 
 # target to generate assembly for a file
 hostcheck.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.s
 .PHONY : hostcheck.c.s
 
 hostip.o: hostip.c.o
@@ -1465,7 +1465,7 @@ hostip.o: hostip.c.o
 
 # target to build an object file
 hostip.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.o
 .PHONY : hostip.c.o
 
 hostip.i: hostip.c.i
@@ -1474,7 +1474,7 @@ hostip.i: hostip.c.i
 
 # target to preprocess a source file
 hostip.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.i
 .PHONY : hostip.c.i
 
 hostip.s: hostip.c.s
@@ -1483,7 +1483,7 @@ hostip.s: hostip.c.s
 
 # target to generate assembly for a file
 hostip.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.s
 .PHONY : hostip.c.s
 
 hostip4.o: hostip4.c.o
@@ -1492,7 +1492,7 @@ hostip4.o: hostip4.c.o
 
 # target to build an object file
 hostip4.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.o
 .PHONY : hostip4.c.o
 
 hostip4.i: hostip4.c.i
@@ -1501,7 +1501,7 @@ hostip4.i: hostip4.c.i
 
 # target to preprocess a source file
 hostip4.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.i
 .PHONY : hostip4.c.i
 
 hostip4.s: hostip4.c.s
@@ -1510,7 +1510,7 @@ hostip4.s: hostip4.c.s
 
 # target to generate assembly for a file
 hostip4.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.s
 .PHONY : hostip4.c.s
 
 hostip6.o: hostip6.c.o
@@ -1519,7 +1519,7 @@ hostip6.o: hostip6.c.o
 
 # target to build an object file
 hostip6.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.o
 .PHONY : hostip6.c.o
 
 hostip6.i: hostip6.c.i
@@ -1528,7 +1528,7 @@ hostip6.i: hostip6.c.i
 
 # target to preprocess a source file
 hostip6.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.i
 .PHONY : hostip6.c.i
 
 hostip6.s: hostip6.c.s
@@ -1537,7 +1537,7 @@ hostip6.s: hostip6.c.s
 
 # target to generate assembly for a file
 hostip6.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.s
 .PHONY : hostip6.c.s
 
 hostsyn.o: hostsyn.c.o
@@ -1546,7 +1546,7 @@ hostsyn.o: hostsyn.c.o
 
 # target to build an object file
 hostsyn.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.o
 .PHONY : hostsyn.c.o
 
 hostsyn.i: hostsyn.c.i
@@ -1555,7 +1555,7 @@ hostsyn.i: hostsyn.c.i
 
 # target to preprocess a source file
 hostsyn.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.i
 .PHONY : hostsyn.c.i
 
 hostsyn.s: hostsyn.c.s
@@ -1564,7 +1564,7 @@ hostsyn.s: hostsyn.c.s
 
 # target to generate assembly for a file
 hostsyn.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.s
 .PHONY : hostsyn.c.s
 
 http.o: http.c.o
@@ -1573,7 +1573,7 @@ http.o: http.c.o
 
 # target to build an object file
 http.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http.c.o
 .PHONY : http.c.o
 
 http.i: http.c.i
@@ -1582,7 +1582,7 @@ http.i: http.c.i
 
 # target to preprocess a source file
 http.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http.c.i
 .PHONY : http.c.i
 
 http.s: http.c.s
@@ -1591,7 +1591,7 @@ http.s: http.c.s
 
 # target to generate assembly for a file
 http.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http.c.s
 .PHONY : http.c.s
 
 http2.o: http2.c.o
@@ -1600,7 +1600,7 @@ http2.o: http2.c.o
 
 # target to build an object file
 http2.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.o
 .PHONY : http2.c.o
 
 http2.i: http2.c.i
@@ -1609,7 +1609,7 @@ http2.i: http2.c.i
 
 # target to preprocess a source file
 http2.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.i
 .PHONY : http2.c.i
 
 http2.s: http2.c.s
@@ -1618,7 +1618,7 @@ http2.s: http2.c.s
 
 # target to generate assembly for a file
 http2.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.s
 .PHONY : http2.c.s
 
 http_chunks.o: http_chunks.c.o
@@ -1627,7 +1627,7 @@ http_chunks.o: http_chunks.c.o
 
 # target to build an object file
 http_chunks.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.o
 .PHONY : http_chunks.c.o
 
 http_chunks.i: http_chunks.c.i
@@ -1636,7 +1636,7 @@ http_chunks.i: http_chunks.c.i
 
 # target to preprocess a source file
 http_chunks.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.i
 .PHONY : http_chunks.c.i
 
 http_chunks.s: http_chunks.c.s
@@ -1645,7 +1645,7 @@ http_chunks.s: http_chunks.c.s
 
 # target to generate assembly for a file
 http_chunks.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.s
 .PHONY : http_chunks.c.s
 
 http_digest.o: http_digest.c.o
@@ -1654,7 +1654,7 @@ http_digest.o: http_digest.c.o
 
 # target to build an object file
 http_digest.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.o
 .PHONY : http_digest.c.o
 
 http_digest.i: http_digest.c.i
@@ -1663,7 +1663,7 @@ http_digest.i: http_digest.c.i
 
 # target to preprocess a source file
 http_digest.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.i
 .PHONY : http_digest.c.i
 
 http_digest.s: http_digest.c.s
@@ -1672,7 +1672,7 @@ http_digest.s: http_digest.c.s
 
 # target to generate assembly for a file
 http_digest.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.s
 .PHONY : http_digest.c.s
 
 http_negotiate.o: http_negotiate.c.o
@@ -1681,7 +1681,7 @@ http_negotiate.o: http_negotiate.c.o
 
 # target to build an object file
 http_negotiate.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.o
 .PHONY : http_negotiate.c.o
 
 http_negotiate.i: http_negotiate.c.i
@@ -1690,7 +1690,7 @@ http_negotiate.i: http_negotiate.c.i
 
 # target to preprocess a source file
 http_negotiate.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.i
 .PHONY : http_negotiate.c.i
 
 http_negotiate.s: http_negotiate.c.s
@@ -1699,7 +1699,7 @@ http_negotiate.s: http_negotiate.c.s
 
 # target to generate assembly for a file
 http_negotiate.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.s
 .PHONY : http_negotiate.c.s
 
 http_ntlm.o: http_ntlm.c.o
@@ -1708,7 +1708,7 @@ http_ntlm.o: http_ntlm.c.o
 
 # target to build an object file
 http_ntlm.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.o
 .PHONY : http_ntlm.c.o
 
 http_ntlm.i: http_ntlm.c.i
@@ -1717,7 +1717,7 @@ http_ntlm.i: http_ntlm.c.i
 
 # target to preprocess a source file
 http_ntlm.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.i
 .PHONY : http_ntlm.c.i
 
 http_ntlm.s: http_ntlm.c.s
@@ -1726,7 +1726,7 @@ http_ntlm.s: http_ntlm.c.s
 
 # target to generate assembly for a file
 http_ntlm.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.s
 .PHONY : http_ntlm.c.s
 
 http_proxy.o: http_proxy.c.o
@@ -1735,7 +1735,7 @@ http_proxy.o: http_proxy.c.o
 
 # target to build an object file
 http_proxy.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.o
 .PHONY : http_proxy.c.o
 
 http_proxy.i: http_proxy.c.i
@@ -1744,7 +1744,7 @@ http_proxy.i: http_proxy.c.i
 
 # target to preprocess a source file
 http_proxy.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.i
 .PHONY : http_proxy.c.i
 
 http_proxy.s: http_proxy.c.s
@@ -1753,7 +1753,7 @@ http_proxy.s: http_proxy.c.s
 
 # target to generate assembly for a file
 http_proxy.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.s
 .PHONY : http_proxy.c.s
 
 idn_win32.o: idn_win32.c.o
@@ -1762,7 +1762,7 @@ idn_win32.o: idn_win32.c.o
 
 # target to build an object file
 idn_win32.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.o
 .PHONY : idn_win32.c.o
 
 idn_win32.i: idn_win32.c.i
@@ -1771,7 +1771,7 @@ idn_win32.i: idn_win32.c.i
 
 # target to preprocess a source file
 idn_win32.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.i
 .PHONY : idn_win32.c.i
 
 idn_win32.s: idn_win32.c.s
@@ -1780,7 +1780,7 @@ idn_win32.s: idn_win32.c.s
 
 # target to generate assembly for a file
 idn_win32.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.s
 .PHONY : idn_win32.c.s
 
 if2ip.o: if2ip.c.o
@@ -1789,7 +1789,7 @@ if2ip.o: if2ip.c.o
 
 # target to build an object file
 if2ip.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.o
 .PHONY : if2ip.c.o
 
 if2ip.i: if2ip.c.i
@@ -1798,7 +1798,7 @@ if2ip.i: if2ip.c.i
 
 # target to preprocess a source file
 if2ip.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.i
 .PHONY : if2ip.c.i
 
 if2ip.s: if2ip.c.s
@@ -1807,7 +1807,7 @@ if2ip.s: if2ip.c.s
 
 # target to generate assembly for a file
 if2ip.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.s
 .PHONY : if2ip.c.s
 
 imap.o: imap.c.o
@@ -1816,7 +1816,7 @@ imap.o: imap.c.o
 
 # target to build an object file
 imap.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.o
 .PHONY : imap.c.o
 
 imap.i: imap.c.i
@@ -1825,7 +1825,7 @@ imap.i: imap.c.i
 
 # target to preprocess a source file
 imap.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.i
 .PHONY : imap.c.i
 
 imap.s: imap.c.s
@@ -1834,7 +1834,7 @@ imap.s: imap.c.s
 
 # target to generate assembly for a file
 imap.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.s
 .PHONY : imap.c.s
 
 inet_ntop.o: inet_ntop.c.o
@@ -1843,7 +1843,7 @@ inet_ntop.o: inet_ntop.c.o
 
 # target to build an object file
 inet_ntop.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.o
 .PHONY : inet_ntop.c.o
 
 inet_ntop.i: inet_ntop.c.i
@@ -1852,7 +1852,7 @@ inet_ntop.i: inet_ntop.c.i
 
 # target to preprocess a source file
 inet_ntop.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.i
 .PHONY : inet_ntop.c.i
 
 inet_ntop.s: inet_ntop.c.s
@@ -1861,7 +1861,7 @@ inet_ntop.s: inet_ntop.c.s
 
 # target to generate assembly for a file
 inet_ntop.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.s
 .PHONY : inet_ntop.c.s
 
 inet_pton.o: inet_pton.c.o
@@ -1870,7 +1870,7 @@ inet_pton.o: inet_pton.c.o
 
 # target to build an object file
 inet_pton.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.o
 .PHONY : inet_pton.c.o
 
 inet_pton.i: inet_pton.c.i
@@ -1879,7 +1879,7 @@ inet_pton.i: inet_pton.c.i
 
 # target to preprocess a source file
 inet_pton.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.i
 .PHONY : inet_pton.c.i
 
 inet_pton.s: inet_pton.c.s
@@ -1888,7 +1888,7 @@ inet_pton.s: inet_pton.c.s
 
 # target to generate assembly for a file
 inet_pton.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.s
 .PHONY : inet_pton.c.s
 
 krb5.o: krb5.c.o
@@ -1897,7 +1897,7 @@ krb5.o: krb5.c.o
 
 # target to build an object file
 krb5.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.o
 .PHONY : krb5.c.o
 
 krb5.i: krb5.c.i
@@ -1906,7 +1906,7 @@ krb5.i: krb5.c.i
 
 # target to preprocess a source file
 krb5.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.i
 .PHONY : krb5.c.i
 
 krb5.s: krb5.c.s
@@ -1915,7 +1915,7 @@ krb5.s: krb5.c.s
 
 # target to generate assembly for a file
 krb5.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.s
 .PHONY : krb5.c.s
 
 ldap.o: ldap.c.o
@@ -1924,7 +1924,7 @@ ldap.o: ldap.c.o
 
 # target to build an object file
 ldap.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.o
 .PHONY : ldap.c.o
 
 ldap.i: ldap.c.i
@@ -1933,7 +1933,7 @@ ldap.i: ldap.c.i
 
 # target to preprocess a source file
 ldap.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.i
 .PHONY : ldap.c.i
 
 ldap.s: ldap.c.s
@@ -1942,7 +1942,7 @@ ldap.s: ldap.c.s
 
 # target to generate assembly for a file
 ldap.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.s
 .PHONY : ldap.c.s
 
 llist.o: llist.c.o
@@ -1951,7 +1951,7 @@ llist.o: llist.c.o
 
 # target to build an object file
 llist.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.o
 .PHONY : llist.c.o
 
 llist.i: llist.c.i
@@ -1960,7 +1960,7 @@ llist.i: llist.c.i
 
 # target to preprocess a source file
 llist.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.i
 .PHONY : llist.c.i
 
 llist.s: llist.c.s
@@ -1969,7 +1969,7 @@ llist.s: llist.c.s
 
 # target to generate assembly for a file
 llist.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.s
 .PHONY : llist.c.s
 
 md4.o: md4.c.o
@@ -1978,7 +1978,7 @@ md4.o: md4.c.o
 
 # target to build an object file
 md4.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.o
 .PHONY : md4.c.o
 
 md4.i: md4.c.i
@@ -1987,7 +1987,7 @@ md4.i: md4.c.i
 
 # target to preprocess a source file
 md4.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.i
 .PHONY : md4.c.i
 
 md4.s: md4.c.s
@@ -1996,7 +1996,7 @@ md4.s: md4.c.s
 
 # target to generate assembly for a file
 md4.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.s
 .PHONY : md4.c.s
 
 md5.o: md5.c.o
@@ -2005,7 +2005,7 @@ md5.o: md5.c.o
 
 # target to build an object file
 md5.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.o
 .PHONY : md5.c.o
 
 md5.i: md5.c.i
@@ -2014,7 +2014,7 @@ md5.i: md5.c.i
 
 # target to preprocess a source file
 md5.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.i
 .PHONY : md5.c.i
 
 md5.s: md5.c.s
@@ -2023,7 +2023,7 @@ md5.s: md5.c.s
 
 # target to generate assembly for a file
 md5.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.s
 .PHONY : md5.c.s
 
 memdebug.o: memdebug.c.o
@@ -2032,7 +2032,7 @@ memdebug.o: memdebug.c.o
 
 # target to build an object file
 memdebug.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.o
 .PHONY : memdebug.c.o
 
 memdebug.i: memdebug.c.i
@@ -2041,7 +2041,7 @@ memdebug.i: memdebug.c.i
 
 # target to preprocess a source file
 memdebug.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.i
 .PHONY : memdebug.c.i
 
 memdebug.s: memdebug.c.s
@@ -2050,7 +2050,7 @@ memdebug.s: memdebug.c.s
 
 # target to generate assembly for a file
 memdebug.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.s
 .PHONY : memdebug.c.s
 
 mime.o: mime.c.o
@@ -2059,7 +2059,7 @@ mime.o: mime.c.o
 
 # target to build an object file
 mime.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.o
 .PHONY : mime.c.o
 
 mime.i: mime.c.i
@@ -2068,7 +2068,7 @@ mime.i: mime.c.i
 
 # target to preprocess a source file
 mime.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.i
 .PHONY : mime.c.i
 
 mime.s: mime.c.s
@@ -2077,7 +2077,7 @@ mime.s: mime.c.s
 
 # target to generate assembly for a file
 mime.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.s
 .PHONY : mime.c.s
 
 mprintf.o: mprintf.c.o
@@ -2086,7 +2086,7 @@ mprintf.o: mprintf.c.o
 
 # target to build an object file
 mprintf.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.o
 .PHONY : mprintf.c.o
 
 mprintf.i: mprintf.c.i
@@ -2095,7 +2095,7 @@ mprintf.i: mprintf.c.i
 
 # target to preprocess a source file
 mprintf.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.i
 .PHONY : mprintf.c.i
 
 mprintf.s: mprintf.c.s
@@ -2104,7 +2104,7 @@ mprintf.s: mprintf.c.s
 
 # target to generate assembly for a file
 mprintf.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.s
 .PHONY : mprintf.c.s
 
 mqtt.o: mqtt.c.o
@@ -2113,7 +2113,7 @@ mqtt.o: mqtt.c.o
 
 # target to build an object file
 mqtt.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mqtt.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mqtt.c.o
 .PHONY : mqtt.c.o
 
 mqtt.i: mqtt.c.i
@@ -2122,7 +2122,7 @@ mqtt.i: mqtt.c.i
 
 # target to preprocess a source file
 mqtt.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mqtt.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mqtt.c.i
 .PHONY : mqtt.c.i
 
 mqtt.s: mqtt.c.s
@@ -2131,7 +2131,7 @@ mqtt.s: mqtt.c.s
 
 # target to generate assembly for a file
 mqtt.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mqtt.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/mqtt.c.s
 .PHONY : mqtt.c.s
 
 multi.o: multi.c.o
@@ -2140,7 +2140,7 @@ multi.o: multi.c.o
 
 # target to build an object file
 multi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.o
 .PHONY : multi.c.o
 
 multi.i: multi.c.i
@@ -2149,7 +2149,7 @@ multi.i: multi.c.i
 
 # target to preprocess a source file
 multi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.i
 .PHONY : multi.c.i
 
 multi.s: multi.c.s
@@ -2158,7 +2158,7 @@ multi.s: multi.c.s
 
 # target to generate assembly for a file
 multi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.s
 .PHONY : multi.c.s
 
 netrc.o: netrc.c.o
@@ -2167,7 +2167,7 @@ netrc.o: netrc.c.o
 
 # target to build an object file
 netrc.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.o
 .PHONY : netrc.c.o
 
 netrc.i: netrc.c.i
@@ -2176,7 +2176,7 @@ netrc.i: netrc.c.i
 
 # target to preprocess a source file
 netrc.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.i
 .PHONY : netrc.c.i
 
 netrc.s: netrc.c.s
@@ -2185,7 +2185,7 @@ netrc.s: netrc.c.s
 
 # target to generate assembly for a file
 netrc.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.s
 .PHONY : netrc.c.s
 
 non-ascii.o: non-ascii.c.o
@@ -2194,7 +2194,7 @@ non-ascii.o: non-ascii.c.o
 
 # target to build an object file
 non-ascii.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.o
 .PHONY : non-ascii.c.o
 
 non-ascii.i: non-ascii.c.i
@@ -2203,7 +2203,7 @@ non-ascii.i: non-ascii.c.i
 
 # target to preprocess a source file
 non-ascii.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.i
 .PHONY : non-ascii.c.i
 
 non-ascii.s: non-ascii.c.s
@@ -2212,7 +2212,7 @@ non-ascii.s: non-ascii.c.s
 
 # target to generate assembly for a file
 non-ascii.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.s
 .PHONY : non-ascii.c.s
 
 nonblock.o: nonblock.c.o
@@ -2221,7 +2221,7 @@ nonblock.o: nonblock.c.o
 
 # target to build an object file
 nonblock.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.o
 .PHONY : nonblock.c.o
 
 nonblock.i: nonblock.c.i
@@ -2230,7 +2230,7 @@ nonblock.i: nonblock.c.i
 
 # target to preprocess a source file
 nonblock.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.i
 .PHONY : nonblock.c.i
 
 nonblock.s: nonblock.c.s
@@ -2239,7 +2239,7 @@ nonblock.s: nonblock.c.s
 
 # target to generate assembly for a file
 nonblock.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.s
 .PHONY : nonblock.c.s
 
 openldap.o: openldap.c.o
@@ -2248,7 +2248,7 @@ openldap.o: openldap.c.o
 
 # target to build an object file
 openldap.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.o
 .PHONY : openldap.c.o
 
 openldap.i: openldap.c.i
@@ -2257,7 +2257,7 @@ openldap.i: openldap.c.i
 
 # target to preprocess a source file
 openldap.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.i
 .PHONY : openldap.c.i
 
 openldap.s: openldap.c.s
@@ -2266,7 +2266,7 @@ openldap.s: openldap.c.s
 
 # target to generate assembly for a file
 openldap.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.s
 .PHONY : openldap.c.s
 
 parsedate.o: parsedate.c.o
@@ -2275,7 +2275,7 @@ parsedate.o: parsedate.c.o
 
 # target to build an object file
 parsedate.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.o
 .PHONY : parsedate.c.o
 
 parsedate.i: parsedate.c.i
@@ -2284,7 +2284,7 @@ parsedate.i: parsedate.c.i
 
 # target to preprocess a source file
 parsedate.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.i
 .PHONY : parsedate.c.i
 
 parsedate.s: parsedate.c.s
@@ -2293,7 +2293,7 @@ parsedate.s: parsedate.c.s
 
 # target to generate assembly for a file
 parsedate.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.s
 .PHONY : parsedate.c.s
 
 pingpong.o: pingpong.c.o
@@ -2302,7 +2302,7 @@ pingpong.o: pingpong.c.o
 
 # target to build an object file
 pingpong.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.o
 .PHONY : pingpong.c.o
 
 pingpong.i: pingpong.c.i
@@ -2311,7 +2311,7 @@ pingpong.i: pingpong.c.i
 
 # target to preprocess a source file
 pingpong.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.i
 .PHONY : pingpong.c.i
 
 pingpong.s: pingpong.c.s
@@ -2320,7 +2320,7 @@ pingpong.s: pingpong.c.s
 
 # target to generate assembly for a file
 pingpong.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.s
 .PHONY : pingpong.c.s
 
 pop3.o: pop3.c.o
@@ -2329,7 +2329,7 @@ pop3.o: pop3.c.o
 
 # target to build an object file
 pop3.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.o
 .PHONY : pop3.c.o
 
 pop3.i: pop3.c.i
@@ -2338,7 +2338,7 @@ pop3.i: pop3.c.i
 
 # target to preprocess a source file
 pop3.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.i
 .PHONY : pop3.c.i
 
 pop3.s: pop3.c.s
@@ -2347,7 +2347,7 @@ pop3.s: pop3.c.s
 
 # target to generate assembly for a file
 pop3.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.s
 .PHONY : pop3.c.s
 
 progress.o: progress.c.o
@@ -2356,7 +2356,7 @@ progress.o: progress.c.o
 
 # target to build an object file
 progress.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.o
 .PHONY : progress.c.o
 
 progress.i: progress.c.i
@@ -2365,7 +2365,7 @@ progress.i: progress.c.i
 
 # target to preprocess a source file
 progress.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.i
 .PHONY : progress.c.i
 
 progress.s: progress.c.s
@@ -2374,7 +2374,7 @@ progress.s: progress.c.s
 
 # target to generate assembly for a file
 progress.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.s
 .PHONY : progress.c.s
 
 psl.o: psl.c.o
@@ -2383,7 +2383,7 @@ psl.o: psl.c.o
 
 # target to build an object file
 psl.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.o
 .PHONY : psl.c.o
 
 psl.i: psl.c.i
@@ -2392,7 +2392,7 @@ psl.i: psl.c.i
 
 # target to preprocess a source file
 psl.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.i
 .PHONY : psl.c.i
 
 psl.s: psl.c.s
@@ -2401,7 +2401,7 @@ psl.s: psl.c.s
 
 # target to generate assembly for a file
 psl.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.s
 .PHONY : psl.c.s
 
 rand.o: rand.c.o
@@ -2410,7 +2410,7 @@ rand.o: rand.c.o
 
 # target to build an object file
 rand.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.o
 .PHONY : rand.c.o
 
 rand.i: rand.c.i
@@ -2419,7 +2419,7 @@ rand.i: rand.c.i
 
 # target to preprocess a source file
 rand.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.i
 .PHONY : rand.c.i
 
 rand.s: rand.c.s
@@ -2428,7 +2428,7 @@ rand.s: rand.c.s
 
 # target to generate assembly for a file
 rand.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.s
 .PHONY : rand.c.s
 
 rename.o: rename.c.o
@@ -2437,7 +2437,7 @@ rename.o: rename.c.o
 
 # target to build an object file
 rename.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.o
 .PHONY : rename.c.o
 
 rename.i: rename.c.i
@@ -2446,7 +2446,7 @@ rename.i: rename.c.i
 
 # target to preprocess a source file
 rename.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.i
 .PHONY : rename.c.i
 
 rename.s: rename.c.s
@@ -2455,7 +2455,7 @@ rename.s: rename.c.s
 
 # target to generate assembly for a file
 rename.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.s
 .PHONY : rename.c.s
 
 rtsp.o: rtsp.c.o
@@ -2464,7 +2464,7 @@ rtsp.o: rtsp.c.o
 
 # target to build an object file
 rtsp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.o
 .PHONY : rtsp.c.o
 
 rtsp.i: rtsp.c.i
@@ -2473,7 +2473,7 @@ rtsp.i: rtsp.c.i
 
 # target to preprocess a source file
 rtsp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.i
 .PHONY : rtsp.c.i
 
 rtsp.s: rtsp.c.s
@@ -2482,7 +2482,7 @@ rtsp.s: rtsp.c.s
 
 # target to generate assembly for a file
 rtsp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.s
 .PHONY : rtsp.c.s
 
 select.o: select.c.o
@@ -2491,7 +2491,7 @@ select.o: select.c.o
 
 # target to build an object file
 select.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/select.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/select.c.o
 .PHONY : select.c.o
 
 select.i: select.c.i
@@ -2500,7 +2500,7 @@ select.i: select.c.i
 
 # target to preprocess a source file
 select.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/select.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/select.c.i
 .PHONY : select.c.i
 
 select.s: select.c.s
@@ -2509,7 +2509,7 @@ select.s: select.c.s
 
 # target to generate assembly for a file
 select.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/select.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/select.c.s
 .PHONY : select.c.s
 
 sendf.o: sendf.c.o
@@ -2518,7 +2518,7 @@ sendf.o: sendf.c.o
 
 # target to build an object file
 sendf.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.o
 .PHONY : sendf.c.o
 
 sendf.i: sendf.c.i
@@ -2527,7 +2527,7 @@ sendf.i: sendf.c.i
 
 # target to preprocess a source file
 sendf.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.i
 .PHONY : sendf.c.i
 
 sendf.s: sendf.c.s
@@ -2536,7 +2536,7 @@ sendf.s: sendf.c.s
 
 # target to generate assembly for a file
 sendf.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.s
 .PHONY : sendf.c.s
 
 setopt.o: setopt.c.o
@@ -2545,7 +2545,7 @@ setopt.o: setopt.c.o
 
 # target to build an object file
 setopt.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.o
 .PHONY : setopt.c.o
 
 setopt.i: setopt.c.i
@@ -2554,7 +2554,7 @@ setopt.i: setopt.c.i
 
 # target to preprocess a source file
 setopt.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.i
 .PHONY : setopt.c.i
 
 setopt.s: setopt.c.s
@@ -2563,7 +2563,7 @@ setopt.s: setopt.c.s
 
 # target to generate assembly for a file
 setopt.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.s
 .PHONY : setopt.c.s
 
 sha256.o: sha256.c.o
@@ -2572,7 +2572,7 @@ sha256.o: sha256.c.o
 
 # target to build an object file
 sha256.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.o
 .PHONY : sha256.c.o
 
 sha256.i: sha256.c.i
@@ -2581,7 +2581,7 @@ sha256.i: sha256.c.i
 
 # target to preprocess a source file
 sha256.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.i
 .PHONY : sha256.c.i
 
 sha256.s: sha256.c.s
@@ -2590,7 +2590,7 @@ sha256.s: sha256.c.s
 
 # target to generate assembly for a file
 sha256.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.s
 .PHONY : sha256.c.s
 
 share.o: share.c.o
@@ -2599,7 +2599,7 @@ share.o: share.c.o
 
 # target to build an object file
 share.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/share.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/share.c.o
 .PHONY : share.c.o
 
 share.i: share.c.i
@@ -2608,7 +2608,7 @@ share.i: share.c.i
 
 # target to preprocess a source file
 share.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/share.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/share.c.i
 .PHONY : share.c.i
 
 share.s: share.c.s
@@ -2617,7 +2617,7 @@ share.s: share.c.s
 
 # target to generate assembly for a file
 share.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/share.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/share.c.s
 .PHONY : share.c.s
 
 slist.o: slist.c.o
@@ -2626,7 +2626,7 @@ slist.o: slist.c.o
 
 # target to build an object file
 slist.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.o
 .PHONY : slist.c.o
 
 slist.i: slist.c.i
@@ -2635,7 +2635,7 @@ slist.i: slist.c.i
 
 # target to preprocess a source file
 slist.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.i
 .PHONY : slist.c.i
 
 slist.s: slist.c.s
@@ -2644,7 +2644,7 @@ slist.s: slist.c.s
 
 # target to generate assembly for a file
 slist.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.s
 .PHONY : slist.c.s
 
 smb.o: smb.c.o
@@ -2653,7 +2653,7 @@ smb.o: smb.c.o
 
 # target to build an object file
 smb.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.o
 .PHONY : smb.c.o
 
 smb.i: smb.c.i
@@ -2662,7 +2662,7 @@ smb.i: smb.c.i
 
 # target to preprocess a source file
 smb.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.i
 .PHONY : smb.c.i
 
 smb.s: smb.c.s
@@ -2671,7 +2671,7 @@ smb.s: smb.c.s
 
 # target to generate assembly for a file
 smb.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.s
 .PHONY : smb.c.s
 
 smtp.o: smtp.c.o
@@ -2680,7 +2680,7 @@ smtp.o: smtp.c.o
 
 # target to build an object file
 smtp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.o
 .PHONY : smtp.c.o
 
 smtp.i: smtp.c.i
@@ -2689,7 +2689,7 @@ smtp.i: smtp.c.i
 
 # target to preprocess a source file
 smtp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.i
 .PHONY : smtp.c.i
 
 smtp.s: smtp.c.s
@@ -2698,7 +2698,7 @@ smtp.s: smtp.c.s
 
 # target to generate assembly for a file
 smtp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.s
 .PHONY : smtp.c.s
 
 socketpair.o: socketpair.c.o
@@ -2707,7 +2707,7 @@ socketpair.o: socketpair.c.o
 
 # target to build an object file
 socketpair.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.o
 .PHONY : socketpair.c.o
 
 socketpair.i: socketpair.c.i
@@ -2716,7 +2716,7 @@ socketpair.i: socketpair.c.i
 
 # target to preprocess a source file
 socketpair.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.i
 .PHONY : socketpair.c.i
 
 socketpair.s: socketpair.c.s
@@ -2725,7 +2725,7 @@ socketpair.s: socketpair.c.s
 
 # target to generate assembly for a file
 socketpair.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.s
 .PHONY : socketpair.c.s
 
 socks.o: socks.c.o
@@ -2734,7 +2734,7 @@ socks.o: socks.c.o
 
 # target to build an object file
 socks.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.o
 .PHONY : socks.c.o
 
 socks.i: socks.c.i
@@ -2743,7 +2743,7 @@ socks.i: socks.c.i
 
 # target to preprocess a source file
 socks.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.i
 .PHONY : socks.c.i
 
 socks.s: socks.c.s
@@ -2752,7 +2752,7 @@ socks.s: socks.c.s
 
 # target to generate assembly for a file
 socks.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.s
 .PHONY : socks.c.s
 
 socks_gssapi.o: socks_gssapi.c.o
@@ -2761,7 +2761,7 @@ socks_gssapi.o: socks_gssapi.c.o
 
 # target to build an object file
 socks_gssapi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.o
 .PHONY : socks_gssapi.c.o
 
 socks_gssapi.i: socks_gssapi.c.i
@@ -2770,7 +2770,7 @@ socks_gssapi.i: socks_gssapi.c.i
 
 # target to preprocess a source file
 socks_gssapi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.i
 .PHONY : socks_gssapi.c.i
 
 socks_gssapi.s: socks_gssapi.c.s
@@ -2779,7 +2779,7 @@ socks_gssapi.s: socks_gssapi.c.s
 
 # target to generate assembly for a file
 socks_gssapi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.s
 .PHONY : socks_gssapi.c.s
 
 socks_sspi.o: socks_sspi.c.o
@@ -2788,7 +2788,7 @@ socks_sspi.o: socks_sspi.c.o
 
 # target to build an object file
 socks_sspi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.o
 .PHONY : socks_sspi.c.o
 
 socks_sspi.i: socks_sspi.c.i
@@ -2797,7 +2797,7 @@ socks_sspi.i: socks_sspi.c.i
 
 # target to preprocess a source file
 socks_sspi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.i
 .PHONY : socks_sspi.c.i
 
 socks_sspi.s: socks_sspi.c.s
@@ -2806,7 +2806,7 @@ socks_sspi.s: socks_sspi.c.s
 
 # target to generate assembly for a file
 socks_sspi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.s
 .PHONY : socks_sspi.c.s
 
 speedcheck.o: speedcheck.c.o
@@ -2815,7 +2815,7 @@ speedcheck.o: speedcheck.c.o
 
 # target to build an object file
 speedcheck.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.o
 .PHONY : speedcheck.c.o
 
 speedcheck.i: speedcheck.c.i
@@ -2824,7 +2824,7 @@ speedcheck.i: speedcheck.c.i
 
 # target to preprocess a source file
 speedcheck.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.i
 .PHONY : speedcheck.c.i
 
 speedcheck.s: speedcheck.c.s
@@ -2833,7 +2833,7 @@ speedcheck.s: speedcheck.c.s
 
 # target to generate assembly for a file
 speedcheck.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.s
 .PHONY : speedcheck.c.s
 
 splay.o: splay.c.o
@@ -2842,7 +2842,7 @@ splay.o: splay.c.o
 
 # target to build an object file
 splay.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.o
 .PHONY : splay.c.o
 
 splay.i: splay.c.i
@@ -2851,7 +2851,7 @@ splay.i: splay.c.i
 
 # target to preprocess a source file
 splay.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.i
 .PHONY : splay.c.i
 
 splay.s: splay.c.s
@@ -2860,7 +2860,7 @@ splay.s: splay.c.s
 
 # target to generate assembly for a file
 splay.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.s
 .PHONY : splay.c.s
 
 strcase.o: strcase.c.o
@@ -2869,7 +2869,7 @@ strcase.o: strcase.c.o
 
 # target to build an object file
 strcase.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.o
 .PHONY : strcase.c.o
 
 strcase.i: strcase.c.i
@@ -2878,7 +2878,7 @@ strcase.i: strcase.c.i
 
 # target to preprocess a source file
 strcase.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.i
 .PHONY : strcase.c.i
 
 strcase.s: strcase.c.s
@@ -2887,7 +2887,7 @@ strcase.s: strcase.c.s
 
 # target to generate assembly for a file
 strcase.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.s
 .PHONY : strcase.c.s
 
 strdup.o: strdup.c.o
@@ -2896,7 +2896,7 @@ strdup.o: strdup.c.o
 
 # target to build an object file
 strdup.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.o
 .PHONY : strdup.c.o
 
 strdup.i: strdup.c.i
@@ -2905,7 +2905,7 @@ strdup.i: strdup.c.i
 
 # target to preprocess a source file
 strdup.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.i
 .PHONY : strdup.c.i
 
 strdup.s: strdup.c.s
@@ -2914,7 +2914,7 @@ strdup.s: strdup.c.s
 
 # target to generate assembly for a file
 strdup.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.s
 .PHONY : strdup.c.s
 
 strerror.o: strerror.c.o
@@ -2923,7 +2923,7 @@ strerror.o: strerror.c.o
 
 # target to build an object file
 strerror.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.o
 .PHONY : strerror.c.o
 
 strerror.i: strerror.c.i
@@ -2932,7 +2932,7 @@ strerror.i: strerror.c.i
 
 # target to preprocess a source file
 strerror.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.i
 .PHONY : strerror.c.i
 
 strerror.s: strerror.c.s
@@ -2941,7 +2941,7 @@ strerror.s: strerror.c.s
 
 # target to generate assembly for a file
 strerror.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.s
 .PHONY : strerror.c.s
 
 strtok.o: strtok.c.o
@@ -2950,7 +2950,7 @@ strtok.o: strtok.c.o
 
 # target to build an object file
 strtok.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.o
 .PHONY : strtok.c.o
 
 strtok.i: strtok.c.i
@@ -2959,7 +2959,7 @@ strtok.i: strtok.c.i
 
 # target to preprocess a source file
 strtok.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.i
 .PHONY : strtok.c.i
 
 strtok.s: strtok.c.s
@@ -2968,7 +2968,7 @@ strtok.s: strtok.c.s
 
 # target to generate assembly for a file
 strtok.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.s
 .PHONY : strtok.c.s
 
 strtoofft.o: strtoofft.c.o
@@ -2977,7 +2977,7 @@ strtoofft.o: strtoofft.c.o
 
 # target to build an object file
 strtoofft.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.o
 .PHONY : strtoofft.c.o
 
 strtoofft.i: strtoofft.c.i
@@ -2986,7 +2986,7 @@ strtoofft.i: strtoofft.c.i
 
 # target to preprocess a source file
 strtoofft.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.i
 .PHONY : strtoofft.c.i
 
 strtoofft.s: strtoofft.c.s
@@ -2995,7 +2995,7 @@ strtoofft.s: strtoofft.c.s
 
 # target to generate assembly for a file
 strtoofft.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.s
 .PHONY : strtoofft.c.s
 
 system_win32.o: system_win32.c.o
@@ -3004,7 +3004,7 @@ system_win32.o: system_win32.c.o
 
 # target to build an object file
 system_win32.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.o
 .PHONY : system_win32.c.o
 
 system_win32.i: system_win32.c.i
@@ -3013,7 +3013,7 @@ system_win32.i: system_win32.c.i
 
 # target to preprocess a source file
 system_win32.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.i
 .PHONY : system_win32.c.i
 
 system_win32.s: system_win32.c.s
@@ -3022,7 +3022,7 @@ system_win32.s: system_win32.c.s
 
 # target to generate assembly for a file
 system_win32.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.s
 .PHONY : system_win32.c.s
 
 telnet.o: telnet.c.o
@@ -3031,7 +3031,7 @@ telnet.o: telnet.c.o
 
 # target to build an object file
 telnet.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.o
 .PHONY : telnet.c.o
 
 telnet.i: telnet.c.i
@@ -3040,7 +3040,7 @@ telnet.i: telnet.c.i
 
 # target to preprocess a source file
 telnet.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.i
 .PHONY : telnet.c.i
 
 telnet.s: telnet.c.s
@@ -3049,7 +3049,7 @@ telnet.s: telnet.c.s
 
 # target to generate assembly for a file
 telnet.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.s
 .PHONY : telnet.c.s
 
 tftp.o: tftp.c.o
@@ -3058,7 +3058,7 @@ tftp.o: tftp.c.o
 
 # target to build an object file
 tftp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.o
 .PHONY : tftp.c.o
 
 tftp.i: tftp.c.i
@@ -3067,7 +3067,7 @@ tftp.i: tftp.c.i
 
 # target to preprocess a source file
 tftp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.i
 .PHONY : tftp.c.i
 
 tftp.s: tftp.c.s
@@ -3076,7 +3076,7 @@ tftp.s: tftp.c.s
 
 # target to generate assembly for a file
 tftp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.s
 .PHONY : tftp.c.s
 
 timeval.o: timeval.c.o
@@ -3085,7 +3085,7 @@ timeval.o: timeval.c.o
 
 # target to build an object file
 timeval.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.o
 .PHONY : timeval.c.o
 
 timeval.i: timeval.c.i
@@ -3094,7 +3094,7 @@ timeval.i: timeval.c.i
 
 # target to preprocess a source file
 timeval.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.i
 .PHONY : timeval.c.i
 
 timeval.s: timeval.c.s
@@ -3103,7 +3103,7 @@ timeval.s: timeval.c.s
 
 # target to generate assembly for a file
 timeval.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.s
 .PHONY : timeval.c.s
 
 transfer.o: transfer.c.o
@@ -3112,7 +3112,7 @@ transfer.o: transfer.c.o
 
 # target to build an object file
 transfer.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.o
 .PHONY : transfer.c.o
 
 transfer.i: transfer.c.i
@@ -3121,7 +3121,7 @@ transfer.i: transfer.c.i
 
 # target to preprocess a source file
 transfer.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.i
 .PHONY : transfer.c.i
 
 transfer.s: transfer.c.s
@@ -3130,7 +3130,7 @@ transfer.s: transfer.c.s
 
 # target to generate assembly for a file
 transfer.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.s
 .PHONY : transfer.c.s
 
 url.o: url.c.o
@@ -3139,7 +3139,7 @@ url.o: url.c.o
 
 # target to build an object file
 url.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/url.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/url.c.o
 .PHONY : url.c.o
 
 url.i: url.c.i
@@ -3148,7 +3148,7 @@ url.i: url.c.i
 
 # target to preprocess a source file
 url.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/url.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/url.c.i
 .PHONY : url.c.i
 
 url.s: url.c.s
@@ -3157,7 +3157,7 @@ url.s: url.c.s
 
 # target to generate assembly for a file
 url.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/url.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/url.c.s
 .PHONY : url.c.s
 
 urlapi.o: urlapi.c.o
@@ -3166,7 +3166,7 @@ urlapi.o: urlapi.c.o
 
 # target to build an object file
 urlapi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.o
 .PHONY : urlapi.c.o
 
 urlapi.i: urlapi.c.i
@@ -3175,7 +3175,7 @@ urlapi.i: urlapi.c.i
 
 # target to preprocess a source file
 urlapi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.i
 .PHONY : urlapi.c.i
 
 urlapi.s: urlapi.c.s
@@ -3184,7 +3184,7 @@ urlapi.s: urlapi.c.s
 
 # target to generate assembly for a file
 urlapi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.s
 .PHONY : urlapi.c.s
 
 vauth/cleartext.o: vauth/cleartext.c.o
@@ -3193,7 +3193,7 @@ vauth/cleartext.o: vauth/cleartext.c.o
 
 # target to build an object file
 vauth/cleartext.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.o
 .PHONY : vauth/cleartext.c.o
 
 vauth/cleartext.i: vauth/cleartext.c.i
@@ -3202,7 +3202,7 @@ vauth/cleartext.i: vauth/cleartext.c.i
 
 # target to preprocess a source file
 vauth/cleartext.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.i
 .PHONY : vauth/cleartext.c.i
 
 vauth/cleartext.s: vauth/cleartext.c.s
@@ -3211,7 +3211,7 @@ vauth/cleartext.s: vauth/cleartext.c.s
 
 # target to generate assembly for a file
 vauth/cleartext.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.s
 .PHONY : vauth/cleartext.c.s
 
 vauth/cram.o: vauth/cram.c.o
@@ -3220,7 +3220,7 @@ vauth/cram.o: vauth/cram.c.o
 
 # target to build an object file
 vauth/cram.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.o
 .PHONY : vauth/cram.c.o
 
 vauth/cram.i: vauth/cram.c.i
@@ -3229,7 +3229,7 @@ vauth/cram.i: vauth/cram.c.i
 
 # target to preprocess a source file
 vauth/cram.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.i
 .PHONY : vauth/cram.c.i
 
 vauth/cram.s: vauth/cram.c.s
@@ -3238,7 +3238,7 @@ vauth/cram.s: vauth/cram.c.s
 
 # target to generate assembly for a file
 vauth/cram.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.s
 .PHONY : vauth/cram.c.s
 
 vauth/digest.o: vauth/digest.c.o
@@ -3247,7 +3247,7 @@ vauth/digest.o: vauth/digest.c.o
 
 # target to build an object file
 vauth/digest.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.o
 .PHONY : vauth/digest.c.o
 
 vauth/digest.i: vauth/digest.c.i
@@ -3256,7 +3256,7 @@ vauth/digest.i: vauth/digest.c.i
 
 # target to preprocess a source file
 vauth/digest.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.i
 .PHONY : vauth/digest.c.i
 
 vauth/digest.s: vauth/digest.c.s
@@ -3265,7 +3265,7 @@ vauth/digest.s: vauth/digest.c.s
 
 # target to generate assembly for a file
 vauth/digest.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.s
 .PHONY : vauth/digest.c.s
 
 vauth/digest_sspi.o: vauth/digest_sspi.c.o
@@ -3274,7 +3274,7 @@ vauth/digest_sspi.o: vauth/digest_sspi.c.o
 
 # target to build an object file
 vauth/digest_sspi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.o
 .PHONY : vauth/digest_sspi.c.o
 
 vauth/digest_sspi.i: vauth/digest_sspi.c.i
@@ -3283,7 +3283,7 @@ vauth/digest_sspi.i: vauth/digest_sspi.c.i
 
 # target to preprocess a source file
 vauth/digest_sspi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.i
 .PHONY : vauth/digest_sspi.c.i
 
 vauth/digest_sspi.s: vauth/digest_sspi.c.s
@@ -3292,7 +3292,7 @@ vauth/digest_sspi.s: vauth/digest_sspi.c.s
 
 # target to generate assembly for a file
 vauth/digest_sspi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.s
 .PHONY : vauth/digest_sspi.c.s
 
 vauth/krb5_gssapi.o: vauth/krb5_gssapi.c.o
@@ -3301,7 +3301,7 @@ vauth/krb5_gssapi.o: vauth/krb5_gssapi.c.o
 
 # target to build an object file
 vauth/krb5_gssapi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.o
 .PHONY : vauth/krb5_gssapi.c.o
 
 vauth/krb5_gssapi.i: vauth/krb5_gssapi.c.i
@@ -3310,7 +3310,7 @@ vauth/krb5_gssapi.i: vauth/krb5_gssapi.c.i
 
 # target to preprocess a source file
 vauth/krb5_gssapi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.i
 .PHONY : vauth/krb5_gssapi.c.i
 
 vauth/krb5_gssapi.s: vauth/krb5_gssapi.c.s
@@ -3319,7 +3319,7 @@ vauth/krb5_gssapi.s: vauth/krb5_gssapi.c.s
 
 # target to generate assembly for a file
 vauth/krb5_gssapi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.s
 .PHONY : vauth/krb5_gssapi.c.s
 
 vauth/krb5_sspi.o: vauth/krb5_sspi.c.o
@@ -3328,7 +3328,7 @@ vauth/krb5_sspi.o: vauth/krb5_sspi.c.o
 
 # target to build an object file
 vauth/krb5_sspi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.o
 .PHONY : vauth/krb5_sspi.c.o
 
 vauth/krb5_sspi.i: vauth/krb5_sspi.c.i
@@ -3337,7 +3337,7 @@ vauth/krb5_sspi.i: vauth/krb5_sspi.c.i
 
 # target to preprocess a source file
 vauth/krb5_sspi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.i
 .PHONY : vauth/krb5_sspi.c.i
 
 vauth/krb5_sspi.s: vauth/krb5_sspi.c.s
@@ -3346,7 +3346,7 @@ vauth/krb5_sspi.s: vauth/krb5_sspi.c.s
 
 # target to generate assembly for a file
 vauth/krb5_sspi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.s
 .PHONY : vauth/krb5_sspi.c.s
 
 vauth/ntlm.o: vauth/ntlm.c.o
@@ -3355,7 +3355,7 @@ vauth/ntlm.o: vauth/ntlm.c.o
 
 # target to build an object file
 vauth/ntlm.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.o
 .PHONY : vauth/ntlm.c.o
 
 vauth/ntlm.i: vauth/ntlm.c.i
@@ -3364,7 +3364,7 @@ vauth/ntlm.i: vauth/ntlm.c.i
 
 # target to preprocess a source file
 vauth/ntlm.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.i
 .PHONY : vauth/ntlm.c.i
 
 vauth/ntlm.s: vauth/ntlm.c.s
@@ -3373,7 +3373,7 @@ vauth/ntlm.s: vauth/ntlm.c.s
 
 # target to generate assembly for a file
 vauth/ntlm.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.s
 .PHONY : vauth/ntlm.c.s
 
 vauth/ntlm_sspi.o: vauth/ntlm_sspi.c.o
@@ -3382,7 +3382,7 @@ vauth/ntlm_sspi.o: vauth/ntlm_sspi.c.o
 
 # target to build an object file
 vauth/ntlm_sspi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.o
 .PHONY : vauth/ntlm_sspi.c.o
 
 vauth/ntlm_sspi.i: vauth/ntlm_sspi.c.i
@@ -3391,7 +3391,7 @@ vauth/ntlm_sspi.i: vauth/ntlm_sspi.c.i
 
 # target to preprocess a source file
 vauth/ntlm_sspi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.i
 .PHONY : vauth/ntlm_sspi.c.i
 
 vauth/ntlm_sspi.s: vauth/ntlm_sspi.c.s
@@ -3400,7 +3400,7 @@ vauth/ntlm_sspi.s: vauth/ntlm_sspi.c.s
 
 # target to generate assembly for a file
 vauth/ntlm_sspi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.s
 .PHONY : vauth/ntlm_sspi.c.s
 
 vauth/oauth2.o: vauth/oauth2.c.o
@@ -3409,7 +3409,7 @@ vauth/oauth2.o: vauth/oauth2.c.o
 
 # target to build an object file
 vauth/oauth2.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.o
 .PHONY : vauth/oauth2.c.o
 
 vauth/oauth2.i: vauth/oauth2.c.i
@@ -3418,7 +3418,7 @@ vauth/oauth2.i: vauth/oauth2.c.i
 
 # target to preprocess a source file
 vauth/oauth2.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.i
 .PHONY : vauth/oauth2.c.i
 
 vauth/oauth2.s: vauth/oauth2.c.s
@@ -3427,7 +3427,7 @@ vauth/oauth2.s: vauth/oauth2.c.s
 
 # target to generate assembly for a file
 vauth/oauth2.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.s
 .PHONY : vauth/oauth2.c.s
 
 vauth/spnego_gssapi.o: vauth/spnego_gssapi.c.o
@@ -3436,7 +3436,7 @@ vauth/spnego_gssapi.o: vauth/spnego_gssapi.c.o
 
 # target to build an object file
 vauth/spnego_gssapi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.o
 .PHONY : vauth/spnego_gssapi.c.o
 
 vauth/spnego_gssapi.i: vauth/spnego_gssapi.c.i
@@ -3445,7 +3445,7 @@ vauth/spnego_gssapi.i: vauth/spnego_gssapi.c.i
 
 # target to preprocess a source file
 vauth/spnego_gssapi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.i
 .PHONY : vauth/spnego_gssapi.c.i
 
 vauth/spnego_gssapi.s: vauth/spnego_gssapi.c.s
@@ -3454,7 +3454,7 @@ vauth/spnego_gssapi.s: vauth/spnego_gssapi.c.s
 
 # target to generate assembly for a file
 vauth/spnego_gssapi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.s
 .PHONY : vauth/spnego_gssapi.c.s
 
 vauth/spnego_sspi.o: vauth/spnego_sspi.c.o
@@ -3463,7 +3463,7 @@ vauth/spnego_sspi.o: vauth/spnego_sspi.c.o
 
 # target to build an object file
 vauth/spnego_sspi.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.o
 .PHONY : vauth/spnego_sspi.c.o
 
 vauth/spnego_sspi.i: vauth/spnego_sspi.c.i
@@ -3472,7 +3472,7 @@ vauth/spnego_sspi.i: vauth/spnego_sspi.c.i
 
 # target to preprocess a source file
 vauth/spnego_sspi.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.i
 .PHONY : vauth/spnego_sspi.c.i
 
 vauth/spnego_sspi.s: vauth/spnego_sspi.c.s
@@ -3481,7 +3481,7 @@ vauth/spnego_sspi.s: vauth/spnego_sspi.c.s
 
 # target to generate assembly for a file
 vauth/spnego_sspi.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.s
 .PHONY : vauth/spnego_sspi.c.s
 
 vauth/vauth.o: vauth/vauth.c.o
@@ -3490,7 +3490,7 @@ vauth/vauth.o: vauth/vauth.c.o
 
 # target to build an object file
 vauth/vauth.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.o
 .PHONY : vauth/vauth.c.o
 
 vauth/vauth.i: vauth/vauth.c.i
@@ -3499,7 +3499,7 @@ vauth/vauth.i: vauth/vauth.c.i
 
 # target to preprocess a source file
 vauth/vauth.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.i
 .PHONY : vauth/vauth.c.i
 
 vauth/vauth.s: vauth/vauth.c.s
@@ -3508,7 +3508,7 @@ vauth/vauth.s: vauth/vauth.c.s
 
 # target to generate assembly for a file
 vauth/vauth.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.s
 .PHONY : vauth/vauth.c.s
 
 version.o: version.c.o
@@ -3517,7 +3517,7 @@ version.o: version.c.o
 
 # target to build an object file
 version.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version.c.o
 .PHONY : version.c.o
 
 version.i: version.c.i
@@ -3526,7 +3526,7 @@ version.i: version.c.i
 
 # target to preprocess a source file
 version.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version.c.i
 .PHONY : version.c.i
 
 version.s: version.c.s
@@ -3535,7 +3535,7 @@ version.s: version.c.s
 
 # target to generate assembly for a file
 version.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version.c.s
 .PHONY : version.c.s
 
 version_win32.o: version_win32.c.o
@@ -3544,7 +3544,7 @@ version_win32.o: version_win32.c.o
 
 # target to build an object file
 version_win32.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version_win32.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version_win32.c.o
 .PHONY : version_win32.c.o
 
 version_win32.i: version_win32.c.i
@@ -3553,7 +3553,7 @@ version_win32.i: version_win32.c.i
 
 # target to preprocess a source file
 version_win32.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version_win32.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version_win32.c.i
 .PHONY : version_win32.c.i
 
 version_win32.s: version_win32.c.s
@@ -3562,7 +3562,7 @@ version_win32.s: version_win32.c.s
 
 # target to generate assembly for a file
 version_win32.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version_win32.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/version_win32.c.s
 .PHONY : version_win32.c.s
 
 vquic/ngtcp2.o: vquic/ngtcp2.c.o
@@ -3571,7 +3571,7 @@ vquic/ngtcp2.o: vquic/ngtcp2.c.o
 
 # target to build an object file
 vquic/ngtcp2.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.o
 .PHONY : vquic/ngtcp2.c.o
 
 vquic/ngtcp2.i: vquic/ngtcp2.c.i
@@ -3580,7 +3580,7 @@ vquic/ngtcp2.i: vquic/ngtcp2.c.i
 
 # target to preprocess a source file
 vquic/ngtcp2.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.i
 .PHONY : vquic/ngtcp2.c.i
 
 vquic/ngtcp2.s: vquic/ngtcp2.c.s
@@ -3589,7 +3589,7 @@ vquic/ngtcp2.s: vquic/ngtcp2.c.s
 
 # target to generate assembly for a file
 vquic/ngtcp2.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.s
 .PHONY : vquic/ngtcp2.c.s
 
 vquic/quiche.o: vquic/quiche.c.o
@@ -3598,7 +3598,7 @@ vquic/quiche.o: vquic/quiche.c.o
 
 # target to build an object file
 vquic/quiche.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.o
 .PHONY : vquic/quiche.c.o
 
 vquic/quiche.i: vquic/quiche.c.i
@@ -3607,7 +3607,7 @@ vquic/quiche.i: vquic/quiche.c.i
 
 # target to preprocess a source file
 vquic/quiche.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.i
 .PHONY : vquic/quiche.c.i
 
 vquic/quiche.s: vquic/quiche.c.s
@@ -3616,7 +3616,7 @@ vquic/quiche.s: vquic/quiche.c.s
 
 # target to generate assembly for a file
 vquic/quiche.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.s
 .PHONY : vquic/quiche.c.s
 
 vquic/vquic.o: vquic/vquic.c.o
@@ -3625,7 +3625,7 @@ vquic/vquic.o: vquic/vquic.c.o
 
 # target to build an object file
 vquic/vquic.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/vquic.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/vquic.c.o
 .PHONY : vquic/vquic.c.o
 
 vquic/vquic.i: vquic/vquic.c.i
@@ -3634,7 +3634,7 @@ vquic/vquic.i: vquic/vquic.c.i
 
 # target to preprocess a source file
 vquic/vquic.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/vquic.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/vquic.c.i
 .PHONY : vquic/vquic.c.i
 
 vquic/vquic.s: vquic/vquic.c.s
@@ -3643,7 +3643,7 @@ vquic/vquic.s: vquic/vquic.c.s
 
 # target to generate assembly for a file
 vquic/vquic.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/vquic.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vquic/vquic.c.s
 .PHONY : vquic/vquic.c.s
 
 vssh/libssh.o: vssh/libssh.c.o
@@ -3652,7 +3652,7 @@ vssh/libssh.o: vssh/libssh.c.o
 
 # target to build an object file
 vssh/libssh.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.o
 .PHONY : vssh/libssh.c.o
 
 vssh/libssh.i: vssh/libssh.c.i
@@ -3661,7 +3661,7 @@ vssh/libssh.i: vssh/libssh.c.i
 
 # target to preprocess a source file
 vssh/libssh.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.i
 .PHONY : vssh/libssh.c.i
 
 vssh/libssh.s: vssh/libssh.c.s
@@ -3670,7 +3670,7 @@ vssh/libssh.s: vssh/libssh.c.s
 
 # target to generate assembly for a file
 vssh/libssh.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.s
 .PHONY : vssh/libssh.c.s
 
 vssh/libssh2.o: vssh/libssh2.c.o
@@ -3679,7 +3679,7 @@ vssh/libssh2.o: vssh/libssh2.c.o
 
 # target to build an object file
 vssh/libssh2.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.o
 .PHONY : vssh/libssh2.c.o
 
 vssh/libssh2.i: vssh/libssh2.c.i
@@ -3688,7 +3688,7 @@ vssh/libssh2.i: vssh/libssh2.c.i
 
 # target to preprocess a source file
 vssh/libssh2.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.i
 .PHONY : vssh/libssh2.c.i
 
 vssh/libssh2.s: vssh/libssh2.c.s
@@ -3697,7 +3697,7 @@ vssh/libssh2.s: vssh/libssh2.c.s
 
 # target to generate assembly for a file
 vssh/libssh2.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.s
 .PHONY : vssh/libssh2.c.s
 
 vssh/wolfssh.o: vssh/wolfssh.c.o
@@ -3706,7 +3706,7 @@ vssh/wolfssh.o: vssh/wolfssh.c.o
 
 # target to build an object file
 vssh/wolfssh.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.o
 .PHONY : vssh/wolfssh.c.o
 
 vssh/wolfssh.i: vssh/wolfssh.c.i
@@ -3715,7 +3715,7 @@ vssh/wolfssh.i: vssh/wolfssh.c.i
 
 # target to preprocess a source file
 vssh/wolfssh.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.i
 .PHONY : vssh/wolfssh.c.i
 
 vssh/wolfssh.s: vssh/wolfssh.c.s
@@ -3724,7 +3724,7 @@ vssh/wolfssh.s: vssh/wolfssh.c.s
 
 # target to generate assembly for a file
 vssh/wolfssh.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.s
 .PHONY : vssh/wolfssh.c.s
 
 vtls/bearssl.o: vtls/bearssl.c.o
@@ -3733,7 +3733,7 @@ vtls/bearssl.o: vtls/bearssl.c.o
 
 # target to build an object file
 vtls/bearssl.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.o
 .PHONY : vtls/bearssl.c.o
 
 vtls/bearssl.i: vtls/bearssl.c.i
@@ -3742,7 +3742,7 @@ vtls/bearssl.i: vtls/bearssl.c.i
 
 # target to preprocess a source file
 vtls/bearssl.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.i
 .PHONY : vtls/bearssl.c.i
 
 vtls/bearssl.s: vtls/bearssl.c.s
@@ -3751,7 +3751,7 @@ vtls/bearssl.s: vtls/bearssl.c.s
 
 # target to generate assembly for a file
 vtls/bearssl.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.s
 .PHONY : vtls/bearssl.c.s
 
 vtls/gskit.o: vtls/gskit.c.o
@@ -3760,7 +3760,7 @@ vtls/gskit.o: vtls/gskit.c.o
 
 # target to build an object file
 vtls/gskit.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.o
 .PHONY : vtls/gskit.c.o
 
 vtls/gskit.i: vtls/gskit.c.i
@@ -3769,7 +3769,7 @@ vtls/gskit.i: vtls/gskit.c.i
 
 # target to preprocess a source file
 vtls/gskit.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.i
 .PHONY : vtls/gskit.c.i
 
 vtls/gskit.s: vtls/gskit.c.s
@@ -3778,7 +3778,7 @@ vtls/gskit.s: vtls/gskit.c.s
 
 # target to generate assembly for a file
 vtls/gskit.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.s
 .PHONY : vtls/gskit.c.s
 
 vtls/gtls.o: vtls/gtls.c.o
@@ -3787,7 +3787,7 @@ vtls/gtls.o: vtls/gtls.c.o
 
 # target to build an object file
 vtls/gtls.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.o
 .PHONY : vtls/gtls.c.o
 
 vtls/gtls.i: vtls/gtls.c.i
@@ -3796,7 +3796,7 @@ vtls/gtls.i: vtls/gtls.c.i
 
 # target to preprocess a source file
 vtls/gtls.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.i
 .PHONY : vtls/gtls.c.i
 
 vtls/gtls.s: vtls/gtls.c.s
@@ -3805,7 +3805,7 @@ vtls/gtls.s: vtls/gtls.c.s
 
 # target to generate assembly for a file
 vtls/gtls.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.s
 .PHONY : vtls/gtls.c.s
 
 vtls/keylog.o: vtls/keylog.c.o
@@ -3814,7 +3814,7 @@ vtls/keylog.o: vtls/keylog.c.o
 
 # target to build an object file
 vtls/keylog.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/keylog.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/keylog.c.o
 .PHONY : vtls/keylog.c.o
 
 vtls/keylog.i: vtls/keylog.c.i
@@ -3823,7 +3823,7 @@ vtls/keylog.i: vtls/keylog.c.i
 
 # target to preprocess a source file
 vtls/keylog.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/keylog.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/keylog.c.i
 .PHONY : vtls/keylog.c.i
 
 vtls/keylog.s: vtls/keylog.c.s
@@ -3832,7 +3832,7 @@ vtls/keylog.s: vtls/keylog.c.s
 
 # target to generate assembly for a file
 vtls/keylog.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/keylog.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/keylog.c.s
 .PHONY : vtls/keylog.c.s
 
 vtls/mbedtls.o: vtls/mbedtls.c.o
@@ -3841,7 +3841,7 @@ vtls/mbedtls.o: vtls/mbedtls.c.o
 
 # target to build an object file
 vtls/mbedtls.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.o
 .PHONY : vtls/mbedtls.c.o
 
 vtls/mbedtls.i: vtls/mbedtls.c.i
@@ -3850,7 +3850,7 @@ vtls/mbedtls.i: vtls/mbedtls.c.i
 
 # target to preprocess a source file
 vtls/mbedtls.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.i
 .PHONY : vtls/mbedtls.c.i
 
 vtls/mbedtls.s: vtls/mbedtls.c.s
@@ -3859,7 +3859,7 @@ vtls/mbedtls.s: vtls/mbedtls.c.s
 
 # target to generate assembly for a file
 vtls/mbedtls.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.s
 .PHONY : vtls/mbedtls.c.s
 
 vtls/mbedtls_threadlock.o: vtls/mbedtls_threadlock.c.o
@@ -3868,7 +3868,7 @@ vtls/mbedtls_threadlock.o: vtls/mbedtls_threadlock.c.o
 
 # target to build an object file
 vtls/mbedtls_threadlock.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.o
 .PHONY : vtls/mbedtls_threadlock.c.o
 
 vtls/mbedtls_threadlock.i: vtls/mbedtls_threadlock.c.i
@@ -3877,7 +3877,7 @@ vtls/mbedtls_threadlock.i: vtls/mbedtls_threadlock.c.i
 
 # target to preprocess a source file
 vtls/mbedtls_threadlock.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.i
 .PHONY : vtls/mbedtls_threadlock.c.i
 
 vtls/mbedtls_threadlock.s: vtls/mbedtls_threadlock.c.s
@@ -3886,7 +3886,7 @@ vtls/mbedtls_threadlock.s: vtls/mbedtls_threadlock.c.s
 
 # target to generate assembly for a file
 vtls/mbedtls_threadlock.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.s
 .PHONY : vtls/mbedtls_threadlock.c.s
 
 vtls/mesalink.o: vtls/mesalink.c.o
@@ -3895,7 +3895,7 @@ vtls/mesalink.o: vtls/mesalink.c.o
 
 # target to build an object file
 vtls/mesalink.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.o
 .PHONY : vtls/mesalink.c.o
 
 vtls/mesalink.i: vtls/mesalink.c.i
@@ -3904,7 +3904,7 @@ vtls/mesalink.i: vtls/mesalink.c.i
 
 # target to preprocess a source file
 vtls/mesalink.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.i
 .PHONY : vtls/mesalink.c.i
 
 vtls/mesalink.s: vtls/mesalink.c.s
@@ -3913,7 +3913,7 @@ vtls/mesalink.s: vtls/mesalink.c.s
 
 # target to generate assembly for a file
 vtls/mesalink.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.s
 .PHONY : vtls/mesalink.c.s
 
 vtls/nss.o: vtls/nss.c.o
@@ -3922,7 +3922,7 @@ vtls/nss.o: vtls/nss.c.o
 
 # target to build an object file
 vtls/nss.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.o
 .PHONY : vtls/nss.c.o
 
 vtls/nss.i: vtls/nss.c.i
@@ -3931,7 +3931,7 @@ vtls/nss.i: vtls/nss.c.i
 
 # target to preprocess a source file
 vtls/nss.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.i
 .PHONY : vtls/nss.c.i
 
 vtls/nss.s: vtls/nss.c.s
@@ -3940,7 +3940,7 @@ vtls/nss.s: vtls/nss.c.s
 
 # target to generate assembly for a file
 vtls/nss.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.s
 .PHONY : vtls/nss.c.s
 
 vtls/openssl.o: vtls/openssl.c.o
@@ -3949,7 +3949,7 @@ vtls/openssl.o: vtls/openssl.c.o
 
 # target to build an object file
 vtls/openssl.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.o
 .PHONY : vtls/openssl.c.o
 
 vtls/openssl.i: vtls/openssl.c.i
@@ -3958,7 +3958,7 @@ vtls/openssl.i: vtls/openssl.c.i
 
 # target to preprocess a source file
 vtls/openssl.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.i
 .PHONY : vtls/openssl.c.i
 
 vtls/openssl.s: vtls/openssl.c.s
@@ -3967,7 +3967,7 @@ vtls/openssl.s: vtls/openssl.c.s
 
 # target to generate assembly for a file
 vtls/openssl.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.s
 .PHONY : vtls/openssl.c.s
 
 vtls/schannel.o: vtls/schannel.c.o
@@ -3976,7 +3976,7 @@ vtls/schannel.o: vtls/schannel.c.o
 
 # target to build an object file
 vtls/schannel.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.o
 .PHONY : vtls/schannel.c.o
 
 vtls/schannel.i: vtls/schannel.c.i
@@ -3985,7 +3985,7 @@ vtls/schannel.i: vtls/schannel.c.i
 
 # target to preprocess a source file
 vtls/schannel.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.i
 .PHONY : vtls/schannel.c.i
 
 vtls/schannel.s: vtls/schannel.c.s
@@ -3994,7 +3994,7 @@ vtls/schannel.s: vtls/schannel.c.s
 
 # target to generate assembly for a file
 vtls/schannel.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.s
 .PHONY : vtls/schannel.c.s
 
 vtls/schannel_verify.o: vtls/schannel_verify.c.o
@@ -4003,7 +4003,7 @@ vtls/schannel_verify.o: vtls/schannel_verify.c.o
 
 # target to build an object file
 vtls/schannel_verify.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.o
 .PHONY : vtls/schannel_verify.c.o
 
 vtls/schannel_verify.i: vtls/schannel_verify.c.i
@@ -4012,7 +4012,7 @@ vtls/schannel_verify.i: vtls/schannel_verify.c.i
 
 # target to preprocess a source file
 vtls/schannel_verify.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.i
 .PHONY : vtls/schannel_verify.c.i
 
 vtls/schannel_verify.s: vtls/schannel_verify.c.s
@@ -4021,7 +4021,7 @@ vtls/schannel_verify.s: vtls/schannel_verify.c.s
 
 # target to generate assembly for a file
 vtls/schannel_verify.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.s
 .PHONY : vtls/schannel_verify.c.s
 
 vtls/sectransp.o: vtls/sectransp.c.o
@@ -4030,7 +4030,7 @@ vtls/sectransp.o: vtls/sectransp.c.o
 
 # target to build an object file
 vtls/sectransp.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.o
 .PHONY : vtls/sectransp.c.o
 
 vtls/sectransp.i: vtls/sectransp.c.i
@@ -4039,7 +4039,7 @@ vtls/sectransp.i: vtls/sectransp.c.i
 
 # target to preprocess a source file
 vtls/sectransp.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.i
 .PHONY : vtls/sectransp.c.i
 
 vtls/sectransp.s: vtls/sectransp.c.s
@@ -4048,7 +4048,7 @@ vtls/sectransp.s: vtls/sectransp.c.s
 
 # target to generate assembly for a file
 vtls/sectransp.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.s
 .PHONY : vtls/sectransp.c.s
 
 vtls/vtls.o: vtls/vtls.c.o
@@ -4057,7 +4057,7 @@ vtls/vtls.o: vtls/vtls.c.o
 
 # target to build an object file
 vtls/vtls.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.o
 .PHONY : vtls/vtls.c.o
 
 vtls/vtls.i: vtls/vtls.c.i
@@ -4066,7 +4066,7 @@ vtls/vtls.i: vtls/vtls.c.i
 
 # target to preprocess a source file
 vtls/vtls.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.i
 .PHONY : vtls/vtls.c.i
 
 vtls/vtls.s: vtls/vtls.c.s
@@ -4075,7 +4075,7 @@ vtls/vtls.s: vtls/vtls.c.s
 
 # target to generate assembly for a file
 vtls/vtls.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.s
 .PHONY : vtls/vtls.c.s
 
 vtls/wolfssl.o: vtls/wolfssl.c.o
@@ -4084,7 +4084,7 @@ vtls/wolfssl.o: vtls/wolfssl.c.o
 
 # target to build an object file
 vtls/wolfssl.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.o
 .PHONY : vtls/wolfssl.c.o
 
 vtls/wolfssl.i: vtls/wolfssl.c.i
@@ -4093,7 +4093,7 @@ vtls/wolfssl.i: vtls/wolfssl.c.i
 
 # target to preprocess a source file
 vtls/wolfssl.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.i
 .PHONY : vtls/wolfssl.c.i
 
 vtls/wolfssl.s: vtls/wolfssl.c.s
@@ -4102,7 +4102,7 @@ vtls/wolfssl.s: vtls/wolfssl.c.s
 
 # target to generate assembly for a file
 vtls/wolfssl.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.s
 .PHONY : vtls/wolfssl.c.s
 
 warnless.o: warnless.c.o
@@ -4111,7 +4111,7 @@ warnless.o: warnless.c.o
 
 # target to build an object file
 warnless.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.o
 .PHONY : warnless.c.o
 
 warnless.i: warnless.c.i
@@ -4120,7 +4120,7 @@ warnless.i: warnless.c.i
 
 # target to preprocess a source file
 warnless.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.i
 .PHONY : warnless.c.i
 
 warnless.s: warnless.c.s
@@ -4129,7 +4129,7 @@ warnless.s: warnless.c.s
 
 # target to generate assembly for a file
 warnless.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.s
 .PHONY : warnless.c.s
 
 wildcard.o: wildcard.c.o
@@ -4138,7 +4138,7 @@ wildcard.o: wildcard.c.o
 
 # target to build an object file
 wildcard.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.o
 .PHONY : wildcard.c.o
 
 wildcard.i: wildcard.c.i
@@ -4147,7 +4147,7 @@ wildcard.i: wildcard.c.i
 
 # target to preprocess a source file
 wildcard.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.i
 .PHONY : wildcard.c.i
 
 wildcard.s: wildcard.c.s
@@ -4156,7 +4156,7 @@ wildcard.s: wildcard.c.s
 
 # target to generate assembly for a file
 wildcard.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.s
 .PHONY : wildcard.c.s
 
 x509asn1.o: x509asn1.c.o
@@ -4165,7 +4165,7 @@ x509asn1.o: x509asn1.c.o
 
 # target to build an object file
 x509asn1.c.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.o
 .PHONY : x509asn1.c.o
 
 x509asn1.i: x509asn1.c.i
@@ -4174,7 +4174,7 @@ x509asn1.i: x509asn1.c.i
 
 # target to preprocess a source file
 x509asn1.c.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.i
 .PHONY : x509asn1.c.i
 
 x509asn1.s: x509asn1.c.s
@@ -4183,7 +4183,7 @@ x509asn1.s: x509asn1.c.s
 
 # target to generate assembly for a file
 x509asn1.c.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/build.make Lib/firebase-cpp-sdk/external/src/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.s
 .PHONY : x509asn1.c.s
 
 # Help Target
@@ -4654,6 +4654,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

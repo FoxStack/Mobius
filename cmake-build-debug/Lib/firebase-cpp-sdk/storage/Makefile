@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,31 +78,31 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -113,7 +113,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -124,13 +124,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -145,14 +145,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/storage//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/storage//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ firebase_storage: Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/r
 
 # fast build rule for target.
 firebase_storage/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build
 .PHONY : firebase_storage/fast
 
 src/common/common.o: src/common/common.cc.o
@@ -196,7 +196,7 @@ src/common/common.o: src/common/common.cc.o
 
 # target to build an object file
 src/common/common.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/common.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/common.cc.o
 .PHONY : src/common/common.cc.o
 
 src/common/common.i: src/common/common.cc.i
@@ -205,7 +205,7 @@ src/common/common.i: src/common/common.cc.i
 
 # target to preprocess a source file
 src/common/common.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/common.cc.i
 .PHONY : src/common/common.cc.i
 
 src/common/common.s: src/common/common.cc.s
@@ -214,7 +214,7 @@ src/common/common.s: src/common/common.cc.s
 
 # target to generate assembly for a file
 src/common/common.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/common.cc.s
 .PHONY : src/common/common.cc.s
 
 src/common/controller.o: src/common/controller.cc.o
@@ -223,7 +223,7 @@ src/common/controller.o: src/common/controller.cc.o
 
 # target to build an object file
 src/common/controller.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/controller.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/controller.cc.o
 .PHONY : src/common/controller.cc.o
 
 src/common/controller.i: src/common/controller.cc.i
@@ -232,7 +232,7 @@ src/common/controller.i: src/common/controller.cc.i
 
 # target to preprocess a source file
 src/common/controller.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/controller.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/controller.cc.i
 .PHONY : src/common/controller.cc.i
 
 src/common/controller.s: src/common/controller.cc.s
@@ -241,7 +241,7 @@ src/common/controller.s: src/common/controller.cc.s
 
 # target to generate assembly for a file
 src/common/controller.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/controller.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/controller.cc.s
 .PHONY : src/common/controller.cc.s
 
 src/common/listener.o: src/common/listener.cc.o
@@ -250,7 +250,7 @@ src/common/listener.o: src/common/listener.cc.o
 
 # target to build an object file
 src/common/listener.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/listener.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/listener.cc.o
 .PHONY : src/common/listener.cc.o
 
 src/common/listener.i: src/common/listener.cc.i
@@ -259,7 +259,7 @@ src/common/listener.i: src/common/listener.cc.i
 
 # target to preprocess a source file
 src/common/listener.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/listener.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/listener.cc.i
 .PHONY : src/common/listener.cc.i
 
 src/common/listener.s: src/common/listener.cc.s
@@ -268,7 +268,7 @@ src/common/listener.s: src/common/listener.cc.s
 
 # target to generate assembly for a file
 src/common/listener.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/listener.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/listener.cc.s
 .PHONY : src/common/listener.cc.s
 
 src/common/metadata.o: src/common/metadata.cc.o
@@ -277,7 +277,7 @@ src/common/metadata.o: src/common/metadata.cc.o
 
 # target to build an object file
 src/common/metadata.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/metadata.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/metadata.cc.o
 .PHONY : src/common/metadata.cc.o
 
 src/common/metadata.i: src/common/metadata.cc.i
@@ -286,7 +286,7 @@ src/common/metadata.i: src/common/metadata.cc.i
 
 # target to preprocess a source file
 src/common/metadata.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/metadata.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/metadata.cc.i
 .PHONY : src/common/metadata.cc.i
 
 src/common/metadata.s: src/common/metadata.cc.s
@@ -295,7 +295,7 @@ src/common/metadata.s: src/common/metadata.cc.s
 
 # target to generate assembly for a file
 src/common/metadata.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/metadata.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/metadata.cc.s
 .PHONY : src/common/metadata.cc.s
 
 src/common/storage.o: src/common/storage.cc.o
@@ -304,7 +304,7 @@ src/common/storage.o: src/common/storage.cc.o
 
 # target to build an object file
 src/common/storage.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage.cc.o
 .PHONY : src/common/storage.cc.o
 
 src/common/storage.i: src/common/storage.cc.i
@@ -313,7 +313,7 @@ src/common/storage.i: src/common/storage.cc.i
 
 # target to preprocess a source file
 src/common/storage.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage.cc.i
 .PHONY : src/common/storage.cc.i
 
 src/common/storage.s: src/common/storage.cc.s
@@ -322,7 +322,7 @@ src/common/storage.s: src/common/storage.cc.s
 
 # target to generate assembly for a file
 src/common/storage.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage.cc.s
 .PHONY : src/common/storage.cc.s
 
 src/common/storage_reference.o: src/common/storage_reference.cc.o
@@ -331,7 +331,7 @@ src/common/storage_reference.o: src/common/storage_reference.cc.o
 
 # target to build an object file
 src/common/storage_reference.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_reference.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_reference.cc.o
 .PHONY : src/common/storage_reference.cc.o
 
 src/common/storage_reference.i: src/common/storage_reference.cc.i
@@ -340,7 +340,7 @@ src/common/storage_reference.i: src/common/storage_reference.cc.i
 
 # target to preprocess a source file
 src/common/storage_reference.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_reference.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_reference.cc.i
 .PHONY : src/common/storage_reference.cc.i
 
 src/common/storage_reference.s: src/common/storage_reference.cc.s
@@ -349,7 +349,7 @@ src/common/storage_reference.s: src/common/storage_reference.cc.s
 
 # target to generate assembly for a file
 src/common/storage_reference.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_reference.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_reference.cc.s
 .PHONY : src/common/storage_reference.cc.s
 
 src/common/storage_uri_parser.o: src/common/storage_uri_parser.cc.o
@@ -358,7 +358,7 @@ src/common/storage_uri_parser.o: src/common/storage_uri_parser.cc.o
 
 # target to build an object file
 src/common/storage_uri_parser.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_uri_parser.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_uri_parser.cc.o
 .PHONY : src/common/storage_uri_parser.cc.o
 
 src/common/storage_uri_parser.i: src/common/storage_uri_parser.cc.i
@@ -367,7 +367,7 @@ src/common/storage_uri_parser.i: src/common/storage_uri_parser.cc.i
 
 # target to preprocess a source file
 src/common/storage_uri_parser.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_uri_parser.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_uri_parser.cc.i
 .PHONY : src/common/storage_uri_parser.cc.i
 
 src/common/storage_uri_parser.s: src/common/storage_uri_parser.cc.s
@@ -376,7 +376,7 @@ src/common/storage_uri_parser.s: src/common/storage_uri_parser.cc.s
 
 # target to generate assembly for a file
 src/common/storage_uri_parser.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_uri_parser.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/common/storage_uri_parser.cc.s
 .PHONY : src/common/storage_uri_parser.cc.s
 
 src/desktop/controller_desktop.o: src/desktop/controller_desktop.cc.o
@@ -385,7 +385,7 @@ src/desktop/controller_desktop.o: src/desktop/controller_desktop.cc.o
 
 # target to build an object file
 src/desktop/controller_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/controller_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/controller_desktop.cc.o
 .PHONY : src/desktop/controller_desktop.cc.o
 
 src/desktop/controller_desktop.i: src/desktop/controller_desktop.cc.i
@@ -394,7 +394,7 @@ src/desktop/controller_desktop.i: src/desktop/controller_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/controller_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/controller_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/controller_desktop.cc.i
 .PHONY : src/desktop/controller_desktop.cc.i
 
 src/desktop/controller_desktop.s: src/desktop/controller_desktop.cc.s
@@ -403,7 +403,7 @@ src/desktop/controller_desktop.s: src/desktop/controller_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/controller_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/controller_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/controller_desktop.cc.s
 .PHONY : src/desktop/controller_desktop.cc.s
 
 src/desktop/curl_requests.o: src/desktop/curl_requests.cc.o
@@ -412,7 +412,7 @@ src/desktop/curl_requests.o: src/desktop/curl_requests.cc.o
 
 # target to build an object file
 src/desktop/curl_requests.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/curl_requests.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/curl_requests.cc.o
 .PHONY : src/desktop/curl_requests.cc.o
 
 src/desktop/curl_requests.i: src/desktop/curl_requests.cc.i
@@ -421,7 +421,7 @@ src/desktop/curl_requests.i: src/desktop/curl_requests.cc.i
 
 # target to preprocess a source file
 src/desktop/curl_requests.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/curl_requests.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/curl_requests.cc.i
 .PHONY : src/desktop/curl_requests.cc.i
 
 src/desktop/curl_requests.s: src/desktop/curl_requests.cc.s
@@ -430,7 +430,7 @@ src/desktop/curl_requests.s: src/desktop/curl_requests.cc.s
 
 # target to generate assembly for a file
 src/desktop/curl_requests.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/curl_requests.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/curl_requests.cc.s
 .PHONY : src/desktop/curl_requests.cc.s
 
 src/desktop/listener_desktop.o: src/desktop/listener_desktop.cc.o
@@ -439,7 +439,7 @@ src/desktop/listener_desktop.o: src/desktop/listener_desktop.cc.o
 
 # target to build an object file
 src/desktop/listener_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/listener_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/listener_desktop.cc.o
 .PHONY : src/desktop/listener_desktop.cc.o
 
 src/desktop/listener_desktop.i: src/desktop/listener_desktop.cc.i
@@ -448,7 +448,7 @@ src/desktop/listener_desktop.i: src/desktop/listener_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/listener_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/listener_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/listener_desktop.cc.i
 .PHONY : src/desktop/listener_desktop.cc.i
 
 src/desktop/listener_desktop.s: src/desktop/listener_desktop.cc.s
@@ -457,7 +457,7 @@ src/desktop/listener_desktop.s: src/desktop/listener_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/listener_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/listener_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/listener_desktop.cc.s
 .PHONY : src/desktop/listener_desktop.cc.s
 
 src/desktop/metadata_desktop.o: src/desktop/metadata_desktop.cc.o
@@ -466,7 +466,7 @@ src/desktop/metadata_desktop.o: src/desktop/metadata_desktop.cc.o
 
 # target to build an object file
 src/desktop/metadata_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/metadata_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/metadata_desktop.cc.o
 .PHONY : src/desktop/metadata_desktop.cc.o
 
 src/desktop/metadata_desktop.i: src/desktop/metadata_desktop.cc.i
@@ -475,7 +475,7 @@ src/desktop/metadata_desktop.i: src/desktop/metadata_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/metadata_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/metadata_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/metadata_desktop.cc.i
 .PHONY : src/desktop/metadata_desktop.cc.i
 
 src/desktop/metadata_desktop.s: src/desktop/metadata_desktop.cc.s
@@ -484,7 +484,7 @@ src/desktop/metadata_desktop.s: src/desktop/metadata_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/metadata_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/metadata_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/metadata_desktop.cc.s
 .PHONY : src/desktop/metadata_desktop.cc.s
 
 src/desktop/rest_operation.o: src/desktop/rest_operation.cc.o
@@ -493,7 +493,7 @@ src/desktop/rest_operation.o: src/desktop/rest_operation.cc.o
 
 # target to build an object file
 src/desktop/rest_operation.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/rest_operation.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/rest_operation.cc.o
 .PHONY : src/desktop/rest_operation.cc.o
 
 src/desktop/rest_operation.i: src/desktop/rest_operation.cc.i
@@ -502,7 +502,7 @@ src/desktop/rest_operation.i: src/desktop/rest_operation.cc.i
 
 # target to preprocess a source file
 src/desktop/rest_operation.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/rest_operation.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/rest_operation.cc.i
 .PHONY : src/desktop/rest_operation.cc.i
 
 src/desktop/rest_operation.s: src/desktop/rest_operation.cc.s
@@ -511,7 +511,7 @@ src/desktop/rest_operation.s: src/desktop/rest_operation.cc.s
 
 # target to generate assembly for a file
 src/desktop/rest_operation.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/rest_operation.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/rest_operation.cc.s
 .PHONY : src/desktop/rest_operation.cc.s
 
 src/desktop/storage_desktop.o: src/desktop/storage_desktop.cc.o
@@ -520,7 +520,7 @@ src/desktop/storage_desktop.o: src/desktop/storage_desktop.cc.o
 
 # target to build an object file
 src/desktop/storage_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_desktop.cc.o
 .PHONY : src/desktop/storage_desktop.cc.o
 
 src/desktop/storage_desktop.i: src/desktop/storage_desktop.cc.i
@@ -529,7 +529,7 @@ src/desktop/storage_desktop.i: src/desktop/storage_desktop.cc.i
 
 # target to preprocess a source file
 src/desktop/storage_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_desktop.cc.i
 .PHONY : src/desktop/storage_desktop.cc.i
 
 src/desktop/storage_desktop.s: src/desktop/storage_desktop.cc.s
@@ -538,7 +538,7 @@ src/desktop/storage_desktop.s: src/desktop/storage_desktop.cc.s
 
 # target to generate assembly for a file
 src/desktop/storage_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_desktop.cc.s
 .PHONY : src/desktop/storage_desktop.cc.s
 
 src/desktop/storage_path.o: src/desktop/storage_path.cc.o
@@ -547,7 +547,7 @@ src/desktop/storage_path.o: src/desktop/storage_path.cc.o
 
 # target to build an object file
 src/desktop/storage_path.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_path.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_path.cc.o
 .PHONY : src/desktop/storage_path.cc.o
 
 src/desktop/storage_path.i: src/desktop/storage_path.cc.i
@@ -556,7 +556,7 @@ src/desktop/storage_path.i: src/desktop/storage_path.cc.i
 
 # target to preprocess a source file
 src/desktop/storage_path.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_path.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_path.cc.i
 .PHONY : src/desktop/storage_path.cc.i
 
 src/desktop/storage_path.s: src/desktop/storage_path.cc.s
@@ -565,7 +565,7 @@ src/desktop/storage_path.s: src/desktop/storage_path.cc.s
 
 # target to generate assembly for a file
 src/desktop/storage_path.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_path.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_path.cc.s
 .PHONY : src/desktop/storage_path.cc.s
 
 src/desktop/storage_reference_desktop.o: src/desktop/storage_reference_desktop.cc.o
@@ -574,7 +574,7 @@ src/desktop/storage_reference_desktop.o: src/desktop/storage_reference_desktop.c
 
 # target to build an object file
 src/desktop/storage_reference_desktop.cc.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_reference_desktop.cc.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_reference_desktop.cc.o
 .PHONY : src/desktop/storage_reference_desktop.cc.o
 
 src/desktop/storage_reference_desktop.i: src/desktop/storage_reference_desktop.cc.i
@@ -583,7 +583,7 @@ src/desktop/storage_reference_desktop.i: src/desktop/storage_reference_desktop.c
 
 # target to preprocess a source file
 src/desktop/storage_reference_desktop.cc.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_reference_desktop.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_reference_desktop.cc.i
 .PHONY : src/desktop/storage_reference_desktop.cc.i
 
 src/desktop/storage_reference_desktop.s: src/desktop/storage_reference_desktop.cc.s
@@ -592,7 +592,7 @@ src/desktop/storage_reference_desktop.s: src/desktop/storage_reference_desktop.c
 
 # target to generate assembly for a file
 src/desktop/storage_reference_desktop.cc.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_reference_desktop.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/build.make Lib/firebase-cpp-sdk/storage/CMakeFiles/firebase_storage.dir/src/desktop/storage_reference_desktop.cc.s
 .PHONY : src/desktop/storage_reference_desktop.cc.s
 
 # Help Target
@@ -664,6 +664,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

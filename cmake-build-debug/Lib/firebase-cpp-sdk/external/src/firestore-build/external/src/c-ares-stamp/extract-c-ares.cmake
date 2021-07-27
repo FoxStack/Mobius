@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares" ABSOLUTE)
+get_filename_component(filename "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/downloads/c-ares-e982924acee7f7313b4baa4ee5ec000c5e373c30.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/cares" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

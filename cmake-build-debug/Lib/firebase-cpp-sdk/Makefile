@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,37 +78,37 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/158/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -124,7 +124,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,7 +135,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk//CMakeFiles/progress.marks
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk//CMakeFiles/progress.marks"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/clean
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/preinstall
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ libuWS: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/rule
 
 # fast build rule for target.
 libuWS/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build
 .PHONY : libuWS/fast
 
 # Convenience name for target.
 Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/rule:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/rule
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/rule
 .PHONY : Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ FIREBASE_GENERATED_HEADERS: Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_H
 
 # fast build rule for target.
 FIREBASE_GENERATED_HEADERS/fast:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/build
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/FIREBASE_GENERATED_HEADERS.dir/build
 .PHONY : FIREBASE_GENERATED_HEADERS/fast
 
 external/src/uWebSockets/src/Epoll.o: external/src/uWebSockets/src/Epoll.cpp.o
@@ -211,7 +211,7 @@ external/src/uWebSockets/src/Epoll.o: external/src/uWebSockets/src/Epoll.cpp.o
 
 # target to build an object file
 external/src/uWebSockets/src/Epoll.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o
 .PHONY : external/src/uWebSockets/src/Epoll.cpp.o
 
 external/src/uWebSockets/src/Epoll.i: external/src/uWebSockets/src/Epoll.cpp.i
@@ -220,7 +220,7 @@ external/src/uWebSockets/src/Epoll.i: external/src/uWebSockets/src/Epoll.cpp.i
 
 # target to preprocess a source file
 external/src/uWebSockets/src/Epoll.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.i
 .PHONY : external/src/uWebSockets/src/Epoll.cpp.i
 
 external/src/uWebSockets/src/Epoll.s: external/src/uWebSockets/src/Epoll.cpp.s
@@ -229,7 +229,7 @@ external/src/uWebSockets/src/Epoll.s: external/src/uWebSockets/src/Epoll.cpp.s
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/Epoll.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.s
 .PHONY : external/src/uWebSockets/src/Epoll.cpp.s
 
 external/src/uWebSockets/src/Extensions.o: external/src/uWebSockets/src/Extensions.cpp.o
@@ -238,7 +238,7 @@ external/src/uWebSockets/src/Extensions.o: external/src/uWebSockets/src/Extensio
 
 # target to build an object file
 external/src/uWebSockets/src/Extensions.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o
 .PHONY : external/src/uWebSockets/src/Extensions.cpp.o
 
 external/src/uWebSockets/src/Extensions.i: external/src/uWebSockets/src/Extensions.cpp.i
@@ -247,7 +247,7 @@ external/src/uWebSockets/src/Extensions.i: external/src/uWebSockets/src/Extensio
 
 # target to preprocess a source file
 external/src/uWebSockets/src/Extensions.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.i
 .PHONY : external/src/uWebSockets/src/Extensions.cpp.i
 
 external/src/uWebSockets/src/Extensions.s: external/src/uWebSockets/src/Extensions.cpp.s
@@ -256,7 +256,7 @@ external/src/uWebSockets/src/Extensions.s: external/src/uWebSockets/src/Extensio
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/Extensions.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.s
 .PHONY : external/src/uWebSockets/src/Extensions.cpp.s
 
 external/src/uWebSockets/src/Group.o: external/src/uWebSockets/src/Group.cpp.o
@@ -265,7 +265,7 @@ external/src/uWebSockets/src/Group.o: external/src/uWebSockets/src/Group.cpp.o
 
 # target to build an object file
 external/src/uWebSockets/src/Group.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o
 .PHONY : external/src/uWebSockets/src/Group.cpp.o
 
 external/src/uWebSockets/src/Group.i: external/src/uWebSockets/src/Group.cpp.i
@@ -274,7 +274,7 @@ external/src/uWebSockets/src/Group.i: external/src/uWebSockets/src/Group.cpp.i
 
 # target to preprocess a source file
 external/src/uWebSockets/src/Group.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.i
 .PHONY : external/src/uWebSockets/src/Group.cpp.i
 
 external/src/uWebSockets/src/Group.s: external/src/uWebSockets/src/Group.cpp.s
@@ -283,7 +283,7 @@ external/src/uWebSockets/src/Group.s: external/src/uWebSockets/src/Group.cpp.s
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/Group.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.s
 .PHONY : external/src/uWebSockets/src/Group.cpp.s
 
 external/src/uWebSockets/src/HTTPSocket.o: external/src/uWebSockets/src/HTTPSocket.cpp.o
@@ -292,7 +292,7 @@ external/src/uWebSockets/src/HTTPSocket.o: external/src/uWebSockets/src/HTTPSock
 
 # target to build an object file
 external/src/uWebSockets/src/HTTPSocket.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o
 .PHONY : external/src/uWebSockets/src/HTTPSocket.cpp.o
 
 external/src/uWebSockets/src/HTTPSocket.i: external/src/uWebSockets/src/HTTPSocket.cpp.i
@@ -301,7 +301,7 @@ external/src/uWebSockets/src/HTTPSocket.i: external/src/uWebSockets/src/HTTPSock
 
 # target to preprocess a source file
 external/src/uWebSockets/src/HTTPSocket.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.i
 .PHONY : external/src/uWebSockets/src/HTTPSocket.cpp.i
 
 external/src/uWebSockets/src/HTTPSocket.s: external/src/uWebSockets/src/HTTPSocket.cpp.s
@@ -310,7 +310,7 @@ external/src/uWebSockets/src/HTTPSocket.s: external/src/uWebSockets/src/HTTPSock
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/HTTPSocket.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.s
 .PHONY : external/src/uWebSockets/src/HTTPSocket.cpp.s
 
 external/src/uWebSockets/src/Hub.o: external/src/uWebSockets/src/Hub.cpp.o
@@ -319,7 +319,7 @@ external/src/uWebSockets/src/Hub.o: external/src/uWebSockets/src/Hub.cpp.o
 
 # target to build an object file
 external/src/uWebSockets/src/Hub.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o
 .PHONY : external/src/uWebSockets/src/Hub.cpp.o
 
 external/src/uWebSockets/src/Hub.i: external/src/uWebSockets/src/Hub.cpp.i
@@ -328,7 +328,7 @@ external/src/uWebSockets/src/Hub.i: external/src/uWebSockets/src/Hub.cpp.i
 
 # target to preprocess a source file
 external/src/uWebSockets/src/Hub.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.i
 .PHONY : external/src/uWebSockets/src/Hub.cpp.i
 
 external/src/uWebSockets/src/Hub.s: external/src/uWebSockets/src/Hub.cpp.s
@@ -337,7 +337,7 @@ external/src/uWebSockets/src/Hub.s: external/src/uWebSockets/src/Hub.cpp.s
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/Hub.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.s
 .PHONY : external/src/uWebSockets/src/Hub.cpp.s
 
 external/src/uWebSockets/src/Networking.o: external/src/uWebSockets/src/Networking.cpp.o
@@ -346,7 +346,7 @@ external/src/uWebSockets/src/Networking.o: external/src/uWebSockets/src/Networki
 
 # target to build an object file
 external/src/uWebSockets/src/Networking.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o
 .PHONY : external/src/uWebSockets/src/Networking.cpp.o
 
 external/src/uWebSockets/src/Networking.i: external/src/uWebSockets/src/Networking.cpp.i
@@ -355,7 +355,7 @@ external/src/uWebSockets/src/Networking.i: external/src/uWebSockets/src/Networki
 
 # target to preprocess a source file
 external/src/uWebSockets/src/Networking.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.i
 .PHONY : external/src/uWebSockets/src/Networking.cpp.i
 
 external/src/uWebSockets/src/Networking.s: external/src/uWebSockets/src/Networking.cpp.s
@@ -364,7 +364,7 @@ external/src/uWebSockets/src/Networking.s: external/src/uWebSockets/src/Networki
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/Networking.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.s
 .PHONY : external/src/uWebSockets/src/Networking.cpp.s
 
 external/src/uWebSockets/src/Node.o: external/src/uWebSockets/src/Node.cpp.o
@@ -373,7 +373,7 @@ external/src/uWebSockets/src/Node.o: external/src/uWebSockets/src/Node.cpp.o
 
 # target to build an object file
 external/src/uWebSockets/src/Node.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o
 .PHONY : external/src/uWebSockets/src/Node.cpp.o
 
 external/src/uWebSockets/src/Node.i: external/src/uWebSockets/src/Node.cpp.i
@@ -382,7 +382,7 @@ external/src/uWebSockets/src/Node.i: external/src/uWebSockets/src/Node.cpp.i
 
 # target to preprocess a source file
 external/src/uWebSockets/src/Node.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.i
 .PHONY : external/src/uWebSockets/src/Node.cpp.i
 
 external/src/uWebSockets/src/Node.s: external/src/uWebSockets/src/Node.cpp.s
@@ -391,7 +391,7 @@ external/src/uWebSockets/src/Node.s: external/src/uWebSockets/src/Node.cpp.s
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/Node.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.s
 .PHONY : external/src/uWebSockets/src/Node.cpp.s
 
 external/src/uWebSockets/src/Socket.o: external/src/uWebSockets/src/Socket.cpp.o
@@ -400,7 +400,7 @@ external/src/uWebSockets/src/Socket.o: external/src/uWebSockets/src/Socket.cpp.o
 
 # target to build an object file
 external/src/uWebSockets/src/Socket.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o
 .PHONY : external/src/uWebSockets/src/Socket.cpp.o
 
 external/src/uWebSockets/src/Socket.i: external/src/uWebSockets/src/Socket.cpp.i
@@ -409,7 +409,7 @@ external/src/uWebSockets/src/Socket.i: external/src/uWebSockets/src/Socket.cpp.i
 
 # target to preprocess a source file
 external/src/uWebSockets/src/Socket.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.i
 .PHONY : external/src/uWebSockets/src/Socket.cpp.i
 
 external/src/uWebSockets/src/Socket.s: external/src/uWebSockets/src/Socket.cpp.s
@@ -418,7 +418,7 @@ external/src/uWebSockets/src/Socket.s: external/src/uWebSockets/src/Socket.cpp.s
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/Socket.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.s
 .PHONY : external/src/uWebSockets/src/Socket.cpp.s
 
 external/src/uWebSockets/src/WebSocket.o: external/src/uWebSockets/src/WebSocket.cpp.o
@@ -427,7 +427,7 @@ external/src/uWebSockets/src/WebSocket.o: external/src/uWebSockets/src/WebSocket
 
 # target to build an object file
 external/src/uWebSockets/src/WebSocket.cpp.o:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o
 .PHONY : external/src/uWebSockets/src/WebSocket.cpp.o
 
 external/src/uWebSockets/src/WebSocket.i: external/src/uWebSockets/src/WebSocket.cpp.i
@@ -436,7 +436,7 @@ external/src/uWebSockets/src/WebSocket.i: external/src/uWebSockets/src/WebSocket
 
 # target to preprocess a source file
 external/src/uWebSockets/src/WebSocket.cpp.i:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.i
 .PHONY : external/src/uWebSockets/src/WebSocket.cpp.i
 
 external/src/uWebSockets/src/WebSocket.s: external/src/uWebSockets/src/WebSocket.cpp.s
@@ -445,7 +445,7 @@ external/src/uWebSockets/src/WebSocket.s: external/src/uWebSockets/src/WebSocket
 
 # target to generate assembly for a file
 external/src/uWebSockets/src/WebSocket.cpp.s:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.s
 .PHONY : external/src/uWebSockets/src/WebSocket.cpp.s
 
 # Help Target
@@ -500,6 +500,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

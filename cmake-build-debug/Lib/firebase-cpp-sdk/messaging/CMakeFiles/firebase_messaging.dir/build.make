@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/depend.make
@@ -78,42 +78,42 @@ include Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/flags.m
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.o: Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/flags.make
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.o: ../Lib/firebase-cpp-sdk/messaging/src/common.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_messaging.dir/src/common.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/common.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_messaging.dir/src/common.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/common.cc"
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_messaging.dir/src/common.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/common.cc > CMakeFiles/firebase_messaging.dir/src/common.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/common.cc" > CMakeFiles/firebase_messaging.dir/src/common.cc.i
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/common.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_messaging.dir/src/common.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/common.cc -o CMakeFiles/firebase_messaging.dir/src/common.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/common.cc" -o CMakeFiles/firebase_messaging.dir/src/common.cc.s
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.o: Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/flags.make
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.o: ../Lib/firebase-cpp-sdk/messaging/src/listener.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_messaging.dir/src/listener.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/listener.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_messaging.dir/src/listener.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/listener.cc"
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_messaging.dir/src/listener.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/listener.cc > CMakeFiles/firebase_messaging.dir/src/listener.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/listener.cc" > CMakeFiles/firebase_messaging.dir/src/listener.cc.i
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/listener.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_messaging.dir/src/listener.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/listener.cc -o CMakeFiles/firebase_messaging.dir/src/listener.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/listener.cc" -o CMakeFiles/firebase_messaging.dir/src/listener.cc.s
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o: Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/flags.make
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o: ../Lib/firebase-cpp-sdk/messaging/src/stub/messaging.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o -c /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/stub/messaging.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/stub/messaging.cc"
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/stub/messaging.cc > CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/stub/messaging.cc" > CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.i
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging/src/stub/messaging.cc -o CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging/src/stub/messaging.cc" -o CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.s
 
 # Object files for target firebase_messaging
 firebase_messaging_OBJECTS = \
@@ -129,9 +129,9 @@ Lib/firebase-cpp-sdk/messaging/libfirebase_messaging.a: Lib/firebase-cpp-sdk/mes
 Lib/firebase-cpp-sdk/messaging/libfirebase_messaging.a: Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/src/stub/messaging.cc.o
 Lib/firebase-cpp-sdk/messaging/libfirebase_messaging.a: Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build.make
 Lib/firebase-cpp-sdk/messaging/libfirebase_messaging.a: Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libfirebase_messaging.a"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && $(CMAKE_COMMAND) -P CMakeFiles/firebase_messaging.dir/cmake_clean_target.cmake
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firebase_messaging.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libfirebase_messaging.a"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && $(CMAKE_COMMAND) -P CMakeFiles/firebase_messaging.dir/cmake_clean_target.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firebase_messaging.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build: Lib/firebase-cpp-sdk/messaging/libfirebase_messaging.a
@@ -139,10 +139,10 @@ Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build: Lib/fire
 .PHONY : Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/build
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging && $(CMAKE_COMMAND) -P CMakeFiles/firebase_messaging.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" && $(CMAKE_COMMAND) -P CMakeFiles/firebase_messaging.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/clean
 
 Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk/messaging /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk/messaging" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/messaging/CMakeFiles/firebase_messaging.dir/depend
 

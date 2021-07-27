@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raf/Desktop/Mobius
+CMAKE_SOURCE_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/depend.make
@@ -78,120 +78,120 @@ include Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Epoll.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Epoll.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Extensions.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Extensions.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Group.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Group.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/HTTPSocket.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/HTTPSocket.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Hub.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Hub.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Networking.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Networking.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Node.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Node.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/Socket.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/Socket.cpp.s
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/flags.make
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o: Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o -c /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.cpp"
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.i"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.cpp > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.i
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.cpp" > CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.i
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.s"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.cpp -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.s
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/uWebSockets/src/WebSocket.cpp" -o CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.s
 
 # Object files for target libuWS
 libuWS_OBJECTS = \
@@ -219,9 +219,9 @@ Lib/firebase-cpp-sdk/liblibuWS.a: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/ext
 Lib/firebase-cpp-sdk/liblibuWS.a: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/external/src/uWebSockets/src/WebSocket.cpp.o
 Lib/firebase-cpp-sdk/liblibuWS.a: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build.make
 Lib/firebase-cpp-sdk/liblibuWS.a: Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library liblibuWS.a"
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && $(CMAKE_COMMAND) -P CMakeFiles/libuWS.dir/cmake_clean_target.cmake
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libuWS.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library liblibuWS.a"
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && $(CMAKE_COMMAND) -P CMakeFiles/libuWS.dir/cmake_clean_target.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libuWS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build: Lib/firebase-cpp-sdk/liblibuWS.a
@@ -229,10 +229,10 @@ Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build: Lib/firebase-cpp-sdk/liblibuWS
 .PHONY : Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/build
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/clean:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk && $(CMAKE_COMMAND) -P CMakeFiles/libuWS.dir/cmake_clean.cmake
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" && $(CMAKE_COMMAND) -P CMakeFiles/libuWS.dir/cmake_clean.cmake
 .PHONY : Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/clean
 
 Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/depend:
-	cd /home/raf/Desktop/Mobius/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raf/Desktop/Mobius /home/raf/Desktop/Mobius/Lib/firebase-cpp-sdk /home/raf/Desktop/Mobius/cmake-build-debug /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Lib/firebase-cpp-sdk" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk" "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Lib/firebase-cpp-sdk/CMakeFiles/libuWS.dir/depend
 

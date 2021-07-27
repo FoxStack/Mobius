@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DBUILDING_UV_SHARED=1 -D_FILE_OFFSET_BITS=64 -D_GLIBCXX_USE_CXX11_ABI=0 -D_GNU_SOURCE -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -Duv_EXPORTS
 
-C_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv/include -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv/src
+C_INCLUDES = -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv/include" -I"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/libuv/src"
 
 C_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -g -fPIC -fvisibility=hidden --std=gnu89 -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter
 
