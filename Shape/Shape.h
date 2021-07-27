@@ -1,44 +1,45 @@
-#ifndef SHAPE_H
-#define SHAPE_H
+#pragma once
 
 #include <QPainter>
+#include <QPainterPath>
 
 struct Coord {
-  int x;
-  int y;
+    int x;
+    int y;
 };
 
 class Shape : public QPainter {
 public:
-  explicit Shape(QPaintDevice *device);
-  virtual ~Shape();
 
-  virtual void Draw() = 0;
-  virtual void Move(Coord coord) = 0;
-  virtual double Perimeter() = 0;
-  virtual double Area() = 0;
+    explicit Shape(QPen pen, QBrush brush, Coord coord);
+    virtual ~Shape();
 
-  QBrush GetBrush();
-  void SetBrush(Qt::GlobalColor color, Qt::BrushStyle style);
+    virtual void Draw(QPaintDevice *device) = 0;
+    virtual void Move(Coord coord) = 0;
+    virtual double Perimeter() = 0;
+    virtual double Area() = 0;
 
-  QPen GetPen();
-  void SetPen(const QBrush &brush, Qt::GlobalColor color, int width,
-              Qt::PenStyle style, Qt::PenCapStyle cap, Qt::PenJoinStyle join);
-  QPainter *GetPainter() const;
+    void SetCoord(int x, int y);
+    int  GetId();
+    QBrush GetBrush();
+    void SetBrush(Qt::GlobalColor color, Qt::BrushStyle style);
 
-  bool operator==(const Shape &other) const;
-  bool operator<(const Shape &other) const;
-  bool operator>(const Shape &other) const;
+    QPen GetPen();
+    void SetPen(const QBrush &brush, Qt::GlobalColor color, int width,
+                Qt::PenStyle style, Qt::PenCapStyle cap, Qt::PenJoinStyle join);
+
+    bool operator==(const Shape &other) const;
+    bool operator<(const Shape &other) const;
+    bool operator>(const Shape &other) const;
 
 protected:
-  QPaintDevice *qPaintDevice{};
-  QPainter *qPainter{};
-  QPen qPen;
-  QBrush qBrush;
-  int id{};
-  Coord shapeCoord{};
+    QPaintDevice *qPaintDevice{};
+    QPainter     *qPainter{};
+    QBrush        qBrush;
+    QPen          qPen;
+    Coord         shapeCoord{};
+    int           id = 0;
 
 private:
+    static int numOfShapes;
 };
-
-#endif // SHAPE_H
