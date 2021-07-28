@@ -6,5 +6,5 @@ CXX_DEFINES = -DFIRESTORE_HAVE_CONFIG_DETECTED_H -DPB_ENABLE_MALLOC -DPB_FIELD_3
 
 CXX_INCLUDES = -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore/Firestore/Protos/nanopb -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/abseil-cpp -I/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/nanopb
 
-CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -g -pthread -std=c++11
+CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -g -std=c++11
 

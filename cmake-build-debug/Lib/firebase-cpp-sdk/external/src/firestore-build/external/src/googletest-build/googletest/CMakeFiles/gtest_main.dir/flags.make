@@ -6,5 +6,5 @@ CXX_DEFINES = -D_GLIBCXX_USE_CXX11_ABI=0
 
 CXX_INCLUDES = -isystem /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest/include -isystem /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/googletest/googletest
 
-CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -pthread -std=c++11
+CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=0 -DFIREBASE_GITHUB_ACTION_BUILD=0 -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11
 

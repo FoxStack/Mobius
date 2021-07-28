@@ -1,8 +1,8 @@
-[ 15%] Built target googletest
+[ 12%] Built target googletest
 [ 25%] Built target zlib
-[ 37%] Built target leveldb
-[ 55%] Built target uWebSockets
-[ 62%] Built target boringssl
-[ 81%] Built target libuv
-[ 97%] Built target flatbuffers
+[ 37%] Built target libuv
+[ 50%] Built target boringssl
+[ 62%] Built target flatbuffers
+[ 76%] Built target leveldb
+[ 87%] Built target uWebSockets
 [100%] Built target firestore

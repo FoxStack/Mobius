@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-s
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -96,6 +85,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,43 +130,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named googletest
+# Target rules for targets named curl
 
 # Build rule for target.
-googletest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest
-.PHONY : googletest
+curl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 curl
+.PHONY : curl
 
 # fast build rule for target.
-googletest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
-.PHONY : googletest/fast
+curl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curl.dir/build.make CMakeFiles/curl.dir/build
+.PHONY : curl/fast
 
 #=============================================================================
-# Target rules for targets named zlib
+# Target rules for targets named flatbuffers
 
 # Build rule for target.
-zlib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlib
-.PHONY : zlib
+flatbuffers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatbuffers
+.PHONY : flatbuffers
 
 # fast build rule for target.
-zlib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zlib.dir/build.make CMakeFiles/zlib.dir/build
-.PHONY : zlib/fast
-
-#=============================================================================
-# Target rules for targets named uWebSockets
-
-# Build rule for target.
-uWebSockets: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uWebSockets
-.PHONY : uWebSockets
-
-# fast build rule for target.
-uWebSockets/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uWebSockets.dir/build.make CMakeFiles/uWebSockets.dir/build
-.PHONY : uWebSockets/fast
+flatbuffers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/flatbuffers.dir/build.make CMakeFiles/flatbuffers.dir/build
+.PHONY : flatbuffers/fast
 
 #=============================================================================
 # Target rules for targets named boringssl
@@ -182,19 +169,6 @@ boringssl/fast:
 .PHONY : boringssl/fast
 
 #=============================================================================
-# Target rules for targets named leveldb
-
-# Build rule for target.
-leveldb: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leveldb
-.PHONY : leveldb
-
-# fast build rule for target.
-leveldb/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leveldb.dir/build.make CMakeFiles/leveldb.dir/build
-.PHONY : leveldb/fast
-
-#=============================================================================
 # Target rules for targets named libuv
 
 # Build rule for target.
@@ -208,17 +182,56 @@ libuv/fast:
 .PHONY : libuv/fast
 
 #=============================================================================
-# Target rules for targets named flatbuffers
+# Target rules for targets named leveldb
 
 # Build rule for target.
-flatbuffers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatbuffers
-.PHONY : flatbuffers
+leveldb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leveldb
+.PHONY : leveldb
 
 # fast build rule for target.
-flatbuffers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/flatbuffers.dir/build.make CMakeFiles/flatbuffers.dir/build
-.PHONY : flatbuffers/fast
+leveldb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leveldb.dir/build.make CMakeFiles/leveldb.dir/build
+.PHONY : leveldb/fast
+
+#=============================================================================
+# Target rules for targets named uWebSockets
+
+# Build rule for target.
+uWebSockets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uWebSockets
+.PHONY : uWebSockets
+
+# fast build rule for target.
+uWebSockets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uWebSockets.dir/build.make CMakeFiles/uWebSockets.dir/build
+.PHONY : uWebSockets/fast
+
+#=============================================================================
+# Target rules for targets named zlib
+
+# Build rule for target.
+zlib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlib
+.PHONY : zlib
+
+# fast build rule for target.
+zlib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zlib.dir/build.make CMakeFiles/zlib.dir/build
+.PHONY : zlib/fast
+
+#=============================================================================
+# Target rules for targets named googletest
+
+# Build rule for target.
+googletest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest
+.PHONY : googletest
+
+# fast build rule for target.
+googletest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
+.PHONY : googletest/fast
 
 #=============================================================================
 # Target rules for targets named firestore
@@ -242,6 +255,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boringssl"
+	@echo "... curl"
 	@echo "... firestore"
 	@echo "... flatbuffers"
 	@echo "... googletest"

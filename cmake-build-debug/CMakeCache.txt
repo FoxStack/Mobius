@@ -38,8 +38,8 @@ BUILD_SHARED_LIBS:BOOL=OFF
 //Build static libraries
 BUILD_STATIC_LIBS:BOOL=ON
 
-//Build the testing tree.
-BUILD_TESTING:BOOL=off
+//No help, variable specified on the command line.
+BUILD_TESTING:UNINITIALIZED=off
 
 //Build and run tests
 CARES_BUILD_TESTS:BOOL=OFF
@@ -485,8 +485,11 @@ FIREBASE_CPP_BUILD_PACKAGE:BOOL=OFF
 //Enable the Firebase C++ Build Stub Tests.
 FIREBASE_CPP_BUILD_STUB_TESTS:BOOL=OFF
 
-//Enable the Firebase C++ Build Tests.
-FIREBASE_CPP_BUILD_TESTS:BOOL=ON
+//No help, variable specified on the command line.
+FIREBASE_CPP_BUILD_TESTS:UNINITIALIZED=ON
+
+//No help, variable specified on the command line.
+FIREBASE_CPP_SDK_ROOT_DIR:UNINITIALIZED=../../Mobius/Lib/firebase-cpp-sdk
 
 //When building with Gradle, use the previously built libraries.
 FIREBASE_CPP_USE_PRIOR_GRADLE_BUILD:BOOL=OFF
@@ -545,8 +548,8 @@ FIREBASE_IOS_BUILD_BENCHMARKS:BOOL=OFF
 //Enable building of C++ and Objective-C tests for this project
 FIREBASE_IOS_BUILD_TESTS:BOOL=ON
 
-//The Python interpreter to use, such as one from a venv
-FIREBASE_PYTHON_EXECUTABLE:FILEPATH=/home/raf/Desktop/Mobius/venv/bin/python
+//No help, variable specified on the command line.
+FIREBASE_PYTHON_EXECUTABLE:UNINITIALIZED=../../Mobius/venv/bin/python
 
 //Build against BoringSSL instead of using your system's OpenSSL.
 FIREBASE_USE_BORINGSSL:BOOL=OFF
@@ -739,9 +742,6 @@ Qt6GuiTools_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6GuiTools
 
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6Gui
-
-//The directory containing a CMake configuration file for Qt6LinguistTools.
-Qt6LinguistTools_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6LinguistTools
 
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=/home/raf/Qt/6.1.2/gcc_64/lib/cmake/Qt6WidgetsTools
@@ -1199,10 +1199,10 @@ leveldb_BINARY_DIR:STATIC=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebas
 leveldb_SOURCE_DIR:STATIC=/home/raf/Desktop/Mobius/cmake-build-debug/Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb
 
 //Dependencies for the target
-libprotobuf-lite_LIB_DEPENDS:STATIC=general;-pthread;
+libprotobuf-lite_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Dependencies for the target
-libprotobuf_LIB_DEPENDS:STATIC=general;-pthread;
+libprotobuf_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Dependencies for the target
 libprotoc_LIB_DEPENDS:STATIC=general;libprotobuf;
@@ -1483,7 +1483,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=88
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

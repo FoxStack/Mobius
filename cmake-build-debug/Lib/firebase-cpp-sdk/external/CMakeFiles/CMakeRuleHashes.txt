@@ -1,6 +1,7 @@
 # Hashes of file build rules.
 e953e94e5fc24ead1121247c2371f958 CMakeFiles/boringssl
 1b31a08ac9478b15fa669e8723e1807a CMakeFiles/boringssl-complete
+e953e94e5fc24ead1121247c2371f958 CMakeFiles/curl
 137e53fdce2a8ce384c3eda280b850b5 CMakeFiles/curl-complete
 e953e94e5fc24ead1121247c2371f958 CMakeFiles/firestore
 b0161f098719c3318bc39f2a9b25435d CMakeFiles/firestore-complete

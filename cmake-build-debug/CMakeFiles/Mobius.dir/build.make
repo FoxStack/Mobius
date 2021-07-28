@@ -249,24 +249,10 @@ Mobius: CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o
 Mobius: CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o
 Mobius: CMakeFiles/Mobius.dir/build.make
 Mobius: /home/raf/Qt/6.1.2/gcc_64/lib/libQt6Widgets.so.6.1.2
-Mobius: Lib/firebase-cpp-sdk/auth/libfirebase_auth.a
-Mobius: Lib/firebase-cpp-sdk/database/libfirebase_database.a
-Mobius: Lib/firebase-cpp-sdk/app/libfirebase_app.a
 Mobius: /home/raf/Qt/6.1.2/gcc_64/lib/libQt6Gui.so.6.1.2
 Mobius: /home/raf/Qt/6.1.2/gcc_64/lib/libQt6Core.so.6.1.2
 Mobius: /usr/lib/x86_64-linux-gnu/libGLX.so
 Mobius: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-Mobius: Lib/firebase-cpp-sdk/app/rest/libfirebase_rest_lib.a
-Mobius: Lib/firebase-cpp-sdk/app/libfirebase_app.a
-Mobius: Lib/firebase-cpp-sdk/external/src/flatbuffers-build/libflatbuffers.a
-Mobius: Lib/firebase-cpp-sdk/external/src/curl-build/lib/libcurl-d.a
-Mobius: /usr/lib/x86_64-linux-gnu/libz.so
-Mobius: Lib/firebase-cpp-sdk/external/src/firestore-build/external/src/leveldb-build/libleveldb.a
-Mobius: Lib/firebase-cpp-sdk/liblibuWS.a
-Mobius: Lib/firebase-cpp-sdk/external/src/zlib-build/libz.a
-Mobius: Lib/firebase-cpp-sdk/external/src/libuv-build/libuv_a.a
-Mobius: /usr/lib/x86_64-linux-gnu/libssl.a
-Mobius: /usr/lib/x86_64-linux-gnu/libcrypto.a
 Mobius: CMakeFiles/Mobius.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Mobius"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mobius.dir/link.txt --verbose=$(VERBOSE)

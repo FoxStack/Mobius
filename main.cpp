@@ -7,8 +7,10 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
 
+  QApplication a(argc, argv);
+
+    //Why do we have i18n? We don't even have translations to use? -Raf
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
     for (const QString &locale : uiLanguages) {

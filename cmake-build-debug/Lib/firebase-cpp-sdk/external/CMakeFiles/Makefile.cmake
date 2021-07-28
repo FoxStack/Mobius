@@ -42,6 +42,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.19.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeSystem.cmake"
   "tmp/boringssl-cfgcmd.txt.in"
+  "tmp/curl-cfgcmd.txt.in"
   "tmp/firestore-cfgcmd.txt.in"
   "tmp/flatbuffers-cfgcmd.txt.in"
   "tmp/googletest-cfgcmd.txt.in"
@@ -66,6 +67,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/firestore-stamp/download-firestore.cmake"
   "tmp/firestore-cfgcmd.txt"
   "tmp/boringssl-cfgcmd.txt"
+  "src/curl-stamp/curl-urlinfo.txt"
+  "src/curl-stamp/download-curl.cmake"
+  "tmp/curl-cfgcmd.txt"
   "src/libuv-stamp/libuv-urlinfo.txt"
   "src/libuv-stamp/download-libuv.cmake"
   "tmp/libuv-cfgcmd.txt"
@@ -84,12 +88,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/googletest.dir/DependInfo.cmake"
-  "CMakeFiles/zlib.dir/DependInfo.cmake"
-  "CMakeFiles/uWebSockets.dir/DependInfo.cmake"
-  "CMakeFiles/boringssl.dir/DependInfo.cmake"
-  "CMakeFiles/leveldb.dir/DependInfo.cmake"
-  "CMakeFiles/libuv.dir/DependInfo.cmake"
+  "CMakeFiles/curl.dir/DependInfo.cmake"
   "CMakeFiles/flatbuffers.dir/DependInfo.cmake"
+  "CMakeFiles/boringssl.dir/DependInfo.cmake"
+  "CMakeFiles/libuv.dir/DependInfo.cmake"
+  "CMakeFiles/leveldb.dir/DependInfo.cmake"
+  "CMakeFiles/uWebSockets.dir/DependInfo.cmake"
+  "CMakeFiles/zlib.dir/DependInfo.cmake"
+  "CMakeFiles/googletest.dir/DependInfo.cmake"
   "CMakeFiles/firestore.dir/DependInfo.cmake"
   )

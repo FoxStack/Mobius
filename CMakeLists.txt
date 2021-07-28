@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
 project(Mobius)
 
-add_subdirectory(Lib/firebase-cpp-sdk)
-
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_PREFIX_PATH "~/Qt/6.1.2/gcc_64/lib/cmake")
 set(CMAKE_AUTOMOC ON)
@@ -11,7 +9,7 @@ set(CMAKE_AUTOUIC ON)
 
 set(QT_VERSION 6)
 set(REQUIRED_LIBS Core Gui Widgets)
-set(REQUIRED_LIBS_QUALIFIED Qt6::Core Qt6::Gui Qt6::Widgets firebase_auth firebase_database firebase_app)
+set(REQUIRED_LIBS_QUALIFIED Qt6::Core Qt6::Gui Qt6::Widgets)
 
 set(TS_FILES Mobius_en_US.ts)
 
