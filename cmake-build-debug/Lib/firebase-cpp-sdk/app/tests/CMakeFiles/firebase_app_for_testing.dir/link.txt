@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfirebase_app_for_testing.a CMakeFiles/firebase_app_for_testing.dir/__/__/__/__/empty.cc.o
-/usr/bin/ranlib libfirebase_app_for_testing.a

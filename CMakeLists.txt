@@ -42,6 +42,9 @@ add_executable(${PROJECT_NAME}
         UI/Testimonial/List/testimoniallistview.h
         UI/Testimonial/List/testimoniallistview.ui
         UI/Testimonial/showtestimonials.ui
+        DB/DB.cpp
+        DB/DB.h
+        Lib/Json/json.hpp
         ${TS_FILES}
 )
 

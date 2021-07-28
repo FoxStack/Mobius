@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfirebase_auth_desktop_rpc_test_util.a CMakeFiles/firebase_auth_desktop_rpc_test_util.dir/desktop/rpcs/test_util.cc.o
-/usr/bin/ranlib libfirebase_auth_desktop_rpc_test_util.a

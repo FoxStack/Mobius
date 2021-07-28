@@ -155,6 +155,33 @@ Mobius_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius_autogen.dir/build.make CMakeFiles/Mobius_autogen.dir/build
 .PHONY : Mobius_autogen/fast
 
+DB/DB.o: DB/DB.cpp.o
+
+.PHONY : DB/DB.o
+
+# target to build an object file
+DB/DB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/DB/DB.cpp.o
+.PHONY : DB/DB.cpp.o
+
+DB/DB.i: DB/DB.cpp.i
+
+.PHONY : DB/DB.i
+
+# target to preprocess a source file
+DB/DB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/DB/DB.cpp.i
+.PHONY : DB/DB.cpp.i
+
+DB/DB.s: DB/DB.cpp.s
+
+.PHONY : DB/DB.s
+
+# target to generate assembly for a file
+DB/DB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/DB/DB.cpp.s
+.PHONY : DB/DB.cpp.s
+
 Mobius_autogen/mocs_compilation.o: Mobius_autogen/mocs_compilation.cpp.o
 
 .PHONY : Mobius_autogen/mocs_compilation.o
@@ -462,6 +489,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Mobius_autogen"
 	@echo "... Mobius"
+	@echo "... DB/DB.o"
+	@echo "... DB/DB.i"
+	@echo "... DB/DB.s"
 	@echo "... Mobius_autogen/mocs_compilation.o"
 	@echo "... Mobius_autogen/mocs_compilation.i"
 	@echo "... Mobius_autogen/mocs_compilation.s"

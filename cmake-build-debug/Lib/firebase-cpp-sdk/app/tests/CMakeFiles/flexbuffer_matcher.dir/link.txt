@@ -1,2 +1,0 @@
-/usr/bin/ar qc libflexbuffer_matcher.a CMakeFiles/flexbuffer_matcher.dir/flexbuffer_matcher.cc.o
-/usr/bin/ranlib libflexbuffer_matcher.a

@@ -39,7 +39,7 @@
 			</Target>
 			<Target title="Mobius">
 				<Option output="/home/raf/Desktop/Mobius/cmake-build-release/Mobius" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option working_dir="/home/raf/Desktop/Mobius/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,7 +71,7 @@
 			</Target>
 			<Target title="Mobius/fast">
 				<Option output="/home/raf/Desktop/Mobius/cmake-build-release/Mobius" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option working_dir="/home/raf/Desktop/Mobius/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -112,6 +112,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/raf/Desktop/Mobius/DB/DB.cpp">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/DB/DB.h">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Lib/Json/json.hpp">
+			<Option target="Mobius"/>
+		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/Mobius_en_US.ts">
 			<Option target="Mobius"/>
 		</Unit>
