@@ -1,8 +1,9 @@
-    #pragma once
+#pragma once
 
 #include <QBrush>
 #include <QPen>
 #include <QWidget>
+#include "../Shape/Text/Text.h"
 #include "../Shape/Polyline/Polyline.h"
 #include "../Shape/Polygon/Polygon.h"
 #include "../Shape/Ellipse/Ellipse.h"
@@ -12,8 +13,8 @@
 #include "../Vector/Vector.hpp"
 
 class RenderArea : public QWidget
-{
-Q_OBJECT
+        {
+    Q_OBJECT
 
 public:
     enum eShape {RECTANGLE, ELLIPSE, LINE, POLYGON, POLYLINE, TEXT};
@@ -23,14 +24,19 @@ public:
     QSize minimumSizeHint() const override;
     QSize sizeHint() const override;
 
-public slots:
-    void setPen(const QPen &pen);
+    public slots:
+            void setPen(const QPen &pen);
     QPen getDefaultPen();
     void setBrush(const QBrush &brush);
     QBrush getDefaultBrush();
     void setCurrentShapeId(int id);
 
+    void setText(QString string);
+    void setColor(QColor color);
+    //    void setAlignment(Qt::Alignment alignment);
+
     void AddShape(Shape* shape);
+    void AddText(Text* text);
 
     void move(int x ,int y);
     void paintEvent(QPaintEvent *event) override;
@@ -38,12 +44,7 @@ public slots:
 private:
     int id;
     Vector<Shape *> shapeList;
-    Vector<Rectangle *> rectList;
-    Vector<Ellipse *> ellipseList;
-    Vector<Polygon *> polygonList;
-    Vector<Polyline *> polylineList;
-    Vector<Line *> lineList;
-//    Vector<Text *> textList;
+    Vector<Text *> textList;
 
     Rectangle *rectangle;
     Ellipse *ellipse;

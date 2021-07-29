@@ -231,6 +231,12 @@
 			null
 		],
 		[
+			"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Text/Text.h",
+			"MU",
+			"IS5PFO2IEE/moc_Text.cpp",
+			null
+		],
+		[
 			"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/UI/Contact/contactus.h",
 			"MU",
 			"5ZW6JBDZ5A/moc_contactus.cpp",
@@ -366,6 +372,11 @@
 		],
 		[
 			"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Shape.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Text/Text.cpp",
 			"MU",
 			null
 		],

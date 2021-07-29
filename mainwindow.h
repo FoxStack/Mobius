@@ -21,8 +21,8 @@ class MainWindow : public QMainWindow
         {
     Q_OBJECT
 
-        public:
-            MainWindow(QWidget *parent = nullptr);
+public:
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
     private slots:
@@ -52,7 +52,16 @@ class MainWindow : public QMainWindow
 
     void ChangeCoordinate();
 
-    //    void RectangleDimensions();
+    void ChangeTextString();
+
+    void ChangeTextColor();
+
+    //    void ChangeTextAlignment();
+
+    //    void ChangeTextFontFamily();
+
+    //    void ChangeTextFontStyle();
+
 
 private:
     Ui::MainWindow *ui;

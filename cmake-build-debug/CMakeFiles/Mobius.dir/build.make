@@ -183,9 +183,22 @@ CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Polyline/Polyline.cpp" -o CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.s
 
+CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o: CMakeFiles/Mobius.dir/flags.make
+CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o: ../Shape/Text/Text.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Text/Text.cpp"
+
+CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Text/Text.cpp" > CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.i
+
+CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Text/Text.cpp" -o CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.s
+
 CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o: CMakeFiles/Mobius.dir/flags.make
 CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o: ../RenderArea/RenderArea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/RenderArea/RenderArea.cpp"
 
 CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.i: cmake_force
@@ -198,7 +211,7 @@ CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.s: cmake_force
 
 CMakeFiles/Mobius.dir/UI/Login/login.cpp.o: CMakeFiles/Mobius.dir/flags.make
 CMakeFiles/Mobius.dir/UI/Login/login.cpp.o: ../UI/Login/login.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Mobius.dir/UI/Login/login.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Mobius.dir/UI/Login/login.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Login/login.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/UI/Login/login.cpp"
 
 CMakeFiles/Mobius.dir/UI/Login/login.cpp.i: cmake_force
@@ -211,7 +224,7 @@ CMakeFiles/Mobius.dir/UI/Login/login.cpp.s: cmake_force
 
 CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o: CMakeFiles/Mobius.dir/flags.make
 CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o: ../UI/Contact/contactus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/UI/Contact/contactus.cpp"
 
 CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.i: cmake_force
@@ -224,7 +237,7 @@ CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.s: cmake_force
 
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: CMakeFiles/Mobius.dir/flags.make
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: ../UI/Testimonial/Add/addtestimonialdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/UI/Testimonial/Add/addtestimonialdialog.cpp"
 
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.i: cmake_force
@@ -237,7 +250,7 @@ CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.s: cmake_force
 
 CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: CMakeFiles/Mobius.dir/flags.make
 CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: ../UI/Testimonial/List/testimoniallistview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/UI/Testimonial/List/testimoniallistview.cpp"
 
 CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.i: cmake_force
@@ -250,7 +263,7 @@ CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.s: cmake_force
 
 CMakeFiles/Mobius.dir/DB/DB.cpp.o: CMakeFiles/Mobius.dir/flags.make
 CMakeFiles/Mobius.dir/DB/DB.cpp.o: ../DB/DB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Mobius.dir/DB/DB.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Mobius.dir/DB/DB.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mobius.dir/DB/DB.cpp.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/DB/DB.cpp"
 
 CMakeFiles/Mobius.dir/DB/DB.cpp.i: cmake_force
@@ -272,6 +285,7 @@ Mobius_OBJECTS = \
 "CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.o" \
 "CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.o" \
 "CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.o" \
+"CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o" \
 "CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o" \
 "CMakeFiles/Mobius.dir/UI/Login/login.cpp.o" \
 "CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o" \
@@ -291,6 +305,7 @@ Mobius: CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.o
 Mobius: CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.o
 Mobius: CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.o
 Mobius: CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.o
+Mobius: CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o
 Mobius: CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o
 Mobius: CMakeFiles/Mobius.dir/UI/Login/login.cpp.o
 Mobius: CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o
@@ -304,7 +319,7 @@ Mobius: /home/parham/Qt/6.1.2/gcc_64/lib/libQt6Core.so.6.1.2
 Mobius: /usr/lib/x86_64-linux-gnu/libGLX.so
 Mobius: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Mobius: CMakeFiles/Mobius.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Mobius"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Mobius"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mobius.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

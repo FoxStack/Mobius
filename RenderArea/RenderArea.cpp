@@ -3,9 +3,9 @@
 #include "RenderArea.h"
 
 RenderArea::RenderArea(QWidget *parent)
-        : QWidget(parent)
+: QWidget(parent)
 {
-//    pixmap.load(":/images/qt-logo.png");
+    //    pixmap.load(":/images/qt-logo.png");
 
     setBackgroundRole(QPalette::Base);
     setAutoFillBackground(true);
@@ -53,6 +53,38 @@ QBrush RenderArea::getDefaultBrush()
     return QBrush();
 }
 
+void RenderArea::setText(QString string){
+    for (Text *thisText: textList)
+    {
+        if(thisText->GetId() == id){
+            thisText->SetString(string);
+        }
+    }
+    update();
+}
+
+void RenderArea::setColor(QColor color)
+{
+    for (Text *thisText: textList)
+    {
+        if(thisText->GetId() == id){
+            thisText->SetTextColor(color);
+        }
+    }
+    update();
+}
+
+//void RenderArea::setAlignment(Qt::Alignment alignment)
+//{
+//    for (Text *thisText: textList)
+//    {
+//        if(thisText->GetId() == id){
+//            thisText->SetTextAlignment(alignment);
+//        }
+//    }
+//    update();
+//}
+
 void RenderArea::move(int x ,int y)
 {
     for (Shape *thisShape: shapeList) {
@@ -68,6 +100,10 @@ void RenderArea::AddShape(Shape* shape){
     update();
 }
 
+void RenderArea::AddText(Text* text){
+    textList.push_back(text);
+    update();
+}
 
 void RenderArea::setCurrentShapeId(int id)
 {

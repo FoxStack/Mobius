@@ -164,6 +164,12 @@
 		<Unit filename="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Shape.h">
 			<Option target="Mobius"/>
 		</Unit>
+		<Unit filename="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Text/Text.cpp">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/Shape/Text/Text.h">
+			<Option target="Mobius"/>
+		</Unit>
 		<Unit filename="/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/UI/Contact/contactus.cpp">
 			<Option target="Mobius"/>
 		</Unit>

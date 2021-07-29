@@ -165,21 +165,48 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->treeWidget->setItemWidget(textString, 1, lineEditTextString);
 
-    comboBoxTextColor->addItems(QStringList() << "Solid" << "Hor" << "Ver" << "None");
+    comboBoxTextColor->addItem(tr("White"), QPen(Qt::white));
+    comboBoxTextColor->addItem(tr("Black"), QPen(Qt::black));
+    comboBoxTextColor->addItem(tr("Red"), QPen(Qt::red));
+    comboBoxTextColor->addItem(tr("Green"), QPen(Qt::green));
+    comboBoxTextColor->addItem(tr("Blue"), QPen(Qt::blue));
+    comboBoxTextColor->addItem(tr("Cyan"), QPen(Qt::cyan));
+    comboBoxTextColor->addItem(tr("Magenta"), QPen(Qt::magenta));
+    comboBoxTextColor->addItem(tr("Yellow"), QPen(Qt::yellow));
+    comboBoxTextColor->addItem(tr("Gray"), QPen(Qt::gray));
     ui->treeWidget->setItemWidget(textColor, 1, comboBoxTextColor);
 
-    comboBoxTextAlignment->addItems(QStringList() << "Flat" << "Square" << "Round");
+    //Functionality for Text Alignment
+    comboBoxTextAlignment->addItem(tr("Align Left"), Qt::AlignLeft);
+    comboBoxTextAlignment->addItem(tr("Align Right"), Qt::AlignRight);
+    comboBoxTextAlignment->addItem(tr("Align Top"), Qt::AlignTop);
+    comboBoxTextAlignment->addItem(tr("Align Bottom"), Qt::AlignBottom);
+    comboBoxTextAlignment->addItem(tr("Align Center"), Qt::AlignHCenter);
+
     ui->treeWidget->setItemWidget(textAlignment, 1, comboBoxTextAlignment);
 
     ui->treeWidget->setItemWidget(textPointSize, 1, lineEditTextPointSize);
 
-    comboBoxTextFontFamily->addItems(QStringList() << "Black" << "Blue" << "Cyan" << "Yellow" << "Red" << "Green");
+    //Functionality for Text Font Family
+    //comboBoxTextFontFamily->addItem(tr("Oblique"), QFont::ComicSansMS);
+    comboBoxTextFontFamily->addItem(tr("Helvetica"), QFont::Helvetica);
+    comboBoxTextFontFamily->addItem(tr("Courier"), QFont::Courier);
+    comboBoxTextFontFamily->addItem(tr("Times"), QFont::Times);
     ui->treeWidget->setItemWidget(textFontFamily, 1, comboBoxTextFontFamily);
 
-    comboBoxTextFontStyle->addItems(QStringList() << "Solid" << "Dash" << "Dot" << "Dash Dot" << "Dash Dot Dot" << "None");
+    //Functionality for Text Font Style
+    comboBoxTextFontStyle->addItem(tr("Normal"), QFont::StyleNormal);
+    comboBoxTextFontStyle->addItem(tr("Italic"), QFont::StyleItalic);
+    comboBoxTextFontStyle->addItem(tr("Oblique"), QFont::StyleOblique);
+
     ui->treeWidget->setItemWidget(textFontStyle, 1, comboBoxTextFontStyle);
 
-    comboBoxTextFontWeight->addItems(QStringList() << "Bevel" << "Miter" << "Round");
+    //Functionality for Text Font Weight
+    comboBoxTextFontWeight->addItem(tr("Thin"), QFont::Thin);
+    comboBoxTextFontWeight->addItem(tr("Light"), QFont::Light);
+    comboBoxTextFontWeight->addItem(tr("Normal"), QFont::Normal);
+    comboBoxTextFontWeight->addItem(tr("Bold"), QFont::Bold);
+
     ui->treeWidget->setItemWidget(textFontWeight, 1, comboBoxTextFontWeight);
 
     ui->treeWidget->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Preferred);
@@ -211,9 +238,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->ShapeTree->setItemWidget(linePoint2, 1, lineEditPoint2);
 
 
-
-
-
     connect(shapesComboBoxBrushColor, SIGNAL(activated(int)),
             this, SLOT(ChangeShapeBrush()));
     connect(shapesComboBoxBrushStyle, SIGNAL(activated(int)),
@@ -234,6 +258,18 @@ MainWindow::MainWindow(QWidget *parent)
             this, SLOT(ChangeCoordinate()));
     connect(ui->y, SIGNAL(textChanged(const QString &)),
             this, SLOT(ChangeCoordinate()));
+
+
+    connect(lineEditTextString, SIGNAL(textChanged(const QString &)),
+            this, SLOT(ChangeTextString()));
+    connect(comboBoxTextColor, SIGNAL(activated(int)),
+            this, SLOT(ChangeTextColor()));
+    connect(comboBoxTextAlignment, SIGNAL(activated(int)),
+            this, SLOT(ChangeTextAlignment()));
+    connect(comboBoxTextFontFamily, SIGNAL(activated(int)),
+            this, SLOT(ChangeTextFontFamily()));
+    connect(comboBoxTextFontStyle, SIGNAL(activated(int)),
+            this, SLOT(ChangeTextFontStyle()));
 
     connect(ui->AllShape, SIGNAL(activated(int)),
             this, SLOT(changeShape()));
@@ -355,7 +391,11 @@ void MainWindow::on_actionLine_triggered()
 
 void MainWindow::on_actionText_triggered()
 {
-
+    Text *text = new Text(renderArea->getDefaultPen(), renderArea->getDefaultBrush(), {20, 20}, "TEXT");
+    ui->frame->setCurrentShapeId(text->GetId());
+    ui->frame->AddShape(text);
+    ui->frame->AddText(text);
+    ui->AllShape->insertItem(text->GetId(), "Text " + QString::number(text->GetId()));
 }
 
 // ---------------------------------------------------------------------------
@@ -363,6 +403,7 @@ void MainWindow::changeShape()
 {
     int id = ui->AllShape->currentIndex();
     ui->frame->setCurrentShapeId(id);
+    ui->id->setText(QString::number(id));
 }
 
 void MainWindow::ChangeCoordinate()
@@ -390,3 +431,32 @@ void MainWindow::ChangeShapeBrush()
     ui->frame->setBrush(QBrush(color, style));
 }
 
+void MainWindow::ChangeTextString()
+{
+    QString str = lineEditTextString->text();
+    ui->frame->setText(str);
+}
+
+void MainWindow::ChangeTextColor()
+{
+    QColor color = comboBoxTextColor->currentData().value<QPen>().color();
+    ui->frame->setColor(color);
+}
+
+//void MainWindow::ChangeTextAlignment()
+//{
+//    Qt::Alignment alignment = comboBoxTextAlignment->currentData().value<Qt::Alignment>();
+//    ui->frame-setAlignment(alignment);
+//}
+
+//void MainWindow::ChangeTextFontFamily()
+//{
+//    QFont font = comboBoxTextFontFamily->currentData().value<QFont>();
+//    ui->frame->setFrontFamily(font);
+//}
+
+//void MainWindow::ChangeTextFontStyle()
+//{
+//    QFont font = comboBoxTextFontStyle->currentData().value<QFont>();
+//    ui->frame->setFrontFamily(font);
+//}

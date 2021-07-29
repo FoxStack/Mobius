@@ -13,6 +13,7 @@ CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.o: \
  ../Shape/Polyline/Polyline.h \
  ../Shape/Rectangle/Rectangle.h \
  ../Shape/Shape.h \
+ ../Shape/Text/Text.h \
  ../UI/Contact/contactus.h \
  ../UI/Login/login.h \
  ../UI/Testimonial/Add/addtestimonialdialog.h \
@@ -404,6 +405,7 @@ CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o: \
  ../Shape/Polyline/Polyline.h \
  ../Shape/Rectangle/Rectangle.h \
  ../Shape/Shape.h \
+ ../Shape/Text/Text.h \
  ../Vector/Iterator/iterator.h \
  ../Vector/Iterator/reverse.h \
  ../Vector/Vector.hpp \
@@ -1365,6 +1367,108 @@ CMakeFiles/Mobius.dir/Shape/Shape.cpp.o: \
  /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qtransform.h \
  /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qwindowdefs.h \
  /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qwindowdefs_win.h
+CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o: \
+ ../Shape/Shape.h \
+ ../Shape/Text/Text.cpp \
+ ../Shape/Text/Text.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qalgorithms.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qanystringview.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qarraydata.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qarraydataops.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qarraydatapointer.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qatomic.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qbasicatomic.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qbytearray.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qbytearraylist.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qbytearrayview.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qchar.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qcompare.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qcompilerdetection.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qconfig.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qcontainerfwd.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qcontainerinfo.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qcoreevent.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qdatastream.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qflags.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qgenericatomic.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qglobal.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qglobalstatic.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qhashfunctions.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qiodevicebase.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qiterable.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qiterator.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qline.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qlist.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qlogging.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qmargins.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qmath.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qmetacontainer.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qmetatype.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qmutex.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qnamespace.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qnumeric.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qobject.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qobject_impl.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qobjectdefs.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qpair.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qpoint.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qprocessordetection.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qproperty.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qpropertyprivate.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qrect.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qrefcount.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qscopedpointer.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qshareddata.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qsize.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstring.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstringalgorithms.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstringbuilder.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstringlist.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstringliteral.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstringmatcher.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstringtokenizer.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qstringview.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qsysinfo.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qsystemdetection.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qtaggedpointer.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qtcore-config.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qtmetamacros.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qtypeinfo.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qutf8stringview.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtCore/qversiontagging.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/QPainter \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/QPainterPath \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qbrush.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qcolor.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qfont.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qfontinfo.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qfontmetrics.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qimage.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qpainter.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qpainterpath.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qpen.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qpixelformat.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qpixmap.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qpolygon.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qregion.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qrgb.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qrgba64.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qtextoption.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qtgui-config.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qtransform.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/parham/Qt/6.1.2/gcc_64/include/QtGui/qwindowdefs_win.h
 CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o: \
  ../UI/Contact/contactus.cpp \
  ../UI/Contact/contactus.h \
@@ -2019,6 +2123,7 @@ CMakeFiles/Mobius.dir/main.cpp.o: \
  ../Shape/Polyline/Polyline.h \
  ../Shape/Rectangle/Rectangle.h \
  ../Shape/Shape.h \
+ ../Shape/Text/Text.h \
  ../UI/Testimonial/List/testimoniallistview.h \
  ../Vector/Iterator/iterator.h \
  ../Vector/Iterator/reverse.h \
@@ -2401,6 +2506,7 @@ CMakeFiles/Mobius.dir/mainwindow.cpp.o: \
  ../Shape/Polyline/Polyline.h \
  ../Shape/Rectangle/Rectangle.h \
  ../Shape/Shape.h \
+ ../Shape/Text/Text.h \
  ../UI/Contact/contactus.h \
  ../UI/Login/login.h \
  ../UI/Testimonial/Add/addtestimonialdialog.h \
@@ -2762,7 +2868,6 @@ CMakeFiles/Mobius.dir/mainwindow.cpp.o: \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/QPushButton \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/QStatusBar \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/QTabWidget \
- /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/QTextBrowser \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/QTreeWidget \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/QTreeWidgetItem \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/QWidget \
@@ -2795,8 +2900,6 @@ CMakeFiles/Mobius.dir/mainwindow.cpp.o: \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qstyleoption.h \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qtabbar.h \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qtextbrowser.h \
- /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qtextedit.h \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qtreeview.h \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qtreewidget.h \
  /home/parham/Qt/6.1.2/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \

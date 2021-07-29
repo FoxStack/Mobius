@@ -30,6 +30,8 @@ add_executable(${PROJECT_NAME}
         Shape/Polygon/Polygon.h
         Shape/Polyline/Polyline.cpp
         Shape/Polyline/Polyline.h
+        Shape/Text/Text.cpp
+        Shape/Text/Text.h
         RenderArea/RenderArea.cpp
         RenderArea/RenderArea.h
         Vector/Vector.hpp

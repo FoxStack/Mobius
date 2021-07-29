@@ -358,6 +358,30 @@ Shape/Shape.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.s
 .PHONY : Shape/Shape.cpp.s
 
+Shape/Text/Text.o: Shape/Text/Text.cpp.o
+.PHONY : Shape/Text/Text.o
+
+# target to build an object file
+Shape/Text/Text.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o
+.PHONY : Shape/Text/Text.cpp.o
+
+Shape/Text/Text.i: Shape/Text/Text.cpp.i
+.PHONY : Shape/Text/Text.i
+
+# target to preprocess a source file
+Shape/Text/Text.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.i
+.PHONY : Shape/Text/Text.cpp.i
+
+Shape/Text/Text.s: Shape/Text/Text.cpp.s
+.PHONY : Shape/Text/Text.s
+
+# target to generate assembly for a file
+Shape/Text/Text.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.s
+.PHONY : Shape/Text/Text.cpp.s
+
 UI/Contact/contactus.o: UI/Contact/contactus.cpp.o
 .PHONY : UI/Contact/contactus.o
 
@@ -539,6 +563,9 @@ help:
 	@echo "... Shape/Shape.o"
 	@echo "... Shape/Shape.i"
 	@echo "... Shape/Shape.s"
+	@echo "... Shape/Text/Text.o"
+	@echo "... Shape/Text/Text.i"
+	@echo "... Shape/Text/Text.s"
 	@echo "... UI/Contact/contactus.o"
 	@echo "... UI/Contact/contactus.i"
 	@echo "... UI/Contact/contactus.s"
