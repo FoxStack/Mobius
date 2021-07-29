@@ -16,6 +16,8 @@ ContactUs::ContactUs(QWidget *parent) :
     //QPixmap pix("C:/Users/Hiep/Pictures/kappa.png");
 
     //ui->deadBattLogo->setPixmap(pix.scaled(297,170,Qt::KeepAspectRatio));
+    QPixmap pix("/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Project/img/deadBatteriesLogo.png");
+    ui->deadBattLogo->setPixmap(pix.scaled(297,170,Qt::KeepAspectRatio));
 }
 
 ContactUs::~ContactUs()
