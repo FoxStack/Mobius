@@ -34,8 +34,6 @@ void AddTestimonialDialog::on_buttonBox_accepted() // OK button is clicked
         {ID, { {"description", utf8} } }
     };
     j.update(_holder);
-    // append the testimonial string to the JSON
-
 
     // write the updated JSON back to the file
     db.write(j);

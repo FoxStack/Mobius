@@ -1944,6 +1944,8 @@ CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: /home/raf/Q
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: /home/raf/Qt/6.1.2/gcc_64/include/QtWidgets/qwidget.h
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: Mobius_autogen/include/ui_addtestimonialdialog.h
 
+CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: ../DB/DB.h
+CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: ../Lib/Json/json.hpp
 CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: ../UI/Testimonial/Add/addtestimonialdialog.h
 CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: ../UI/Testimonial/List/testimoniallistview.cpp
 CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o: ../UI/Testimonial/List/testimoniallistview.h
