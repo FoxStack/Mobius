@@ -26,6 +26,12 @@ add_executable(${PROJECT_NAME}
         Shape/Rectangle/Rectangle.h
         Shape/Line/Line.cpp
         Shape/Line/Line.h
+        Shape/Polygon/Polygon.cpp
+        Shape/Polygon/Polygon.h
+        Shape/Polyline/Polyline.cpp
+        Shape/Polyline/Polyline.h
+        RenderArea/RenderArea.cpp
+        RenderArea/RenderArea.h
         Vector/Vector.hpp
         Vector/Iterator/iterator.h
         Vector/Iterator/reverse.h
