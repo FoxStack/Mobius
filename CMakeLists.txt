@@ -54,6 +54,8 @@ add_executable(${PROJECT_NAME}
         DB/DB.h
         Lib/Json/json.hpp
         Lib/UUID/sole.hpp
+        Logo/deadbattery.jpg
+        Logo/deadbattery.png
         ${TS_FILES}
 )
 

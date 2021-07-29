@@ -124,6 +124,12 @@
 		<Unit filename="/home/raf/Desktop/Mobius/Lib/UUID/sole.hpp">
 			<Option target="Mobius"/>
 		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Logo/deadbattery.jpg">
+			<Option target="Mobius"/>
+		</Unit>
+		<Unit filename="/home/raf/Desktop/Mobius/Logo/deadbattery.png">
+			<Option target="Mobius"/>
+		</Unit>
 		<Unit filename="/home/raf/Desktop/Mobius/Mobius_en_US.ts">
 			<Option target="Mobius"/>
 		</Unit>
