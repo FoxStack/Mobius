@@ -22,6 +22,7 @@ private slots:
 
 private:
     Ui::TestimonialListView *ui;
+    void populateList();
 };
 
 #endif // TESTIMONIALLISTVIEW_H
