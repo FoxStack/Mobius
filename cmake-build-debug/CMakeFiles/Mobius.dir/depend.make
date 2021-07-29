@@ -1781,6 +1781,7 @@ CMakeFiles/Mobius.dir/UI/Login/login.cpp.o: Mobius_autogen/include/ui_login.h
 
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: ../DB/DB.h
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: ../Lib/Json/json.hpp
+CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: ../Lib/UUID/sole.hpp
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: ../UI/Testimonial/Add/addtestimonialdialog.cpp
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: ../UI/Testimonial/Add/addtestimonialdialog.h
 CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o: /home/raf/Qt/6.1.2/gcc_64/include/QtCore/QList

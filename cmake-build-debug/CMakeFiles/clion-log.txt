@@ -2,14 +2,5 @@
 -- Could NOT find Vulkan (missing: Vulkan_LIBRARY Vulkan_INCLUDE_DIR) 
 -- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
 -- Configuring done
-CMake Error at CMakeLists.txt:16 (add_executable):
-  Cannot find source file:
-
-    UUID/UUID.cpp
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .ispc
-
-
 -- Generating done
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Build files have been written to: /home/raf/Desktop/Mobius/cmake-build-debug

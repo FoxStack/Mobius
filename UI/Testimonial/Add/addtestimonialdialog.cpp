@@ -1,9 +1,11 @@
 #include "addtestimonialdialog.h"
 #include "../../../DB/DB.h"
+#include "../../../Lib/UUID/sole.hpp"
 #include "ui_addtestimonialdialog.h"
 #include <iostream>
 #include <string>
 
+class uuid;
 using namespace std;
 
 AddTestimonialDialog::AddTestimonialDialog(QWidget *parent)
@@ -27,9 +29,9 @@ void AddTestimonialDialog::on_buttonBox_accepted() // OK button is clicked
     // read from the file
     nlohmann::json j = db.read();
     //Create UUID
-    uuid const id = uuids::uuid_
+    std::string ID = sole::uuid4().str();
     nlohmann::json _holder = {
-        {"TEST", { {"description", utf8} } }
+        {ID, { {"description", utf8} } }
     };
     j.update(_holder);
     // append the testimonial string to the JSON

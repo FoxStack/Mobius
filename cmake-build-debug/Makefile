@@ -155,6 +155,33 @@ Mobius_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius_autogen.dir/build.make CMakeFiles/Mobius_autogen.dir/build
 .PHONY : Mobius_autogen/fast
 
+DB/DB.o: DB/DB.cpp.o
+
+.PHONY : DB/DB.o
+
+# target to build an object file
+DB/DB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/DB/DB.cpp.o
+.PHONY : DB/DB.cpp.o
+
+DB/DB.i: DB/DB.cpp.i
+
+.PHONY : DB/DB.i
+
+# target to preprocess a source file
+DB/DB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/DB/DB.cpp.i
+.PHONY : DB/DB.cpp.i
+
+DB/DB.s: DB/DB.cpp.s
+
+.PHONY : DB/DB.s
+
+# target to generate assembly for a file
+DB/DB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/DB/DB.cpp.s
+.PHONY : DB/DB.cpp.s
+
 Mobius_autogen/mocs_compilation.o: Mobius_autogen/mocs_compilation.cpp.o
 
 .PHONY : Mobius_autogen/mocs_compilation.o
@@ -182,6 +209,384 @@ Mobius_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Mobius_autogen/mocs_compilation.cpp.s
 .PHONY : Mobius_autogen/mocs_compilation.cpp.s
 
+RenderArea/RenderArea.o: RenderArea/RenderArea.cpp.o
+
+.PHONY : RenderArea/RenderArea.o
+
+# target to build an object file
+RenderArea/RenderArea.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.o
+.PHONY : RenderArea/RenderArea.cpp.o
+
+RenderArea/RenderArea.i: RenderArea/RenderArea.cpp.i
+
+.PHONY : RenderArea/RenderArea.i
+
+# target to preprocess a source file
+RenderArea/RenderArea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.i
+.PHONY : RenderArea/RenderArea.cpp.i
+
+RenderArea/RenderArea.s: RenderArea/RenderArea.cpp.s
+
+.PHONY : RenderArea/RenderArea.s
+
+# target to generate assembly for a file
+RenderArea/RenderArea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/RenderArea/RenderArea.cpp.s
+.PHONY : RenderArea/RenderArea.cpp.s
+
+Shape/Ellipse/Ellipse.o: Shape/Ellipse/Ellipse.cpp.o
+
+.PHONY : Shape/Ellipse/Ellipse.o
+
+# target to build an object file
+Shape/Ellipse/Ellipse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.o
+.PHONY : Shape/Ellipse/Ellipse.cpp.o
+
+Shape/Ellipse/Ellipse.i: Shape/Ellipse/Ellipse.cpp.i
+
+.PHONY : Shape/Ellipse/Ellipse.i
+
+# target to preprocess a source file
+Shape/Ellipse/Ellipse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.i
+.PHONY : Shape/Ellipse/Ellipse.cpp.i
+
+Shape/Ellipse/Ellipse.s: Shape/Ellipse/Ellipse.cpp.s
+
+.PHONY : Shape/Ellipse/Ellipse.s
+
+# target to generate assembly for a file
+Shape/Ellipse/Ellipse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Ellipse/Ellipse.cpp.s
+.PHONY : Shape/Ellipse/Ellipse.cpp.s
+
+Shape/Line/Line.o: Shape/Line/Line.cpp.o
+
+.PHONY : Shape/Line/Line.o
+
+# target to build an object file
+Shape/Line/Line.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.o
+.PHONY : Shape/Line/Line.cpp.o
+
+Shape/Line/Line.i: Shape/Line/Line.cpp.i
+
+.PHONY : Shape/Line/Line.i
+
+# target to preprocess a source file
+Shape/Line/Line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.i
+.PHONY : Shape/Line/Line.cpp.i
+
+Shape/Line/Line.s: Shape/Line/Line.cpp.s
+
+.PHONY : Shape/Line/Line.s
+
+# target to generate assembly for a file
+Shape/Line/Line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Line/Line.cpp.s
+.PHONY : Shape/Line/Line.cpp.s
+
+Shape/Polygon/Polygon.o: Shape/Polygon/Polygon.cpp.o
+
+.PHONY : Shape/Polygon/Polygon.o
+
+# target to build an object file
+Shape/Polygon/Polygon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.o
+.PHONY : Shape/Polygon/Polygon.cpp.o
+
+Shape/Polygon/Polygon.i: Shape/Polygon/Polygon.cpp.i
+
+.PHONY : Shape/Polygon/Polygon.i
+
+# target to preprocess a source file
+Shape/Polygon/Polygon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.i
+.PHONY : Shape/Polygon/Polygon.cpp.i
+
+Shape/Polygon/Polygon.s: Shape/Polygon/Polygon.cpp.s
+
+.PHONY : Shape/Polygon/Polygon.s
+
+# target to generate assembly for a file
+Shape/Polygon/Polygon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polygon/Polygon.cpp.s
+.PHONY : Shape/Polygon/Polygon.cpp.s
+
+Shape/Polyline/Polyline.o: Shape/Polyline/Polyline.cpp.o
+
+.PHONY : Shape/Polyline/Polyline.o
+
+# target to build an object file
+Shape/Polyline/Polyline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.o
+.PHONY : Shape/Polyline/Polyline.cpp.o
+
+Shape/Polyline/Polyline.i: Shape/Polyline/Polyline.cpp.i
+
+.PHONY : Shape/Polyline/Polyline.i
+
+# target to preprocess a source file
+Shape/Polyline/Polyline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.i
+.PHONY : Shape/Polyline/Polyline.cpp.i
+
+Shape/Polyline/Polyline.s: Shape/Polyline/Polyline.cpp.s
+
+.PHONY : Shape/Polyline/Polyline.s
+
+# target to generate assembly for a file
+Shape/Polyline/Polyline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Polyline/Polyline.cpp.s
+.PHONY : Shape/Polyline/Polyline.cpp.s
+
+Shape/Rectangle/Rectangle.o: Shape/Rectangle/Rectangle.cpp.o
+
+.PHONY : Shape/Rectangle/Rectangle.o
+
+# target to build an object file
+Shape/Rectangle/Rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.o
+.PHONY : Shape/Rectangle/Rectangle.cpp.o
+
+Shape/Rectangle/Rectangle.i: Shape/Rectangle/Rectangle.cpp.i
+
+.PHONY : Shape/Rectangle/Rectangle.i
+
+# target to preprocess a source file
+Shape/Rectangle/Rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.i
+.PHONY : Shape/Rectangle/Rectangle.cpp.i
+
+Shape/Rectangle/Rectangle.s: Shape/Rectangle/Rectangle.cpp.s
+
+.PHONY : Shape/Rectangle/Rectangle.s
+
+# target to generate assembly for a file
+Shape/Rectangle/Rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Rectangle/Rectangle.cpp.s
+.PHONY : Shape/Rectangle/Rectangle.cpp.s
+
+Shape/Shape.o: Shape/Shape.cpp.o
+
+.PHONY : Shape/Shape.o
+
+# target to build an object file
+Shape/Shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.o
+.PHONY : Shape/Shape.cpp.o
+
+Shape/Shape.i: Shape/Shape.cpp.i
+
+.PHONY : Shape/Shape.i
+
+# target to preprocess a source file
+Shape/Shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.i
+.PHONY : Shape/Shape.cpp.i
+
+Shape/Shape.s: Shape/Shape.cpp.s
+
+.PHONY : Shape/Shape.s
+
+# target to generate assembly for a file
+Shape/Shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Shape.cpp.s
+.PHONY : Shape/Shape.cpp.s
+
+Shape/Text/Text.o: Shape/Text/Text.cpp.o
+
+.PHONY : Shape/Text/Text.o
+
+# target to build an object file
+Shape/Text/Text.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.o
+.PHONY : Shape/Text/Text.cpp.o
+
+Shape/Text/Text.i: Shape/Text/Text.cpp.i
+
+.PHONY : Shape/Text/Text.i
+
+# target to preprocess a source file
+Shape/Text/Text.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.i
+.PHONY : Shape/Text/Text.cpp.i
+
+Shape/Text/Text.s: Shape/Text/Text.cpp.s
+
+.PHONY : Shape/Text/Text.s
+
+# target to generate assembly for a file
+Shape/Text/Text.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/Shape/Text/Text.cpp.s
+.PHONY : Shape/Text/Text.cpp.s
+
+UI/Contact/contactus.o: UI/Contact/contactus.cpp.o
+
+.PHONY : UI/Contact/contactus.o
+
+# target to build an object file
+UI/Contact/contactus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.o
+.PHONY : UI/Contact/contactus.cpp.o
+
+UI/Contact/contactus.i: UI/Contact/contactus.cpp.i
+
+.PHONY : UI/Contact/contactus.i
+
+# target to preprocess a source file
+UI/Contact/contactus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.i
+.PHONY : UI/Contact/contactus.cpp.i
+
+UI/Contact/contactus.s: UI/Contact/contactus.cpp.s
+
+.PHONY : UI/Contact/contactus.s
+
+# target to generate assembly for a file
+UI/Contact/contactus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Contact/contactus.cpp.s
+.PHONY : UI/Contact/contactus.cpp.s
+
+UI/Login/login.o: UI/Login/login.cpp.o
+
+.PHONY : UI/Login/login.o
+
+# target to build an object file
+UI/Login/login.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Login/login.cpp.o
+.PHONY : UI/Login/login.cpp.o
+
+UI/Login/login.i: UI/Login/login.cpp.i
+
+.PHONY : UI/Login/login.i
+
+# target to preprocess a source file
+UI/Login/login.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Login/login.cpp.i
+.PHONY : UI/Login/login.cpp.i
+
+UI/Login/login.s: UI/Login/login.cpp.s
+
+.PHONY : UI/Login/login.s
+
+# target to generate assembly for a file
+UI/Login/login.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Login/login.cpp.s
+.PHONY : UI/Login/login.cpp.s
+
+UI/Testimonial/Add/addtestimonialdialog.o: UI/Testimonial/Add/addtestimonialdialog.cpp.o
+
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.o
+
+# target to build an object file
+UI/Testimonial/Add/addtestimonialdialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.o
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.cpp.o
+
+UI/Testimonial/Add/addtestimonialdialog.i: UI/Testimonial/Add/addtestimonialdialog.cpp.i
+
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.i
+
+# target to preprocess a source file
+UI/Testimonial/Add/addtestimonialdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.i
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.cpp.i
+
+UI/Testimonial/Add/addtestimonialdialog.s: UI/Testimonial/Add/addtestimonialdialog.cpp.s
+
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.s
+
+# target to generate assembly for a file
+UI/Testimonial/Add/addtestimonialdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/Add/addtestimonialdialog.cpp.s
+.PHONY : UI/Testimonial/Add/addtestimonialdialog.cpp.s
+
+UI/Testimonial/List/testimoniallistview.o: UI/Testimonial/List/testimoniallistview.cpp.o
+
+.PHONY : UI/Testimonial/List/testimoniallistview.o
+
+# target to build an object file
+UI/Testimonial/List/testimoniallistview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.o
+.PHONY : UI/Testimonial/List/testimoniallistview.cpp.o
+
+UI/Testimonial/List/testimoniallistview.i: UI/Testimonial/List/testimoniallistview.cpp.i
+
+.PHONY : UI/Testimonial/List/testimoniallistview.i
+
+# target to preprocess a source file
+UI/Testimonial/List/testimoniallistview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.i
+.PHONY : UI/Testimonial/List/testimoniallistview.cpp.i
+
+UI/Testimonial/List/testimoniallistview.s: UI/Testimonial/List/testimoniallistview.cpp.s
+
+.PHONY : UI/Testimonial/List/testimoniallistview.s
+
+# target to generate assembly for a file
+UI/Testimonial/List/testimoniallistview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/UI/Testimonial/List/testimoniallistview.cpp.s
+.PHONY : UI/Testimonial/List/testimoniallistview.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+mainwindow.o: mainwindow.cpp.o
+
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,9 +597,54 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Mobius_autogen"
 	@echo "... Mobius"
+	@echo "... DB/DB.o"
+	@echo "... DB/DB.i"
+	@echo "... DB/DB.s"
 	@echo "... Mobius_autogen/mocs_compilation.o"
 	@echo "... Mobius_autogen/mocs_compilation.i"
 	@echo "... Mobius_autogen/mocs_compilation.s"
+	@echo "... RenderArea/RenderArea.o"
+	@echo "... RenderArea/RenderArea.i"
+	@echo "... RenderArea/RenderArea.s"
+	@echo "... Shape/Ellipse/Ellipse.o"
+	@echo "... Shape/Ellipse/Ellipse.i"
+	@echo "... Shape/Ellipse/Ellipse.s"
+	@echo "... Shape/Line/Line.o"
+	@echo "... Shape/Line/Line.i"
+	@echo "... Shape/Line/Line.s"
+	@echo "... Shape/Polygon/Polygon.o"
+	@echo "... Shape/Polygon/Polygon.i"
+	@echo "... Shape/Polygon/Polygon.s"
+	@echo "... Shape/Polyline/Polyline.o"
+	@echo "... Shape/Polyline/Polyline.i"
+	@echo "... Shape/Polyline/Polyline.s"
+	@echo "... Shape/Rectangle/Rectangle.o"
+	@echo "... Shape/Rectangle/Rectangle.i"
+	@echo "... Shape/Rectangle/Rectangle.s"
+	@echo "... Shape/Shape.o"
+	@echo "... Shape/Shape.i"
+	@echo "... Shape/Shape.s"
+	@echo "... Shape/Text/Text.o"
+	@echo "... Shape/Text/Text.i"
+	@echo "... Shape/Text/Text.s"
+	@echo "... UI/Contact/contactus.o"
+	@echo "... UI/Contact/contactus.i"
+	@echo "... UI/Contact/contactus.s"
+	@echo "... UI/Login/login.o"
+	@echo "... UI/Login/login.i"
+	@echo "... UI/Login/login.s"
+	@echo "... UI/Testimonial/Add/addtestimonialdialog.o"
+	@echo "... UI/Testimonial/Add/addtestimonialdialog.i"
+	@echo "... UI/Testimonial/Add/addtestimonialdialog.s"
+	@echo "... UI/Testimonial/List/testimoniallistview.o"
+	@echo "... UI/Testimonial/List/testimoniallistview.i"
+	@echo "... UI/Testimonial/List/testimoniallistview.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
 .PHONY : help
 
 

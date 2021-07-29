@@ -174,7 +174,100 @@
 	"CMAKE_SOURCE_DIR" : "/home/raf/Desktop/Mobius",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[ "/home/raf/Desktop/Mobius/DB/DB.h", "MU", "7H6OK2LW3G/moc_DB.cpp" ],
+		[
+			"/home/raf/Desktop/Mobius/Lib/Json/json.hpp",
+			"MU",
+			"GS3ERMYR7F/moc_json.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Lib/UUID/sole.hpp",
+			"MU",
+			"5MHP2Q6BFU/moc_sole.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/RenderArea/RenderArea.h",
+			"MU",
+			"4JEM23AU6S/moc_RenderArea.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Shape/Ellipse/Ellipse.h",
+			"MU",
+			"D2MXPMRMH2/moc_Ellipse.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Shape/Line/Line.h",
+			"MU",
+			"4EFFRYBY5O/moc_Line.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Shape/Polygon/Polygon.h",
+			"MU",
+			"QXNQREQLNC/moc_Polygon.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Shape/Polyline/Polyline.h",
+			"MU",
+			"FIS5TCJBOD/moc_Polyline.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Shape/Rectangle/Rectangle.h",
+			"MU",
+			"KYILXN2KWR/moc_Rectangle.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Shape/Shape.h",
+			"MU",
+			"N7AMMMNMCN/moc_Shape.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Shape/Text/Text.h",
+			"MU",
+			"IS5PFO2IEE/moc_Text.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/UI/Contact/contactus.h",
+			"MU",
+			"5ZW6JBDZ5A/moc_contactus.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/UI/Login/login.h",
+			"MU",
+			"SGAXA4IAWS/moc_login.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.h",
+			"MU",
+			"J5MNSH6YB3/moc_addtestimonialdialog.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.h",
+			"MU",
+			"23HEEBTTEP/moc_testimoniallistview.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Vector/Iterator/iterator.h",
+			"MU",
+			"GRVPDA76LR/moc_iterator.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Vector/Iterator/reverse.h",
+			"MU",
+			"GRVPDA76LR/moc_reverse.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/Vector/Vector.hpp",
+			"MU",
+			"4P65D5OEWC/moc_Vector.cpp"
+		],
+		[
+			"/home/raf/Desktop/Mobius/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp"
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/raf/Desktop/Mobius/cmake-build-release/Mobius_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/raf/Desktop/Mobius/cmake-build-release/Mobius_autogen/mocs_compilation.cpp",
@@ -223,7 +316,30 @@
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 1,
 	"SETTINGS_FILE" : "/home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles/Mobius_autogen.dir/AutogenUsed.txt",
-	"SOURCES" : [],
+	"SOURCES" : 
+	[
+		[ "/home/raf/Desktop/Mobius/DB/DB.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/RenderArea/RenderArea.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/Shape/Ellipse/Ellipse.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/Shape/Line/Line.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/Shape/Polygon/Polygon.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/Shape/Polyline/Polyline.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/Shape/Rectangle/Rectangle.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/Shape/Shape.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/Shape/Text/Text.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/UI/Contact/contactus.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/UI/Login/login.cpp", "MU" ],
+		[
+			"/home/raf/Desktop/Mobius/UI/Testimonial/Add/addtestimonialdialog.cpp",
+			"MU"
+		],
+		[
+			"/home/raf/Desktop/Mobius/UI/Testimonial/List/testimoniallistview.cpp",
+			"MU"
+		],
+		[ "/home/raf/Desktop/Mobius/main.cpp", "MU" ],
+		[ "/home/raf/Desktop/Mobius/mainwindow.cpp", "MU" ]
+	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : [],
