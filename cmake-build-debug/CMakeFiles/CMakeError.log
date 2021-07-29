@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_db199/fast && /usr/bin/make  -f CMakeFiles/cmTC_db199.dir/build.make CMakeFiles/cmTC_db199.dir/build
-make[1]: Entering directory '/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_db199.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_db199.dir/src.c.o -c "/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp/src.c"
-Linking C executable cmTC_db199
-/snap/clion/162/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db199.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_db199.dir/src.c.o -o cmTC_db199 
-/usr/bin/ld: CMakeFiles/cmTC_db199.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_00610/fast && /usr/bin/make  -f CMakeFiles/cmTC_00610.dir/build.make CMakeFiles/cmTC_00610.dir/build
+make[1]: Entering directory '/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00610.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_00610.dir/src.c.o -c /home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_00610
+/home/raf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00610.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_00610.dir/src.c.o -o cmTC_00610 
+/usr/bin/ld: CMakeFiles/cmTC_00610.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_db199.dir/build.make:99: cmTC_db199] Error 1
-make[1]: Leaving directory '/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_db199/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_00610.dir/build.make:106: cmTC_00610] Error 1
+make[1]: Leaving directory '/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_00610/fast] Error 2
 
 
 Source file was:

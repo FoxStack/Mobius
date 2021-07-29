@@ -94,12 +94,12 @@ clean: CMakeFiles/Mobius_autogen.dir/clean
 CMakeFiles/Mobius.dir/all: CMakeFiles/Mobius_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius.dir/build.make CMakeFiles/Mobius.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Mobius"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles --progress-num=1,2 "Built target Mobius"
 .PHONY : CMakeFiles/Mobius.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Mobius.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Mobius.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles 0
 .PHONY : CMakeFiles/Mobius.dir/rule
@@ -121,7 +121,7 @@ CMakeFiles/Mobius.dir/clean:
 CMakeFiles/Mobius_autogen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius_autogen.dir/build.make CMakeFiles/Mobius_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mobius_autogen.dir/build.make CMakeFiles/Mobius_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles --progress-num=14 "Built target Mobius_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raf/Desktop/Mobius/cmake-build-release/CMakeFiles --progress-num=3 "Built target Mobius_autogen"
 .PHONY : CMakeFiles/Mobius_autogen.dir/all
 
 # Build rule for subdir invocation for target.
