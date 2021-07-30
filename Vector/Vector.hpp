@@ -34,47 +34,74 @@ public:
     typedef reverse<T> rit;
     typedef reverse<const T> crit;
     // hahah it cit rit crit
-
-    /**
+  
+  /**
    * [Constructors]
    */
-    // Default
-    Vector();
-    // By size
-    explicit Vector(int size);
-    // Copy
-    Vector(const Vector &v);
-    // Copy Assignment
-    Vector<T> &operator=(const Vector<T> &v);
-    // Destruction
-    ~Vector();
+  //!Default
+  Vector();
+  //! Constructs by size
+  explicit Vector(int size);
+  //! Copy Constructor 
+  Vector(const Vector &v);
+  //! Copy Assignment
+  Vector<T> &operator=(const Vector<T> &v);
+  //! Destructor
+  ~Vector();
 
     /**
    * [Mutations]
    */
     // https://www.cplusplus.com/reference/vector/vector/
     // void push_back (const value_type& val);
+      //! Adds a value to the back of the vector
     void push_back(const T &val);
+      //! Deletes a value from the back of the vector
     void pop_back();
+      //! Clears the entire vector
     void clear();
+    //!Erases one element in vector
+    /*!
+    * @param position position of the element to be deleted 
+    */
     it erase(it position);
+    //!Erases a range of elements in the vector
+    /*!
+    * @param first first element to delete from the range
+    * @param last last element to delete from the range 
+    */
     it erase(it first, it last);
+    //! erases one element in vector
+    /*!
+    * @param index 
+    */
     it erase(const std::size_t &index);
 
     /**
    * [Accessors]
    */
     // https://www.cplusplus.com/reference/vector/vector/at/
+    //!Returns the element of i in the vector
+    /*!
+    * @param i element reference to return
+    */
     T &at(int i);
+    //!Returns the element of i in the vector(read-only)
+    /*!
+    * @param i element reference to return
+    */
     const T &at(int i) const;
     // Holy shit I love GPT-3
     T &operator[](int i);
     const T &operator[](int i) const;
     // https://www.cplusplus.com/reference/vector/vector/front/
+    //!Returns the first element in vector
     T &front();
+    //!Returns the first element in vector(read only)
     const T &front() const;
 
     // https://www.cplusplus.com/reference/vector/vector/back/
+    //! Returns reference to the last element of the vector
     T &back();
     const T &back() const;
 
@@ -86,7 +113,9 @@ public:
    *value_type* data() noexcept;
    *const value_type* data() const noexcept;
    */
+   //!Returns a direct pointer to the memory array used internally by the vector to store its owned elements 
     const T *data();
+    //!Returns a direct pointer to the memory array used internally by the vector to store its owned elements(read-only)
     const T *data() const;
 
     /**
@@ -94,31 +123,48 @@ public:
    */
     // https://www.cplusplus.com/reference/vector/vector/capacity/
     // Why cant't I fucking use the word capacity here.
+    //!Returns size of the space currently allocated for the vector
     std::size_t capacity() const;
 
     // https://www.cplusplus.com/reference/vector/vector/reserve/
+    //!Reserves n amount of elements to allocate
+    /*!
+    * @param n how much space should be allocated
+    */
     void reserve(size_t n);
 
     // https://www.cplusplus.com/reference/vector/vector/resize/
     // void resize (size_type n, value_type val = value_type()); c++98
     // void resize (size_type n); c++11
     // void resize (size_type n, const value_type& val); c++11
+      //!Resizes the vector, so that it has the number of elements 'size'
+  /*!
+   * @param size represents the new size for the vector 
+   */
     void resize(int size, T val = T());// c++98
 
     // https://www.cplusplus.com/reference/vector/vector/max_size/
     // size_type max_size() const noexcept; c++11;
+      //!Returns the maximum number of elements that the vector can hold
     std::size_t max_size();
 
     // https://www.cplusplus.com/reference/vector/vector/size/
     // size_type size() const noexcept; c++11
+      //!Returns current size of the vector 
     size_t size() const;
 
     // https://www.cplusplus.com/reference/vector/vector/shrink_to_fit/
     // void shrink_to_fit(); All Versions
+      //!Shrinks the vector to fit the current size 
+      /*!
+      * If the vector is not full and not empty, will shrink to the amount of elements that has a value stored 
+      */
+
     void shrink_to_fit();
 
     // https://www.cplusplus.com/reference/vector/vector/empty/
     // bool empty() const noexcept;
+      //! Returns true if vector is empty, false if not. 
     bool empty() const;
 
     /**
