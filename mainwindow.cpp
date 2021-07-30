@@ -8,7 +8,6 @@
 #include <QtCore>
 #include <QtGui>
 #include <QComboBox>
-#include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
 : QMainWindow(parent)
@@ -264,16 +263,9 @@ MainWindow::MainWindow(QWidget *parent)
             this, SLOT(ChangeTextString()));
     connect(comboBoxTextColor, SIGNAL(activated(int)),
             this, SLOT(ChangeTextColor()));
-    connect(comboBoxTextAlignment, SIGNAL(activated(int)),
-            this, SLOT(ChangeTextAlignment()));
-    connect(comboBoxTextFontFamily, SIGNAL(activated(int)),
-            this, SLOT(ChangeTextFontFamily()));
-    connect(comboBoxTextFontStyle, SIGNAL(activated(int)),
-            this, SLOT(ChangeTextFontStyle()));
 
     connect(ui->AllShape, SIGNAL(activated(int)),
             this, SLOT(changeShape()));
-
 }
 
 MainWindow::~MainWindow()
@@ -345,6 +337,8 @@ void MainWindow::on_showTestimonialButton_clicked()
 
 void MainWindow::on_actionRectangle_triggered()
 {
+    shapes->setHidden(false);
+    text->setHidden(true);
     Rectangle *rectangle = new Rectangle(renderArea->getDefaultPen(), renderArea->getDefaultBrush(), {5, 5}, 100, 100);
     ui->frame->setCurrentShapeId(rectangle->GetId());
     ui->frame->AddShape(rectangle);
@@ -354,6 +348,8 @@ void MainWindow::on_actionRectangle_triggered()
 
 void MainWindow::on_actionEllipse_triggered()
 {
+    shapes->setHidden(false);
+    text->setHidden(true);
     Ellipse *ellipse = new Ellipse(renderArea->getDefaultPen(), renderArea->getDefaultBrush(), {100, 100}, 100, 50);
     ui->frame->setCurrentShapeId(ellipse->GetId());
     ui->frame->AddShape(ellipse);
@@ -363,6 +359,8 @@ void MainWindow::on_actionEllipse_triggered()
 
 void MainWindow::on_actionPolygon_triggered()
 {
+    shapes->setHidden(false);
+    text->setHidden(true);
     Vector<QPoint> points;
     points.push_back(QPoint(100, 100));
     points.push_back(QPoint(10, 50));
@@ -376,12 +374,23 @@ void MainWindow::on_actionPolygon_triggered()
 
 void MainWindow::on_actionPolyLine_triggered()
 {
-
+    shapes->setHidden(false);
+    text->setHidden(true);
+    Vector<QPoint> points;
+    points.push_back(QPoint(100, 100));
+    points.push_back(QPoint(10, 50));
+    points.push_back(QPoint(150, 200));
+    Polyline *polyline = new Polyline(renderArea->getDefaultPen(), renderArea->getDefaultBrush(), {5, 5}, points);
+    ui->frame->setCurrentShapeId(polyline->GetId());
+    ui->frame->AddShape(polyline);
+    ui->AllShape->insertItem(polyline->GetId(), "Polyline " + QString::number(polyline->GetId()));
 }
 
 
 void MainWindow::on_actionLine_triggered()
 {
+    shapes->setHidden(false);
+    text->setHidden(true);
     Line *line = new Line(renderArea->getDefaultPen(), renderArea->getDefaultBrush(), {5, 5}, QPoint(10, 10), QPoint(100, 100));
     ui->frame->setCurrentShapeId(line->GetId());
     ui->frame->AddShape(line);
@@ -391,6 +400,8 @@ void MainWindow::on_actionLine_triggered()
 
 void MainWindow::on_actionText_triggered()
 {
+    shapes->setHidden(true);
+    text->setHidden(false);
     Text *text = new Text(renderArea->getDefaultPen(), renderArea->getDefaultBrush(), {20, 20}, "TEXT");
     ui->frame->setCurrentShapeId(text->GetId());
     ui->frame->AddShape(text);
@@ -442,21 +453,3 @@ void MainWindow::ChangeTextColor()
     QColor color = comboBoxTextColor->currentData().value<QPen>().color();
     ui->frame->setColor(color);
 }
-
-//void MainWindow::ChangeTextAlignment()
-//{
-//    Qt::Alignment alignment = comboBoxTextAlignment->currentData().value<Qt::Alignment>();
-//    ui->frame-setAlignment(alignment);
-//}
-
-//void MainWindow::ChangeTextFontFamily()
-//{
-//    QFont font = comboBoxTextFontFamily->currentData().value<QFont>();
-//    ui->frame->setFrontFamily(font);
-//}
-
-//void MainWindow::ChangeTextFontStyle()
-//{
-//    QFont font = comboBoxTextFontStyle->currentData().value<QFont>();
-//    ui->frame->setFrontFamily(font);
-//}

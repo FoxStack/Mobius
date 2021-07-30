@@ -56,12 +56,6 @@ public:
 
     void ChangeTextColor();
 
-    //    void ChangeTextAlignment();
-
-    //    void ChangeTextFontFamily();
-
-    //    void ChangeTextFontStyle();
-
 
 private:
     Ui::MainWindow *ui;

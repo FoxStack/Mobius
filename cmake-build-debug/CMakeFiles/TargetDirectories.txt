@@ -1,4 +1,4 @@
-/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/Mobius.dir
-/home/raf/Desktop/Mobius/cmake-build-debug/CMakeFiles/Mobius_autogen.dir
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/Mobius.dir
+/home/parham/Personal/School/Saddleback/Summer 2021/CS 1C/Mobius/cmake-build-debug/CMakeFiles/Mobius_autogen.dir

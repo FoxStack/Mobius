@@ -10,9 +10,9 @@ class Polyline: public Shape
 {
 public:
     //! Polyline constructor
-    explicit Polyline()= default;
-    //! Polyline destructor
+    Polyline(QPen pen, QBrush brush, Coord coord, Vector<QPoint> points);
     ~Polyline() override = default;
+    //! Polyline destructor
 
     //!Draws the polyline onto the canvas
     void Draw(QPaintDevice *device) override;
@@ -24,5 +24,5 @@ public:
     double Perimeter() override;
 
 private:
-
+    Vector<QPoint> pointList;
 };

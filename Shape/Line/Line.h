@@ -36,7 +36,7 @@ public:
      * @return 0
      */
     double Area() override;
-    /! Calculates the Perimeter of the line
+    //! Calculates the Perimeter of the line
     /*!
      * Line do not have a perimeter, so the function returns 0 when this is called
      * @return 0
